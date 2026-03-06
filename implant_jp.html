@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠インプラント | SMILEVIEWデンタルクリニック</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <style>
+    /* ===== LAMINATE PREMIUM DESIGN SYSTEM ===== */
+    :root {
+        --lm-text: #4c4841;
+        --lm-gold: #b18247;
+        --lm-gold-light: rgba(177,130,71,0.15);
+        --lm-white: #fff;
+        --lm-cream: #f7f4ef;
+        --lm-card-bg: #f1f1f1;
+        --lm-footer-bg: #fbfbfb;
+        --lm-dark-overlay: rgba(0,0,0,0.55);
+        --lm-radius: 30px;
+        --lm-serif: 'STIX Two Text', 'Playfair Display', Georgia, serif;
+        --lm-body: 'Pretendard', -apple-system, sans-serif;
+        --lm-max-w: 1200px;
+    }
+
+    .lm-page { background: var(--lm-white); color: var(--lm-text); font-family: var(--lm-body); }
+    .lm-page *, .lm-page *::before, .lm-page *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    .lm-page img { display: block; max-width: 100%; }
+    .lm-inner { max-width: var(--lm-max-w); margin: 0 auto; padding: 0 50px; }
+
+    /* ===== SCROLL ANIMATION ===== */
+    .lm-fade { opacity: 0; transform: translateY(50px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .lm-fade.lm-show { opacity: 1; transform: translateY(0); }
+    .lm-fade-delay-1 { transition-delay: 0.15s; }
+    .lm-fade-delay-2 { transition-delay: 0.3s; }
+    .lm-fade-delay-3 { transition-delay: 0.45s; }
+
+    /* ===== HORIZONTAL SCROLL WRAPPER ===== */
+    .lm-horizontal {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 80px;
+    }
+    .lm-h-wrap {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        will-change: transform;
+    }
+    .lm-h-panel {
+        width: 960px;
+        height: 100vh;
+        flex-shrink: 0;
+        overflow: hidden;
+        position: relative;
+    }
+    /* Definition panel - matches benchmark sec3 width ratio */
+    .lm-h-panel--def {
+        width: 720px;
+    }
+    .lm-h-panel--title {
+        width: 1200px;
+    }
+
+    /* ===== HERO ===== */
+    .lm-hero {
+        position: relative; width: 100%; height: 100%;
+        display: flex; align-items: center; justify-content: center;
+        overflow: hidden;
+        background: linear-gradient(135deg, #c8a87c 0%, #b8956a 40%, #a68358 70%, #937148 100%);
+    }
+    .lm-hero-bg {
+        position: absolute; inset: 0; z-index: 0;
+        background: url('images/implant/istockphoto-1402568717-612x612.jpg') center/cover no-repeat;
+        opacity: 0.3;
+    }
+    .lm-hero-overlay {
+        position: absolute; inset: 0; z-index: 1;
+        background: linear-gradient(180deg, rgba(180,140,80,0.2) 0%, rgba(100,70,30,0.4) 100%);
+    }
+    .lm-hero-content {
+        position: relative; z-index: 2; text-align: center;
+        display: flex; flex-direction: column; align-items: center; gap: 24px;
+        padding-top: 150px;
+    }
+    .lm-hero-lbx, .lm-hero-rbx {
+        text-align: center;
+    }
+    .lm-hero-lbx span, .lm-hero-rbx span {
+        font-family: var(--lm-serif); font-size: 120px; font-weight: 500;
+        color: var(--lm-white); line-height: 1;
+    }
+    .lm-hero-desc {
+        font-size: 18px; font-weight: 500; color: rgba(255,255,255,0.85);
+        line-height: 1.6; max-width: 600px; letter-spacing: -0.045em;
+    }
+    .lm-hero-desc2 {
+        font-size: 18px; font-weight: 500; color: rgba(255,255,255,0.7);
+        line-height: 1.6; max-width: 550px; margin-top: 55px; letter-spacing: -0.045em;
+    }
+
+    /* Scroll Down Indicator */
+    .lm-scroll-down {
+        position: absolute; bottom: 8%; right: 8%; z-index: 5;
+        width: 90px; height: 90px;
+    }
+    .lm-scroll-circle {
+        width: 100%; height: 100%;
+        animation: lm-rotate 10s linear infinite;
+    }
+    .lm-scroll-circle text {
+        font-family: var(--lm-serif); font-size: 11px; fill: rgba(255,255,255,0.6);
+        letter-spacing: 3px;
+    }
+    .lm-scroll-arrow {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+        color: rgba(255,255,255,0.7); font-size: 20px;
+    }
+    @keyframes lm-rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    /* ===== TITLE BAND ===== */
+    .lm-title-band {
+        position: relative; width: 100%; height: 100%; overflow: hidden;
+        background: url('images/implant/db6542926c9a0.jpg') center/cover no-repeat;
+        display: flex; align-items: center; justify-content: center;
+    }
+    .lm-title-band-overlay {
+        position: absolute; inset: 0;
+        background: rgba(50,40,30,0.7);
+    }
+    .lm-title-band-content {
+        position: relative; z-index: 2; text-align: center;
+        padding: 80px 20px;
+    }
+    .lm-title-band h2 {
+        font-family: var(--lm-serif); font-size: 100px; font-weight: 400;
+        color: var(--lm-white); text-transform: uppercase; line-height: 1.2;
+        letter-spacing: normal;
+    }
+    .lm-title-band .lm-kr-sub {
+        font-family: var(--lm-body); font-size: 22px; font-weight: 500;
+        color: rgba(255,255,255,0.8); margin-top: 20px; letter-spacing: -0.045em;
+    }
+    .lm-title-band .lm-badge {
+        display: inline-flex; align-items: center; justify-content: center;
+        padding: 0 30px; height: 40px; border: 0.8px solid rgba(255,255,255,0.5);
+        border-radius: 20px; margin-top: 40px;
+    }
+    .lm-title-band .lm-badge span {
+        font-family: var(--lm-body); font-size: 18px; font-weight: 500;
+        color: var(--lm-white); letter-spacing: -0.81px;
+    }
+
+    /* Marquee */
+    .lm-marquee {
+        position: absolute; bottom: -0.15em; left: 0; width: 100%; z-index: 1;
+        overflow: hidden; white-space: nowrap;
+        font-family: var(--lm-serif); font-size: 200px; font-weight: 600;
+        color: transparent; -webkit-text-stroke: 1px rgba(251,251,251,0.1);
+        letter-spacing: -5px; line-height: 1;
+    }
+    .lm-marquee-track {
+        display: inline-flex; animation: lm-marquee 25s linear infinite;
+    }
+    .lm-marquee-track span { margin: 0 40px; }
+    @keyframes lm-marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* ===== DEFINITION SECTION (sec3 - benchmark match) ===== */
+    .lm-definition {
+        position: relative; width: 100%; height: 100%; overflow: hidden;
+        background: var(--lm-cream);
+        background-size: cover; background-position: center bottom;
+    }
+    .lm-def-scroll-circle {
+        position: absolute; top: 10%; right: 20%;
+        width: 113px; height: 113px; z-index: 5;
+    }
+    .lm-def-scroll-circle .lm-scroll-circle {
+        width: 100%; height: 100%;
+        animation: lm-rotate 6s linear infinite;
+    }
+    .lm-def-scroll-circle .lm-scroll-circle text {
+        font-family: var(--lm-serif); font-size: 11px; fill: var(--lm-text);
+        letter-spacing: 3px; opacity: 0.5;
+    }
+    .lm-def-scroll-circle .lm-def-arrow {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+        color: var(--lm-text); font-size: 22px;
+    }
+    .lm-def-con {
+        position: absolute; top: 20%; left: 70px; right: 25%; bottom: 100px;
+    }
+    .lm-def-tit {}
+    .lm-def-num {
+        font-family: var(--lm-serif); font-size: 18px; font-weight: 400;
+        color: var(--lm-text); display: block;
+    }
+    .lm-def-title {
+        font-family: var(--lm-body); font-size: 50px; font-weight: 600;
+        color: var(--lm-text); letter-spacing: -2.25px;
+        line-height: 1; margin-top: 30px;
+    }
+    .lm-def-body {
+        font-family: var(--lm-body); font-size: 18px; line-height: 32px;
+        color: var(--lm-text); letter-spacing: -0.81px; font-weight: 400;
+        margin-top: 40px;
+    }
+    .lm-def-divider {
+        width: 100%; height: 1px; background: var(--lm-text);
+        margin-top: 40px;
+    }
+    .lm-def-sub {
+        margin-top: 45px;
+    }
+    .lm-def-sub p {
+        display: flex; flex-wrap: nowrap; gap: 10px; align-items: flex-start;
+    }
+    .lm-def-sub b {
+        font-family: var(--lm-body); font-size: 14px; font-weight: 600;
+        color: var(--lm-text); letter-spacing: -0.63px; line-height: 1.75;
+        display: block; position: relative; padding-right: 10px;
+        white-space: nowrap; flex-shrink: 0;
+    }
+    .lm-def-sub b::after {
+        content: '|'; position: absolute; right: 0; top: 0;
+        color: var(--lm-text); font-weight: 300;
+    }
+    .lm-def-sub span {
+        font-family: var(--lm-body); font-size: 14px; font-weight: 400;
+        color: var(--lm-text); letter-spacing: -0.63px; line-height: 1.75;
+        display: block;
+    }
+
+    /* ===== FLOATING QUICK LINK ===== */
+    .lm-quick {
+        position: fixed; right: 40px; bottom: 120px; z-index: 100;
+        cursor: pointer; width: 65px;
+    }
+    .lm-quick-toggle {
+        width: 65px; height: 65px; border-radius: 50%;
+        background: var(--lm-text); box-shadow: 0 0 8px rgba(0,0,0,0.15);
+        display: flex; align-items: center; justify-content: center;
+        position: relative; z-index: 10; border: none; cursor: pointer;
+        transition: 0.3s;
+    }
+    .lm-quick-toggle:hover { transform: scale(1.05); }
+    .lm-quick-toggle .lm-bar {
+        display: block; width: 18px; height: 2px; background: var(--lm-white);
+        position: absolute; transition: 0.4s; transform-origin: center;
+    }
+    .lm-quick-toggle .lm-bar:nth-child(1) { transform: rotate(90deg); }
+    .lm-quick-toggle .lm-bar:nth-child(2) { transform: rotate(0deg); }
+    .lm-quick.open .lm-quick-toggle .lm-bar:nth-child(1) { transform: rotate(0deg); }
+
+    .lm-quick-menu {
+        position: absolute; bottom: 0; left: 0; width: 100%;
+        padding: 12px 8px 75px; background: #f0f0f0;
+        border-radius: 32px; border: 1px solid var(--lm-text);
+        z-index: 5; opacity: 0; pointer-events: none;
+        transform: translateY(10px); transition: 0.4s;
+    }
+    .lm-quick.open .lm-quick-menu {
+        opacity: 1; pointer-events: auto; transform: translateY(0);
+    }
+    .lm-quick-menu a {
+        display: flex; flex-direction: column; align-items: center;
+        padding: 14px 0; text-decoration: none;
+        border-bottom: 1px solid rgba(76,72,65,0.15);
+    }
+    .lm-quick-menu a:last-child { border-bottom: none; }
+    .lm-quick-menu a i { font-size: 22px; color: var(--lm-text); }
+    .lm-quick-menu a em {
+        display: block; margin-top: 6px; font-style: normal;
+        font-size: 11px; color: var(--lm-text); letter-spacing: -0.045em;
+    }
+
+    /* ===== SCROLL TOP ===== */
+    .lm-scroll-top {
+        position: fixed; right: 40px; bottom: 40px; z-index: 99;
+        width: 55px; height: 55px; border-radius: 50%;
+        border: 1px solid var(--lm-text); background: var(--lm-white);
+        display: flex; align-items: center; justify-content: center;
+        cursor: pointer; transition: 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .lm-scroll-top:hover { background: var(--lm-text); color: var(--lm-white); }
+    .lm-scroll-top i { font-size: 18px; }
+
+    /* ===== FOOTER ===== */
+    .lm-footer {
+        background: var(--lm-footer-bg); border-top: 0.8px solid #afafaf;
+        padding: 60px 0 40px; text-align: center;
+    }
+    .lm-footer-logo {
+        font-family: var(--lm-serif); font-size: 24px; font-weight: 500;
+        color: var(--lm-text); letter-spacing: 2px; margin-bottom: 24px;
+    }
+    .lm-footer-link {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 10px 24px; border: 1px solid var(--lm-text); border-radius: 20px;
+        text-decoration: none; color: var(--lm-text); font-size: 14px;
+        margin-bottom: 30px; transition: 0.3s;
+    }
+    .lm-footer-link:hover { background: var(--lm-text); color: var(--lm-white); }
+    .lm-footer-info {
+        font-size: 14px; color: rgba(76,72,65,0.6); line-height: 1.8;
+    }
+    .lm-footer-info span { margin: 0 8px; }
+    .lm-footer-copy {
+        margin-top: 24px; font-size: 13px; color: rgba(76,72,65,0.4);
+    }
+
+    /* ===== SECTION LABEL & HEADING (shared) ===== */
+    .lm-section-label { display: inline-block; padding: 6px 20px; border-radius: 50px; background: var(--lm-gold-light); color: var(--lm-gold); font-size: 13px; font-weight: 600; letter-spacing: 1px; margin-bottom: 16px; }
+    .lm-section-h2 { font-family: var(--lm-body); font-size: 36px; font-weight: 700; color: var(--lm-text); letter-spacing: -0.045em; }
+
+    /* ===== BANNER + CHECKLIST ===== */
+    .lm-imp-banner{padding:120px 0;background:#1c1915;position:relative;overflow:hidden}
+    .lm-imp-banner__bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.15;z-index:0;pointer-events:none}
+    .lm-imp-banner::before{content:'';position:absolute;top:-50%;right:-30%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(177,130,71,0.06) 0%,transparent 60%);pointer-events:none}
+    .lm-imp-banner .lm-inner{position:relative;z-index:1}
+    .lm-imp-banner__layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    .lm-imp-banner__text h2{font-family:var(--lm-body);font-size:38px;font-weight:700;color:var(--lm-white);letter-spacing:-0.045em;line-height:1.35;margin-bottom:20px}
+    .lm-imp-banner__text h2 span{color:var(--lm-gold)}
+    .lm-imp-banner__text p{font-size:16px;color:rgba(255,255,255,0.55);line-height:1.8;letter-spacing:-0.03em}
+    .lm-imp-checks{display:flex;flex-direction:column;gap:16px}
+    .lm-imp-check{display:flex;align-items:flex-start;gap:16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:24px 20px;transition:all 0.4s cubic-bezier(0.22,1,0.36,1)}
+    .lm-imp-check:hover{transform:translateY(-4px);border-color:rgba(177,130,71,0.3);box-shadow:0 12px 32px rgba(177,130,71,0.1);background:rgba(255,255,255,0.06)}
+    .lm-imp-check__icon{width:40px;height:40px;background:linear-gradient(135deg,var(--lm-gold),#c9a06a);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--lm-white);flex-shrink:0}
+    .lm-imp-check__text h4{font-size:16px;font-weight:700;color:var(--lm-white);margin-bottom:4px;letter-spacing:-0.03em}
+    .lm-imp-check__text p{font-size:14px;color:rgba(255,255,255,0.5);line-height:1.6;margin:0}
+
+    /* ===== IMPLANT TYPES (3 sections) ===== */
+    .lm-imp-type{padding:140px 0;position:relative;overflow:hidden;color:var(--lm-white)}
+    .lm-imp-type::after{font-family:var(--lm-serif);font-size:280px;font-weight:700;color:rgba(177,130,71,0.03);line-height:1;pointer-events:none;position:absolute;bottom:5%;right:-2%}
+    .lm-imp-type--same{background:#1a1714}.lm-imp-type--same::after{content:'01'}
+    .lm-imp-type--navi{background:#1e1b16}.lm-imp-type--navi::after{content:'02'}
+    .lm-imp-type--bone{background:#1a1714}.lm-imp-type--bone::after{content:'03'}
+    .lm-imp-type__grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;position:relative;z-index:1}
+    .lm-imp-type__grid--reverse{direction:rtl}.lm-imp-type__grid--reverse>*{direction:ltr}
+    .lm-imp-type__img{border-radius:24px;overflow:hidden;aspect-ratio:4/3;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center}
+    .lm-imp-type__img img{width:100%;height:100%;object-fit:cover}
+    .lm-imp-type__img-placeholder{font-family:var(--lm-serif);font-size:64px;color:rgba(177,130,71,0.15)}
+    .lm-imp-type__text{padding:20px 0}
+    .lm-imp-type__badge{display:inline-block;padding:6px 16px;border-radius:20px;background:rgba(177,130,71,0.15);color:var(--lm-gold);font-size:12px;font-weight:600;letter-spacing:1px;margin-bottom:20px;text-transform:uppercase}
+    .lm-imp-type__text h3{font-size:32px;font-weight:700;color:var(--lm-white);letter-spacing:-1.2px;line-height:1.35;margin-bottom:20px}
+    .lm-imp-type__text h3 em{font-style:normal;color:var(--lm-gold)}
+    .lm-imp-type__text>p{font-size:15px;line-height:1.85;color:rgba(255,255,255,0.55);margin-bottom:28px}
+    .lm-imp-type__points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+    .lm-imp-type__point{display:flex;align-items:center;gap:10px}
+    .lm-imp-type__point-icon{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--lm-gold);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .lm-imp-type__point-icon i{font-size:12px;color:var(--lm-gold)}
+    .lm-imp-type__point span{font-size:14px;font-weight:600;color:var(--lm-white);letter-spacing:-0.03em}
+
+    /* ===== VS COMPARISON ===== */
+    .lm-imp-vs{padding:140px 0;background:#201d17;position:relative;overflow:hidden;color:var(--lm-white)}
+    .lm-imp-vs::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(ellipse at 60% 0%,rgba(177,130,71,0.06) 0%,transparent 60%);pointer-events:none}
+    .lm-imp-vs .lm-inner{position:relative;z-index:1;max-width:1100px}
+    .lm-imp-vs__header{text-align:center;margin-bottom:60px}
+    .lm-imp-vs__title{font-family:var(--lm-body);font-size:clamp(1.6rem,3.2vw,2.4rem);font-weight:700;color:var(--lm-white);line-height:1.4;margin-top:18px;letter-spacing:-0.02em}
+    .lm-imp-vs__table-wrap{border-radius:var(--lm-radius);overflow:hidden;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02)}
+    .lm-imp-vs__table{width:100%;border-collapse:collapse;table-layout:fixed}
+    .lm-imp-vs__table thead th{font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:20px 16px;color:rgba(255,255,255,0.4);border-bottom:1px solid rgba(255,255,255,0.06);text-align:center}
+    .lm-imp-vs__table thead th:first-child{width:18%;text-align:left;padding-left:32px}
+    .lm-imp-vs__table thead th:nth-child(2){width:41%}
+    .lm-imp-vs__table thead th:nth-child(3){width:41%;color:var(--lm-gold)}
+    .lm-imp-vs__table thead th:nth-child(3) .lm-imp-vs__rec{display:inline-block;padding:3px 14px;background:var(--lm-gold);color:#1a1714;font-size:11px;font-weight:700;border-radius:20px;margin-bottom:6px;letter-spacing:1px}
+    .lm-imp-vs__table tbody tr{border-bottom:1px solid rgba(255,255,255,0.06);transition:background 0.3s;cursor:pointer}
+    .lm-imp-vs__table tbody tr:last-child{border-bottom:none}
+    .lm-imp-vs__table tbody tr:hover{background:rgba(255,255,255,0.04)}
+    .lm-imp-vs__table td{padding:22px 16px;font-size:.95rem;color:rgba(255,255,255,0.55);text-align:center;vertical-align:middle;line-height:1.55}
+    .lm-imp-vs__table td:first-child{font-weight:700;color:var(--lm-white);text-align:left;padding-left:32px;font-size:.88rem;letter-spacing:.02em}
+    .lm-imp-vs__table td:nth-child(3){color:var(--lm-gold);font-weight:600;position:relative}
+    .lm-imp-vs__table td:nth-child(3)::before{content:'';position:absolute;inset:0;background:rgba(177,130,71,.06);pointer-events:none}
+    .lm-imp-vs__table tbody tr:hover td:nth-child(3){font-weight:700}
+    .lm-imp-vs__table tbody tr:hover td:nth-child(3)::before{background:rgba(177,130,71,.12)}
+    .lm-imp-vs__mobile{display:none;flex-direction:column;gap:16px}
+    .lm-imp-vs__m-card{border-radius:20px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.03);padding:24px}
+    .lm-imp-vs__m-card-label{font-size:.78rem;font-weight:700;color:var(--lm-gold);letter-spacing:.06em;margin-bottom:14px;text-transform:uppercase}
+    .lm-imp-vs__m-card-row{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+    .lm-imp-vs__m-card-row:last-child{border-bottom:none}
+    .lm-imp-vs__m-card-key{font-size:.82rem;font-weight:600;color:var(--lm-white);flex-shrink:0;margin-right:12px}
+    .lm-imp-vs__m-card-val{font-size:.88rem;color:rgba(255,255,255,0.5);text-align:right;line-height:1.5}
+    .lm-imp-vs__m-card--osstem{border-color:rgba(177,130,71,.3);background:rgba(177,130,71,.05)}
+    .lm-imp-vs__m-card--osstem .lm-imp-vs__m-card-val{color:var(--lm-gold);font-weight:600}
+    @media(max-width:767px){.lm-imp-vs__table-wrap{display:none}.lm-imp-vs__mobile{display:flex}}
+
+    /* ===== PROCEDURE INFO (dark, hero + cards) ===== */
+    .lm-info-section{padding:0 0 120px;background:#201d17;position:relative;color:var(--lm-white);overflow:hidden}
+    .lm-info-section::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle at 50% 0%,rgba(177,130,71,0.06) 0%,transparent 50%);pointer-events:none}
+    .lm-info-hero{position:relative;width:100%;height:520px;overflow:hidden;margin-bottom:72px}
+    .lm-info-hero-img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.8s cubic-bezier(0.22,1,0.36,1)}
+    .lm-info-hero:hover .lm-info-hero-img{transform:scale(1.04)}
+    .lm-info-hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(32,29,23,0.25) 0%,rgba(32,29,23,0.7) 60%,#201d17 100%),linear-gradient(90deg,rgba(32,29,23,0.5) 0%,transparent 50%);pointer-events:none}
+    .lm-info-hero-content{position:absolute;bottom:56px;left:0;width:100%;z-index:2;padding:0 48px}
+    .lm-info-hero-content .lm-inner{display:flex;flex-direction:column;align-items:flex-start}
+    .lm-info-hero-label{display:inline-block;padding:6px 20px;border-radius:50px;background:rgba(177,130,71,0.2);border:1px solid rgba(177,130,71,0.35);color:var(--lm-gold);font-size:13px;font-weight:600;letter-spacing:1px;margin-bottom:16px;backdrop-filter:blur(8px)}
+    .lm-info-hero-title{font-family:var(--lm-body);font-size:44px;font-weight:700;color:var(--lm-white);letter-spacing:-0.045em;line-height:1.2}
+    .lm-info-hero-title span{color:var(--lm-gold)}
+    .lm-info-hero-sub{font-family:var(--lm-serif);font-size:15px;color:rgba(255,255,255,0.55);margin-top:14px;letter-spacing:0.03em}
+    .lm-info-hero-line{width:48px;height:2px;background:linear-gradient(90deg,var(--lm-gold),transparent);margin-top:20px;border:none}
+    .lm-info-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative;z-index:1}
+    .lm-info-card{background:rgba(255,255,255,0.04);border-radius:24px;padding:40px 24px;text-align:center;border:1px solid rgba(255,255,255,0.08);backdrop-filter:blur(12px);transition:all 0.5s cubic-bezier(0.22,1,0.36,1)}
+    .lm-info-card:hover{transform:scale(1.03);box-shadow:0 24px 64px rgba(177,130,71,0.15);border-color:var(--lm-gold);background:rgba(255,255,255,0.07)}
+    .lm-info-card-icon{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--lm-gold),#c9a06a);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:28px;color:var(--lm-white);box-shadow:0 8px 32px rgba(177,130,71,0.25)}
+    .lm-info-card-label{font-size:13px;color:rgba(255,255,255,0.5);letter-spacing:0.5px;text-transform:uppercase;margin-bottom:8px}
+    .lm-info-card-val{font-size:28px;font-weight:700;color:var(--lm-gold);letter-spacing:-0.03em;margin-bottom:8px}
+    .lm-info-card-desc{font-size:13px;color:rgba(255,255,255,0.4);line-height:1.5}
+    .lm-info-detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:48px;position:relative;z-index:1}
+    .lm-info-detail-card{background:rgba(255,255,255,0.04);border-radius:20px;padding:32px 28px;border:1px solid rgba(255,255,255,0.08);backdrop-filter:blur(8px);transition:all 0.5s cubic-bezier(0.22,1,0.36,1)}
+    .lm-info-detail-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(177,130,71,0.12);border-color:rgba(177,130,71,0.3);background:rgba(255,255,255,0.06)}
+    .lm-info-detail-num{font-size:14px;color:var(--lm-gold);font-weight:500;margin-bottom:12px}
+    .lm-info-detail-card h4{font-size:18px;font-weight:700;color:var(--lm-white);margin-bottom:10px;letter-spacing:-0.03em}
+    .lm-info-detail-card p{font-size:14px;color:rgba(255,255,255,0.5);line-height:1.7}
+    .lm-info-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .lm-info-chip{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:20px;background:rgba(177,130,71,0.15);color:var(--lm-gold);font-size:12px;font-weight:600}
+
+    /* ===== RECOMMENDATION (dark) ===== */
+    .lm-recommend{padding:120px 0;background:#1e1b16;position:relative;overflow:hidden;color:var(--lm-white)}
+    .lm-recommend::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(177,130,71,0.06) 0%,transparent 70%);pointer-events:none}
+    .lm-rec-header{text-align:center;margin-bottom:64px;position:relative;z-index:1}
+    .lm-rec-label{display:inline-block;font-size:13px;font-weight:700;color:var(--lm-gold);letter-spacing:3px;text-transform:uppercase;margin-bottom:20px}
+    .lm-rec-title{font-family:var(--lm-body);font-size:38px;font-weight:700;color:var(--lm-white);line-height:1.35;letter-spacing:-0.04em}
+    .lm-rec-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative;z-index:1}
+    .lm-rec-card{background:rgba(255,255,255,0.04);border-radius:24px;padding:40px 32px;border:1px solid rgba(255,255,255,0.08);transition:transform 0.5s cubic-bezier(0.22,1,0.36,1),box-shadow 0.4s,border-color 0.4s;position:relative;overflow:hidden}
+    .lm-rec-card:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(177,130,71,0.12);border-color:rgba(177,130,71,0.3)}
+    .lm-rec-card::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--lm-gold);transform:scaleX(0);transform-origin:left;transition:transform 0.4s}
+    .lm-rec-card:hover::after{transform:scaleX(1)}
+    .lm-rec-card-num{position:absolute;top:20px;right:24px;font-family:var(--lm-serif);font-size:44px;font-weight:400;color:rgba(177,130,71,0.08);line-height:1;pointer-events:none}
+    .lm-rec-card-icon{width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,rgba(177,130,71,0.2),rgba(177,130,71,0.08));display:flex;align-items:center;justify-content:center;margin-bottom:24px;font-size:24px;color:var(--lm-gold)}
+    .lm-rec-card h3{font-size:20px;font-weight:700;color:var(--lm-white);margin-bottom:12px;letter-spacing:-0.03em}
+    .lm-rec-card p{font-size:14px;line-height:1.7;color:rgba(255,255,255,0.5)}
+
+    /* ===== PROCESS (dark, sticky scroll) ===== */
+    .lm-process{padding:140px 0 80px;background:#1a1714;position:relative;color:var(--lm-white)}
+    .lm-process::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(ellipse at 30% 30%,rgba(177,130,71,0.06) 0%,transparent 50%);pointer-events:none}
+    .lm-process .lm-inner{max-width:1400px;position:relative;z-index:1}
+    .lm-process-intro{max-width:700px;margin:20px auto 60px;text-align:center}
+    .lm-process-intro p{font-size:18px;color:rgba(255,255,255,0.5);line-height:1.8;letter-spacing:-0.045em}
+    .lm-process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:60px}
+    .lm-process-step{background:rgba(255,255,255,0.05);border:0.8px solid rgba(255,255,255,0.05);border-radius:16px;padding:32px;transition:border-color 0.3s,background 0.3s}
+    .lm-process-step:hover{border-color:rgba(177,130,71,0.3);background:rgba(255,255,255,0.07)}
+    .lm-process-step-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+    .lm-process-step-icon{width:40px;height:40px;border:1px solid rgba(255,255,255,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center}
+    .lm-process-step-icon i{font-size:18px;color:rgba(255,255,255,0.7)}
+    .lm-process-step-num{font-family:var(--lm-serif);font-size:14px;color:rgba(255,255,255,0.3)}
+    .lm-process-step-title{font-size:18px;font-weight:600;color:var(--lm-white);margin-bottom:8px;letter-spacing:-0.03em}
+    .lm-process-step-sub{font-size:14px;color:rgba(255,255,255,0.5);line-height:1.6}
+    .lm-process-details{padding-bottom:200px}
+    .lm-process-detail-wrap{position:sticky;top:128px;margin-bottom:60vh}
+    .lm-process-detail-wrap:nth-child(1){z-index:1}.lm-process-detail-wrap:nth-child(2){z-index:2}.lm-process-detail-wrap:nth-child(3){z-index:3}.lm-process-detail-wrap:nth-child(4){z-index:4}
+    .lm-process-detail-wrap:last-child{margin-bottom:100vh}
+    .lm-process-detail{background:#1e1b16;border:0.8px solid rgba(255,255,255,0.1);border-radius:48px;min-height:480px;overflow:hidden;display:flex}
+    .lm-process-detail-img{width:50%;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:40px}
+    .lm-process-detail-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .lm-process-detail-img-overlay{position:absolute;inset:0;z-index:1;background:none}
+    .lm-process-detail-wrap:nth-child(1) .lm-process-detail-img-overlay{background:none}
+    .lm-process-detail-wrap:nth-child(2) .lm-process-detail-img-overlay{background:none}
+    .lm-process-detail-wrap:nth-child(3) .lm-process-detail-img-overlay{background:none}
+    .lm-process-detail-wrap:nth-child(4) .lm-process-detail-img-overlay{background:none}
+    .lm-process-detail-num{position:relative;z-index:2;font-family:var(--lm-serif);font-size:120px;font-weight:700;color:rgba(255,255,255,0.15);line-height:1}
+    .lm-process-detail-badge{position:relative;z-index:2;display:inline-block;padding:4px 16px;background:var(--lm-white);border-radius:8px;font-size:13px;font-weight:700;color:var(--lm-text);margin-top:12px;width:fit-content}
+    .lm-process-detail-info{width:50%;padding:60px 50px;display:flex;flex-direction:column;justify-content:center}
+    .lm-process-detail-step{font-size:14px;font-weight:700;color:var(--lm-gold);letter-spacing:2px;margin-bottom:16px}
+    .lm-process-detail-info h3{font-family:var(--lm-body);font-size:28px;font-weight:700;color:var(--lm-white);letter-spacing:-0.045em;margin-bottom:20px}
+    .lm-process-detail-info p{font-size:16px;color:rgba(255,255,255,0.7);line-height:1.8;letter-spacing:-0.045em;margin-bottom:32px}
+    .lm-process-detail-checks{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:32px}
+    .lm-process-detail-check{display:flex;align-items:center;gap:10px}
+    .lm-process-detail-check-icon{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--lm-gold);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .lm-process-detail-check-icon i{font-size:12px;color:var(--lm-gold)}
+    .lm-process-detail-check span{font-size:14px;font-weight:600;color:var(--lm-white);letter-spacing:-0.045em}
+
+    /* ===== FAQ (dark, split layout) ===== */
+    .lm-faq-section{padding:60px 0 120px;background:#1a1714;color:var(--lm-white);position:relative;overflow:hidden}
+    .lm-faq-section::after{content:'';position:absolute;bottom:0;right:0;width:60%;height:60%;background:radial-gradient(ellipse at 80% 80%,rgba(177,130,71,0.06) 0%,transparent 60%);pointer-events:none}
+    .lm-faq-layout{display:grid;grid-template-columns:300px 1fr;gap:60px;align-items:start;position:relative;z-index:1}
+    .lm-faq-left{position:sticky;top:120px}
+    .lm-faq-deco{font-family:var(--lm-serif);font-size:120px;font-weight:400;color:var(--lm-gold);opacity:0.2;line-height:1;margin-bottom:24px}
+    .lm-faq-left-text{font-size:16px;color:rgba(255,255,255,0.4);line-height:1.8;letter-spacing:-0.045em}
+    .lm-faq-list{display:flex;flex-direction:column;gap:12px}
+    .lm-faq-item{background:rgba(255,255,255,0.03);border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,0.06);transition:border-color 0.4s,box-shadow 0.4s}
+    .lm-faq-item:hover{border-color:rgba(177,130,71,0.3);box-shadow:0 4px 20px rgba(177,130,71,0.08)}
+    .lm-faq-q{display:flex;align-items:center;justify-content:space-between;width:100%;padding:24px 28px;border:none;background:none;cursor:pointer;font-family:var(--lm-body);font-size:17px;font-weight:600;color:var(--lm-white);letter-spacing:-0.045em;text-align:left;gap:12px}
+    .lm-faq-q .lm-faq-prefix{font-family:var(--lm-serif);font-size:20px;font-weight:600;color:var(--lm-gold);flex-shrink:0;margin-right:4px}
+    .lm-faq-q i{font-size:18px;color:rgba(255,255,255,0.4);transition:transform 0.3s,color 0.3s;flex-shrink:0}
+    .lm-faq-q.active i{transform:rotate(180deg);color:var(--lm-gold)}
+    .lm-faq-a{display:none;padding:0 28px 24px;font-size:15px;color:rgba(255,255,255,0.55);line-height:1.7;letter-spacing:-0.045em}
+    .lm-faq-a .lm-faq-a-prefix{font-family:var(--lm-serif);font-size:18px;font-weight:600;color:var(--lm-gold);margin-right:8px}
+
+    /* ===== RESPONSIVE (new sections) ===== */
+    @media(max-width:1024px){
+        .lm-imp-banner__layout{grid-template-columns:1fr;gap:40px}
+        .lm-imp-type__grid,.lm-imp-type__grid--reverse{grid-template-columns:1fr;direction:ltr}
+        .lm-imp-type__points{grid-template-columns:1fr 1fr}
+        .lm-info-cards{grid-template-columns:repeat(2,1fr)}
+        .lm-info-hero{height:400px;margin-bottom:56px}
+        .lm-info-hero-title{font-size:34px}
+        .lm-rec-cards{grid-template-columns:repeat(2,1fr)}
+        .lm-process-steps{grid-template-columns:repeat(2,1fr)}
+        .lm-process-detail{flex-direction:column}
+        .lm-process-detail-img{width:100%;height:300px}
+        .lm-process-detail-info{width:100%;padding:40px 32px}
+        .lm-process-detail-wrap{margin-bottom:40px;position:relative;top:auto}
+        .lm-process-detail-wrap:last-child{margin-bottom:0}
+        .lm-faq-layout{grid-template-columns:1fr;gap:40px}
+        .lm-faq-left{position:relative;top:auto;text-align:center}
+    }
+    @media(max-width:768px){
+        .lm-imp-banner{padding:80px 0}
+        .lm-imp-banner__text h2{font-size:28px}
+        .lm-imp-type{padding:100px 0}
+        .lm-imp-type__text h3{font-size:24px}
+        .lm-imp-type__points{grid-template-columns:1fr}
+        .lm-imp-vs{padding:80px 0}
+        .lm-info-section{padding:0 0 80px}
+        .lm-info-hero{height:320px;margin-bottom:40px}
+        .lm-info-hero-title{font-size:26px}
+        .lm-info-hero-content{padding:0 24px;bottom:32px}
+        .lm-info-cards{grid-template-columns:1fr 1fr;gap:12px}
+        .lm-info-card{padding:24px 16px}
+        .lm-info-card-val{font-size:22px}
+        .lm-info-detail-grid{grid-template-columns:1fr}
+        .lm-recommend{padding:80px 0}
+        .lm-rec-cards{grid-template-columns:1fr}
+        .lm-rec-title{font-size:28px}
+        .lm-process{padding:80px 0 40px}
+        .lm-process-steps{grid-template-columns:1fr 1fr;gap:12px}
+        .lm-process-detail{border-radius:24px}
+        .lm-process-detail-img{height:240px;padding:24px}
+        .lm-process-detail-num{font-size:80px}
+        .lm-process-detail-info{padding:32px 24px}
+        .lm-process-detail-info h3{font-size:22px}
+        .lm-process-detail-checks{grid-template-columns:1fr}
+        .lm-faq-section{padding:80px 0}
+        .lm-faq-deco{font-size:60px}
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+        /* Mobile: vertical layout, no horizontal scroll */
+        .lm-horizontal { margin-top: 80px; }
+        .lm-h-wrap {
+            display: flex; flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        .lm-h-panel {
+            width: 100%; height: auto; min-height: 100vh;
+        }
+        .lm-h-panel--def {
+            width: 100%; min-height: auto;
+        }
+        .lm-definition {
+            height: auto; padding: 80px 24px;
+            display: block; position: relative;
+        }
+        .lm-def-con {
+            position: relative; top: auto; left: auto; right: auto; bottom: auto;
+        }
+        .lm-def-scroll-circle { display: none; }
+        .lm-hero-lbx span, .lm-hero-rbx span { font-size: 80px; }
+        .lm-title-band h2 { font-size: 56px; }
+        .lm-definition::before { font-size: 120px; }
+    }
+    @media (max-width: 768px) {
+        .lm-h-panel { min-height: auto; }
+        .lm-h-panel--title { width: 100%; }
+        .lm-inner { padding: 0 24px; }
+        .lm-hero-lbx span, .lm-hero-rbx span { font-size: 60px; }
+        .lm-hero-desc { font-size: 15px; }
+        .lm-scroll-down { width: 70px; height: 70px; bottom: 5%; right: 5%; }
+        .lm-title-band h2 { font-size: 36px; }
+        .lm-title-band .lm-kr-sub { font-size: 18px; }
+        .lm-marquee { font-size: 80px; }
+        .lm-definition::before { font-size: 80px; }
+        .lm-def-title { font-size: 28px; }
+        .lm-quick { right: 20px; bottom: 100px; width: 55px; }
+        .lm-quick-toggle { width: 55px; height: 55px; }
+        .lm-scroll-top { right: 20px; bottom: 30px; width: 45px; height: 45px; }
+        .lm-section-h2 { font-size: 28px; }
+    }
+    @media (max-width: 480px) {
+        .lm-inner { padding: 0 16px; }
+        .lm-hero-content { padding-top: 100px; gap: 16px; }
+        .lm-hero-lbx span, .lm-hero-rbx span { font-size: 42px; }
+        .lm-hero-desc { font-size: 14px; max-width: 100%; }
+        .lm-hero-desc2 { font-size: 13px; margin-top: 30px; }
+        .lm-scroll-down { width: 56px; height: 56px; bottom: 4%; right: 4%; }
+        .lm-title-band h2 { font-size: 28px; }
+        .lm-title-band .lm-kr-sub { font-size: 15px; }
+        .lm-title-band .lm-badge { padding: 0 20px; height: 34px; margin-top: 24px; }
+        .lm-title-band .lm-badge span { font-size: 14px; }
+        .lm-marquee { font-size: 50px; }
+        .lm-def-title { font-size: 22px; letter-spacing: -1px; }
+        .lm-def-body { font-size: 15px; line-height: 26px; margin-top: 24px; }
+        .lm-def-divider { margin-top: 24px; }
+        .lm-def-sub { margin-top: 24px; }
+        .lm-section-h2 { font-size: 24px; }
+        .lm-section-label { font-size: 12px; padding: 5px 16px; }
+        .lm-imp-banner { padding: 60px 0; }
+        .lm-imp-banner__text h2 { font-size: 22px; }
+        .lm-imp-banner__text p { font-size: 14px; }
+        .lm-imp-check { padding: 18px 16px; gap: 12px; border-radius: 12px; }
+        .lm-imp-check__icon { width: 34px; height: 34px; font-size: 15px; }
+        .lm-imp-check__text h4 { font-size: 15px; }
+        .lm-imp-check__text p { font-size: 13px; }
+        .lm-imp-type { padding: 70px 0; }
+        .lm-imp-type__text h3 { font-size: 20px; }
+        .lm-imp-type__text > p { font-size: 14px; }
+        .lm-imp-type__badge { font-size: 11px; padding: 5px 14px; }
+        .lm-imp-vs { padding: 60px 0; }
+        .lm-imp-vs__title { font-size: 1.3rem; }
+        .lm-imp-vs__m-card { padding: 18px; border-radius: 16px; }
+        .lm-info-section { padding: 0 0 60px; }
+        .lm-info-hero { height: 240px; margin-bottom: 32px; }
+        .lm-info-hero-title { font-size: 22px; }
+        .lm-info-hero-content { padding: 0 16px; bottom: 24px; }
+        .lm-info-cards { grid-template-columns: 1fr; gap: 12px; }
+        .lm-info-card { padding: 24px 16px; border-radius: 16px; }
+        .lm-info-card-icon { width: 56px; height: 56px; font-size: 22px; margin-bottom: 16px; }
+        .lm-info-card-val { font-size: 20px; }
+        .lm-info-detail-card { padding: 24px 20px; border-radius: 16px; }
+        .lm-info-detail-card h4 { font-size: 16px; }
+        .lm-info-detail-card p { font-size: 13px; }
+        .lm-recommend { padding: 60px 0; }
+        .lm-rec-title { font-size: 22px; }
+        .lm-rec-card { padding: 28px 20px; border-radius: 20px; }
+        .lm-rec-card h3 { font-size: 17px; }
+        .lm-rec-card p { font-size: 13px; }
+        .lm-rec-card-icon { width: 48px; height: 48px; font-size: 20px; margin-bottom: 16px; }
+        .lm-process { padding: 60px 0 30px; }
+        .lm-process-intro p { font-size: 15px; }
+        .lm-process-steps { grid-template-columns: 1fr; gap: 10px; }
+        .lm-process-step { padding: 24px; }
+        .lm-process-step-title { font-size: 16px; }
+        .lm-process-detail { border-radius: 20px; }
+        .lm-process-detail-img { height: 200px; padding: 20px; }
+        .lm-process-detail-num { font-size: 60px; }
+        .lm-process-detail-info { padding: 24px 16px; }
+        .lm-process-detail-info h3 { font-size: 18px; }
+        .lm-process-detail-info p { font-size: 14px; }
+        .lm-faq-section { padding: 60px 0; }
+        .lm-faq-deco { font-size: 48px; }
+        .lm-faq-q { padding: 18px 20px; font-size: 15px; }
+        .lm-faq-a { padding: 0 20px 20px; font-size: 14px; }
+        .lm-quick { right: 16px; bottom: 80px; width: 48px; }
+        .lm-quick-toggle { width: 48px; height: 48px; }
+        .lm-scroll-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+        .lm-scroll-top i { font-size: 15px; }
+        .lm-footer { padding: 40px 0 30px; }
+        .lm-footer-logo { font-size: 20px; }
+        .lm-footer-info { font-size: 12px; }
+        .lm-footer-link { font-size: 12px; padding: 8px 18px; }
+    }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo"><a href="index_jp.html">SMILEVIEW</a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="introduction_jp.html">SMILEVIEWデンタルクリニック</a></li>
+                    <li><a href="invisalign_jp.html">インビザライン</a></li>
+                    <li><a href="ortho_jp.html">歯列矯正</a></li>
+                    <li><a href="whitening_jp.html">歯のホワイトニング</a></li>
+                    <li><a href="laminate_jp.html">ワンデーラミネートベニア</a></li>
+                    <li><a href="implant_jp.html" class="active">睡眠インプラント</a></li>
+                    <li><a href="prosthetics_jp.html">補綴治療</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="lang-selector" id="langSelector">
+                    <span class="lang-icon"><i class="ph ph-globe"></i></span>
+                    <button type="button" class="lang-current" onclick="this.closest('.lang-selector').classList.toggle('open')">JP</button>
+                    <div class="lang-dropdown">
+                        <a href="implant.html">韓国語 (KO)</a>
+                        <a href="implant_tw.html">繁體中文 (TW)</a>
+                        <a href="#" class="active">日本語 (JP)</a>
+                    </div>
+                </div>
+                <a href="https://lin.ee/C0rBsdX" class="btn-reserve">予約する</a>
+                <div class="mobile-menu-btn"><i class="ph ph-list"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-inner">
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="introduction_jp.html">クリニック紹介</a></li>
+                    <li><a href="invisalign_jp.html">インビザライン</a></li>
+                    <li><a href="ortho_jp.html">歯列矯正</a></li>
+                    <li><a href="whitening_jp.html">歯のホワイトニング</a></li>
+                    <li><a href="laminate_jp.html">ワンデーラミネートベニア</a></li>
+                    <li><a href="implant_jp.html">睡眠インプラント</a></li>
+                    <li><a href="prosthetics_jp.html">補綴治療</a></li>
+                </ul>
+            </nav>
+            <a href="https://naver.me/xoBKVJA6" class="mobile-reserve-btn" target="_blank">オンライン予約</a>
+        </div>
+    </div>
+
+    <main class="lm-page">
+
+        <!-- ===== HORIZONTAL SCROLL SECTION ===== -->
+        <section class="lm-horizontal">
+            <div class="lm-h-wrap">
+
+                <!-- Panel 1: HERO -->
+                <div class="lm-h-panel">
+        <div class="lm-hero">
+            <div class="lm-hero-bg"></div>
+            <div class="lm-hero-overlay"></div>
+            <div class="lm-hero-content">
+                <div class="lm-hero-lbx"><span>SLEEP</span></div>
+                <div class="lm-hero-rbx"><span>IMPLANT</span></div>
+                <p class="lm-hero-desc">
+                    快適で痛みのないインプラント治療を提供する<br>
+                    SMILEVIEWの睡眠インプラントソリューション。
+                </p>
+                <p class="lm-hero-desc2">
+                    睡眠麻酔により不安感なく眠っている間に<br>
+                    安全で精密なインプラント施術を完成します。
+                </p>
+            </div>
+            <!-- Scroll Down -->
+            <div class="lm-scroll-down">
+                <svg class="lm-scroll-circle" viewBox="0 0 100 100">
+                    <defs>
+                        <path id="circlePath" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"/>
+                    </defs>
+                    <text>
+                        <textPath href="#circlePath">Scroll Down ・ Scroll Down ・ Scroll Down ・</textPath>
+                    </text>
+                </svg>
+                <span class="lm-scroll-arrow"><i class="ph ph-arrow-down"></i></span>
+            </div>
+        </div>
+                </div><!-- end Panel 1 -->
+
+                <!-- Panel 2: TITLE BAND -->
+                <div class="lm-h-panel lm-h-panel--title">
+        <div class="lm-title-band">
+            <div class="lm-title-band-overlay"></div>
+            <div class="lm-title-band-content">
+                <h2>Sleep<br>Implant</h2>
+                <p class="lm-kr-sub">睡眠インプラント</p>
+                <div class="lm-badge">
+                    <span>SMILEVIEW SIGNATURE</span>
+                </div>
+            </div>
+            <!-- Marquee -->
+            <div class="lm-marquee">
+                <div class="lm-marquee-track">
+                    <span>SMILEVIEW</span><span>IMPLANT</span><span>SMILEVIEW</span><span>IMPLANT</span>
+                    <span>SMILEVIEW</span><span>IMPLANT</span><span>SMILEVIEW</span><span>IMPLANT</span>
+                </div>
+            </div>
+        </div>
+                </div><!-- end Panel 2 -->
+
+                <!-- Panel 3: DEFINITION -->
+                <div class="lm-h-panel lm-h-panel--def">
+        <div class="lm-definition">
+            <!-- Scroll Circle -->
+            <div class="lm-def-scroll-circle">
+                <svg class="lm-scroll-circle" viewBox="0 0 100 100">
+                    <defs>
+                        <path id="circlePathDef" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"/>
+                    </defs>
+                    <text>
+                        <textPath href="#circlePathDef">Scroll Down ・ Scroll Down ・ Scroll Down ・</textPath>
+                    </text>
+                </svg>
+                <span class="lm-def-arrow"><i class="ph ph-arrow-down"></i></span>
+            </div>
+            <!-- Content -->
+            <div class="lm-def-con">
+                <div class="lm-def-tit">
+                    <span class="lm-def-num">01</span>
+                    <h2 class="lm-def-title">睡眠インプラントとは？</h2>
+                    <p class="lm-def-body">
+                        睡眠インプラントは、静脈鎮静（睡眠）麻酔により患者が眠った状態で快適にインプラントを埋入する施術法です。歯科恐怖症の方や痛みに敏感な方も不安感なく安全に治療を受けることができ、専門麻酔モニタリング下で精密なインプラント埋入が行われます。SMILEVIEWデンタルクリニックは世界No.1のOsstemインプラントを使用し、3D CT精密診断で最適な施術計画を立案します。
+                    </p>
+                </div>
+                <div class="lm-def-divider"></div>
+                <div class="lm-def-sub">
+                    <p>
+                        <b>種類</b>
+                        <span>一般インプラント、即日インプラント、All-on-4、All-on-6、ミニインプラントなど</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+                </div><!-- end Panel 3 -->
+
+            </div><!-- end lm-h-wrap -->
+        </section><!-- end lm-horizontal -->
+
+        <!-- ===== BANNER + CHECKLIST ===== -->
+        <section class="lm-imp-banner">
+            <img src="images/implant/64c3d6fedff14.jpg" alt="" class="lm-imp-banner__bg-img">
+            <div class="lm-inner">
+                <div class="lm-imp-banner__layout">
+                    <div class="lm-imp-banner__text lm-fade">
+                        <span class="lm-section-label">SLEEP IMPLANT</span>
+                        <h2>快適な睡眠状態で<br>行う <span>インプラント</span></h2>
+                        <p>歯科恐怖症・痛みの心配なく眠っている間に完成します。<br>麻酔科専門医が常駐し安全に進めます。</p>
+                    </div>
+                    <div class="lm-imp-checks lm-fade lm-fade-delay-1">
+                        <div class="lm-imp-check">
+                            <div class="lm-imp-check__icon"><i class="ph-bold ph-check"></i></div>
+                            <div class="lm-imp-check__text">
+                                <h4>歯科恐怖症の方</h4>
+                                <p>睡眠状態で施術するため恐怖感なく進めます</p>
+                            </div>
+                        </div>
+                        <div class="lm-imp-check">
+                            <div class="lm-imp-check__icon"><i class="ph-bold ph-check"></i></div>
+                            <div class="lm-imp-check__text">
+                                <h4>長い施術時間が負担な方</h4>
+                                <p>眠っている間にすべての施術が完了します</p>
+                            </div>
+                        </div>
+                        <div class="lm-imp-check">
+                            <div class="lm-imp-check__icon"><i class="ph-bold ph-check"></i></div>
+                            <div class="lm-imp-check__text">
+                                <h4>嘔吐反射が強い方</h4>
+                                <p>睡眠鎮静により嘔吐反射なく快適に進みます</p>
+                            </div>
+                        </div>
+                        <div class="lm-imp-check">
+                            <div class="lm-imp-check__icon"><i class="ph-bold ph-check"></i></div>
+                            <div class="lm-imp-check__text">
+                                <h4>痛みに敏感な方</h4>
+                                <p>施術中は痛みを全く感じません</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SAME-DAY IMPLANT ===== -->
+        <section class="lm-imp-type lm-imp-type--same">
+            <div class="lm-inner">
+                <div class="lm-imp-type__grid">
+                    <div class="lm-imp-type__img lm-fade">
+                        <img src="images/implant/탭(8)_임플란트 1.avif" alt="即日インプラント" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div class="lm-imp-type__text lm-fade lm-fade-delay-1">
+                        <span class="lm-section-label">SAME-DAY IMPLANT</span>
+                        <span class="lm-imp-type__badge">Type 01</span>
+                        <h3>抜歯当日、<br><em>即日インプラント</em>埋入</h3>
+                        <p>抜歯と同時にインプラントを埋入し、手術回数と治療期間を最小限に抑えます。最新デジタル機器で精密に計画された即日埋入は、不要な歯肉切開なしに早期回復が可能です。</p>
+                        <div class="lm-imp-type__points">
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>当日抜歯＋埋入完了</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>手術回数の最小化</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>歯槽骨保存効果</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>早期回復</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== NAVIGATION IMPLANT ===== -->
+        <section class="lm-imp-type lm-imp-type--navi">
+            <div class="lm-inner">
+                <div class="lm-imp-type__grid lm-imp-type__grid--reverse">
+                    <div class="lm-imp-type__img lm-fade">
+                        <img src="images/implant/탭(8)_임플란트 2.avif" alt="ナビゲーションインプラント" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div class="lm-imp-type__text lm-fade lm-fade-delay-1">
+                        <span class="lm-section-label">NAVIGATION IMPLANT</span>
+                        <span class="lm-imp-type__badge">Type 02</span>
+                        <h3>3Dナビゲーションによる<br><em>精密埋入</em></h3>
+                        <p>3D CTデータを基にコンピューターがリアルタイムでガイドするナビゲーションシステムにより、0.1mm単位の精密なインプラント埋入が可能です。神経損傷リスクを最小化し、最適な位置に安全に埋入します。</p>
+                        <div class="lm-imp-type__points">
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>0.1mm精密ガイド</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>神経損傷リスクの最小化</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>最適角度・深度での埋入</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>手術時間の短縮</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BONE GRAFT IMPLANT ===== -->
+        <section class="lm-imp-type lm-imp-type--bone">
+            <div class="lm-inner">
+                <div class="lm-imp-type__grid">
+                    <div class="lm-imp-type__img lm-fade">
+                        <img src="images/implant/탭(8)_임플란트 3.avif" alt="骨移植インプラント" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div class="lm-imp-type__text lm-fade lm-fade-delay-1">
+                        <span class="lm-section-label">BONE GRAFT IMPLANT</span>
+                        <span class="lm-imp-type__badge">Type 03</span>
+                        <h3>骨量を再建して<br><em>安定的に埋入</em></h3>
+                        <p>骨量不足でインプラントが難しいと言われましたか？SMILEVIEWは自家骨、異種骨などの様々な骨移植材料を活用して不足した骨を再建後、安定してインプラントを埋入します。</p>
+                        <div class="lm-imp-type__points">
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>多様な骨移植材料</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>上顎洞挙上術対応</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>骨再建後の安定的埋入</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>高い成功率</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== VS: OSSTEM vs GENERAL ===== -->
+        <section class="lm-imp-vs">
+            <div class="lm-inner">
+                <div class="lm-imp-vs__header lm-fade">
+                    <span class="lm-section-label">COMPARISON</span>
+                    <h2 class="lm-imp-vs__title">Osstemインプラント、<br>何が違うの？</h2>
+                </div>
+                <div class="lm-imp-vs__table-wrap lm-fade lm-fade-delay-1">
+                    <table class="lm-imp-vs__table">
+                        <thead><tr>
+                            <th>比較項目</th>
+                            <th>一般インプラント</th>
+                            <th><span class="lm-imp-vs__rec">RECOMMEND</span><br>Osstemインプラント</th>
+                        </tr></thead>
+                        <tbody>
+                            <tr><td>メーカー知名度</td><td>多様な中小メーカー</td><td>世界4位・韓国1位グローバル企業</td></tr>
+                            <tr><td>臨床データ</td><td>限られた臨床データ</td><td>20年以上の臨床データ蓄積</td></tr>
+                            <tr><td>表面処理</td><td>一般表面処理</td><td>特許SA表面処理技術</td></tr>
+                            <tr><td>骨結合力</td><td>通常レベルの骨結合</td><td>優れた初期固定力および骨結合</td></tr>
+                            <tr><td>互換性</td><td>限られた補綴互換</td><td>多様な補綴物と完全互換</td></tr>
+                            <tr><td>保証</td><td>メーカーによって異なる</td><td>正規認証書＋生涯保証</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="lm-imp-vs__mobile lm-fade">
+                    <div class="lm-imp-vs__m-card"><div class="lm-imp-vs__m-card-label">一般インプラント</div><div class="lm-imp-vs__m-card-row"><span class="lm-imp-vs__m-card-key">メーカー</span><span class="lm-imp-vs__m-card-val">多様な中小メーカー</span></div><div class="lm-imp-vs__m-card-row"><span class="lm-imp-vs__m-card-key">臨床データ</span><span class="lm-imp-vs__m-card-val">限られた</span></div><div class="lm-imp-vs__m-card-row"><span class="lm-imp-vs__m-card-key">表面処理</span><span class="lm-imp-vs__m-card-val">一般表面処理</span></div><div class="lm-imp-vs__m-card-row"><span class="lm-imp-vs__m-card-key">骨結合力</span><span class="lm-imp-vs__m-card-val">通常レベル</span></div><div class="lm-imp-vs__m-card-row"><span class="lm-imp-vs__m-card-key">互換性</span><span class="lm-imp-vs__m-card-val">限られた</span></div><div class="lm-imp-vs__m-card-row"><span class="lm-imp-vs__m-card-key">保証</span><span class="lm-imp-vs__m-card-val">メーカーによって異なる</span></div></div>
+                    <div class="lm-imp-vs__m-card lm-imp-vs__m-card--osstem"><div class="lm-imp-vs__m-card-label">Osstemインプラント</div><div class="lm-imp-vs__m-card-row"><span class="lm-imp-vs__m-card-key">メーカー</span><span class="lm-imp-vs__m-card-val">世界4位・韓国1位</span></div><div class="lm-imp-vs__m-card-row"><span class="lm-imp-vs__m-card-key">臨床データ</span><span class="lm-imp-vs__m-card-val">20年以上蓄積</span></div><div class="lm-imp-vs__m-card-row"><span class="lm-imp-vs__m-card-key">表面処理</span><span class="lm-imp-vs__m-card-val">特許SA技術</span></div><div class="lm-imp-vs__m-card-row"><span class="lm-imp-vs__m-card-key">骨結合力</span><span class="lm-imp-vs__m-card-val">優れた初期固定力</span></div><div class="lm-imp-vs__m-card-row"><span class="lm-imp-vs__m-card-key">互換性</span><span class="lm-imp-vs__m-card-val">完全互換</span></div><div class="lm-imp-vs__m-card-row"><span class="lm-imp-vs__m-card-key">保証</span><span class="lm-imp-vs__m-card-val">正規認証＋生涯保証</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROCEDURE INFO ===== -->
+        <section class="lm-info-section">
+            <div class="lm-info-hero lm-fade">
+                <img src="images/implant/e66ac7_f8fab2400c304dc5912cc9bb7f6abbf0~mv2.avif" alt="睡眠インプラントの詳細" class="lm-info-hero-img">
+                <div class="lm-info-hero-overlay"></div>
+                <div class="lm-info-hero-content">
+                    <div class="lm-inner">
+                        <span class="lm-info-hero-label">PROCEDURE INFO</span>
+                        <h2 class="lm-info-hero-title">睡眠インプラント、<br><span>細部</span>が違います</h2>
+                        <p class="lm-info-hero-sub">Sleep implant with clinical precision</p>
+                        <hr class="lm-info-hero-line">
+                    </div>
+                </div>
+            </div>
+            <div class="lm-inner">
+                <div class="lm-info-cards">
+                    <div class="lm-info-card lm-fade">
+                        <div class="lm-info-card-icon"><i class="ph ph-clock"></i></div>
+                        <div class="lm-info-card-label">施術時間</div>
+                        <div class="lm-info-card-val">30~60<small>分</small></div>
+                        <p class="lm-info-card-desc">睡眠麻酔含む全処置</p>
+                    </div>
+                    <div class="lm-info-card lm-fade lm-fade-delay-1">
+                        <div class="lm-info-card-icon"><i class="ph ph-syringe"></i></div>
+                        <div class="lm-info-card-label">麻酔方法</div>
+                        <div class="lm-info-card-val">睡眠鎮静</div>
+                        <p class="lm-info-card-desc">静脈鎮静麻酔（IV Sedation）</p>
+                    </div>
+                    <div class="lm-info-card lm-fade lm-fade-delay-2">
+                        <div class="lm-info-card-icon"><i class="ph ph-arrows-clockwise"></i></div>
+                        <div class="lm-info-card-label">回復期間</div>
+                        <div class="lm-info-card-val">1~2<small>週</small></div>
+                        <p class="lm-info-card-desc">日常復帰までの期間</p>
+                    </div>
+                    <div class="lm-info-card lm-fade lm-fade-delay-3">
+                        <div class="lm-info-card-icon"><i class="ph ph-chart-line-up"></i></div>
+                        <div class="lm-info-card-label">成功率</div>
+                        <div class="lm-info-card-val">98<small>%+</small></div>
+                        <p class="lm-info-card-desc">Osstemインプラント臨床基準</p>
+                    </div>
+                </div>
+                <div class="lm-info-detail-grid">
+                    <div class="lm-info-detail-card lm-fade">
+                        <span class="lm-info-detail-num">01</span>
+                        <h4>麻酔科専門医常駐</h4>
+                        <p>麻酔科専門医が施術の全過程に同行し、患者の安全を最優先に管理します。</p>
+                        <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-user-circle-check"></i> 専門医常駐</span><span class="lm-info-chip"><i class="ph ph-shield-check"></i> 安全管理</span></div>
+                    </div>
+                    <div class="lm-info-detail-card lm-fade lm-fade-delay-1">
+                        <span class="lm-info-detail-num">02</span>
+                        <h4>リアルタイム生体モニタリング</h4>
+                        <p>血圧、脈拍、酸素飽和度をリアルタイムでモニタリングし、施術中の患者状態を継続的に確認します。</p>
+                        <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-heartbeat"></i> 生体モニタリング</span><span class="lm-info-chip"><i class="ph ph-pulse"></i> リアルタイム確認</span></div>
+                    </div>
+                    <div class="lm-info-detail-card lm-fade lm-fade-delay-2">
+                        <span class="lm-info-detail-num">03</span>
+                        <h4>Osstem正規インプラント</h4>
+                        <p>世界的に検証されたOsstemインプラントのみを使用し、正規認証書を発行して透明に確認できます。</p>
+                        <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-certificate"></i> 正規認証</span><span class="lm-info-chip"><i class="ph ph-globe"></i> グローバル検証</span></div>
+                    </div>
+                    <div class="lm-info-detail-card lm-fade lm-fade-delay-3">
+                        <span class="lm-info-detail-num">04</span>
+                        <h4>デジタル精密診断</h4>
+                        <p>3D CTと口腔スキャナーで精密診断後、患者に合った施術計画を立案して最適な結果を導きます。</p>
+                        <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-cube"></i> 3D CT</span><span class="lm-info-chip"><i class="ph ph-scan"></i> 口腔スキャナー</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== RECOMMENDATION ===== -->
+        <section class="lm-recommend">
+            <div class="lm-inner">
+                <div class="lm-rec-header lm-fade">
+                    <span class="lm-rec-label">RECOMMEND</span>
+                    <h2 class="lm-rec-title">このような方に<br>睡眠インプラントをお勧めします</h2>
+                </div>
+                <div class="lm-rec-cards">
+                    <div class="lm-rec-card lm-fade"><span class="lm-rec-card-num">01</span><div class="lm-rec-card-icon"><i class="ph ph-smiley-nervous"></i></div><h3>歯科恐怖症の方</h3><p>歯科治療に対する極度の恐怖で治療を先延ばしにしている方に、睡眠状態で快適に施術します。</p></div>
+                    <div class="lm-rec-card lm-fade lm-fade-delay-1"><span class="lm-rec-card-num">02</span><div class="lm-rec-card-icon"><i class="ph ph-tooth"></i></div><h3>複数のインプラントが必要な方</h3><p>複数のインプラントを一度に埋入する必要がある場合、睡眠鎮静で長時間の施術も快適に進めます。</p></div>
+                    <div class="lm-rec-card lm-fade lm-fade-delay-2"><span class="lm-rec-card-num">03</span><div class="lm-rec-card-icon"><i class="ph ph-warning"></i></div><h3>嘔吐反射が強い方</h3><p>口腔内への器具挿入時に嘔吐反射が強い方も、睡眠鎮静状態で不快感なく施術を受けられます。</p></div>
+                    <div class="lm-rec-card lm-fade lm-fade-delay-1"><span class="lm-rec-card-num">04</span><div class="lm-rec-card-icon"><i class="ph ph-heartbeat"></i></div><h3>全身疾患をお持ちの方</h3><p>高血圧、糖尿病など全身疾患がある場合、麻酔専門医の管理のもと安全に施術を行います。</p></div>
+                    <div class="lm-rec-card lm-fade lm-fade-delay-2"><span class="lm-rec-card-num">05</span><div class="lm-rec-card-icon"><i class="ph ph-lightning"></i></div><h3>早期に日常復帰を希望する方</h3><p>効率的な睡眠施術で治療時間を短縮し、施術後に素早く日常生活に戻れます。</p></div>
+                    <div class="lm-rec-card lm-fade lm-fade-delay-3"><span class="lm-rec-card-num">06</span><div class="lm-rec-card-icon"><i class="ph ph-user"></i></div><h3>高齢の患者様</h3><p>体力的に長時間の施術が負担な高齢の患者様も、睡眠鎮静で快適かつ安全に施術できます。</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROCESS (sticky scroll) ===== -->
+        <section class="lm-process">
+            <div class="lm-inner" style="text-align:center;">
+                <span class="lm-section-label lm-fade">PROCESS</span>
+                <h2 class="lm-section-h2 lm-fade" style="color:var(--lm-white);">施術の流れ</h2>
+                <div class="lm-process-intro lm-fade"><p>睡眠インプラントの精密な施術過程をステップごとにご案内します。</p></div>
+            </div>
+            <div class="lm-inner">
+                <div class="lm-process-steps lm-fade">
+                    <div class="lm-process-step">
+                        <div class="lm-process-step-top"><div class="lm-process-step-icon"><i class="ph ph-magnifying-glass"></i></div><span class="lm-process-step-num">01</span></div>
+                        <div class="lm-process-step-title">精密検査</div>
+                        <div class="lm-process-step-sub">3D CT撮影および口腔分析</div>
+                    </div>
+                    <div class="lm-process-step">
+                        <div class="lm-process-step-top"><div class="lm-process-step-icon"><i class="ph ph-clipboard-text"></i></div><span class="lm-process-step-num">02</span></div>
+                        <div class="lm-process-step-title">施術プラン</div>
+                        <div class="lm-process-step-sub">オーダーメイド治療プランの策定</div>
+                    </div>
+                    <div class="lm-process-step">
+                        <div class="lm-process-step-top"><div class="lm-process-step-icon"><i class="ph ph-syringe"></i></div><span class="lm-process-step-num">03</span></div>
+                        <div class="lm-process-step-title">睡眠埋入</div>
+                        <div class="lm-process-step-sub">睡眠麻酔精密埋入</div>
+                    </div>
+                    <div class="lm-process-step">
+                        <div class="lm-process-step-top"><div class="lm-process-step-icon"><i class="ph ph-shield-check"></i></div><span class="lm-process-step-num">04</span></div>
+                        <div class="lm-process-step-title">補綴・管理</div>
+                        <div class="lm-process-step-sub">補綴装着およびアフターケア</div>
+                    </div>
+                </div>
+                <div class="lm-process-details">
+                    <div class="lm-process-detail-wrap lm-fade">
+                        <div class="lm-process-detail">
+                            <div class="lm-process-detail-img">
+                                <img src="images/implant/unnamed.jpg" alt="精密検査＆CT撮影" style="width:100%;height:100%;object-fit:cover;">
+                                <div class="lm-process-detail-img-overlay"></div>
+                                <span class="lm-process-detail-num">01</span>
+                                <span class="lm-process-detail-badge">STEP 01</span>
+                            </div>
+                            <div class="lm-process-detail-info">
+                                <span class="lm-process-detail-step">STEP 01</span>
+                                <h3>精密検査＆CT撮影</h3>
+                                <p>専門医が直接口腔状態を確認し、3D CT撮影を通じて骨組織・神経位置などを精密に分析します。患者の全身健康状態も合わせて確認し、安全な施術を準備します。</p>
+                                <div class="lm-process-detail-checks">
+                                    <div class="lm-process-detail-check"><div class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></div><span>3D CT精密撮影</span></div>
+                                    <div class="lm-process-detail-check"><div class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></div><span>骨組織分析</span></div>
+                                    <div class="lm-process-detail-check"><div class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></div><span>神経位置確認</span></div>
+                                    <div class="lm-process-detail-check"><div class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></div><span>全身健康チェック</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lm-process-detail-wrap lm-fade">
+                        <div class="lm-process-detail">
+                            <div class="lm-process-detail-img">
+                                <img src="images/implant/female-dentist-explaining-artificial-teeth-patient-clinic_1150-19656.avif" alt="オーダーメイド施術計画の立案" style="width:100%;height:100%;object-fit:cover;">
+                                <div class="lm-process-detail-img-overlay"></div>
+                                <span class="lm-process-detail-num">02</span>
+                                <span class="lm-process-detail-badge">STEP 02</span>
+                            </div>
+                            <div class="lm-process-detail-info">
+                                <span class="lm-process-detail-step">STEP 02</span>
+                                <h3>オーダーメイド施術計画の立案</h3>
+                                <p>患者の口腔状態と全身健康を考慮して最適なインプラントの種類・埋入位置・方向・深度を決定します。デジタルシミュレーションで結果を事前に確認します。</p>
+                                <div class="lm-process-detail-checks">
+                                    <div class="lm-process-detail-check"><div class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></div><span>インプラント種類の選択</span></div>
+                                    <div class="lm-process-detail-check"><div class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></div><span>埋入位置・方向の決定</span></div>
+                                    <div class="lm-process-detail-check"><div class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></div><span>デジタルシミュレーション</span></div>
+                                    <div class="lm-process-detail-check"><div class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></div><span>患者オーダーメイドプラン</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lm-process-detail-wrap lm-fade">
+                        <div class="lm-process-detail">
+                            <div class="lm-process-detail-img">
+                                <img src="images/implant/a31e8777230fb.jpg" alt="睡眠麻酔インプラント埋入" style="width:100%;height:100%;object-fit:cover;">
+                                <div class="lm-process-detail-img-overlay"></div>
+                                <span class="lm-process-detail-num">03</span>
+                                <span class="lm-process-detail-badge">STEP 03</span>
+                            </div>
+                            <div class="lm-process-detail-info">
+                                <span class="lm-process-detail-step">STEP 03</span>
+                                <h3>睡眠麻酔インプラント埋入</h3>
+                                <p>静脈鎮静（睡眠）麻酔のもと、患者が快適に眠った状態でナビゲーションシステムを活用して精密にインプラントを埋入します。麻酔専門医が施術を通じて安全を管理します。</p>
+                                <div class="lm-process-detail-checks">
+                                    <div class="lm-process-detail-check"><div class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></div><span>睡眠鎮静麻酔</span></div>
+                                    <div class="lm-process-detail-check"><div class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></div><span>ナビゲーションガイド</span></div>
+                                    <div class="lm-process-detail-check"><div class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></div><span>リアルタイムモニタリング</span></div>
+                                    <div class="lm-process-detail-check"><div class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></div><span>専門医安全管理</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lm-process-detail-wrap lm-fade">
+                        <div class="lm-process-detail">
+                            <div class="lm-process-detail-img">
+                                <img src="images/laminate/kling_20260302_作品____1_______5018_1.png" alt="補綴完成＆アフターケア" style="width:100%;height:100%;object-fit:cover;">
+                                <div class="lm-process-detail-img-overlay"></div>
+                                <span class="lm-process-detail-num">04</span>
+                                <span class="lm-process-detail-badge">STEP 04</span>
+                            </div>
+                            <div class="lm-process-detail-info">
+                                <span class="lm-process-detail-step">STEP 04</span>
+                                <h3>補綴完成＆アフターケア</h3>
+                                <p>インプラントが歯槽骨と十分に結合した後、オーダーメイドの補綴物（クラウン）を装着し、定期検診を通じた長期的な管理を行います。</p>
+                                <div class="lm-process-detail-checks">
+                                    <div class="lm-process-detail-check"><div class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></div><span>オーダーメイド補綴物の製作</span></div>
+                                    <div class="lm-process-detail-check"><div class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></div><span>クラウン装着</span></div>
+                                    <div class="lm-process-detail-check"><div class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></div><span>定期検診管理</span></div>
+                                    <div class="lm-process-detail-check"><div class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></div><span>生涯保証プログラム</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAQ (split layout) ===== -->
+        <section class="lm-faq-section">
+            <div class="lm-inner">
+                <div class="lm-faq-layout">
+                    <div class="lm-faq-left lm-fade">
+                        <div class="lm-faq-deco">Q&A</div>
+                        <span class="lm-section-label">FAQ</span>
+                        <p class="lm-faq-left-text">睡眠インプラントに関する<br>よくある質問をまとめました。</p>
+                    </div>
+                    <div class="lm-faq-list">
+                        <div class="lm-faq-item lm-fade">
+                            <button class="lm-faq-q" onclick="toggleFaq(this)">
+                                <span class="lm-faq-prefix">Q.</span>
+                                睡眠インプラントはどのように行われますか？
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="lm-faq-a">
+                                <span class="lm-faq-a-prefix">A.</span>睡眠（鎮静）麻酔により患者が眠った状態で施術が進行されます。歯科恐怖症の方や痛みに敏感な方に適しており、施術中は不安感なく快適に治療を受けることができます。専門麻酔科医療スタッフが施術を通じて患者の状態をモニタリングします。
+                            </div>
+                        </div>
+                        <div class="lm-faq-item lm-fade lm-fade-delay-1">
+                            <button class="lm-faq-q" onclick="toggleFaq(this)">
+                                <span class="lm-faq-prefix">Q.</span>
+                                インプラントの寿命はどのくらいですか？
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="lm-faq-a">
+                                <span class="lm-faq-a-prefix">A.</span>適切な口腔管理と定期検診を受ければ、インプラントは半永久的に使用できます。一般的に10〜20年以上の使用が可能で、管理状態によっては生涯使用される方も多くいます。
+                            </div>
+                        </div>
+                        <div class="lm-faq-item lm-fade lm-fade-delay-2">
+                            <button class="lm-faq-q" onclick="toggleFaq(this)">
+                                <span class="lm-faq-prefix">Q.</span>
+                                当日即日インプラントは危険ではないですか？
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="lm-faq-a">
+                                <span class="lm-faq-a-prefix">A.</span>歯を抜いて歯槽骨が回復するのを待つ従来のインプラントに比べ、当日即日インプラントは成功率と安定性に大きな差はありません。患者の歯槽骨の状態を確認した上でお勧めしますのでご安心ください。
+                            </div>
+                        </div>
+                        <div class="lm-faq-item lm-fade lm-fade-delay-3">
+                            <button class="lm-faq-q" onclick="toggleFaq(this)">
+                                <span class="lm-faq-prefix">Q.</span>
+                                骨量が不足していてもインプラントはできますか？
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="lm-faq-a">
+                                <span class="lm-faq-a-prefix">A.</span>はい、骨移植インプラントで可能です。インプラント埋入部位の歯槽骨が不足している場合、人工骨を移植して骨量を補充した後、安定してインプラントを埋入します。精密検査を通じて最適な治療計画を立案します。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="footer-title-section">
+    </div>
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>SMILEVIEW<span>.</span></h2>
+                    <p>透明で便利な矯正から審美治療まで、<br>SMILEVIEWデンタルクリニックがあなたの美しい笑顔をお作りします。</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Location</h3>
+                    <ul>
+                        <li>ソウル特別市 江南区 奉恩寺路 107, 15階</li>
+                        <li style="font-size:12px;color:rgba(255,255,255,0.25);">（論峴洞 201 16番地 15階）</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tel:02-552-7528">TEL. 02-552-7528</a></li>
+                        <li>FAX. 02-552-7527</li>
+                        <li><span class="footer-label">代表者</span>金韓結</li>
+                        <li><span class="footer-label">事業者番号</span>699-29-00572</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Hours</h3>
+                    <ul class="footer-hours">
+                        <li><span class="day">平日</span><span>AM 10:00 - PM 06:30</span></li>
+                        <li class="note">昼休み PM 01:00 - PM 02:00</li>
+                        <li><span class="day">土曜日</span><span>AM 10:00 - PM 03:00</span></li>
+                        <li class="note">昼休みなし診療</li>
+                        <li><span class="day">日曜日</span><span>AM 10:00 - PM 04:00</span></li>
+                        <li class="closed"><span class="day">休診</span><span>祝日</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SMILEVIEW DENTAL CLINIC. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+    // FAQ Toggle
+    function toggleFaq(btn) {
+        const answer = btn.nextElementSibling;
+        const isOpen = btn.classList.contains('active');
+        document.querySelectorAll('.lm-faq-q').forEach(q => {
+            q.classList.remove('active');
+            q.nextElementSibling.style.display = 'none';
+        });
+        if (!isOpen) {
+            btn.classList.add('active');
+            answer.style.display = 'block';
+        }
+    }
+
+    // ===== GSAP HORIZONTAL SCROLL =====
+    (function() {
+        gsap.registerPlugin(ScrollTrigger);
+
+        // sec1 - page load animation (NOT scroll-based, like benchmark)
+        gsap.timeline()
+            .from('.lm-hero-bg', { scale: 1.2, duration: 2 })
+            .from('.lm-hero-lbx', { opacity: 0, xPercent: -100, duration: 1.5 }, '-=100%')
+            .from('.lm-hero-rbx', { opacity: 0, xPercent: 100, duration: 1.5 }, '-=100%')
+            .from('.lm-hero-desc, .lm-hero-desc2', { opacity: 0, y: 40, stagger: 0.2, duration: 0.8 }, '-=80%');
+
+        // Marquee animation
+        const marqueeTrack = document.querySelector('.lm-marquee-track');
+        if (marqueeTrack) {
+            const children = marqueeTrack.querySelectorAll('span');
+            children.forEach(child => {
+                const clone = child.cloneNode(true);
+                marqueeTrack.appendChild(clone);
+            });
+        }
+
+        ScrollTrigger.matchMedia({
+            // Desktop: horizontal scroll
+            '(min-width: 1025px)': function() {
+                const wrap = document.querySelector('.lm-h-wrap');
+                const horizontal = document.querySelector('.lm-horizontal');
+                if (!wrap || !horizontal) return;
+
+                // Main horizontal scroll animation
+                const horizon = gsap.to('.lm-horizontal .lm-h-wrap', {
+                    xPercent: -100,
+                    x: () => window.innerWidth,
+                    scrollTrigger: {
+                        pin: '.lm-horizontal',
+                        trigger: '.lm-horizontal',
+                        start: 'left left',
+                        end: () => `+=${wrap.offsetWidth} bottom`,
+                        scrub: 1,
+                    }
+                });
+
+                // sec2 (title band) animation - matches benchmark
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-h-panel--title',
+                        start: 'left 45%',
+                        end: 'left',
+                        containerAnimation: horizon,
+                        toggleActions: 'play none none reverse',
+                    }
+                });
+                tl
+                    .from('.lm-title-band-overlay', { scale: 1.2, duration: 1.5 })
+                    .from('.lm-title-band h2', { opacity: 0, duration: 0.8, y: 40 }, '-=100%')
+                    .from('.lm-title-band .lm-kr-sub', { opacity: 0, duration: 0.8, y: 40 }, '-=80%')
+                    .from('.lm-title-band .lm-badge', { opacity: 0, duration: 0.8, y: 40 }, '-=80%');
+
+                // sec3 (definition) animation - matches benchmark
+                const tl2 = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-h-panel--def',
+                        start: 'left 90%',
+                        end: 'left',
+                        containerAnimation: horizon,
+                        toggleActions: 'play none none reverse',
+                    }
+                });
+                tl2
+                    .from('.lm-def-con .lm-def-tit > *', { opacity: 0, stagger: 0.2, duration: 0.8, x: -40 })
+                    .from('.lm-def-sub p > *', { opacity: 0, stagger: 0.2, duration: 0.8, y: 40 }, '-=80%');
+            },
+
+            // Mobile: vertical layout
+            '(max-width: 1024px)': function() {
+                gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-title-band',
+                        start: 'top center+=20%',
+                        toggleActions: 'play none none reverse',
+                    }
+                })
+                .from('.lm-title-band h2', { opacity: 0, duration: 0.8, y: 40 })
+                .from('.lm-title-band .lm-kr-sub', { opacity: 0, duration: 0.8, y: 40 }, '-=80%')
+                .from('.lm-title-band .lm-badge', { opacity: 0, duration: 0.8, y: 40 }, '-=80%');
+
+                gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-definition',
+                        start: 'top center+=20%',
+                        toggleActions: 'play none none reverse',
+                    }
+                })
+                .from('.lm-def-con .lm-def-tit > *', { opacity: 0, stagger: 0.2, duration: 0.8, x: -40 })
+                .from('.lm-def-sub p > *', { opacity: 0, stagger: 0.2, duration: 0.8, y: 40 }, '-=80%');
+            }
+        });
+    })();
+
+    // ===== Scroll Animations (IntersectionObserver for vertical sections + mobile) =====
+    (function() {
+        const elems = document.querySelectorAll('.lm-imp-banner .lm-fade, .lm-imp-type .lm-fade, .lm-imp-vs .lm-fade, .lm-info-section .lm-fade, .lm-recommend .lm-fade, .lm-process .lm-fade, .lm-faq-section .lm-fade');
+        if (!elems.length) return;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('lm-show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+        elems.forEach(el => observer.observe(el));
+
+        // Mobile: also observe horizontal panel elements
+        if (window.innerWidth <= 1024) {
+            const mobileElems = document.querySelectorAll('.lm-horizontal .lm-fade');
+            mobileElems.forEach(el => observer.observe(el));
+        }
+
+        // Fallback
+        setTimeout(() => {
+            document.querySelectorAll('.lm-fade').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight + 50) {
+                    el.classList.add('lm-show');
+                }
+            });
+        }, 400);
+    })();
+    </script>
+    <!-- Floating SNS -->
+    <div class="sv-float-sns" id="floatSns">
+        <div class="sv-float-sns-list">
+            <a href="https://www.instagram.com/smileview.dental/" class="sv-float-btn sv-float-btn--instagram" title="Instagram" target="_blank">
+                <i class="ph-fill ph-instagram-logo"></i>
+            </a>
+            <a href="https://lin.ee/C0rBsdX" class="sv-float-btn sv-float-btn--line" title="LINE" target="_blank">
+                <i class="ph-fill ph-chat-circle-dots"></i>
+            </a>
+        </div>
+        <button class="sv-float-toggle" onclick="document.getElementById('floatSns').classList.toggle('open')">
+            <i class="ph ph-plus"></i>
+        </button>
+    </div>
+
+    <script>
+    document.addEventListener('click', function(e) {
+        var ls = document.getElementById('langSelector');
+        if (ls && !ls.contains(e.target)) ls.classList.remove('open');
+    });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

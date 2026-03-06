@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마일뷰치과의원 | SmileView Dental Clinic</title>
+
+    <!-- Fonts: Pretendard & Playfair Display (for English Titles) -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- B&A Dark Theme Override -->
+    <style>
+        /* ===== BEFORE & AFTER DARK THEME ===== */
+        #bna {
+            background: #1a1714 !important;
+            padding: 100px 0 80px !important;
+            position: relative;
+        }
+        #bna::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(177,130,71,0.3), transparent);
+        }
+
+        /* Title */
+        #bna .bna-title {
+            font-family: var(--font-serif);
+            font-size: 3.5rem;
+            color: #c4a984 !important;
+            margin-bottom: 12px;
+            letter-spacing: -1px;
+        }
+
+        /* Subtitle */
+        #bna .bna-sub {
+            color: rgba(255,255,255,0.85) !important;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        /* Description */
+        #bna .bna-desc {
+            color: rgba(255,255,255,0.45) !important;
+            font-size: 0.95rem;
+            margin-bottom: 40px;
+        }
+
+        /* Tab Buttons Container */
+        #bna .bna-tabs-center {
+            display: inline-flex;
+            gap: 10px;
+            margin-bottom: 50px;
+            padding: 6px;
+            border-radius: 50px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        #bna .tab-btn-center {
+            border: none !important;
+            background: transparent !important;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.4) !important;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        #bna .tab-btn-center:hover {
+            color: rgba(255,255,255,0.7) !important;
+        }
+        #bna .tab-btn-center.active {
+            background: rgba(196,169,132,0.15) !important;
+            color: #c4a984 !important;
+            box-shadow: 0 4px 12px rgba(177,130,71,0.15) !important;
+            font-weight: 700;
+            border: 1px solid rgba(196,169,132,0.25) !important;
+        }
+
+        /* Slide Items - Laminate-style Dark Card */
+        #bna .bna-slide-item {
+            border: 1px solid rgba(255,255,255,0.08) !important;
+            border-radius: 20px !important;
+            background: #252017 !important;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4) !important;
+            overflow: hidden;
+            position: relative;
+        }
+        #bna .bna-slide-item::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 20px;
+            pointer-events: none;
+            background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.35) 100%);
+            z-index: 1;
+        }
+
+        /* CASE Number Badge */
+        #bna .bna-case-num {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: rgba(0,0,0,0.55);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: rgba(255,255,255,0.85);
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 6px 16px;
+            border-radius: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+            z-index: 3;
+            letter-spacing: 1.5px;
+            font-family: var(--font-serif);
+        }
+
+        /* Slide Labels */
+        #bna .slide-label {
+            position: absolute;
+            bottom: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.55);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: rgba(255,255,255,0.85);
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 8px 22px;
+            border-radius: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+            z-index: 3;
+            letter-spacing: 0.5px;
+        }
+        #bna .slide-label.after {
+            background: rgba(177,130,71,0.85) !important;
+            color: #fff !important;
+            border-color: rgba(196,169,132,0.5) !important;
+        }
+
+        /* Navigation Area with Counter */
+        #bna .bna-nav-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 40px;
+        }
+        #bna .bna-counter {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.7);
+            letter-spacing: 2px;
+            min-width: 80px;
+            text-align: center;
+        }
+        #bna .bna-counter .current {
+            color: #c4a984;
+            font-weight: 700;
+        }
+
+        /* Navigation Arrows - Dark Theme */
+        #bna .bna-nav-btn {
+            position: static !important;
+            transform: none !important;
+            background: rgba(26,23,20,0.8) !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+            color: rgba(255,255,255,0.6) !important;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            opacity: 0.85 !important;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #bna .bna-nav-btn:hover {
+            background: #b18247 !important;
+            color: #fff !important;
+            border-color: #b18247 !important;
+            opacity: 1 !important;
+            box-shadow: 0 8px 24px rgba(177,130,71,0.35) !important;
+        }
+    </style>
+
+    <!-- Mod 10/12: Dark Theme Unification + Contact Redesign -->
+    <style>
+        /* ===== REVIEW SECTION - DARK THEME ===== */
+        .review-section {
+            background: #1c1915 !important;
+        }
+        .review-title {
+            color: #c4a984 !important;
+        }
+        .review-sub {
+            color: #fff !important;
+        }
+        .review-desc {
+            color: rgba(255,255,255,0.5) !important;
+        }
+        .review-btn-arrow {
+            border-color: #c4a984 !important;
+            color: #c4a984 !important;
+        }
+        .review-btn-arrow:hover {
+            background: #c4a984 !important;
+            color: #fff !important;
+        }
+        .review-card {
+            background: rgba(255,255,255,0.03) !important;
+            border: 1px solid rgba(255,255,255,0.06) !important;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
+        }
+        .review-card:hover {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5) !important;
+            transform: translateY(-10px);
+        }
+        .r-stars {
+            color: #c4a984 !important;
+        }
+        .r-cat {
+            color: #b18247 !important;
+        }
+        .r-title {
+            color: #fff !important;
+        }
+        .r-text {
+            color: rgba(255,255,255,0.5) !important;
+        }
+
+        /* ===== INDOOR SPACES SECTION - DARK THEME ===== */
+        #indoor-spaces {
+            background: radial-gradient(ellipse at 50% 100%, rgba(177,130,71,0.03) 0%, transparent 50%), #1e1b16 !important;
+        }
+        .indoor-title {
+            color: #fff !important;
+        }
+        .indoor-sub {
+            color: rgba(255,255,255,0.5) !important;
+        }
+        .indoor-tab {
+            border-color: rgba(255,255,255,0.15) !important;
+            color: rgba(255,255,255,0.5) !important;
+        }
+        .indoor-tab:hover {
+            border-color: #c4a984 !important;
+            color: #c4a984 !important;
+        }
+        .indoor-tab.active {
+            background: #c4a984 !important;
+            color: #fff !important;
+            border-color: #c4a984 !important;
+        }
+        .indoor-counter {
+            color: rgba(255,255,255,0.6) !important;
+        }
+        #indoor-cursor {
+            background: rgba(196,169,132,0.9) !important;
+        }
+        .i-float-btn {
+            background: rgba(255,255,255,0.08) !important;
+            color: #fff !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+        }
+        .i-float-btn:hover {
+            background: #c4a984 !important;
+            border-color: #c4a984 !important;
+        }
+        .i-float-btn.up {
+            background: rgba(255,255,255,0.05) !important;
+            color: rgba(255,255,255,0.6) !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+        }
+        .i-float-btn.up:hover {
+            background: #c4a984 !important;
+            color: #fff !important;
+            border-color: #c4a984 !important;
+        }
+
+        /* ===== CONTACT SECTION - DARK THEME (Mod 10) ===== */
+        .contact-section {
+            background: #1a1714 !important;
+            color: #fff !important;
+        }
+        .contact-title h2 {
+            color: #fff !important;
+        }
+        .info-group h3 {
+            color: #fff !important;
+        }
+        .sub-info {
+            color: rgba(255,255,255,0.5) !important;
+        }
+        .desc-info {
+            color: rgba(255,255,255,0.4) !important;
+        }
+        .hours-table {
+            color: rgba(255,255,255,0.7) !important;
+        }
+        .h-row {
+            border-bottom-color: rgba(255,255,255,0.08) !important;
+        }
+        .h-label {
+            color: #c4a984 !important;
+        }
+        .h-time {
+            color: rgba(255,255,255,0.6) !important;
+        }
+        .holiday-notice {
+            color: rgba(255,255,255,0.35) !important;
+        }
+        .contact-map {
+            background: #111 !important;
+            border-radius: 12px !important;
+            overflow: hidden;
+        }
+
+        /* LINE Button */
+        .line-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 36px;
+            background: #06c755;
+            color: #fff;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 20px rgba(6,199,85,0.3);
+        }
+        .line-btn i {
+            font-size: 1.4rem;
+        }
+        .line-btn:hover {
+            background: #05b34c;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(6,199,85,0.4);
+        }
+
+        /* ===== SHORTS SECTION - DARK THEME ===== */
+        #shorts {
+            background: radial-gradient(ellipse at 50% 0%, rgba(177,130,71,0.04) 0%, transparent 60%), #050505 !important;
+        }
+        .shorts-header h2 {
+            color: #fff !important;
+        }
+        .shorts-header p {
+            color: rgba(255,255,255,0.5) !important;
+        }
+
+        /* ===== YOUTUBE/TV SECTION - DARK THEME ===== */
+        #youtube {
+            background: linear-gradient(180deg, #1a1714 0%, #12100d 100%) !important;
+        }
+        .yt-title {
+            color: #fff !important;
+        }
+        .yt-sub {
+            color: #b18247 !important;
+        }
+        .yt-desc {
+            color: rgba(255,255,255,0.5) !important;
+        }
+        .btn-yt-view {
+            background: rgba(255,255,255,0.06) !important;
+            color: rgba(255,255,255,0.7) !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+        }
+        .btn-yt-view:hover {
+            background: #b18247 !important;
+            color: #fff !important;
+            border-color: #b18247 !important;
+        }
+        .yt-arrow {
+            background: rgba(255,255,255,0.06) !important;
+            color: rgba(255,255,255,0.6) !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+        }
+        .yt-arrow:hover {
+            background: #b18247 !important;
+            color: #fff !important;
+        }
+        .yt-video-title { color: rgba(255,255,255,0.85) !important; }
+        .yt-video-desc { color: rgba(255,255,255,0.4) !important; }
+    </style>
+</head>
+
+<body class="loading">
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-logo">SMILEVIEW</div>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">SMILEVIEW</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="introduction.html">병원소개</a></li>
+                    <li><a href="invisalign.html">인비절라인</a></li>
+                    <li><a href="ortho.html">치아교정</a></li>
+                    <li><a href="whitening.html">치아미백</a></li>
+                    <li><a href="laminate.html">원데이 라미네이트</a></li>
+                    <li><a href="implant.html">수면 임플란트</a></li>
+                    <li><a href="prosthetics.html">보철치료</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="lang-selector" id="langSelector">
+                    <span class="lang-icon"><i class="ph ph-globe"></i></span>
+                    <button class="lang-current" onclick="document.getElementById('langSelector').classList.toggle('open')">KO</button>
+                    <div class="lang-dropdown">
+                        <a href="#" class="active">한국어 (KO)</a>
+                        <a href="index_tw.html">繁體中文 (TW)</a>
+                        <a href="index_jp.html">日本語 (JP)</a>
+                    </div>
+                </div>
+                <a href="#" class="btn-reserve">예약하기</a>
+                <div class="mobile-menu-btn"><i class="ph ph-list"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-inner">
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="introduction.html">병원소개</a></li>
+                    <li><a href="invisalign.html">인비절라인</a></li>
+                    <li><a href="ortho.html">치아교정</a></li>
+                    <li><a href="whitening.html">치아미백</a></li>
+                    <li><a href="laminate.html">원데이 라미네이트</a></li>
+                    <li><a href="implant.html">수면 임플란트</a></li>
+                    <li><a href="prosthetics.html">보철치료</a></li>
+                </ul>
+            </nav>
+            <a href="https://naver.me/xoBKVJA6" class="mobile-reserve-btn" target="_blank">온라인 예약</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- 1. HERO -->
+        <section class="scene-container" id="hero">
+            <div class="sticky-wrapper">
+                <div class="hero-bg">
+                    <video src="images/main/file.mp4" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;"></video>
+                    <div class="overlay"></div>
+                </div>
+                <div class="hero-content">
+                    <h2 class="animate-text" style="font-family:var(--font-serif);font-size:72px;font-weight:400;letter-spacing:8px;">PREMIUM DENTAL CLINIC</h2>
+                    <p class="hero-desc" style="font-size:22px;font-weight:300;letter-spacing:3px;">당신의 미소를 디자인하는 곳, 스마일뷰치과</p>
+                </div>
+                <div class="scroll-indicator">
+                    <span>SCROLL</span>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. PHILOSOPHY (Redesigned 3-Col Layout) -->
+        <section id="philosophy" class="sticky-container">
+            <div class="sticky-inner">
+
+                <!-- SCENE 1 (Intro) -->
+                <div class="scene scene-1 active" style="background-image:url('images/main/philosophy_bg.jpg');background-size:cover;background-position:center;position:relative;">
+                    <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:1;"></div>
+                    <div class="text-center" style="position:relative;z-index:2;">
+                        <span class="label" style="font-family:var(--font-serif);font-size:1.1rem;font-weight:400;letter-spacing:6px;text-transform:uppercase;color:rgba(255,255,255,0.7);">PHILOSOPHY</span>
+                        <h2 style="font-family:'Pretendard',sans-serif;font-weight:300;letter-spacing:-1px;font-size:3.5rem;">본연의 아름다움을<br>연구합니다</h2>
+                    </div>
+                </div>
+
+                <!-- SCENE 2 (Laminate - Smile Design) -->
+                <div class="scene scene-2">
+                    <div class="three-col-layout">
+                        <!-- Col 1: Title -->
+                        <div class="col-title">
+                            <h2 class="serif-title">Smile Design</h2>
+                            <p class="kr-sub">당신의 미소, 0.2mm에서 시작됩니다.</p>
+                        </div>
+                        <!-- Col 2: Image -->
+                        <div class="col-img">
+                            <img src="images/main/라미네이트.jpg" alt="Laminate">
+                        </div>
+                        <!-- Col 3: Desc -->
+                        <div class="col-desc">
+                            <span class="big-num">01</span>
+                            <div class="desc-text-group">
+                                <p>치아 한 알의 각도, 곡선, 색상까지. 스마일뷰는 단순히 씌우는 것이 아닌, 얼굴과 입술의 조화까지 계산한 스마일 디자인을 설계합니다. E MAX 라미네이트로 당일 완성되는 아름다움, 최소 삭제로 지키는 치아 건강. 웃을 때 비로소 완성되는 얼굴, 그 시작은 정밀한 디자인입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCENE 3 (Implant - Precision & Comfort) -->
+                <div class="scene scene-3">
+                    <div class="three-col-layout">
+                        <!-- Col 1: Title -->
+                        <div class="col-title">
+                            <h2 class="serif-title">Precision & Comfort</h2>
+                            <p class="kr-sub">정밀함 위에 세우는, 흔들리지 않는 자신감.</p>
+                        </div>
+                        <!-- Col 2: Image -->
+                        <div class="col-img">
+                            <img src="images/main/임플란트.jpg" alt="Implant">
+                        </div>
+                        <!-- Col 3: Desc -->
+                        <div class="col-desc">
+                            <span class="big-num">02</span>
+                            <div class="desc-text-group">
+                                <p>임플란트는 심는 것이 아닌, 설계하는 것입니다. 3D 네비게이션으로 신경과 골조직을 0.1mm 단위까지 분석하고, 수면 마취로 두려움 없이 편안하게. 스마일뷰는 하루의 시술로 오래가는 결과를 만듭니다. 단단한 기초 위에 세워진 임플란트만이 10년, 20년을 함께합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCENE 4 (Invisalign - Invisible Change) -->
+                <div class="scene scene-4">
+                    <div class="three-col-layout">
+                        <!-- Col 1: Title -->
+                        <div class="col-title">
+                            <h2 class="serif-title">Invisible Change</h2>
+                            <p class="kr-sub">보이지 않는 교정, 눈에 띄는 변화.</p>
+                        </div>
+                        <!-- Col 2: Image -->
+                        <div class="col-img">
+                            <img src="images/main/인비절라인.png" alt="Invisalign">
+                        </div>
+                        <!-- Col 3: Desc -->
+                        <div class="col-desc">
+                            <span class="big-num">03</span>
+                            <div class="desc-text-group">
+                                <p>교정은 참는 것이 아닌, 누리는 것이어야 합니다. 스마일뷰는 인비절라인 인증의가 직접 설계하는 맞춤 교정으로 일상을 멈추지 않으면서도 가지런한 치아를 만들어갑니다. 투명하게 시작해서, 자신감으로 완성되는 미소. 교정의 끝이 아닌, 새로운 미소의 시작입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- 3. SOLUTIONS -->
+        <section id="solutions" class="scene-container horizontal-scroll-section">
+            <div class="sticky-wrapper-horizontal">
+                <div class="horizontal-track">
+                    <div class="h-item title-card">
+                        <h2>SMILEVIEW<br>SOLUTIONS</h2>
+                        <p style="font-family:var(--font-serif);font-weight:400;letter-spacing:2px;">스마일뷰만의 특별한 진료 시스템</p>
+                    </div>
+                    <!-- Items... -->
+                    <a href="invisalign.html" class="h-item treatment-item">
+                        <div class="t-img"><img
+                                src="images/main/sub4-invis-img.jpg"
+                                alt="Invisalign" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="t-info"><span class="num">01</span>
+                            <h4>INVISALIGN</h4>
+                            <p>티 나지 않는 투명교정 인비절라인</p>
+                        </div>
+                    </a>
+                    <a href="ortho.html" class="h-item treatment-item">
+                        <div class="t-img"><img
+                                src="images/ortho/hero_bg.jpg"
+                                alt="Orthodontics" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="t-info"><span class="num">02</span>
+                            <h4>ORTHODONTICS</h4>
+                            <p>가지런한 치아 배열을 위한 교정</p>
+                        </div>
+                    </a>
+                    <a href="laminate.html" class="h-item treatment-item">
+                        <div class="t-img"><img
+                                src="images/main/unnamed.jpg"
+                                alt="Laminate" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="t-info"><span class="num">03</span>
+                            <h4>ONEDAY LAMINATE</h4>
+                            <p>하루 만에 완성하는 원데이 라미네이트</p>
+                        </div>
+                    </a>
+                    <a href="implant.html" class="h-item treatment-item">
+                        <div class="t-img"><img
+                                src="images/implant/a31e8777230fb.jpg"
+                                alt="Sleep Implant" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="t-info"><span class="num">04</span>
+                            <h4>SLEEP IMPLANT</h4>
+                            <p>자고 일어난 듯 편안한 수면 임플란트</p>
+                        </div>
+                    </a>
+                    <a href="whitening.html" class="h-item treatment-item">
+                        <div class="t-img"><img
+                                src="images/whitening/unnamed (2).jpg"
+                                alt="Whitening" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="t-info"><span class="num">05</span>
+                            <h4>WHITENING</h4>
+                            <p>밝고 환한 미소를 위한 치아미백</p>
+                        </div>
+                    </a>
+                    <a href="prosthetics.html" class="h-item treatment-item">
+                        <div class="t-img"><img
+                                src="images/prosthodontics/탭(11)_A_충치치료.avif"
+                                alt="Prosthetics" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="t-info"><span class="num">06</span>
+                            <h4>PROSTHETICS</h4>
+                            <p>치아 기능을 완벽하게 회복하는 보철치료</p>
+                        </div>
+                    </a>
+                </div>
+                <span class="scroll-progress-label">Scroll</span>
+                <div class="scroll-progress"><div class="scroll-progress-bar"></div></div>
+            </div>
+        </section>
+
+        <!-- 4. BEFORE & AFTER (Sidebar Layout) -->
+        <!-- 4. BEFORE & AFTER (Centered Layout) -->
+        <section id="bna">
+            <div class="bna-container-center">
+                <div class="bna-header">
+                    <h2 class="bna-title">Before After</h2>
+                    <span class="bna-sub">전후변화로 보는 스마일뷰</span>
+                    <p class="bna-desc">실제로 치료를 받은 다양한 케이스를 확인해 보세요.</p>
+
+                    <div class="bna-tabs-center">
+                        <button class="tab-btn-center active" data-tab="whitening">#치아미백</button>
+                        <button class="tab-btn-center" data-tab="laminate">#라미네이트</button>
+                        <button class="tab-btn-center" data-tab="orthodontics">#치아교정</button>
+                        <button class="tab-btn-center" data-tab="implant">#임플란트</button>
+                    </div>
+                </div>
+
+                <div class="bna-slider-area">
+                    <div class="bna-track-center" id="bna-track">
+                        <!-- JS Generated (Max 4 Items) -->
+                    </div>
+                </div>
+
+                <!-- B&A Navigation with Counter (Laminate Style) -->
+                <div class="bna-nav-area">
+                    <button class="bna-nav-btn bna-prev"><i class="ph ph-arrow-left"></i></button>
+                    <div class="bna-counter"><span class="current" id="bna-current">01</span> / <span id="bna-total">01</span></div>
+                    <button class="bna-nav-btn bna-next"><i class="ph ph-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SHORTS & TV SECTIONS -->
+                    <section id="shorts">
+                        <div class="shorts-container">
+                            <div class="shorts-header section-fade-up">
+                                <h2>SMILEVIEW SHORTS</h2>
+                                <p>짧고 빠르게 만나는 스마일뷰 리얼 스토리</p>
+                            </div>
+                            <button class="shorts-nav prev" id="shorts-prev">&#8249;</button>
+                            <button class="shorts-nav next" id="shorts-next">&#8250;</button>
+                            <div class="shorts-slider-wrapper">
+                                <div class="shorts-track" id="shorts-track">
+                                    <a href="https://www.youtube.com/shorts/LtdDA2K3qCQ" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/LtdDA2K3qCQ/maxresdefault.jpg" alt="치아미백, 1회당 비용이 얼마인가요?">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">치아미백, 1회당 비용이 얼마인가요?</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/-bAKxITxseA" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/-bAKxITxseA/maxresdefault.jpg" alt="벌어진 앞니 치료, 교정하려면 너무 긴데... 라미네이트 해도 될까요?">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">벌어진 앞니 치료, 교정하려면 너무 긴데... 라미네이트 해도 될까요?</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/hbG-miMH61Y" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/hbG-miMH61Y/maxresdefault.jpg" alt="미쳤다...돌출입 비수술 교정으로 인상 200% 달라짐">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">미쳤다...돌출입 비수술 교정으로 인상 200% 달라짐</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/A4Jku94jRCI" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/A4Jku94jRCI/maxresdefault.jpg" alt="절대 이 3가지를 모른 채 치아 교정하지 마세요!">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">절대 이 3가지를 모른 채 치아 교정하지 마세요!</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/BKzTbAnUJ4U" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/BKzTbAnUJ4U/maxresdefault.jpg" alt="치료하기 귀찮은데 그냥 싹 다 임플란트하면 안 되나요?">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">치료하기 귀찮은데 그냥 싹 다 임플란트하면 안 되나요?</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/_ki9JCnxyig" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/_ki9JCnxyig/maxresdefault.jpg" alt="라미네이트 제작과정 한번에 보기">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">라미네이트 제작과정 한번에 보기</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/xk5RBs8iGXc" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/xk5RBs8iGXc/maxresdefault.jpg" alt="벌어진 입 비수술 교정 6개월 후 얼굴 변화">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">벌어진 입 비수술 교정 6개월 후 얼굴 변화</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/CvDHhHGZJMM" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/CvDHhHGZJMM/maxresdefault.jpg" alt="3년 내내 전교 1등, 치과의사 만든 그 공부법!">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">3년 내내 전교 1등, 치과의사 만든 그 공부법!</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/ryQ6W-EhOfs" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/ryQ6W-EhOfs/maxresdefault.jpg" alt="라미네이트한 후에 꼭 피해야 하는 음식">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">라미네이트한 후에 꼭 피해야 하는 음식</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/ZQyRCqLIQcI" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/ZQyRCqLIQcI/maxresdefault.jpg" alt="얼굴 비대칭 만드는 제일 안 좋은 습관 1가지">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">얼굴 비대칭 만드는 제일 안 좋은 습관 1가지</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="youtube">
+                        <div class="youtube-container">
+                            <div class="yt-header section-fade-up">
+                                <h2 class="yt-title">SMILEVIEW TV</h2>
+                                <p class="yt-desc">보다 더 재밌고 유익한 컨텐츠를 스마일뷰티비에서 만나보세요!</p>
+                            </div>
+
+                            <button class="yt-arrow yt-prev" id="yt-prev"><i class="ph ph-caret-left"></i></button>
+                            <button class="yt-arrow yt-next" id="yt-next"><i class="ph ph-caret-right"></i></button>
+                            <div class="yt-slider-wrapper">
+                                <div class="yt-track-container">
+                                    <div class="yt-track" id="yt-track">
+                                        <a href="https://www.youtube.com/watch?v=AdQL0XVHJZE" class="yt-card" target="_blank" rel="noopener">
+                                            <div class="yt-thumb">
+                                                <img src="https://img.youtube.com/vi/AdQL0XVHJZE/maxresdefault.jpg" alt="치아교정 기간을 단축시키려면 이 행동은 절대 하지 마세요">
+                                                <div class="yt-play"><i class="ph ph-play-fill"></i></div>
+                                            </div>
+                                            <h4 class="yt-video-title">치아교정 기간을 단축시키려면 이 행동은 절대 하지 마세요</h4>
+                                            <p class="yt-video-desc">스마일뷰TV</p>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=VnLFRk_Y91g" class="yt-card" target="_blank" rel="noopener">
+                                            <div class="yt-thumb">
+                                                <img src="https://img.youtube.com/vi/VnLFRk_Y91g/maxresdefault.jpg" alt="누런 이, 하얀 치아 만드는 방법!">
+                                                <div class="yt-play"><i class="ph ph-play-fill"></i></div>
+                                            </div>
+                                            <h4 class="yt-video-title">누런 이, 하얀 치아 만드는 방법!</h4>
+                                            <p class="yt-video-desc">스마일뷰TV</p>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=BUpgxlPpxmc" class="yt-card" target="_blank" rel="noopener">
+                                            <div class="yt-thumb">
+                                                <img src="https://img.youtube.com/vi/BUpgxlPpxmc/maxresdefault.jpg" alt="스케일링이 이렇게 중요한 거였어?">
+                                                <div class="yt-play"><i class="ph ph-play-fill"></i></div>
+                                            </div>
+                                            <h4 class="yt-video-title">스케일링이 이렇게 중요한 거였어?</h4>
+                                            <p class="yt-video-desc">스마일뷰TV</p>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=GPcPvUwx6iE" class="yt-card" target="_blank" rel="noopener">
+                                            <div class="yt-thumb">
+                                                <img src="https://img.youtube.com/vi/GPcPvUwx6iE/maxresdefault.jpg" alt="입냄새 이것만 알면..">
+                                                <div class="yt-play"><i class="ph ph-play-fill"></i></div>
+                                            </div>
+                                            <h4 class="yt-video-title">입냄새 이것만 알면..</h4>
+                                            <p class="yt-video-desc">스마일뷰TV</p>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=PTXRpcQWQB4" class="yt-card" target="_blank" rel="noopener">
+                                            <div class="yt-thumb">
+                                                <img src="https://img.youtube.com/vi/PTXRpcQWQB4/maxresdefault.jpg" alt="딱 1년 치아 교정 과정 결과!">
+                                                <div class="yt-play"><i class="ph ph-play-fill"></i></div>
+                                            </div>
+                                            <h4 class="yt-video-title">딱 1년 치아 교정 과정 결과!</h4>
+                                            <p class="yt-video-desc">스마일뷰TV</p>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=9l1sXuwXlaE" class="yt-card" target="_blank" rel="noopener">
+                                            <div class="yt-thumb">
+                                                <img src="https://img.youtube.com/vi/9l1sXuwXlaE/maxresdefault.jpg" alt="입냄새가 나는 5가지 이유">
+                                                <div class="yt-play"><i class="ph ph-play-fill"></i></div>
+                                            </div>
+                                            <h4 class="yt-video-title">입냄새가 나는 5가지 이유</h4>
+                                            <p class="yt-video-desc">스마일뷰TV</p>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=x7c-WRdN28M" class="yt-card" target="_blank" rel="noopener">
+                                            <div class="yt-thumb">
+                                                <img src="https://img.youtube.com/vi/x7c-WRdN28M/maxresdefault.jpg" alt="교정장치 고민 그만! 내 치아에 맞는 교정장치 딱 정해드림">
+                                                <div class="yt-play"><i class="ph ph-play-fill"></i></div>
+                                            </div>
+                                            <h4 class="yt-video-title">교정장치 고민 그만! 내 치아에 맞는 교정장치 딱 정해드림</h4>
+                                            <p class="yt-video-desc">스마일뷰TV</p>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=7uEvk0DVVqY" class="yt-card" target="_blank" rel="noopener">
+                                            <div class="yt-thumb">
+                                                <img src="https://img.youtube.com/vi/7uEvk0DVVqY/maxresdefault.jpg" alt="주목! 치아를 망치는 습관 9가지">
+                                                <div class="yt-play"><i class="ph ph-play-fill"></i></div>
+                                            </div>
+                                            <h4 class="yt-video-title">주목! 치아를 망치는 습관 9가지</h4>
+                                            <p class="yt-video-desc">스마일뷰TV</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+        <!-- 6.5. BEST REVIEW (New Section) -->
+        <section id="reviews" class="review-section">
+            <div class="container review-container">
+                <!-- Left: Sticky Title -->
+                <div class="review-left">
+                    <div class="review-sticky-content">
+                        <h2 class="review-title">Best Review</h2>
+                        <h3 class="review-sub">솔직한 방문자 후기</h3>
+                        <p class="review-desc">스마일뷰를 방문한 고객분들이 직접 써주신<br>다양한 후기를 만나보세요.</p>
+                        <a href="https://maps.app.goo.gl/Nq7mQ7KwZ56zLt7h9" target="_blank" rel="noopener" class="review-btn-arrow"><i class="ph ph-arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right: Horizontal Scroll -->
+                <div class="review-right">
+                    <div class="review-track">
+                        <!-- Card 1 -->
+                        <div class="review-card">
+                            <div class="r-stars">★★★★★ 5.0</div>
+                            <span class="r-cat">스마일랩핑</span>
+                            <h4 class="r-title">스마일랩핑 감사합니다</h4>
+                            <p class="r-text">라미네이트만 알고 병원 예약했는데 선생님들이 천천히 스마일메이트 스마일랩핑 스마일컴플리트가 있다고 설명해주셨어요 무삭재
+                                라미네이트를...</p>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="review-card">
+                            <div class="r-stars">★★★★★ 5.0</div>
+                            <span class="r-cat">앞니교정</span>
+                            <h4 class="r-title">토끼이빨이었는데 컴플렉스 없앴네요</h4>
+                            <p class="r-text">웃을 때 하흰 정면 앞니 두 개가 토끼이빨이라 매일 어색하게 다녔는데 상담받으니 앞니만 부분교정도 된다고 하더라고요 덕분에 요즘엔
+                                마음편히 웃어요</p>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="review-card">
+                            <div class="r-stars">★★★★★ 5.0</div>
+                            <span class="r-cat">인비절라인</span>
+                            <h4 class="r-title">고민하다가 인비절라인 시작했는데 좋네요</h4>
+                            <p class="r-text">늦게 교정 시작하려고 하니 좀 걱정돼서 여기저기 상담 받고,나름대로 알아보고 스마일뷰 방문해서, 인비절라인 시작했어요. 티도 안나고
+                                투명하니 더 좋은것 같네요.</p>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="review-card">
+                            <div class="r-stars">★★★★★ 5.0</div>
+                            <span class="r-cat">임플란트</span>
+                            <h4 class="r-title">임플란트 안아프게 잘해주셨어요</h4>
+                            <p class="r-text">치과 공포증이 심해서 미루고 미루다 갔는데 수면 임플란트로 하니 자고 일어난 사이에 끝나있어서 너무 좋았습니다.</p>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="review-card">
+                            <div class="r-stars">★★★★★ 5.0</div>
+                            <span class="r-cat">치아미백</span>
+                            <h4 class="r-title">하얀 이로 자신감 찾았어요</h4>
+                            <p class="r-text">커피를 좋아해서 이가 많이 누랬는데, 원데이 미백 받고 나서 정말 하얗게 변했어요. 웃을 때마다 자신감이 생깁니다.</p>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="review-card">
+                            <div class="r-stars">★★★★★ 5.0</div>
+                            <span class="r-cat">충치치료</span>
+                            <h4 class="r-title">안 아픈 치료 감사합니다</h4>
+                            <p class="r-text">마취 주사부터 치료 끝날 때까지 정말 하나도 안 아팠어요. 친절하게 설명해주셔서 안심하고 치료 받았습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6.5. Best Review (Existing) -->
+        <!-- ... -->
+
+        <!-- 7. INDOOR SPACES (New - Apgujeong Indoor Spaces) -->
+        <section id="indoor-spaces">
+            <div class="indoor-container">
+                <div class="indoor-header section-fade-up">
+                    <h2 class="indoor-title">SMILE VIEW</h2>
+                    <p class="indoor-sub">강남 스마일뷰치과 공간을 둘러보세요</p>
+                    <p class="indoor-intro">편안함과 청결함을 갖춘 프리미엄 공간에서 최상의 진료를 경험하세요</p>
+                </div>
+
+                <!-- Carousel Area -->
+                <div class="indoor-carousel-wrapper">
+                    <div class="indoor-track" id="indoor-track">
+                        <!-- JS Generated -->
+                    </div>
+                </div>
+
+                <!-- NEW: Counter -->
+                <div class="indoor-counter">
+                    <span id="i-current">1</span> / <span id="i-total">4</span>
+                </div>
+            </div>
+
+            <!-- Custom Cursor -->
+            <div id="indoor-cursor">SMILE VIEW</div>
+
+        </section>
+
+        <!-- 7. LOCATION -->
+        <!-- 7. LOCATION (Contact Us Design) -->
+        <section id="location" class="contact-section">
+            <div class="container">
+                <div class="contact-title">
+                    <h2>CONTACT US</h2>
+                </div>
+                <div class="contact-wrapper">
+                    <!-- Left: Info -->
+                    <div class="contact-info">
+                        <div class="info-group">
+                            <h3>서울 강남구 테헤란로 123</h3>
+                            <p class="sub-info">지하철 2호선 강남역 1번 출구 앞 스마일뷰 빌딩 3-4층</p>
+                            <p class="desc-info">진료에 대한 문의 및 예약 상담을 위해 항시 대기하여 친절히 상담해 드립니다.</p>
+                        </div>
+
+                        <div class="phone-group">
+                            <a href="#" class="line-btn" target="_blank">
+                                <i class="ph-fill ph-chat-circle-dots"></i>
+                                LINE으로 상담하기
+                            </a>
+                        </div>
+
+                        <div class="hours-table">
+                            <div class="h-row">
+                                <span class="h-label">월 | 금</span>
+                                <span class="h-time">am 10:00 - pm 07:00</span>
+                            </div>
+                            <div class="h-row">
+                                <span class="h-label">화 | 수 | 목</span>
+                                <span class="h-time">am 10:00 - pm 09:00 (야간진료)</span>
+                            </div>
+                            <div class="h-row">
+                                <span class="h-label">토요일</span>
+                                <span class="h-time">am 10:00 - pm 04:00</span>
+                            </div>
+                            <div class="h-row">
+                                <span class="h-label">점심시간</span>
+                                <span class="h-time">pm 01:00 - pm 02:00</span>
+                            </div>
+                        </div>
+                        <p class="holiday-notice">일요일, 공휴일은 휴진입니다.</p>
+                    </div>
+
+                    <!-- Right: Map -->
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3643770337854!2d127.02761031530945!3d37.50020897980949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1598c35d979%3A0x6295383556485806!2z6rCV64Ko7Jet!5e0!3m2!1sko!2skr!4v1620000000000!5m2!1sko!2skr"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-title-section">
+        </div>
+        <footer>
+            <div class="footer-inner">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <h2>SMILEVIEW<span>.</span></h2>
+                        <p>투명하고 편리한 교정부터 심미 치료까지,<br>스마일뷰치과가 당신의 아름다운 미소를 만들어 드립니다.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Location</h3>
+                        <ul>
+                            <li>서울특별시 강남구 봉은사로 107, 15층</li>
+                            <li style="font-size:12px;color:rgba(255,255,255,0.25);">(논현동 201 16번지 15층)</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="tel:02-552-7528">TEL. 02-552-7528</a></li>
+                            <li>FAX. 02-552-7527</li>
+                            <li><span class="footer-label">대표자</span>김한결</li>
+                            <li><span class="footer-label">사업자번호</span>699-29-00572</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Hours</h3>
+                        <ul class="footer-hours">
+                            <li><span class="day">평일</span><span>AM 10:00 - PM 06:30</span></li>
+                            <li class="note">점심시간 PM 01:00 - PM 02:00</li>
+                            <li><span class="day">토요일</span><span>AM 10:00 - PM 03:00</span></li>
+                            <li class="note">점심시간 없이 진료</li>
+                            <li><span class="day">일요일</span><span>AM 10:00 - PM 04:00</span></li>
+                            <li class="closed"><span class="day">휴진</span><span>공휴일</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 SMILEVIEW DENTAL CLINIC. All Rights Reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <!-- Floating SNS -->
+    <div class="sv-float-sns" id="floatSns">
+        <div class="sv-float-sns-list">
+            <a href="https://www.instagram.com/smileview_dental/" class="sv-float-btn sv-float-btn--instagram" title="Instagram" target="_blank">
+                <i class="ph-fill ph-instagram-logo"></i>
+            </a>
+            <a href="#" class="sv-float-btn sv-float-btn--line" title="LINE" target="_blank">
+                <i class="ph-fill ph-chat-circle-dots"></i>
+            </a>
+        </div>
+        <button class="sv-float-toggle" onclick="document.getElementById('floatSns').classList.toggle('open')">
+            <i class="ph ph-plus"></i>
+        </button>
+    </div>
+
+    <script>
+    document.addEventListener('click', function(e) {
+        var ls = document.getElementById('langSelector');
+        if (ls && !ls.contains(e.target)) ls.classList.remove('open');
+    });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

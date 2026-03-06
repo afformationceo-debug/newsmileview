@@ -1,0 +1,19 @@
+=== introduction ===
+L357:                         <h2 class="sv-clinic-title">SMILEVIEW牙醫診所의<br><span>Smile Design</span></h2>
+L444:                         <div class="sv-doctor-img"><img src="images/introduction/金韓結 院長님.avif" alt="金韓結 院長" style="width:100%;heig
+L479:                         <div class="sv-doctor-img"><img src="images/introduction/李昭妍 牙科醫生님_edited (2).avif" alt="李昭妍 牙科醫生" style="
+L512:                 <p class="sv-slogan-text">투명하고 편리한 교정부터 심미 치료까지,<br>스마일뷰치과가 당신의 아름다운 미소를 만들어 드립니다.</p>
+L581:                     <p>투명하고 편리한 교정부터 심미 치료까지,<br>스마일뷰치과가 당신의 아름다운 미소를 만들어 드립니다.</p>
+L595:                         <li><span class="footer-label">대표자</span>金韓結</li>
+L596:                         <li><span class="footer-label">사업자번호</span>699-29-00572</li>
+=== index ===
+L499:                         <h2 style="font-family:'Pretendard',sans-serif;font-weight:300;letter-spacing:-1px;font-size:3.5rem;">본연의 
+L513:                             <img src="images/main/라미네이트.jpg" alt="Laminate">
+L630:                                 src="images/prosthodontics/탭(11)_A_蛀牙治療.avif"
+L842:                         <p class="review-desc">스마일뷰를 방문한 고객분들이 직접 써주신<br>다양한 후기를 만나보세요.</p>
+L992:                         <p>투명하고 편리한 교정부터 심미 치료까지,<br>스마일뷰치과가 당신의 아름다운 미소를 만들어 드립니다.</p>
+L1006:                             <li><span class="footer-label">대표자</span>김한결</li>
+L1007:                             <li><span class="footer-label">사업자번호</span>699-29-00572</li>
+L1013:                             <li><span class="day">평일</span><span>AM 10:00 - PM 06:30</span></li>
+L1017:                             <li><span class="day">일요일</span><span>AM 10:00 - PM 04:00</span></li>
+L1018:                             <li class="closed"><span class="day">휴진</span><span>공휴일</span></li>

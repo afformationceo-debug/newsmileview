@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMILEVIEWデンタルクリニック | SmileView Dental Clinic</title>
+
+    <!-- Fonts: Pretendard & Playfair Display (for English Titles) -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- B&A Dark Theme Override -->
+    <style>
+        /* ===== BEFORE & AFTER DARK THEME ===== */
+        #bna {
+            background: #1a1714 !important;
+            padding: 100px 0 80px !important;
+            position: relative;
+        }
+        #bna::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(177,130,71,0.3), transparent);
+        }
+
+        /* Title */
+        #bna .bna-title {
+            font-family: var(--font-serif);
+            font-size: 3.5rem;
+            color: #c4a984 !important;
+            margin-bottom: 12px;
+            letter-spacing: -1px;
+        }
+
+        /* Subtitle */
+        #bna .bna-sub {
+            color: rgba(255,255,255,0.85) !important;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        /* Description */
+        #bna .bna-desc {
+            color: rgba(255,255,255,0.45) !important;
+            font-size: 0.95rem;
+            margin-bottom: 40px;
+        }
+
+        /* Tab Buttons Container */
+        #bna .bna-tabs-center {
+            display: inline-flex;
+            gap: 10px;
+            margin-bottom: 50px;
+            padding: 6px;
+            border-radius: 50px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        #bna .tab-btn-center {
+            border: none !important;
+            background: transparent !important;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.4) !important;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        #bna .tab-btn-center:hover {
+            color: rgba(255,255,255,0.7) !important;
+        }
+        #bna .tab-btn-center.active {
+            background: rgba(196,169,132,0.15) !important;
+            color: #c4a984 !important;
+            box-shadow: 0 4px 12px rgba(177,130,71,0.15) !important;
+            font-weight: 700;
+            border: 1px solid rgba(196,169,132,0.25) !important;
+        }
+
+        /* Slide Items - Laminate-style Dark Card */
+        #bna .bna-slide-item {
+            border: 1px solid rgba(255,255,255,0.08) !important;
+            border-radius: 20px !important;
+            background: #252017 !important;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4) !important;
+            overflow: hidden;
+            position: relative;
+        }
+        #bna .bna-slide-item::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 20px;
+            pointer-events: none;
+            background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.35) 100%);
+            z-index: 1;
+        }
+
+        /* CASE Number Badge */
+        #bna .bna-case-num {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: rgba(0,0,0,0.55);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: rgba(255,255,255,0.85);
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 6px 16px;
+            border-radius: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+            z-index: 3;
+            letter-spacing: 1.5px;
+            font-family: var(--font-serif);
+        }
+
+        /* Slide Labels */
+        #bna .slide-label {
+            position: absolute;
+            bottom: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.55);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: rgba(255,255,255,0.85);
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 8px 22px;
+            border-radius: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+            z-index: 3;
+            letter-spacing: 0.5px;
+        }
+        #bna .slide-label.after {
+            background: rgba(177,130,71,0.85) !important;
+            color: #fff !important;
+            border-color: rgba(196,169,132,0.5) !important;
+        }
+
+        /* Navigation Area with Counter */
+        #bna .bna-nav-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 40px;
+        }
+        #bna .bna-counter {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.7);
+            letter-spacing: 2px;
+            min-width: 80px;
+            text-align: center;
+        }
+        #bna .bna-counter .current {
+            color: #c4a984;
+            font-weight: 700;
+        }
+
+        /* Navigation Arrows - Dark Theme */
+        #bna .bna-nav-btn {
+            position: static !important;
+            transform: none !important;
+            background: rgba(26,23,20,0.8) !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+            color: rgba(255,255,255,0.6) !important;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            opacity: 0.85 !important;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #bna .bna-nav-btn:hover {
+            background: #b18247 !important;
+            color: #fff !important;
+            border-color: #b18247 !important;
+            opacity: 1 !important;
+            box-shadow: 0 8px 24px rgba(177,130,71,0.35) !important;
+        }
+    </style>
+
+    <!-- Mod 10/12: Dark Theme Unification + Contact Redesign -->
+    <style>
+        /* ===== REVIEW SECTION - DARK THEME ===== */
+        .review-section {
+            background: #1c1915 !important;
+        }
+        .review-title {
+            color: #c4a984 !important;
+        }
+        .review-sub {
+            color: #fff !important;
+        }
+        .review-desc {
+            color: rgba(255,255,255,0.5) !important;
+        }
+        .review-btn-arrow {
+            border-color: #c4a984 !important;
+            color: #c4a984 !important;
+        }
+        .review-btn-arrow:hover {
+            background: #c4a984 !important;
+            color: #fff !important;
+        }
+        .review-card {
+            background: rgba(255,255,255,0.03) !important;
+            border: 1px solid rgba(255,255,255,0.06) !important;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
+        }
+        .review-card:hover {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5) !important;
+            transform: translateY(-10px);
+        }
+        .r-stars {
+            color: #c4a984 !important;
+        }
+        .r-cat {
+            color: #b18247 !important;
+        }
+        .r-title {
+            color: #fff !important;
+        }
+        .r-text {
+            color: rgba(255,255,255,0.5) !important;
+        }
+
+        /* ===== INDOOR SPACES SECTION - DARK THEME ===== */
+        #indoor-spaces {
+            background: radial-gradient(ellipse at 50% 100%, rgba(177,130,71,0.03) 0%, transparent 50%), #1e1b16 !important;
+        }
+        .indoor-title {
+            color: #fff !important;
+        }
+        .indoor-sub {
+            color: rgba(255,255,255,0.5) !important;
+        }
+        .indoor-tab {
+            border-color: rgba(255,255,255,0.15) !important;
+            color: rgba(255,255,255,0.5) !important;
+        }
+        .indoor-tab:hover {
+            border-color: #c4a984 !important;
+            color: #c4a984 !important;
+        }
+        .indoor-tab.active {
+            background: #c4a984 !important;
+            color: #fff !important;
+            border-color: #c4a984 !important;
+        }
+        .indoor-counter {
+            color: rgba(255,255,255,0.6) !important;
+        }
+        #indoor-cursor {
+            background: rgba(196,169,132,0.9) !important;
+        }
+        .i-float-btn {
+            background: rgba(255,255,255,0.08) !important;
+            color: #fff !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+        }
+        .i-float-btn:hover {
+            background: #c4a984 !important;
+            border-color: #c4a984 !important;
+        }
+        .i-float-btn.up {
+            background: rgba(255,255,255,0.05) !important;
+            color: rgba(255,255,255,0.6) !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+        }
+        .i-float-btn.up:hover {
+            background: #c4a984 !important;
+            color: #fff !important;
+            border-color: #c4a984 !important;
+        }
+
+        /* ===== CONTACT SECTION - DARK THEME (Mod 10) ===== */
+        .contact-section {
+            background: #1a1714 !important;
+            color: #fff !important;
+        }
+        .contact-title h2 {
+            color: #fff !important;
+        }
+        .info-group h3 {
+            color: #fff !important;
+        }
+        .sub-info {
+            color: rgba(255,255,255,0.5) !important;
+        }
+        .desc-info {
+            color: rgba(255,255,255,0.4) !important;
+        }
+        .hours-table {
+            color: rgba(255,255,255,0.7) !important;
+        }
+        .h-row {
+            border-bottom-color: rgba(255,255,255,0.08) !important;
+        }
+        .h-label {
+            color: #c4a984 !important;
+        }
+        .h-time {
+            color: rgba(255,255,255,0.6) !important;
+        }
+        .holiday-notice {
+            color: rgba(255,255,255,0.35) !important;
+        }
+        .contact-map {
+            background: #111 !important;
+            border-radius: 12px !important;
+            overflow: hidden;
+        }
+
+        /* LINE Button */
+        .line-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 36px;
+            background: #06c755;
+            color: #fff;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 20px rgba(6,199,85,0.3);
+        }
+        .line-btn i {
+            font-size: 1.4rem;
+        }
+        .line-btn:hover {
+            background: #05b34c;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(6,199,85,0.4);
+        }
+
+        /* ===== SHORTS SECTION - DARK THEME ===== */
+        #shorts {
+            background: radial-gradient(ellipse at 50% 0%, rgba(177,130,71,0.04) 0%, transparent 60%), #050505 !important;
+        }
+        .shorts-header h2 {
+            color: #fff !important;
+        }
+        .shorts-header p {
+            color: rgba(255,255,255,0.5) !important;
+        }
+
+        /* ===== YOUTUBE/TV SECTION - DARK THEME ===== */
+        #youtube {
+            background: linear-gradient(180deg, #1a1714 0%, #12100d 100%) !important;
+        }
+        .yt-title {
+            color: #fff !important;
+        }
+        .yt-sub {
+            color: #b18247 !important;
+        }
+        .yt-desc {
+            color: rgba(255,255,255,0.5) !important;
+        }
+        .btn-yt-view {
+            background: rgba(255,255,255,0.06) !important;
+            color: rgba(255,255,255,0.7) !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+        }
+        .btn-yt-view:hover {
+            background: #b18247 !important;
+            color: #fff !important;
+            border-color: #b18247 !important;
+        }
+        .yt-arrow {
+            background: rgba(255,255,255,0.06) !important;
+            color: rgba(255,255,255,0.6) !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+        }
+        .yt-arrow:hover {
+            background: #b18247 !important;
+            color: #fff !important;
+        }
+        .yt-video-title { color: rgba(255,255,255,0.85) !important; }
+        .yt-video-desc { color: rgba(255,255,255,0.4) !important; }
+    </style>
+</head>
+
+<body class="loading">
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-logo">SMILEVIEW</div>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index_jp.html">SMILEVIEW</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="introduction_jp.html">クリニック紹介</a></li>
+                    <li><a href="invisalign_jp.html">インビザライン</a></li>
+                    <li><a href="ortho_jp.html">ORTHODONTICS</a></li>
+                    <li><a href="whitening_jp.html">ホワイトニング</a></li>
+                    <li><a href="laminate_jp.html">ワンデーラミネート</a></li>
+                    <li><a href="implant_jp.html">静脈内鎮静インプラント</a></li>
+                    <li><a href="prosthetics_jp.html">PROSTHETICS</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="lang-selector" id="langSelector">
+                    <span class="lang-icon"><i class="ph ph-globe"></i></span>
+                    <button type="button" class="lang-current" onclick="this.closest('.lang-selector').classList.toggle('open')">JP</button>
+                    <div class="lang-dropdown">
+                        <a href="index.html">韓国語 (KO)</a>
+                        <a href="index_tw.html">繁體中文 (TW)</a>
+                        <a href="#" class="active">日本語 (JP)</a>
+                    </div>
+                </div>
+                <a href="https://lin.ee/C0rBsdX" class="btn-reserve">予約する</a>
+                <div class="mobile-menu-btn"><i class="ph ph-list"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-inner">
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="introduction_jp.html">クリニック紹介</a></li>
+                    <li><a href="invisalign_jp.html">インビザライン</a></li>
+                    <li><a href="ortho_jp.html">ORTHODONTICS</a></li>
+                    <li><a href="whitening_jp.html">ホワイトニング</a></li>
+                    <li><a href="laminate_jp.html">ワンデーラミネート</a></li>
+                    <li><a href="implant_jp.html">静脈内鎮静インプラント</a></li>
+                    <li><a href="prosthetics_jp.html">PROSTHETICS</a></li>
+                </ul>
+            </nav>
+            <a href="https://naver.me/xoBKVJA6" class="mobile-reserve-btn" target="_blank">オンライン予約</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- 1. HERO -->
+        <section class="scene-container" id="hero">
+            <div class="sticky-wrapper">
+                <div class="hero-bg">
+                    <video src="images/main/file.mp4" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;"></video>
+                    <div class="overlay"></div>
+                </div>
+                <div class="hero-content">
+                    <h2 class="animate-text" style="font-family:var(--font-serif);font-size:72px;font-weight:400;letter-spacing:8px;">PREMIUM DENTAL CLINIC</h2>
+                    <p class="hero-desc" style="font-size:22px;font-weight:300;letter-spacing:3px;">あなたの笑顔をデザインする場所、SMILEVIEWデンタルクリニック</p>
+                </div>
+                <div class="scroll-indicator">
+                    <span>SCROLL</span>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. PHILOSOPHY (Redesigned 3-Col Layout) -->
+        <section id="philosophy" class="sticky-container">
+            <div class="sticky-inner">
+
+                <!-- SCENE 1 (Intro) -->
+                <div class="scene scene-1 active" style="background-image:url('images/main/philosophy_bg.jpg');background-size:cover;background-position:center;position:relative;">
+                    <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:1;"></div>
+                    <div class="text-center" style="position:relative;z-index:2;">
+                        <span class="label" style="font-family:var(--font-serif);font-size:1.1rem;font-weight:400;letter-spacing:6px;text-transform:uppercase;color:rgba(255,255,255,0.7);">PHILOSOPHY</span>
+                        <h2 style="font-family:'Pretendard',sans-serif;font-weight:300;letter-spacing:-1px;font-size:3.5rem;">本来の美しさを<br>追求します</h2>
+                    </div>
+                </div>
+
+                <!-- SCENE 2 (Laminate - Smile Design) -->
+                <div class="scene scene-2">
+                    <div class="three-col-layout">
+                        <!-- Col 1: Title -->
+                        <div class="col-title">
+                            <h2 class="serif-title">Smile Design</h2>
+                            <p class="kr-sub">あなたの笑顔は、0.2mmから始まります。</p>
+                        </div>
+                        <!-- Col 2: Image -->
+                        <div class="col-img">
+                            <img src="images/main/라미네이트.jpg" alt="Laminate">
+                        </div>
+                        <!-- Col 3: Desc -->
+                        <div class="col-desc">
+                            <span class="big-num">01</span>
+                            <div class="desc-text-group">
+                                <p>歯一本一本の角度・曲線・色調まで。SMILEVIEWは単に被せるだけでなく、顔全体と口元の調和を考慮した Smile Design を設計します。E MAX ラミネートで当日中に仕上がる美しさ、最小限の切削で守る歯の健康。笑ったときにこそ完成する顔、その出発点は精密なデザインです。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCENE 3 (Implant - Precision & Comfort) -->
+                <div class="scene scene-3">
+                    <div class="three-col-layout">
+                        <!-- Col 1: Title -->
+                        <div class="col-title">
+                            <h2 class="serif-title">Precision & Comfort</h2>
+                            <p class="kr-sub">Precision & Comfort — 揺るぎない自信を、精密さの上に。</p>
+                        </div>
+                        <!-- Col 2: Image -->
+                        <div class="col-img">
+                            <img src="images/main/インプラント.jpg" alt="Implant">
+                        </div>
+                        <!-- Col 3: Desc -->
+                        <div class="col-desc">
+                            <span class="big-num">02</span>
+                            <div class="desc-text-group">
+                                <p>インプラントは埋め込むものではなく、設計するものです。3Dナビゲーションで神経・骨組織を0.1mm単位まで解析し、静脈内鎮静麻酔で不安なく快適に。SMILEVIEWは一日の処置で長続きする結果を生み出します。しっかりとした基盤に支えられたインプラントだけが、10年、20年と共に歩めます。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCENE 4 (Invisalign - Invisible Change) -->
+                <div class="scene scene-4">
+                    <div class="three-col-layout">
+                        <!-- Col 1: Title -->
+                        <div class="col-title">
+                            <h2 class="serif-title">Invisible Change</h2>
+                            <p class="kr-sub">Invisible Change — 目立たない矯正、歴然とした変化。</p>
+                        </div>
+                        <!-- Col 2: Image -->
+                        <div class="col-img">
+                            <img src="images/main/INVISALIGN.png" alt="Invisalign">
+                        </div>
+                        <!-- Col 3: Desc -->
+                        <div class="col-desc">
+                            <span class="big-num">03</span>
+                            <div class="desc-text-group">
+                                <p>矯正は我慢するものではなく、楽しむものであるべきです。SMILEVIEWでは、INVISALIGN認定医が直接設計するカスタム矯正で、日常生活を止めることなく整った歯並びを実現します。透明なアライナーで始まり、自信に満ちた笑顔で完成する。矯正の終わりではなく、新しい笑顔の始まりです。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- 3. SOLUTIONS -->
+        <section id="solutions" class="scene-container horizontal-scroll-section">
+            <div class="sticky-wrapper-horizontal">
+                <div class="horizontal-track">
+                    <div class="h-item title-card">
+                        <h2>SMILEVIEW<br>SOLUTIONS</h2>
+                        <p style="font-family:var(--font-serif);font-weight:400;letter-spacing:2px;">SMILEVIEWだけの特別な診療システム</p>
+                    </div>
+                    <!-- Items... -->
+                    <a href="invisalign_jp.html" class="h-item treatment-item">
+                        <div class="t-img"><img
+                                src="images/main/sub4-invis-img.jpg"
+                                alt="Invisalign" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="t-info"><span class="num">01</span>
+                            <h4>INVISALIGN</h4>
+                            <p>目立たない透明矯正 INVISALIGN</p>
+                        </div>
+                    </a>
+                    <a href="ortho_jp.html" class="h-item treatment-item">
+                        <div class="t-img"><img
+                                src="images/ortho/hero_bg.jpg"
+                                alt="Orthodontics" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="t-info"><span class="num">02</span>
+                            <h4>ORTHODONTICS</h4>
+                            <p>整った歯並びのための ORTHODONTICS</p>
+                        </div>
+                    </a>
+                    <a href="laminate_jp.html" class="h-item treatment-item">
+                        <div class="t-img"><img
+                                src="images/main/unnamed.jpg"
+                                alt="Laminate" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="t-info"><span class="num">03</span>
+                            <h4>ONEDAY LAMINATE</h4>
+                            <p>一日で仕上げるワンデーラミネート</p>
+                        </div>
+                    </a>
+                    <a href="implant_jp.html" class="h-item treatment-item">
+                        <div class="t-img"><img
+                                src="images/implant/a31e8777230fb.jpg"
+                                alt="Sleep Implant" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="t-info"><span class="num">04</span>
+                            <h4>SLEEP IMPLANT</h4>
+                            <p>眠っている間に終わる静脈内鎮静インプラント</p>
+                        </div>
+                    </a>
+                    <a href="whitening_jp.html" class="h-item treatment-item">
+                        <div class="t-img"><img
+                                src="images/whitening/unnamed (2).jpg"
+                                alt="Whitening" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="t-info"><span class="num">05</span>
+                            <h4>WHITENING</h4>
+                            <p>明るく輝く笑顔のためのホワイトニング</p>
+                        </div>
+                    </a>
+                    <a href="prosthetics_jp.html" class="h-item treatment-item">
+                        <div class="t-img"><img
+                                src="images/prosthodontics/탭(11)_A_むし歯治療.avif"
+                                alt="Prosthetics" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="t-info"><span class="num">06</span>
+                            <h4>PROSTHETICS</h4>
+                            <p>歯の機能を完全に回復する PROSTHETICS</p>
+                        </div>
+                    </a>
+                </div>
+                <span class="scroll-progress-label">Scroll</span>
+                <div class="scroll-progress"><div class="scroll-progress-bar"></div></div>
+            </div>
+        </section>
+
+        <!-- 4. BEFORE & AFTER (Sidebar Layout) -->
+        <!-- 4. BEFORE & AFTER (Centered Layout) -->
+        <section id="bna">
+            <div class="bna-container-center">
+                <div class="bna-header">
+                    <h2 class="bna-title">Before After</h2>
+                    <span class="bna-sub">BEFORE & AFTER で見る SMILEVIEW</span>
+                    <p class="bna-desc">実際に治療を受けたさまざまな症例をご覧ください。</p>
+
+                    <div class="bna-tabs-center">
+                        <button class="tab-btn-center active" data-tab="whitening">#ホワイトニング</button>
+                        <button class="tab-btn-center" data-tab="laminate">#ラミネート</button>
+                        <button class="tab-btn-center" data-tab="orthodontics">#歯列矯正</button>
+                        <button class="tab-btn-center" data-tab="implant">#インプラント</button>
+                    </div>
+                </div>
+
+                <div class="bna-slider-area">
+                    <div class="bna-track-center" id="bna-track">
+                        <!-- JS Generated (Max 4 Items) -->
+                    </div>
+                </div>
+
+                <!-- B&A Navigation with Counter (Laminate Style) -->
+                <div class="bna-nav-area">
+                    <button class="bna-nav-btn bna-prev"><i class="ph ph-arrow-left"></i></button>
+                    <div class="bna-counter"><span class="current" id="bna-current">01</span> / <span id="bna-total">01</span></div>
+                    <button class="bna-nav-btn bna-next"><i class="ph ph-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SHORTS & TV SECTIONS -->
+                    <section id="shorts">
+                        <div class="shorts-container">
+                            <div class="shorts-header section-fade-up">
+                                <h2>SMILEVIEW SHORTS</h2>
+                                <p>短くテンポよく届ける SMILEVIEW SHORTS リアルストーリー</p>
+                            </div>
+                            <button class="shorts-nav prev" id="shorts-prev">&#8249;</button>
+                            <button class="shorts-nav next" id="shorts-next">&#8250;</button>
+                            <div class="shorts-slider-wrapper">
+                                <div class="shorts-track" id="shorts-track">
+                                    <a href="https://www.youtube.com/shorts/LtdDA2K3qCQ" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/LtdDA2K3qCQ/maxresdefault.jpg" alt="ホワイトニング、1回あたりの費用はいくらですか？">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">ホワイトニング、1回あたりの費用はいくらですか？</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/-bAKxITxseA" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/-bAKxITxseA/maxresdefault.jpg" alt="すき間のある前歯の治療、矯正は時間がかかりすぎる…ラミネートでもいいですか？">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">すき間のある前歯の治療、矯正は時間がかかりすぎる…ラミネートでもいいですか？</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/hbG-miMH61Y" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/hbG-miMH61Y/maxresdefault.jpg" alt="すごい…口元の突出、非外科矯正で印象が200%変わった">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">すごい…口元の突出、非外科矯正で印象が200%変わった</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/A4Jku94jRCI" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/A4Jku94jRCI/maxresdefault.jpg" alt="この3つを知らずに歯列矯正を始めないでください！">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">この3つを知らずに歯列矯正を始めないでください！</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/BKzTbAnUJ4U" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/BKzTbAnUJ4U/maxresdefault.jpg" alt="治療が面倒だから全部インプラントにしてもいいですか？">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">治療が面倒だから全部インプラントにしてもいいですか？</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/_ki9JCnxyig" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/_ki9JCnxyig/maxresdefault.jpg" alt="ラミネート製作工程を一気に見る">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">ラミネート製作工程を一気に見る</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/xk5RBs8iGXc" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/xk5RBs8iGXc/maxresdefault.jpg" alt="口元の突出、非外科矯正6ヶ月後の顔の変化">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">口元の突出、非外科矯正6ヶ月後の顔の変化</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/CvDHhHGZJMM" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/CvDHhHGZJMM/maxresdefault.jpg" alt="3年連続学年トップ、歯科医師を生んだあの勉強法！">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">3年連続学年トップ、歯科医師を生んだあの勉強法！</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/ryQ6W-EhOfs" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/ryQ6W-EhOfs/maxresdefault.jpg" alt="ラミネート後に必ず避けるべき食べ物">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">ラミネート後に必ず避けるべき食べ物</div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/shorts/ZQyRCqLIQcI" class="shorts-card" target="_blank" rel="noopener">
+                                        <img src="https://img.youtube.com/vi/ZQyRCqLIQcI/maxresdefault.jpg" alt="顔の非対称を招く最も悪い習慣1つ">
+                                        <div class="shorts-overlay">
+                                            <div class="shorts-title">顔の非対称を招く最も悪い習慣1つ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="youtube">
+                        <div class="youtube-container">
+                            <div class="yt-header section-fade-up">
+                                <h2 class="yt-title">SMILEVIEW TV</h2>
+                                <p class="yt-desc">さらに楽しく役立つコンテンツを SMILEVIEW TV でご覧ください！</p>
+                            </div>
+
+                            <button class="yt-arrow yt-prev" id="yt-prev"><i class="ph ph-caret-left"></i></button>
+                            <button class="yt-arrow yt-next" id="yt-next"><i class="ph ph-caret-right"></i></button>
+                            <div class="yt-slider-wrapper">
+                                <div class="yt-track-container">
+                                    <div class="yt-track" id="yt-track">
+                                        <a href="https://www.youtube.com/watch?v=AdQL0XVHJZE" class="yt-card" target="_blank" rel="noopener">
+                                            <div class="yt-thumb">
+                                                <img src="https://img.youtube.com/vi/AdQL0XVHJZE/maxresdefault.jpg" alt="歯列矯正の期間を短縮したいなら、この行動は絶対にしないでください">
+                                                <div class="yt-play"><i class="ph ph-play-fill"></i></div>
+                                            </div>
+                                            <h4 class="yt-video-title">歯列矯正の期間を短縮したいなら、この行動は絶対にしないでください</h4>
+                                            <p class="yt-video-desc">SMILEVIEW TV</p>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=VnLFRk_Y91g" class="yt-card" target="_blank" rel="noopener">
+                                            <div class="yt-thumb">
+                                                <img src="https://img.youtube.com/vi/VnLFRk_Y91g/maxresdefault.jpg" alt="黄ばんだ歯を白くする方法！">
+                                                <div class="yt-play"><i class="ph ph-play-fill"></i></div>
+                                            </div>
+                                            <h4 class="yt-video-title">黄ばんだ歯を白くする方法！</h4>
+                                            <p class="yt-video-desc">SMILEVIEW TV</p>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=BUpgxlPpxmc" class="yt-card" target="_blank" rel="noopener">
+                                            <div class="yt-thumb">
+                                                <img src="https://img.youtube.com/vi/BUpgxlPpxmc/maxresdefault.jpg" alt="スケーリング（歯石除去）ってこんなに大事だったの？">
+                                                <div class="yt-play"><i class="ph ph-play-fill"></i></div>
+                                            </div>
+                                            <h4 class="yt-video-title">スケーリング（歯石除去）ってこんなに大事だったの？</h4>
+                                            <p class="yt-video-desc">SMILEVIEW TV</p>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=GPcPvUwx6iE" class="yt-card" target="_blank" rel="noopener">
+                                            <div class="yt-thumb">
+                                                <img src="https://img.youtube.com/vi/GPcPvUwx6iE/maxresdefault.jpg" alt="口臭はこれさえ知っていれば..">
+                                                <div class="yt-play"><i class="ph ph-play-fill"></i></div>
+                                            </div>
+                                            <h4 class="yt-video-title">口臭はこれさえ知っていれば..</h4>
+                                            <p class="yt-video-desc">SMILEVIEW TV</p>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=PTXRpcQWQB4" class="yt-card" target="_blank" rel="noopener">
+                                            <div class="yt-thumb">
+                                                <img src="https://img.youtube.com/vi/PTXRpcQWQB4/maxresdefault.jpg" alt="ちょうど1年間の歯列矯正の経過と結果！">
+                                                <div class="yt-play"><i class="ph ph-play-fill"></i></div>
+                                            </div>
+                                            <h4 class="yt-video-title">ちょうど1年間の歯列矯正の経過と結果！</h4>
+                                            <p class="yt-video-desc">SMILEVIEW TV</p>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=9l1sXuwXlaE" class="yt-card" target="_blank" rel="noopener">
+                                            <div class="yt-thumb">
+                                                <img src="https://img.youtube.com/vi/9l1sXuwXlaE/maxresdefault.jpg" alt="口臭の原因5つ">
+                                                <div class="yt-play"><i class="ph ph-play-fill"></i></div>
+                                            </div>
+                                            <h4 class="yt-video-title">口臭の原因5つ</h4>
+                                            <p class="yt-video-desc">SMILEVIEW TV</p>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=x7c-WRdN28M" class="yt-card" target="_blank" rel="noopener">
+                                            <div class="yt-thumb">
+                                                <img src="https://img.youtube.com/vi/x7c-WRdN28M/maxresdefault.jpg" alt="矯正装置の悩みはもう終わり！あなたの歯に合った矯正装置をズバリ決めます">
+                                                <div class="yt-play"><i class="ph ph-play-fill"></i></div>
+                                            </div>
+                                            <h4 class="yt-video-title">矯正装置の悩みはもう終わり！あなたの歯に合った矯正装置をズバリ決めます</h4>
+                                            <p class="yt-video-desc">SMILEVIEW TV</p>
+                                        </a>
+                                        <a href="https://www.youtube.com/watch?v=7uEvk0DVVqY" class="yt-card" target="_blank" rel="noopener">
+                                            <div class="yt-thumb">
+                                                <img src="https://img.youtube.com/vi/7uEvk0DVVqY/maxresdefault.jpg" alt="要注意！歯をダメにする習慣9選">
+                                                <div class="yt-play"><i class="ph ph-play-fill"></i></div>
+                                            </div>
+                                            <h4 class="yt-video-title">要注意！歯をダメにする習慣9選</h4>
+                                            <p class="yt-video-desc">SMILEVIEW TV</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+        <!-- 6.5. BEST REVIEW (New Section) -->
+        <section id="reviews" class="review-section">
+            <div class="container review-container">
+                <!-- Left: Sticky Title -->
+                <div class="review-left">
+                    <div class="review-sticky-content">
+                        <h2 class="review-title">Best Review</h2>
+                        <h3 class="review-sub">リアルな来院者レビュー</h3>
+                        <p class="review-desc">SMILEVIEWにご来院いただいた患者様が直接書いてくださった<br>さまざまなレビューをご覧ください。</p>
+                        <a href="https://maps.app.goo.gl/Nq7mQ7KwZ56zLt7h9" target="_blank" rel="noopener" class="review-btn-arrow"><i class="ph ph-arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right: Horizontal Scroll -->
+                <div class="review-right">
+                    <div class="review-track">
+                        <!-- Card 1 -->
+                        <div class="review-card">
+                            <div class="r-stars">★★★★★ 5.0</div>
+                            <span class="r-cat">スマイルラッピング</span>
+                            <h4 class="r-title">スマイルラッピング、ありがとうございました</h4>
+                            <p class="r-text">ラミネートのことしか知らずに予約したのですが、先生方がスマイルメイト・スマイルラッピング・スマイルコンプリートという選択肢をひとつひとつ丁寧に説明してくださいました。無切削で
+                                ラミネートを...</p>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="review-card">
+                            <div class="r-stars">★★★★★ 5.0</div>
+                            <span class="r-cat">前歯矯正</span>
+                            <h4 class="r-title">出っ歯がコンプレックスだったのに解消できました</h4>
+                            <p class="r-text">笑うと前歯2本が出っ歯で毎日気になっていたのですが、カウンセリングで前歯だけ部分矯正もできると教えていただきました。おかげで最近は
+                                気兼ねなく笑えています</p>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="review-card">
+                            <div class="r-stars">★★★★★ 5.0</div>
+                            <span class="r-cat">INVISALIGN</span>
+                            <h4 class="r-title">迷った末にINVISALIGNを始めましたが、よかったです</h4>
+                            <p class="r-text">遅めに矯正を始めるのが少し不安で、あちこちでカウンセリングを受け、自分でも調べた上でSMILEVIEWを訪れINVISALIGNを始めました。目立たないですし
+                                透明なのがさらに気に入っています。</p>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="review-card">
+                            <div class="r-stars">★★★★★ 5.0</div>
+                            <span class="r-cat">インプラント</span>
+                            <h4 class="r-title">インプラント、痛みなくしっかりやっていただけました</h4>
+                            <p class="r-text">歯科恐怖症がひどくてずっと先延ばしにしていましたが、静脈内鎮静インプラントで眠っている間にすべて終わっていて本当によかったです。</p>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="review-card">
+                            <div class="r-stars">★★★★★ 5.0</div>
+                            <span class="r-cat">ホワイトニング</span>
+                            <h4 class="r-title">白い歯で自信が戻りました</h4>
+                            <p class="r-text">コーヒーが好きで歯がかなり黄ばんでいましたが、ワンデーホワイトニングを受けたら本当に白くなりました。笑うたびに自信が湧いてきます。</p>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="review-card">
+                            <div class="r-stars">★★★★★ 5.0</div>
+                            <span class="r-cat">むし歯治療</span>
+                            <h4 class="r-title">痛みのない治療、ありがとうございました</h4>
+                            <p class="r-text">麻酔注射から治療終了まで、本当に全く痛みがありませんでした。丁寧に説明していただき、安心して治療を受けることができました。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6.5. Best Review (Existing) -->
+        <!-- ... -->
+
+        <!-- 7. INDOOR SPACES (New - Apgujeong Indoor Spaces) -->
+        <section id="indoor-spaces">
+            <div class="indoor-container">
+                <div class="indoor-header section-fade-up">
+                    <h2 class="indoor-title">SMILE VIEW</h2>
+                    <p class="indoor-sub">江南 SMILEVIEWデンタルクリニックの院内をご覧ください</p>
+                    <p class="indoor-intro">快適さと清潔感を兼ね備えた PREMIUM DENTAL CLINIC で、最高の診療をご体験ください</p>
+                </div>
+
+                <!-- Carousel Area -->
+                <div class="indoor-carousel-wrapper">
+                    <div class="indoor-track" id="indoor-track">
+                        <!-- JS Generated -->
+                    </div>
+                </div>
+
+                <!-- NEW: Counter -->
+                <div class="indoor-counter">
+                    <span id="i-current">1</span> / <span id="i-total">4</span>
+                </div>
+            </div>
+
+            <!-- Custom Cursor -->
+            <div id="indoor-cursor">SMILE VIEW</div>
+
+        </section>
+
+        <!-- 7. LOCATION -->
+        <!-- 7. LOCATION (Contact Us Design) -->
+        <section id="location" class="contact-section">
+            <div class="container">
+                <div class="contact-title">
+                    <h2>CONTACT US</h2>
+                </div>
+                <div class="contact-wrapper">
+                    <!-- Left: Info -->
+                    <div class="contact-info">
+                        <div class="info-group">
+                            <h3>ソウル 江南区 テヘラン路 123</h3>
+                            <p class="sub-info">地下鉄2号線 江南駅 1番出口前 SMILEVIEWビル 3〜4階</p>
+                            <p class="desc-info">診療に関するお問い合わせや予約相談に、いつでも親切に対応いたします。</p>
+                        </div>
+
+                        <div class="phone-group">
+                            <a href="https://lin.ee/C0rBsdX" class="line-btn" target="_blank">
+                                <i class="ph-fill ph-chat-circle-dots"></i>
+                                LINEで相談する
+                            </a>
+                        </div>
+
+                        <div class="hours-table">
+                            <div class="h-row">
+                                <span class="h-label">月 | 金</span>
+                                <span class="h-time">am 10:00 - pm 07:00</span>
+                            </div>
+                            <div class="h-row">
+                                <span class="h-label">火 | 水 | 木</span>
+                                <span class="h-time">am 10:00 - pm 09:00 (夜間診療)</span>
+                            </div>
+                            <div class="h-row">
+                                <span class="h-label">土曜日</span>
+                                <span class="h-time">am 10:00 - pm 04:00</span>
+                            </div>
+                            <div class="h-row">
+                                <span class="h-label">昼休み</span>
+                                <span class="h-time">pm 01:00 - pm 02:00</span>
+                            </div>
+                        </div>
+                        <p class="holiday-notice">日曜日・祝日は休診です。</p>
+                    </div>
+
+                    <!-- Right: Map -->
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3643770337854!2d127.02761031530945!3d37.50020897980949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1598c35d979%3A0x6295383556485806!2z6rCV64Ko7Jet!5e0!3m2!1sko!2skr!4v1620000000000!5m2!1sko!2skr"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-title-section">
+        </div>
+        <footer>
+            <div class="footer-inner">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <h2>SMILEVIEW<span>.</span></h2>
+                        <p>透明で便利な矯正から審美治療まで、<br>SMILEVIEWデンタルクリニックがあなたの美しい笑顔をお作りします。</p>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Location</h3>
+                        <ul>
+                            <li>ソウル特別市 江南区 奉恩寺路 107, 15階</li>
+                            <li style="font-size:12px;color:rgba(255,255,255,0.25);">(論峴洞 201 16番地 15階)</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="tel:02-552-7528">TEL. 02-552-7528</a></li>
+                            <li>FAX. 02-552-7527</li>
+                            <li><span class="footer-label">代表者</span>金韓結</li>
+                            <li><span class="footer-label">事業者番号</span>699-29-00572</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Hours</h3>
+                        <ul class="footer-hours">
+                            <li><span class="day">平日</span><span>AM 10:00 - PM 06:30</span></li>
+                            <li class="note">昼休み PM 01:00 - PM 02:00</li>
+                            <li><span class="day">土曜日</span><span>AM 10:00 - PM 03:00</span></li>
+                            <li class="note">昼休みなし診療</li>
+                            <li><span class="day">日曜日</span><span>AM 10:00 - PM 04:00</span></li>
+                            <li class="closed"><span class="day">休診</span><span>祝日</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 SMILEVIEW DENTAL CLINIC. All Rights Reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <!-- Floating SNS -->
+    <div class="sv-float-sns" id="floatSns">
+        <div class="sv-float-sns-list">
+            <a href="https://www.instagram.com/smileview.dental/" class="sv-float-btn sv-float-btn--instagram" title="Instagram" target="_blank">
+                <i class="ph-fill ph-instagram-logo"></i>
+            </a>
+            <a href="https://lin.ee/C0rBsdX" class="sv-float-btn sv-float-btn--line" title="LINE" target="_blank">
+                <i class="ph-fill ph-chat-circle-dots"></i>
+            </a>
+        </div>
+        <button class="sv-float-toggle" onclick="document.getElementById('floatSns').classList.toggle('open')">
+            <i class="ph ph-plus"></i>
+        </button>
+    </div>
+
+    <script>
+    document.addEventListener('click', function(e) {
+        var ls = document.getElementById('langSelector');
+        if (ls && !ls.contains(e.target)) ls.classList.remove('open');
+    });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

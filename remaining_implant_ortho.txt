@@ -1,0 +1,74 @@
+=== implant ===
+L812:                         <h2>편안한 수면 상태에서<br>진행하는 <span>임플란트</span></h2>
+L813:                         <p>치과 공포증, 통증 걱정 없이 잠든 사이 완성됩니다.<br>마취통증의학과 전문의가 상주하여 안전하게 진행합니다.</p>
+L854:                         <img src="images/implant/탭(8)_임플란트 1.avif" alt="即刻植牙" style="width:100%;height:100%;object-fit:cover;">
+L859:                         <h3>발치 당일,<br><em>即刻植牙</em> 식립</h3>
+L877:                         <img src="images/implant/탭(8)_임플란트 2.avif" alt="導航植牙" style="width:100%;height:100%;object-fit:cover;">
+L882:                         <h3>3D 네비게이션으로<br><em>정밀 식립</em></h3>
+L900:                         <img src="images/implant/탭(8)_임플란트 3.avif" alt="骨移植植牙" style="width:100%;height:100%;object-fit:cover;">
+L905:                         <h3>부족한 뼈를 재건하여<br><em>안정적 식립</em></h3>
+L923:                     <h2 class="lm-imp-vs__title">오스템 임플란트,<br>어떤 점이 다를까?</h2>
+L930:                             <th><span class="lm-imp-vs__rec">RECOMMEND</span><br>오스템 임플란트</th>
+L933:                             <tr><td>제조사 인지도</td><td>다양한 중소 제조사</td><td>세계 4위, 국내 1위 글로벌 기업</td></tr>
+L934:                             <tr><td>임상 데이터</td><td>제한적 임상 데이터</td><td>20년+ 임상 데이터 축적</td></tr>
+L935:                             <tr><td>표면 처리</td><td>일반 표면 처리</td><td>특허 SA 표면 처리 기술</td></tr>
+L936:                             <tr><td>골 유착력</td><td>보통 수준의 골 유착</td><td>우수한 초기 고정력 및 골 유착</td></tr>
+L937:                             <tr><td>호환성</td><td>제한적 보철 호환</td><td>다양한 보철물과 완벽 호환</td></tr>
+L938:                             <tr><td>보증</td><td>제조사별 상이</td><td>정품 인증서 + 평생 보증</td></tr>
+L943:                     <div class="lm-imp-vs__m-card"><div class="lm-imp-vs__m-card-label">一般植牙</div><div class="lm-imp-vs__m-card-ro
+L944:                     <div class="lm-imp-vs__m-card lm-imp-vs__m-card--osstem"><div class="lm-imp-vs__m-card-label">오스템 임플란트</div><d
+L957:                         <h2 class="lm-info-hero-title">睡眠植牙,<br><span>디테일</span>이 다릅니다</h2>
+L968:                         <div class="lm-info-card-val">30~60<small>분</small></div>
+L980:                         <div class="lm-info-card-val">1~2<small>주</small></div>
+L995:                         <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-user-circle-check"></i> 전문의 상주</span
+L1001:                         <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-heartbeat"></i> 생체 모니터링</span><span 
+L1007:                         <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-certificate"></i> 정품 인증</span><span 
+L1013:                         <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-cube"></i> 3D CT</span><span class="
+L1024:                     <h2 class="lm-rec-title">이런 분들에게<br>睡眠植牙를 추천드립니다</h2>
+L1027:                     <div class="lm-rec-card lm-fade"><span class="lm-rec-card-num">01</span><div class="lm-rec-card-icon"><i class
+L1028:                     <div class="lm-rec-card lm-fade lm-fade-delay-1"><span class="lm-rec-card-num">02</span><div class="lm-rec-car
+L1029:                     <div class="lm-rec-card lm-fade lm-fade-delay-2"><span class="lm-rec-card-num">03</span><div class="lm-rec-car
+L1030:                     <div class="lm-rec-card lm-fade lm-fade-delay-1"><span class="lm-rec-card-num">04</span><div class="lm-rec-car
+L1031:                     <div class="lm-rec-card lm-fade lm-fade-delay-2"><span class="lm-rec-card-num">05</span><div class="lm-rec-car
+L1032:                     <div class="lm-rec-card lm-fade lm-fade-delay-3"><span class="lm-rec-card-num">06</span><div class="lm-rec-car
+L1163:                         <p class="lm-faq-left-text">睡眠植牙에 대해<br>자주 묻는 질문을 모았습니다.</p>
+L1173:                                 <span class="lm-faq-a-prefix">A.</span>수면(진정) 마취를 통해 환자가 잠든 상태에서 시술이 진행됩니다. 치과 공포증이 있거나 통증에 민감한 분들
+L1183:                                 <span class="lm-faq-a-prefix">A.</span>적절한 구강 관리와 정기 검진을 받으시면 임플란트는 반영구적으로 사용할 수 있습니다. 일반적으로 10~20
+L1193:                                 <span class="lm-faq-a-prefix">A.</span>치아를 뽑고 잇몸뼈가 아물기를 기다리는 기존 임플란트에 비해 당일即刻植牙는 成功率과 안정성에서 큰 차이를 
+L1203:                                 <span class="lm-faq-a-prefix">A.</span>네, 뼈 이식 임플란트를 통해 가능합니다. 임플란트 식립 부위에 치조골이 부족한 경우 인공 뼈를 이식하여 
+L1222:                     <p>투명하고 편리한 교정부터 심미 치료까지,<br>SMILEVIEW牙醫診所가 당신의 아름다운 미소를 만들어 드립니다.</p>
+L1236:                         <li><span class="footer-label">대표자</span>김한결</li>
+L1237:                         <li><span class="footer-label">사업자번호</span>699-29-00572</li>
+L1243:                         <li><span class="day">평일</span><span>AM 10:00 - PM 06:30</span></li>
+L1245:                         <li><span class="day">토요일</span><span>AM 10:00 - PM 03:00</span></li>
+L1247:                         <li><span class="day">일요일</span><span>AM 10:00 - PM 04:00</span></li>
+L1248:                         <li class="closed"><span class="day">휴진</span><span>공휴일</span></li>
+=== ortho ===
+L1139:                         <h3>수술 먼저, <em>교정은 나중에</em></h3>
+L1149:                         <span class="lm-presurg-badge">Surgery First<small>선수술 우선</small></span>
+L1208:         <!-- ===== SECTION 2: 장점 ===== -->
+L1244:         <!-- ===== SECTION 3: 양악수술 교정 (Tab Design) ===== -->
+L1258:                     <!-- Panel: 주걱턱 -->
+L1277:                                 <h3>아래턱 돌출로 인한<br><em>戽斗矯正</em></h3>
+L1283:                     <!-- Panel: 안면비대칭 -->
+L1302:                                 <h3>좌우 균형을 되찾는<br><em>顏面不對稱矯正</em></h3>
+L1308:                     <!-- Panel: 돌출입 -->
+L1327:                                 <h3>자연스러운 옆모습을 위한<br><em>暴牙矯正</em></h3>
+L1337:         <!-- ===== SECTION 4: 戽斗矯正 상세 ===== -->
+L1362:                         <h3>아래턱 돌출로 인한<br><em>얼굴 불균형 개선</em></h3>
+L1390:         <!-- ===== SECTION 5: 顏面不對稱矯正 상세 ===== -->
+L1401:                         <h3>좌우 균형을 되찾는<br><em>안면 대칭 교정</em></h3>
+L1443:         <!-- ===== SECTION 6: 暴牙矯正 상세 ===== -->
+L1468:                         <h3>자연스러운 옆모습을 위한<br><em>돌출입 개선</em></h3>
+L1511:                             <strong>A.</strong> 術前矯正은 턱수술을 먼저 시행한 뒤 교정 치료를 진행하는 방법입니다. 수술을 통해 골격적 부조화를 먼저 해결하므로 외모 개선이 빠르게 이루어지며, 
+L1521:                             <strong>A.</strong> 양악수술은 골격적 기형을 해결할 수 있는 수술 방법이며, 수술 후 골격의 위치를 올바른 위치로 재조정하면 치아의 맞물림이 변할 수 있습니다. 따라서
+L1531:                             <strong>A.</strong> 戽斗矯正은 아래턱 성장이 과도하거나 위턱 성장이 상대적으로 부족해서 아래턱이 튀어나온 경우에 필요합니다. 臉部顯長而顯得嚴肅或老態的情況, 上下牙齒反咬
+L1541:                             <strong>A.</strong> 일반적으로 전체 교정은 12~24個月, 부분 교정은 3~6개월 정도 소요됩니다. 환자의 치아 상태, 교정 난이도, 사용하는 장치 종류에 따라 기간이
+L1551:                             <strong>A.</strong> 네, 교정 완료 후 유지장치 착용은 매우 중요합니다. 치아는 원래 위치로 돌아가려는 경향이 있기 때문에, 교정 결과를 안정적으로 유지하기 위해 일정
+L1572:                     <p>투명하고 편리한 교정부터 심미 치료까지,<br>SMILEVIEW牙醫診所가 당신의 아름다운 미소를 만들어 드립니다.</p>
+L1586:                         <li><span class="footer-label">대표자</span>김한결</li>
+L1587:                         <li><span class="footer-label">사업자번호</span>699-29-00572</li>
+L1593:                         <li><span class="day">평일</span><span>AM 10:00 - PM 06:30</span></li>
+L1595:                         <li><span class="day">토요일</span><span>AM 10:00 - PM 03:00</span></li>
+L1597:                         <li><span class="day">일요일</span><span>AM 10:00 - PM 04:00</span></li>
+L1598:                         <li class="closed"><span class="day">휴진</span><span>공휴일</span></li>

@@ -1,0 +1,1045 @@
+[
+  {
+    "key": "title_1",
+    "text": "수면 임플란트 | 스마일뷰치과의원",
+    "location": "line:6, tag:title",
+    "context": "title",
+    "translated": "睡眠インプラント | SMILEVIEWデンタルクリニック"
+  },
+  {
+    "key": "text_2_li",
+    "text": "스마일뷰치과",
+    "location": "line:665, tag:li",
+    "context": "text",
+    "translated": "SMILEVIEWデンタルクリニック"
+  },
+  {
+    "key": "text_3_li",
+    "text": "인비절라인",
+    "location": "line:666, tag:li",
+    "context": "text",
+    "translated": "INVISALIGN"
+  },
+  {
+    "key": "text_4_li",
+    "text": "치아교정",
+    "location": "line:667, tag:li",
+    "context": "text",
+    "translated": "歯列矯正"
+  },
+  {
+    "key": "text_5_li",
+    "text": "치아미백",
+    "location": "line:668, tag:li",
+    "context": "text",
+    "translated": "歯のホワイトニング"
+  },
+  {
+    "key": "text_6_li",
+    "text": "원데이 라미네이트",
+    "location": "line:669, tag:li",
+    "context": "text",
+    "translated": "ワンデーラミネートベニア"
+  },
+  {
+    "key": "text_7_li",
+    "text": "수면 임플란트",
+    "location": "line:670, tag:li",
+    "context": "text",
+    "translated": "睡眠インプラント"
+  },
+  {
+    "key": "text_8_li",
+    "text": "보철치료",
+    "location": "line:671, tag:li",
+    "context": "text",
+    "translated": "補綴治療"
+  },
+  {
+    "key": "text_9_a",
+    "text": "한국어 (KO)",
+    "location": "line:679, tag:a",
+    "context": "text",
+    "translated": "韓国語 (KO)"
+  },
+  {
+    "key": "text_10_a",
+    "text": "예약하기",
+    "location": "line:684, tag:a",
+    "context": "text",
+    "translated": "予約する"
+  },
+  {
+    "key": "text_11_li",
+    "text": "병원소개",
+    "location": "line:695, tag:li",
+    "context": "text",
+    "translated": "クリニック紹介"
+  },
+  {
+    "key": "text_12_a",
+    "text": "온라인 예약",
+    "location": "line:704, tag:a",
+    "context": "text",
+    "translated": "オンライン予約"
+  },
+  {
+    "key": "text_13_text",
+    "text": "편안하고 통증 없는 임플란트 치료를 제공하는",
+    "location": "line:723, tag:text",
+    "context": "text",
+    "translated": "快適で痛みのないインプラント治療を提供する"
+  },
+  {
+    "key": "text_14_text",
+    "text": "스마일뷰의 수면 임플란트 솔루션.",
+    "location": "line:724, tag:text",
+    "context": "text",
+    "translated": "SMILEVIEWの睡眠インプラントソリューション。"
+  },
+  {
+    "key": "text_15_text",
+    "text": "수면 마취를 통해 불안감 없이 잠든 사이에",
+    "location": "line:727, tag:text",
+    "context": "text",
+    "translated": "睡眠麻酔により不安感なく眠っている間に"
+  },
+  {
+    "key": "text_16_text",
+    "text": "안전하고 정밀한 임플란트 시술을 완성합니다.",
+    "location": "line:728, tag:text",
+    "context": "text",
+    "translated": "安全で精密なインプラント施術を完成します。"
+  },
+  {
+    "key": "text_17_h2",
+    "text": "수면 임플란트란?",
+    "location": "line:786, tag:h2",
+    "context": "text",
+    "translated": "睡眠インプラントとは？"
+  },
+  {
+    "key": "text_18_text",
+    "text": "수면 임플란트는 정맥진정(수면) 마취를 통해 환자가 잠든 상태에서 편안하게 임플란트를 식립하는 시술법입니다. 치과 공포증이 있거나 통증에 민감한 분들도 불안감 없이 안전하게 치료받으실 수 있으며, 전문 마취 모니터링 하에 정밀한 임플란트 식립이 이루어집니다. 스마일뷰치과는 세계 1위 오스템 임플란트를 사용하며 3D CT 정밀 진단을 통해 최적의 시술 계획을 수립합니다.",
+    "location": "line:788, tag:text",
+    "context": "text",
+    "translated": "睡眠インプラントは、静脈鎮静（睡眠）麻酔により患者が眠った状態で快適にインプラントを埋入する施術法です。歯科恐怖症の方や痛みに敏感な方も不安感なく安全に治療を受けることができ、専門麻酔モニタリング下で精密なインプラント埋入が行われます。SMILEVIEWデンタルクリニックは世界No.1のOsstemインプラントを使用し、3D CT精密診断で最適な施術計画を立案します。"
+  },
+  {
+    "key": "text_19_b",
+    "text": "종류",
+    "location": "line:794, tag:b",
+    "context": "text",
+    "translated": "種類"
+  },
+  {
+    "key": "text_20_span",
+    "text": "일반 임플란트, 즉시 임플란트, All-on-4, All-on-6, 미니 임플란트 등",
+    "location": "line:795, tag:span",
+    "context": "text",
+    "translated": "一般インプラント、即日インプラント、All-on-4、All-on-6、ミニインプラントなど"
+  },
+  {
+    "key": "text_21_h2",
+    "text": "편안한 수면 상태에서 진행하는 임플란트",
+    "location": "line:812, tag:h2",
+    "context": "text",
+    "translated": "快適な睡眠状態で行うインプラント"
+  },
+  {
+    "key": "text_22_p",
+    "text": "치과 공포증, 통증 걱정 없이 잠든 사이 완성됩니다. 마취통증의학과 전문의가 상주하여 안전하게 진행합니다.",
+    "location": "line:813, tag:p",
+    "context": "text",
+    "translated": "歯科恐怖症・痛みの心配なく眠っている間に完成します。麻酔科専門医が常駐し安全に進めます。"
+  },
+  {
+    "key": "text_23_h4",
+    "text": "치과 공포증이 있으신 분",
+    "location": "line:819, tag:h4",
+    "context": "text",
+    "translated": "歯科恐怖症の方"
+  },
+  {
+    "key": "text_24_p",
+    "text": "수면 상태에서 시술하여 공포감 없이 진행됩니다",
+    "location": "line:820, tag:p",
+    "context": "text",
+    "translated": "睡眠状態で施術するため恐怖感なく進めます"
+  },
+  {
+    "key": "text_25_h4",
+    "text": "긴 시술 시간이 부담되시는 분",
+    "location": "line:826, tag:h4",
+    "context": "text",
+    "translated": "長い施術時間が負担な方"
+  },
+  {
+    "key": "text_26_p",
+    "text": "잠든 사이 모든 시술이 완료됩니다",
+    "location": "line:827, tag:p",
+    "context": "text",
+    "translated": "眠っている間にすべての施術が完了します"
+  },
+  {
+    "key": "text_27_h4",
+    "text": "구역 반사가 심하신 분",
+    "location": "line:833, tag:h4",
+    "context": "text",
+    "translated": "嘔吐反射が強い方"
+  },
+  {
+    "key": "text_28_p",
+    "text": "수면 진정으로 구역 반사 없이 편안하게 진행됩니다",
+    "location": "line:834, tag:p",
+    "context": "text",
+    "translated": "睡眠鎮静により嘔吐反射なく快適に進みます"
+  },
+  {
+    "key": "text_29_h4",
+    "text": "통증에 예민하신 분",
+    "location": "line:840, tag:h4",
+    "context": "text",
+    "translated": "痛みに敏感な方"
+  },
+  {
+    "key": "text_30_p",
+    "text": "시술 중 통증을 전혀 느끼지 못합니다",
+    "location": "line:841, tag:p",
+    "context": "text",
+    "translated": "施術中は痛みを全く感じません"
+  },
+  {
+    "key": "attr_31_img_alt",
+    "text": "즉시 임플란트",
+    "location": "line:854, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "即日インプラント"
+  },
+  {
+    "key": "text_32_h3",
+    "text": "발치 당일, 즉시 임플란트 식립",
+    "location": "line:859, tag:h3",
+    "context": "text",
+    "translated": "抜歯当日、即日インプラント埋入"
+  },
+  {
+    "key": "text_33_p",
+    "text": "발치와 동시에 임플란트를 식립하여 수술 횟수와 치료 기간을 최소화합니다. 최신 디지털 장비로 정밀하게 계획된 즉시 식립은 불필요한 잇몸 절개 없이 빠른 회복이 가능합니다.",
+    "location": "line:860, tag:p",
+    "context": "text",
+    "translated": "抜歯と同時にインプラントを埋入し、手術回数と治療期間を最小限に抑えます。最新デジタル機器で精密に計画された即日埋入は、不要な歯肉切開なしに早期回復が可能です。"
+  },
+  {
+    "key": "text_34_div",
+    "text": "당일 발치 + 식립 완료",
+    "location": "line:862, tag:div",
+    "context": "text",
+    "translated": "当日抜歯＋埋入完了"
+  },
+  {
+    "key": "text_35_div",
+    "text": "수술 횟수 최소화",
+    "location": "line:863, tag:div",
+    "context": "text",
+    "translated": "手術回数の最小化"
+  },
+  {
+    "key": "text_36_div",
+    "text": "치조골 보존 효과",
+    "location": "line:864, tag:div",
+    "context": "text",
+    "translated": "歯槽骨保存効果"
+  },
+  {
+    "key": "text_37_div",
+    "text": "빠른 회복",
+    "location": "line:865, tag:div",
+    "context": "text",
+    "translated": "早期回復"
+  },
+  {
+    "key": "attr_38_img_alt",
+    "text": "네비게이션 임플란트",
+    "location": "line:877, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "ナビゲーションインプラント"
+  },
+  {
+    "key": "text_39_h3",
+    "text": "3D 네비게이션으로 정밀 식립",
+    "location": "line:882, tag:h3",
+    "context": "text",
+    "translated": "3Dナビゲーションによる精密埋入"
+  },
+  {
+    "key": "text_40_p",
+    "text": "3D CT 데이터를 기반으로 컴퓨터가 실시간 가이드하는 네비게이션 시스템으로 0.1mm 단위의 정밀한 임플란트 식립이 가능합니다. 신경 손상 위험을 최소화하고 최적의 위치에 안전하게 식립합니다.",
+    "location": "line:883, tag:p",
+    "context": "text",
+    "translated": "3D CTデータを基にコンピューターがリアルタイムでガイドするナビゲーションシステムにより、0.1mm単位の精密なインプラント埋入が可能です。神経損傷リスクを最小化し、最適な位置に安全に埋入します。"
+  },
+  {
+    "key": "text_41_div",
+    "text": "0.1mm 정밀 가이드",
+    "location": "line:885, tag:div",
+    "context": "text",
+    "translated": "0.1mm精密ガイド"
+  },
+  {
+    "key": "text_42_div",
+    "text": "신경 손상 위험 최소화",
+    "location": "line:886, tag:div",
+    "context": "text",
+    "translated": "神経損傷リスクの最小化"
+  },
+  {
+    "key": "text_43_div",
+    "text": "최적 각도·깊이 식립",
+    "location": "line:887, tag:div",
+    "context": "text",
+    "translated": "最適角度・深度での埋入"
+  },
+  {
+    "key": "text_44_div",
+    "text": "수술 시간 단축",
+    "location": "line:888, tag:div",
+    "context": "text",
+    "translated": "手術時間の短縮"
+  },
+  {
+    "key": "attr_45_img_alt",
+    "text": "골이식 임플란트",
+    "location": "line:900, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "骨移植インプラント"
+  },
+  {
+    "key": "text_46_h3",
+    "text": "부족한 뼈를 재건하여 안정적 식립",
+    "location": "line:905, tag:h3",
+    "context": "text",
+    "translated": "骨量を再建して安定的に埋入"
+  },
+  {
+    "key": "text_47_p",
+    "text": "잇몸뼈가 부족하여 임플란트가 어렵다고 판단받으셨나요? 스마일뷰는 자가골, 이종골 등 다양한 골이식 재료를 활용하여 부족한 뼈를 재건한 후 안정적으로 임플란트를 식립합니다.",
+    "location": "line:906, tag:p",
+    "context": "text",
+    "translated": "骨量不足でインプラントが難しいと言われましたか？SMILEVIEWは自家骨、異種骨などの様々な骨移植材料を活用して不足した骨を再建後、安定してインプラントを埋入します。"
+  },
+  {
+    "key": "text_48_div",
+    "text": "다양한 골이식 재료",
+    "location": "line:908, tag:div",
+    "context": "text",
+    "translated": "多様な骨移植材料"
+  },
+  {
+    "key": "text_49_div",
+    "text": "상악동 거상술 가능",
+    "location": "line:909, tag:div",
+    "context": "text",
+    "translated": "上顎洞挙上術対応"
+  },
+  {
+    "key": "text_50_div",
+    "text": "뼈 재건 후 안정적 식립",
+    "location": "line:910, tag:div",
+    "context": "text",
+    "translated": "骨再建後の安定的埋入"
+  },
+  {
+    "key": "text_51_div",
+    "text": "높은 성공률",
+    "location": "line:911, tag:div",
+    "context": "text",
+    "translated": "高い成功率"
+  },
+  {
+    "key": "text_52_h2",
+    "text": "오스템 임플란트, 어떤 점이 다를까?",
+    "location": "line:923, tag:h2",
+    "context": "text",
+    "translated": "Osstemインプラント、何が違うの？"
+  },
+  {
+    "key": "text_53_th",
+    "text": "비교 항목",
+    "location": "line:928, tag:th",
+    "context": "text",
+    "translated": "比較項目"
+  },
+  {
+    "key": "text_54_th",
+    "text": "일반 임플란트",
+    "location": "line:929, tag:th",
+    "context": "text",
+    "translated": "一般インプラント"
+  },
+  {
+    "key": "text_55_th",
+    "text": "RECOMMEND 오스템 임플란트",
+    "location": "line:930, tag:th",
+    "context": "text",
+    "translated": "RECOMMEND Osstemインプラント"
+  },
+  {
+    "key": "text_56_tr",
+    "text": "제조사 인지도 다양한 중소 제조사 세계 4위, 국내 1위 글로벌 기업",
+    "location": "line:933, tag:tr",
+    "context": "text",
+    "translated": "メーカー認知度 様々な中小メーカー 世界4位・韓国1位グローバル企業"
+  },
+  {
+    "key": "text_57_tr",
+    "text": "임상 데이터 제한적 임상 데이터 20년+ 임상 데이터 축적",
+    "location": "line:934, tag:tr",
+    "context": "text",
+    "translated": "臨床データ 限られた臨床データ 20年以上の臨床データ蓄積"
+  },
+  {
+    "key": "text_58_tr",
+    "text": "표면 처리 일반 표면 처리 특허 SA 표면 처리 기술",
+    "location": "line:935, tag:tr",
+    "context": "text",
+    "translated": "表面処理 一般表面処理 特許SA表面処理技術"
+  },
+  {
+    "key": "text_59_tr",
+    "text": "골 유착력 보통 수준의 골 유착 우수한 초기 고정력 및 골 유착",
+    "location": "line:936, tag:tr",
+    "context": "text",
+    "translated": "骨結合力 普通レベルの骨結合 優れた初期固定力および骨結合"
+  },
+  {
+    "key": "text_60_tr",
+    "text": "호환성 제한적 보철 호환 다양한 보철물과 완벽 호환",
+    "location": "line:937, tag:tr",
+    "context": "text",
+    "translated": "互換性 限られた補綴互換 様々な補綴物と完全互換"
+  },
+  {
+    "key": "text_61_tr",
+    "text": "보증 제조사별 상이 정품 인증서 + 평생 보증",
+    "location": "line:938, tag:tr",
+    "context": "text",
+    "translated": "保証 メーカーごとに異なる 正規認証書＋生涯保証"
+  },
+  {
+    "key": "text_62_div",
+    "text": "일반 임플란트 제조사 다양한 중소 제조사 임상 데이터 제한적 표면 처리 일반 표면 처리 골 유착력 보통 수준 호환성 제한적 보증 제조사별 상이",
+    "location": "line:943, tag:div",
+    "context": "text",
+    "translated": "一般インプラント メーカー 様々な中小メーカー 臨床データ 限定 表面処理 一般 骨結合力 普通 互換性 限定 保証 メーカーごとに異なる"
+  },
+  {
+    "key": "text_63_div",
+    "text": "오스템 임플란트 제조사 세계 4위, 국내 1위 임상 데이터 20년+ 축적 표면 처리 특허 SA 기술 골 유착력 우수한 초기 고정력 호환성 완벽 호환 보증 정품 인증 + 평생 보증",
+    "location": "line:944, tag:div",
+    "context": "text",
+    "translated": "Osstemインプラント メーカー 世界4位・韓国1位 臨床データ 20年以上蓄積 表面処理 特許SA技術 骨結合力 優れた初期固定力 互換性 完全互換 保証 正規認証＋生涯保証"
+  },
+  {
+    "key": "attr_64_img_alt",
+    "text": "수면 임플란트 디테일",
+    "location": "line:952, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "睡眠インプラントの詳細"
+  },
+  {
+    "key": "text_65_h2",
+    "text": "수면 임플란트, 디테일 이 다릅니다",
+    "location": "line:957, tag:h2",
+    "context": "text",
+    "translated": "睡眠インプラント、細部が違います"
+  },
+  {
+    "key": "text_66_div",
+    "text": "시술시간",
+    "location": "line:967, tag:div",
+    "context": "text",
+    "translated": "施術時間"
+  },
+  {
+    "key": "text_67_div",
+    "text": "30~60 분",
+    "location": "line:968, tag:div",
+    "context": "text",
+    "translated": "30〜60分"
+  },
+  {
+    "key": "text_68_p",
+    "text": "수면 마취 포함 전체 시술",
+    "location": "line:969, tag:p",
+    "context": "text",
+    "translated": "睡眠麻酔含む全処置"
+  },
+  {
+    "key": "text_69_div",
+    "text": "마취방법",
+    "location": "line:973, tag:div",
+    "context": "text",
+    "translated": "麻酔方法"
+  },
+  {
+    "key": "text_70_div",
+    "text": "수면진정",
+    "location": "line:974, tag:div",
+    "context": "text",
+    "translated": "睡眠鎮静"
+  },
+  {
+    "key": "text_71_p",
+    "text": "정맥 진정 마취 (IV Sedation)",
+    "location": "line:975, tag:p",
+    "context": "text",
+    "translated": "静脈鎮静麻酔（IV Sedation）"
+  },
+  {
+    "key": "text_72_div",
+    "text": "회복기간",
+    "location": "line:979, tag:div",
+    "context": "text",
+    "translated": "回復期間"
+  },
+  {
+    "key": "text_73_div",
+    "text": "1~2 주",
+    "location": "line:980, tag:div",
+    "context": "text",
+    "translated": "1〜2週間"
+  },
+  {
+    "key": "text_74_p",
+    "text": "일상 복귀까지 소요 기간",
+    "location": "line:981, tag:p",
+    "context": "text",
+    "translated": "日常復帰までの期間"
+  },
+  {
+    "key": "text_75_div",
+    "text": "성공률",
+    "location": "line:985, tag:div",
+    "context": "text",
+    "translated": "成功率"
+  },
+  {
+    "key": "text_76_p",
+    "text": "오스템 임플란트 임상 기준",
+    "location": "line:987, tag:p",
+    "context": "text",
+    "translated": "Osstemインプラント臨床基準"
+  },
+  {
+    "key": "text_77_h4",
+    "text": "수면 마취 전문의 상주",
+    "location": "line:993, tag:h4",
+    "context": "text",
+    "translated": "麻酔科専門医常駐"
+  },
+  {
+    "key": "text_78_p",
+    "text": "마취통증의학과 전문의가 시술 전 과정에 함께하며 환자의 안전을 최우선으로 관리합니다.",
+    "location": "line:994, tag:p",
+    "context": "text",
+    "translated": "麻酔科専門医が施術の全過程に同行し、患者の安全を最優先に管理します。"
+  },
+  {
+    "key": "text_79_div",
+    "text": "전문의 상주 안전 관리",
+    "location": "line:995, tag:div",
+    "context": "text",
+    "translated": "専門医常駐安全管理"
+  },
+  {
+    "key": "text_80_h4",
+    "text": "실시간 생체 모니터링",
+    "location": "line:999, tag:h4",
+    "context": "text",
+    "translated": "リアルタイム生体モニタリング"
+  },
+  {
+    "key": "text_81_p",
+    "text": "혈압, 맥박, 산소포화도를 실시간으로 모니터링하여 시술 중 환자 상태를 지속적으로 확인합니다.",
+    "location": "line:1000, tag:p",
+    "context": "text",
+    "translated": "血圧、脈拍、酸素飽和度をリアルタイムでモニタリングし、施術中の患者状態を継続的に確認します。"
+  },
+  {
+    "key": "text_82_div",
+    "text": "생체 모니터링 실시간 확인",
+    "location": "line:1001, tag:div",
+    "context": "text",
+    "translated": "生体モニタリングリアルタイム確認"
+  },
+  {
+    "key": "text_83_h4",
+    "text": "오스템 정품 임플란트",
+    "location": "line:1005, tag:h4",
+    "context": "text",
+    "translated": "Osstem正規インプラント"
+  },
+  {
+    "key": "text_84_p",
+    "text": "세계적으로 검증된 오스템 임플란트만 사용하며, 정품 인증서를 발급하여 투명하게 확인 가능합니다.",
+    "location": "line:1006, tag:p",
+    "context": "text",
+    "translated": "世界的に検証されたOsstemインプラントのみを使用し、正規認証書を発行して透明に確認できます。"
+  },
+  {
+    "key": "text_85_div",
+    "text": "정품 인증 글로벌 검증",
+    "location": "line:1007, tag:div",
+    "context": "text",
+    "translated": "正規認証グローバル検証"
+  },
+  {
+    "key": "text_86_h4",
+    "text": "디지털 정밀 진단",
+    "location": "line:1011, tag:h4",
+    "context": "text",
+    "translated": "デジタル精密診断"
+  },
+  {
+    "key": "text_87_p",
+    "text": "3D CT와 구강스캐너로 정밀 진단 후 환자 맞춤 시술 계획을 수립하여 최적의 결과를 도출합니다.",
+    "location": "line:1012, tag:p",
+    "context": "text",
+    "translated": "3D CTと口腔スキャナーで精密診断後、患者に合った施術計画を立案して最適な結果を導きます。"
+  },
+  {
+    "key": "text_88_div",
+    "text": "3D CT 구강스캐너",
+    "location": "line:1013, tag:div",
+    "context": "text",
+    "translated": "3D CT口腔スキャナー"
+  },
+  {
+    "key": "text_89_h2",
+    "text": "이런 분들에게 수면 임플란트를 추천드립니다",
+    "location": "line:1024, tag:h2",
+    "context": "text",
+    "translated": "このような方に睡眠インプラントをお勧めします"
+  },
+  {
+    "key": "text_90_div",
+    "text": "01 치과 공포증이 있는 분 치과 치료에 대한 극심한 두려움으로 치료를 미루고 계신 분에게 수면 상태에서 편안하게 시술합니다.",
+    "location": "line:1027, tag:div",
+    "context": "text",
+    "translated": "01 歯科恐怖症の方 歯科治療に対する極度の恐怖で治療を先延ばしにしている方に、睡眠状態で快適に施術します。"
+  },
+  {
+    "key": "text_91_div",
+    "text": "02 다수 임플란트가 필요한 분 여러 개의 임플란트를 한 번에 식립해야 하는 경우, 수면 진정으로 긴 시술도 편안하게 진행됩니다.",
+    "location": "line:1028, tag:div",
+    "context": "text",
+    "translated": "02 複数のインプラントが必要な方 複数のインプラントを一度に埋入する場合、睡眠鎮静で長い施術も快適に進めます。"
+  },
+  {
+    "key": "text_92_div",
+    "text": "03 구역 반사가 심한 분 구강 내 기구 삽입 시 구역질이 심한 분도 수면 진정 상태에서 불편함 없이 시술 받으실 수 있습니다.",
+    "location": "line:1029, tag:div",
+    "context": "text",
+    "translated": "03 嘔吐反射が強い方 口腔内に器具を挿入する際に嘔吐反射が強い方も睡眠鎮静状態で不快感なく施術を受けられます。"
+  },
+  {
+    "key": "text_93_div",
+    "text": "04 전신 질환이 있는 분 고혈압, 당뇨 등 전신 질환이 있는 경우 마취 전문의의 관리 하에 안전하게 시술을 진행합니다.",
+    "location": "line:1030, tag:div",
+    "context": "text",
+    "translated": "04 全身疾患のある方 高血圧・糖尿病などの全身疾患がある場合、麻酔科専門医の管理のもと安全に施術を進めます。"
+  },
+  {
+    "key": "text_94_div",
+    "text": "05 빠른 일상 복귀를 원하는 분 효율적인 수면 시술로 치료 시간을 단축하고, 시술 후 빠르게 일상생활로 복귀할 수 있습니다.",
+    "location": "line:1031, tag:div",
+    "context": "text",
+    "translated": "05 早期日常復帰をご希望の方 効率的な睡眠施術で治療時間を短縮し、施術後に素早く日常生活に復帰できます。"
+  },
+  {
+    "key": "text_95_div",
+    "text": "06 고령 환자분 체력적으로 긴 시술이 부담되시는 고령 환자분도 수면 진정으로 편안하고 안전하게 시술 가능합니다.",
+    "location": "line:1032, tag:div",
+    "context": "text",
+    "translated": "06 高齢の患者様 体力的に長い施術が負担な高齢の患者様も、睡眠鎮静で快適かつ安全に施術できます。"
+  },
+  {
+    "key": "text_96_h2",
+    "text": "시술 과정",
+    "location": "line:1041, tag:h2",
+    "context": "text",
+    "translated": "施術の流れ"
+  },
+  {
+    "key": "text_97_div",
+    "text": "수면 임플란트의 정밀한 시술 과정을 단계별로 안내드립니다.",
+    "location": "line:1042, tag:div",
+    "context": "text",
+    "translated": "睡眠インプラントの精密な施術過程をステップごとにご案内します。"
+  },
+  {
+    "key": "text_98_div",
+    "text": "정밀 검사",
+    "location": "line:1048, tag:div",
+    "context": "text",
+    "translated": "精密検査"
+  },
+  {
+    "key": "text_99_div",
+    "text": "3D CT 촬영 및 구강 분석",
+    "location": "line:1049, tag:div",
+    "context": "text",
+    "translated": "3D CT撮影および口腔分析"
+  },
+  {
+    "key": "text_100_div",
+    "text": "시술 계획",
+    "location": "line:1053, tag:div",
+    "context": "text",
+    "translated": "施術プラン"
+  },
+  {
+    "key": "text_101_div",
+    "text": "맞춤 치료 플랜 수립",
+    "location": "line:1054, tag:div",
+    "context": "text",
+    "translated": "オーダーメイド治療プランの策定"
+  },
+  {
+    "key": "text_102_div",
+    "text": "수면 식립",
+    "location": "line:1058, tag:div",
+    "context": "text",
+    "translated": "睡眠埋入"
+  },
+  {
+    "key": "text_103_div",
+    "text": "수면 마취 정밀 식립",
+    "location": "line:1059, tag:div",
+    "context": "text",
+    "translated": "睡眠麻酔精密埋入"
+  },
+  {
+    "key": "text_104_div",
+    "text": "보철 & 관리",
+    "location": "line:1063, tag:div",
+    "context": "text",
+    "translated": "補綴・管理"
+  },
+  {
+    "key": "text_105_div",
+    "text": "보철물 장착 및 사후관리",
+    "location": "line:1064, tag:div",
+    "context": "text",
+    "translated": "補綴装着およびアフターケア"
+  },
+  {
+    "key": "attr_106_img_alt",
+    "text": "정밀 검사 & CT 촬영",
+    "location": "line:1071, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "精密検査＆CT撮影"
+  },
+  {
+    "key": "text_107_p",
+    "text": "전문의가 직접 구강 상태를 확인하고 3D CT 촬영을 통해 골조직, 신경 위치 등을 정밀하게 분석합니다. 환자의 전신 건강 상태도 함께 확인하여 안전한 시술을 준비합니다.",
+    "location": "line:1079, tag:p",
+    "context": "text",
+    "translated": "専門医が直接口腔状態を確認し、3D CT撮影を通じて骨組織・神経位置などを精密に分析します。患者の全身健康状態も合わせて確認し、安全な施術を準備します。"
+  },
+  {
+    "key": "text_108_div",
+    "text": "3D CT 정밀 촬영",
+    "location": "line:1081, tag:div",
+    "context": "text",
+    "translated": "3D CT精密撮影"
+  },
+  {
+    "key": "text_109_div",
+    "text": "골조직 분석",
+    "location": "line:1082, tag:div",
+    "context": "text",
+    "translated": "骨組織分析"
+  },
+  {
+    "key": "text_110_div",
+    "text": "신경 위치 확인",
+    "location": "line:1083, tag:div",
+    "context": "text",
+    "translated": "神経位置確認"
+  },
+  {
+    "key": "text_111_div",
+    "text": "전신 건강 체크",
+    "location": "line:1084, tag:div",
+    "context": "text",
+    "translated": "全身健康チェック"
+  },
+  {
+    "key": "attr_112_img_alt",
+    "text": "맞춤 시술 계획 수립",
+    "location": "line:1092, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "オーダーメイド施術計画の立案"
+  },
+  {
+    "key": "text_113_p",
+    "text": "환자의 구강 상태와 전신 건강을 고려하여 최적의 임플란트 종류, 식립 위치, 방향, 깊이를 결정합니다. 디지털 시뮬레이션으로 결과를 미리 확인합니다.",
+    "location": "line:1100, tag:p",
+    "context": "text",
+    "translated": "患者の口腔状態と全身健康を考慮して最適なインプラントの種類・埋入位置・方向・深度を決定します。デジタルシミュレーションで結果を事前に確認します。"
+  },
+  {
+    "key": "text_114_div",
+    "text": "임플란트 종류 선택",
+    "location": "line:1102, tag:div",
+    "context": "text",
+    "translated": "インプラント種類の選択"
+  },
+  {
+    "key": "text_115_div",
+    "text": "식립 위치·방향 결정",
+    "location": "line:1103, tag:div",
+    "context": "text",
+    "translated": "埋入位置・方向の決定"
+  },
+  {
+    "key": "text_116_div",
+    "text": "디지털 시뮬레이션",
+    "location": "line:1104, tag:div",
+    "context": "text",
+    "translated": "デジタルシミュレーション"
+  },
+  {
+    "key": "text_117_div",
+    "text": "환자 맞춤 플랜",
+    "location": "line:1105, tag:div",
+    "context": "text",
+    "translated": "患者オーダーメイドプラン"
+  },
+  {
+    "key": "attr_118_img_alt",
+    "text": "수면 마취 임플란트 식립",
+    "location": "line:1113, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "睡眠麻酔インプラント埋入"
+  },
+  {
+    "key": "text_119_p",
+    "text": "정맥진정(수면) 마취 하에 환자가 편안하게 잠든 상태에서 네비게이션 시스템을 활용하여 정밀하게 임플란트를 식립합니다. 마취 전문의가 시술 내내 안전을 관리합니다.",
+    "location": "line:1121, tag:p",
+    "context": "text",
+    "translated": "静脈鎮静（睡眠）麻酔のもと、患者が快適に眠った状態でナビゲーションシステムを活用して精密にインプラントを埋入します。麻酔専門医が施術を通じて安全を管理します。"
+  },
+  {
+    "key": "text_120_div",
+    "text": "수면 진정 마취",
+    "location": "line:1123, tag:div",
+    "context": "text",
+    "translated": "睡眠鎮静麻酔"
+  },
+  {
+    "key": "text_121_div",
+    "text": "네비게이션 가이드",
+    "location": "line:1124, tag:div",
+    "context": "text",
+    "translated": "ナビゲーションガイド"
+  },
+  {
+    "key": "text_122_div",
+    "text": "실시간 모니터링",
+    "location": "line:1125, tag:div",
+    "context": "text",
+    "translated": "リアルタイムモニタリング"
+  },
+  {
+    "key": "text_123_div",
+    "text": "전문의 안전 관리",
+    "location": "line:1126, tag:div",
+    "context": "text",
+    "translated": "専門医安全管理"
+  },
+  {
+    "key": "attr_124_img_alt",
+    "text": "보철물 완성 & 사후관리",
+    "location": "line:1134, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "補綴完成＆アフターケア"
+  },
+  {
+    "key": "text_125_p",
+    "text": "임플란트가 잇몸뼈와 충분히 결합된 후 맞춤형 보철물(크라운)을 장착하고, 정기 검진을 통해 장기적인 관리를 진행합니다.",
+    "location": "line:1142, tag:p",
+    "context": "text",
+    "translated": "インプラントが歯槽骨と十分に結合した後、オーダーメイドの補綴物（クラウン）を装着し、定期検診を通じた長期的な管理を行います。"
+  },
+  {
+    "key": "text_126_div",
+    "text": "맞춤 보철물 제작",
+    "location": "line:1144, tag:div",
+    "context": "text",
+    "translated": "オーダーメイド補綴物の製作"
+  },
+  {
+    "key": "text_127_div",
+    "text": "크라운 장착",
+    "location": "line:1145, tag:div",
+    "context": "text",
+    "translated": "クラウン装着"
+  },
+  {
+    "key": "text_128_div",
+    "text": "정기 검진 관리",
+    "location": "line:1146, tag:div",
+    "context": "text",
+    "translated": "定期検診管理"
+  },
+  {
+    "key": "text_129_div",
+    "text": "평생 보증 프로그램",
+    "location": "line:1147, tag:div",
+    "context": "text",
+    "translated": "生涯保証プログラム"
+  },
+  {
+    "key": "text_130_p",
+    "text": "수면 임플란트에 대해 자주 묻는 질문을 모았습니다.",
+    "location": "line:1163, tag:p",
+    "context": "text",
+    "translated": "睡眠インプラントに関するよくある質問をまとめました。"
+  },
+  {
+    "key": "text_131_text",
+    "text": "수면 임플란트는 어떻게 진행되나요?",
+    "location": "line:1169, tag:text",
+    "context": "text",
+    "translated": "睡眠インプラントはどのように行われますか？"
+  },
+  {
+    "key": "text_132_span",
+    "text": "A. 수면(진정) 마취를 통해 환자가 잠든 상태에서 시술이 진행됩니다. 치과 공포증이 있거나 통증에 민감한 분들에게 적합하며, 시술 중 불안감 없이 편안하게 치료받으실 수 있습니다. 전문 마취과 의료진이 시술 내내 환자의 상태를 모니터링합니다.",
+    "location": "line:1173, tag:span",
+    "context": "text",
+    "translated": "A. 睡眠（鎮静）麻酔により患者が眠った状態で施術が進行されます。歯科恐怖症の方や痛みに敏感な方に適しており、施術中は不安感なく快適に治療を受けることができます。専門麻酔科医療スタッフが施術を通じて患者の状態をモニタリングします。"
+  },
+  {
+    "key": "text_133_text",
+    "text": "임플란트 수명은 얼마나 되나요?",
+    "location": "line:1179, tag:text",
+    "context": "text",
+    "translated": "インプラントの寿命はどのくらいですか？"
+  },
+  {
+    "key": "text_134_span",
+    "text": "A. 적절한 구강 관리와 정기 검진을 받으시면 임플란트는 반영구적으로 사용할 수 있습니다. 일반적으로 10~20년 이상 사용이 가능하며, 관리 상태에 따라 평생 사용하시는 분들도 많습니다.",
+    "location": "line:1183, tag:span",
+    "context": "text",
+    "translated": "A. 適切な口腔管理と定期検診を受ければ、インプラントは半永久的に使用できます。一般的に10〜20年以上の使用が可能で、管理状態によっては生涯使用される方も多くいます。"
+  },
+  {
+    "key": "text_135_text",
+    "text": "당일 즉시 임플란트는 위험하지 않나요?",
+    "location": "line:1189, tag:text",
+    "context": "text",
+    "translated": "当日即日インプラントは危険ではないですか？"
+  },
+  {
+    "key": "text_136_span",
+    "text": "A. 치아를 뽑고 잇몸뼈가 아물기를 기다리는 기존 임플란트에 비해 당일즉시 임플란트는 성공률과 안정성에서 큰 차이를 보이지 않습니다. 환자의 잇몸뼈의 상태를 체크한 후 권해드리오니 안심하셔도 됩니다.",
+    "location": "line:1193, tag:span",
+    "context": "text",
+    "translated": "A. 抜歯後に歯槽骨が癒えるのを待つ従来のインプラントと比較して、当日即日インプラントは成功率と安定性に大きな差はありません。患者の歯槽骨の状態を確認した上でご提案しますので、ご安心ください。"
+  },
+  {
+    "key": "text_137_text",
+    "text": "뼈가 부족해도 임플란트가 가능한가요?",
+    "location": "line:1199, tag:text",
+    "context": "text",
+    "translated": "骨量が不足していてもインプラントはできますか？"
+  },
+  {
+    "key": "text_138_span",
+    "text": "A. 네, 뼈 이식 임플란트를 통해 가능합니다. 임플란트 식립 부위에 치조골이 부족한 경우 인공 뼈를 이식하여 뼈의 양을 보충한 후 안정적으로 임플란트를 식립합니다. 정밀 검사를 통해 최적의 치료 계획을 수립해 드립니다.",
+    "location": "line:1203, tag:span",
+    "context": "text",
+    "translated": "A. はい、骨移植インプラントで可能です。インプラント埋入部位の歯槽骨が不足している場合、人工骨を移植して骨量を補充した後、安定してインプラントを埋入します。精密検査を通じて最適な治療計画を立案します。"
+  },
+  {
+    "key": "text_139_p",
+    "text": "투명하고 편리한 교정부터 심미 치료까지, 스마일뷰치과가 당신의 아름다운 미소를 만들어 드립니다.",
+    "location": "line:1222, tag:p",
+    "context": "text",
+    "translated": "透明で便利な矯正から審美治療まで、SMILEVIEWデンタルクリニックが美しい笑顔をお届けします。"
+  },
+  {
+    "key": "text_140_li",
+    "text": "서울특별시 강남구 봉은사로 107, 15층",
+    "location": "line:1227, tag:li",
+    "context": "text",
+    "translated": "ソウル特別市 江南区 奉恩寺路 107, 15階"
+  },
+  {
+    "key": "text_141_li",
+    "text": "(논현동 201 16번지 15층)",
+    "location": "line:1228, tag:li",
+    "context": "text",
+    "translated": "（論峴洞 201 16番地 15階）"
+  },
+  {
+    "key": "text_142_li",
+    "text": "대표자 김한결",
+    "location": "line:1236, tag:li",
+    "context": "text",
+    "translated": "代表者 キム・ハンギョル"
+  },
+  {
+    "key": "text_143_li",
+    "text": "사업자번호 699-29-00572",
+    "location": "line:1237, tag:li",
+    "context": "text",
+    "translated": "事業者番号 699-29-00572"
+  },
+  {
+    "key": "text_144_li",
+    "text": "평일 AM 10:00 - PM 06:30",
+    "location": "line:1243, tag:li",
+    "context": "text",
+    "translated": "平日 AM 10:00 - PM 06:30"
+  },
+  {
+    "key": "text_145_li",
+    "text": "점심시간 PM 01:00 - PM 02:00",
+    "location": "line:1244, tag:li",
+    "context": "text",
+    "translated": "昼休み PM 01:00 - PM 02:00"
+  },
+  {
+    "key": "text_146_li",
+    "text": "토요일 AM 10:00 - PM 03:00",
+    "location": "line:1245, tag:li",
+    "context": "text",
+    "translated": "土曜日 AM 10:00 - PM 03:00"
+  },
+  {
+    "key": "text_147_li",
+    "text": "점심시간 없이 진료",
+    "location": "line:1246, tag:li",
+    "context": "text",
+    "translated": "昼休みなし診療"
+  },
+  {
+    "key": "text_148_li",
+    "text": "일요일 AM 10:00 - PM 04:00",
+    "location": "line:1247, tag:li",
+    "context": "text",
+    "translated": "日曜日 AM 10:00 - PM 04:00"
+  },
+  {
+    "key": "text_149_li",
+    "text": "휴진 공휴일",
+    "location": "line:1248, tag:li",
+    "context": "text",
+    "translated": "休診 祝日"
+  }
+]

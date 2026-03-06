@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歯列矯正 | SMILEVIEWデンタルクリニック</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <style>
+    /* ===== LAMINATE PREMIUM DESIGN SYSTEM ===== */
+    :root {
+        --lm-text: #4c4841;
+        --lm-gold: #b18247;
+        --lm-gold-light: rgba(177,130,71,0.15);
+        --lm-white: #fff;
+        --lm-cream: #f7f4ef;
+        --lm-card-bg: #f1f1f1;
+        --lm-footer-bg: #fbfbfb;
+        --lm-dark-overlay: rgba(0,0,0,0.55);
+        --lm-radius: 30px;
+        --lm-serif: 'STIX Two Text', 'Playfair Display', Georgia, serif;
+        --lm-body: 'Pretendard', -apple-system, sans-serif;
+        --lm-max-w: 1200px;
+    }
+
+    .lm-page { background: var(--lm-white); color: var(--lm-text); font-family: var(--lm-body); }
+    .lm-page *, .lm-page *::before, .lm-page *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    .lm-page img { display: block; max-width: 100%; }
+    .lm-inner { max-width: var(--lm-max-w); margin: 0 auto; padding: 0 50px; }
+
+    /* ===== SCROLL ANIMATION ===== */
+    .lm-fade { opacity: 0; transform: translateY(50px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .lm-fade.lm-show { opacity: 1; transform: translateY(0); }
+    .lm-fade-delay-1 { transition-delay: 0.15s; }
+    .lm-fade-delay-2 { transition-delay: 0.3s; }
+    .lm-fade-delay-3 { transition-delay: 0.45s; }
+
+    /* ===== HORIZONTAL SCROLL WRAPPER ===== */
+    .lm-horizontal {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 80px;
+    }
+    .lm-h-wrap {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        will-change: transform;
+    }
+    .lm-h-panel {
+        width: 960px;
+        height: 100vh;
+        flex-shrink: 0;
+        overflow: hidden;
+        position: relative;
+    }
+    /* Definition panel - matches benchmark sec3 width ratio */
+    .lm-h-panel--def {
+        width: 720px;
+    }
+    .lm-h-panel--title {
+        width: 1200px;
+    }
+
+    /* ===== HERO ===== */
+    .lm-hero {
+        position: relative; width: 100%; height: 100%;
+        display: flex; align-items: center; justify-content: center;
+        overflow: hidden;
+        background: linear-gradient(135deg, #c8a87c 0%, #b8956a 40%, #a68358 70%, #937148 100%);
+    }
+    .lm-hero-bg {
+        position: absolute; inset: 0; z-index: 0;
+        background: linear-gradient(135deg, rgba(200,168,124,0.6) 0%, rgba(147,113,72,0.4) 100%);
+        opacity: 0.3;
+    }
+    .lm-hero-overlay {
+        position: absolute; inset: 0; z-index: 1;
+        background: linear-gradient(180deg, rgba(180,140,80,0.2) 0%, rgba(100,70,30,0.4) 100%);
+    }
+    .lm-hero-content {
+        position: relative; z-index: 2; text-align: center;
+        display: flex; flex-direction: column; align-items: center; gap: 24px;
+        padding: 150px 5% 0;
+        max-width: 100%;
+    }
+    .lm-hero-lbx, .lm-hero-rbx {
+        text-align: center;
+    }
+    .lm-hero-lbx span, .lm-hero-rbx span {
+        font-family: var(--lm-serif); font-size: 100px; font-weight: 500;
+        color: var(--lm-white); line-height: 1;
+    }
+    .lm-hero-desc {
+        font-size: 18px; font-weight: 500; color: rgba(255,255,255,0.85);
+        line-height: 1.6; max-width: 600px; letter-spacing: -0.045em;
+    }
+    .lm-hero-desc2 {
+        font-size: 18px; font-weight: 500; color: rgba(255,255,255,0.7);
+        line-height: 1.6; max-width: 550px; margin-top: 55px; letter-spacing: -0.045em;
+    }
+
+    /* Scroll Down Indicator */
+    .lm-scroll-down {
+        position: absolute; bottom: 8%; right: 8%; z-index: 5;
+        width: 90px; height: 90px;
+    }
+    .lm-scroll-circle {
+        width: 100%; height: 100%;
+        animation: lm-rotate 10s linear infinite;
+    }
+    .lm-scroll-circle text {
+        font-family: var(--lm-serif); font-size: 11px; fill: rgba(255,255,255,0.6);
+        letter-spacing: 3px;
+    }
+    .lm-scroll-arrow {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+        color: rgba(255,255,255,0.7); font-size: 20px;
+    }
+    @keyframes lm-rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    /* ===== TITLE BAND ===== */
+    .lm-title-band {
+        position: relative; width: 100%; height: 100%; overflow: hidden;
+        background: linear-gradient(135deg, #5a4a3a 0%, #3d3028 50%, #2a2018 100%);
+        display: flex; align-items: center; justify-content: center;
+    }
+    .lm-title-band-overlay {
+        position: absolute; inset: 0; z-index: 0;
+        background: url('images/ortho/hero_bg.jpg') center/cover no-repeat;
+        opacity: 0.25;
+    }
+    .lm-title-band-content {
+        position: relative; z-index: 2; text-align: center;
+        padding: 80px 20px;
+    }
+    .lm-title-band h2 {
+        font-family: var(--lm-serif); font-size: 100px; font-weight: 400;
+        color: var(--lm-white); text-transform: uppercase; line-height: 1.2;
+        letter-spacing: normal;
+    }
+    .lm-title-band .lm-kr-sub {
+        font-family: var(--lm-body); font-size: 22px; font-weight: 500;
+        color: rgba(255,255,255,0.8); margin-top: 20px; letter-spacing: -0.045em;
+    }
+    .lm-title-band .lm-badge {
+        display: inline-flex; align-items: center; justify-content: center;
+        padding: 0 30px; height: 40px; border: 0.8px solid rgba(255,255,255,0.5);
+        border-radius: 20px; margin-top: 40px;
+    }
+    .lm-title-band .lm-badge span {
+        font-family: var(--lm-body); font-size: 18px; font-weight: 500;
+        color: var(--lm-white); letter-spacing: -0.81px;
+    }
+
+    /* Marquee */
+    .lm-marquee {
+        position: absolute; bottom: -0.15em; left: 0; width: 100%; z-index: 1;
+        overflow: hidden; white-space: nowrap;
+        font-family: var(--lm-serif); font-size: 200px; font-weight: 600;
+        color: transparent; -webkit-text-stroke: 1px rgba(251,251,251,0.1);
+        letter-spacing: -5px; line-height: 1;
+    }
+    .lm-marquee-track {
+        display: inline-flex; animation: lm-marquee 25s linear infinite;
+    }
+    .lm-marquee-track span { margin: 0 40px; }
+    @keyframes lm-marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* ===== DEFINITION SECTION (sec3 - benchmark match) ===== */
+    .lm-definition {
+        position: relative; width: 100%; height: 100%; overflow: hidden;
+        background: var(--lm-cream);
+        background-size: cover; background-position: center bottom;
+    }
+    .lm-def-scroll-circle {
+        position: absolute; top: 10%; right: 20%;
+        width: 113px; height: 113px; z-index: 5;
+    }
+    .lm-def-scroll-circle .lm-scroll-circle {
+        width: 100%; height: 100%;
+        animation: lm-rotate 6s linear infinite;
+    }
+    .lm-def-scroll-circle .lm-scroll-circle text {
+        font-family: var(--lm-serif); font-size: 11px; fill: var(--lm-text);
+        letter-spacing: 3px; opacity: 0.5;
+    }
+    .lm-def-scroll-circle .lm-def-arrow {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+        color: var(--lm-text); font-size: 22px;
+    }
+    .lm-def-con {
+        position: absolute; top: 20%; left: 70px; right: 25%; bottom: 100px;
+    }
+    .lm-def-tit {}
+    .lm-def-num {
+        font-family: var(--lm-serif); font-size: 18px; font-weight: 400;
+        color: var(--lm-text); display: block;
+    }
+    .lm-def-title {
+        font-family: var(--lm-body); font-size: 50px; font-weight: 600;
+        color: var(--lm-text); letter-spacing: -2.25px;
+        line-height: 1; margin-top: 30px;
+    }
+    .lm-def-body {
+        font-family: var(--lm-body); font-size: 18px; line-height: 32px;
+        color: var(--lm-text); letter-spacing: -0.81px; font-weight: 400;
+        margin-top: 40px;
+    }
+    .lm-def-divider {
+        width: 100%; height: 1px; background: var(--lm-text);
+        margin-top: 40px;
+    }
+    .lm-def-sub {
+        margin-top: 45px;
+    }
+    .lm-def-sub p {
+        display: flex; flex-wrap: nowrap; gap: 10px; align-items: flex-start;
+    }
+    .lm-def-sub b {
+        font-family: var(--lm-body); font-size: 14px; font-weight: 600;
+        color: var(--lm-text); letter-spacing: -0.63px; line-height: 1.75;
+        display: block; position: relative; padding-right: 10px;
+        white-space: nowrap; flex-shrink: 0;
+    }
+    .lm-def-sub b::after {
+        content: '|'; position: absolute; right: 0; top: 0;
+        color: var(--lm-text); font-weight: 300;
+    }
+    .lm-def-sub span {
+        font-family: var(--lm-body); font-size: 14px; font-weight: 400;
+        color: var(--lm-text); letter-spacing: -0.63px; line-height: 1.75;
+        display: block;
+    }
+
+    /* ===== SECTION COMMON (DARK THEME) ===== */
+    .lm-section-label {
+        font-family: var(--lm-serif); font-size: 14px; font-weight: 400;
+        letter-spacing: 3px; text-transform: uppercase;
+        color: var(--lm-gold); display: block; margin-bottom: 16px;
+    }
+    .lm-section-h2 {
+        font-family: var(--lm-body); font-size: 42px; font-weight: 600;
+        letter-spacing: -1.89px; line-height: 1.3; margin-bottom: 50px;
+        color: var(--lm-white);
+    }
+    .lm-gold { color: var(--lm-gold); }
+
+    /* ===== PRE-SURGICAL SECTION ===== */
+    .lm-presurg {
+        padding: 140px 0; background: #1d1a15; color: var(--lm-white);
+        position: relative; overflow: hidden;
+    }
+    /* Decorative radial glow background */
+    .lm-presurg::before {
+        content: ''; position: absolute; top: 30%; left: 55%; width: 700px; height: 700px;
+        background: radial-gradient(circle, rgba(177,130,71,0.06) 0%, transparent 70%);
+        transform: translate(-50%, -50%); pointer-events: none; z-index: 0;
+    }
+    .lm-presurg::after {
+        content: '01'; position: absolute; top: 50%; right: -2%;
+        transform: translateY(-50%); font-family: var(--lm-serif);
+        font-size: 300px; font-weight: 700; color: rgba(177,130,71,0.03);
+        line-height: 1; pointer-events: none;
+    }
+    /* Subtle dot grid pattern overlay */
+    .lm-presurg-grid-bg {
+        position: absolute; inset: 0; z-index: 0; pointer-events: none;
+        background-image: radial-gradient(rgba(177,130,71,0.04) 1px, transparent 1px);
+        background-size: 32px 32px;
+    }
+    .lm-presurg .lm-inner { position: relative; z-index: 1; }
+    .lm-presurg-grid {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+    }
+    /* Text slide-from-left animation */
+    .lm-presurg-content.lm-fade {
+        transform: translateX(-60px); opacity: 0;
+        transition: opacity 0.9s cubic-bezier(0.22,1,0.36,1), transform 0.9s cubic-bezier(0.22,1,0.36,1);
+    }
+    .lm-presurg-content.lm-fade.lm-show {
+        transform: translateX(0); opacity: 1;
+    }
+    .lm-presurg-content h3 {
+        font-size: 32px; font-weight: 600; letter-spacing: -1.2px;
+        line-height: 1.4; margin-bottom: 28px;
+        text-shadow: 0 2px 20px rgba(177,130,71,0.15);
+    }
+    .lm-presurg-content h3 em {
+        font-style: normal;
+        background: linear-gradient(135deg, #d4a85c, #b18247, #c99a50);
+        -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    /* Decorative divider between h3 and p */
+    .lm-presurg-divider {
+        width: 48px; height: 2px; margin-bottom: 24px;
+        background: linear-gradient(90deg, var(--lm-gold), transparent);
+        border-radius: 2px;
+    }
+    .lm-presurg-content p {
+        font-size: 16px; line-height: 1.9; color: rgba(255,255,255,0.65);
+        letter-spacing: -0.5px;
+    }
+    /* Image wrapper with slide-from-right + scale animation */
+    .lm-presurg-img-wrap {
+        position: relative;
+    }
+    .lm-presurg-img-wrap.lm-fade {
+        transform: translateX(60px) scale(0.95); opacity: 0;
+        transition: opacity 0.9s cubic-bezier(0.22,1,0.36,1), transform 0.9s cubic-bezier(0.22,1,0.36,1);
+    }
+    .lm-presurg-img-wrap.lm-fade.lm-show {
+        transform: translateX(0) scale(1); opacity: 1;
+    }
+    /* Gold accent frame (L-shaped corner) */
+    .lm-presurg-img-wrap::before {
+        content: ''; position: absolute; top: -10px; left: -10px;
+        width: 60px; height: 60px; z-index: 3; pointer-events: none;
+        border-top: 2px solid var(--lm-gold); border-left: 2px solid var(--lm-gold);
+        border-radius: 4px 0 0 0;
+    }
+    .lm-presurg-img-wrap::after {
+        content: ''; position: absolute; bottom: -10px; right: -10px;
+        width: 60px; height: 60px; z-index: 3; pointer-events: none;
+        border-bottom: 2px solid var(--lm-gold); border-right: 2px solid var(--lm-gold);
+        border-radius: 0 0 4px 0;
+    }
+    /* Floating badge */
+    .lm-presurg-badge {
+        position: absolute; top: 16px; right: 16px; z-index: 4;
+        background: linear-gradient(135deg, var(--lm-gold), #d4a85c);
+        color: #1d1a15; font-family: var(--lm-body); font-size: 11px; font-weight: 700;
+        letter-spacing: 1px; text-transform: uppercase; padding: 6px 14px;
+        border-radius: 4px; box-shadow: 0 4px 16px rgba(177,130,71,0.35);
+        line-height: 1.3; text-align: center;
+    }
+    .lm-presurg-badge small {
+        display: block; font-size: 9px; font-weight: 500; opacity: 0.75;
+        letter-spacing: 0.5px; margin-top: 1px;
+    }
+    .lm-presurg-img {
+        position: relative; border-radius: var(--lm-radius); overflow: hidden;
+        aspect-ratio: 4/3; background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.08);
+        transition: transform 0.5s cubic-bezier(0.22,1,0.36,1), box-shadow 0.5s ease;
+    }
+    /* 3D hover tilt effect */
+    .lm-presurg-img:hover {
+        transform: perspective(800px) rotateY(-3deg) rotateX(2deg) scale(1.02);
+        box-shadow: 0 20px 60px rgba(177,130,71,0.15), 0 8px 24px rgba(0,0,0,0.3);
+    }
+    .lm-presurg-img::before {
+        content: ''; position: absolute; inset: -3px; border-radius: var(--lm-radius);
+        background: linear-gradient(135deg, rgba(177,130,71,0.4), transparent 60%, rgba(177,130,71,0.15));
+        z-index: 1; pointer-events: none;
+    }
+    .lm-presurg-img img {
+        width: 100%; height: 100%; object-fit: cover; position: relative; z-index: 0;
+        transition: transform 0.6s ease;
+    }
+    .lm-presurg-img:hover img {
+        transform: scale(1.04);
+    }
+    .lm-placeholder {
+        width: 100%; height: 100%; display: flex; flex-direction: column;
+        align-items: center; justify-content: center; gap: 12px;
+        color: rgba(255,255,255,0.15); font-size: 48px;
+        background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+    }
+    .lm-placeholder span {
+        font-size: 13px; letter-spacing: 2px; text-transform: uppercase;
+        font-family: var(--lm-serif);
+    }
+    /* -- Timeline Steps (Compact Grid) -- */
+    .lm-presurg-timeline {
+        position: relative; margin-top: 80px; padding: 0 20px;
+        display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+    }
+    /* Horizontal progress connector line */
+    .lm-presurg-timeline::before {
+        content: ''; position: absolute; z-index: 1; pointer-events: none;
+        top: 0; left: 0; right: 0; height: 3px;
+        background: linear-gradient(90deg, var(--lm-gold), rgba(177,130,71,0.4) 50%, var(--lm-gold));
+        border-radius: 2px;
+    }
+    /* Arrow-like connector dots on the progress line */
+    .lm-presurg-timeline::after {
+        content: ''; position: absolute; z-index: 2; pointer-events: none;
+        top: -4px; left: 12.5%; right: 12.5%; height: 11px;
+        background-image:
+            radial-gradient(circle 6px at 0% 50%, var(--lm-gold) 5px, transparent 6px),
+            radial-gradient(circle 6px at 33.33% 50%, var(--lm-gold) 5px, transparent 6px),
+            radial-gradient(circle 6px at 66.66% 50%, var(--lm-gold) 5px, transparent 6px),
+            radial-gradient(circle 6px at 100% 50%, var(--lm-gold) 5px, transparent 6px);
+        background-repeat: no-repeat;
+    }
+    .lm-presurg-tl-item {
+        display: flex; flex-direction: column; position: relative;
+        padding-top: 28px;
+    }
+    .lm-presurg-tl-item:last-child { margin-bottom: 0; }
+    /* Remove old alternating layout */
+    .lm-presurg-tl-item:nth-child(odd),
+    .lm-presurg-tl-item:nth-child(even) {
+        flex-direction: column; padding-left: 0; padding-right: 0;
+    }
+    /* Hide dots - replaced by progress line dots */
+    .lm-presurg-tl-dot {
+        display: none;
+    }
+    .lm-presurg-tl-card {
+        background: rgba(255,255,255,0.04); border-radius: 20px;
+        border: 1px solid rgba(255,255,255,0.08); overflow: visible;
+        flex: 1; transition: all 0.5s cubic-bezier(0.22,1,0.36,1);
+        backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+        display: flex; flex-direction: column; position: relative;
+    }
+    .lm-presurg-tl-card:hover {
+        transform: translateY(-8px); border-color: rgba(177,130,71,0.45);
+        box-shadow: 0 24px 56px rgba(177,130,71,0.15), 0 0 0 1px rgba(177,130,71,0.1);
+        background: rgba(255,255,255,0.06);
+    }
+    .lm-presurg-tl-card-img {
+        width: 100%; aspect-ratio: 4/3; overflow: hidden;
+        border-radius: 20px 20px 0 0;
+    }
+    .lm-presurg-tl-card-img img {
+        width: 100%; height: 100%; object-fit: cover;
+        transition: transform 0.6s cubic-bezier(0.22,1,0.36,1);
+    }
+    .lm-presurg-tl-card:hover .lm-presurg-tl-card-img img {
+        transform: scale(1.05);
+    }
+    .lm-presurg-tl-card-body {
+        padding: 36px 24px 28px; position: relative; flex: 1;
+    }
+    /* Step number badge overlapping image/content boundary */
+    .lm-presurg-tl-num {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 48px; height: 48px; border-radius: 14px;
+        background: linear-gradient(135deg, var(--lm-gold), #c9a06a);
+        color: var(--lm-white); font-family: var(--lm-serif);
+        font-size: 18px; font-weight: 700;
+        box-shadow: 0 6px 20px rgba(177,130,71,0.3);
+        position: absolute; top: -24px; left: 24px; z-index: 3;
+    }
+    .lm-presurg-tl-card h4 {
+        font-size: 18px; font-weight: 700; color: var(--lm-white);
+        margin-bottom: 10px; letter-spacing: -0.5px;
+    }
+    .lm-presurg-tl-card p {
+        font-size: 13px; line-height: 1.8; color: rgba(255,255,255,0.55);
+        letter-spacing: -0.02em;
+    }
+
+    /* ===== ADVANTAGE SECTION ===== */
+    .lm-advantage {
+        padding: 140px 0; background: #201d17; color: var(--lm-white);
+        position: relative; overflow: hidden;
+    }
+    .lm-advantage::after {
+        content: '02'; position: absolute; top: 50%; left: -2%;
+        transform: translateY(-50%); font-family: var(--lm-serif);
+        font-size: 300px; font-weight: 700; color: rgba(177,130,71,0.03);
+        line-height: 1; pointer-events: none;
+    }
+    .lm-adv-grid {
+        display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+    }
+    .lm-adv-card {
+        background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 24px; padding: 44px 32px; text-align: center;
+        transition: border-color 0.3s, background 0.3s, transform 0.3s;
+    }
+    .lm-adv-card:hover {
+        border-color: rgba(177,130,71,0.3); background: rgba(177,130,71,0.06);
+        transform: translateY(-4px);
+    }
+    .lm-adv-icon {
+        width: 64px; height: 64px; border-radius: 50%;
+        background: rgba(177,130,71,0.15); color: var(--lm-gold);
+        display: flex; align-items: center; justify-content: center;
+        font-size: 28px; margin: 0 auto 24px;
+    }
+    .lm-adv-badge {
+        font-family: var(--lm-serif); font-size: 12px; letter-spacing: 2px;
+        color: var(--lm-gold); text-transform: uppercase; margin-bottom: 16px;
+    }
+    .lm-adv-card h3 {
+        font-size: 20px; font-weight: 600; color: var(--lm-white);
+        margin-bottom: 14px; letter-spacing: -0.5px;
+    }
+    .lm-adv-card p {
+        font-size: 14px; line-height: 1.75; color: rgba(255,255,255,0.5);
+    }
+
+    /* ===== TYPES OVERVIEW SECTION - TAB DESIGN ===== */
+    .lm-types-overview {
+        padding: 140px 0; background: #1a1714; color: var(--lm-white);
+        position: relative; overflow: hidden;
+    }
+    .lm-types-overview::after {
+        content: '03'; position: absolute; bottom: 5%; right: -2%;
+        font-family: var(--lm-serif); font-size: 300px; font-weight: 700;
+        color: rgba(177,130,71,0.03); line-height: 1; pointer-events: none;
+    }
+    .lm-types-desc {
+        max-width: 700px; margin-bottom: 60px;
+    }
+    .lm-types-desc p {
+        font-size: 16px; line-height: 1.9; color: rgba(255,255,255,0.6);
+        letter-spacing: -0.5px;
+    }
+    .lm-types-tabs {
+        display: flex; gap: 12px; margin-bottom: 48px; flex-wrap: wrap;
+    }
+    .lm-types-tab {
+        padding: 14px 32px; border-radius: 50px; border: 1.5px solid rgba(255,255,255,0.12);
+        background: transparent; color: rgba(255,255,255,0.5);
+        font-family: var(--lm-body); font-size: 16px; font-weight: 600;
+        cursor: pointer; transition: all 0.4s; letter-spacing: -0.3px;
+    }
+    .lm-types-tab:hover {
+        border-color: rgba(177,130,71,0.4); color: rgba(255,255,255,0.8);
+    }
+    .lm-types-tab.active {
+        background: var(--lm-gold); border-color: var(--lm-gold);
+        color: var(--lm-white); box-shadow: 0 4px 20px rgba(177,130,71,0.35);
+    }
+    .lm-types-content {
+        position: relative;
+    }
+    .lm-types-panel {
+        display: none; animation: lmFadeIn 0.5s ease;
+    }
+    .lm-types-panel.active { display: block; }
+    @keyframes lmFadeIn {
+        from { opacity: 0; transform: translateY(16px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .lm-types-panel-grid {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center;
+    }
+    .lm-types-panel-images {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    }
+    .lm-types-panel-img {
+        border-radius: 20px; overflow: hidden; aspect-ratio: 3/4;
+        border: 1px solid rgba(255,255,255,0.08);
+    }
+    .lm-types-panel-img img {
+        width: 100%; height: 100%; object-fit: cover;
+        transition: transform 0.6s;
+    }
+    .lm-types-panel-img:hover img { transform: scale(1.05); }
+    .lm-types-panel-text {
+        padding: 20px 0;
+    }
+    .lm-types-panel-badge {
+        display: inline-block; padding: 6px 16px; border-radius: 20px;
+        background: rgba(177,130,71,0.15); color: var(--lm-gold);
+        font-size: 12px; font-weight: 600; letter-spacing: 1px;
+        margin-bottom: 20px; text-transform: uppercase;
+    }
+    .lm-types-panel-text h3 {
+        font-size: 32px; font-weight: 700; color: var(--lm-white);
+        letter-spacing: -1.2px; line-height: 1.35; margin-bottom: 20px;
+    }
+    .lm-types-panel-text h3 em {
+        font-style: normal; color: var(--lm-gold);
+    }
+    .lm-types-panel-text p {
+        font-size: 15px; line-height: 1.85; color: rgba(255,255,255,0.55);
+        margin-bottom: 28px;
+    }
+    .lm-types-panel-link {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 12px 28px; border-radius: 50px;
+        background: rgba(177,130,71,0.15); border: 1px solid rgba(177,130,71,0.3);
+        color: var(--lm-gold); font-size: 14px; font-weight: 600;
+        text-decoration: none; transition: all 0.3s; letter-spacing: -0.3px;
+    }
+    .lm-types-panel-link:hover {
+        background: var(--lm-gold); color: var(--lm-white);
+        border-color: var(--lm-gold);
+    }
+    .lm-types-panel-link i { font-size: 16px; transition: transform 0.3s; }
+    .lm-types-panel-link:hover i { transform: translateX(4px); }
+
+    /* ===== B&A COMPARISON SLIDER ===== */
+    .lm-ba-slider {
+        position: relative; overflow: hidden; border-radius: 20px;
+        cursor: ew-resize; user-select: none; -webkit-user-select: none;
+        border: 1px solid rgba(255,255,255,0.08);
+    }
+    .lm-ba-slider img {
+        width: 100%; height: 100%; object-fit: cover; display: block;
+    }
+    .lm-ba-slider-before {
+        width: 100%; height: 100%;
+    }
+    .lm-ba-slider-before img {
+        width: 100%; height: 100%; object-fit: cover;
+    }
+    .lm-ba-slider-after {
+        position: absolute; inset: 0; clip-path: inset(0 0 0 50%);
+    }
+    .lm-ba-slider-after img {
+        width: 100%; height: 100%; object-fit: cover;
+    }
+    .lm-ba-slider-divider {
+        position: absolute; top: 0; bottom: 0; width: 3px;
+        background: var(--lm-white); z-index: 10;
+        left: 50%; transform: translateX(-50%);
+        box-shadow: 0 0 12px rgba(0,0,0,0.3);
+    }
+    .lm-ba-slider-handle {
+        position: absolute; top: 50%; left: 50%;
+        transform: translate(-50%, -50%); z-index: 11;
+        width: 48px; height: 48px; border-radius: 50%;
+        background: var(--lm-white);
+        display: flex; align-items: center; justify-content: center;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        cursor: ew-resize; transition: box-shadow 0.3s;
+    }
+    .lm-ba-slider-handle:hover {
+        box-shadow: 0 4px 24px rgba(177,130,71,0.4);
+    }
+    .lm-ba-slider-handle svg {
+        width: 24px; height: 24px; fill: var(--lm-gold);
+    }
+    .lm-ba-slider-labels {
+        position: absolute; bottom: 16px; left: 0; right: 0; z-index: 5;
+        display: flex; justify-content: space-between; padding: 0 20px;
+        pointer-events: none;
+    }
+    .lm-ba-slider-label {
+        font-family: var(--lm-serif); font-size: 13px; font-weight: 600;
+        color: var(--lm-white); letter-spacing: 2px; text-transform: uppercase;
+        background: rgba(0,0,0,0.5); padding: 6px 16px; border-radius: 20px;
+        backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    }
+
+    /* ===== DETAIL SECTION (shared for 3 types) ===== */
+    .lm-detail {
+        padding: 140px 0; color: var(--lm-white); position: relative; overflow: hidden;
+    }
+    .lm-detail--jaw { background: #1e1b16; }
+    .lm-detail--asym { background: #1c1915; }
+    .lm-detail--prot { background: #201d17; }
+    .lm-detail-header {
+        text-align: center; margin-bottom: 70px;
+    }
+    .lm-detail-header p {
+        font-size: 16px; line-height: 1.9; color: rgba(255,255,255,0.6);
+        max-width: 700px; margin: 0 auto; letter-spacing: -0.5px;
+    }
+    .lm-detail-intro {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+        align-items: center; margin-bottom: 80px;
+    }
+    .lm-detail-intro-img {
+        border-radius: var(--lm-radius); overflow: hidden;
+        aspect-ratio: 4/3; background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.08);
+    }
+    .lm-detail-intro-img img {
+        width: 100%; height: 100%; object-fit: cover;
+    }
+    .lm-detail-intro-text h3 {
+        font-size: 28px; font-weight: 600; letter-spacing: -1px;
+        line-height: 1.4; margin-bottom: 20px;
+    }
+    .lm-detail-intro-text h3 em {
+        font-style: normal; color: var(--lm-gold);
+    }
+    .lm-detail-intro-text p {
+        font-size: 15px; line-height: 1.85; color: rgba(255,255,255,0.6);
+    }
+
+    /* Before / After Comparison */
+    .lm-ba-title {
+        text-align: center; margin-bottom: 40px;
+    }
+    .lm-ba-title h3 {
+        font-size: 24px; font-weight: 600; letter-spacing: -0.8px;
+    }
+    .lm-ba-grid {
+        display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
+        max-width: 800px; margin: 0 auto 80px;
+    }
+    .lm-ba-item {
+        position: relative; border-radius: 20px; overflow: hidden;
+        aspect-ratio: 3/4; background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.08);
+    }
+    .lm-ba-item img {
+        width: 100%; height: 100%; object-fit: cover;
+    }
+    .lm-ba-label {
+        position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%);
+        font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+        color: var(--lm-white); background: rgba(177,130,71,0.85);
+        padding: 6px 20px; border-radius: 20px;
+        font-family: var(--lm-serif);
+    }
+
+    /* Need Cards - Premium */
+    .lm-need-section { margin-top: 40px; }
+    .lm-need-title {
+        text-align: center; margin-bottom: 48px;
+    }
+    .lm-need-title h3 {
+        font-size: 28px; font-weight: 700; letter-spacing: -0.8px;
+    }
+    .lm-need-title h3 i {
+        color: var(--lm-gold); margin-right: 10px; font-size: 28px;
+    }
+    .lm-need-grid {
+        display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+        max-width: 1000px; margin: 0 auto;
+    }
+    .lm-need-card {
+        background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 24px; padding: 40px 32px; text-align: center;
+        transition: all 0.4s cubic-bezier(0.22,1,0.36,1);
+        position: relative; overflow: hidden;
+    }
+    .lm-need-card::before {
+        content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+        background: linear-gradient(90deg, transparent, var(--lm-gold), transparent);
+        opacity: 0; transition: opacity 0.4s;
+    }
+    .lm-need-card:hover {
+        border-color: rgba(177,130,71,0.4); transform: translateY(-6px);
+        box-shadow: 0 16px 48px rgba(177,130,71,0.12);
+        background: rgba(177,130,71,0.06);
+    }
+    .lm-need-card:hover::before { opacity: 1; }
+    .lm-need-card i {
+        width: 56px; height: 56px; border-radius: 50%;
+        background: linear-gradient(135deg, rgba(177,130,71,0.2), rgba(177,130,71,0.08));
+        color: var(--lm-gold); font-size: 24px;
+        display: flex; align-items: center; justify-content: center;
+        margin: 0 auto 20px; transition: transform 0.4s;
+    }
+    .lm-need-card:hover i { transform: scale(1.1); }
+    .lm-need-card p {
+        font-size: 15px; line-height: 1.8; color: rgba(255,255,255,0.6);
+        letter-spacing: -0.3px;
+    }
+
+    /* ===== PROCEDURE INFO SECTION (dark) ===== */
+    .lm-info-section {
+        padding: 120px 0; background: #1a1714; color: var(--lm-white);
+    }
+    .lm-info-grid {
+        display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+    }
+    .lm-info-card {
+        background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 24px; padding: 40px 28px; text-align: center;
+        transition: border-color 0.3s, background 0.3s;
+    }
+    .lm-info-card:hover {
+        border-color: rgba(177,130,71,0.3); background: rgba(177,130,71,0.06);
+    }
+    .lm-info-icon {
+        width: 56px; height: 56px; border-radius: 50%;
+        background: rgba(177,130,71,0.15); color: var(--lm-gold);
+        display: flex; align-items: center; justify-content: center;
+        font-size: 24px; margin: 0 auto 20px;
+    }
+    .lm-info-label {
+        font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 8px;
+        letter-spacing: -0.3px;
+    }
+    .lm-info-val {
+        font-size: 18px; font-weight: 600; color: var(--lm-white);
+        letter-spacing: -0.5px;
+    }
+
+    /* ===== FAQ SECTION (dark) ===== */
+    .lm-faq-section {
+        padding: 120px 0; background: #1a1714; color: var(--lm-white);
+        border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .lm-faq-list {
+        max-width: 800px; margin: 0 auto;
+    }
+    .lm-faq-item {
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .lm-faq-q {
+        width: 100%; display: flex; align-items: center; gap: 16px;
+        padding: 28px 0; cursor: pointer;
+        font-family: var(--lm-body); font-size: 17px; font-weight: 500;
+        color: var(--lm-white); letter-spacing: -0.5px;
+        background: none; border: none; text-align: left;
+    }
+    .lm-faq-q .lm-faq-prefix {
+        font-family: var(--lm-serif); font-size: 18px; font-weight: 600;
+        color: var(--lm-gold); flex-shrink: 0; width: 28px;
+    }
+    .lm-faq-q .lm-faq-text { flex: 1; }
+    .lm-faq-q i {
+        font-size: 18px; color: rgba(255,255,255,0.4);
+        transition: transform 0.3s; flex-shrink: 0;
+    }
+    .lm-faq-q.active i { transform: rotate(180deg); }
+    .lm-faq-a {
+        display: none; padding: 0 0 28px 44px;
+        font-size: 15px; line-height: 1.8; color: rgba(255,255,255,0.55);
+        letter-spacing: -0.3px;
+    }
+
+    /* ===== SCROLL TOP ===== */
+    .lm-scroll-top {
+        position: fixed; right: 38px; bottom: 50px; z-index: 50;
+        width: 50px; height: 50px; border-radius: 50%;
+        background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+        color: rgba(255,255,255,0.6); font-size: 18px;
+        display: flex; align-items: center; justify-content: center;
+        cursor: pointer; transition: background 0.3s;
+        backdrop-filter: blur(10px);
+    }
+    .lm-scroll-top:hover { background: rgba(177,130,71,0.2); color: var(--lm-gold); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+        .lm-horizontal { margin-top: 70px; }
+        .lm-h-wrap { display: block; }
+        .lm-h-panel { width: 100%; height: auto; min-height: 100vh; }
+        .lm-h-panel--title { width: 100%; }
+        .lm-h-panel--def {
+            width: 100%; min-height: auto;
+        }
+        .lm-definition {
+            height: auto; padding: 80px 24px;
+            display: block; position: relative;
+        }
+        .lm-def-con {
+            position: relative; top: auto; left: auto; right: auto; bottom: auto;
+        }
+        .lm-def-scroll-circle { display: none; }
+        .lm-hero-lbx span, .lm-hero-rbx span { font-size: 64px; }
+        .lm-title-band h2 { font-size: 56px; }
+        .lm-presurg-grid { grid-template-columns: 1fr; gap: 40px; }
+        .lm-presurg-timeline { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .lm-presurg-timeline::after { left: 25%; right: 25%; }
+        .lm-adv-grid { grid-template-columns: repeat(2, 1fr); }
+        .lm-types-panel-grid { grid-template-columns: 1fr; gap: 32px; }
+        .lm-detail-intro { grid-template-columns: 1fr; gap: 40px; }
+        .lm-need-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+        .lm-ba-grid { max-width: 100%; }
+        .lm-info-grid { grid-template-columns: repeat(2, 1fr); }
+        .lm-definition::before { font-size: 120px; }
+    }
+    @media (max-width: 768px) {
+        .lm-h-panel { min-height: auto; }
+        .lm-h-panel--title { width: 100%; }
+        .lm-inner { padding: 0 24px; }
+        .lm-hero-lbx span, .lm-hero-rbx span { font-size: 48px; }
+        .lm-hero-desc { font-size: 15px; }
+        .lm-scroll-down { width: 70px; height: 70px; bottom: 5%; right: 5%; }
+        .lm-title-band h2 { font-size: 36px; }
+        .lm-title-band .lm-kr-sub { font-size: 18px; }
+        .lm-marquee { font-size: 80px; }
+        .lm-definition::before { font-size: 80px; }
+        .lm-def-title { font-size: 28px; }
+        .lm-presurg, .lm-advantage, .lm-types-overview { padding: 100px 0; }
+        .lm-detail { padding: 100px 0; }
+        .lm-presurg-content h3 { font-size: 26px; }
+        .lm-presurg-timeline { grid-template-columns: 1fr; gap: 20px; }
+        .lm-presurg-timeline::before { display: none; }
+        .lm-presurg-timeline::after { display: none; }
+        .lm-presurg-tl-item { padding-top: 0; }
+        .lm-presurg-tl-num { width: 40px; height: 40px; font-size: 16px; border-radius: 12px; }
+        .lm-adv-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+        .lm-adv-card { padding: 32px 24px; }
+        .lm-types-tabs { gap: 8px; }
+        .lm-types-tab { padding: 10px 20px; font-size: 14px; }
+        .lm-types-panel-grid { grid-template-columns: 1fr; gap: 24px; }
+        .lm-types-panel-text h3 { font-size: 24px; }
+        .lm-section-h2 { font-size: 28px; }
+        .lm-detail-intro-text h3 { font-size: 22px; }
+        .lm-ba-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto 60px; }
+        .lm-need-grid { grid-template-columns: 1fr; }
+        .lm-info-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+        .lm-info-card { padding: 24px 16px; }
+        .lm-info-section, .lm-faq-section { padding: 80px 0; }
+        .lm-scroll-top { right: 20px; bottom: 30px; width: 45px; height: 45px; }
+    }
+    @media (max-width: 480px) {
+        .lm-inner { padding: 0 16px; }
+        .lm-hero-lbx span, .lm-hero-rbx span { font-size: 36px; }
+        .lm-hero-desc { font-size: 14px; max-width: 100%; }
+        .lm-hero-desc2 { font-size: 14px; margin-top: 30px; }
+        .lm-hero-content { padding: 100px 16px 0; gap: 16px; }
+        .lm-scroll-down { display: none; }
+        .lm-title-band h2 { font-size: 28px; }
+        .lm-title-band .lm-kr-sub { font-size: 15px; }
+        .lm-title-band .lm-badge { padding: 0 20px; height: 34px; }
+        .lm-title-band .lm-badge span { font-size: 14px; }
+        .lm-marquee { font-size: 60px; }
+        .lm-def-title { font-size: 20px; }
+        .lm-def-body { font-size: 14px; line-height: 1.7; }
+        .lm-section-label { font-size: 12px; letter-spacing: 2px; }
+        .lm-section-h2 { font-size: 24px; margin-bottom: 30px; }
+        .lm-presurg, .lm-advantage, .lm-types-overview { padding: 60px 0; }
+        .lm-detail { padding: 60px 0; }
+        .lm-presurg-content h3 { font-size: 22px; }
+        .lm-presurg-content p { font-size: 14px; }
+        .lm-presurg-divider { width: 36px; }
+        .lm-presurg-badge { font-size: 10px; padding: 5px 10px; }
+        .lm-presurg-timeline { grid-template-columns: 1fr; gap: 16px; }
+        .lm-presurg-tl-card-body { padding: 28px 20px 24px; }
+        .lm-presurg-tl-card h4 { font-size: 16px; }
+        .lm-presurg-tl-card p { font-size: 12px; }
+        .lm-presurg-tl-num { width: 36px; height: 36px; font-size: 14px; border-radius: 10px; }
+        .lm-adv-grid { grid-template-columns: 1fr; gap: 14px; }
+        .lm-adv-card { padding: 28px 20px; }
+        .lm-adv-card h3 { font-size: 18px; }
+        .lm-adv-card p { font-size: 13px; }
+        .lm-adv-icon { width: 52px; height: 52px; font-size: 22px; }
+        .lm-types-tabs { gap: 6px; }
+        .lm-types-tab { padding: 8px 16px; font-size: 13px; }
+        .lm-types-panel-images { grid-template-columns: 1fr; gap: 12px; }
+        .lm-types-panel-text h3 { font-size: 20px; }
+        .lm-types-panel-text p { font-size: 14px; }
+        .lm-types-panel-link { padding: 10px 22px; font-size: 13px; }
+        .lm-detail-header p { font-size: 14px; }
+        .lm-detail-intro-text h3 { font-size: 20px; }
+        .lm-detail-intro-text p { font-size: 14px; }
+        .lm-ba-title h3 { font-size: 20px; }
+        .lm-ba-grid { max-width: 320px; }
+        .lm-need-title h3 { font-size: 22px; }
+        .lm-need-card { padding: 28px 20px; }
+        .lm-need-card p { font-size: 14px; }
+        .lm-info-section { padding: 60px 0; }
+        .lm-info-grid { grid-template-columns: 1fr; gap: 10px; }
+        .lm-info-card { padding: 20px 16px; }
+        .lm-info-val { font-size: 16px; }
+        .lm-faq-section { padding: 60px 0; }
+        .lm-faq-q { font-size: 15px; padding: 20px 0; }
+        .lm-faq-a { font-size: 14px; padding: 0 0 20px 40px; }
+        .lm-scroll-top { right: 16px; bottom: 24px; width: 40px; height: 40px; }
+    }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo"><a href="index_jp.html">SMILEVIEW</a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="introduction_jp.html">SMILEVIEWデンタルクリニック</a></li>
+                    <li><a href="invisalign_jp.html">インビザライン</a></li>
+                    <li><a href="ortho_jp.html" class="active">歯列矯正</a></li>
+                    <li><a href="whitening_jp.html">歯のホワイトニング</a></li>
+                    <li><a href="laminate_jp.html">ワンデーラミネートベニア</a></li>
+                    <li><a href="implant_jp.html">睡眠インプラント</a></li>
+                    <li><a href="prosthetics_jp.html">補綴治療</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="lang-selector" id="langSelector">
+                    <span class="lang-icon"><i class="ph ph-globe"></i></span>
+                    <button type="button" class="lang-current" onclick="this.closest('.lang-selector').classList.toggle('open')">JP</button>
+                    <div class="lang-dropdown">
+                        <a href="ortho.html">韓国語 (KO)</a>
+                        <a href="ortho_tw.html">繁體中文 (TW)</a>
+                        <a href="#" class="active">日本語 (JP)</a>
+                    </div>
+                </div>
+                <a href="https://lin.ee/C0rBsdX" class="btn-reserve">予約する</a>
+                <div class="mobile-menu-btn"><i class="ph ph-list"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-inner">
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="introduction_jp.html">クリニック紹介</a></li>
+                    <li><a href="invisalign_jp.html">インビザライン</a></li>
+                    <li><a href="ortho_jp.html">歯列矯正</a></li>
+                    <li><a href="whitening_jp.html">歯のホワイトニング</a></li>
+                    <li><a href="laminate_jp.html">ワンデーラミネートベニア</a></li>
+                    <li><a href="implant_jp.html">睡眠インプラント</a></li>
+                    <li><a href="prosthetics_jp.html">補綴治療</a></li>
+                </ul>
+            </nav>
+            <a href="https://naver.me/xoBKVJA6" class="mobile-reserve-btn" target="_blank">オンライン予約</a>
+        </div>
+    </div>
+
+    <main class="lm-page">
+
+        <!-- ===== HORIZONTAL SCROLL SECTION ===== -->
+        <section class="lm-horizontal">
+            <div class="lm-h-wrap">
+
+                <!-- Panel 1: HERO -->
+                <div class="lm-h-panel">
+        <div class="lm-hero">
+            <div class="lm-hero-bg"></div>
+            <div class="lm-hero-overlay"></div>
+            <div class="lm-hero-content">
+                <div class="lm-hero-lbx"><span>ORTHODONTICS</span></div>
+                <p class="lm-hero-desc">
+                    歯と顎の異常な位置を矯正し、<br>
+                    笑顔と顎の機能を向上させる治療過程です。
+                </p>
+                <p class="lm-hero-desc2">
+                    歯の理想的な位置と状態を再調整し、<br>
+                    美しいスマイルラインと健康な口腔をお届けします。
+                </p>
+            </div>
+            <!-- Scroll Down -->
+            <div class="lm-scroll-down">
+                <svg class="lm-scroll-circle" viewBox="0 0 100 100">
+                    <defs>
+                        <path id="circlePath" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"/>
+                    </defs>
+                    <text>
+                        <textPath href="#circlePath">Scroll Down ・ Scroll Down ・ Scroll Down ・</textPath>
+                    </text>
+                </svg>
+                <span class="lm-scroll-arrow"><i class="ph ph-arrow-down"></i></span>
+            </div>
+        </div>
+                </div><!-- end Panel 1 -->
+
+                <!-- Panel 2: TITLE BAND -->
+                <div class="lm-h-panel lm-h-panel--title">
+        <div class="lm-title-band">
+            <div class="lm-title-band-overlay"></div>
+            <div class="lm-title-band-content">
+                <h2>Orthodontics</h2>
+                <p class="lm-kr-sub">歯列矯正ソリューション</p>
+                <div class="lm-badge">
+                    <span>SMILEVIEW ORTHODONTICS</span>
+                </div>
+            </div>
+            <!-- Marquee -->
+            <div class="lm-marquee">
+                <div class="lm-marquee-track">
+                    <span>SMILEVIEW</span><span>ORTHODONTICS</span><span>SMILEVIEW</span><span>ORTHODONTICS</span>
+                    <span>SMILEVIEW</span><span>ORTHODONTICS</span><span>SMILEVIEW</span><span>ORTHODONTICS</span>
+                </div>
+            </div>
+        </div>
+                </div><!-- end Panel 2 -->
+
+                <!-- Panel 3: DEFINITION -->
+                <div class="lm-h-panel lm-h-panel--def">
+        <div class="lm-definition">
+            <!-- Scroll Circle -->
+            <div class="lm-def-scroll-circle">
+                <svg class="lm-scroll-circle" viewBox="0 0 100 100">
+                    <defs>
+                        <path id="circlePathDef" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"/>
+                    </defs>
+                    <text>
+                        <textPath href="#circlePathDef">Scroll Down ・ Scroll Down ・ Scroll Down ・</textPath>
+                    </text>
+                </svg>
+                <span class="lm-def-arrow"><i class="ph ph-arrow-down"></i></span>
+            </div>
+            <!-- Content -->
+            <div class="lm-def-con">
+                <div class="lm-def-tit">
+                    <span class="lm-def-num">01</span>
+                    <h2 class="lm-def-title">歯列矯正とは？</h2>
+                    <p class="lm-def-body">
+                        歯列矯正は、専門の矯正装置を使用して歯と顎の異常な位置や咬合問題を正しく矯正する治療過程です。顎と歯の位置を調整して咬合と歯の機能を安定させ、変化した顎の長さと位置を調節して顎と顔面筋肉のバランスを整えることができます。美しいスマイルラインとともに健康な口腔機能を取り戻せます。
+                    </p>
+                </div>
+                <div class="lm-def-divider"></div>
+                <div class="lm-def-sub">
+                    <p>
+                        <b>矯正タイプ</b>
+                        <span>サージェリーファースト矯正、受け口矯正、顔面非対称矯正、出っ歯矯正、部分矯正、舌側矯正など</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+                </div><!-- end Panel 3 -->
+
+            </div><!-- end lm-h-wrap -->
+        </section><!-- end lm-horizontal -->
+
+        <!-- ===== PROCEDURE INFO ===== -->
+        <section class="lm-info-section">
+            <div class="lm-inner" style="text-align:center;">
+                <span class="lm-section-label lm-fade">PROCEDURE INFO</span>
+                <h2 class="lm-section-h2 lm-fade">施術情報</h2>
+                <div class="lm-info-grid">
+                    <div class="lm-info-card lm-fade">
+                        <div class="lm-info-icon"><i class="ph ph-clock"></i></div>
+                        <div class="lm-info-label">施術時間</div>
+                        <div class="lm-info-val">約1〜2時間（初回来院）</div>
+                    </div>
+                    <div class="lm-info-card lm-fade lm-fade-delay-1">
+                        <div class="lm-info-icon"><i class="ph ph-syringe"></i></div>
+                        <div class="lm-info-label">麻酔方法</div>
+                        <div class="lm-info-val">不要</div>
+                    </div>
+                    <div class="lm-info-card lm-fade lm-fade-delay-2">
+                        <div class="lm-info-icon"><i class="ph ph-calendar-dots"></i></div>
+                        <div class="lm-info-label">矯正期間</div>
+                        <div class="lm-info-val">12〜24ヶ月</div>
+                    </div>
+                    <div class="lm-info-card lm-fade lm-fade-delay-3">
+                        <div class="lm-info-icon"><i class="ph ph-arrows-clockwise"></i></div>
+                        <div class="lm-info-label">通院周期</div>
+                        <div class="lm-info-val">3〜4週間</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 1: サージェリーファースト矯正とは？ ===== -->
+        <section class="lm-presurg">
+            <div class="lm-presurg-grid-bg"></div>
+            <div class="lm-inner">
+                <span class="lm-section-label lm-fade">PRE-SURGICAL</span>
+                <h2 class="lm-section-h2 lm-fade">サージェリーファースト矯正とは？</h2>
+                <div class="lm-presurg-grid">
+                    <div class="lm-presurg-content lm-fade">
+                        <h3>手術が先、<em>矯正は後で</em></h3>
+                        <div class="lm-presurg-divider"></div>
+                        <p>
+                            サージェリーファースト矯正は、従来の「矯正→手術」の順番を逆転させ、顎手術を先に行ってから矯正治療を進める方法です。手術によって骨格的不調和を先に解決するため外見改善が素早く行われ、異常な骨格が正常な骨格に変わることで審美的満足感を早期に得ることができます。
+                        </p>
+                        <p style="margin-top:16px;">
+                            術後に変化した顎と歯の位置を精密に再調整して咬合と歯の機能を安定・回復させることが核心目的であり、従来の矯正-手術方式に比べ全体の治療期間を短縮できる利点があります。
+                        </p>
+                    </div>
+                    <div class="lm-presurg-img-wrap lm-fade lm-fade-delay-1">
+                        <span class="lm-presurg-badge">Surgery First<small>手術優先</small></span>
+                        <div class="lm-presurg-img">
+                            <img src="images/ortho/unnamed.jpg" alt="サージェリーファースト矯正">
+                        </div>
+                    </div>
+                </div>
+                <div class="lm-presurg-timeline">
+                    <div class="lm-presurg-tl-item lm-fade">
+                        <div class="lm-presurg-tl-card">
+                            <div class="lm-presurg-tl-card-img">
+                                <img src="images/ortho/%EC%88%98%EC%88%A0%EC%A0%84.jpg" alt="術前精密分析">
+                            </div>
+                            <div class="lm-presurg-tl-card-body">
+                                <span class="lm-presurg-tl-num">01</span>
+                                <h4>術前精密分析</h4>
+                                <p>3D CTと口腔スキャンで骨格および歯の状態を精密に分析し、患者の顔型と咬合状態を総合的に評価して最適な手術計画を立案します。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lm-presurg-tl-item lm-fade lm-fade-delay-1">
+                        <div class="lm-presurg-tl-card">
+                            <div class="lm-presurg-tl-card-img">
+                                <img src="images/ortho/%EC%88%98%EC%88%A0%20%EC%A7%81%ED%9B%84.jpg" alt="術直後">
+                            </div>
+                            <div class="lm-presurg-tl-card-body">
+                                <span class="lm-presurg-tl-num">02</span>
+                                <h4>術直後</h4>
+                                <p>骨格的不調和を解決し、審美的改善の基盤を整える段階です。手術によって異常な骨格が正常位置に移動し、外見改善が素早く現れます。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lm-presurg-tl-item lm-fade lm-fade-delay-2">
+                        <div class="lm-presurg-tl-card">
+                            <div class="lm-presurg-tl-card-img">
+                                <img src="images/ortho/%EC%88%98%EC%88%A0%20%ED%9B%84%20%EA%B5%90%EC%A0%95%20%EC%A4%91.jpg" alt="術後矯正中">
+                            </div>
+                            <div class="lm-presurg-tl-card-body">
+                                <span class="lm-presurg-tl-num">03</span>
+                                <h4>術後矯正中</h4>
+                                <p>変化した顎の位置に合わせて歯の咬合を精密に調整する過程です。矯正装置を通じて歯を理想的な位置に移動させ、安定した咬合を達成します。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lm-presurg-tl-item lm-fade lm-fade-delay-3">
+                        <div class="lm-presurg-tl-card">
+                            <div class="lm-presurg-tl-card-img">
+                                <img src="images/ortho/%EC%88%98%EC%88%A0%20%ED%9B%84%20%EA%B5%90%EC%A0%95%20%EC%99%84%EB%A3%8C.jpg" alt="術後矯正完了">
+                            </div>
+                            <div class="lm-presurg-tl-card-body">
+                                <span class="lm-presurg-tl-num">04</span>
+                                <h4>術後矯正完了</h4>
+                                <p>安定した咬合と美しいスマイルラインを完成させる最終段階です。リテーナーによって矯正結果が長期間維持されるよう管理します。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 2: 장점 ===== -->
+        <section class="lm-advantage">
+            <div class="lm-inner" style="text-align:center;">
+                <span class="lm-section-label lm-fade">ADVANTAGE</span>
+                <h2 class="lm-section-h2 lm-fade">SMILEVIEWの矯正の特長</h2>
+            </div>
+            <div class="lm-inner">
+                <div class="lm-adv-grid">
+                    <div class="lm-adv-card lm-fade">
+                        <div class="lm-adv-icon"><i class="ph ph-star-four"></i></div>
+                        <div class="lm-adv-badge">benefit 01</div>
+                        <h3>素早い審美的改善</h3>
+                        <p>手術を先に行うことで外見改善が素早く行われ、正常な骨格への変化により早期に審美的満足感を体験できます。</p>
+                    </div>
+                    <div class="lm-adv-card lm-fade lm-fade-delay-1">
+                        <div class="lm-adv-icon"><i class="ph ph-tooth"></i></div>
+                        <div class="lm-adv-badge">benefit 02</div>
+                        <h3>機能的な咬合の回復</h3>
+                        <p>正しい咀嚼機能と顎関節のバランスを取り戻し、全体的な口腔健康を向上させて安定した咬合を達成します。</p>
+                    </div>
+                    <div class="lm-adv-card lm-fade lm-fade-delay-2">
+                        <div class="lm-adv-icon"><i class="ph ph-users-three"></i></div>
+                        <div class="lm-adv-badge">benefit 03</div>
+                        <h3>矯正科専門医との連携診療</h3>
+                        <p>手術計画から細心な分析が必要なため、矯正科医療スタッフとの緊密な連携診療を通じて最適な治療結果を導きます。</p>
+                    </div>
+                    <div class="lm-adv-card lm-fade lm-fade-delay-3">
+                        <div class="lm-adv-icon"><i class="ph ph-shield-check"></i></div>
+                        <div class="lm-adv-badge">benefit 04</div>
+                        <h3>体系的なアフターケア</h3>
+                        <p>リテーナー管理と定期検診により矯正結果が長期間安定して維持されるよう、体系的なアフターケアを提供します。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 3: 양악수술 교정 (Tab Design) ===== -->
+        <section class="lm-types-overview">
+            <div class="lm-inner">
+                <span class="lm-section-label lm-fade">BIMAXILLARY</span>
+                <h2 class="lm-section-h2 lm-fade">両顎手術と組み合わせた矯正治療</h2>
+                <div class="lm-types-desc lm-fade">
+                    <p>両顎手術は、上顎と下顎の骨格および歯の不正咬合を治療し、審美的な顔の骨格と正常な咬合を得ることを目的とした手術です。各矯正タイプをクリックして詳細情報を確認してください。</p>
+                </div>
+                <div class="lm-types-tabs lm-fade">
+                    <button class="lm-types-tab active" data-panel="jaw" onclick="switchTypeTab(this)">受け口矯正</button>
+                    <button class="lm-types-tab" data-panel="asym" onclick="switchTypeTab(this)">顔面非対称矯正</button>
+                    <button class="lm-types-tab" data-panel="prot" onclick="switchTypeTab(this)">出っ歯矯正</button>
+                </div>
+                <div class="lm-types-content lm-fade">
+                    <!-- Panel: 주걱턱 -->
+                    <div class="lm-types-panel active" id="panel-jaw">
+                        <div class="lm-types-panel-grid">
+                            <div class="lm-types-panel-images" style="grid-template-columns:1fr;">
+                                <div class="lm-ba-slider" data-ba="true" style="aspect-ratio:4/3;">
+                                    <div class="lm-ba-slider-before"><img src="images/ortho/1.jpg" alt="Before"></div>
+                                    <div class="lm-ba-slider-after" style="clip-path:inset(0 0 0 50%);"><img src="images/ortho/2.jpg" alt="After"></div>
+                                    <div class="lm-ba-slider-divider"></div>
+                                    <div class="lm-ba-slider-handle">
+                                        <svg viewBox="0 0 24 24"><path d="M8 5l-5 7 5 7M16 5l5 7-5 7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:var(--lm-gold);"/></svg>
+                                    </div>
+                                    <div class="lm-ba-slider-labels">
+                                        <span class="lm-ba-slider-label">Before</span>
+                                        <span class="lm-ba-slider-label">After</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lm-types-panel-text">
+                                <span class="lm-types-panel-badge">Type 01</span>
+                                <h3>下顎突出による<br><em>受け口矯正</em></h3>
+                                <p>下顎の過成長または上顎の成長不足により下顎が突出した場合に行う矯正です。骨格的不調和を解決して顔のバランスと正常な咬合を回復させます。</p>
+                                <a href="#sec-jaw" class="lm-types-panel-link" onclick="event.preventDefault();document.getElementById('sec-jaw').scrollIntoView({behavior:'smooth',block:'start'})">詳しく見る <i class="ph ph-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Panel: 안면비대칭 -->
+                    <div class="lm-types-panel" id="panel-asym">
+                        <div class="lm-types-panel-grid">
+                            <div class="lm-types-panel-images" style="grid-template-columns:1fr;">
+                                <div class="lm-ba-slider" data-ba="true" style="aspect-ratio:4/3;">
+                                    <div class="lm-ba-slider-before"><img src="images/ortho/%EC%95%88%EB%A9%B4%EB%B9%84%EB%8C%80%EC%B9%AD%20%EC%A0%84.jpg" alt="Before"></div>
+                                    <div class="lm-ba-slider-after" style="clip-path:inset(0 0 0 50%);"><img src="images/ortho/%EC%95%88%EB%A9%B4%EB%B9%84%EB%8C%80%EC%B9%AD%20%ED%9B%84.jpg" alt="After"></div>
+                                    <div class="lm-ba-slider-divider"></div>
+                                    <div class="lm-ba-slider-handle">
+                                        <svg viewBox="0 0 24 24"><path d="M8 5l-5 7 5 7M16 5l5 7-5 7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:var(--lm-gold);"/></svg>
+                                    </div>
+                                    <div class="lm-ba-slider-labels">
+                                        <span class="lm-ba-slider-label">Before</span>
+                                        <span class="lm-ba-slider-label">After</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lm-types-panel-text">
+                                <span class="lm-types-panel-badge">Type 02</span>
+                                <h3>左右バランスを取り戻す<br><em>顔面非対称矯正</em></h3>
+                                <p>顔の上下の長さまたは左右対称のバランスが合わない時に行う矯正です。顎の非対称を矯正して均整のとれた顔のラインと安定した咬合を達成します。</p>
+                                <a href="#sec-asym" class="lm-types-panel-link" onclick="event.preventDefault();document.getElementById('sec-asym').scrollIntoView({behavior:'smooth',block:'start'})">詳しく見る <i class="ph ph-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Panel: 돌출입 -->
+                    <div class="lm-types-panel" id="panel-prot">
+                        <div class="lm-types-panel-grid">
+                            <div class="lm-types-panel-images" style="grid-template-columns:1fr;">
+                                <div class="lm-ba-slider" data-ba="true" style="aspect-ratio:4/3;">
+                                    <div class="lm-ba-slider-before"><img src="images/ortho/%EB%8F%8C%EC%B6%9C%EC%9E%85%20%EC%A0%84.jpg" alt="Before"></div>
+                                    <div class="lm-ba-slider-after" style="clip-path:inset(0 0 0 50%);"><img src="images/ortho/%EB%8F%8C%EC%B6%9C%EC%9E%85%20%ED%9B%84.jpg" alt="After"></div>
+                                    <div class="lm-ba-slider-divider"></div>
+                                    <div class="lm-ba-slider-handle">
+                                        <svg viewBox="0 0 24 24"><path d="M8 5l-5 7 5 7M16 5l5 7-5 7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:var(--lm-gold);"/></svg>
+                                    </div>
+                                    <div class="lm-ba-slider-labels">
+                                        <span class="lm-ba-slider-label">Before</span>
+                                        <span class="lm-ba-slider-label">After</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lm-types-panel-text">
+                                <span class="lm-types-panel-badge">Type 03</span>
+                                <h3>自然な横顔のための<br><em>出っ歯矯正</em></h3>
+                                <p>鼻先や顎先に比べて口が前に突出し、横顔の改善が必要な場合に行う矯正です。Eラインを改善し、自然な口唇ラインを取り戻します。</p>
+                                <a href="#sec-prot" class="lm-types-panel-link" onclick="event.preventDefault();document.getElementById('sec-prot').scrollIntoView({behavior:'smooth',block:'start'})">詳しく見る <i class="ph ph-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 4: 受け口矯正 상세 ===== -->
+        <section class="lm-detail lm-detail--jaw" id="sec-jaw">
+            <div class="lm-inner">
+                <div class="lm-detail-header">
+                    <span class="lm-section-label lm-fade">PROGNATHISM</span>
+                    <h2 class="lm-section-h2 lm-fade">受け口矯正</h2>
+                    <p class="lm-fade">下顎の過成長または上顎の成長が相対的に不足して下顎が突出した場合の矯正で、骨格的不調和を解決して顔のバランスと正常な咬合を回復させます。</p>
+                </div>
+
+                <div class="lm-detail-intro">
+                    <div class="lm-detail-intro-img lm-fade">
+                        <div class="lm-ba-slider" data-ba="true" style="aspect-ratio:4/3; border-radius:var(--lm-radius);">
+                            <div class="lm-ba-slider-before"><img src="images/ortho/1.jpg" alt="Before"></div>
+                            <div class="lm-ba-slider-after" style="clip-path:inset(0 0 0 50%);"><img src="images/ortho/2.jpg" alt="After"></div>
+                            <div class="lm-ba-slider-divider"></div>
+                            <div class="lm-ba-slider-handle">
+                                <svg viewBox="0 0 24 24"><path d="M8 5l-5 7 5 7M16 5l5 7-5 7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:var(--lm-gold);"/></svg>
+                            </div>
+                            <div class="lm-ba-slider-labels">
+                                <span class="lm-ba-slider-label">Before</span>
+                                <span class="lm-ba-slider-label">After</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lm-detail-intro-text lm-fade lm-fade-delay-1">
+                        <h3>下顎突出による<br><em>顔のアンバランス改善</em></h3>
+                        <p>受け口（下顎前突症）は下顎が上顎より前に出ている状態で、横から見ると下顎が突出して見え、正面からは顔が長く見える特徴があります。咀嚼機能の低下だけでなく、発音問題や顎関節障害を伴う場合があり、積極的な矯正が必要です。</p>
+                    </div>
+                </div>
+
+                <!-- Need Cards -->
+                <div class="lm-need-section">
+                    <div class="lm-need-title lm-fade">
+                        <h3><i class="ph-fill ph-user-check"></i> このような方に必要です</h3>
+                    </div>
+                    <div class="lm-need-grid">
+                        <div class="lm-need-card lm-fade">
+                            <i class="ph ph-arrows-out-line-vertical"></i>
+                            <p>下顎が上顎より前に出ている場合</p>
+                        </div>
+                        <div class="lm-need-card lm-fade lm-fade-delay-1">
+                            <i class="ph ph-user"></i>
+                            <p>顔が長く見えて印象が強くなったり老けて見える場合</p>
+                        </div>
+                        <div class="lm-need-card lm-fade lm-fade-delay-2">
+                            <i class="ph ph-fork-knife"></i>
+                            <p>上下の歯が逆に噛み合い咀嚼効率が落ちる場合</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 5: 顔面非対称矯正 상세 ===== -->
+        <section class="lm-detail lm-detail--asym" id="sec-asym">
+            <div class="lm-inner">
+                <div class="lm-detail-header">
+                    <span class="lm-section-label lm-fade">ASYMMETRY</span>
+                    <h2 class="lm-section-h2 lm-fade">顔面非対称矯正</h2>
+                    <p class="lm-fade">顔の上下の長さまたは左右対称のバランスが合わない時に行う矯正で、顎の非対称を矯正して均整のとれた顔のラインと安定した咬合を同時に達成します。</p>
+                </div>
+
+                <div class="lm-detail-intro">
+                    <div class="lm-detail-intro-text lm-fade">
+                        <h3>左右バランスを取り戻す<br><em>顔面対称矯正</em></h3>
+                        <p>顔面非対称は、上顎または下顎の左右の長さが異なる、または顎が一方に偏って顔の正中線がずれている状態です。審美的問題だけでなく、片側に偏った咀嚼習慣、顎関節痛、歯の正中線のずれなどの機能的問題を伴う場合があります。</p>
+                    </div>
+                    <div class="lm-detail-intro-img lm-fade lm-fade-delay-1">
+                        <div class="lm-ba-slider" data-ba="true" style="aspect-ratio:4/3; border-radius:var(--lm-radius);">
+                            <div class="lm-ba-slider-before"><img src="images/ortho/%EC%95%88%EB%A9%B4%EB%B9%84%EB%8C%80%EC%B9%AD%20%EC%A0%84.jpg" alt="Before"></div>
+                            <div class="lm-ba-slider-after" style="clip-path:inset(0 0 0 50%);"><img src="images/ortho/%EC%95%88%EB%A9%B4%EB%B9%84%EB%8C%80%EC%B9%AD%20%ED%9B%84.jpg" alt="After"></div>
+                            <div class="lm-ba-slider-divider"></div>
+                            <div class="lm-ba-slider-handle">
+                                <svg viewBox="0 0 24 24"><path d="M8 5l-5 7 5 7M16 5l5 7-5 7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:var(--lm-gold);"/></svg>
+                            </div>
+                            <div class="lm-ba-slider-labels">
+                                <span class="lm-ba-slider-label">Before</span>
+                                <span class="lm-ba-slider-label">After</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Need Cards -->
+                <div class="lm-need-section">
+                    <div class="lm-need-title lm-fade">
+                        <h3><i class="ph-fill ph-user-check"></i> このような方に必要です</h3>
+                    </div>
+                    <div class="lm-need-grid">
+                        <div class="lm-need-card lm-fade">
+                            <i class="ph ph-arrows-horizontal"></i>
+                            <p>上顎の左右の長さが合わない場合</p>
+                        </div>
+                        <div class="lm-need-card lm-fade lm-fade-delay-1">
+                            <i class="ph ph-subtract-square"></i>
+                            <p>下顎の左右対称が合わない場合</p>
+                        </div>
+                        <div class="lm-need-card lm-fade lm-fade-delay-2">
+                            <i class="ph ph-align-center-vertical-simple"></i>
+                            <p>上下の歯の正中線が大きくずれている場合</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 6: 出っ歯矯正 상세 ===== -->
+        <section class="lm-detail lm-detail--prot" id="sec-prot">
+            <div class="lm-inner">
+                <div class="lm-detail-header">
+                    <span class="lm-section-label lm-fade">PROTRUSION</span>
+                    <h2 class="lm-section-h2 lm-fade">出っ歯矯正</h2>
+                    <p class="lm-fade">横から見た時に鼻先や顎先に比べて口が前に突出している場合の矯正で、横顔のEラインを改善し自然な口唇ラインを取り戻します。</p>
+                </div>
+
+                <div class="lm-detail-intro">
+                    <div class="lm-detail-intro-img lm-fade">
+                        <div class="lm-ba-slider" data-ba="true" style="aspect-ratio:4/3; border-radius:var(--lm-radius);">
+                            <div class="lm-ba-slider-before"><img src="images/ortho/%EB%8F%8C%EC%B6%9C%EC%9E%85%20%EC%A0%84.jpg" alt="Before"></div>
+                            <div class="lm-ba-slider-after" style="clip-path:inset(0 0 0 50%);"><img src="images/ortho/%EB%8F%8C%EC%B6%9C%EC%9E%85%20%ED%9B%84.jpg" alt="After"></div>
+                            <div class="lm-ba-slider-divider"></div>
+                            <div class="lm-ba-slider-handle">
+                                <svg viewBox="0 0 24 24"><path d="M8 5l-5 7 5 7M16 5l5 7-5 7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:var(--lm-gold);"/></svg>
+                            </div>
+                            <div class="lm-ba-slider-labels">
+                                <span class="lm-ba-slider-label">Before</span>
+                                <span class="lm-ba-slider-label">After</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lm-detail-intro-text lm-fade lm-fade-delay-1">
+                        <h3>自然な横顔のための<br><em>出っ歯改善</em></h3>
+                        <p>出っ歯は歯や歯槽骨が前方に突出して口が出て見える状態で、口を閉じにくかったり無意識に口が開いたりする症状を伴うことがあります。長い顔、顔面非対称、歯肉過多露出（ガミースマイル）などを伴う場合が多く、正確な診断を通じて個人に合った最適な矯正方法を適用します。</p>
+                    </div>
+                </div>
+
+                <!-- Need Cards -->
+                <div class="lm-need-section">
+                    <div class="lm-need-title lm-fade">
+                        <h3><i class="ph-fill ph-user-check"></i> このような方に必要です</h3>
+                    </div>
+                    <div class="lm-need-grid">
+                        <div class="lm-need-card lm-fade">
+                            <i class="ph ph-user-rectangle"></i>
+                            <p>長い顔を伴う出っ歯の場合</p>
+                        </div>
+                        <div class="lm-need-card lm-fade lm-fade-delay-1">
+                            <i class="ph ph-arrows-split"></i>
+                            <p>顔面非対称を伴う出っ歯の場合</p>
+                        </div>
+                        <div class="lm-need-card lm-fade lm-fade-delay-2">
+                            <i class="ph ph-smiley-nervous"></i>
+                            <p>歯肉過多露出を伴う出っ歯の場合</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 8: FAQ ===== -->
+        <section class="lm-faq-section">
+            <div class="lm-inner" style="text-align:center;">
+                <span class="lm-section-label lm-fade">FAQ</span>
+                <h2 class="lm-section-h2 lm-fade">よくある質問</h2>
+            </div>
+            <div class="lm-inner">
+                <div class="lm-faq-list">
+                    <div class="lm-faq-item lm-fade">
+                        <button class="lm-faq-q" onclick="toggleFaq(this)">
+                            <span class="lm-faq-prefix">Q.</span>
+                            <span class="lm-faq-text">サージェリーファースト矯正とは何ですか？</span>
+                            <i class="ph ph-caret-down"></i>
+                        </button>
+                        <div class="lm-faq-a">
+                            <strong>A.</strong> サージェリーファースト矯正は顎手術を先に行ってから矯正治療を進める方法です。手術によって骨格的不調和を先に解決するため外見改善が素早く行われ、異常な骨格が正常な骨格に変わることで審美的満足感を早期に得られます。術後に変化した顎と歯の位置を精密に再調整して咬合と歯の機能を安定・回復させることが核心目的です。
+                        </div>
+                    </div>
+                    <div class="lm-faq-item lm-fade lm-fade-delay-1">
+                        <button class="lm-faq-q" onclick="toggleFaq(this)">
+                            <span class="lm-faq-prefix">Q.</span>
+                            <span class="lm-faq-text">両顎手術後に矯正は必ず必要ですか？</span>
+                            <i class="ph ph-caret-down"></i>
+                        </button>
+                        <div class="lm-faq-a">
+                            <strong>A.</strong> 両顎手術は骨格的奇形を解決できる手術方法で、術後に骨格の位置を正しい位置に再調整すると歯の咬み合わせが変わる場合があります。そのため両顎手術後は歯列矯正が必要な場合があり、手術と矯正を連携して進めることで不正咬合を改善し安定した結果が得られます。
+                        </div>
+                    </div>
+                    <div class="lm-faq-item lm-fade lm-fade-delay-2">
+                        <button class="lm-faq-q" onclick="toggleFaq(this)">
+                            <span class="lm-faq-prefix">Q.</span>
+                            <span class="lm-faq-text">受け口矯正はどんな方に必要ですか？</span>
+                            <i class="ph ph-caret-down"></i>
+                        </button>
+                        <div class="lm-faq-a">
+                            <strong>A.</strong> 受け口矯正は下顎の成長が過度であるか上顎の成長が相対的に不足して下顎が突出した場合に必要です。顔が長く見えて印象が強くなったり老けて見える場合、上下の歯が逆に噛み合い咀嚼効率が落ちる場合も矯正によって改善できます。
+                        </div>
+                    </div>
+                    <div class="lm-faq-item lm-fade lm-fade-delay-3">
+                        <button class="lm-faq-q" onclick="toggleFaq(this)">
+                            <span class="lm-faq-prefix">Q.</span>
+                            <span class="lm-faq-text">矯正期間は通常どのくらいかかりますか？</span>
+                            <i class="ph ph-caret-down"></i>
+                        </button>
+                        <div class="lm-faq-a">
+                            <strong>A.</strong> 一般的に全体矯正は12〜24ヶ月、部分矯正は3〜6ヶ月程度かかります。患者の歯の状態、矯正の難易度、使用する装置の種類によって期間が変わる場合があり、正確な期間は精密診断後にご案内します。
+                        </div>
+                    </div>
+                    <div class="lm-faq-item lm-fade lm-fade-delay-3">
+                        <button class="lm-faq-q" onclick="toggleFaq(this)">
+                            <span class="lm-faq-prefix">Q.</span>
+                            <span class="lm-faq-text">矯正後にリテーナーは必ず必要ですか？</span>
+                            <i class="ph ph-caret-down"></i>
+                        </button>
+                        <div class="lm-faq-a">
+                            <strong>A.</strong> はい、矯正完了後のリテーナー装着は非常に重要です。歯は元の位置に戻ろうとする傾向があるため、矯正結果を安定して維持するために一定期間リテーナーを装着する必要があります。SMILEVIEWでは固定式または着脱式リテーナーを提供し、定期的な管理を通じて長期的に美しい笑顔を維持できるようサポートします。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SCROLL TOP ===== -->
+        <button class="lm-scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ">
+            <i class="ph ph-arrow-up"></i>
+        </button>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="footer-title-section"></div>
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>SMILEVIEW<span>.</span></h2>
+                    <p>透明で便利な矯正から審美治療まで、<br>SMILEVIEWデンタルクリニックがあなたの美しい笑顔をお作りします。</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Location</h3>
+                    <ul>
+                        <li>ソウル特別市 江南区 奉恩寺路 107, 15階</li>
+                        <li style="font-size:12px;color:rgba(255,255,255,0.25);">（論峴洞 201 16番地 15階）</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tel:02-552-7528">TEL. 02-552-7528</a></li>
+                        <li>FAX. 02-552-7527</li>
+                        <li><span class="footer-label">代表者</span>金韓結</li>
+                        <li><span class="footer-label">事業者番号</span>699-29-00572</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Hours</h3>
+                    <ul class="footer-hours">
+                        <li><span class="day">平日</span><span>AM 10:00 - PM 06:30</span></li>
+                        <li class="note">昼休み PM 01:00 - PM 02:00</li>
+                        <li><span class="day">土曜日</span><span>AM 10:00 - PM 03:00</span></li>
+                        <li class="note">昼休みなし診療</li>
+                        <li><span class="day">日曜日</span><span>AM 10:00 - PM 04:00</span></li>
+                        <li class="closed"><span class="day">休診</span><span>祝日</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SMILEVIEW DENTAL CLINIC. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+    // FAQ Toggle
+    function toggleFaq(btn) {
+        const answer = btn.nextElementSibling;
+        const isOpen = btn.classList.contains('active');
+        document.querySelectorAll('.lm-faq-q').forEach(q => {
+            q.classList.remove('active');
+            q.nextElementSibling.style.display = 'none';
+        });
+        if (!isOpen) {
+            btn.classList.add('active');
+            answer.style.display = 'block';
+        }
+    }
+
+    // ===== GSAP HORIZONTAL SCROLL =====
+    (function() {
+        gsap.registerPlugin(ScrollTrigger);
+
+        // sec1 - page load animation (NOT scroll-based, like benchmark)
+        gsap.timeline()
+            .from('.lm-hero-bg', { scale: 1.2, duration: 2 })
+            .from('.lm-hero-lbx', { opacity: 0, yPercent: 40, duration: 1.5 }, '-=100%')
+            .from('.lm-hero-desc, .lm-hero-desc2', { opacity: 0, y: 40, stagger: 0.2, duration: 0.8 }, '-=80%');
+
+        // Marquee animation
+        const marqueeTrack = document.querySelector('.lm-marquee-track');
+        if (marqueeTrack) {
+            const children = marqueeTrack.querySelectorAll('span');
+            children.forEach(child => {
+                const clone = child.cloneNode(true);
+                marqueeTrack.appendChild(clone);
+            });
+        }
+
+        ScrollTrigger.matchMedia({
+            // Desktop: horizontal scroll
+            '(min-width: 1025px)': function() {
+                const wrap = document.querySelector('.lm-h-wrap');
+                const horizontal = document.querySelector('.lm-horizontal');
+                if (!wrap || !horizontal) return;
+
+                // Main horizontal scroll animation
+                const horizon = gsap.to('.lm-horizontal .lm-h-wrap', {
+                    xPercent: -100,
+                    x: () => window.innerWidth,
+                    scrollTrigger: {
+                        pin: '.lm-horizontal',
+                        trigger: '.lm-horizontal',
+                        start: 'left left',
+                        end: () => `+=${wrap.offsetWidth} bottom`,
+                        scrub: 1,
+                    }
+                });
+
+                // sec2 (title band) animation - matches benchmark
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-h-panel--title',
+                        start: 'left 45%',
+                        end: 'left',
+                        containerAnimation: horizon,
+                        toggleActions: 'play none none reverse',
+                    }
+                });
+                tl
+                    .from('.lm-title-band-overlay', { scale: 1.2, duration: 1.5 })
+                    .from('.lm-title-band h2', { opacity: 0, duration: 0.8, y: 40 }, '-=100%')
+                    .from('.lm-title-band .lm-kr-sub', { opacity: 0, duration: 0.8, y: 40 }, '-=80%')
+                    .from('.lm-title-band .lm-badge', { opacity: 0, duration: 0.8, y: 40 }, '-=80%');
+
+                // sec3 (definition) animation - matches benchmark
+                const tl2 = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-h-panel--def',
+                        start: 'left 90%',
+                        end: 'left',
+                        containerAnimation: horizon,
+                        toggleActions: 'play none none reverse',
+                    }
+                });
+                tl2
+                    .from('.lm-def-con .lm-def-tit > *', { opacity: 0, stagger: 0.2, duration: 0.8, x: -40 })
+                    .from('.lm-def-sub p > *', { opacity: 0, stagger: 0.2, duration: 0.8, y: 40 }, '-=80%');
+            },
+
+            // Mobile: vertical layout
+            '(max-width: 1024px)': function() {
+                gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-title-band',
+                        start: 'top center+=20%',
+                        toggleActions: 'play none none reverse',
+                    }
+                })
+                .from('.lm-title-band h2', { opacity: 0, duration: 0.8, y: 40 })
+                .from('.lm-title-band .lm-kr-sub', { opacity: 0, duration: 0.8, y: 40 }, '-=80%')
+                .from('.lm-title-band .lm-badge', { opacity: 0, duration: 0.8, y: 40 }, '-=80%');
+
+                gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-definition',
+                        start: 'top center+=20%',
+                        toggleActions: 'play none none reverse',
+                    }
+                })
+                .from('.lm-def-con .lm-def-tit > *', { opacity: 0, stagger: 0.2, duration: 0.8, x: -40 })
+                .from('.lm-def-sub p > *', { opacity: 0, stagger: 0.2, duration: 0.8, y: 40 }, '-=80%');
+            }
+        });
+    })();
+
+    // ===== Scroll Animations (IntersectionObserver for vertical sections + mobile) =====
+    (function() {
+        const elems = document.querySelectorAll('.lm-presurg .lm-fade, .lm-advantage .lm-fade, .lm-types-overview .lm-fade, .lm-detail .lm-fade, .lm-info-section .lm-fade, .lm-faq-section .lm-fade');
+        if (!elems.length) return;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('lm-show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+        elems.forEach(el => observer.observe(el));
+
+        // Mobile: also observe horizontal panel elements
+        if (window.innerWidth <= 1024) {
+            const mobileElems = document.querySelectorAll('.lm-horizontal .lm-fade');
+            mobileElems.forEach(el => observer.observe(el));
+        }
+
+        // Fallback
+        setTimeout(() => {
+            document.querySelectorAll('.lm-fade').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight + 50) {
+                    el.classList.add('lm-show');
+                }
+            });
+        }, 400);
+    })();
+
+    // ===== Type Tab Switching =====
+    function switchTypeTab(btn) {
+        document.querySelectorAll('.lm-types-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.lm-types-panel').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        const panel = document.getElementById('panel-' + btn.dataset.panel);
+        if (panel) panel.classList.add('active');
+    }
+
+    // ===== B&A Comparison Slider =====
+    (function() {
+        document.querySelectorAll('.lm-ba-slider[data-ba]').forEach(slider => {
+            const afterEl = slider.querySelector('.lm-ba-slider-after');
+            const divider = slider.querySelector('.lm-ba-slider-divider');
+            const handle = slider.querySelector('.lm-ba-slider-handle');
+            if (!afterEl || !divider || !handle) return;
+
+            let isDragging = false;
+
+            function updatePosition(x) {
+                const rect = slider.getBoundingClientRect();
+                let pct = ((x - rect.left) / rect.width) * 100;
+                pct = Math.max(5, Math.min(95, pct));
+                afterEl.style.clipPath = `inset(0 0 0 ${pct}%)`;
+                divider.style.left = pct + '%';
+                handle.style.left = pct + '%';
+            }
+
+            slider.addEventListener('mousedown', e => {
+                isDragging = true;
+                updatePosition(e.clientX);
+                e.preventDefault();
+            });
+            document.addEventListener('mousemove', e => {
+                if (isDragging) updatePosition(e.clientX);
+            });
+            document.addEventListener('mouseup', () => { isDragging = false; });
+
+            slider.addEventListener('touchstart', e => {
+                isDragging = true;
+                updatePosition(e.touches[0].clientX);
+            }, { passive: true });
+            document.addEventListener('touchmove', e => {
+                if (isDragging) updatePosition(e.touches[0].clientX);
+            }, { passive: true });
+            document.addEventListener('touchend', () => { isDragging = false; });
+        });
+    })();
+    </script>
+    <!-- Floating SNS -->
+    <div class="sv-float-sns" id="floatSns">
+        <div class="sv-float-sns-list">
+            <a href="https://www.instagram.com/smileview.dental/" class="sv-float-btn sv-float-btn--instagram" title="Instagram" target="_blank">
+                <i class="ph-fill ph-instagram-logo"></i>
+            </a>
+            <a href="https://lin.ee/C0rBsdX" class="sv-float-btn sv-float-btn--line" title="LINE" target="_blank">
+                <i class="ph-fill ph-chat-circle-dots"></i>
+            </a>
+        </div>
+        <button class="sv-float-toggle" onclick="document.getElementById('floatSns').classList.toggle('open')">
+            <i class="ph ph-plus"></i>
+        </button>
+    </div>
+
+    <script>
+    document.addEventListener('click', function(e) {
+        var ls = document.getElementById('langSelector');
+        if (ls && !ls.contains(e.target)) ls.classList.remove('open');
+    });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

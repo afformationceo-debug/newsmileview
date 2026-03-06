@@ -1,0 +1,644 @@
+[
+  {
+    "key": "title_1",
+    "text": "보철치료 | 스마일뷰치과의원",
+    "location": "line:6, tag:title",
+    "context": "title"
+  },
+  {
+    "key": "text_2_li",
+    "text": "스마일뷰치과",
+    "location": "line:570, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_3_li",
+    "text": "인비절라인",
+    "location": "line:571, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_4_li",
+    "text": "치아교정",
+    "location": "line:572, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_5_li",
+    "text": "치아미백",
+    "location": "line:573, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_6_li",
+    "text": "원데이 라미네이트",
+    "location": "line:574, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_7_li",
+    "text": "수면 임플란트",
+    "location": "line:575, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_8_li",
+    "text": "보철치료",
+    "location": "line:576, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_9_a",
+    "text": "한국어 (KO)",
+    "location": "line:584, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "text_10_a",
+    "text": "예약하기",
+    "location": "line:589, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "text_11_li",
+    "text": "병원소개",
+    "location": "line:600, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_12_a",
+    "text": "온라인 예약",
+    "location": "line:609, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "text_13_text",
+    "text": "보철치료는 손상된, 손실된 또는 충치로 인한 피해를 받은 치아를",
+    "location": "line:628, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_14_text",
+    "text": "복원하고 보호하기 위해 다양한 치과 기술과 재료를 활용합니다",
+    "location": "line:629, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_15_text",
+    "text": "충치, 신경 손상, 손상된 치아에 대한 종합적인 치료를 제공하여",
+    "location": "line:632, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_16_text",
+    "text": "환자들의 자신감을 회복시키고 건강한 미소를 유지합니다.",
+    "location": "line:633, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_17_h2",
+    "text": "보철치료란?",
+    "location": "line:691, tag:h2",
+    "context": "text"
+  },
+  {
+    "key": "text_18_text",
+    "text": "보철치료는 충치, 외상, 마모 등으로 손상되거나 손실된 치아를 다양한 재료와 기술을 활용하여 원래의 형태와 기능으로 복원하는 치료입니다. 레진, 인레이, 크라운, 브릿지 등 다양한 방법을 통해 치아의 저작 기능과 심미성을 회복시켜 드립니다. 스마일뷰치과는 정밀 진단을 통해 환자 개개인에게 최적의 보철 치료 계획을 수립합니다.",
+    "location": "line:693, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_19_b",
+    "text": "종류",
+    "location": "line:699, tag:b",
+    "context": "text"
+  },
+  {
+    "key": "text_20_span",
+    "text": "충치치료(레진, 인레이), 신경치료, 크라운(PFM, 금, 지르코니아), 잇몸치료(스케일링, 큐렛) 등",
+    "location": "line:700, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_21_h2",
+    "text": "손상된 치아를 되살리는 보철치료",
+    "location": "line:717, tag:h2",
+    "context": "text"
+  },
+  {
+    "key": "text_22_p",
+    "text": "충치부터 신경치료, 크라운, 잇몸치료까지 종합적인 치과 보철 솔루션을 제공합니다.",
+    "location": "line:718, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_23_h4",
+    "text": "충치가 진행된 치아",
+    "location": "line:724, tag:h4",
+    "context": "text"
+  },
+  {
+    "key": "text_24_p",
+    "text": "레진 또는 인레이 치료로 충치를 제거하고 치아를 복원합니다",
+    "location": "line:725, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_25_h4",
+    "text": "신경까지 손상된 치아",
+    "location": "line:731, tag:h4",
+    "context": "text"
+  },
+  {
+    "key": "text_26_p",
+    "text": "신경치료 후 크라운으로 보호하여 치아를 보존합니다",
+    "location": "line:732, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_27_h4",
+    "text": "깨지거나 파절된 치아",
+    "location": "line:738, tag:h4",
+    "context": "text"
+  },
+  {
+    "key": "text_28_p",
+    "text": "크라운 보철로 치아 전체를 감싸 강도와 심미성을 회복합니다",
+    "location": "line:739, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_29_h4",
+    "text": "잇몸 질환이 있는 경우",
+    "location": "line:745, tag:h4",
+    "context": "text"
+  },
+  {
+    "key": "text_30_p",
+    "text": "스케일링과 큐렛으로 치석과 염증을 제거하여 잇몸 건강을 회복합니다",
+    "location": "line:746, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "attr_31_img_alt",
+    "text": "충치치료",
+    "location": "line:759, tag:img[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_32_p",
+    "text": "간단한 충치는 레진치료로 처리하고, 진행된 충치는 인레이를 권장합니다. 초기 단계의 충치는 치아 표면에 국한되므로 당일 완료 가능한 레진치료로 진행됩니다. 그러나 충치가 크고 상아질까지 영향을 미쳤을 때는 2번의 방문이 필요한 인레이 치료를 권장합니다. 충치 범위가 넓을수록 인레이로 치료하는 것이 더 효과적입니다. 충치가 심해지면 통증이 더 심해지고 치료가 더 복잡해지므로 적절한 시기에 치료하는 것이 중요합니다.",
+    "location": "line:765, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_33_div",
+    "text": "초기 충치 레진 당일 치료",
+    "location": "line:767, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_34_div",
+    "text": "진행된 충치 인레이 치료",
+    "location": "line:768, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_35_div",
+    "text": "자연치아 색상 복원",
+    "location": "line:769, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_36_div",
+    "text": "조기 치료로 비용 절감",
+    "location": "line:770, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "attr_37_img_alt",
+    "text": "신경치료",
+    "location": "line:782, tag:img[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_38_p",
+    "text": "충치가 심해져서 치아의 가장 안쪽 층인 신경까지 침범한 경우나 딱딱한 음식을 먹어서 치아에 심하게 금이 간 경우 신경치료가 필요합니다. 신경치료는 오염된 신경층을 제거하고 다시 오염되지 않도록 밀봉하는 치료로 총 3~4회 이상의 방문이 필요합니다. 신경치료가 완료된 치아는 쉽게 깨질 수 있으므로 크라운과 같은 보철치료가 필요합니다.",
+    "location": "line:788, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_39_div",
+    "text": "오염된 신경 완전 제거",
+    "location": "line:790, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_40_div",
+    "text": "근관 밀봉 처리",
+    "location": "line:791, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_41_div",
+    "text": "3~4회 방문 치료",
+    "location": "line:792, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_42_div",
+    "text": "크라운 보철 마무리",
+    "location": "line:793, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_43_h3",
+    "text": "보철치료 (크라운)",
+    "location": "line:810, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_44_p",
+    "text": "보철치료는 일반적으로 치아 전체를 덮는 모양으로 만들어진 크라운을 말합니다. 치아를 원통형으로 깎아서 씌우게 되는데, 이때 사용되는 재료로는 PFM, 금, 그리고 지르코니아 등이 있습니다. 특히 지르코니아는 일반적으로 많이 선택되는데, 단단하면서도 치아색과 잘 어울리는 재료입니다. 다른 재료로는 PFM이나 금이 있으며, 각각의 장단점을 고려하여 상황에 맞게 선택할 수 있습니다.",
+    "location": "line:811, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_45_div",
+    "text": "지르코니아 자연 심미성",
+    "location": "line:813, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_46_div",
+    "text": "금 크라운 뛰어난 내구성",
+    "location": "line:814, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_47_div",
+    "text": "PFM 경제적 선택",
+    "location": "line:815, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_48_div",
+    "text": "환자 맞춤 재료 선택",
+    "location": "line:816, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "attr_49_img_alt",
+    "text": "잇몸치료",
+    "location": "line:828, tag:img[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_50_p",
+    "text": "일반적으로 치아가 문제가 될 때 잇몸도 같이 문제가 생기는 경우가 많습니다. 잇몸치료는 스케일링, 큐렛 등과 같은 보험으로 진료가 가능한 치료 방법을 사용합니다. 이 치료의 주요 목표는 치아에 붙어 있는 치석과 염증 조직을 제거하는 것입니다. 한 번 치석이 생기면 보통의 잇솔질로는 제거되지 않으며, 치석은 세균이 붙어서 잇몸뼈 조직을 파괴할 수 있으므로 제거하는 것이 중요합니다.",
+    "location": "line:834, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_51_div",
+    "text": "치석 완전 제거",
+    "location": "line:836, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_52_div",
+    "text": "잇몸 염증 치료",
+    "location": "line:837, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_53_div",
+    "text": "건강보험 적용 가능",
+    "location": "line:838, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_54_div",
+    "text": "잇몸뼈 보존 효과",
+    "location": "line:839, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "attr_55_img_alt",
+    "text": "보철치료 배너",
+    "location": "line:848, tag:img[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "attr_56_img_alt",
+    "text": "보철치료 디테일",
+    "location": "line:854, tag:img[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_57_h2",
+    "text": "보철치료, 디테일 이 다릅니다",
+    "location": "line:859, tag:h2",
+    "context": "text"
+  },
+  {
+    "key": "text_58_div",
+    "text": "치료시간",
+    "location": "line:869, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_59_div",
+    "text": "30~60 분",
+    "location": "line:870, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_60_p",
+    "text": "치료 종류에 따라 상이",
+    "location": "line:871, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_61_div",
+    "text": "마취방법",
+    "location": "line:875, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_62_div",
+    "text": "국소마취",
+    "location": "line:876, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_63_p",
+    "text": "부위 마취로 통증 최소화",
+    "location": "line:877, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_64_div",
+    "text": "방문횟수",
+    "location": "line:881, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_65_div",
+    "text": "1~4 회",
+    "location": "line:882, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_66_p",
+    "text": "치료 유형별 방문 횟수 상이",
+    "location": "line:883, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_67_div",
+    "text": "보험적용",
+    "location": "line:887, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_68_div",
+    "text": "일부 가능",
+    "location": "line:888, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_69_p",
+    "text": "스케일링, 레진 등 보험 적용",
+    "location": "line:889, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_70_h4",
+    "text": "정밀 디지털 진단",
+    "location": "line:895, tag:h4",
+    "context": "text"
+  },
+  {
+    "key": "text_71_p",
+    "text": "X-ray 및 구강 검사를 통해 충치의 범위, 신경 상태, 잇몸 건강을 정밀하게 분석하여 최적의 치료 계획을 수립합니다.",
+    "location": "line:896, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_72_div",
+    "text": "X-ray 촬영 정밀 진단",
+    "location": "line:897, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_73_p",
+    "text": "레진, 인레이, 지르코니아, 금, PFM 등 다양한 재료 중 환자의 상황과 부위에 맞는 최적의 재료를 선택합니다.",
+    "location": "line:902, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_74_div",
+    "text": "맞춤 재료 심미 복원",
+    "location": "line:903, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_75_h4",
+    "text": "최소 침습 치료",
+    "location": "line:907, tag:h4",
+    "context": "text"
+  },
+  {
+    "key": "text_76_p",
+    "text": "건강한 치아 조직을 최대한 보존하면서 손상된 부분만 정밀하게 제거하고 복원하는 보존적 치료를 시행합니다.",
+    "location": "line:908, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_77_div",
+    "text": "치아 보존 정밀 시술",
+    "location": "line:909, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_78_h4",
+    "text": "체계적 사후관리",
+    "location": "line:913, tag:h4",
+    "context": "text"
+  },
+  {
+    "key": "text_79_p",
+    "text": "치료 후 정기 검진을 통해 보철물의 상태를 확인하고, 구강 위생 관리 방법을 안내하여 장기적인 치아 건강을 유지합니다.",
+    "location": "line:914, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_80_div",
+    "text": "정기 검진 장기 관리",
+    "location": "line:915, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_81_h2",
+    "text": "이런 분들에게 보철치료를 추천드립니다",
+    "location": "line:926, tag:h2",
+    "context": "text"
+  },
+  {
+    "key": "text_82_div",
+    "text": "01 충치가 진행된 분 충치가 발생하여 통증이 있거나 치아 변색이 진행된 경우 레진 또는 인레이 치료로 빠르게 회복할 수 있습니다.",
+    "location": "line:929, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_83_div",
+    "text": "02 치아 통증이 심한 분 충치가 신경까지 도달하여 극심한 통증을 경험하시는 분은 신경치료를 통해 통증을 해결하고 치아를 보존할 수 있습니다.",
+    "location": "line:930, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_84_div",
+    "text": "03 치아가 깨지거나 파절된 분 외상이나 강한 저작력으로 치아가 손상된 경우 크라운 보철로 치아의 형태와 기능을 완벽하게 복원합니다.",
+    "location": "line:931, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_85_div",
+    "text": "04 잇몸이 자주 붓는 분 잇몸 출혈, 부종이 반복되는 경우 치석 제거와 잇몸치료를 통해 잇몸 질환의 진행을 막고 건강을 회복합니다.",
+    "location": "line:932, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_86_div",
+    "text": "05 심미적 치아 복원을 원하는 분 변색되거나 형태가 손상된 치아를 자연치아와 유사한 색상과 형태로 복원하여 자신감 있는 미소를 되찾아 드립니다.",
+    "location": "line:933, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_87_div",
+    "text": "06 오래된 보철물 교체가 필요한 분 기존 보철물의 수명이 다하거나 변색, 탈락이 발생한 경우 새로운 보철물로 교체하여 기능과 심미성을 개선합니다.",
+    "location": "line:934, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_88_p",
+    "text": "보철치료에 대해 자주 묻는 질문을 모았습니다.",
+    "location": "line:947, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_89_text",
+    "text": "충치치료에서 레진과 인레이의 차이는 무엇인가요?",
+    "location": "line:953, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_90_span",
+    "text": "A. 레진은 초기 충치에 적합하며 당일 치료가 가능한 직접 수복 방식입니다. 인레이는 충치 범위가 넓어 상아질까지 영향을 미쳤을 때 사용하며, 별도 제작 과정이 필요하여 2회 방문이 필요합니다. 인레이는 레진보다 강도가 높고 정밀한 적합도를 제공합니다.",
+    "location": "line:957, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_91_text",
+    "text": "신경치료 후 크라운은 꼭 씌워야 하나요?",
+    "location": "line:963, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_92_span",
+    "text": "A. 네, 신경치료가 완료된 치아는 혈액 공급이 차단되어 시간이 지나면서 건조해지고 약해집니다. 크라운을 씌우지 않으면 저작 시 치아가 쉽게 깨지거나 파절될 수 있으므로, 치아를 보호하고 기능을 유지하기 위해 크라운 보철이 반드시 필요합니다.",
+    "location": "line:967, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_93_text",
+    "text": "지르코니아, 금, PFM 크라운 중 어떤 것이 좋나요?",
+    "location": "line:973, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_94_span",
+    "text": "A. 지르코니아는 자연치아와 유사한 색상으로 심미적이며 강도가 높아 가장 많이 선택됩니다. 금은 생체 적합성이 뛰어나고 내구성이 우수하여 어금니에 적합합니다. PFM은 금속 위에 도자기를 입힌 것으로 경제적인 선택입니다. 환자의 치아 위치와 상황에 따라 최적의 재료가 달라지므로 전문의 상담을 통해 결정하시는 것이 좋습니다.",
+    "location": "line:977, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_95_text",
+    "text": "스케일링은 얼마나 자주 받아야 하나요?",
+    "location": "line:983, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_96_span",
+    "text": "A. 일반적으로 6개월~1년에 한 번 스케일링을 받는 것이 권장됩니다. 건강보험으로 연 1회 스케일링이 적용되며, 잇몸 질환이 있는 경우에는 더 자주 받으실 수도 있습니다. 정기적인 스케일링은 치석 제거와 잇몸 질환 예방에 효과적입니다.",
+    "location": "line:987, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_97_p",
+    "text": "투명하고 편리한 교정부터 심미 치료까지, 스마일뷰치과가 당신의 아름다운 미소를 만들어 드립니다.",
+    "location": "line:1006, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_98_li",
+    "text": "서울특별시 강남구 봉은사로 107, 15층",
+    "location": "line:1011, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_99_li",
+    "text": "(논현동 201 16번지 15층)",
+    "location": "line:1012, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_100_li",
+    "text": "대표자 김한결",
+    "location": "line:1020, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_101_li",
+    "text": "사업자번호 699-29-00572",
+    "location": "line:1021, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_102_li",
+    "text": "평일 AM 10:00 - PM 06:30",
+    "location": "line:1027, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_103_li",
+    "text": "점심시간 PM 01:00 - PM 02:00",
+    "location": "line:1028, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_104_li",
+    "text": "토요일 AM 10:00 - PM 03:00",
+    "location": "line:1029, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_105_li",
+    "text": "점심시간 없이 진료",
+    "location": "line:1030, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_106_li",
+    "text": "일요일 AM 10:00 - PM 04:00",
+    "location": "line:1031, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_107_li",
+    "text": "휴진 공휴일",
+    "location": "line:1032, tag:li",
+    "context": "text"
+  }
+]

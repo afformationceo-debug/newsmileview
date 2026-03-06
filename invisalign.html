@@ -1,0 +1,2312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인비절라인 (투명 교정) | 스마일뷰치과의원</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <style>
+    /* ===== LAMINATE PREMIUM DESIGN SYSTEM ===== */
+    :root {
+        --lm-text: #4c4841;
+        --lm-gold: #b18247;
+        --lm-gold-light: rgba(177,130,71,0.15);
+        --lm-white: #fff;
+        --lm-cream: #f7f4ef;
+        --lm-card-bg: #f1f1f1;
+        --lm-footer-bg: #fbfbfb;
+        --lm-dark-overlay: rgba(0,0,0,0.55);
+        --lm-radius: 30px;
+        --lm-serif: 'STIX Two Text', 'Playfair Display', Georgia, serif;
+        --lm-body: 'Pretendard', -apple-system, sans-serif;
+        --lm-max-w: 1200px;
+    }
+
+    .lm-page { background: var(--lm-white); color: var(--lm-text); font-family: var(--lm-body); }
+    .lm-page *, .lm-page *::before, .lm-page *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    .lm-page img { display: block; max-width: 100%; }
+    .lm-inner { max-width: var(--lm-max-w); margin: 0 auto; padding: 0 50px; }
+
+    /* ===== SCROLL ANIMATION ===== */
+    .lm-fade { opacity: 0; transform: translateY(50px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .lm-fade.lm-show { opacity: 1; transform: translateY(0); }
+    .lm-fade-delay-1 { transition-delay: 0.15s; }
+    .lm-fade-delay-2 { transition-delay: 0.3s; }
+    .lm-fade-delay-3 { transition-delay: 0.45s; }
+    .lm-fade-delay-4 { transition-delay: 0.6s; }
+
+    /* ===== HORIZONTAL SCROLL WRAPPER ===== */
+    .lm-horizontal {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 80px;
+    }
+    .lm-h-wrap {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        will-change: transform;
+    }
+    .lm-h-panel {
+        width: 960px;
+        height: 100vh;
+        flex-shrink: 0;
+        overflow: hidden;
+        position: relative;
+    }
+    /* Definition panel - matches benchmark sec3 width ratio */
+    .lm-h-panel--def {
+        width: 720px;
+    }
+    .lm-h-panel--title {
+        width: 1200px;
+    }
+
+    /* ===== HERO ===== */
+    .lm-hero {
+        position: relative; width: 100%; height: 100%;
+        display: flex; align-items: center; justify-content: center;
+        overflow: hidden;
+        background: linear-gradient(135deg, #c8a87c 0%, #b8956a 40%, #a68358 70%, #937148 100%);
+    }
+    .lm-hero-bg {
+        position: absolute; inset: 0; z-index: 0;
+        background:
+            radial-gradient(ellipse at 30% 40%, rgba(255,220,160,0.4) 0%, transparent 60%),
+            radial-gradient(ellipse at 70% 60%, rgba(200,160,100,0.3) 0%, transparent 55%),
+            radial-gradient(ellipse at 50% 80%, rgba(180,130,70,0.25) 0%, transparent 50%),
+            linear-gradient(135deg, #c8a87c 0%, #b8956a 30%, #a68358 60%, #937148 100%);
+        opacity: 1;
+    }
+    .lm-hero-bg::after {
+        content: '';
+        position: absolute; inset: 0;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        opacity: 0.5;
+    }
+    .lm-hero-overlay {
+        position: absolute; inset: 0; z-index: 1;
+        background: linear-gradient(180deg, rgba(180,140,80,0.2) 0%, rgba(100,70,30,0.4) 100%);
+    }
+    .lm-hero-content {
+        position: relative; z-index: 2; text-align: center;
+        display: flex; flex-direction: column; align-items: center; gap: 24px;
+        padding: 150px 5% 0;
+        max-width: 100%;
+    }
+    .lm-hero-lbx, .lm-hero-rbx {
+        text-align: center;
+    }
+    .lm-hero-lbx span {
+        font-family: var(--lm-serif); font-size: 110px; font-weight: 500;
+        color: var(--lm-white); line-height: 1;
+        letter-spacing: 6px;
+    }
+    .lm-hero-rbx span {
+        font-family: var(--lm-body); font-size: 20px; font-weight: 500;
+        color: rgba(255,255,255,0.85); line-height: 1;
+        letter-spacing: 2px;
+    }
+    .lm-hero-desc {
+        font-size: 18px; font-weight: 500; color: rgba(255,255,255,0.85);
+        line-height: 1.6; max-width: 600px; letter-spacing: -0.045em;
+    }
+    .lm-hero-desc2 {
+        font-size: 16px; font-weight: 400; color: rgba(255,255,255,0.65);
+        line-height: 1.8; max-width: 550px; margin-top: 30px; letter-spacing: -0.045em;
+    }
+
+    /* Scroll Down Indicator */
+    .lm-scroll-down {
+        position: absolute; bottom: 8%; right: 8%; z-index: 5;
+        width: 90px; height: 90px;
+    }
+    .lm-scroll-circle {
+        width: 100%; height: 100%;
+        animation: lm-rotate 10s linear infinite;
+    }
+    .lm-scroll-circle text {
+        font-family: var(--lm-serif); font-size: 11px; fill: rgba(255,255,255,0.6);
+        letter-spacing: 3px;
+    }
+    .lm-scroll-arrow {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+        color: rgba(255,255,255,0.7); font-size: 20px;
+    }
+    @keyframes lm-rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    /* ===== TITLE BAND ===== */
+    .lm-title-band {
+        position: relative; width: 100%; height: 100%; overflow: hidden;
+        background: url('images/benchmark-invisalign/title_invisalign.png') center/cover no-repeat;
+        display: flex; align-items: center; justify-content: center;
+    }
+    .lm-title-band-overlay {
+        position: absolute; inset: 0;
+        background: rgba(50,40,30,0.7);
+    }
+    .lm-title-band-content {
+        position: relative; z-index: 2; text-align: center;
+        padding: 80px 20px;
+    }
+    .lm-title-band h2 {
+        font-family: var(--lm-serif); font-size: 100px; font-weight: 400;
+        color: var(--lm-white); text-transform: uppercase; line-height: 1.2;
+        letter-spacing: normal;
+    }
+    .lm-title-band .lm-kr-sub {
+        font-family: var(--lm-body); font-size: 22px; font-weight: 500;
+        color: rgba(255,255,255,0.8); margin-top: 20px; letter-spacing: -0.045em;
+    }
+    .lm-title-band .lm-badge {
+        display: inline-flex; align-items: center; justify-content: center;
+        padding: 0 30px; height: 40px; border: 0.8px solid rgba(255,255,255,0.5);
+        border-radius: 20px; margin-top: 40px;
+    }
+    .lm-title-band .lm-badge span {
+        font-family: var(--lm-body); font-size: 18px; font-weight: 500;
+        color: var(--lm-white); letter-spacing: -0.81px;
+    }
+
+    /* Marquee */
+    .lm-marquee {
+        position: absolute; bottom: -0.15em; left: 0; width: 100%; z-index: 1;
+        overflow: hidden; white-space: nowrap;
+        font-family: var(--lm-serif); font-size: 200px; font-weight: 600;
+        color: transparent; -webkit-text-stroke: 1px rgba(251,251,251,0.1);
+        letter-spacing: -5px; line-height: 1;
+    }
+    .lm-marquee-track {
+        display: inline-flex; animation: lm-marquee 25s linear infinite;
+    }
+    .lm-marquee-track span { margin: 0 40px; }
+    @keyframes lm-marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* ===== DEFINITION SECTION (sec3 - benchmark match) ===== */
+    .lm-definition {
+        position: relative; width: 100%; height: 100%; overflow: hidden;
+        background: var(--lm-cream);
+        background-size: cover; background-position: center bottom;
+    }
+    .lm-def-scroll-circle {
+        position: absolute; top: 10%; right: 20%;
+        width: 113px; height: 113px; z-index: 5;
+    }
+    .lm-def-scroll-circle .lm-scroll-circle {
+        width: 100%; height: 100%;
+        animation: lm-rotate 6s linear infinite;
+    }
+    .lm-def-scroll-circle .lm-scroll-circle text {
+        font-family: var(--lm-serif); font-size: 11px; fill: var(--lm-text);
+        letter-spacing: 3px; opacity: 0.5;
+    }
+    .lm-def-scroll-circle .lm-def-arrow {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+        color: var(--lm-text); font-size: 22px;
+    }
+    .lm-def-con {
+        position: absolute; top: 20%; left: 70px; right: 25%; bottom: 100px;
+    }
+    .lm-def-tit {}
+    .lm-def-num {
+        font-family: var(--lm-serif); font-size: 18px; font-weight: 400;
+        color: var(--lm-text); display: block;
+    }
+    .lm-def-title {
+        font-family: var(--lm-body); font-size: 50px; font-weight: 600;
+        color: var(--lm-text); letter-spacing: -2.25px;
+        line-height: 1; margin-top: 30px;
+    }
+    .lm-def-body {
+        font-family: var(--lm-body); font-size: 18px; line-height: 32px;
+        color: var(--lm-text); letter-spacing: -0.81px; font-weight: 400;
+        margin-top: 40px;
+    }
+    .lm-def-divider {
+        width: 100%; height: 1px; background: var(--lm-text);
+        margin-top: 40px;
+    }
+    .lm-def-sub {
+        margin-top: 45px;
+    }
+    .lm-def-sub p {
+        display: flex; flex-wrap: nowrap; gap: 10px; align-items: flex-start;
+    }
+    .lm-def-sub b {
+        font-family: var(--lm-body); font-size: 14px; font-weight: 600;
+        color: var(--lm-text); letter-spacing: -0.63px; line-height: 1.75;
+        display: block; position: relative; padding-right: 10px;
+        white-space: nowrap; flex-shrink: 0;
+    }
+    .lm-def-sub b::after {
+        content: '|'; position: absolute; right: 0; top: 0;
+        color: var(--lm-text); font-weight: 300;
+    }
+    .lm-def-sub span {
+        font-family: var(--lm-body); font-size: 14px; font-weight: 400;
+        color: var(--lm-text); letter-spacing: -0.63px; line-height: 1.75;
+        display: block;
+    }
+
+    /* ===== WHY INVISALIGN SECTION - LAMINATE SPECIALITY STRUCTURE ===== */
+    .lm-why {
+        padding: 160px 0;
+        background: var(--lm-cream);
+        position: relative;
+        overflow: hidden;
+    }
+    .lm-why-bg {
+        position: absolute; inset: 0; z-index: 0;
+        opacity: 0.06;
+    }
+    .lm-why-title {
+        font-family: var(--lm-serif); font-size: 100px; font-weight: 400;
+        color: var(--lm-text); text-align: right; line-height: 1;
+        margin-bottom: 60px; position: relative; z-index: 1;
+    }
+    .lm-why-subtitle {
+        display: none;
+    }
+    .lm-spec-layout {
+        display: grid;
+        grid-template-columns: 1fr 1.6fr;
+        gap: 60px;
+        position: relative;
+        z-index: 1;
+    }
+    .lm-spec-left {
+        position: sticky;
+        top: 200px;
+        align-self: start;
+    }
+    .lm-spec-text {
+        font-family: var(--lm-body); font-size: 32px; font-weight: 600;
+        color: var(--lm-text); letter-spacing: -1.44px; line-height: 1.5;
+    }
+    .lm-spec-text .lm-gold {
+        color: var(--lm-gold);
+    }
+    .lm-spec-right {
+        display: flex;
+        gap: 40px;
+    }
+    .lm-spec-col {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .lm-spec-col:nth-child(2) {
+        padding-top: 80px;
+    }
+    .lm-spec-card {
+        background: #f1f1f1;
+        border-radius: 30px;
+        padding: 50px 40px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.06);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .lm-spec-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    }
+    .lm-spec-badge {
+        display: inline-block; padding: 0 16px; height: 28px; line-height: 28px;
+        border-radius: 14px; background: var(--lm-gold); color: #fff;
+        font-size: 13px; font-weight: 600; margin-bottom: 20px;
+    }
+    .lm-spec-card h3 {
+        font-family: var(--lm-body); font-size: 24px; font-weight: 600;
+        color: var(--lm-text); margin-bottom: 16px; letter-spacing: -0.045em;
+    }
+    .lm-spec-card p {
+        font-size: 15px; color: var(--lm-text); opacity: 0.7;
+        line-height: 1.75; letter-spacing: -0.045em;
+    }
+
+    /* ===== VS COMPARISON SECTION ===== */
+    .lm-vs-section {
+        padding: 140px 0;
+        background: #1a1714;
+        color: var(--lm-white);
+        position: relative;
+        overflow: hidden;
+    }
+    .lm-vs-section .lm-inner {
+        max-width: 1400px;
+    }
+    .lm-vs-section::before {
+        content: '';
+        position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        background: radial-gradient(ellipse at 60% 0%, rgba(177,130,71,0.06) 0%, transparent 60%);
+        pointer-events: none;
+    }
+    .lm-vs-header {
+        text-align: center;
+        margin-bottom: 60px;
+        position: relative; z-index: 1;
+    }
+    .lm-vs-title {
+        font-family: var(--lm-body); font-size: 48px; font-weight: 700;
+        color: var(--lm-white); line-height: 1.3; margin-bottom: 16px;
+        letter-spacing: -0.045em;
+    }
+    .lm-vs-subtitle {
+        font-size: 20px; color: rgba(255,255,255,0.45);
+        letter-spacing: -0.045em;
+    }
+    /* VS Images */
+    .lm-vs-images {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 40px;
+        margin-bottom: 56px;
+        position: relative;
+        z-index: 1;
+    }
+    .lm-vs-img-col {
+        flex: 1;
+        max-width: 420px;
+        text-align: center;
+    }
+    .lm-vs-img-col img {
+        width: 100%;
+        height: auto;
+        filter: drop-shadow(0 8px 32px rgba(0,0,0,0.3));
+        transition: transform 0.5s cubic-bezier(0.22,1,0.36,1);
+    }
+    .lm-vs-img-col:hover img {
+        transform: translateY(-8px);
+    }
+    .lm-vs-img-label {
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 600;
+        color: rgba(255,255,255,0.45);
+        letter-spacing: -0.02em;
+    }
+    .lm-vs-img-col--highlight .lm-vs-img-label {
+        color: var(--lm-gold);
+    }
+    .lm-vs-vs-badge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 52px; height: 52px;
+        border-radius: 50%;
+        background: rgba(177,130,71,0.15);
+        border: 1px solid rgba(177,130,71,0.3);
+        color: var(--lm-gold);
+        font-family: var(--lm-serif);
+        font-size: 18px;
+        font-weight: 700;
+        flex-shrink: 0;
+        align-self: center;
+    }
+    /* Desktop Table */
+    .lm-vs-table-wrap {
+        position: relative; z-index: 1;
+    }
+    .lm-vs-table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+    .lm-vs-table thead tr {
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .lm-vs-table th {
+        padding: 24px 20px;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(255,255,255,0.4);
+        text-align: center;
+        vertical-align: bottom;
+    }
+    .lm-vs-table th:first-child {
+        width: 35%;
+        text-align: center;
+    }
+    .lm-vs-table th:nth-child(2) {
+        width: 14%;
+    }
+    .lm-vs-table th:last-child {
+        width: 35%;
+    }
+    .lm-vs-table th.lm-vs-th-label {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgba(255,255,255,0.5);
+    }
+    .lm-vs-table th.lm-vs-th-normal {
+        font-size: 22px;
+        font-weight: 600;
+        color: rgba(255,255,255,0.7);
+    }
+    .lm-vs-table th.lm-vs-th-highlight {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--lm-gold);
+        background: rgba(177,130,71,0.06);
+        border-radius: 20px 20px 0 0;
+        border-top: 1px solid rgba(177,130,71,0.2);
+        border-left: 1px solid rgba(177,130,71,0.2);
+        border-right: 1px solid rgba(177,130,71,0.2);
+        position: relative;
+    }
+    .lm-vs-table th.lm-vs-th-highlight .lm-vs-badge {
+        display: inline-block;
+        padding: 3px 14px;
+        background: var(--lm-gold);
+        color: #1a1714;
+        font-size: 11px;
+        font-weight: 700;
+        border-radius: 20px;
+        margin-bottom: 8px;
+        letter-spacing: 1px;
+    }
+    .lm-vs-table tbody tr {
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+        transition: background 0.3s;
+    }
+    .lm-vs-table tbody tr:hover {
+        background: rgba(255,255,255,0.03);
+    }
+    .lm-vs-table td {
+        padding: 22px 20px;
+        font-size: 17px;
+        color: rgba(255,255,255,0.55);
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.6;
+        letter-spacing: -0.03em;
+    }
+    .lm-vs-table td:first-child {
+        color: rgba(255,255,255,0.5);
+    }
+    .lm-vs-table td.lm-vs-td-label {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--lm-white);
+    }
+    .lm-vs-table td.lm-vs-td-highlight {
+        color: var(--lm-gold);
+        font-weight: 700;
+        font-size: 17px;
+        background: rgba(177,130,71,0.06);
+        border-left: 1px solid rgba(177,130,71,0.2);
+        border-right: 1px solid rgba(177,130,71,0.2);
+    }
+    .lm-vs-table tbody tr:last-child td.lm-vs-td-highlight {
+        border-bottom: 1px solid rgba(177,130,71,0.2);
+        border-radius: 0 0 20px 20px;
+    }
+    /* Mobile VS Cards */
+    .lm-vs-mobile {
+        display: none;
+    }
+    .lm-vs-card {
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.06);
+        border-radius: 20px;
+        padding: 28px 24px;
+        margin-bottom: 16px;
+        transition: border-color 0.3s;
+    }
+    .lm-vs-card:hover {
+        border-color: rgba(177,130,71,0.25);
+    }
+    .lm-vs-card-label {
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--lm-gold);
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .lm-vs-card-row {
+        display: flex;
+        gap: 16px;
+    }
+    .lm-vs-card-col {
+        flex: 1;
+        text-align: center;
+        padding: 16px 8px;
+        border-radius: 14px;
+    }
+    .lm-vs-card-col--normal {
+        background: rgba(255,255,255,0.03);
+    }
+    .lm-vs-card-col--highlight {
+        background: rgba(177,130,71,0.1);
+        border: 1px solid rgba(177,130,71,0.2);
+    }
+    .lm-vs-card-col-tag {
+        font-size: 11px;
+        font-weight: 600;
+        color: rgba(255,255,255,0.35);
+        margin-bottom: 8px;
+        letter-spacing: 0.5px;
+    }
+    .lm-vs-card-col--highlight .lm-vs-card-col-tag {
+        color: var(--lm-gold);
+    }
+    .lm-vs-card-col-text {
+        font-size: 14px;
+        line-height: 1.6;
+        color: rgba(255,255,255,0.55);
+        letter-spacing: -0.03em;
+    }
+    .lm-vs-card-col--highlight .lm-vs-card-col-text {
+        color: var(--lm-gold);
+        font-weight: 600;
+    }
+    /* VS Scroll Animation */
+    .lm-vs-row {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .lm-vs-row.lm-show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* ===== FEATURE STEP SECTION ===== */
+    .lm-feature-section {
+        padding: 120px 0;
+        background: #1a1714;
+        color: var(--lm-white);
+        position: relative;
+        overflow: hidden;
+    }
+    .lm-feature-section::before {
+        content: '';
+        position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        background: radial-gradient(ellipse at 30% 100%, rgba(177,130,71,0.05) 0%, transparent 60%);
+        pointer-events: none;
+    }
+    .lm-feature-section .lm-inner {
+        max-width: 1400px;
+    }
+    .lm-feature-header {
+        text-align: center;
+        margin-bottom: 72px;
+        position: relative;
+        z-index: 1;
+    }
+    .lm-feature-sub {
+        font-size: 15px;
+        color: var(--lm-gold);
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+    .lm-feature-title {
+        font-family: var(--lm-body);
+        font-size: 38px;
+        font-weight: 700;
+        color: var(--lm-white);
+        line-height: 1.35;
+        letter-spacing: -0.045em;
+    }
+    .lm-feature-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+        position: relative;
+        z-index: 1;
+    }
+    .lm-feature-card {
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.06);
+        border-radius: 24px;
+        overflow: hidden;
+        transition: transform 0.5s cubic-bezier(0.22,1,0.36,1), border-color 0.4s, box-shadow 0.4s;
+        cursor: default;
+    }
+    .lm-feature-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(177,130,71,0.3);
+        box-shadow: 0 20px 60px rgba(0,0,0,0.3), 0 0 40px rgba(177,130,71,0.06);
+    }
+    .lm-feature-card-img {
+        width: 100%;
+        aspect-ratio: 4/3;
+        overflow: hidden;
+        background: #0d0c0a;
+    }
+    .lm-feature-card-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .lm-feature-card-body {
+        padding: 32px 28px 36px;
+    }
+    .lm-feature-card-num {
+        font-family: var(--lm-serif);
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--lm-gold);
+        line-height: 1;
+        margin-bottom: 12px;
+        opacity: 0.7;
+    }
+    .lm-feature-card:hover .lm-feature-card-num {
+        opacity: 1;
+    }
+    .lm-feature-card-title {
+        font-family: var(--lm-body);
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--lm-white);
+        margin-bottom: 12px;
+        letter-spacing: -0.03em;
+        line-height: 1.3;
+    }
+    .lm-feature-card-desc {
+        font-size: 15px;
+        line-height: 1.7;
+        color: rgba(255,255,255,0.5);
+        letter-spacing: -0.02em;
+    }
+    .lm-feature-divider {
+        width: 100%;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: transparent;
+        display: block;
+        line-height: 0;
+        font-size: 0;
+    }
+
+    /* ===== RECOMMENDATION SECTION ===== */
+    .lm-recommend {
+        padding: 120px 0;
+        background: #1a1714;
+        position: relative;
+        overflow: hidden;
+    }
+    .lm-recommend::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -20%;
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(177,130,71,0.06) 0%, transparent 70%);
+        pointer-events: none;
+    }
+    .lm-recommend .lm-inner {
+        max-width: 1200px;
+    }
+    .lm-rec-header {
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    .lm-rec-label {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 700;
+        color: #b18247;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    .lm-rec-title {
+        font-family: var(--lm-body);
+        font-size: 38px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 1.35;
+        letter-spacing: -0.04em;
+    }
+    .lm-rec-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+    .lm-rec-card {
+        background: rgba(255,255,255,0.03);
+        border-radius: 24px;
+        padding: 40px 32px;
+        border: 1px solid rgba(255,255,255,0.06);
+        transition: transform 0.5s cubic-bezier(0.22,1,0.36,1), box-shadow 0.4s;
+        position: relative;
+        overflow: hidden;
+    }
+    .lm-rec-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    .lm-rec-card-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
+        background: rgba(177,130,71,0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+        font-size: 24px;
+        color: var(--lm-gold);
+    }
+    .lm-rec-card h3 {
+        font-family: var(--lm-body);
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 12px;
+        letter-spacing: -0.03em;
+    }
+    .lm-rec-card p {
+        font-size: 15px;
+        line-height: 1.7;
+        color: rgba(255,255,255,0.7);
+        letter-spacing: -0.02em;
+    }
+
+    /* ===== PROCESS SECTION - STEP CARDS + DETAIL CARDS ===== */
+    .lm-process {
+        padding: 120px 0 80px;
+        background: #1a1714;
+        color: var(--lm-white);
+    }
+    .lm-process .lm-inner {
+        max-width: 1400px;
+    }
+    .lm-process .lm-section-label {
+        background: rgba(177,130,71,0.2);
+        color: #b18247;
+    }
+    .lm-process .lm-section-h2 {
+        color: var(--lm-white);
+        font-size: 48px;
+    }
+    .lm-process-intro {
+        max-width: 700px; margin: 20px auto 60px; text-align: center;
+    }
+    .lm-process-intro p {
+        font-size: 18px; color: rgba(255,255,255,0.5); line-height: 1.8; letter-spacing: -0.045em;
+    }
+
+    /* Process Flow Images */
+    .lm-process-flow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 60px;
+    }
+    .lm-process-flow-item {
+        flex: 1;
+        max-width: 280px;
+        text-align: center;
+    }
+    .lm-process-flow-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-bottom: 12px;
+    }
+    .lm-process-flow-label {
+        font-size: 14px;
+        font-weight: 600;
+        color: rgba(255,255,255,0.7);
+        letter-spacing: -0.03em;
+    }
+    .lm-process-flow-arrow {
+        font-size: 24px;
+        color: var(--lm-gold);
+        flex-shrink: 0;
+        margin-top: -30px;
+    }
+
+    /* Part 1: Top Step Summary Cards */
+    .lm-process-steps {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        margin-bottom: 60px;
+    }
+    .lm-process-step {
+        background: rgba(255,255,255,0.05);
+        border: 0.8px solid rgba(255,255,255,0.05);
+        border-radius: 16px;
+        padding: 32px;
+    }
+    .lm-process-step-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .lm-process-step-icon {
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(255,255,255,0.15);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .lm-process-step-icon i {
+        font-size: 18px;
+        color: rgba(255,255,255,0.7);
+    }
+    .lm-process-step-num {
+        font-family: var(--lm-serif);
+        font-size: 14px;
+        color: rgba(255,255,255,0.3);
+    }
+    .lm-process-step-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--lm-white);
+        margin-bottom: 8px;
+        letter-spacing: -0.03em;
+    }
+    .lm-process-step-sub {
+        font-size: 14px;
+        color: rgba(255,255,255,0.5);
+        line-height: 1.6;
+    }
+
+    /* Part 2: Large Detail Cards */
+    .lm-process-details {
+        padding-bottom: 100px;
+    }
+    .lm-process-detail-wrap {
+        position: sticky;
+        top: 128px;
+        margin-bottom: 60vh;
+    }
+    .lm-process-detail-wrap:nth-child(1) { z-index: 1; }
+    .lm-process-detail-wrap:nth-child(2) { z-index: 2; }
+    .lm-process-detail-wrap:nth-child(3) { z-index: 3; }
+    .lm-process-detail-wrap:nth-child(4) { z-index: 4; }
+    .lm-process-detail-wrap:last-child {
+        margin-bottom: 50vh;
+    }
+    .lm-process-detail {
+        background: #1e1b16;
+        border: 0.8px solid rgba(255,255,255,0.1);
+        border-radius: 48px;
+        min-height: 500px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+    }
+    .lm-process-detail-img {
+        width: 50%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 40px;
+    }
+    .lm-process-detail-img img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .lm-process-detail-img-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    }
+    .lm-process-detail:nth-child(1) .lm-process-detail-img-overlay { background: none; }
+    .lm-process-detail:nth-child(2) .lm-process-detail-img-overlay { background: none; }
+    .lm-process-detail:nth-child(3) .lm-process-detail-img-overlay { background: none; }
+    .lm-process-detail:nth-child(4) .lm-process-detail-img-overlay { background: none; }
+    .lm-process-detail-num {
+        position: relative;
+        z-index: 2;
+        font-family: var(--lm-serif);
+        font-size: 120px;
+        font-weight: 700;
+        color: rgba(255,255,255,0.15);
+        line-height: 1;
+    }
+    .lm-process-detail-badge {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        padding: 4px 16px;
+        background: var(--lm-white);
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--lm-text);
+        margin-top: 12px;
+        width: fit-content;
+    }
+    .lm-process-detail-info {
+        width: 50%;
+        padding: 60px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--lm-white);
+    }
+    .lm-process-detail-step {
+        font-size: 14px;
+        font-weight: 700;
+        color: #b18247;
+        letter-spacing: 2px;
+        margin-bottom: 16px;
+    }
+    .lm-process-detail-info h3 {
+        font-family: var(--lm-body);
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--lm-white);
+        letter-spacing: -0.045em;
+        margin-bottom: 20px;
+    }
+    .lm-process-detail-info p {
+        font-size: 16px;
+        color: rgba(255,255,255,0.7);
+        line-height: 1.8;
+        letter-spacing: -0.045em;
+        margin-bottom: 32px;
+    }
+    .lm-process-detail-checks {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+    .lm-process-detail-check {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .lm-process-detail-check-icon {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 1.5px solid var(--lm-gold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+    .lm-process-detail-check-icon i {
+        font-size: 12px;
+        color: var(--lm-gold);
+    }
+    .lm-process-detail-check span {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--lm-white);
+        letter-spacing: -0.045em;
+    }
+    .lm-process-cta {
+        display: inline-block;
+        padding: 14px 32px;
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 50px;
+        color: var(--lm-white);
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        letter-spacing: -0.02em;
+        transition: all 0.3s ease;
+        width: fit-content;
+    }
+    .lm-process-cta:hover {
+        background: var(--lm-gold);
+        border-color: var(--lm-gold);
+        color: var(--lm-white);
+    }
+
+    /* ===== CLINIC SECTION - MODERN REDESIGN ===== */
+    .lm-clinic {
+        padding: 120px 0;
+        background: #1a1714;
+        color: var(--lm-white);
+        position: relative;
+        overflow: hidden;
+    }
+    .lm-clinic::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(ellipse at 30% 30%, rgba(177,130,71,0.08) 0%, transparent 50%);
+        pointer-events: none;
+    }
+    .lm-clinic .lm-section-label {
+        background: rgba(177,130,71,0.2);
+        color: var(--lm-gold);
+    }
+    .lm-clinic-title {
+        font-family: var(--lm-serif);
+        font-size: 80px;
+        font-weight: 400;
+        color: var(--lm-white);
+        line-height: 1;
+        margin-bottom: 16px;
+    }
+    .lm-clinic-subtitle {
+        font-family: var(--lm-body);
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(255,255,255,0.5);
+        letter-spacing: -0.045em;
+        margin-bottom: 60px;
+    }
+    .lm-clinic-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .lm-clinic-card {
+        background: rgba(255,255,255,0.04);
+        border-radius: 24px;
+        padding: 40px 32px;
+        border: 1px solid rgba(255,255,255,0.06);
+        transition: border-color 0.4s, box-shadow 0.4s, transform 0.4s;
+    }
+    .lm-clinic-card:hover {
+        border-color: rgba(177,130,71,0.4);
+        box-shadow: 0 8px 32px rgba(177,130,71,0.1);
+        transform: translateY(-4px);
+    }
+    .lm-clinic-card-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: rgba(177,130,71,0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+        transition: background 0.4s, color 0.4s;
+    }
+    .lm-clinic-card:hover .lm-clinic-card-icon {
+        background: var(--lm-gold);
+    }
+    .lm-clinic-card-icon i {
+        font-size: 24px;
+        color: var(--lm-gold);
+        transition: color 0.4s;
+    }
+    .lm-clinic-card:hover .lm-clinic-card-icon i {
+        color: #1a1714;
+    }
+    .lm-clinic-card h3 {
+        font-family: var(--lm-body);
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--lm-white);
+        letter-spacing: -0.045em;
+        margin-bottom: 12px;
+    }
+    .lm-clinic-card p {
+        font-size: 14px;
+        color: rgba(255,255,255,0.5);
+        line-height: 1.75;
+        letter-spacing: -0.045em;
+    }
+
+    /* ===== FAQ SECTION - MODERN DARK ===== */
+    .lm-faq-section {
+        padding: 120px 0;
+        background: #1a1714;
+        color: var(--lm-white);
+        position: relative;
+    }
+    .lm-faq-section::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 60%;
+        height: 60%;
+        background: radial-gradient(ellipse at 80% 80%, rgba(177,130,71,0.06) 0%, transparent 60%);
+        pointer-events: none;
+    }
+    .lm-faq-layout {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 60px;
+        align-items: start;
+    }
+    .lm-faq-left {
+        position: sticky;
+        top: 120px;
+    }
+    .lm-faq-deco {
+        font-family: var(--lm-serif);
+        font-size: 120px;
+        font-weight: 400;
+        color: var(--lm-gold);
+        opacity: 0.2;
+        line-height: 1;
+        margin-bottom: 24px;
+    }
+    .lm-faq-left-text {
+        font-size: 16px;
+        color: rgba(255,255,255,0.4);
+        line-height: 1.8;
+        letter-spacing: -0.045em;
+    }
+    .lm-faq-list {
+        display: flex; flex-direction: column; gap: 12px;
+    }
+    .lm-faq-item {
+        background: rgba(255,255,255,0.03);
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid rgba(255,255,255,0.06);
+        transition: border-color 0.4s, box-shadow 0.4s;
+    }
+    .lm-faq-item:hover {
+        border-color: rgba(177,130,71,0.3);
+        box-shadow: 0 4px 20px rgba(177,130,71,0.08);
+    }
+    .lm-faq-q {
+        display: flex; align-items: center; justify-content: space-between;
+        width: 100%; padding: 24px 28px; border: none; background: none;
+        cursor: pointer; font-family: var(--lm-body); font-size: 17px;
+        font-weight: 600; color: var(--lm-white); letter-spacing: -0.045em;
+        text-align: left; gap: 12px;
+    }
+    .lm-faq-q .lm-faq-prefix {
+        font-family: var(--lm-serif);
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--lm-gold);
+        flex-shrink: 0;
+        margin-right: 4px;
+    }
+    .lm-faq-q i { font-size: 18px; color: rgba(255,255,255,0.4); transition: transform 0.3s, color 0.3s; flex-shrink: 0; }
+    .lm-faq-q.active i { transform: rotate(180deg); color: var(--lm-gold); }
+    .lm-faq-a {
+        display: none; padding: 0 28px 24px; font-size: 15px;
+        color: rgba(255,255,255,0.55); line-height: 1.7; letter-spacing: -0.045em;
+    }
+    .lm-faq-a .lm-faq-a-prefix {
+        font-family: var(--lm-serif);
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--lm-gold);
+        margin-right: 8px;
+    }
+
+    /* ===== SCROLL TOP ===== */
+    .lm-scroll-top {
+        position: fixed; right: 40px; bottom: 40px; z-index: 99;
+        width: 55px; height: 55px; border-radius: 50%;
+        border: 1px solid var(--lm-text); background: var(--lm-white);
+        display: flex; align-items: center; justify-content: center;
+        cursor: pointer; transition: 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .lm-scroll-top:hover { background: var(--lm-text); color: var(--lm-white); }
+    .lm-scroll-top i { font-size: 18px; }
+
+    /* ===== FOOTER ===== */
+    .lm-footer {
+        background: var(--lm-footer-bg); border-top: 0.8px solid #afafaf;
+        padding: 60px 0 40px; text-align: center;
+    }
+    .lm-footer-logo {
+        font-family: var(--lm-serif); font-size: 24px; font-weight: 500;
+        color: var(--lm-text); letter-spacing: 2px; margin-bottom: 24px;
+    }
+    .lm-footer-link {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 10px 24px; border: 1px solid var(--lm-text); border-radius: 20px;
+        text-decoration: none; color: var(--lm-text); font-size: 14px;
+        margin-bottom: 30px; transition: 0.3s;
+    }
+    .lm-footer-link:hover { background: var(--lm-text); color: var(--lm-white); }
+    .lm-footer-info {
+        font-size: 14px; color: rgba(76,72,65,0.6); line-height: 1.8;
+    }
+    .lm-footer-info span { margin: 0 8px; }
+    .lm-footer-copy {
+        margin-top: 24px; font-size: 13px; color: rgba(76,72,65,0.4);
+    }
+
+    /* ===== SECTION LABEL & HEADING (shared) ===== */
+    .lm-section-label { display: inline-block; padding: 6px 20px; border-radius: 50px; background: var(--lm-gold-light); color: var(--lm-gold); font-size: 13px; font-weight: 600; letter-spacing: 1px; margin-bottom: 16px; }
+    .lm-section-h2 { font-family: var(--lm-body); font-size: 36px; font-weight: 700; color: var(--lm-text); letter-spacing: -0.045em; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+        /* Mobile: vertical layout, no horizontal scroll */
+        .lm-horizontal { margin-top: 80px; }
+        .lm-h-wrap {
+            display: flex; flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        .lm-h-panel {
+            width: 100%; height: auto; min-height: 100vh;
+        }
+        .lm-h-panel--def {
+            width: 100%; min-height: auto;
+        }
+        .lm-definition {
+            height: auto; padding: 80px 24px;
+            display: block; position: relative;
+        }
+        .lm-def-con {
+            position: relative; top: auto; left: auto; right: auto; bottom: auto;
+        }
+        .lm-def-scroll-circle { display: none; }
+        .lm-hero-lbx span { font-size: 70px; }
+        .lm-title-band h2 { font-size: 56px; }
+        .lm-why-title { font-size: 70px; }
+        /* Why spec layout: single column on tablet */
+        .lm-spec-layout { grid-template-columns: 1fr; }
+        .lm-spec-left { position: relative; top: auto; }
+        .lm-spec-right { flex-direction: column; }
+        .lm-spec-col:nth-child(2) { padding-top: 0; }
+        .lm-definition::before { font-size: 120px; }
+        .lm-rec-cards { grid-template-columns: repeat(2, 1fr); }
+        .lm-clinic-cards { grid-template-columns: repeat(2, 1fr); }
+        .lm-clinic-title { font-size: 60px; }
+        /* FAQ: single column */
+        .lm-faq-layout { grid-template-columns: 1fr; gap: 30px; }
+        .lm-faq-left { position: relative; top: auto; }
+        .lm-faq-deco { font-size: 80px; }
+        /* Process section responsive - tablet */
+        .lm-process-flow { flex-wrap: wrap; gap: 12px; }
+        .lm-process-flow-item { flex: 0 0 calc(50% - 30px); max-width: none; }
+        .lm-process-flow-arrow { display: none; }
+        .lm-process-steps { grid-template-columns: repeat(2, 1fr); }
+        .lm-process-detail-wrap { position: static; margin-bottom: 40px; }
+        .lm-process-detail-wrap:last-child { margin-bottom: 0; }
+        .lm-process-detail { flex-direction: column; min-height: auto; }
+        .lm-process-detail-img { width: 100%; height: 300px; }
+        .lm-process-detail-info { width: 100%; padding: 40px 30px; }
+    }
+    @media (max-width: 768px) {
+        .lm-h-panel { min-height: auto; }
+        .lm-h-panel--title { width: 100%; }
+        .lm-inner { padding: 0 24px; }
+        .lm-hero-lbx span { font-size: 50px; }
+        .lm-hero-desc { font-size: 15px; }
+        .lm-scroll-down { width: 70px; height: 70px; bottom: 5%; right: 5%; }
+        .lm-title-band h2 { font-size: 36px; }
+        .lm-title-band .lm-kr-sub { font-size: 18px; }
+        .lm-marquee { font-size: 80px; }
+        .lm-definition::before { font-size: 80px; }
+        .lm-def-title { font-size: 28px; }
+        .lm-why { padding: 100px 0; }
+        .lm-why-title { font-size: 48px; }
+        .lm-spec-card { padding: 30px 24px; }
+        .lm-spec-card h3 { font-size: 20px; }
+        .lm-spec-text { font-size: 24px; }
+        .lm-scroll-top { right: 20px; bottom: 30px; width: 45px; height: 45px; }
+        .lm-recommend { padding: 80px 0; }
+        .lm-process { padding: 80px 0 40px; }
+        .lm-section-h2 { font-size: 28px; }
+        .lm-clinic-cards { grid-template-columns: 1fr; }
+        .lm-clinic-title { font-size: 48px; }
+        .lm-clinic-card { padding: 30px 24px; }
+        .lm-clinic, .lm-faq-section { padding: 80px 0; }
+        .lm-rec-title { font-size: 26px; }
+        .lm-rec-cards { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+        .lm-rec-card { padding: 32px 24px; }
+        /* Process section mobile */
+        .lm-process-flow-item img { height: 150px; border-radius: 16px; }
+        .lm-process-steps { grid-template-columns: 1fr 1fr; gap: 12px; }
+        .lm-process-step { padding: 24px; }
+        .lm-process-detail-info { padding: 30px 24px; }
+        .lm-process-detail-info h3 { font-size: 22px; }
+        .lm-process-detail-checks { grid-template-columns: 1fr; }
+        .lm-process-detail-img { height: 220px; }
+        .lm-process-detail-num { font-size: 80px; }
+        .lm-process-detail { border-radius: 32px; }
+        /* FAQ mobile */
+        .lm-faq-deco { font-size: 60px; }
+        .lm-faq-q { font-size: 15px; padding: 20px 24px; }
+        .lm-faq-item { border-radius: 16px; }
+        /* VS Comparison responsive */
+        .lm-vs-title { font-size: 28px; }
+        .lm-vs-section { padding: 60px 0; }
+        .lm-vs-table-wrap { display: none; }
+        .lm-vs-mobile { display: block; }
+        .lm-vs-images { flex-direction: column; align-items: center; gap: 20px; margin-bottom: 40px; }
+        .lm-vs-img-col { max-width: 260px; }
+        .lm-vs-vs-badge { width: 40px; height: 40px; font-size: 14px; }
+        /* Feature Step responsive */
+        .lm-feature-section { padding: 60px 0; }
+        .lm-feature-title { font-size: 26px; }
+        .lm-feature-grid { grid-template-columns: 1fr; gap: 20px; max-width: 480px; margin: 0 auto; }
+        .lm-feature-card-body { padding: 24px 20px 28px; }
+        .lm-feature-card-num { font-size: 28px; }
+        .lm-feature-card-title { font-size: 19px; }
+    }
+    @media (max-width: 480px) {
+        .lm-inner { padding: 0 16px; }
+        .lm-hero-lbx span { font-size: 36px; }
+        .lm-hero-desc { font-size: 14px; max-width: 100%; }
+        .lm-hero-desc2 { font-size: 13px; margin-top: 20px; }
+        .lm-hero-content { padding: 100px 16px 0; gap: 16px; }
+        .lm-scroll-down { display: none; }
+        .lm-title-band h2 { font-size: 28px; }
+        .lm-title-band .lm-kr-sub { font-size: 15px; }
+        .lm-title-band .lm-badge { padding: 0 20px; height: 34px; }
+        .lm-title-band .lm-badge span { font-size: 14px; }
+        .lm-marquee { font-size: 60px; }
+        .lm-def-title { font-size: 22px; }
+        .lm-def-body { font-size: 15px; line-height: 1.7; }
+        .lm-why { padding: 60px 0; }
+        .lm-why-title { font-size: 32px; margin-bottom: 30px; }
+        .lm-spec-text { font-size: 20px; }
+        .lm-spec-card { padding: 24px 20px; border-radius: 20px; }
+        .lm-spec-card h3 { font-size: 18px; }
+        .lm-spec-card p { font-size: 14px; }
+        .lm-vs-section { padding: 40px 0; }
+        .lm-vs-title { font-size: 22px; }
+        .lm-vs-subtitle { font-size: 15px; }
+        .lm-vs-img-col { max-width: 200px; }
+        .lm-vs-card { padding: 20px 16px; }
+        .lm-feature-section { padding: 40px 0; }
+        .lm-feature-title { font-size: 22px; }
+        .lm-feature-header { margin-bottom: 40px; }
+        .lm-feature-card-body { padding: 20px 16px 24px; }
+        .lm-feature-card-num { font-size: 24px; }
+        .lm-feature-card-title { font-size: 17px; }
+        .lm-feature-card-desc { font-size: 13px; }
+        .lm-recommend { padding: 60px 0; }
+        .lm-rec-title { font-size: 22px; }
+        .lm-rec-card { padding: 28px 20px; }
+        .lm-rec-card h3 { font-size: 18px; }
+        .lm-rec-card p { font-size: 14px; }
+        .lm-process { padding: 60px 0 30px; }
+        .lm-process .lm-section-h2 { font-size: 24px; }
+        .lm-process-intro p { font-size: 15px; }
+        .lm-process-flow-item img { height: 120px; border-radius: 12px; }
+        .lm-process-steps { grid-template-columns: 1fr; gap: 10px; }
+        .lm-process-step { padding: 20px; }
+        .lm-process-step-title { font-size: 16px; }
+        .lm-process-detail { border-radius: 24px; }
+        .lm-process-detail-img { height: 180px; padding: 20px; }
+        .lm-process-detail-num { font-size: 60px; }
+        .lm-process-detail-info { padding: 24px 20px; }
+        .lm-process-detail-info h3 { font-size: 20px; }
+        .lm-process-detail-info p { font-size: 14px; }
+        .lm-clinic { padding: 60px 0; }
+        .lm-clinic-title { font-size: 36px; }
+        .lm-clinic-subtitle { font-size: 15px; margin-bottom: 30px; }
+        .lm-clinic-card { padding: 24px 20px; }
+        .lm-clinic-card h3 { font-size: 18px; }
+        .lm-faq-section { padding: 60px 0; }
+        .lm-faq-deco { font-size: 48px; }
+        .lm-faq-q { font-size: 14px; padding: 16px 20px; }
+        .lm-faq-a { font-size: 13px; padding: 0 20px 20px; }
+        .lm-section-h2 { font-size: 22px; }
+        .lm-section-label { font-size: 11px; padding: 5px 14px; }
+        .lm-footer { padding: 40px 0 30px; }
+        .lm-footer-logo { font-size: 20px; }
+        .lm-footer-info { font-size: 12px; }
+        .lm-scroll-top { right: 16px; bottom: 24px; width: 40px; height: 40px; }
+        .lm-scroll-top i { font-size: 14px; }
+    }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo"><a href="index.html">SMILEVIEW</a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="introduction.html">스마일뷰치과</a></li>
+                    <li><a href="invisalign.html" class="active">인비절라인</a></li>
+                    <li><a href="ortho.html">치아교정</a></li>
+                    <li><a href="whitening.html">치아미백</a></li>
+                    <li><a href="laminate.html">원데이 라미네이트</a></li>
+                    <li><a href="implant.html">수면 임플란트</a></li>
+                    <li><a href="prosthetics.html">보철치료</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="lang-selector" id="langSelector">
+                    <span class="lang-icon"><i class="ph ph-globe"></i></span>
+                    <button class="lang-current" onclick="document.getElementById('langSelector').classList.toggle('open')">KO</button>
+                    <div class="lang-dropdown">
+                        <a href="#" class="active">한국어 (KO)</a>
+                        <a href="invisalign_tw.html">繁體中文 (TW)</a>
+                        <a href="invisalign_jp.html">日本語 (JP)</a>
+                    </div>
+                </div>
+                <a href="#" class="btn-reserve">예약하기</a>
+                <div class="mobile-menu-btn"><i class="ph ph-list"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-inner">
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="introduction.html">병원소개</a></li>
+                    <li><a href="invisalign.html">인비절라인</a></li>
+                    <li><a href="ortho.html">치아교정</a></li>
+                    <li><a href="whitening.html">치아미백</a></li>
+                    <li><a href="laminate.html">원데이 라미네이트</a></li>
+                    <li><a href="implant.html">수면 임플란트</a></li>
+                    <li><a href="prosthetics.html">보철치료</a></li>
+                </ul>
+            </nav>
+            <a href="https://naver.me/xoBKVJA6" class="mobile-reserve-btn" target="_blank">온라인 예약</a>
+        </div>
+    </div>
+
+    <main class="lm-page">
+
+        <!-- ===== HORIZONTAL SCROLL SECTION ===== -->
+        <section class="lm-horizontal">
+            <div class="lm-h-wrap">
+
+                <!-- Panel 1: HERO -->
+                <div class="lm-h-panel">
+        <div class="lm-hero">
+            <div class="lm-hero-bg"></div>
+            <div class="lm-hero-overlay"></div>
+            <div class="lm-hero-content">
+                <div class="lm-hero-lbx"><span>INVISALIGN</span></div>
+                <div class="lm-hero-rbx"><span>투명하고 편리한 치아 교정 솔루션</span></div>
+                <p class="lm-hero-desc">
+                    인비절라인은 투명한 교정 장치를 사용하여 치아의 배열을<br>
+                    교정하는 방법입니다. 거의 보이지 않기 때문에<br>
+                    치아 교정 중에도 미적인 걱정을 덜 수 있습니다.
+                </p>
+                <p class="lm-hero-desc2">
+                    사용자의 편의에 따라 장치를 제거할 수 있어<br>
+                    식사나 치아 청소 시 불편함이 적습니다.
+                </p>
+            </div>
+            <!-- Scroll Down -->
+            <div class="lm-scroll-down">
+                <svg class="lm-scroll-circle" viewBox="0 0 100 100">
+                    <defs>
+                        <path id="circlePath" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"/>
+                    </defs>
+                    <text>
+                        <textPath href="#circlePath">Scroll Down ・ Scroll Down ・ Scroll Down ・</textPath>
+                    </text>
+                </svg>
+                <span class="lm-scroll-arrow"><i class="ph ph-arrow-down"></i></span>
+            </div>
+        </div>
+                </div><!-- end Panel 1 -->
+
+                <!-- Panel 2: TITLE BAND -->
+                <div class="lm-h-panel lm-h-panel--title">
+        <div class="lm-title-band">
+            <div class="lm-title-band-overlay"></div>
+            <div class="lm-title-band-content">
+                <h2>Invisalign</h2>
+                <p class="lm-kr-sub">투명하고 편리한 치아 교정 솔루션</p>
+                <div class="lm-badge">
+                    <span>SMILEVIEW DENTAL</span>
+                </div>
+            </div>
+            <!-- Marquee -->
+            <div class="lm-marquee">
+                <div class="lm-marquee-track">
+                    <span>SMILEVIEW</span><span>INVISALIGN</span><span>SMILEVIEW</span><span>INVISALIGN</span>
+                    <span>SMILEVIEW</span><span>INVISALIGN</span><span>SMILEVIEW</span><span>INVISALIGN</span>
+                </div>
+            </div>
+        </div>
+                </div><!-- end Panel 2 -->
+
+                <!-- Panel 3: DEFINITION -->
+                <div class="lm-h-panel lm-h-panel--def">
+        <div class="lm-definition">
+            <!-- Scroll Circle -->
+            <div class="lm-def-scroll-circle">
+                <svg class="lm-scroll-circle" viewBox="0 0 100 100">
+                    <defs>
+                        <path id="circlePathDef" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"/>
+                    </defs>
+                    <text>
+                        <textPath href="#circlePathDef">Scroll Down ・ Scroll Down ・ Scroll Down ・</textPath>
+                    </text>
+                </svg>
+                <span class="lm-def-arrow"><i class="ph ph-arrow-down"></i></span>
+            </div>
+            <!-- Content -->
+            <div class="lm-def-con">
+                <div class="lm-def-tit">
+                    <span class="lm-def-num">01</span>
+                    <h2 class="lm-def-title">인비절라인이란?</h2>
+                    <p class="lm-def-body">
+                        인비절라인은 투명한 교정 장치를 사용하여 치아의 배열을 교정하는 방법입니다. 이 장치는 거의 보이지 않기 때문에 치아 교정 중에도 미적인 걱정을 덜 수 있습니다. 또한, 사용자의 편의에 따라 장치를 제거할 수 있어 식사나 치아 청소 시 불편함이 적습니다. 이러한 특징으로 인해 많은 사람들이 선호하는 교정 방식 중 하나가 되었습니다.
+                    </p>
+                </div>
+                <div class="lm-def-divider"></div>
+                <div class="lm-def-sub">
+                    <p>
+                        <b>특징</b>
+                        <span>투명 소재, 탈착 가능, 편안한 착용감, 3D 디지털 치료 계획, 적은 병원 방문 횟수</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+                </div><!-- end Panel 3 -->
+
+            </div><!-- end lm-h-wrap -->
+        </section><!-- end lm-horizontal -->
+
+        <!-- ===== VS COMPARISON SECTION ===== -->
+        <section class="lm-vs-section">
+            <div class="lm-inner">
+                <div class="lm-vs-header lm-fade">
+                    <h2 class="lm-vs-title">invisalign<br>어떤점이 다를까 ?</h2>
+                    <p class="lm-vs-subtitle">일반 투명장치 vs 인비절라인</p>
+                </div>
+
+                <!-- VS Images -->
+                <div class="lm-vs-images lm-fade">
+                    <div class="lm-vs-img-col">
+                        <img src="images/invisalign/vs_normal.png" alt="일반 투명교정 장치" loading="lazy">
+                        <span class="lm-vs-img-label">일반 투명교정</span>
+                    </div>
+                    <div class="lm-vs-vs-badge">VS</div>
+                    <div class="lm-vs-img-col lm-vs-img-col--highlight">
+                        <img src="images/invisalign/vs_invisalign.png" alt="인비절라인 장치" loading="lazy">
+                        <span class="lm-vs-img-label">인비절라인</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Table -->
+                <div class="lm-vs-table-wrap">
+                    <table class="lm-vs-table">
+                        <thead>
+                            <tr>
+                                <th class="lm-vs-th-normal">일반 투명교정</th>
+                                <th class="lm-vs-th-label">비교 항목</th>
+                                <th class="lm-vs-th-highlight"><span class="lm-vs-badge">RECOMMEND</span><br>인비절라인</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="lm-vs-row">
+                                <td class="lm-vs-td-normal">수작업 제작으로 오차 발생 가능</td>
+                                <td class="lm-vs-td-label">제작 방식</td>
+                                <td class="lm-vs-td-highlight">특허받은 스마트트랙 소재 + 디지털 정밀 제작</td>
+                            </tr>
+                            <tr class="lm-vs-row">
+                                <td class="lm-vs-td-normal">단순 시뮬레이션만 가능</td>
+                                <td class="lm-vs-td-label">치료 계획</td>
+                                <td class="lm-vs-td-highlight">클린체크(ClinCheck) 3D 시뮬레이션으로 최종 결과 미리 확인</td>
+                            </tr>
+                            <tr class="lm-vs-row">
+                                <td class="lm-vs-td-normal">제한적인 치아 이동</td>
+                                <td class="lm-vs-td-label">교정 범위</td>
+                                <td class="lm-vs-td-highlight">발치 교정, 부정교합 등 복잡한 케이스도 대응 가능</td>
+                            </tr>
+                            <tr class="lm-vs-row">
+                                <td class="lm-vs-td-normal">일반 플라스틱 소재</td>
+                                <td class="lm-vs-td-label">소재 & 착용감</td>
+                                <td class="lm-vs-td-highlight">스마트트랙(SmartTrack) 특허 소재로 편안한 착용감</td>
+                            </tr>
+                            <tr class="lm-vs-row">
+                                <td class="lm-vs-td-normal">제조사 데이터 없음</td>
+                                <td class="lm-vs-td-label">임상 데이터</td>
+                                <td class="lm-vs-td-highlight">전 세계 1,800만+ 케이스 빅데이터 기반 예측</td>
+                            </tr>
+                            <tr class="lm-vs-row">
+                                <td class="lm-vs-td-normal">추가 장치 시 별도 비용</td>
+                                <td class="lm-vs-td-label">추가 교정</td>
+                                <td class="lm-vs-td-highlight">패키지 내 추가 얼라이너 무상 제공</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Mobile Cards -->
+                <div class="lm-vs-mobile">
+                    <div class="lm-vs-card lm-vs-row">
+                        <div class="lm-vs-card-label">제작 방식</div>
+                        <div class="lm-vs-card-row">
+                            <div class="lm-vs-card-col lm-vs-card-col--normal">
+                                <span class="lm-vs-card-col-tag">일반 투명교정</span>
+                                <span class="lm-vs-card-col-text">수작업 제작으로 오차 발생 가능</span>
+                            </div>
+                            <div class="lm-vs-card-col lm-vs-card-col--highlight">
+                                <span class="lm-vs-card-col-tag">인비절라인</span>
+                                <span class="lm-vs-card-col-text">특허받은 스마트트랙 소재 + 디지털 정밀 제작</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lm-vs-card lm-vs-row">
+                        <div class="lm-vs-card-label">치료 계획</div>
+                        <div class="lm-vs-card-row">
+                            <div class="lm-vs-card-col lm-vs-card-col--normal">
+                                <span class="lm-vs-card-col-tag">일반 투명교정</span>
+                                <span class="lm-vs-card-col-text">단순 시뮬레이션만 가능</span>
+                            </div>
+                            <div class="lm-vs-card-col lm-vs-card-col--highlight">
+                                <span class="lm-vs-card-col-tag">인비절라인</span>
+                                <span class="lm-vs-card-col-text">클린체크(ClinCheck) 3D 시뮬레이션으로 최종 결과 미리 확인</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lm-vs-card lm-vs-row">
+                        <div class="lm-vs-card-label">교정 범위</div>
+                        <div class="lm-vs-card-row">
+                            <div class="lm-vs-card-col lm-vs-card-col--normal">
+                                <span class="lm-vs-card-col-tag">일반 투명교정</span>
+                                <span class="lm-vs-card-col-text">제한적인 치아 이동</span>
+                            </div>
+                            <div class="lm-vs-card-col lm-vs-card-col--highlight">
+                                <span class="lm-vs-card-col-tag">인비절라인</span>
+                                <span class="lm-vs-card-col-text">발치 교정, 부정교합 등 복잡한 케이스도 대응 가능</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lm-vs-card lm-vs-row">
+                        <div class="lm-vs-card-label">소재 & 착용감</div>
+                        <div class="lm-vs-card-row">
+                            <div class="lm-vs-card-col lm-vs-card-col--normal">
+                                <span class="lm-vs-card-col-tag">일반 투명교정</span>
+                                <span class="lm-vs-card-col-text">일반 플라스틱 소재</span>
+                            </div>
+                            <div class="lm-vs-card-col lm-vs-card-col--highlight">
+                                <span class="lm-vs-card-col-tag">인비절라인</span>
+                                <span class="lm-vs-card-col-text">스마트트랙(SmartTrack) 특허 소재로 편안한 착용감</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lm-vs-card lm-vs-row">
+                        <div class="lm-vs-card-label">임상 데이터</div>
+                        <div class="lm-vs-card-row">
+                            <div class="lm-vs-card-col lm-vs-card-col--normal">
+                                <span class="lm-vs-card-col-tag">일반 투명교정</span>
+                                <span class="lm-vs-card-col-text">제조사 데이터 없음</span>
+                            </div>
+                            <div class="lm-vs-card-col lm-vs-card-col--highlight">
+                                <span class="lm-vs-card-col-tag">인비절라인</span>
+                                <span class="lm-vs-card-col-text">전 세계 1,800만+ 케이스 빅데이터 기반 예측</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lm-vs-card lm-vs-row">
+                        <div class="lm-vs-card-label">추가 교정</div>
+                        <div class="lm-vs-card-row">
+                            <div class="lm-vs-card-col lm-vs-card-col--normal">
+                                <span class="lm-vs-card-col-tag">일반 투명교정</span>
+                                <span class="lm-vs-card-col-text">추가 장치 시 별도 비용</span>
+                            </div>
+                            <div class="lm-vs-card-col lm-vs-card-col--highlight">
+                                <span class="lm-vs-card-col-tag">인비절라인</span>
+                                <span class="lm-vs-card-col-text">패키지 내 추가 얼라이너 무상 제공</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FEATURE STEP SECTION ===== -->
+        <hr class="lm-feature-divider">
+        <section class="lm-feature-section">
+            <div class="lm-inner">
+                <div class="lm-feature-header lm-fade">
+                    <p class="lm-feature-sub">인비절라인 특징</p>
+                    <h2 class="lm-feature-title">나만을 위한 맞춤 교정 장치</h2>
+                </div>
+                <div class="lm-feature-grid">
+                    <div class="lm-feature-card lm-fade">
+                        <div class="lm-feature-card-img">
+                            <img src="images/invisalign/step_01.gif" alt="정확한 개인 맞춤형 구강 스캔">
+                        </div>
+                        <div class="lm-feature-card-body">
+                            <div class="lm-feature-card-num">01</div>
+                            <h3 class="lm-feature-card-title">정확한 개인 맞춤형으로</h3>
+                            <p class="lm-feature-card-desc">구강스캐너를 사용하여 치아의 정확한 3D 이미지를 빠르게 캡쳐합니다.</p>
+                        </div>
+                    </div>
+                    <div class="lm-feature-card lm-fade lm-fade-delay-1">
+                        <div class="lm-feature-card-img">
+                            <img src="images/invisalign/step_02.gif" alt="스마트트랙 소재 편안한 착용감">
+                        </div>
+                        <div class="lm-feature-card-body">
+                            <div class="lm-feature-card-num">02</div>
+                            <h3 class="lm-feature-card-title">편안함을 위해</h3>
+                            <p class="lm-feature-card-desc">오직 인비절라인만이 스마트트랙 소재로 제작되어 편안한 착용감을 선사합니다.</p>
+                        </div>
+                    </div>
+                    <div class="lm-feature-card lm-fade lm-fade-delay-2">
+                        <div class="lm-feature-card-img">
+                            <img src="images/invisalign/step_03.gif" alt="잇몸라인 맞춤 제작">
+                        </div>
+                        <div class="lm-feature-card-body">
+                            <div class="lm-feature-card-num">03</div>
+                            <h3 class="lm-feature-card-title">잇몸 곡선에 따라</h3>
+                            <p class="lm-feature-card-desc">사람마다 잇몸라인은 다르기 때문에 각 환자의 잇몸라인에 딱 맞추어 맞춤 제작 됩니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROCESS - STEP CARDS + DETAIL CARDS ===== -->
+        <section class="lm-process">
+            <div class="lm-inner" style="text-align:center;">
+                <span class="lm-section-label lm-fade">PROCESS</span>
+                <h2 class="lm-section-h2 lm-fade">인비절라인 치료 과정</h2>
+                <div class="lm-process-intro lm-fade">
+                    <p>당신의 미소를 더욱 빛나게 만들어 줄 인비절라인 치료 과정을 소개합니다. 인비절라인 치료는 눈에 띄지 않는 방식으로 치아를 교정할 수 있는 현대적인 방법입니다. 스마일뷰 치과에서는 전문적인 기술과 경험을 바탕으로 여러분의 아름다운 미소를 위한 최상의 치료를 제공합니다.</p>
+                </div>
+            </div>
+            <div class="lm-inner">
+                <div class="lm-process-flow lm-fade">
+                    <div class="lm-process-flow-item">
+                        <img src="images/invisalign/bp_process_01.png" alt="정밀 상담 & 진단">
+                        <span class="lm-process-flow-label">정밀 상담 & 진단</span>
+                    </div>
+                    <div class="lm-process-flow-arrow"><i class="ph-bold ph-arrow-right"></i></div>
+                    <div class="lm-process-flow-item">
+                        <img src="images/invisalign/bp_process_02.png" alt="맞춤 치료 설계">
+                        <span class="lm-process-flow-label">맞춤 치료 설계</span>
+                    </div>
+                    <div class="lm-process-flow-arrow"><i class="ph-bold ph-arrow-right"></i></div>
+                    <div class="lm-process-flow-item">
+                        <img src="images/invisalign/bp_process_03.png" alt="얼라이너 제작">
+                        <span class="lm-process-flow-label">얼라이너 제작</span>
+                    </div>
+                    <div class="lm-process-flow-arrow"><i class="ph-bold ph-arrow-right"></i></div>
+                    <div class="lm-process-flow-item">
+                        <img src="images/invisalign/bp_process_04.png" alt="치료 & 유지관리">
+                        <span class="lm-process-flow-label">치료 & 유지관리</span>
+                    </div>
+                </div>
+            </div>
+            <div class="lm-inner">
+                <!-- Part 1: Top Step Summary Cards -->
+                <div class="lm-process-steps lm-fade">
+                    <div class="lm-process-step">
+                        <div class="lm-process-step-top">
+                            <div class="lm-process-step-icon"><i class="ph-bold ph-magnifying-glass"></i></div>
+                            <span class="lm-process-step-num">01</span>
+                        </div>
+                        <div class="lm-process-step-title">정밀 상담 & 진단</div>
+                        <div class="lm-process-step-sub">3D 스캔과 X-ray로 정밀 진단</div>
+                    </div>
+                    <div class="lm-process-step">
+                        <div class="lm-process-step-top">
+                            <div class="lm-process-step-icon"><i class="ph-bold ph-chart-line-up"></i></div>
+                            <span class="lm-process-step-num">02</span>
+                        </div>
+                        <div class="lm-process-step-title">맞춤 치료 설계</div>
+                        <div class="lm-process-step-sub">ClinCheck 디지털 시뮬레이션</div>
+                    </div>
+                    <div class="lm-process-step">
+                        <div class="lm-process-step-top">
+                            <div class="lm-process-step-icon"><i class="ph-bold ph-cube"></i></div>
+                            <span class="lm-process-step-num">03</span>
+                        </div>
+                        <div class="lm-process-step-title">얼라이너 제작</div>
+                        <div class="lm-process-step-sub">SmartTrack 소재 맞춤 제작</div>
+                    </div>
+                    <div class="lm-process-step">
+                        <div class="lm-process-step-top">
+                            <div class="lm-process-step-icon"><i class="ph-bold ph-sparkle"></i></div>
+                            <span class="lm-process-step-num">04</span>
+                        </div>
+                        <div class="lm-process-step-title">치료 & 유지관리</div>
+                        <div class="lm-process-step-sub">단계별 교체 및 정기 관리</div>
+                    </div>
+                </div>
+
+                <!-- Part 2: Large Detail Cards -->
+                <div class="lm-process-details">
+                    <!-- Detail Card 1 -->
+                    <div class="lm-process-detail-wrap">
+                        <div class="lm-process-detail">
+                            <div class="lm-process-detail-img">
+                                <img src="images/invisalign/detail_01.png" alt="상담 및 진단">
+                                <div class="lm-process-detail-img-overlay"></div>
+                                <div class="lm-process-detail-num">01</div>
+                                <div class="lm-process-detail-badge">STEP 01</div>
+                            </div>
+                            <div class="lm-process-detail-info">
+                                <div class="lm-process-detail-step">STEP 01</div>
+                                <h3>정밀 상담 & 진단</h3>
+                                <p>치료를 시작하기 전, 환자의 치아 상태를 정밀하게 진단합니다. iTero 구강 스캐너를 사용하여 치아의 정확한 3D 디지털 모형을 만들고, X-ray와 구강 사진을 종합적으로 분석합니다. 이를 바탕으로 교정 전문의가 현재 교합 상태, 치주 건강, 치아 이동의 가능 범위를 평가하여 환자 맞춤형 치료 목표를 함께 설정합니다.</p>
+                                <div class="lm-process-detail-checks">
+                                    <div class="lm-process-detail-check"><span class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></span><span>3D 정밀 스캔</span></div>
+                                    <div class="lm-process-detail-check"><span class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></span><span>맞춤 상담</span></div>
+                                    <div class="lm-process-detail-check"><span class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></span><span>치료 목표 설정</span></div>
+                                    <div class="lm-process-detail-check"><span class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></span><span>구강 건강 점검</span></div>
+                                </div>
+                                <a href="#" class="lm-process-cta">자세히 보기 &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detail Card 2 -->
+                    <div class="lm-process-detail-wrap">
+                        <div class="lm-process-detail">
+                            <div class="lm-process-detail-img">
+                                <img src="images/invisalign/detail_02.png" alt="맞춤 치료 설계">
+                                <div class="lm-process-detail-img-overlay"></div>
+                                <div class="lm-process-detail-num">02</div>
+                                <div class="lm-process-detail-badge">STEP 02</div>
+                            </div>
+                            <div class="lm-process-detail-info">
+                                <div class="lm-process-detail-step">STEP 02</div>
+                                <h3>맞춤 치료 설계</h3>
+                                <p>3D 스캔으로 얻은 정밀 데이터를 바탕으로 클린체크(ClinCheck) 소프트웨어에서 치아의 이동 경로를 단계별로 시뮬레이션합니다. 각 치아가 어떤 순서로, 얼마나 이동할지 0.25mm 단위로 정밀하게 계획하며, 환자분은 치료 전 최종 결과를 3D 영상으로 미리 확인할 수 있습니다. 교정 전문의의 검토를 거쳐 최적의 치료 계획을 확정합니다.</p>
+                                <div class="lm-process-detail-checks">
+                                    <div class="lm-process-detail-check"><span class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></span><span>디지털 시뮬레이션</span></div>
+                                    <div class="lm-process-detail-check"><span class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></span><span>이동 경로 설계</span></div>
+                                    <div class="lm-process-detail-check"><span class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></span><span>최적 계획 수립</span></div>
+                                    <div class="lm-process-detail-check"><span class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></span><span>결과 미리보기</span></div>
+                                </div>
+                                <a href="#" class="lm-process-cta">자세히 보기 &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detail Card 3 -->
+                    <div class="lm-process-detail-wrap">
+                        <div class="lm-process-detail">
+                            <div class="lm-process-detail-img">
+                                <img src="images/invisalign/detail_03.png" alt="얼라이너 제작">
+                                <div class="lm-process-detail-img-overlay"></div>
+                                <div class="lm-process-detail-num">03</div>
+                                <div class="lm-process-detail-badge">STEP 03</div>
+                            </div>
+                            <div class="lm-process-detail-info">
+                                <div class="lm-process-detail-step">STEP 03</div>
+                                <h3>맞춤형 얼라이너 제작</h3>
+                                <p>확정된 치료 계획에 따라 미국 인비절라인 본사에서 특허받은 스마트트랙(SmartTrack) 소재로 각 단계별 얼라이너를 정밀 제작합니다. 이 소재는 일반 플라스틱 대비 치아에 부드럽고 지속적인 힘을 가하여 보다 예측 가능한 치아 이동을 실현합니다. 각 환자의 잇몸라인에 맞춘 트리밍으로 최적의 착용감을 보장합니다.</p>
+                                <div class="lm-process-detail-checks">
+                                    <div class="lm-process-detail-check"><span class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></span><span>맞춤 제작</span></div>
+                                    <div class="lm-process-detail-check"><span class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></span><span>부드러운 소재</span></div>
+                                    <div class="lm-process-detail-check"><span class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></span><span>정밀 피팅</span></div>
+                                    <div class="lm-process-detail-check"><span class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></span><span>투명 디자인</span></div>
+                                </div>
+                                <a href="#" class="lm-process-cta">자세히 보기 &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detail Card 4 -->
+                    <div class="lm-process-detail-wrap">
+                        <div class="lm-process-detail">
+                            <div class="lm-process-detail-img">
+                                <img src="images/invisalign/detail_04.png" alt="치료 & 유지관리">
+                                <div class="lm-process-detail-img-overlay"></div>
+                                <div class="lm-process-detail-num">04</div>
+                                <div class="lm-process-detail-badge">STEP 04</div>
+                            </div>
+                            <div class="lm-process-detail-info">
+                                <div class="lm-process-detail-step">STEP 04</div>
+                                <h3>치료 & 유지관리</h3>
+                                <p>맞춤 제작된 얼라이너를 1~2주 간격으로 순차적으로 교체하며 착용합니다. 하루 20~22시간 착용을 권장하며, 식사와 양치 시에는 자유롭게 탈착할 수 있습니다. 치료 완료 후에는 비벡스(Vivera) 유지장치를 통해 교정 결과를 장기적으로 안정화하며, 정기적인 검진으로 아름다운 미소를 유지합니다.</p>
+                                <div class="lm-process-detail-checks">
+                                    <div class="lm-process-detail-check"><span class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></span><span>2주 간격 교체</span></div>
+                                    <div class="lm-process-detail-check"><span class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></span><span>정기 검진</span></div>
+                                    <div class="lm-process-detail-check"><span class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></span><span>유지 장치 제공</span></div>
+                                    <div class="lm-process-detail-check"><span class="lm-process-detail-check-icon"><i class="ph-bold ph-check"></i></span><span>장기적 유지</span></div>
+                                </div>
+                                <a href="#" class="lm-process-cta">자세히 보기 &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===== RECOMMENDATION ===== -->
+        <section class="lm-recommend">
+            <div class="lm-inner">
+                <div class="lm-rec-header lm-fade">
+                    <span class="lm-rec-label">RECOMMEND</span>
+                    <h2 class="lm-rec-title">이런 분들에게<br>인비절라인을 추천드립니다</h2>
+                </div>
+                <div class="lm-rec-cards">
+                    <div class="lm-rec-card lm-fade">
+                        <div class="lm-rec-card-icon"><i class="ph ph-eye"></i></div>
+                        <h3>심미적 고려가 중요한 분</h3>
+                        <p>직장인, 대학생 등 외모에 민감한 상황에서 교정 장치가 보이지 않길 원하시는 분에게 적합합니다.</p>
+                    </div>
+                    <div class="lm-rec-card lm-fade lm-fade-delay-1">
+                        <div class="lm-rec-card-icon"><i class="ph ph-fork-knife"></i></div>
+                        <h3>구강 위생이 걱정되는 분</h3>
+                        <p>식사와 양치 시 자유롭게 탈착할 수 있어 치료 기간에도 철저한 구강 위생 관리가 가능합니다.</p>
+                    </div>
+                    <div class="lm-rec-card lm-fade lm-fade-delay-2">
+                        <div class="lm-rec-card-icon"><i class="ph ph-shield-check"></i></div>
+                        <h3>금속 교정기가 부담스러운 분</h3>
+                        <p>금속 브라켓의 이물감과 통증이 걱정되시는 분에게 부드러운 스마트트랙 소재가 편안한 대안이 됩니다.</p>
+                    </div>
+                    <div class="lm-rec-card lm-fade lm-fade-delay-1">
+                        <div class="lm-rec-card-icon"><i class="ph ph-calendar-check"></i></div>
+                        <h3>바쁜 일상을 보내는 분</h3>
+                        <p>내원 간격이 길고 셀프 교체가 가능하여 잦은 병원 방문이 어려운 직장인에게 최적입니다.</p>
+                    </div>
+                    <div class="lm-rec-card lm-fade lm-fade-delay-2">
+                        <div class="lm-rec-card-icon"><i class="ph ph-crosshair-simple"></i></div>
+                        <h3>부분 교정을 원하는 분</h3>
+                        <p>전체 교정이 아닌 특정 치아만 가지런히 정렬하고 싶은 분에게도 맞춤형 솔루션을 제공합니다.</p>
+                    </div>
+                    <div class="lm-rec-card lm-fade lm-fade-delay-3">
+                        <div class="lm-rec-card-icon"><i class="ph ph-chart-line-up"></i></div>
+                        <h3>치료 결과를 미리 보고 싶은 분</h3>
+                        <p>클린체크 3D 시뮬레이션으로 최종 결과를 미리 확인한 후 치료를 시작할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CLINIC (Our Smileview) - MODERN ===== -->
+        <section class="lm-clinic">
+            <div class="lm-inner" style="text-align:center;">
+                <span class="lm-section-label lm-fade">OUR CLINIC</span>
+                <h2 class="lm-clinic-title lm-fade">Our Smileview</h2>
+                <p class="lm-clinic-subtitle lm-fade">스마일뷰 치과가 특별한 이유</p>
+            </div>
+            <div class="lm-inner">
+                <div class="lm-clinic-cards">
+                    <div class="lm-clinic-card lm-fade">
+                        <div class="lm-clinic-card-icon"><i class="ph ph-shield-check"></i></div>
+                        <h3>1:1 전담 케어</h3>
+                        <p>상담부터 치료, 사후관리까지 담당 전문의가 직접 전담합니다. 환자 개인에게 최적화된 맞춤 치료를 제공합니다.</p>
+                    </div>
+                    <div class="lm-clinic-card lm-fade lm-fade-delay-1">
+                        <div class="lm-clinic-card-icon"><i class="ph ph-cube"></i></div>
+                        <h3>3D 디지털 스캐닝</h3>
+                        <p>최신 3D 구강 스캐너로 정밀한 데이터를 확보하여 정확한 진단과 예측 가능한 치료 계획을 수립합니다.</p>
+                    </div>
+                    <div class="lm-clinic-card lm-fade lm-fade-delay-2">
+                        <div class="lm-clinic-card-icon"><i class="ph ph-certificate"></i></div>
+                        <h3>인비절라인 인증의</h3>
+                        <p>인비절라인 공식 인증 전문의가 풍부한 경험과 노하우로 최상의 교정 결과를 만들어 드립니다.</p>
+                    </div>
+                    <div class="lm-clinic-card lm-fade lm-fade-delay-1">
+                        <div class="lm-clinic-card-icon"><i class="ph ph-clock-countdown"></i></div>
+                        <h3>빠른 치료 과정</h3>
+                        <p>효율적인 치료 시스템으로 불필요한 내원 횟수를 줄이고, 바쁜 일상 속에서도 편하게 교정 받을 수 있습니다.</p>
+                    </div>
+                    <div class="lm-clinic-card lm-fade lm-fade-delay-2">
+                        <div class="lm-clinic-card-icon"><i class="ph ph-eye"></i></div>
+                        <h3>사전 시뮬레이션</h3>
+                        <p>치료 전 3D 시뮬레이션으로 교정 후 모습을 미리 확인할 수 있어 안심하고 치료를 시작할 수 있습니다.</p>
+                    </div>
+                    <div class="lm-clinic-card lm-fade lm-fade-delay-3">
+                        <div class="lm-clinic-card-icon"><i class="ph ph-heart"></i></div>
+                        <h3>평생 관리 시스템</h3>
+                        <p>치료 완료 후에도 정기적인 관리와 상담을 통해 아름다운 미소를 오랫동안 유지할 수 있도록 합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAQ - MODERN DARK ===== -->
+        <section class="lm-faq-section">
+            <div class="lm-inner">
+                <div class="lm-faq-layout">
+                    <div class="lm-faq-left lm-fade">
+                        <div class="lm-faq-deco">FAQ</div>
+                        <p class="lm-faq-left-text">인비절라인 치료에 대해<br>자주 묻는 질문들을<br>확인해 보세요.</p>
+                    </div>
+                    <div class="lm-faq-list">
+                        <div class="lm-faq-item lm-fade">
+                            <button class="lm-faq-q" onclick="toggleFaq(this)">
+                                <span class="lm-faq-prefix">Q.</span>
+                                <span style="flex:1;">인비절라인은 얼마나 자주 착용해야 하나요?</span>
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="lm-faq-a">
+                                <span class="lm-faq-a-prefix">A.</span>인비절라인은 하루에 최소 20~22시간 착용해야 효과적입니다. 식사나 양치질 시에만 제거하고, 나머지 시간에는 계속 착용해야 합니다.
+                            </div>
+                        </div>
+                        <div class="lm-faq-item lm-fade lm-fade-delay-1">
+                            <button class="lm-faq-q" onclick="toggleFaq(this)">
+                                <span class="lm-faq-prefix">Q.</span>
+                                <span style="flex:1;">인비절라인 치료 기간은 얼마나 걸리나요?</span>
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="lm-faq-a">
+                                <span class="lm-faq-a-prefix">A.</span>치료 기간은 개인의 치아 상태와 교정이 필요한 정도에 따라 다릅니다. 평균적으로 12개월에서 18개월 사이가 일반적이지만, 더 짧거나 길 수도 있습니다.
+                            </div>
+                        </div>
+                        <div class="lm-faq-item lm-fade lm-fade-delay-2">
+                            <button class="lm-faq-q" onclick="toggleFaq(this)">
+                                <span class="lm-faq-prefix">Q.</span>
+                                <span style="flex:1;">인비절라인으로 모든 교정문제를 해결할 수 있나요?</span>
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="lm-faq-a">
+                                <span class="lm-faq-a-prefix">A.</span>인비절라인은 다양한 교정 문제를 해결할 수 있지만, 극도로 복잡한 경우에는 전통적인 교정 방법이 더 적합할 수 있습니다. 치과 전문의와 상담을 통해 개인에게 적합한 치료 방법을 결정하는 것이 중요합니다.
+                            </div>
+                        </div>
+                        <div class="lm-faq-item lm-fade lm-fade-delay-3">
+                            <button class="lm-faq-q" onclick="toggleFaq(this)">
+                                <span class="lm-faq-prefix">Q.</span>
+                                <span style="flex:1;">인비절라인 치료 중 통증을 느낄 수 있나요?</span>
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="lm-faq-a">
+                                <span class="lm-faq-a-prefix">A.</span>새로운 얼라이너로 교체할 때 약간의 압박감이나 불편함을 느낄 수 있습니다. 하지만 이는 일시적이며, 대부분의 사람들은 며칠 내에 적응합니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SCROLL TOP ===== -->
+        <button class="lm-scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="맨 위로">
+            <i class="ph ph-arrow-up"></i>
+        </button>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="footer-title-section">
+    </div>
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>SMILEVIEW<span>.</span></h2>
+                    <p>투명하고 편리한 교정부터 심미 치료까지,<br>스마일뷰치과가 당신의 아름다운 미소를 만들어 드립니다.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Location</h3>
+                    <ul>
+                        <li>서울특별시 강남구 봉은사로 107, 15층</li>
+                        <li style="font-size:12px;color:rgba(255,255,255,0.25);">(논현동 201 16번지 15층)</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tel:02-552-7528">TEL. 02-552-7528</a></li>
+                        <li>FAX. 02-552-7527</li>
+                        <li><span class="footer-label">대표자</span>김한결</li>
+                        <li><span class="footer-label">사업자번호</span>699-29-00572</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Hours</h3>
+                    <ul class="footer-hours">
+                        <li><span class="day">평일</span><span>AM 10:00 - PM 06:30</span></li>
+                        <li class="note">점심시간 PM 01:00 - PM 02:00</li>
+                        <li><span class="day">토요일</span><span>AM 10:00 - PM 03:00</span></li>
+                        <li class="note">점심시간 없이 진료</li>
+                        <li><span class="day">일요일</span><span>AM 10:00 - PM 04:00</span></li>
+                        <li class="closed"><span class="day">휴진</span><span>공휴일</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SMILEVIEW DENTAL CLINIC. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+    // FAQ Toggle
+    function toggleFaq(btn) {
+        const answer = btn.nextElementSibling;
+        const isOpen = btn.classList.contains('active');
+        document.querySelectorAll('.lm-faq-q').forEach(q => {
+            q.classList.remove('active');
+            q.nextElementSibling.style.display = 'none';
+        });
+        if (!isOpen) {
+            btn.classList.add('active');
+            answer.style.display = 'block';
+        }
+    }
+
+    // ===== GSAP HORIZONTAL SCROLL =====
+    (function() {
+        gsap.registerPlugin(ScrollTrigger);
+
+        // sec1 - page load animation (NOT scroll-based, like benchmark)
+        gsap.timeline()
+            .from('.lm-hero-bg', { scale: 1.2, duration: 2 })
+            .from('.lm-hero-lbx', { opacity: 0, yPercent: 30, duration: 1.5 }, '-=100%')
+            .from('.lm-hero-rbx', { opacity: 0, yPercent: 30, duration: 1.2 }, '-=80%')
+            .from('.lm-hero-desc, .lm-hero-desc2', { opacity: 0, y: 40, stagger: 0.2, duration: 0.8 }, '-=80%');
+
+        // Marquee animation
+        const marqueeTrack = document.querySelector('.lm-marquee-track');
+        if (marqueeTrack) {
+            const children = marqueeTrack.querySelectorAll('span');
+            children.forEach(child => {
+                const clone = child.cloneNode(true);
+                marqueeTrack.appendChild(clone);
+            });
+        }
+
+        ScrollTrigger.matchMedia({
+            // Desktop: horizontal scroll
+            '(min-width: 1025px)': function() {
+                const wrap = document.querySelector('.lm-h-wrap');
+                const horizontal = document.querySelector('.lm-horizontal');
+                if (!wrap || !horizontal) return;
+
+                // Main horizontal scroll animation
+                const horizon = gsap.to('.lm-horizontal .lm-h-wrap', {
+                    xPercent: -100,
+                    x: () => window.innerWidth,
+                    scrollTrigger: {
+                        pin: '.lm-horizontal',
+                        trigger: '.lm-horizontal',
+                        start: 'left left',
+                        end: () => `+=${wrap.offsetWidth} bottom`,
+                        scrub: 1,
+                    }
+                });
+
+                // sec2 (title band) animation - matches benchmark
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-h-panel--title',
+                        start: 'left 45%',
+                        end: 'left',
+                        containerAnimation: horizon,
+                        toggleActions: 'play none none reverse',
+                    }
+                });
+                tl
+                    .from('.lm-title-band-overlay', { scale: 1.2, duration: 1.5 })
+                    .from('.lm-title-band h2', { opacity: 0, duration: 0.8, y: 40 }, '-=100%')
+                    .from('.lm-title-band .lm-kr-sub', { opacity: 0, duration: 0.8, y: 40 }, '-=80%')
+                    .from('.lm-title-band .lm-badge', { opacity: 0, duration: 0.8, y: 40 }, '-=80%');
+
+                // sec3 (definition) animation - matches benchmark
+                const tl2 = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-h-panel--def',
+                        start: 'left 90%',
+                        end: 'left',
+                        containerAnimation: horizon,
+                        toggleActions: 'play none none reverse',
+                    }
+                });
+                tl2
+                    .from('.lm-def-con .lm-def-tit > *', { opacity: 0, stagger: 0.2, duration: 0.8, x: -40 })
+                    .from('.lm-def-sub p > *', { opacity: 0, stagger: 0.2, duration: 0.8, y: 40 }, '-=80%');
+            },
+
+            // Mobile: vertical layout
+            '(max-width: 1024px)': function() {
+                gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-title-band',
+                        start: 'top center+=20%',
+                        toggleActions: 'play none none reverse',
+                    }
+                })
+                .from('.lm-title-band h2', { opacity: 0, duration: 0.8, y: 40 })
+                .from('.lm-title-band .lm-kr-sub', { opacity: 0, duration: 0.8, y: 40 }, '-=80%')
+                .from('.lm-title-band .lm-badge', { opacity: 0, duration: 0.8, y: 40 }, '-=80%');
+
+                gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-definition',
+                        start: 'top center+=20%',
+                        toggleActions: 'play none none reverse',
+                    }
+                })
+                .from('.lm-def-con .lm-def-tit > *', { opacity: 0, stagger: 0.2, duration: 0.8, x: -40 })
+                .from('.lm-def-sub p > *', { opacity: 0, stagger: 0.2, duration: 0.8, y: 40 }, '-=80%');
+            }
+        });
+    })();
+
+    // ===== Scroll Animations (IntersectionObserver for vertical sections + mobile) =====
+    (function() {
+        const elems = document.querySelectorAll('.lm-why .lm-fade, .lm-vs-section .lm-fade, .lm-vs-section .lm-vs-row, .lm-feature-section .lm-fade, .lm-recommend .lm-fade, .lm-process .lm-fade, .lm-clinic .lm-fade, .lm-faq-section .lm-fade');
+        if (!elems.length) return;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('lm-show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+        elems.forEach(el => observer.observe(el));
+
+        // Mobile: also observe horizontal panel elements
+        if (window.innerWidth <= 1024) {
+            const mobileElems = document.querySelectorAll('.lm-horizontal .lm-fade');
+            mobileElems.forEach(el => observer.observe(el));
+        }
+
+        // Fallback
+        setTimeout(() => {
+            document.querySelectorAll('.lm-fade').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight + 50) {
+                    el.classList.add('lm-show');
+                }
+            });
+        }, 400);
+    })();
+    </script>
+    <!-- Floating SNS -->
+    <div class="sv-float-sns" id="floatSns">
+        <div class="sv-float-sns-list">
+            <a href="https://www.instagram.com/smileview_dental/" class="sv-float-btn sv-float-btn--instagram" title="Instagram" target="_blank">
+                <i class="ph-fill ph-instagram-logo"></i>
+            </a>
+            <a href="#" class="sv-float-btn sv-float-btn--line" title="LINE" target="_blank">
+                <i class="ph-fill ph-chat-circle-dots"></i>
+            </a>
+        </div>
+        <button class="sv-float-toggle" onclick="document.getElementById('floatSns').classList.toggle('open')">
+            <i class="ph ph-plus"></i>
+        </button>
+    </div>
+
+    <script>
+    document.addEventListener('click', function(e) {
+        var ls = document.getElementById('langSelector');
+        if (ls && !ls.contains(e.target)) ls.classList.remove('open');
+    });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

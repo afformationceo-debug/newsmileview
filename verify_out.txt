@@ -1,0 +1,7 @@
+=== STEP 5: verify_translations.py ===
+
+Traceback (most recent call last):
+  File "C:\Users\rlcks\OneDrive\Desktop\SMILEVIEW\verify_translations.py", line 445, in <module>
+    print(f'  {page}_tw.html  {delta}  {status}')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2713' in position 24: illegal multibyte sequence

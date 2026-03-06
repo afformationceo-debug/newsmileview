@@ -1,0 +1,751 @@
+[
+  {
+    "key": "title_1",
+    "text": "치아교정 | 스마일뷰치과의원",
+    "location": "line:6, tag:title",
+    "context": "title",
+    "translated": "歯列矯正 | SMILEVIEWデンタルクリニック"
+  },
+  {
+    "key": "text_2_li",
+    "text": "스마일뷰치과",
+    "location": "line:962, tag:li",
+    "context": "text",
+    "translated": "SMILEVIEWデンタルクリニック"
+  },
+  {
+    "key": "text_3_li",
+    "text": "인비절라인",
+    "location": "line:963, tag:li",
+    "context": "text",
+    "translated": "INVISALIGN"
+  },
+  {
+    "key": "text_4_li",
+    "text": "치아교정",
+    "location": "line:964, tag:li",
+    "context": "text",
+    "translated": "歯列矯正"
+  },
+  {
+    "key": "text_5_li",
+    "text": "치아미백",
+    "location": "line:965, tag:li",
+    "context": "text",
+    "translated": "歯のホワイトニング"
+  },
+  {
+    "key": "text_6_li",
+    "text": "원데이 라미네이트",
+    "location": "line:966, tag:li",
+    "context": "text",
+    "translated": "ワンデーラミネートベニア"
+  },
+  {
+    "key": "text_7_li",
+    "text": "수면 임플란트",
+    "location": "line:967, tag:li",
+    "context": "text",
+    "translated": "睡眠インプラント"
+  },
+  {
+    "key": "text_8_li",
+    "text": "보철치료",
+    "location": "line:968, tag:li",
+    "context": "text",
+    "translated": "補綴治療"
+  },
+  {
+    "key": "text_9_a",
+    "text": "한국어 (KO)",
+    "location": "line:976, tag:a",
+    "context": "text",
+    "translated": "韓国語 (KO)"
+  },
+  {
+    "key": "text_10_a",
+    "text": "예약하기",
+    "location": "line:981, tag:a",
+    "context": "text",
+    "translated": "予約する"
+  },
+  {
+    "key": "text_11_li",
+    "text": "병원소개",
+    "location": "line:992, tag:li",
+    "context": "text",
+    "translated": "クリニック紹介"
+  },
+  {
+    "key": "text_12_a",
+    "text": "온라인 예약",
+    "location": "line:1001, tag:a",
+    "context": "text",
+    "translated": "オンライン予約"
+  },
+  {
+    "key": "text_13_text",
+    "text": "치아와 턱의 비정상적인 위치를 교정하여",
+    "location": "line:1019, tag:text",
+    "context": "text",
+    "translated": "歯と顎の異常な位置を矯正し、"
+  },
+  {
+    "key": "text_14_text",
+    "text": "미소와 턱의 기능을 향상시키는 치료과정입니다.",
+    "location": "line:1020, tag:text",
+    "context": "text",
+    "translated": "笑顔と顎の機能を向上させる治療過程です。"
+  },
+  {
+    "key": "text_15_text",
+    "text": "치아의 이상적인 위치와 상태를 재조정하여",
+    "location": "line:1023, tag:text",
+    "context": "text",
+    "translated": "歯の理想的な位置と状態を再調整し、"
+  },
+  {
+    "key": "text_16_text",
+    "text": "아름다운 스마일 라인과 건강한 구강을 선사합니다.",
+    "location": "line:1024, tag:text",
+    "context": "text",
+    "translated": "美しいスマイルラインと健康な口腔をお届けします。"
+  },
+  {
+    "key": "text_17_p",
+    "text": "치아교정 솔루션",
+    "location": "line:1048, tag:p",
+    "context": "text",
+    "translated": "歯列矯正ソリューション"
+  },
+  {
+    "key": "text_18_h2",
+    "text": "치아교정이란?",
+    "location": "line:1082, tag:h2",
+    "context": "text",
+    "translated": "歯列矯正とは？"
+  },
+  {
+    "key": "text_19_text",
+    "text": "치아교정은 치아와 턱의 비정상적인 위치나 교합 문제를 전문 교정 장치를 이용하여 바르게 교정하는 치료과정입니다. 턱과 치아의 위치를 조정하여 교합과 치아의 기능을 안정시키고, 변화된 턱의 길이와 위치를 조절하여 턱과 안면 근육의 균형을 맞출 수 있습니다. 아름다운 스마일 라인과 함께 건강한 구강 기능을 되찾을 수 있습니다.",
+    "location": "line:1084, tag:text",
+    "context": "text",
+    "translated": "歯列矯正は、専門の矯正装置を使用して歯と顎の異常な位置や咬合問題を正しく矯正する治療過程です。顎と歯の位置を調整して咬合と歯の機能を安定させ、変化した顎の長さと位置を調節して顎と顔面筋肉のバランスを整えることができます。美しいスマイルラインとともに健康な口腔機能を取り戻せます。"
+  },
+  {
+    "key": "text_20_b",
+    "text": "교정유형",
+    "location": "line:1090, tag:b",
+    "context": "text",
+    "translated": "矯正タイプ"
+  },
+  {
+    "key": "text_21_span",
+    "text": "선수술 교정, 주걱턱 교정, 안면비대칭 교정, 돌출입 교정, 부분교정, 설측교정 등",
+    "location": "line:1091, tag:span",
+    "context": "text",
+    "translated": "サージェリーファースト矯正、受け口矯正、顔面非対称矯正、出っ歯矯正、部分矯正、舌側矯正など"
+  },
+  {
+    "key": "text_22_h2",
+    "text": "시술 정보",
+    "location": "line:1105, tag:h2",
+    "context": "text",
+    "translated": "施術情報"
+  },
+  {
+    "key": "text_23_div",
+    "text": "시술시간",
+    "location": "line:1109, tag:div",
+    "context": "text",
+    "translated": "施術時間"
+  },
+  {
+    "key": "text_24_div",
+    "text": "약 1~2시간(첫 방문)",
+    "location": "line:1110, tag:div",
+    "context": "text",
+    "translated": "約1〜2時間（初回来院）"
+  },
+  {
+    "key": "text_25_div",
+    "text": "마취방법",
+    "location": "line:1114, tag:div",
+    "context": "text",
+    "translated": "麻酔方法"
+  },
+  {
+    "key": "text_26_div",
+    "text": "불필요",
+    "location": "line:1115, tag:div",
+    "context": "text",
+    "translated": "不要"
+  },
+  {
+    "key": "text_27_div",
+    "text": "교정기간",
+    "location": "line:1119, tag:div",
+    "context": "text",
+    "translated": "矯正期間"
+  },
+  {
+    "key": "text_28_div",
+    "text": "12~24개월",
+    "location": "line:1120, tag:div",
+    "context": "text",
+    "translated": "12〜24ヶ月"
+  },
+  {
+    "key": "text_29_div",
+    "text": "내원주기",
+    "location": "line:1124, tag:div",
+    "context": "text",
+    "translated": "通院周期"
+  },
+  {
+    "key": "text_30_div",
+    "text": "3~4주",
+    "location": "line:1125, tag:div",
+    "context": "text",
+    "translated": "3〜4週間"
+  },
+  {
+    "key": "text_31_h2",
+    "text": "선수술 교정이란?",
+    "location": "line:1136, tag:h2",
+    "context": "text",
+    "translated": "サージェリーファースト矯正とは？"
+  },
+  {
+    "key": "text_32_h3",
+    "text": "수술 먼저, 교정은 나중에",
+    "location": "line:1139, tag:h3",
+    "context": "text",
+    "translated": "手術が先、矯正は後"
+  },
+  {
+    "key": "text_33_text",
+    "text": "선수술 교정은 기존의 '교정 → 수술' 순서를 역전시켜, 턱수술을 먼저 시행한 뒤 교정 치료를 진행하는 방법입니다. 수술을 통해 골격적 부조화를 먼저 해결하므로 외모 개선이 빠르게 이루어지며, 비정상적인 골격이 정상 골격으로 바뀌면서 심미적 만족감을 조기에 얻을 수 있습니다.",
+    "location": "line:1142, tag:text",
+    "context": "text",
+    "translated": "サージェリーファースト矯正は、従来の「矯正→手術」の順番を逆転させ、顎手術を先に行ってから矯正治療を進める方法です。手術によって骨格的不調和を先に解決するため外見改善が素早く行われ、異常な骨格が正常な骨格に変わることで審美的満足感を早期に得ることができます。"
+  },
+  {
+    "key": "text_34_text",
+    "text": "수술 후 변화된 턱과 치아의 위치를 정밀하게 재조정하여 교합과 치아의 기능을 안정시키고 회복시키는 것이 핵심 목적이며, 전통적인 교정-수술 방식 대비 전체 치료 기간을 단축할 수 있는 장점이 있습니다.",
+    "location": "line:1145, tag:text",
+    "context": "text",
+    "translated": "術後に変化した顎と歯の位置を精密に再調整して咬合と歯の機能を安定・回復させることが核心目的であり、従来の矯正-手術方式に比べ全体の治療期間を短縮できる利点があります。"
+  },
+  {
+    "key": "text_35_span",
+    "text": "Surgery First 선수술 우선",
+    "location": "line:1149, tag:span",
+    "context": "text",
+    "translated": "Surgery First 手術優先"
+  },
+  {
+    "key": "attr_36_img_alt",
+    "text": "선수술 교정",
+    "location": "line:1151, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "サージェリーファースト矯正"
+  },
+  {
+    "key": "attr_37_img_alt",
+    "text": "수술 전 정밀 분석",
+    "location": "line:1159, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "術前精密分析"
+  },
+  {
+    "key": "text_38_p",
+    "text": "3D CT와 구강 스캔을 통해 골격 및 치아 상태를 정밀하게 분석하고, 환자의 얼굴 형태와 교합 상태를 종합적으로 평가하여 최적의 수술 계획을 수립합니다.",
+    "location": "line:1164, tag:p",
+    "context": "text",
+    "translated": "3D CTと口腔スキャンで骨格および歯の状態を精密に分析し、患者の顔型と咬合状態を総合的に評価して最適な手術計画を立案します。"
+  },
+  {
+    "key": "attr_39_img_alt",
+    "text": "수술 직후",
+    "location": "line:1171, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "術直後"
+  },
+  {
+    "key": "text_40_p",
+    "text": "골격적 부조화를 해결하고 심미적 개선의 기반을 마련하는 단계입니다. 수술을 통해 비정상적인 골격이 정상 위치로 이동하여 외모 개선이 빠르게 나타납니다.",
+    "location": "line:1176, tag:p",
+    "context": "text",
+    "translated": "骨格的不調和を解決し、審美的改善の基盤を整える段階です。手術によって異常な骨格が正常位置に移動し、外見改善が素早く現れます。"
+  },
+  {
+    "key": "attr_41_img_alt",
+    "text": "수술 후 교정 중",
+    "location": "line:1183, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "術後矯正中"
+  },
+  {
+    "key": "text_42_p",
+    "text": "변화된 턱 위치에 맞춰 치아 교합을 정밀하게 조정하는 과정입니다. 교정 장치를 통해 치아를 이상적인 위치로 이동시켜 안정적인 교합을 달성합니다.",
+    "location": "line:1188, tag:p",
+    "context": "text",
+    "translated": "変化した顎の位置に合わせて歯の咬合を精密に調整する過程です。矯正装置を通じて歯を理想的な位置に移動させ、安定した咬合を達成します。"
+  },
+  {
+    "key": "attr_43_img_alt",
+    "text": "수술 후 교정 완료",
+    "location": "line:1195, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "術後矯正完了"
+  },
+  {
+    "key": "text_44_p",
+    "text": "안정된 교합과 아름다운 스마일 라인을 완성하는 최종 단계입니다. 유지장치를 통해 교정 결과가 오랫동안 유지될 수 있도록 관리합니다.",
+    "location": "line:1200, tag:p",
+    "context": "text",
+    "translated": "安定した咬合と美しいスマイルラインを完成させる最終段階です。リテーナーによって矯正結果が長期間維持されるよう管理します。"
+  },
+  {
+    "key": "text_45_h2",
+    "text": "스마일뷰 교정의 장점",
+    "location": "line:1212, tag:h2",
+    "context": "text",
+    "translated": "SMILEVIEWの矯正の特長"
+  },
+  {
+    "key": "text_46_h3",
+    "text": "빠른 심미적 개선",
+    "location": "line:1219, tag:h3",
+    "context": "text",
+    "translated": "素早い審美的改善"
+  },
+  {
+    "key": "text_47_p",
+    "text": "수술을 먼저 시행하여 외모 개선이 빠르게 이루어지며, 정상 골격으로의 변화를 통해 조기에 심미적 만족감을 경험할 수 있습니다.",
+    "location": "line:1220, tag:p",
+    "context": "text",
+    "translated": "手術を先に行うことで外見改善が素早く行われ、正常な骨格への変化により早期に審美的満足感を体験できます。"
+  },
+  {
+    "key": "text_48_h3",
+    "text": "기능적 교합 회복",
+    "location": "line:1225, tag:h3",
+    "context": "text",
+    "translated": "機能的な咬合の回復"
+  },
+  {
+    "key": "text_49_p",
+    "text": "올바른 저작 기능과 턱 관절의 균형을 되찾아 전반적인 구강 건강을 향상시키고 안정적인 교합을 달성합니다.",
+    "location": "line:1226, tag:p",
+    "context": "text",
+    "translated": "正しい咀嚼機能と顎関節のバランスを取り戻し、全体的な口腔健康を向上させて安定した咬合を達成します。"
+  },
+  {
+    "key": "text_50_h3",
+    "text": "교정과 전문의 협진",
+    "location": "line:1231, tag:h3",
+    "context": "text",
+    "translated": "矯正科専門医との連携診療"
+  },
+  {
+    "key": "text_51_p",
+    "text": "수술 계획부터 세심한 분석이 필요하기에, 교정과 의료진과의 긴밀한 협진을 통해 최적의 치료 결과를 도출합니다.",
+    "location": "line:1232, tag:p",
+    "context": "text",
+    "translated": "手術計画から細心な分析が必要なため、矯正科医療スタッフとの緊密な連携診療を通じて最適な治療結果を導きます。"
+  },
+  {
+    "key": "text_52_h3",
+    "text": "체계적 사후관리",
+    "location": "line:1237, tag:h3",
+    "context": "text",
+    "translated": "体系的なアフターケア"
+  },
+  {
+    "key": "text_53_p",
+    "text": "유지장치 관리와 정기 검진을 통해 교정 결과가 오랫동안 안정적으로 유지될 수 있도록 체계적인 사후관리를 제공합니다.",
+    "location": "line:1238, tag:p",
+    "context": "text",
+    "translated": "リテーナー管理と定期検診により矯正結果が長期間安定して維持されるよう、体系的なアフターケアを提供します。"
+  },
+  {
+    "key": "text_54_h2",
+    "text": "양악수술과 함께하는 교정 치료",
+    "location": "line:1248, tag:h2",
+    "context": "text",
+    "translated": "両顎手術と組み合わせた矯正治療"
+  },
+  {
+    "key": "text_55_p",
+    "text": "양악수술은 위턱과 아래턱의 골격 및 치아의 부정교합을 치료하고, 심미적인 얼굴 골격과 정상적인 교합을 얻고자 하는 수술입니다. 각 교정 유형을 클릭하여 자세한 정보를 확인하세요.",
+    "location": "line:1250, tag:p",
+    "context": "text",
+    "translated": "両顎手術は、上顎と下顎の骨格および歯の不正咬合を治療し、審美的な顔の骨格と正常な咬合を得ることを目的とした手術です。各矯正タイプをクリックして詳細情報を確認してください。"
+  },
+  {
+    "key": "text_56_button",
+    "text": "주걱턱 교정",
+    "location": "line:1253, tag:button",
+    "context": "text",
+    "translated": "受け口矯正"
+  },
+  {
+    "key": "text_57_button",
+    "text": "안면비대칭 교정",
+    "location": "line:1254, tag:button",
+    "context": "text",
+    "translated": "顔面非対称矯正"
+  },
+  {
+    "key": "text_58_button",
+    "text": "돌출입 교정",
+    "location": "line:1255, tag:button",
+    "context": "text",
+    "translated": "出っ歯矯正"
+  },
+  {
+    "key": "text_59_h3",
+    "text": "아래턱 돌출로 인한 주걱턱 교정",
+    "location": "line:1277, tag:h3",
+    "context": "text",
+    "translated": "下顎突出による受け口矯正"
+  },
+  {
+    "key": "text_60_p",
+    "text": "아래턱 성장이 과도하거나 위턱 성장이 부족해 아래턱이 돌출된 경우 진행하는 교정입니다. 골격적 부조화를 해결하여 얼굴 균형과 정상적인 교합을 회복시킵니다.",
+    "location": "line:1278, tag:p",
+    "context": "text",
+    "translated": "下顎の過成長または上顎の成長不足により下顎が突出した場合に行う矯正です。骨格的不調和を解決して顔のバランスと正常な咬合を回復させます。"
+  },
+  {
+    "key": "text_61_a",
+    "text": "자세히 보기",
+    "location": "line:1279, tag:a",
+    "context": "text",
+    "translated": "詳しく見る"
+  },
+  {
+    "key": "text_62_h3",
+    "text": "좌우 균형을 되찾는 안면비대칭 교정",
+    "location": "line:1302, tag:h3",
+    "context": "text",
+    "translated": "左右バランスを取り戻す顔面非対称矯正"
+  },
+  {
+    "key": "text_63_p",
+    "text": "얼굴의 상하 길이 혹은 좌우 대칭의 균형이 맞지 않을 때 진행하는 교정입니다. 턱의 비대칭을 교정하여 균형 잡힌 얼굴 라인과 안정적인 교합을 달성합니다.",
+    "location": "line:1303, tag:p",
+    "context": "text",
+    "translated": "顔の上下の長さまたは左右対称のバランスが合わない時に行う矯正です。顎の非対称を矯正して均整のとれた顔のラインと安定した咬合を達成します。"
+  },
+  {
+    "key": "text_64_h3",
+    "text": "자연스러운 옆모습을 위한 돌출입 교정",
+    "location": "line:1327, tag:h3",
+    "context": "text",
+    "translated": "自然な横顔のための出っ歯矯正"
+  },
+  {
+    "key": "text_65_p",
+    "text": "코 끝이나 턱 끝에 비해 입이 앞으로 돌출되어 옆모습 개선이 필요한 경우 진행하는 교정입니다. E-line을 개선하고 자연스러운 입술 라인을 되찾아 드립니다.",
+    "location": "line:1328, tag:p",
+    "context": "text",
+    "translated": "鼻先や顎先に比べて口が前に突出し、横顔の改善が必要な場合に行う矯正です。Eラインを改善し、自然な口唇ラインを取り戻します。"
+  },
+  {
+    "key": "text_66_p",
+    "text": "아래턱 성장이 과도하거나 위턱 성장이 상대적으로 부족하여 아래턱이 튀어나온 경우 진행하는 교정으로, 골격적 부조화를 해결하여 얼굴 균형과 정상적인 교합을 회복시킵니다.",
+    "location": "line:1343, tag:p",
+    "context": "text",
+    "translated": "下顎の過成長または上顎の成長が相対的に不足して下顎が突出した場合の矯正で、骨格的不調和を解決して顔のバランスと正常な咬合を回復させます。"
+  },
+  {
+    "key": "text_67_h3",
+    "text": "아래턱 돌출로 인한 얼굴 불균형 개선",
+    "location": "line:1362, tag:h3",
+    "context": "text",
+    "translated": "下顎突出による顔のアンバランス改善"
+  },
+  {
+    "key": "text_68_p",
+    "text": "주걱턱(하악전돌증)은 아래턱이 위턱보다 앞으로 나와 있는 상태로, 옆에서 보았을 때 아래턱이 돌출되어 보이고 정면에서는 얼굴이 길어 보이는 특징이 있습니다. 저작 기능의 저하뿐 아니라 발음 문제, 턱관절 장애를 동반할 수 있어 적극적인 교정이 필요합니다.",
+    "location": "line:1363, tag:p",
+    "context": "text",
+    "translated": "受け口（下顎前突症）は下顎が上顎より前に出ている状態で、横から見ると下顎が突出して見え、正面からは顔が長く見える特徴があります。咀嚼機能の低下だけでなく、発音問題や顎関節障害を伴う場合があり、積極的な矯正が必要です。"
+  },
+  {
+    "key": "text_69_h3",
+    "text": "이런 분들에게 필요합니다",
+    "location": "line:1370, tag:h3",
+    "context": "text",
+    "translated": "このような方に必要です"
+  },
+  {
+    "key": "text_70_p",
+    "text": "아래턱이 위턱보다 앞으로 나온 경우",
+    "location": "line:1375, tag:p",
+    "context": "text",
+    "translated": "下顎が上顎より前に出ている場合"
+  },
+  {
+    "key": "text_71_p",
+    "text": "얼굴이 길어 인상이 강해보이거나 나이가 들어 보이는 경우",
+    "location": "line:1379, tag:p",
+    "context": "text",
+    "translated": "顔が長く見えて印象が強くなったり老けて見える場合"
+  },
+  {
+    "key": "text_72_p",
+    "text": "위아래 치아가 거꾸로 물려 저작 효율이 떨어지는 경우",
+    "location": "line:1383, tag:p",
+    "context": "text",
+    "translated": "上下の歯が逆に噛み合い咀嚼効率が落ちる場合"
+  },
+  {
+    "key": "text_73_p",
+    "text": "얼굴의 상하 길이 혹은 좌우 대칭의 균형이 맞지 않을 때 진행하는 교정으로, 턱의 비대칭을 교정하여 균형 잡힌 얼굴 라인과 안정적인 교합을 동시에 달성합니다.",
+    "location": "line:1396, tag:p",
+    "context": "text",
+    "translated": "顔の上下の長さまたは左右対称のバランスが合わない時に行う矯正で、顎の非対称を矯正して均整のとれた顔のラインと安定した咬合を同時に達成します。"
+  },
+  {
+    "key": "text_74_h3",
+    "text": "좌우 균형을 되찾는 안면 대칭 교정",
+    "location": "line:1401, tag:h3",
+    "context": "text",
+    "translated": "左右バランスを取り戻す顔面対称矯正"
+  },
+  {
+    "key": "text_75_p",
+    "text": "안면비대칭은 위턱 또는 아래턱의 좌우 길이가 다르거나, 턱이 한쪽으로 치우쳐 얼굴의 정중선이 어긋나는 상태입니다. 심미적 문제뿐 아니라 한쪽으로 편중된 저작 습관, 턱관절 통증, 치아 정중앙선의 불일치 등 기능적 문제를 동반할 수 있습니다.",
+    "location": "line:1402, tag:p",
+    "context": "text",
+    "translated": "顔面非対称は、上顎または下顎の左右の長さが異なる、または顎が一方に偏って顔の正中線がずれている状態です。審美的問題だけでなく、片側に偏った咀嚼習慣、顎関節痛、歯の正中線のずれなどの機能的問題を伴う場合があります。"
+  },
+  {
+    "key": "text_76_p",
+    "text": "위턱의 좌우 길이가 맞지 않는 경우",
+    "location": "line:1428, tag:p",
+    "context": "text",
+    "translated": "上顎の左右の長さが合わない場合"
+  },
+  {
+    "key": "text_77_p",
+    "text": "아래턱의 좌우 대칭이 맞지 않는 경우",
+    "location": "line:1432, tag:p",
+    "context": "text",
+    "translated": "下顎の左右対称が合わない場合"
+  },
+  {
+    "key": "text_78_p",
+    "text": "치아의 정중앙선이 위아래 치아끼리 많이 어긋난 경우",
+    "location": "line:1436, tag:p",
+    "context": "text",
+    "translated": "上下の歯の正中線が大きくずれている場合"
+  },
+  {
+    "key": "text_79_p",
+    "text": "옆에서 보았을 때 코 끝이나 턱 끝에 비해 입이 앞으로 돌출된 경우 진행하는 교정으로, 옆모습의 E-line을 개선하고 자연스러운 입술 라인을 되찾아 드립니다.",
+    "location": "line:1449, tag:p",
+    "context": "text",
+    "translated": "横から見た時に鼻先や顎先に比べて口が前に突出している場合の矯正で、横顔のEラインを改善し自然な口唇ラインを取り戻します。"
+  },
+  {
+    "key": "text_80_h3",
+    "text": "자연스러운 옆모습을 위한 돌출입 개선",
+    "location": "line:1468, tag:h3",
+    "context": "text",
+    "translated": "自然な横顔のための出っ歯改善"
+  },
+  {
+    "key": "text_81_p",
+    "text": "돌출입은 치아나 치조골이 앞으로 돌출되어 입이 나와 보이는 상태로, 입을 다물기 어렵거나 무의식적으로 입이 벌어지는 증상을 동반할 수 있습니다. 긴 얼굴, 안면비대칭, 잇몸과다노출(거미스마일) 등을 동반하는 경우가 많으며, 정확한 진단을 통해 개인에 맞는 최적의 교정 방법을 적용합니다.",
+    "location": "line:1469, tag:p",
+    "context": "text",
+    "translated": "出っ歯は歯や歯槽骨が前方に突出して口が出て見える状態で、口を閉じにくかったり無意識に口が開いたりする症状を伴うことがあります。長い顔、顔面非対称、歯肉過多露出（ガミースマイル）などを伴う場合が多く、正確な診断を通じて個人に合った最適な矯正方法を適用します。"
+  },
+  {
+    "key": "text_82_p",
+    "text": "긴 얼굴을 동반한 돌출입의 경우",
+    "location": "line:1481, tag:p",
+    "context": "text",
+    "translated": "長い顔を伴う出っ歯の場合"
+  },
+  {
+    "key": "text_83_p",
+    "text": "안면비대칭을 동반한 돌출입의 경우",
+    "location": "line:1485, tag:p",
+    "context": "text",
+    "translated": "顔面非対称を伴う出っ歯の場合"
+  },
+  {
+    "key": "text_84_p",
+    "text": "잇몸과다노출을 동반한 돌출입의 경우",
+    "location": "line:1489, tag:p",
+    "context": "text",
+    "translated": "歯肉過多露出を伴う出っ歯の場合"
+  },
+  {
+    "key": "text_85_h2",
+    "text": "자주 묻는 질문",
+    "location": "line:1500, tag:h2",
+    "context": "text",
+    "translated": "よくある質問"
+  },
+  {
+    "key": "text_86_span",
+    "text": "선수술 교정이란 무엇인가요?",
+    "location": "line:1507, tag:span",
+    "context": "text",
+    "translated": "サージェリーファースト矯正とは何ですか？"
+  },
+  {
+    "key": "text_87_strong",
+    "text": "A. 선수술 교정은 턱수술을 먼저 시행한 뒤 교정 치료를 진행하는 방법입니다. 수술을 통해 골격적 부조화를 먼저 해결하므로 외모 개선이 빠르게 이루어지며, 비정상적인 골격이 정상 골격으로 바뀌면서 심미적 만족감을 조기에 얻을 수 있습니다. 수술 후 변화된 턱과 치아의 위치를 정밀하게 재조정하여 교합과 치아의 기능을 안정시키고 회복시키는 것이 핵심 목적입니다.",
+    "location": "line:1511, tag:strong",
+    "context": "text",
+    "translated": "A. サージェリーファースト矯正は顎手術を先に行ってから矯正治療を進める方法です。手術によって骨格的不調和を先に解決するため外見改善が素早く行われ、異常な骨格が正常な骨格に変わることで審美的満足感を早期に得られます。術後に変化した顎と歯の位置を精密に再調整して咬合と歯の機能を安定・回復させることが核心目的です。"
+  },
+  {
+    "key": "text_88_span",
+    "text": "양악수술 후 교정이 꼭 필요한가요?",
+    "location": "line:1517, tag:span",
+    "context": "text",
+    "translated": "両顎手術後に矯正は必ず必要ですか？"
+  },
+  {
+    "key": "text_89_strong",
+    "text": "A. 양악수술은 골격적 기형을 해결할 수 있는 수술 방법이며, 수술 후 골격의 위치를 올바른 위치로 재조정하면 치아의 맞물림이 변할 수 있습니다. 따라서 양악수술 후에는 치아 교정이 필요할 수 있으며, 수술과 교정을 협진하여 진행함으로써 부정교합을 개선하고 안정된 결과를 얻을 수 있습니다.",
+    "location": "line:1521, tag:strong",
+    "context": "text",
+    "translated": "A. 両顎手術は骨格的奇形を解決できる手術方法で、術後に骨格の位置を正しい位置に再調整すると歯の咬み合わせが変わる場合があります。そのため両顎手術後は歯列矯正が必要な場合があり、手術と矯正を連携して進めることで不正咬合を改善し安定した結果が得られます。"
+  },
+  {
+    "key": "text_90_span",
+    "text": "주걱턱 교정은 누구에게 필요한가요?",
+    "location": "line:1527, tag:span",
+    "context": "text",
+    "translated": "受け口矯正はどんな方に必要ですか？"
+  },
+  {
+    "key": "text_91_strong",
+    "text": "A. 주걱턱 교정은 아래턱 성장이 과도하거나 위턱 성장이 상대적으로 부족해서 아래턱이 튀어나온 경우에 필요합니다. 얼굴이 길어 인상이 강해보이거나 나이가 들어 보이는 경우, 위아래 치아가 거꾸로 물려 저작 효율이 떨어지는 경우에도 교정을 통해 개선할 수 있습니다.",
+    "location": "line:1531, tag:strong",
+    "context": "text",
+    "translated": "A. 受け口矯正は下顎の過成長または上顎の成長が相対的に不足して下顎が突出した場合に必要です。顔が長く見えて印象が強くなったり老けて見える場合、上下の歯が逆に噛み合い咀嚼効率が落ちる場合も矯正で改善できます。"
+  },
+  {
+    "key": "text_92_span",
+    "text": "교정 기간은 보통 얼마나 걸리나요?",
+    "location": "line:1537, tag:span",
+    "context": "text",
+    "translated": "矯正期間は通常どのくらいかかりますか？"
+  },
+  {
+    "key": "text_93_strong",
+    "text": "A. 일반적으로 전체 교정은 12~24개월, 부분 교정은 3~6개월 정도 소요됩니다. 환자의 치아 상태, 교정 난이도, 사용하는 장치 종류에 따라 기간이 달라질 수 있으며, 정확한 기간은 정밀 진단 후 안내해 드립니다.",
+    "location": "line:1541, tag:strong",
+    "context": "text",
+    "translated": "A. 一般的に全体矯正は12〜24ヶ月、部分矯正は3〜6ヶ月程度かかります。患者の歯の状態、矯正の難易度、使用する装置の種類によって期間が変わる場合があり、正確な期間は精密診断後にご案内します。"
+  },
+  {
+    "key": "text_94_span",
+    "text": "교정 후 유지장치는 꼭 해야 하나요?",
+    "location": "line:1547, tag:span",
+    "context": "text",
+    "translated": "矯正後にリテーナーは必ず必要ですか？"
+  },
+  {
+    "key": "text_95_strong",
+    "text": "A. 네, 교정 완료 후 유지장치 착용은 매우 중요합니다. 치아는 원래 위치로 돌아가려는 경향이 있기 때문에, 교정 결과를 안정적으로 유지하기 위해 일정 기간 유지장치를 착용해야 합니다. 스마일뷰에서는 고정식 또는 가철식 유지장치를 제공하며, 정기적인 관리를 통해 장기적으로 아름다운 미소를 유지할 수 있도록 도와드립니다.",
+    "location": "line:1551, tag:strong",
+    "context": "text",
+    "translated": "A. はい、矯正完了後のリテーナー装着は非常に重要です。歯は元の位置に戻ろうとする傾向があるため、矯正結果を安定して維持するために一定期間リテーナーを装着する必要があります。SMILEVIEWでは固定式または着脱式リテーナーを提供し、定期的な管理を通じて長期的に美しい笑顔を維持できるようサポートします。"
+  },
+  {
+    "key": "attr_96_button_title",
+    "text": "맨 위로",
+    "location": "line:1559, tag:button[title]",
+    "context": "attr:title",
+    "translated": "トップへ"
+  },
+  {
+    "key": "text_97_p",
+    "text": "투명하고 편리한 교정부터 심미 치료까지, 스마일뷰치과가 당신의 아름다운 미소를 만들어 드립니다.",
+    "location": "line:1572, tag:p",
+    "context": "text",
+    "translated": "透明で便利な矯正から審美治療まで、SMILEVIEWデンタルクリニックが美しい笑顔をお届けします。"
+  },
+  {
+    "key": "text_98_li",
+    "text": "서울특별시 강남구 봉은사로 107, 15층",
+    "location": "line:1577, tag:li",
+    "context": "text",
+    "translated": "ソウル特別市 江南区 奉恩寺路 107, 15階"
+  },
+  {
+    "key": "text_99_li",
+    "text": "(논현동 201 16번지 15층)",
+    "location": "line:1578, tag:li",
+    "context": "text",
+    "translated": "（論峴洞 201 16番地 15階）"
+  },
+  {
+    "key": "text_100_li",
+    "text": "대표자 김한결",
+    "location": "line:1586, tag:li",
+    "context": "text",
+    "translated": "代表者 キム・ハンギョル"
+  },
+  {
+    "key": "text_101_li",
+    "text": "사업자번호 699-29-00572",
+    "location": "line:1587, tag:li",
+    "context": "text",
+    "translated": "事業者番号 699-29-00572"
+  },
+  {
+    "key": "text_102_li",
+    "text": "평일 AM 10:00 - PM 06:30",
+    "location": "line:1593, tag:li",
+    "context": "text",
+    "translated": "平日 AM 10:00 - PM 06:30"
+  },
+  {
+    "key": "text_103_li",
+    "text": "점심시간 PM 01:00 - PM 02:00",
+    "location": "line:1594, tag:li",
+    "context": "text",
+    "translated": "昼休み PM 01:00 - PM 02:00"
+  },
+  {
+    "key": "text_104_li",
+    "text": "토요일 AM 10:00 - PM 03:00",
+    "location": "line:1595, tag:li",
+    "context": "text",
+    "translated": "土曜日 AM 10:00 - PM 03:00"
+  },
+  {
+    "key": "text_105_li",
+    "text": "점심시간 없이 진료",
+    "location": "line:1596, tag:li",
+    "context": "text",
+    "translated": "昼休みなし診療"
+  },
+  {
+    "key": "text_106_li",
+    "text": "일요일 AM 10:00 - PM 04:00",
+    "location": "line:1597, tag:li",
+    "context": "text",
+    "translated": "日曜日 AM 10:00 - PM 04:00"
+  },
+  {
+    "key": "text_107_li",
+    "text": "휴진 공휴일",
+    "location": "line:1598, tag:li",
+    "context": "text",
+    "translated": "休診 祝日"
+  }
+]

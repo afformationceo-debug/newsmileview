@@ -1,0 +1,306 @@
+--- HEADINGS ---
+H: 자가 미백
+H: 2~3주간의 긴시간을 투자해야 원하는 결과를 얻을 수 ​있습니다.
+H: 두가지 미백방법을 병행할 경우 더 효과적이고 오랜기간 하얀 색상을 유지할 수 있습니다.
+H: 전문가 미백
+H: 20~30분 미백을 진행하여 1회 시술 시 원하는 결과를 ​얻을 수 있습니다.
+
+--- CONTENT BLOCKS ---
+B: nk rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/cd2835_83ef872f44624983843b51dd912c59df%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/cd2835_83ef872f44624983843b51dd912c59df%7Emv2.png" type="image/png"/>
+B: nk rel="shortcut icon" href="https://static.wixstatic.com/media/cd2835_83ef872f44624983843b51dd912c59df%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/cd2835_83ef872f44624983843b51dd912c59df%7Emv2.png" type="image/png"/>
+B: nk rel="apple-touch-icon" href="https://static.wixstatic.com/media/cd2835_83ef872f44624983843b51dd912c59df%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/cd2835_83ef872f44624983843b51dd912c59df%7Emv2.png" type="image/png"/> <!--
+B: nk rel="mask-icon" href="https://static.wixstatic.com/media/cd2835_83ef872f44624983843b51dd912c59df%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/cd2835_83ef872f44624983843b51dd912c59df%7Emv2.png"> -->
+B: nk rel="shortcut icon" type="image/png" sizes="48x48" href="https://www.smile-vdental.com/favicon.ico"> 스마일뷰치과의원 l 치아미백
+B: nk rel="canonical" href="https://www.smile-vdental.com/teeth-whitening"/>
+B: nk rel="alternate" href="https://www.smile-vdental.com/teeth-whitening" hreflang="x-default"/>
+B: nk rel="alternate" href="https://www.smile-vdental.com/teeth-whitening" hreflang="ko-kr"/>
+B: id="SITE_CONTAINER">
+B: id="main_MF" class="main_MF">
+B: id="SCROLL_TO_TOP" class="Vd6aQZ ignore-focus SCROLL_TO_TOP" role="region" tabindex="-1" aria-label="top of page"> top of page
+B: id="BACKGROUND_GROUP" class="backgroundGroup_glfwq BACKGROUND_GROUP">
+B: id="BACKGROUND_GROUP_TRANSITION_GROUP">
+B: id="pageBackground_glfwq" data-media-height-override-type="" data-media-position-override="false" class="pageBackground_glfwq BmZ5pC">
+B: id="bgLayers_pageBackground_glfwq" data-hook="bgLayers" data-motion-part="BG_LAYER pageBackground_glfwq" class="MW5IWV">
+B: data-testid="colorUnderlay" class="LWbAav Kv1aVt">
+B: id="bgMedia_pageBackground_glfwq" data-motion-part="BG_MEDIA pageBackground_glfwq" class="VgO9Yg">
+B: data-testid="bgOverlay" class="m4khSP">
+B: id="site-root" class="site-root">
+B: id="masterPage" class="mesh-layout masterPage css-editing-scope">
+B: class="uRmCGe">
+B: class="hqwWPY">
+B: class="duEYWW">
+B: class="Na9Voo">
+B: class="aVaKr8">
+B: data-mesh-id="SITE_HEADERinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="SITE_HEADERinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvdodvi8" class="comp-lvdodvi8 SPY_vo">
+B: data-mesh-id="comp-lvdodvi8inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvdodvi8inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv525e07" class="MazNVa comp-lv525e07 wixui-image rYiAuL">
+B: id="comp-luwgb0w5" class="comp-luwgb0w5 NZHLsZ mfxFLH">
+B: class="itemDepth02233374943__itemWrapper wixui-horizontal-menu__item" data-testid="menuItemDepth0" data-item-depth="0" data-is-current="false" aria-current="false">
+B: class="itemShared2352141355__rootContainer itemShared2352141355--isRow">
+B: data-item-label="true" data-testid="linkElement" class="itemDepth02233374943__root StylableHorizontalMenu3372578893__menuItem itemShared2352141355__menuItem" tabindex="0" aria-haspopup="true" aria-expanded="false" role="button">
+B: class="itemDepth02233374943__container"> 스마일뷰 치과
+B: class="itemShared2352141355__accessibilityIconWrapper itemShared2352141355--isTopLevel">
+B: ath d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z">
+B: class="itemDepth02233374943__positionBox" role="group" aria-label="스마일뷰 치과" data-testid="positionBox">
+B: class="itemDepth02233374943__animationBox submenu815198092__root StylableHorizontalMenu3372578893__columnsLayout" style="--flyoutAlignment:var(--style-ly3316ab-flyoutAlignment)">
+B: class="submenu815198092__pageWrapper submenu815198092__overrideWidth">
+B: class="itemDepth12472627565__itemWrapper" data-testid="menuItemDepth1" data-item-depth="1" data-is-current="false" aria-current="false">
+B: class="itemShared2352141355__rootContainer">
+B: class="itemDepth12472627565__container"> 미소클리닉
+B: class="itemDepth12472627565__container"> 의료진
+B: class="itemDepth12472627565__container"> 찾아오는 길
+B: class="itemDepth02233374943__container"> 인비절라인
+B: class="itemDepth02233374943__container"> 치아교정
+B: class="itemDepth02233374943__positionBox" role="group" aria-label="치아교정" data-testid="positionBox">
+B: class="itemDepth12472627565__container"> 선수술 교정
+B: class="itemDepth12472627565__container"> 비수술 교정
+B: class="itemDepth12472627565__container"> 부분 교정
+B: class="itemDepth12472627565__container"> 설측 교정
+B: class="itemDepth12472627565__container"> 일반 교정
+B: class="itemDepth02233374943__itemWrapper wixui-horizontal-menu__item" data-testid="menuItemDepth0" data-item-depth="0" data-is-current="true" aria-current="true">
+B: class="itemDepth02233374943__container"> 치아미백
+B: class="itemDepth02233374943__container"> 수면 임플란트
+B: class="itemDepth02233374943__container"> 최소삭제 라미네이트
+B: class="itemDepth02233374943__container"> 보철치료
+B: id="comp-ly35er5y" class="comp-ly35er5y WzbAF8">
+B: id="dataItem-ly35er771-comp-ly35er5y" class="O6KwRn">
+B: id="dataItem-ly35er79-comp-ly35er5y" class="O6KwRn">
+B: id="SITE_PAGES" class="JsJXaX SITE_PAGES">
+B: id="SITE_PAGES_TRANSITION_GROUP" class="AnQkDU">
+B: id="glfwq" class="dBAkHi theme-vars glfwq">
+B: class="PFkO7r wixui-page" data-testid="page-bg">
+B: class="HT5ybB">
+B: id="Containerglfwq" class="Containerglfwq SPY_vo">
+B: data-mesh-id="ContainerglfwqinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="ContainerglfwqinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="bgLayers_comp-lv6o82zn" data-hook="bgLayers" data-motion-part="BG_LAYER comp-lv6o82zn" class="MW5IWV">
+B: id="bgMedia_comp-lv6o82zn" data-motion-part="BG_MEDIA comp-lv6o82zn" class="VgO9Yg">
+B: data-mesh-id="comp-lv6o82zninlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lv6o82zninlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv6o83061" class="comp-lv6o83061 SPY_vo">
+B: data-mesh-id="comp-lv6o83061inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lv6o83061inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv6o83071" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv6o83071 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:34px; text-align:center;"> ​치아미백
+B: id="comp-lv6o83084" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv6o83084 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em; text-align:center;"> 치아 미백은 얼룩이나 변색된 치아를 밝고 깨끗하게 만드는 치과 치료 방법입니다.
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em; text-align:center;"> 미백제나 특수 광선을 이용하여 치아를 효과적으로 미백하며, 전문적인 상담을 통해 안전하게 진행됩니다.
+B: id="bgLayers_comp-lvi5b3rw" data-hook="bgLayers" data-motion-part="BG_LAYER comp-lvi5b3rw" class="MW5IWV">
+B: id="bgMedia_comp-lvi5b3rw" data-motion-part="BG_MEDIA comp-lvi5b3rw" class="VgO9Yg">
+B: data-mesh-id="comp-lvi5b3rwinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi5b3rwinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="bgLayers_comp-lvi5bpja" data-hook="bgLayers" data-motion-part="BG_LAYER comp-lvi5bpja" class="if7Vw2">
+B: data-testid="colorUnderlay" class="tcElKx i1tH8h">
+B: id="bgMedia_comp-lvi5bpja" data-motion-part="BG_MEDIA comp-lvi5bpja" class="wG8dni">
+B: data-testid="columns" class="V5AUxf">
+B: id="comp-lvi5bpkl" class="comp-lvi5bpkl YzqVVZ wixui-column-strip__column">
+B: id="bgLayers_comp-lvi5bpkl" data-hook="bgLayers" data-motion-part="BG_LAYER comp-lvi5bpkl" class="MW5IWV">
+B: id="bgMedia_comp-lvi5bpkl" data-motion-part="BG_MEDIA comp-lvi5bpkl" class="VgO9Yg">
+B: data-mesh-id="comp-lvi5bpklinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi5bpklinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvi5bpkm5" class="KaEeLN comp-lvi5bpkm5">
+B: class="uYj0Sg wixui-box" data-testid="container-bg">
+B: data-mesh-id="comp-lvi5bpkm5inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi5bpkm5inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvi5c8jd" class="comp-lvi5c8jd SPY_vo">
+B: data-mesh-id="comp-lvi5c8jdinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi5c8jdinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvasw7ev" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvasw7ev wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:30px; line-height:0.9em; text-align:center;"> 스마일뷰 치아미백
+B: id="comp-lvasw7ez1" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvasw7ez1 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em; text-align:center;"> 변색된 치아 표면 색을 원래의 색으로 회복하거나 더 밝고 하얗게 만들어줍니다. 우리 치과에서는
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em; text-align:center;"> 개인의 치아 상태에 따라 1:1 맞춤시술을 진행하여 앞니뿐만 아니라 잘 보이지 않는 안쪽 치아까지
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em; text-align:center;"> 꼼꼼하게 다루어 만족감이 높은 치료를 제공합니다.
+B: data-mesh-id="comp-lvasw7f01-rotated-wrapper">
+B: id="comp-lvasw7f01" class="comp-lvasw7f01 aVng1S wixui-horizontal-line">
+B: id="comp-lvi5esay" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi5esay wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:30px; line-height:0.9em; text-align:center;"> 치아미백은 이런 분들에게 권해드립니다
+B: id="bgLayers_comp-lvasw7f38" data-hook="bgLayers" data-motion-part="BG_LAYER comp-lvasw7f38" class="if7Vw2">
+B: id="bgMedia_comp-lvasw7f38" data-motion-part="BG_MEDIA comp-lvasw7f38" class="wG8dni">
+B: id="comp-lvasw7f62" class="comp-lvasw7f62 YzqVVZ wixui-column-strip__column">
+B: id="bgLayers_comp-lvasw7f62" data-hook="bgLayers" data-motion-part="BG_LAYER comp-lvasw7f62" class="MW5IWV">
+B: id="bgMedia_comp-lvasw7f62" data-motion-part="BG_MEDIA comp-lvasw7f62" class="VgO9Yg">
+B: data-mesh-id="comp-lvasw7f62inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvasw7f62inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvasw7f8" class="KaEeLN comp-lvasw7f8">
+B: data-mesh-id="comp-lvasw7f8inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvasw7f8inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvatvmjb" class="v__F4U comp-lvatvmjb wixui-image">
+B: data-testid="linkElement" class="MVY5Lo">
+B: id="comp-lvatx1lj" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvatx1lj wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1.5em; text-align:center;"> 01
+B: id="comp-lvasw7fc3" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvasw7fc3 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:22px; line-height:1.5em;"> 선천적 으로 누런 치아를 가진 분
+B: id="comp-lvau0037" class="KaEeLN comp-lvau0037">
+B: data-mesh-id="comp-lvau0037inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvau0037inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvau003q5" class="v__F4U comp-lvau003q5 wixui-image">
+B: id="comp-lvau003q11" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvau003q11 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1.5em; text-align:center;"> 03
+B: id="comp-lvau003p4" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvau003p4 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:22px; line-height:1.5em;"> 과도한 불소 침착 으로 인한 치아 착색이 된 분
+B: id="comp-lvau1y0s" class="KaEeLN comp-lvau1y0s">
+B: data-mesh-id="comp-lvau1y0sinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvau1y0sinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvau1y1d3" class="v__F4U comp-lvau1y1d3 wixui-image">
+B: id="comp-lvau1y1e4" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvau1y1e4 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1.5em; text-align:center;"> 05
+B: id="comp-lvau1y1f" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvau1y1f wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:22px; line-height:1.5em;"> 커피나 흡연 에 의한 치아 표면 착색이 된 분
+B: id="comp-lvatzr4d" class="KaEeLN comp-lvatzr4d">
+B: data-mesh-id="comp-lvatzr4dinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvatzr4dinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvatzr4w9" class="v__F4U comp-lvatzr4w9 wixui-image">
+B: id="comp-lvatzr4x5" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvatzr4x5 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1.5em; text-align:center;"> 02
+B: id="comp-lvau3zpg" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvau3zpg wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:22px; line-height:1.5em;"> 유아기에 테트라사이클린 을 복용하여 내적으로
+B: class="font_7 wixui-rich-text__text" style="font-size:22px; line-height:1.5em;"> 착색된 치아를 가진 분
+B: id="comp-lvau1pb9" class="KaEeLN comp-lvau1pb9">
+B: data-mesh-id="comp-lvau1pb9inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvau1pb9inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvau1pbn4" class="v__F4U comp-lvau1pbn4 wixui-image">
+B: id="comp-lvau1pbo4" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvau1pbo4 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1.5em; text-align:center;"> 04
+B: id="comp-lvau1pbq" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvau1pbq wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:22px; line-height:1.5em;"> 노화 로 인한 누런 치아 가진 분
+B: id="comp-lvau1y0w" class="KaEeLN comp-lvau1y0w">
+B: data-mesh-id="comp-lvau1y0winlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvau1y0winlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvau1y1j4" class="v__F4U comp-lvau1y1j4 wixui-image">
+B: id="comp-lvau1y1k5" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvau1y1k5 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1.5em; text-align:center;"> 06
+B: id="comp-lvau1y1k11" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvau1y1k11 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:22px; line-height:1.5em;"> 외상 으로 인해 치아가 검게 변색된 분
+B: data-mesh-id="comp-lvi5b3rwinlineContent-wedge-5">
+B: id="bgLayers_comp-lvaubhhi" data-hook="bgLayers" data-motion-part="BG_LAYER comp-lvaubhhi" class="MW5IWV">
+B: id="bgMedia_comp-lvaubhhi" data-motion-part="BG_MEDIA comp-lvaubhhi" class="VgO9Yg">
+B: data-mesh-id="comp-lvaubhhiinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvaubhhiinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvi64wdu" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi64wdu wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:30px; line-height:0.9em; text-align:center;"> 치아미백 종류
+B: id="comp-lvi5m75n" class="KaEeLN comp-lvi5m75n">
+B: data-mesh-id="comp-lvi5m75ninlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi5m75ninlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvaubhij1" class="LjV9wd comp-lvaubhij1 wixui-image">
+B: data-testid="linkElement" class="Ikn7zx">
+B: id="comp-lvaumfy6" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvaumfy6 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:16px; line-height:1.4em;"> #치아미백 장치
+B: id="comp-lvaubhiq4" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvaubhiq4 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:24px; line-height:0.9em;"> 자가 미백
+B: id="comp-lvaubhir6" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvaubhir6 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> 자가미백은 치과에서 제작한 치아 미백 장치에 미백제를
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> 도포하여 낮 혹은 잠자는 동안 미백을 진행하는 방법입니다.
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> 주의사항을 잘 숙지한다면 안전하게 사용할 수 있습니다.
+B: id="comp-lvi5u5et" class="KaEeLN comp-lvi5u5et">
+B: data-mesh-id="comp-lvi5u5etinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi5u5etinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvi5u5f93" class="LjV9wd comp-lvi5u5f93 wixui-image">
+B: id="comp-lvi5u5fa4" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi5u5fa4 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:16px; line-height:1.4em;"> #특수 광선
+B: id="comp-lvi5u5fa10" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi5u5fa10 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:24px; line-height:0.9em;"> 전문가 미백
+B: id="comp-lvi5u5fb3" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi5u5fb3 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> 전문가 미백은 치과 내에서 고농도의 미백제와 특수 광선을 이용
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> 하여 치아를 미백하는 방법입니다. 전문가 미백의 횟수는 개인에
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> 따라 다를 수 있으며, 식습관에 따라 미백 효과는 일반적으로 1~3년
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> 동안 지속됩니다. 그러나 착색이 쉽게 일어나는 음식을 자주 섭취
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> 한다면 지속 기간이 짧아질 수 있습니다. 이를 위해 6개월 간격으로
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> 치과를 방문하여 상태를 확인하고 필요에 따라 전문가 미백을 다시
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> 받게 됩니다.
+B: id="comp-lvixf0n2" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvixf0n2 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:30px; line-height:0.9em; text-align:center;"> 자가 미백과 전문가 미백의 병행
+B: id="comp-lvixibco" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvixibco wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:16px; line-height:0.9em; text-align:center;"> * 환자의 케이스에 따라 시술 횟수는 다를 수 있습니다
+B: id="comp-lvixj9wp" class="comp-lvixj9wp SPY_vo">
+B: data-mesh-id="comp-lvixj9wpinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvixj9wpinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lviwxykt4" class="KaEeLN comp-lviwxykt4">
+B: data-mesh-id="comp-lviwxykt4inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lviwxykt4inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvix8t8m" class="comp-lvix8t8m SPY_vo">
+B: data-mesh-id="comp-lvix8t8minlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvix8t8minlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lviwxyku3" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lviwxyku3 wixui-rich-text" data-testid="richTextElement">
+B: class="font_0 wixui-rich-text__text" style="font-size:20px; line-height:1.32em; text-align:center;"> 자가 미백
+B: id="comp-lviwxyku9" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lviwxyku9 wixui-rich-text" data-testid="richTextElement">
+B: class="font_0 wixui-rich-text__text" style="font-size:20px; line-height:1.4em; text-align:center;"> 2~3주간의 긴시간을 투자해야
+B: class="wixui-rich-text__text"> 원하는 결과를 얻을 수 ​있습니다.
+B: id="comp-lvixgkt5" class="comp-lvixgkt5 wixui-vector-image">
+B: data-testid="svgRoot-comp-lvixgkt5" class="VDJedC l4CAhn">
+B: ath d="M100 20c-44.184 0-80 35.817-80 80.001C20 144.183 55.817 180 100 180s80-35.817 80-79.999S144.183 20 100 20zm-9.999 126.345l-10.997-10.998 35.346-35.346-35.346-35.347 10.997-10.998L136.345 100l-46.344 46.345z"/>
+B: id="comp-lvix6kxp" class="KaEeLN comp-lvix6kxp">
+B: data-mesh-id="comp-lvix6kxpinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvix6kxpinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvix6ky61" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvix6ky61 wixui-rich-text" data-testid="richTextElement">
+B: class="font_0 wixui-rich-text__text" style="font-size:24px; line-height:1.32em; text-align:center;"> 두가지 미백방법을
+B: class="wixui-rich-text__text"> 병행할 경우 더 효과적이고
+B: class="wixui-rich-text__text"> 오랜기간 하얀 색상을
+B: class="wixui-rich-text__text"> 유지할 수 있습니다.
+B: data-mesh-id="comp-lvixgtdm-rotated-wrapper">
+B: id="comp-lvixgtdm" class="comp-lvixgtdm wixui-vector-image">
+B: data-testid="svgRoot-comp-lvixgtdm" class="VDJedC l4CAhn">
+B: id="comp-lvix4ji2" class="KaEeLN comp-lvix4ji2">
+B: data-mesh-id="comp-lvix4ji2inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvix4ji2inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvix8rss" class="comp-lvix8rss SPY_vo">
+B: data-mesh-id="comp-lvix8rssinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvix8rssinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvix4jij4" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvix4jij4 wixui-rich-text" data-testid="richTextElement">
+B: class="font_0 wixui-rich-text__text" style="font-size:20px; line-height:1.32em; text-align:center;"> 전문가 미백
+B: id="comp-lvix4jik4" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvix4jik4 wixui-rich-text" data-testid="richTextElement">
+B: class="font_0 wixui-rich-text__text" style="font-size:20px; line-height:1.4em; text-align:center;"> 20~30분 미백을 진행하여
+B: class="wixui-rich-text__text"> 1회 시술 시 원하는 결과를
+B: class="wixui-rich-text__text"> ​얻을 수 있습니다.
+B: data-mesh-id="comp-lvaubhhiinlineContent-wedge-4">
+B: id="pinnedBottomRight" class="pinnedBottomRight">
+B: id="comp-lvi85q0f-pinned-layer" class="comp-lvi85q0f-pinned-layer big2ZD">
+B: id="comp-lvi85q0f" class="comp-lvi85q0f wixui-image-button" aria-describedby="4dd8a7f0-adcc-48d1-9c11-0b0af1877550">
+B: role="img" class="nXJ9tS" data-testid="linkImageContainer">
+B: class="PRnra1">
+B: class="_C0cVf">
+B: class="_4XcTfy" data-testid="screenWidthContainerBg">
+B: class="U4Bvut">
+B: class="G5K6X8">
+B: class="gUbusX" data-testid="screenWidthContainerBgCenter">
+B: class="CJF7A2">
+B: data-mesh-id="SITE_FOOTERinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="SITE_FOOTERinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv57jfmc" class="comp-lv57jfmc SPY_vo">
+B: data-mesh-id="comp-lv57jfmcinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lv57jfmcinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv57cas9" class="MazNVa comp-lv57cas9 wixui-image">
+B: data-testid="linkElement" class="j7pOnl">
+B: id="comp-lv57941a" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv57941a wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> 상호 : 스마일뷰치과의원
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> 주소 : 서울특별시 강남구 봉은사로 107, 15층 (논현동 201 16번지 15층)
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> 대표자: 김한결&nbsp; l&nbsp; 사업자번호: 699-29-00572
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> TEL: 02-552-7528&nbsp; l&nbsp; FAX: 02-552-7527
+B: id="comp-lv57jq1n" class="comp-lv57jq1n SPY_vo">
+B: data-mesh-id="comp-lv57jq1ninlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lv57jq1ninlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv57hu5r" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv57hu5r wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:20px; line-height:0.9em;"> 진료시간 안내
+B: id="comp-lv57czxu" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv57czxu wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> 평일
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> 토요일
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> ​일요일
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> 점심시간
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> ​휴진
+B: id="comp-lv57fe6h" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv57fe6h wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> AM 10:00 - PM 06:30
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> AM 10:00 - PM 03:00 (점심시간 없이 진료)
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> AM 10:00 - PM 04:00&nbsp;
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> PM 01:00 - PM 02:00
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> 공휴일​
+B: id="comp-lv572owx" class="comp-lv572owx aVng1S wixui-horizontal-line">
+B: id="comp-lv573yow" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv573yow wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:14px; line-height:0.9em; text-align:right;"> COPYRIGHTⓒ SMILE VIEW DENTAL CLINIC. ALL RIGHTS RESERVED.
+B: data-mesh-id="SITE_FOOTERinlineContent-wedge-3">
+B: id="SCROLL_TO_BOTTOM" class="Vd6aQZ ignore-focus SCROLL_TO_BOTTOM" role="region" tabindex="-1" aria-label="bottom of page"> bottom of page
+B: nk href="https://siteassets.parastorage.com/pages/pages/thunderbolt?appDefinitionIdToSiteRevision=%7B%2213d21c63-b5ec-5912-8397-c3a5ddb27a97%22%3A%22440%22%2C%22b976560c-3122-4351-878f-453f337b7245%22%3A%221291%22%2C%2214271d6f-ba62-d045-549b-ab972ae1f70e%22%3A%2225%22%7D&beckyExperiments=.DatePickerPortal%2C.DisableDocumentScrollWhenLightBoxOpen%2C.EnableCustomCSSVarsForLoginSocialBar%2C.FreemiumBannerOdeditor%2C.LoginBarEnableLoggingInStateInSSR%2C.TextInputAutoFillFix%2C.UseLoginSocialBarCustomMenu%2C.UseNewLoginSocialBarCustomMenuPositioning%2C.UseNewLoginSocialBarElementStructure%2C.UseNewLoginSocialBarMemberInitialsAvatar%2C.VerticalMenu_uiType_NativeMapper%2C.WixFreeSiteBannerDesktop%2C.WixFreeSiteBannerMobile%2C.buttonUdp%2C.calculateCollapsibleTextLineHeightByFont%2C.disableBuilderWixComponents%2C.dom_store%2C.dynamicSlots%2C.fiveGridLineStudioSkins%2C.imageEncodingAVIF%2C.isClassNameToRootEnabled%2C.motionTimeAnimationsCSS%2C.propsCarmiMappersMigration1%2C.propsCarmiMappersMigration4%2C.propsCarmiMappersMigration5%2C.shouldUseResponsiveImages%2C.svgResolver_2%2C.takeAppDependenciesFromCSM%2C.updateRichTextSemanticClassNamesOnCorvid%2C.useClassnameInResponsiveAppWidget%2C.useImageAvifFormatInNativeProGallery%2C.useResponsiveImgClassicFixed%2C.useSvgLoaderFeature%2C.useSvgLoaderFeatureOnBuilderComps&blocksBuilderManifestGeneratorVersion=1.129.0&contentType=application%2Fjson&deviceType=Desktop&dfCk=6&dfVersion=1.5263.0&disableStaticPagesUrlHierarchy=false&editorName=Unknown&experiments=dm_bgScrubToMotionFixer%2Cdm_masterPageVariablesQueryFixer%2Cdm_migrateOldHoverBoxToNewFixer&externalBaseUrl=https%3A%2F%2Fwww.smile-vdental.com&fileId=df2ea64c.bundle.min&formFactor=desktop&hasTPAWorkerOnSite=false&hasUserDomainMedia=false&isBuilderComponentModel=false&isHttps=true&isInSeo=false&isMultilingualEnabled=true&isPremiumDomain=true&isTrackClicksAnalyticsEnabled=false&isUrlMigrated=true&isWixCodeOnPage=false&isWixCodeOnSite=false&language=ko&languageResolutionMethod=QueryParam&metaSiteId=30f5bc80-328d-4958-a482-3628665c7140&module=thunderbolt-features&oneDocEnabled=true&originalLanguage=ko&pageId=cd2835_24209eeb400a114fe7ca39215acd26f8_958.json&pilerExperiments=specs.piler.useEditorReactComponents&quickActionsMenuEnabled=false&registryLibrariesTopology=%5B%7B%22artifactId%22%3A%22editor-elements%22%2C%22namespace%22%3A%22wixui%22%2C%22url%22%3A%22https%3A%2F%2Fstatic.parastorage.com%2Fservices%2Feditor-elements%2F1.14889.0%22%7D%2C%7B%22artifactId%22%3A%22editor-elements%22%2C%22namespace%22%3A%22dsgnsys%22%2C%22url%22%3A%22https%3A%2F%2Fstatic.parastorage.com%2Fservices%2Feditor-elements%2F1.14889.0%22%7D%5D&remoteWidgetStructureBuilderVersion=1.251.0&siteId=f98d1c5d-f40b-45af-b50d-12ced6ae2ad6&siteRevision=958&staticHTMLComponentUrl=https%3A%2F%2Fwww-smile-vdental-com.filesusr.com%2F&useSandboxInHTMLComp=false&viewMode=desktop" id="features_masterPage" as="fetch" position="post-scripts" rel="preload" crossorigin="anonymous">
+B: nk href="https://siteassets.parastorage.com/pages/pages/thunderbolt?appDefinitionIdToSiteRevision=%7B%2213d21c63-b5ec-5912-8397-c3a5ddb27a97%22%3A%22440%22%2C%22b976560c-3122-4351-878f-453f337b7245%22%3A%221291%22%2C%2214271d6f-ba62-d045-549b-ab972ae1f70e%22%3A%2225%22%7D&beckyExperiments=.DatePickerPortal%2C.DisableDocumentScrollWhenLightBoxOpen%2C.EnableCustomCSSVarsForLoginSocialBar%2C.FreemiumBannerOdeditor%2C.LoginBarEnableLoggingInStateInSSR%2C.TextInputAutoFillFix%2C.UseLoginSocialBarCustomMenu%2C.UseNewLoginSocialBarCustomMenuPositioning%2C.UseNewLoginSocialBarElementStructure%2C.UseNewLoginSocialBarMemberInitialsAvatar%2C.VerticalMenu_uiType_NativeMapper%2C.WixFreeSiteBannerDesktop%2C.WixFreeSiteBannerMobile%2C.buttonUdp%2C.calculateCollapsibleTextLineHeightByFont%2C.disableBuilderWixComponents%2C.dom_store%2C.dynamicSlots%2C.fiveGridLineStudioSkins%2C.imageEncodingAVIF%2C.isClassNameToRootEnabled%2C.motionTimeAnimationsCSS%2C.propsCarmiMappersMigration1%2C.propsCarmiMappersMigration4%2C.propsCarmiMappersMigration5%2C.shouldUseResponsiveImages%2C.svgResolver_2%2C.takeAppDependenciesFromCSM%2C.updateRichTextSemanticClassNamesOnCorvid%2C.useClassnameInResponsiveAppWidget%2C.useImageAvifFormatInNativeProGallery%2C.useResponsiveImgClassicFixed%2C.useSvgLoaderFeature%2C.useSvgLoaderFeatureOnBuilderComps&blocksBuilderManifestGeneratorVersion=1.129.0&contentType=application%2Fjson&deviceType=Desktop&dfCk=6&dfVersion=1.5263.0&disableStaticPagesUrlHierarchy=false&editorName=Unknown&experiments=dm_bgScrubToMotionFixer%2Cdm_masterPageVariablesQueryFixer%2Cdm_migrateOldHoverBoxToNewFixer&externalBaseUrl=https%3A%2F%2Fwww.smile-vdental.com&fileId=df2ea64c.bundle.min&formFactor=desktop&hasTPAWorkerOnSite=false&hasUserDomainMedia=false&isBuilderComponentModel=false&isHttps=true&isInSeo=false&isMultilingualEnabled=true&isPremiumDomain=true&isTrackClicksAnalyticsEnabled=false&isUrlMigrated=true&isWixCodeOnPage=false&isWixCodeOnSite=false&language=ko&languageResolutionMethod=QueryParam&metaSiteId=30f5bc80-328d-4958-a482-3628665c7140&module=thunderbolt-features&oneDocEnabled=true&originalLanguage=ko&pageId=cd2835_079beefff6b099b470d2f91e4b895f1e_957.json&pilerExperiments=specs.piler.useEditorReactComponents&quickActionsMenuEnabled=false&registryLibrariesTopology=%5B%7B%22artifactId%22%3A%22editor-elements%22%2C%22namespace%22%3A%22wixui%22%2C%22url%22%3A%22https%3A%2F%2Fstatic.parastorage.com%2Fservices%2Feditor-elements%2F1.14889.0%22%7D%2C%7B%22artifactId%22%3A%22editor-elements%22%2C%22namespace%22%3A%22dsgnsys%22%2C%22url%22%3A%22https%3A%2F%2Fstatic.parastorage.com%2Fservices%2Feditor-elements%2F1.14889.0%22%7D%5D&remoteWidgetStructureBuilderVersion=1.251.0&siteId=f98d1c5d-f40b-45af-b50d-12ced6ae2ad6&siteRevision=958&staticHTMLComponentUrl=https%3A%2F%2Fwww-smile-vdental-com.filesusr.com%2F&useSandboxInHTMLComp=false&viewMode=desktop" id="features_glfwq" as="fetch" position="post-scripts" rel="preload" crossorigin="anonymous">
+B: nk href="https://siteassets.parastorage.com/pages/pages/thunderbolt?appDefinitionIdToSiteRevision=%7B%2213d21c63-b5ec-5912-8397-c3a5ddb27a97%22%3A%22440%22%2C%22b976560c-3122-4351-878f-453f337b7245%22%3A%221291%22%2C%2214271d6f-ba62-d045-549b-ab972ae1f70e%22%3A%2225%22%7D&beckyExperiments=.DatePickerPortal%2C.EnableCustomCSSVarsForLoginSocialBar%2C.FreemiumBannerOdeditor%2C.LoginBarEnableLoggingInStateInSSR%2C.TextInputAutoFillFix%2C.UseLoginSocialBarCustomMenu%2C.UseNewLoginSocialBarCustomMenuPositioning%2C.UseNewLoginSocialBarElementStructure%2C.UseNewLoginSocialBarMemberInitialsAvatar%2C.WixFreeSiteBannerDesktop%2C.WixFreeSiteBannerMobile%2C.buttonUdp%2C.calculateCollapsibleTextLineHeightByFont%2C.disableBuilderWixComponents%2C.dynamicSlots%2C.fiveGridLineStudioSkins%2C.isClassNameToRootEnabled%2C.propsCarmiMappersMigration1%2C.propsCarmiMappersMigration4%2C.propsCarmiMappersMigration5%2C.svgResolver_2%2C.takeAppDependenciesFromCSM%2C.updateRichTextSemanticClassNamesOnCorvid%2C.useClassnameInResponsiveAppWidget%2C.useImageAvifFormatInNativeProGallery&blocksBuilderManifestGeneratorVersion=1.129.0&contentType=application%2Fjson&dfCk=6&dfVersion=1.5263.0&editorName=Unknown&experiments=dm_bgScrubToMotionFixer%2Cdm_masterPageVariablesQueryFixer%2Cdm_migrateOldHoverBoxToNewFixer&externalBaseUrl=https%3A%2F%2Fwww.smile-vdental.com&fileId=b814ec89.bundle.min&formFactor=desktop&hasTPAWorkerOnSite=false&hasUserDomainMedia=false&isBuilderComponentModel=false&isHttps=true&isInSeo=false&isPremiumDomain=true&isUrlMigrated=true&isWixCodeOnPage=false&isWixCodeOnSite=false&language=ko&metaSiteId=30f5bc80-328d-4958-a482-3628665c7140&module=thunderbolt-platform&oneDocEnabled=true&originalLanguage=ko&pageId=cd2835_24209eeb400a114fe7ca39215acd26f8_958.json&pilerExperiments=specs.piler.useEditorReactComponents&quickActionsMenuEnabled=false&registryLibrariesTopology=%5B%7B%22artifactId%22%3A%22editor-elements%22%2C%22namespace%22%3A%22wixui%22%2C%22url%22%3A%22https%3A%2F%2Fstatic.parastorage.com%2Fservices%2Feditor-elements%2F1.14889.0%22%7D%2C%7B%22artifactId%22%3A%22editor-elements%22%2C%22namespace%22%3A%22dsgnsys%22%2C%22url%22%3A%22https%3A%2F%2Fstatic.parastorage.com%2Fservices%2Feditor-elements%2F1.14889.0%22%7D%5D&remoteWidgetStructureBuilderVersion=1.251.0&siteId=f98d1c5d-f40b-45af-b50d-12ced6ae2ad6&siteRevision=958&staticHTMLComponentUrl=https%3A%2F%2Fwww-smile-vdental-com.filesusr.com%2F&viewMode=desktop" id="platform_masterPage" as="fetch" position="post-scripts" rel="preload" crossorigin="anonymous">

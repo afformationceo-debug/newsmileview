@@ -1,0 +1,6 @@
+attr_31_img_alt: 즉시 임플란트
+attr_38_img_alt: 네비게이션 임플란트
+attr_45_img_alt: 골이식 임플란트
+text_58_tr: 표면 처리 일반 표면 처리 특허 SA 표면 처리 기술
+attr_106_img_alt: 정밀 검사 & CT 촬영
+attr_118_img_alt: 수면 마취 임플란트 식립

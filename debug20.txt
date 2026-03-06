@@ -1,0 +1,5 @@
+orig_len=141
+trans_len=90
+found_in_html=False
+orig_eq_trans=False
+orig_repr='밝고 아름다운 미소는 삶을 더욱 아름답게 만들어 줍니다. 스마일뷰 치과는 이러한 아름다운 미소를 연구하고 환자분들에게 제공하기 위해 노력하고 있습니다. 치아가 제대로 정렬되지 않으'

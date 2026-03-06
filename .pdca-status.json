@@ -1,0 +1,9 @@
+{
+  "i18n-pipeline": {
+    "phase": "plan",
+    "matchRate": null,
+    "iterationCount": 0,
+    "startedAt": "2026-03-05T00:00:00Z",
+    "planPath": "docs/01-plan/features/i18n-pipeline.plan.md"
+  }
+}

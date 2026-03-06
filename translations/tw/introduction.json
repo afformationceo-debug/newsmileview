@@ -1,0 +1,639 @@
+[
+  {
+    "key": "title_1",
+    "text": "병원소개 | 스마일뷰치과의원",
+    "translated": "診所介紹 | SMILEVIEW牙醫診所",
+    "location": "line:6, tag:title",
+    "context": "title"
+  },
+  {
+    "key": "text_2_li",
+    "text": "병원소개",
+    "translated": "診所介紹",
+    "location": "line:281, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_3_li",
+    "text": "인비절라인",
+    "translated": "INVISALIGN",
+    "location": "line:282, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_4_li",
+    "text": "치아교정",
+    "translated": "ORTHODONTICS",
+    "location": "line:283, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_5_li",
+    "text": "치아미백",
+    "translated": "牙齒美白",
+    "location": "line:284, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_6_li",
+    "text": "원데이 라미네이트",
+    "translated": "單日貼片",
+    "location": "line:285, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_7_li",
+    "text": "수면 임플란트",
+    "translated": "舒眠植牙",
+    "location": "line:286, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_8_li",
+    "text": "보철치료",
+    "translated": "PROSTHETICS",
+    "location": "line:287, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_9_a",
+    "text": "한국어 (KO)",
+    "translated": "韓語 (KO)",
+    "location": "line:295, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "text_10_a",
+    "text": "예약하기",
+    "translated": "立即預約",
+    "location": "line:300, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "text_11_a",
+    "text": "온라인 예약",
+    "translated": "線上預約",
+    "location": "line:320, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "attr_12_img_alt",
+    "text": "스마일뷰 치과",
+    "translated": "SMILEVIEW牙醫診所",
+    "location": "line:328, tag:img[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_13_p",
+    "text": "스마일뷰 치과는 디지털 장비를 통하여 개개인만의 치아 특성을 분석하고 아름다운 미소를 위하여 그에 맞는 치료를 제안드립니다.",
+    "translated": "SMILEVIEW牙醫診所透過數位化設備，分析每位患者的個別牙齒特性，並針對其需求提供最適合的療程方案，協助您擁有美麗的笑容。",
+    "location": "line:333, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_14_p",
+    "text": "저희 스마일뷰 치과는 환자분들의 아름다운 미소를 위해 지속적으로 연구하고 있습니다.",
+    "translated": "SMILEVIEW牙醫診所持續深耕研究，致力於讓每位患者都能擁有自信燦爛的笑容。",
+    "location": "line:334, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_15_a",
+    "text": "미소클리닉",
+    "translated": "Smile Design",
+    "location": "line:341, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "text_16_a",
+    "text": "의료진",
+    "translated": "醫療團隊",
+    "location": "line:342, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "text_17_a",
+    "text": "찾아오는 길",
+    "translated": "交通指引",
+    "location": "line:343, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "attr_18_img_alt",
+    "text": "미소클리닉 배너",
+    "translated": "Smile Design 橫幅",
+    "location": "line:351, tag:img[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_19_h2",
+    "text": "스마일뷰 치과의 미소클리닉",
+    "translated": "SMILEVIEW牙醫診所的 Smile Design",
+    "location": "line:357, tag:h2",
+    "context": "text"
+  },
+  {
+    "key": "text_20_p",
+    "text": "밝고 아름다운 미소는 삶을 더욱 아름답게 만들어 줍니다. 스마일뷰 치과는 이러한 아름다운 미소를 연구하고 환자분들에게 제공하기 위해 노력하고 있습니다. 치아가 제대로 정렬되지 않으면 얼굴의 균형이 맞지않게 되어 아름다운 미소를 얻기 어려울 수 있습니다.",
+    "translated": "燦爛美麗的笑容能讓生活更加豐富精彩。SMILEVIEW牙醫診所致力於研究完美笑容的奧秘，並竭盡所能地為每位患者實現。若牙齒排列不整，將影響臉部整體平衡，進而難以擁有自然迷人的笑容。",
+    "location": "line:360, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_21_h2",
+    "text": "아름다운 미소를 갖기 위해서는",
+    "translated": "打造美麗笑容的關鍵要素",
+    "location": "line:373, tag:h2",
+    "context": "text"
+  },
+  {
+    "key": "attr_22_div_alt",
+    "text": "가지런한 치아의 배열",
+    "translated": "整齊的牙齒排列",
+    "location": "line:377, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_23_p",
+    "text": "앞니 하나의 틀어짐도 웃었을 때 아름다움을 감소시키며 입 모양의 어색함을 유발하고 웃을 때 자연스럽게 입을 가리게 할 수 있습니다. 가지런한 치아는 아름다운 미소를 통해 밝은 인상을 주는 데 도움을 줍니다.",
+    "translated": "即使只有一顆門牙歪斜，也會降低微笑時的美觀度，造成嘴型不自然，讓人在微笑時不自覺地遮住嘴巴。整齊排列的牙齒能讓笑容更加燦爛，給人留下開朗明亮的好印象。",
+    "location": "line:381, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "attr_24_div_alt",
+    "text": "자연스러운 스마일아크",
+    "translated": "自然的微笑弧線",
+    "location": "line:385, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_25_p",
+    "text": "스마일 아크(Smile Arc)는 미소 시에 아랫 입술의 곡선과 상악 치아의 절단선을 따라 만들어지는 가상 곡선을 의미합니다. 이때 만들어지는 곡선이 부드럽게 이어질 경우 아름다운 미소를 얻을 수 있습니다.",
+    "translated": "微笑弧線（Smile Arc）是指微笑時，下唇曲線與上顎牙齒切緣所形成的虛擬弧線。當這條弧線呈現流暢連貫的曲線時，即可呈現出最美麗自然的笑容。",
+    "location": "line:389, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "attr_26_div_alt",
+    "text": "잘 맞는 미소의 대칭",
+    "translated": "對稱協調的笑容",
+    "location": "line:393, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_27_p",
+    "text": "Smile 대칭은 치아의 부정교합과 턱관절의 이상, 안면비대칭 등이 미소의 형태에 큰 영향을 미칩니다. 웃을 때 좌우 대칭이 맞아야 아름다운 미소에 한층 가까워질 수 있습니다.",
+    "translated": "Smile 對稱方面，牙齒咬合不正、顳顎關節異常及顏面不對稱等問題，都會對笑容形態產生重大影響。微笑時左右對稱協調，才能讓笑容更加完美迷人。",
+    "location": "line:397, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "attr_28_div_alt",
+    "text": "적절한 버칼 코리더",
+    "translated": "適當的頰側走廊",
+    "location": "line:401, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_29_p",
+    "text": "버칼 코리더(buccal corridor)는 웃을 때 치아 옆으로 보이는 공간을 의미합니다. 버칼 코리더가 너무 크면 웃을 때 치아가 부족해 보일 수 있으며, 반대로 너무 작으면 웃을 때 틀니처럼 보일 수 있습니다.",
+    "translated": "頰側走廊（buccal corridor）是指微笑時，牙齒兩側與嘴角之間的暗色空間。頰側走廊過大時，微笑時牙齒顯得不足；反之過小時，則可能讓笑容看起來像戴假牙一樣不自然。",
+    "location": "line:405, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "attr_30_div_alt",
+    "text": "가파른 각도의 교합평면",
+    "translated": "適當角度的咬合平面",
+    "location": "line:409, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_31_p",
+    "text": "교합평면이란 옆모습 엑스레이를 찍었을 때 치아들의 옆모습 평면이 이루는 각도를 말합니다. 이 각도가 가파를수록 더 웃는 상이 되고 이 각도가 평평할수록 우는 상이 됩니다.",
+    "translated": "咬合平面是指從側面X光片觀察時，牙齒側面所形成的角度。此角度越陡，微笑時的表情越開朗；角度越平緩，則臉部表情看起來越憂鬱。",
+    "location": "line:413, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "attr_32_div_alt",
+    "text": "치아와 잇몸의 적절한 노출",
+    "translated": "牙齒與牙齦的適當露出量",
+    "location": "line:417, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_33_p",
+    "text": "미소를 지을 때 잇몸이 전혀 보이지 않고 치아의 일부분만 노출되면 나이든 외모를 연상시킬 수 있습니다. 미소를 짓을 때 잇몸이 과도하게 드러나면 심미적인 면에서 부족할 수 있습니다.",
+    "translated": "微笑時若完全看不到牙齦、只露出部分牙齒，可能會給人較顯老的印象。反之，微笑時牙齦露出過多（露齦笑），則在美觀上較為不足。",
+    "location": "line:421, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_34_p",
+    "text": "스마일뷰 치과는 여러 의료진의 협진을 통해 원인을 분석하고 치료하여 찾아주시는 환자분들이 밝고 아름다운 미소를 가질 수 있도록 최선을 다합니다.",
+    "translated": "SMILEVIEW牙醫診所透過多位專科醫師的跨科協作，深入分析病因並提供精準治療，竭盡全力讓每位前來就診的患者都能擁有燦爛美麗的笑容。",
+    "location": "line:425, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_35_h2",
+    "text": "의료진 소개",
+    "translated": "醫療團隊介紹",
+    "location": "line:434, tag:h2",
+    "context": "text"
+  },
+  {
+    "key": "text_36_button",
+    "text": "김한결 대표원장",
+    "translated": "金韓結 院長",
+    "location": "line:437, tag:button",
+    "context": "text"
+  },
+  {
+    "key": "text_37_button",
+    "text": "이소연 전문의",
+    "translated": "李昭妍 專科醫師",
+    "location": "line:438, tag:button",
+    "context": "text"
+  },
+  {
+    "key": "attr_38_div_alt",
+    "text": "김한결 원장",
+    "translated": "金韓結 院長",
+    "location": "line:444, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_39_span",
+    "text": "대표원장",
+    "translated": "院長",
+    "location": "line:447, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_40_span",
+    "text": "전문의",
+    "translated": "專科醫師",
+    "location": "line:448, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_41_h3",
+    "text": "김한결",
+    "translated": "金韓結",
+    "location": "line:450, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_42_div",
+    "text": "경력사항",
+    "translated": "學經歷",
+    "location": "line:451, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_43_li",
+    "text": "연세대학교 치과대학 졸업",
+    "translated": "延世大學牙醫學院畢業",
+    "location": "line:453, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_44_li",
+    "text": "연세대학교 대학원 교정과",
+    "translated": "延世大學研究所齒顎矯正科",
+    "location": "line:454, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_45_li",
+    "text": "연세대학교 치과대학 구강내과 박사과정중",
+    "translated": "延世大學牙醫學院口腔內科博士課程進修中",
+    "location": "line:455, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_46_li",
+    "text": "연세대학교 강남 세브란스 미니 레지던시",
+    "translated": "延世大學江南世福蘭斯醫院 Mini Residency 結業",
+    "location": "line:456, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_47_li",
+    "text": "서울대학교 치의학대학원 턱교정학 고급 연수회",
+    "translated": "首爾大學牙醫學研究所顎矯正學進階研習課程結業",
+    "location": "line:457, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_48_li",
+    "text": "UCLA 수술교정",
+    "translated": "UCLA 手術矯正研習結業",
+    "location": "line:458, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_49_li",
+    "text": "치주 교정 성인교정 심포지움",
+    "translated": "牙周矯正暨成人矯正學術研討會",
+    "location": "line:459, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_50_li",
+    "text": "미니스크류를 이용한 설측교정 연수회",
+    "translated": "迷你螺釘輔助舌側矯正研習課程結業",
+    "location": "line:460, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_51_li",
+    "text": "부분티끌교정 연수회",
+    "translated": "局部矯正研習課程結業",
+    "location": "line:463, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_52_li",
+    "text": "오스템임플란트 연수회 수료",
+    "translated": "Osstem植牙研習課程結業",
+    "location": "line:464, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_53_li",
+    "text": "하버드 임플란트 연수회 수료",
+    "translated": "哈佛大學植牙研習課程結業",
+    "location": "line:465, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_54_li",
+    "text": "인비절라인 인증의",
+    "translated": "INVISALIGN 認證醫師",
+    "location": "line:466, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_55_li",
+    "text": "대한치과교정학회 정회원",
+    "translated": "韓國齒顎矯正學會正式會員",
+    "location": "line:467, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_56_li",
+    "text": "대한심미치과학회 정회원",
+    "translated": "韓國美容牙科學會正式會員",
+    "location": "line:468, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_57_li",
+    "text": "대한치과교합학회 정회원",
+    "translated": "韓國牙科咬合學會正式會員",
+    "location": "line:469, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_58_li",
+    "text": "보건복지부 인증 통합치과 전문의",
+    "translated": "韓國保健福祉部認證綜合牙科專科醫師",
+    "location": "line:470, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "attr_59_div_alt",
+    "text": "이소연 원장",
+    "translated": "李昭妍 牙科醫生",
+    "location": "line:479, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_60_span",
+    "text": "구강악안면외과",
+    "translated": "口腔顎面外科",
+    "location": "line:482, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_61_h3",
+    "text": "이소연",
+    "translated": "李昭妍",
+    "location": "line:485, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_62_li",
+    "text": "보건복지부 구강악안면외과 전문의",
+    "translated": "韓國保健福祉部口腔顎面外科專科醫師",
+    "location": "line:488, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_63_li",
+    "text": "보건복지부 통합치의학과 전문의",
+    "translated": "韓國保健福祉部綜合牙科學專科醫師",
+    "location": "line:489, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_64_li",
+    "text": "부산대학교 치의학전문대학원 졸업(치의학 석사)",
+    "translated": "釜山大學牙醫學專業研究所畢業（牙醫學碩士）",
+    "location": "line:490, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_65_li",
+    "text": "연세대학교 강남세브란스병원 인턴 수료",
+    "translated": "延世大學江南世福蘭斯醫院牙科住院醫師實習結業",
+    "location": "line:491, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_66_li",
+    "text": "연세대학교 강남세브란스병원 구강악안면외과 레지던트 수료",
+    "translated": "延世大學江南世福蘭斯醫院口腔顎面外科住院醫師結業",
+    "location": "line:492, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_67_li",
+    "text": "대한악안면성형재건외과학회 정회원 및 인정의",
+    "translated": "韓國顎顏面整形重建外科學會正式會員暨認定醫師",
+    "location": "line:493, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_68_li",
+    "text": "대한구강악안면외과학회 정회원",
+    "translated": "韓國口腔顎面外科學會正式會員",
+    "location": "line:494, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_69_li",
+    "text": "연세대학교 치의학 학술대회 우수포스터상",
+    "translated": "延世大學牙醫學學術研討會優秀壁報獎",
+    "location": "line:495, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_70_div",
+    "text": "논문",
+    "translated": "學術論文",
+    "location": "line:497, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_71_li",
+    "text": "2021 Journal of Oral medicine and Pain: Herpes Zoster Accompanying Odontogenic Inflammation (제1저자)",
+    "translated": "2021 Journal of Oral medicine and Pain: Herpes Zoster Accompanying Odontogenic Inflammation（第一作者）",
+    "location": "line:499, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_72_li",
+    "text": "2021 Dental traumatology: Craniofacial and dental injuries associated with stand-up electric scooters (제2저자)",
+    "translated": "2021 Dental traumatology: Craniofacial and dental injuries associated with stand-up electric scooters（第二作者）",
+    "location": "line:500, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_73_p",
+    "text": "투명하고 편리한 교정부터 심미 치료까지, 스마일뷰치과가 당신의 아름다운 미소를 만들어 드립니다.",
+    "translated": "從透明便利的矯正療程到美容牙科治療，SMILEVIEW牙醫診所為您打造完美迷人的笑容。",
+    "location": "line:512, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_74_p",
+    "text": "서울특별시 강남구 봉은사로 107, 15층 (논현동 201 16번지 15층)",
+    "translated": "首爾特別市 江南區 奉恩寺路 107, 15樓（論峴洞 201 16番地 15樓）",
+    "location": "line:532, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_75_text",
+    "text": "대표자: 김한결",
+    "translated": "代表人: 金韓結",
+    "location": "line:539, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_76_text",
+    "text": "사업자번호: 699-29-00572",
+    "translated": "營業登記號: 699-29-00572",
+    "location": "line:540, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_77_span",
+    "text": "평일",
+    "translated": "平日",
+    "location": "line:547, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_78_div",
+    "text": "점심시간 PM 01:00 - PM 02:00",
+    "translated": "午休時間 PM 01:00 - PM 02:00",
+    "location": "line:550, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_79_span",
+    "text": "토요일",
+    "translated": "週六",
+    "location": "line:552, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_80_div",
+    "text": "점심시간 없이 진료",
+    "translated": "無午休持續看診",
+    "location": "line:555, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_81_span",
+    "text": "일요일",
+    "translated": "週日",
+    "location": "line:557, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_82_span",
+    "text": "휴진",
+    "translated": "休診",
+    "location": "line:561, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_83_span",
+    "text": "공휴일",
+    "translated": "國定假日",
+    "location": "line:562, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_84_li",
+    "text": "서울특별시 강남구 봉은사로 107, 15층",
+    "translated": "首爾特別市 江南區 奉恩寺路 107, 15樓",
+    "location": "line:586, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_85_li",
+    "text": "(논현동 201 16번지 15층)",
+    "translated": "（論峴洞 201 16番地 15樓）",
+    "location": "line:587, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_86_li",
+    "text": "대표자 김한결",
+    "translated": "代表人 金韓結",
+    "location": "line:595, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_87_li",
+    "text": "사업자번호 699-29-00572",
+    "translated": "營業登記號 699-29-00572",
+    "location": "line:596, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_88_li",
+    "text": "평일 AM 10:00 - PM 06:30",
+    "translated": "平日 AM 10:00 - PM 06:30",
+    "location": "line:602, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_89_li",
+    "text": "토요일 AM 10:00 - PM 03:00",
+    "translated": "週六 AM 10:00 - PM 03:00",
+    "location": "line:604, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_90_li",
+    "text": "일요일 AM 10:00 - PM 04:00",
+    "translated": "週日 AM 10:00 - PM 04:00",
+    "location": "line:606, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_91_li",
+    "text": "휴진 공휴일",
+    "translated": "休診 國定假日",
+    "location": "line:607, tag:li",
+    "context": "text"
+  }
+]

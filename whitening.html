@@ -1,0 +1,2431 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>치아미백 | 스마일뷰치과의원</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <style>
+    /* ===== LAMINATE PREMIUM DESIGN SYSTEM ===== */
+    :root {
+        --lm-text: #4c4841;
+        --lm-gold: #b18247;
+        --lm-gold-light: rgba(177,130,71,0.15);
+        --lm-white: #fff;
+        --lm-cream: #f7f4ef;
+        --lm-card-bg: #f1f1f1;
+        --lm-footer-bg: #fbfbfb;
+        --lm-dark-overlay: rgba(0,0,0,0.55);
+        --lm-radius: 30px;
+        --lm-serif: 'STIX Two Text', 'Playfair Display', Georgia, serif;
+        --lm-body: 'Pretendard', -apple-system, sans-serif;
+        --lm-max-w: 1200px;
+    }
+
+    .lm-page { background: var(--lm-white); color: var(--lm-text); font-family: var(--lm-body); }
+    .lm-page *, .lm-page *::before, .lm-page *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    .lm-page img { display: block; max-width: 100%; }
+    .lm-inner { max-width: var(--lm-max-w); margin: 0 auto; padding: 0 50px; }
+
+    /* ===== SCROLL ANIMATION ===== */
+    .lm-fade { opacity: 0; transform: translateY(50px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .lm-fade.lm-show { opacity: 1; transform: translateY(0); }
+    .lm-fade-left { opacity: 0; transform: translateX(-60px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .lm-fade-left.lm-show { opacity: 1; transform: translateX(0); }
+    .lm-fade-right { opacity: 0; transform: translateX(60px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .lm-fade-right.lm-show { opacity: 1; transform: translateX(0); }
+    .lm-fade-scale { opacity: 0; transform: scale(0.9); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .lm-fade-scale.lm-show { opacity: 1; transform: scale(1); }
+    .lm-fade-delay-1 { transition-delay: 0.15s; }
+    .lm-fade-delay-2 { transition-delay: 0.3s; }
+    .lm-fade-delay-3 { transition-delay: 0.45s; }
+    .lm-stagger-1 { transition-delay: 0.12s; }
+    .lm-stagger-2 { transition-delay: 0.24s; }
+    .lm-stagger-3 { transition-delay: 0.36s; }
+    .lm-stagger-4 { transition-delay: 0.48s; }
+    .lm-stagger-5 { transition-delay: 0.6s; }
+
+    /* ===== HORIZONTAL SCROLL WRAPPER ===== */
+    .lm-horizontal {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 80px;
+    }
+    .lm-h-wrap {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        will-change: transform;
+    }
+    .lm-h-panel {
+        width: 960px;
+        height: 100vh;
+        flex-shrink: 0;
+        overflow: hidden;
+        position: relative;
+    }
+    /* Definition panel - matches benchmark sec3 width ratio */
+    .lm-h-panel--def {
+        width: 720px;
+    }
+    .lm-h-panel--title {
+        width: 1200px;
+    }
+
+    /* ===== HERO ===== */
+    .lm-hero {
+        position: relative; width: 100%; height: 100%;
+        display: flex; align-items: center; justify-content: center;
+        overflow: hidden;
+        background: linear-gradient(135deg, #c8a87c 0%, #b8956a 40%, #a68358 70%, #937148 100%);
+    }
+    .lm-hero-bg {
+        position: absolute; inset: 0; z-index: 0;
+        background: url('images/migrated/whitening_3.jpg') center 70%/cover no-repeat;
+        opacity: 0.3;
+    }
+    .lm-hero-overlay {
+        position: absolute; inset: 0; z-index: 1;
+        background: linear-gradient(180deg, rgba(180,140,80,0.2) 0%, rgba(100,70,30,0.4) 100%);
+    }
+    .lm-hero-content {
+        position: relative; z-index: 2; text-align: center;
+        display: flex; flex-direction: column; align-items: center; gap: 24px;
+        padding-top: 150px;
+    }
+    .lm-hero-lbx, .lm-hero-rbx {
+        text-align: center;
+    }
+    .lm-hero-lbx span, .lm-hero-rbx span {
+        font-family: var(--lm-serif); font-size: 120px; font-weight: 500;
+        color: var(--lm-white); line-height: 1;
+    }
+    .lm-hero-desc {
+        font-size: 18px; font-weight: 500; color: rgba(255,255,255,0.85);
+        line-height: 1.6; max-width: 600px; letter-spacing: -0.045em;
+    }
+    .lm-hero-desc2 {
+        font-size: 18px; font-weight: 500; color: rgba(255,255,255,0.7);
+        line-height: 1.6; max-width: 550px; margin-top: 55px; letter-spacing: -0.045em;
+    }
+
+    /* Scroll Down Indicator */
+    .lm-scroll-down {
+        position: absolute; bottom: 8%; right: 8%; z-index: 5;
+        width: 90px; height: 90px;
+    }
+    .lm-scroll-circle {
+        width: 100%; height: 100%;
+        animation: lm-rotate 10s linear infinite;
+    }
+    .lm-scroll-circle text {
+        font-family: var(--lm-serif); font-size: 11px; fill: rgba(255,255,255,0.6);
+        letter-spacing: 3px;
+    }
+    .lm-scroll-arrow {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+        color: rgba(255,255,255,0.7); font-size: 20px;
+    }
+    @keyframes lm-rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    /* ===== TITLE BAND ===== */
+    .lm-title-band {
+        position: relative; width: 100%; height: 100%; overflow: hidden;
+        background: url('images/제목을 입력해주세요..jpg') center/cover no-repeat;
+        display: flex; align-items: center; justify-content: center;
+    }
+    .lm-title-band-overlay {
+        position: absolute; inset: 0;
+        background: rgba(50,40,30,0.7);
+    }
+    .lm-title-band-content {
+        position: relative; z-index: 2; text-align: center;
+        padding: 80px 20px;
+    }
+    .lm-title-band h2 {
+        font-family: var(--lm-serif); font-size: 100px; font-weight: 400;
+        color: var(--lm-white); text-transform: uppercase; line-height: 1.2;
+        letter-spacing: normal;
+    }
+    .lm-title-band .lm-kr-sub {
+        font-family: var(--lm-body); font-size: 22px; font-weight: 500;
+        color: rgba(255,255,255,0.8); margin-top: 20px; letter-spacing: -0.045em;
+    }
+    .lm-title-band .lm-badge {
+        display: inline-flex; align-items: center; justify-content: center;
+        padding: 0 30px; height: 40px; border: 0.8px solid rgba(255,255,255,0.5);
+        border-radius: 20px; margin-top: 40px;
+    }
+    .lm-title-band .lm-badge span {
+        font-family: var(--lm-body); font-size: 18px; font-weight: 500;
+        color: var(--lm-white); letter-spacing: -0.81px;
+    }
+
+    /* Marquee */
+    .lm-marquee {
+        position: absolute; bottom: -0.15em; left: 0; width: 100%; z-index: 1;
+        overflow: hidden; white-space: nowrap;
+        font-family: var(--lm-serif); font-size: 200px; font-weight: 600;
+        color: transparent; -webkit-text-stroke: 1px rgba(251,251,251,0.1);
+        letter-spacing: -5px; line-height: 1;
+    }
+    .lm-marquee-track {
+        display: inline-flex; animation: lm-marquee 25s linear infinite;
+    }
+    .lm-marquee-track span { margin: 0 40px; }
+    @keyframes lm-marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* ===== DEFINITION SECTION (sec3 - benchmark match) ===== */
+    .lm-definition {
+        position: relative; width: 100%; height: 100%; overflow: hidden;
+        background: var(--lm-cream);
+        background-size: cover; background-position: center bottom;
+    }
+    .lm-def-scroll-circle {
+        position: absolute; top: 10%; right: 20%;
+        width: 113px; height: 113px; z-index: 5;
+    }
+    .lm-def-scroll-circle .lm-scroll-circle {
+        width: 100%; height: 100%;
+        animation: lm-rotate 6s linear infinite;
+    }
+    .lm-def-scroll-circle .lm-scroll-circle text {
+        font-family: var(--lm-serif); font-size: 11px; fill: var(--lm-text);
+        letter-spacing: 3px; opacity: 0.5;
+    }
+    .lm-def-scroll-circle .lm-def-arrow {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+        color: var(--lm-text); font-size: 22px;
+    }
+    .lm-def-con {
+        position: absolute; top: 20%; left: 70px; right: 25%; bottom: 100px;
+    }
+    .lm-def-tit {}
+    .lm-def-num {
+        font-family: var(--lm-serif); font-size: 18px; font-weight: 400;
+        color: var(--lm-text); display: block;
+    }
+    .lm-def-title {
+        font-family: var(--lm-body); font-size: 50px; font-weight: 600;
+        color: var(--lm-text); letter-spacing: -2.25px;
+        line-height: 1; margin-top: 30px;
+    }
+    .lm-def-body {
+        font-family: var(--lm-body); font-size: 18px; line-height: 32px;
+        color: var(--lm-text); letter-spacing: -0.81px; font-weight: 400;
+        margin-top: 40px;
+    }
+    .lm-def-divider {
+        width: 100%; height: 1px; background: var(--lm-text);
+        margin-top: 40px;
+    }
+    .lm-def-sub {
+        margin-top: 45px;
+    }
+    .lm-def-sub p {
+        display: flex; flex-wrap: nowrap; gap: 10px; align-items: flex-start;
+    }
+    .lm-def-sub b {
+        font-family: var(--lm-body); font-size: 14px; font-weight: 600;
+        color: var(--lm-text); letter-spacing: -0.63px; line-height: 1.75;
+        display: block; position: relative; padding-right: 10px;
+        white-space: nowrap; flex-shrink: 0;
+    }
+    .lm-def-sub b::after {
+        content: '|'; position: absolute; right: 0; top: 0;
+        color: var(--lm-text); font-weight: 300;
+    }
+    .lm-def-sub span {
+        font-family: var(--lm-body); font-size: 14px; font-weight: 400;
+        color: var(--lm-text); letter-spacing: -0.63px; line-height: 1.75;
+        display: block;
+    }
+
+    /* ===== SPECIALITY SECTION (DARK) ===== */
+    .lm-speciality {
+        position: relative; padding: 180px 0; overflow: hidden;
+        background: #1a1714; color: var(--lm-white);
+    }
+    .lm-speciality-bg {
+        position: absolute; inset: 0; z-index: 0;
+        background: radial-gradient(ellipse at 50% 50%, rgba(177,130,71,0.08) 0%, transparent 60%);
+    }
+    .lm-spec-title {
+        font-family: var(--lm-serif); font-size: 100px; font-weight: 400;
+        color: var(--lm-white); text-align: center; margin-bottom: 24px;
+        position: relative; z-index: 1; line-height: 1;
+    }
+    .lm-spec-subtitle {
+        text-align: center; margin-bottom: 80px;
+        position: relative; z-index: 1;
+    }
+    .lm-spec-text {
+        font-family: var(--lm-body); font-size: 20px; font-weight: 400;
+        line-height: 1.7; letter-spacing: -0.045em; color: rgba(255,255,255,0.6);
+        text-align: center;
+    }
+    .lm-spec-text .lm-gold {
+        font-weight: 600; color: var(--lm-gold);
+    }
+    .lm-spec-cards {
+        display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+        position: relative; z-index: 1;
+    }
+    .lm-spec-card {
+        position: relative; background: rgba(255,255,255,0.04);
+        border-radius: 24px; padding: 40px 28px;
+        border: 1px solid rgba(255,255,255,0.08);
+        transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .lm-spec-card:hover {
+        border-color: var(--lm-gold);
+        transform: translateY(-8px);
+        box-shadow: 0 24px 64px rgba(177,130,71,0.15);
+    }
+    .lm-spec-card-icon {
+        width: 56px; height: 56px; border-radius: 50%;
+        background: rgba(177,130,71,0.15);
+        display: flex; align-items: center; justify-content: center;
+        margin-bottom: 24px; font-size: 24px; color: var(--lm-gold);
+        transition: all 0.4s;
+    }
+    .lm-spec-card:hover .lm-spec-card-icon {
+        background: var(--lm-gold); color: var(--lm-white);
+    }
+    .lm-spec-badge {
+        display: inline-flex; align-items: center; justify-content: center;
+        height: 28px; padding: 0 16px; border-radius: 14px;
+        background: rgba(177,130,71,0.2); color: var(--lm-gold);
+        font-family: var(--lm-serif); font-size: 13px; font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .lm-spec-card h3 {
+        font-family: var(--lm-body); font-size: 22px; font-weight: 600;
+        color: var(--lm-white); letter-spacing: -0.045em; margin-bottom: 16px;
+    }
+    .lm-spec-card p {
+        font-size: 15px; font-weight: 400; color: rgba(255,255,255,0.5);
+        line-height: 1.7; letter-spacing: -0.045em;
+    }
+
+    /* ===== CONFIDENCE SECTION ===== */
+    .lm-confidence {
+        padding: 140px 0; background: #1c1915; color: var(--lm-white);
+        position: relative; overflow: hidden;
+    }
+    .lm-confidence::before {
+        content: ''; position: absolute; top: -30%; right: -10%;
+        width: 500px; height: 500px; border-radius: 50%;
+        background: radial-gradient(circle, rgba(177,130,71,0.06) 0%, transparent 70%);
+        pointer-events: none;
+    }
+    .lm-confidence-header {
+        text-align: center; margin-bottom: 72px; position: relative; z-index: 1;
+    }
+    .lm-confidence-badge {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 8px 24px; border-radius: 50px;
+        background: var(--lm-gold-light); color: var(--lm-gold);
+        font-size: 13px; font-weight: 600; letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    .lm-confidence-title {
+        font-family: var(--lm-body); font-size: 42px; font-weight: 700;
+        color: var(--lm-white); letter-spacing: -0.045em; line-height: 1.3;
+    }
+    .lm-confidence-title em {
+        font-style: normal; color: var(--lm-gold);
+    }
+    .lm-confidence-desc {
+        font-size: 17px; color: rgba(255,255,255,0.6); line-height: 1.8;
+        margin-top: 20px; max-width: 600px; margin-left: auto; margin-right: auto;
+        letter-spacing: -0.03em;
+    }
+    .lm-confidence-grid {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+        align-items: start; position: relative; z-index: 1;
+    }
+    .lm-confidence-img-wrap { position: relative; }
+    .lm-confidence-img {
+        border-radius: 24px; overflow: hidden; position: relative;
+        border: 1px solid rgba(255,255,255,0.08);
+    }
+    .lm-confidence-img img {
+        width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block;
+        transition: transform 0.8s cubic-bezier(0.22,1,0.36,1);
+    }
+    .lm-confidence-img:hover img { transform: scale(1.04); }
+    .lm-confidence-float-stat {
+        position: absolute; bottom: -24px; right: -24px;
+        background: linear-gradient(135deg, var(--lm-gold), #c9a06a);
+        border-radius: 20px; padding: 24px 28px;
+        display: flex; flex-direction: column; align-items: center;
+        box-shadow: 0 16px 48px rgba(177,130,71,0.3);
+        z-index: 2;
+    }
+    .lm-confidence-float-num {
+        font-family: var(--lm-serif); font-size: 48px; font-weight: 700;
+        color: var(--lm-white); line-height: 1;
+    }
+    .lm-confidence-float-unit {
+        font-family: var(--lm-serif); font-size: 16px; color: rgba(255,255,255,0.9);
+        letter-spacing: 2px; margin-top: 2px;
+    }
+    .lm-confidence-float-text {
+        font-size: 12px; color: rgba(255,255,255,0.8); margin-top: 8px;
+        letter-spacing: -0.02em;
+    }
+    .lm-confidence-right { display: flex; flex-direction: column; gap: 32px; }
+    .lm-confidence-sub-title {
+        font-size: 15px; font-weight: 600; color: var(--lm-gold);
+        letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;
+    }
+    .lm-target-grid {
+        display: flex; flex-direction: column; gap: 12px;
+    }
+    .lm-target-card {
+        background: rgba(255,255,255,0.04); border-radius: 16px;
+        padding: 24px 20px; border: 1px solid rgba(255,255,255,0.08);
+        display: flex; align-items: flex-start; gap: 14px;
+        transition: all 0.4s cubic-bezier(0.22,1,0.36,1);
+    }
+    .lm-target-card:hover {
+        transform: translateY(-4px); border-color: rgba(177,130,71,0.3);
+        box-shadow: 0 12px 32px rgba(177,130,71,0.1);
+        background: rgba(255,255,255,0.06);
+    }
+    .lm-check-icon {
+        width: 36px; height: 36px; border-radius: 10px;
+        background: linear-gradient(135deg, var(--lm-gold), #c9a06a);
+        display: flex; align-items: center; justify-content: center;
+        font-size: 16px; color: var(--lm-white); flex-shrink: 0;
+    }
+    .lm-target-card span {
+        font-size: 14px; color: rgba(255,255,255,0.75); line-height: 1.6;
+        letter-spacing: -0.02em;
+    }
+    .lm-target-card-note {
+        font-size: 12px; color: rgba(255,255,255,0.35); line-height: 1.5;
+        margin-top: 4px; display: block;
+    }
+    .lm-target-card--wide { }
+    .lm-product-info {
+        display: flex; align-items: center; gap: 16px;
+        padding: 24px 28px; border-radius: 16px;
+        background: rgba(177,130,71,0.08); border: 1px solid rgba(177,130,71,0.2);
+    }
+    .lm-product-info > i {
+        font-size: 28px; color: var(--lm-gold); flex-shrink: 0;
+    }
+    .lm-product-info-label {
+        font-size: 12px; color: rgba(255,255,255,0.4); letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+    .lm-product-info-val {
+        font-size: 16px; font-weight: 600; color: var(--lm-white);
+        letter-spacing: -0.02em;
+    }
+    .lm-product-info-val span { font-weight: 400; color: rgba(255,255,255,0.5); }
+
+    /* ===== DISCOLORATION SECTION - INTERACTIVE SLIDER ===== */
+    .lm-discolor {
+        padding: 140px 0;
+        background: #1a1714;
+        text-align: center;
+        color: var(--lm-white);
+        position: relative;
+        overflow: hidden;
+    }
+    .lm-discolor::before {
+        content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        background: radial-gradient(ellipse at 50% 30%, rgba(177,130,71,0.1) 0%, transparent 60%);
+        pointer-events: none;
+    }
+    .lm-discolor .lm-inner { position: relative; z-index: 1; }
+    .lm-discolor-label {
+        display: inline-block; padding: 6px 20px; border-radius: 50px;
+        background: rgba(177,130,71,0.2); color: var(--lm-gold);
+        font-size: 13px; font-weight: 600; letter-spacing: 1px; margin-bottom: 16px;
+    }
+    .lm-discolor-title {
+        font-family: var(--lm-body); font-size: 36px; font-weight: 700;
+        color: var(--lm-white); letter-spacing: -0.045em; margin-bottom: 48px;
+    }
+    /* Tooth Visual */
+    .lm-shade-visual {
+        max-width: 500px; margin: 0 auto 48px; position: relative;
+    }
+    .lm-shade-tooth-wrap {
+        position: relative; width: 440px; max-width: 100%; margin: 0 auto 20px;
+        perspective: 800px;
+    }
+    .lm-shade-glow {
+        position: absolute; inset: -30px; border-radius: 50%;
+        background: radial-gradient(circle, rgba(177,130,71,0.08) 0%, transparent 70%);
+        transition: opacity 0.5s;
+        pointer-events: none; z-index: 0;
+    }
+    /* ===== MOLAR TOOTH IMAGE ===== */
+    .lm-tooth-scene {
+        position: relative;
+        width: 320px; max-width: 80%; margin: 0 auto;
+        padding: 10px 0 20px;
+    }
+    .lm-tooth-img {
+        width: 100%; display: block;
+        filter: brightness(0.72) saturate(1.5) sepia(0.55) hue-rotate(-5deg);
+        transition: filter 0.5s ease;
+    }
+    @media (max-width: 480px) {
+        .lm-tooth-scene { width: 240px; }
+    }
+    .lm-shade-stage-text {
+        font-size: 15px; color: rgba(255,255,255,0.5); margin-bottom: 8px;
+        min-height: 24px; transition: color 0.3s;
+    }
+    .lm-shade-stage-name {
+        font-family: var(--lm-body); font-size: 28px; font-weight: 700;
+        color: var(--lm-white); letter-spacing: -0.03em;
+        margin-bottom: 8px; min-height: 40px;
+    }
+    .lm-shade-stage-desc {
+        font-size: 14px; color: rgba(255,255,255,0.45); line-height: 1.6;
+        min-height: 48px; max-width: 400px; margin: 0 auto;
+    }
+    /* Slider */
+    .lm-shade-slider-wrap {
+        max-width: 500px; margin: 40px auto 0; padding: 0 10px;
+    }
+    .lm-shade-markers {
+        display: flex; justify-content: space-between; margin-bottom: 16px;
+        position: relative;
+    }
+    .lm-shade-marker {
+        font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.3);
+        letter-spacing: -0.02em; cursor: pointer;
+        padding: 6px 14px; border-radius: 20px; border: 1px solid transparent;
+        transition: all 0.3s; user-select: none;
+    }
+    .lm-shade-marker.active {
+        color: var(--lm-gold); border-color: rgba(177,130,71,0.4);
+        background: rgba(177,130,71,0.12);
+    }
+    .lm-shade-range-wrap {
+        position: relative; height: 48px; display: flex; align-items: center;
+    }
+    .lm-shade-range-track {
+        position: absolute; left: 0; right: 0; height: 6px; border-radius: 3px;
+        background: rgba(255,255,255,0.08);
+    }
+    .lm-shade-range-fill {
+        position: absolute; left: 0; height: 6px; border-radius: 3px;
+        background: linear-gradient(90deg, #8B6914, #d4a54a, #F5F0E8);
+        transition: width 0.3s ease; pointer-events: none;
+    }
+    .lm-shade-range {
+        -webkit-appearance: none; appearance: none;
+        width: 100%; height: 6px; background: transparent;
+        position: relative; z-index: 2; cursor: pointer;
+    }
+    .lm-shade-range::-webkit-slider-thumb {
+        -webkit-appearance: none; appearance: none;
+        width: 28px; height: 28px; border-radius: 50%;
+        background: var(--lm-gold);
+        border: 3px solid var(--lm-white);
+        box-shadow: 0 2px 12px rgba(177,130,71,0.4), 0 0 20px rgba(177,130,71,0.15);
+        cursor: grab; transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .lm-shade-range::-webkit-slider-thumb:hover {
+        transform: scale(1.15);
+        box-shadow: 0 2px 16px rgba(177,130,71,0.6), 0 0 30px rgba(177,130,71,0.2);
+    }
+    .lm-shade-range::-webkit-slider-thumb:active { cursor: grabbing; transform: scale(1.1); }
+    .lm-shade-range::-moz-range-thumb {
+        width: 28px; height: 28px; border-radius: 50%;
+        background: var(--lm-gold); border: 3px solid var(--lm-white);
+        box-shadow: 0 2px 12px rgba(177,130,71,0.4);
+        cursor: grab;
+    }
+    .lm-shade-range::-moz-range-track { background: transparent; border: none; }
+    .lm-shade-note {
+        display: inline-flex; align-items: center; gap: 10px;
+        padding: 14px 24px; border-radius: 14px;
+        background: rgba(255,180,60,0.08); border: 1px solid rgba(255,180,60,0.2);
+        margin-top: 40px;
+    }
+    .lm-shade-note-icon {
+        width: 32px; height: 32px; border-radius: 8px;
+        background: rgba(255,180,60,0.15);
+        display: flex; align-items: center; justify-content: center;
+        font-size: 16px; color: #f0b040; flex-shrink: 0;
+    }
+    .lm-shade-note-text {
+        font-size: 13px; color: rgba(255,255,255,0.5);
+        line-height: 1.5; text-align: left;
+    }
+
+    /* ===== WHITENING PROCESS SECTION - VERTICAL TIMELINE ===== */
+    .lm-wh-process {
+        padding: 140px 0;
+        background: #1c1915;
+        color: var(--lm-white);
+    }
+    .lm-wh-process-header {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    .lm-wh-process-title {
+        font-family: var(--lm-body);
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--lm-white);
+        line-height: 1.35;
+        letter-spacing: -0.04em;
+    }
+    .lm-wh-process-title span {
+        color: var(--lm-gold);
+    }
+    .lm-wh-timeline {
+        position: relative;
+        max-width: 900px;
+        margin: 0 auto;
+        padding-left: 80px;
+    }
+    .lm-wh-timeline::before {
+        content: '';
+        position: absolute;
+        left: 35px;
+        top: 0;
+        bottom: 80px;
+        width: 2px;
+        background: linear-gradient(180deg, var(--lm-gold), rgba(177,130,71,0.15));
+    }
+    .lm-wh-tl-step {
+        position: relative;
+        margin-bottom: 40px;
+    }
+    .lm-wh-tl-num {
+        position: absolute;
+        left: -80px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: var(--lm-gold);
+        color: var(--lm-white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--lm-serif);
+        font-size: 20px;
+        font-weight: 500;
+        z-index: 2;
+        box-shadow: 0 4px 20px rgba(177,130,71,0.35);
+    }
+    .lm-wh-tl-big {
+        font-family: var(--lm-serif);
+        font-size: 60px;
+        font-weight: 400;
+        color: var(--lm-gold);
+        opacity: 0.1;
+        position: absolute;
+        left: -130px;
+        top: 50%;
+        transform: translateY(-50%);
+        line-height: 1;
+        z-index: 1;
+    }
+    .lm-wh-tl-card {
+        background: rgba(255,255,255,0.04);
+        border-radius: 24px;
+        overflow: hidden;
+        border: 1px solid rgba(255,255,255,0.08);
+        display: flex;
+        transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .lm-wh-tl-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 24px 64px rgba(177,130,71,0.15);
+        border-color: var(--lm-gold);
+    }
+    .lm-wh-tl-card-img {
+        width: 220px;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+    .lm-wh-tl-card-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s;
+    }
+    .lm-wh-tl-card:hover .lm-wh-tl-card-img img {
+        transform: scale(1.05);
+    }
+    .lm-wh-tl-card-body {
+        padding: 28px 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .lm-wh-tl-step-label {
+        display: inline-flex;
+        align-items: center;
+        padding: 4px 14px;
+        border-radius: 20px;
+        background: var(--lm-gold);
+        color: var(--lm-white);
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+        width: fit-content;
+    }
+    .lm-wh-tl-card h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--lm-white);
+        letter-spacing: -0.03em;
+        margin-bottom: 10px;
+    }
+    .lm-wh-tl-card-desc {
+        font-size: 14px;
+        color: rgba(255,255,255,0.5);
+        line-height: 1.7;
+        letter-spacing: -0.02em;
+    }
+    .lm-wh-step-repeat {
+        margin-top: 8px;
+        margin-left: 0px;
+        background: linear-gradient(135deg, rgba(177,130,71,0.12) 0%, rgba(177,130,71,0.05) 100%);
+        border: 1px solid rgba(177,130,71,0.25);
+        border-radius: 20px;
+        padding: 24px 32px;
+        text-align: center;
+        font-size: 16px;
+        color: rgba(255,255,255,0.7);
+        letter-spacing: -0.03em;
+    }
+    .lm-wh-step-repeat strong {
+        color: var(--lm-gold);
+        font-weight: 700;
+    }
+
+    /* ===== B&A BEFORE AFTER ===== */
+    .lm-ba {
+        padding: 120px 0;
+        background: #252017;
+        color: var(--lm-white);
+        position: relative;
+        overflow: hidden;
+    }
+    .lm-ba::before {
+        content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        background: radial-gradient(ellipse at 30% 50%, rgba(177,130,71,0.06) 0%, transparent 60%);
+        pointer-events: none;
+    }
+    .lm-ba .lm-inner { position: relative; z-index: 1; }
+    .lm-ba-header { text-align: center; margin-bottom: 48px; }
+    .lm-ba-label {
+        display: inline-block; padding: 6px 20px; border-radius: 50px;
+        background: rgba(177,130,71,0.2); color: var(--lm-gold);
+        font-size: 13px; font-weight: 600; letter-spacing: 1px; margin-bottom: 16px;
+    }
+    .lm-ba-title {
+        font-family: var(--lm-body); font-size: 36px; font-weight: 700;
+        color: var(--lm-white); letter-spacing: -0.045em;
+    }
+    .lm-ba-carousel {
+        max-width: 100%; margin: 0 auto; position: relative; overflow: hidden;
+        border-radius: 20px; padding: 0 60px;
+    }
+    .lm-ba-track { overflow: hidden; border-radius: 16px; }
+    .lm-ba-slides {
+        display: flex; gap: 16px;
+        transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .lm-ba-slide {
+        flex: 0 0 calc(25% - 12px); min-width: calc(25% - 12px);
+        border-radius: 16px; overflow: hidden;
+        border: 1px solid rgba(255,255,255,0.08);
+        transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .lm-ba-slide:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 32px rgba(177,130,71,0.15);
+    }
+    .lm-ba-slide img {
+        width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block;
+    }
+    .lm-ba-nav {
+        display: flex; align-items: center; justify-content: center; gap: 24px; margin-top: 32px;
+    }
+    .lm-ba-arrow {
+        width: 48px; height: 48px; border-radius: 50%;
+        background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+        color: var(--lm-gold); font-size: 20px;
+        display: flex; align-items: center; justify-content: center;
+        cursor: pointer; transition: all 0.3s;
+    }
+    .lm-ba-arrow:hover { background: var(--lm-gold); color: var(--lm-white); }
+    .lm-ba-counter-nav {
+        font-family: var(--lm-serif); font-size: 16px; color: rgba(255,255,255,0.5);
+        letter-spacing: 2px;
+    }
+    .lm-ba-counter-nav strong { color: var(--lm-gold); font-size: 20px; }
+
+    /* ===== FOOTER ===== */
+    .lm-footer {
+        background: var(--lm-footer-bg); border-top: 0.8px solid #afafaf;
+        padding: 60px 0 40px; text-align: center;
+    }
+    .lm-footer-logo {
+        font-family: var(--lm-serif); font-size: 24px; font-weight: 500;
+        color: var(--lm-text); letter-spacing: 2px; margin-bottom: 24px;
+    }
+    .lm-footer-link {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 10px 24px; border: 1px solid var(--lm-text); border-radius: 20px;
+        text-decoration: none; color: var(--lm-text); font-size: 14px;
+        margin-bottom: 30px; transition: 0.3s;
+    }
+    .lm-footer-link:hover { background: var(--lm-text); color: var(--lm-white); }
+    .lm-footer-info {
+        font-size: 14px; color: rgba(76,72,65,0.6); line-height: 1.8;
+    }
+    .lm-footer-info span { margin: 0 8px; }
+    .lm-footer-copy {
+        margin-top: 24px; font-size: 13px; color: rgba(76,72,65,0.4);
+    }
+
+    /* ===== SECTION LABEL & HEADING (shared) ===== */
+    .lm-section-label { display: inline-block; padding: 6px 20px; border-radius: 50px; background: var(--lm-gold-light); color: var(--lm-gold); font-size: 13px; font-weight: 600; letter-spacing: 1px; margin-bottom: 16px; }
+    .lm-section-h2 { font-family: var(--lm-body); font-size: 36px; font-weight: 700; color: var(--lm-text); letter-spacing: -0.045em; }
+
+    /* ===== PROCEDURE INFO - CARD GRID ===== */
+    .lm-info-section {
+        padding: 0 0 120px; background: #201d17;
+        position: relative; color: var(--lm-white);
+        overflow: hidden;
+    }
+    .lm-info-section::before {
+        content: ''; position: absolute; inset: 0;
+        background: radial-gradient(circle at 50% 0%, rgba(177,130,71,0.06) 0%, transparent 50%);
+        pointer-events: none;
+    }
+
+    /* -- Hero image banner -- */
+    .lm-info-hero {
+        position: relative;
+        width: 100%;
+        height: 520px;
+        overflow: hidden;
+        margin-bottom: 72px;
+    }
+    .lm-info-hero-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        will-change: transform;
+    }
+    .lm-info-hero:hover .lm-info-hero-img {
+        transform: scale(1.04);
+    }
+    .lm-info-hero-overlay {
+        position: absolute;
+        inset: 0;
+        background:
+            linear-gradient(180deg, rgba(32,29,23,0.25) 0%, rgba(32,29,23,0.7) 60%, #201d17 100%),
+            linear-gradient(90deg, rgba(32,29,23,0.5) 0%, transparent 50%);
+        pointer-events: none;
+    }
+    .lm-info-hero-content {
+        position: absolute;
+        bottom: 56px;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        padding: 0 48px;
+    }
+    .lm-info-hero-content .lm-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .lm-info-hero-label {
+        display: inline-block;
+        padding: 6px 20px;
+        border-radius: 50px;
+        background: rgba(177,130,71,0.2);
+        border: 1px solid rgba(177,130,71,0.35);
+        color: var(--lm-gold);
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    }
+    .lm-info-hero-title {
+        font-family: var(--lm-body);
+        font-size: 44px;
+        font-weight: 700;
+        color: var(--lm-white);
+        letter-spacing: -0.045em;
+        line-height: 1.2;
+    }
+    .lm-info-hero-title span {
+        color: var(--lm-gold);
+    }
+    .lm-info-hero-sub {
+        font-family: var(--lm-serif);
+        font-size: 15px;
+        color: rgba(255,255,255,0.55);
+        margin-top: 14px;
+        letter-spacing: 0.03em;
+    }
+    .lm-info-hero-line {
+        width: 48px;
+        height: 2px;
+        background: linear-gradient(90deg, var(--lm-gold), transparent);
+        margin-top: 20px;
+        border: none;
+    }
+
+    /* -- Stat cards -- */
+    .lm-info-cards {
+        display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+        position: relative; z-index: 1;
+    }
+    .lm-info-card {
+        background: rgba(255,255,255,0.04); border-radius: 24px;
+        padding: 40px 24px; text-align: center;
+        border: 1px solid rgba(255,255,255,0.08);
+        transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+    .lm-info-card:hover {
+        transform: scale(1.03); box-shadow: 0 24px 64px rgba(177,130,71,0.15);
+        border-color: var(--lm-gold);
+        background: rgba(255,255,255,0.07);
+    }
+    .lm-info-card-icon {
+        width: 72px; height: 72px; border-radius: 50%;
+        background: linear-gradient(135deg, var(--lm-gold), #c9a06a);
+        display: flex; align-items: center; justify-content: center;
+        margin: 0 auto 24px; font-size: 28px; color: var(--lm-white);
+        transition: transform 0.4s;
+        box-shadow: 0 8px 32px rgba(177,130,71,0.25);
+    }
+    .lm-info-card:hover .lm-info-card-icon { transform: scale(1.08) rotate(5deg); }
+    .lm-info-card-label {
+        font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 12px;
+        letter-spacing: 0.5px; text-transform: uppercase;
+    }
+    .lm-info-card-val {
+        font-size: 48px; font-weight: 700; color: var(--lm-gold);
+        letter-spacing: -0.03em; line-height: 1.1;
+    }
+    .lm-info-card-val small {
+        font-size: 20px; font-weight: 500; color: var(--lm-white);
+    }
+    .lm-info-card-desc {
+        font-size: 13px;
+        color: rgba(255,255,255,0.4);
+        line-height: 1.6;
+        margin-top: 12px;
+        letter-spacing: -0.02em;
+    }
+
+    /* -- Detail cards -- */
+    .lm-info-detail-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 48px;
+        position: relative;
+        z-index: 1;
+    }
+    .lm-info-detail-card {
+        background: rgba(255,255,255,0.04);
+        border-radius: 20px;
+        padding: 32px 28px;
+        border: 1px solid rgba(255,255,255,0.08);
+        transition: all 0.5s cubic-bezier(0.22,1,0.36,1);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    }
+    .lm-info-detail-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 40px rgba(177,130,71,0.12);
+        border-color: rgba(177,130,71,0.3);
+        background: rgba(255,255,255,0.06);
+    }
+    .lm-info-detail-num {
+        font-family: var(--lm-serif);
+        font-size: 14px;
+        color: var(--lm-gold);
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+    .lm-info-detail-card h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--lm-white);
+        letter-spacing: -0.03em;
+        margin-bottom: 10px;
+    }
+    .lm-info-detail-card p {
+        font-size: 14px;
+        color: rgba(255,255,255,0.5);
+        line-height: 1.7;
+        letter-spacing: -0.02em;
+    }
+    .lm-info-chips {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 12px;
+    }
+    .lm-info-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 14px;
+        border-radius: 20px;
+        background: var(--lm-gold-light);
+        color: var(--lm-gold);
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    /* ===== RECOMMENDATION SECTION ===== */
+    .lm-recommend {
+        padding: 120px 0;
+        background: #1e1b16;
+        position: relative;
+        overflow: hidden;
+        color: var(--lm-white);
+    }
+    .lm-recommend::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -20%;
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(177,130,71,0.08) 0%, transparent 70%);
+        pointer-events: none;
+    }
+    .lm-rec-header {
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    .lm-rec-label {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--lm-gold);
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    .lm-rec-title {
+        font-family: var(--lm-body);
+        font-size: 38px;
+        font-weight: 700;
+        color: var(--lm-white);
+        line-height: 1.35;
+        letter-spacing: -0.04em;
+    }
+    .lm-rec-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+    .lm-rec-card {
+        background: rgba(255,255,255,0.04);
+        border-radius: 24px;
+        padding: 40px 32px;
+        border: 1px solid rgba(255,255,255,0.08);
+        transition: all 0.5s cubic-bezier(0.22,1,0.36,1);
+        position: relative;
+        overflow: hidden;
+    }
+    .lm-rec-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 24px 64px rgba(0,0,0,0.1);
+        background: var(--lm-gold);
+    }
+    .lm-rec-card:hover h3,
+    .lm-rec-card:hover p {
+        color: var(--lm-white);
+    }
+    .lm-rec-card-num {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        font-family: var(--lm-serif);
+        font-size: 48px;
+        font-weight: 400;
+        color: rgba(177,130,71,0.15);
+        line-height: 1;
+        transition: color 0.4s;
+    }
+    .lm-rec-card:hover .lm-rec-card-num {
+        color: rgba(255,255,255,0.15);
+    }
+    .lm-rec-card-check {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: var(--lm-gold);
+        color: var(--lm-white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        transition: background 0.4s;
+    }
+    .lm-rec-card:hover .lm-rec-card-check {
+        background: rgba(255,255,255,0.25);
+    }
+    .lm-rec-card-icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, rgba(177,130,71,0.15), rgba(177,130,71,0.05));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+        font-size: 28px;
+        color: var(--lm-gold);
+        transition: all 0.4s;
+    }
+    .lm-rec-card:hover .lm-rec-card-icon {
+        background: rgba(255,255,255,0.2);
+    }
+    .lm-rec-card:hover .lm-rec-card-icon i {
+        color: var(--lm-white);
+    }
+    .lm-rec-card h3 {
+        font-family: var(--lm-body);
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--lm-white);
+        margin-bottom: 12px;
+        letter-spacing: -0.03em;
+        transition: color 0.4s;
+    }
+    .lm-rec-card p {
+        font-size: 15px;
+        line-height: 1.7;
+        color: rgba(255,255,255,0.5);
+        letter-spacing: -0.02em;
+        transition: color 0.4s;
+    }
+
+    /* ===== FAQ SECTION - MODERN DARK ===== */
+    .lm-faq-section {
+        padding: 120px 0;
+        background: #1a1714;
+        color: var(--lm-white);
+        position: relative;
+    }
+    .lm-faq-section::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 60%;
+        height: 60%;
+        background: radial-gradient(ellipse at 80% 80%, rgba(177,130,71,0.06) 0%, transparent 60%);
+        pointer-events: none;
+    }
+    .lm-faq-layout {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 60px;
+        align-items: start;
+    }
+    .lm-faq-left {
+        position: sticky;
+        top: 120px;
+    }
+    .lm-faq-deco {
+        font-family: var(--lm-serif);
+        font-size: 120px;
+        font-weight: 400;
+        color: var(--lm-gold);
+        opacity: 0.2;
+        line-height: 1;
+        margin-bottom: 24px;
+    }
+    .lm-faq-left-text {
+        font-size: 16px;
+        color: rgba(255,255,255,0.4);
+        line-height: 1.8;
+        letter-spacing: -0.045em;
+    }
+    .lm-faq-list {
+        display: flex; flex-direction: column; gap: 0;
+    }
+    .lm-faq-divider {
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(177,130,71,0.15), transparent);
+    }
+    .lm-faq-item {
+        background: rgba(255,255,255,0.03);
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid rgba(255,255,255,0.06);
+        border-left: 3px solid transparent;
+        margin-bottom: 12px;
+        transition: all 0.4s;
+    }
+    .lm-faq-item:hover {
+        border-color: rgba(177,130,71,0.3);
+        border-left-color: rgba(177,130,71,0.3);
+        box-shadow: 0 4px 20px rgba(177,130,71,0.08);
+    }
+    .lm-faq-item.lm-faq-active {
+        border-left-color: var(--lm-gold);
+        background: rgba(177,130,71,0.05);
+    }
+    .lm-faq-q {
+        display: flex; align-items: center; justify-content: space-between;
+        width: 100%; padding: 24px 28px; border: none; background: none;
+        cursor: pointer; font-family: var(--lm-body); font-size: 17px;
+        font-weight: 600; color: var(--lm-white); letter-spacing: -0.045em;
+        text-align: left; gap: 12px;
+    }
+    .lm-faq-q .lm-faq-prefix {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 32px; height: 32px; border-radius: 50%;
+        background: rgba(177,130,71,0.15);
+        font-family: var(--lm-serif); font-size: 16px; font-weight: 600;
+        color: var(--lm-gold); flex-shrink: 0; margin-right: 8px;
+    }
+    .lm-faq-q i { font-size: 18px; color: rgba(255,255,255,0.4); transition: transform 0.3s, color 0.3s; flex-shrink: 0; }
+    .lm-faq-q.active i { transform: rotate(180deg); color: var(--lm-gold); }
+    .lm-faq-a {
+        max-height: 0; overflow: hidden; padding: 0 28px;
+        font-size: 15px; color: rgba(255,255,255,0.55);
+        line-height: 1.7; letter-spacing: -0.045em;
+        background: rgba(177,130,71,0.03);
+        transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+    .lm-faq-a.lm-faq-a-open {
+        max-height: 300px; padding: 0 28px 24px;
+    }
+    .lm-faq-a .lm-faq-a-prefix {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 28px; height: 28px; border-radius: 50%;
+        background: var(--lm-gold); color: var(--lm-white);
+        font-family: var(--lm-serif); font-size: 14px; font-weight: 600;
+        margin-right: 10px; flex-shrink: 0; vertical-align: middle;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+        .lm-horizontal { margin-top: 80px; }
+        .lm-h-wrap { display: flex; flex-direction: column; flex-wrap: nowrap; }
+        .lm-h-panel { width: 100%; height: auto; min-height: 100vh; }
+        .lm-h-panel--def { width: 100%; min-height: auto; }
+        .lm-definition { height: auto; padding: 80px 24px; display: block; position: relative; }
+        .lm-def-con { position: relative; top: auto; left: auto; right: auto; bottom: auto; }
+        .lm-def-scroll-circle { display: none; }
+        .lm-hero-lbx span, .lm-hero-rbx span { font-size: 80px; }
+        .lm-title-band h2 { font-size: 56px; }
+        .lm-spec-title { font-size: 70px; }
+        .lm-spec-cards { grid-template-columns: repeat(2, 1fr); }
+        .lm-spec-text { font-size: 18px; }
+        .lm-definition::before { font-size: 120px; }
+        .lm-info-hero { height: 400px; margin-bottom: 56px; }
+        .lm-info-hero-title { font-size: 36px; }
+        .lm-info-hero-content { bottom: 40px; padding: 0 32px; }
+        .lm-info-cards { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .lm-info-detail-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+        .lm-ba-slide img { aspect-ratio: 3/4; }
+        .lm-confidence-grid { grid-template-columns: 1fr; gap: 48px; }
+        .lm-confidence-title { font-size: 36px; }
+        .lm-confidence-float-stat { bottom: -16px; right: -16px; padding: 20px 24px; }
+        .lm-wh-timeline { padding-left: 70px; }
+        .lm-wh-tl-big { display: none; }
+        .lm-wh-tl-num { left: -70px; width: 48px; height: 48px; font-size: 18px; }
+        .lm-wh-tl-card { flex-direction: column; }
+        .lm-wh-tl-card-img { width: 100%; height: 180px; }
+        .lm-rec-cards { grid-template-columns: repeat(2, 1fr); }
+        .lm-faq-layout { grid-template-columns: 1fr; gap: 30px; }
+        .lm-faq-left { position: relative; top: auto; }
+    }
+    @media (max-width: 768px) {
+        .lm-h-panel { min-height: auto; }
+        .lm-h-panel--title { width: 100%; }
+        .lm-inner { padding: 0 24px; }
+        .lm-hero-lbx span, .lm-hero-rbx span { font-size: 60px; }
+        .lm-hero-desc { font-size: 15px; }
+        .lm-scroll-down { width: 70px; height: 70px; bottom: 5%; right: 5%; }
+        .lm-title-band h2 { font-size: 36px; }
+        .lm-title-band .lm-kr-sub { font-size: 18px; }
+        .lm-marquee { font-size: 80px; }
+        .lm-definition::before { font-size: 80px; }
+        .lm-def-title { font-size: 28px; }
+        .lm-speciality { padding: 100px 0; }
+        .lm-spec-title { font-size: 48px; }
+        .lm-spec-text { font-size: 16px; }
+        .lm-spec-cards { grid-template-columns: 1fr; }
+        .lm-spec-card { padding: 28px 24px; }
+        .lm-info-hero { height: 320px; margin-bottom: 40px; }
+        .lm-info-hero-title { font-size: 28px; }
+        .lm-info-hero-sub { font-size: 13px; }
+        .lm-info-hero-content { bottom: 28px; padding: 0 24px; }
+        .lm-info-hero-label { font-size: 11px; padding: 5px 14px; }
+        .lm-info-cards { grid-template-columns: 1fr 1fr; gap: 16px; }
+        .lm-info-detail-grid { grid-template-columns: 1fr; gap: 14px; }
+        .lm-info-card-val { font-size: 32px; }
+        .lm-info-card { padding: 28px 16px; }
+        .lm-info-section { padding: 0 0 80px; }
+        .lm-section-h2 { font-size: 28px; }
+        .lm-confidence { padding: 80px 0; }
+        .lm-confidence-title { font-size: 28px; }
+        .lm-confidence-desc { font-size: 15px; }
+        .lm-target-grid { grid-template-columns: 1fr; }
+        .lm-target-card--wide { grid-column: span 1; }
+        .lm-confidence-float-stat { bottom: -12px; right: -12px; padding: 16px 20px; }
+        .lm-confidence-float-num { font-size: 36px; }
+        .lm-discolor-title { font-size: 28px; }
+        .lm-shade-tooth-wrap { width: 280px; height: 300px; }
+        .lm-shade-stage-name { font-size: 22px; }
+        .lm-ba { padding: 80px 0; }
+        .lm-ba-title { font-size: 28px; }
+        .lm-ba-carousel { padding: 0 40px; }
+        .lm-ba-slide { flex: 0 0 calc(50% - 8px); min-width: calc(50% - 8px); }
+        .lm-wh-timeline { padding-left: 60px; }
+        .lm-wh-timeline::before { left: 24px; }
+        .lm-wh-tl-num { left: -60px; width: 44px; height: 44px; font-size: 16px; }
+        .lm-wh-process-title { font-size: 28px; }
+        .lm-discolor, .lm-wh-process { padding: 80px 0; }
+        .lm-rec-title { font-size: 26px; }
+        .lm-rec-cards { grid-template-columns: 1fr; }
+        .lm-recommend { padding: 80px 0; }
+        .lm-faq-deco { font-size: 60px; }
+        .lm-faq-q { font-size: 15px; padding: 20px 20px; }
+        .lm-faq-item { border-radius: 16px; }
+        .lm-faq-section { padding: 80px 0; }
+    }
+    @media (max-width: 480px) {
+        .lm-inner { padding: 0 16px; }
+        .lm-hero-lbx span, .lm-hero-rbx span { font-size: 42px; }
+        .lm-hero-desc { font-size: 14px; max-width: 100%; }
+        .lm-hero-desc2 { font-size: 14px; margin-top: 30px; }
+        .lm-hero-content { padding-top: 100px; gap: 16px; }
+        .lm-scroll-down { display: none; }
+        .lm-title-band h2 { font-size: 28px; }
+        .lm-title-band .lm-kr-sub { font-size: 15px; }
+        .lm-title-band .lm-badge { padding: 0 20px; height: 34px; }
+        .lm-title-band .lm-badge span { font-size: 14px; }
+        .lm-marquee { font-size: 60px; }
+        .lm-def-title { font-size: 22px; }
+        .lm-def-body { font-size: 15px; line-height: 1.7; }
+        .lm-speciality { padding: 60px 0; }
+        .lm-spec-title { font-size: 36px; }
+        .lm-spec-text { font-size: 14px; }
+        .lm-spec-subtitle { margin-bottom: 40px; }
+        .lm-spec-card { padding: 24px 20px; }
+        .lm-spec-card h3 { font-size: 18px; }
+        .lm-spec-card p { font-size: 13px; }
+        .lm-confidence { padding: 60px 0; }
+        .lm-confidence-title { font-size: 24px; }
+        .lm-confidence-desc { font-size: 14px; }
+        .lm-confidence-header { margin-bottom: 40px; }
+        .lm-confidence-float-stat { bottom: -8px; right: -8px; padding: 14px 16px; border-radius: 14px; }
+        .lm-confidence-float-num { font-size: 28px; }
+        .lm-confidence-float-unit { font-size: 12px; }
+        .lm-confidence-float-text { font-size: 10px; }
+        .lm-target-card { padding: 18px 16px; }
+        .lm-target-card span { font-size: 13px; }
+        .lm-product-info { padding: 18px 20px; }
+        .lm-product-info-val { font-size: 14px; }
+        .lm-discolor { padding: 60px 0; }
+        .lm-discolor-title { font-size: 22px; }
+        .lm-shade-tooth-wrap { width: 240px; }
+        .lm-shade-stage-name { font-size: 20px; }
+        .lm-shade-stage-desc { font-size: 13px; }
+        .lm-shade-marker { font-size: 10px; padding: 4px 10px; }
+        .lm-shade-note { padding: 12px 16px; margin-top: 24px; }
+        .lm-shade-note-text { font-size: 12px; }
+        .lm-wh-process { padding: 60px 0; }
+        .lm-wh-process-header { margin-bottom: 48px; }
+        .lm-wh-process-title { font-size: 22px; }
+        .lm-wh-timeline { padding-left: 50px; }
+        .lm-wh-timeline::before { left: 18px; }
+        .lm-wh-tl-num { left: -50px; width: 38px; height: 38px; font-size: 14px; }
+        .lm-wh-tl-card-body { padding: 20px; }
+        .lm-wh-tl-card h3 { font-size: 17px; }
+        .lm-wh-tl-card-desc { font-size: 13px; }
+        .lm-wh-tl-card-img { height: 150px; }
+        .lm-wh-step-repeat { padding: 18px 20px; font-size: 14px; }
+        .lm-ba { padding: 60px 0; }
+        .lm-ba-title { font-size: 24px; }
+        .lm-ba-carousel { padding: 0 20px; }
+        .lm-ba-slide { flex: 0 0 100%; min-width: 100%; }
+        .lm-ba-arrow { width: 40px; height: 40px; font-size: 16px; }
+        .lm-info-hero { height: 240px; margin-bottom: 28px; }
+        .lm-info-hero-title { font-size: 22px; }
+        .lm-info-hero-content { bottom: 20px; padding: 0 16px; }
+        .lm-info-hero-label { font-size: 10px; padding: 4px 12px; }
+        .lm-info-hero-sub { font-size: 12px; }
+        .lm-info-section { padding: 0 0 60px; }
+        .lm-info-cards { grid-template-columns: 1fr 1fr; gap: 12px; }
+        .lm-info-card { padding: 24px 14px; }
+        .lm-info-card-icon { width: 56px; height: 56px; font-size: 22px; }
+        .lm-info-card-val { font-size: 28px; }
+        .lm-info-card-val small { font-size: 16px; }
+        .lm-info-card-label { font-size: 11px; }
+        .lm-info-card-desc { font-size: 12px; }
+        .lm-info-detail-grid { grid-template-columns: 1fr; gap: 12px; }
+        .lm-info-detail-card { padding: 24px 20px; }
+        .lm-info-detail-card h4 { font-size: 16px; }
+        .lm-info-detail-card p { font-size: 13px; }
+        .lm-recommend { padding: 60px 0; }
+        .lm-rec-title { font-size: 22px; }
+        .lm-rec-card { padding: 28px 20px; }
+        .lm-rec-card h3 { font-size: 18px; }
+        .lm-rec-card p { font-size: 14px; }
+        .lm-faq-section { padding: 60px 0; }
+        .lm-faq-deco { font-size: 40px; }
+        .lm-faq-q { font-size: 14px; padding: 16px 16px; }
+        .lm-faq-item { border-radius: 14px; }
+        .lm-faq-a { font-size: 13px; }
+        .lm-section-h2 { font-size: 22px; }
+        .lm-section-label { font-size: 11px; padding: 5px 14px; }
+        .lm-footer { padding: 40px 0 30px; }
+        .lm-footer-logo { font-size: 20px; }
+        .lm-footer-info { font-size: 12px; }
+        .lm-scroll-top { right: 16px; bottom: 24px; width: 40px; height: 40px; }
+    }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo"><a href="index.html">SMILEVIEW</a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="introduction.html">스마일뷰치과</a></li>
+                    <li><a href="invisalign.html">인비절라인</a></li>
+                    <li><a href="ortho.html">치아교정</a></li>
+                    <li><a href="whitening.html" class="active">치아미백</a></li>
+                    <li><a href="laminate.html">원데이 라미네이트</a></li>
+                    <li><a href="implant.html">수면 임플란트</a></li>
+                    <li><a href="prosthetics.html">보철치료</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="lang-selector" id="langSelector">
+                    <span class="lang-icon"><i class="ph ph-globe"></i></span>
+                    <button class="lang-current" onclick="document.getElementById('langSelector').classList.toggle('open')">KO</button>
+                    <div class="lang-dropdown">
+                        <a href="#" class="active">한국어 (KO)</a>
+                        <a href="whitening_tw.html">繁體中文 (TW)</a>
+                        <a href="whitening_jp.html">日本語 (JP)</a>
+                    </div>
+                </div>
+                <a href="#" class="btn-reserve">예약하기</a>
+                <div class="mobile-menu-btn"><i class="ph ph-list"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-inner">
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="introduction.html">병원소개</a></li>
+                    <li><a href="invisalign.html">인비절라인</a></li>
+                    <li><a href="ortho.html">치아교정</a></li>
+                    <li><a href="whitening.html">치아미백</a></li>
+                    <li><a href="laminate.html">원데이 라미네이트</a></li>
+                    <li><a href="implant.html">수면 임플란트</a></li>
+                    <li><a href="prosthetics.html">보철치료</a></li>
+                </ul>
+            </nav>
+            <a href="https://naver.me/xoBKVJA6" class="mobile-reserve-btn" target="_blank">온라인 예약</a>
+        </div>
+    </div>
+
+    <main class="lm-page">
+
+        <!-- ===== HORIZONTAL SCROLL SECTION ===== -->
+        <section class="lm-horizontal">
+            <div class="lm-h-wrap">
+
+                <!-- Panel 1: HERO -->
+                <div class="lm-h-panel">
+        <div class="lm-hero">
+            <div class="lm-hero-bg"></div>
+            <div class="lm-hero-overlay"></div>
+            <div class="lm-hero-content">
+                <div class="lm-hero-lbx"><span>SMILE</span></div>
+                <div class="lm-hero-rbx"><span>WHITENING</span></div>
+                <p class="lm-hero-desc">
+                    밝고 자신감 있는 미소를 만드는 치아미백,<br>
+                    스마일뷰의 전문 미백 시술로 환한 미소를 완성합니다.
+                </p>
+                <p class="lm-hero-desc2">
+                    변색된 치아를 안전하고 효과적으로 밝게 개선하여<br>
+                    본연의 깨끗하고 아름다운 미소를 되찾아 드립니다.
+                </p>
+            </div>
+            <!-- Scroll Down -->
+            <div class="lm-scroll-down">
+                <svg class="lm-scroll-circle" viewBox="0 0 100 100">
+                    <defs>
+                        <path id="circlePath" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"/>
+                    </defs>
+                    <text>
+                        <textPath href="#circlePath">Scroll Down ・ Scroll Down ・ Scroll Down ・</textPath>
+                    </text>
+                </svg>
+                <span class="lm-scroll-arrow"><i class="ph ph-arrow-down"></i></span>
+            </div>
+        </div>
+                </div><!-- end Panel 1 -->
+
+                <!-- Panel 2: TITLE BAND -->
+                <div class="lm-h-panel lm-h-panel--title">
+        <div class="lm-title-band">
+            <div class="lm-title-band-overlay"></div>
+            <div class="lm-title-band-content">
+                <h2>Teeth<br>Whitening</h2>
+                <p class="lm-kr-sub">치아미백</p>
+                <div class="lm-badge">
+                    <span>SMILEVIEW WHITENING</span>
+                </div>
+            </div>
+            <!-- Marquee -->
+            <div class="lm-marquee">
+                <div class="lm-marquee-track">
+                    <span>SMILEVIEW</span><span>WHITENING</span><span>SMILEVIEW</span><span>WHITENING</span>
+                    <span>SMILEVIEW</span><span>WHITENING</span><span>SMILEVIEW</span><span>WHITENING</span>
+                </div>
+            </div>
+        </div>
+                </div><!-- end Panel 2 -->
+
+                <!-- Panel 3: DEFINITION -->
+                <div class="lm-h-panel lm-h-panel--def">
+        <div class="lm-definition">
+            <!-- Scroll Circle -->
+            <div class="lm-def-scroll-circle">
+                <svg class="lm-scroll-circle" viewBox="0 0 100 100">
+                    <defs>
+                        <path id="circlePathDef" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"/>
+                    </defs>
+                    <text>
+                        <textPath href="#circlePathDef">Scroll Down ・ Scroll Down ・ Scroll Down ・</textPath>
+                    </text>
+                </svg>
+                <span class="lm-def-arrow"><i class="ph ph-arrow-down"></i></span>
+            </div>
+            <!-- Content -->
+            <div class="lm-def-con">
+                <div class="lm-def-tit">
+                    <span class="lm-def-num">01</span>
+                    <h2 class="lm-def-title">치아미백이란?</h2>
+                    <p class="lm-def-body">
+                        치아 미백은 얼룩이나 변색된 치아를 밝고 깨끗하게 만드는 치과 치료 방법입니다. 미백제나 특수 광선을 이용하여 치아를 효과적으로 미백하며, 전문적인 상담을 통해 안전하게 진행됩니다. 스마일뷰치과에서는 개인의 치아 상태에 따라 1:1 맞춤시술을 진행하여 앞니뿐만 아니라 잘 보이지 않는 안쪽 치아까지 꼼꼼하게 다루어 만족감이 높은 치료를 제공합니다.
+                    </p>
+                </div>
+                <div class="lm-def-divider"></div>
+                <div class="lm-def-sub">
+                    <p>
+                        <b>종류</b>
+                        <span>전문가 미백, 자가 미백, 복합 미백, 워킹 블리칭, 잇몸 미백, 웨딩 미백 등</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+                </div><!-- end Panel 3 -->
+
+            </div><!-- end lm-h-wrap -->
+        </section><!-- end lm-horizontal -->
+
+        <!-- ===== 3. CONFIDENCE (45분 자신감) ===== -->
+        <section class="lm-confidence">
+            <div class="lm-inner">
+                <div class="lm-confidence-header lm-fade">
+                    <span class="lm-confidence-badge"><i class="ph ph-tooth"></i> WHITENING</span>
+                    <h2 class="lm-confidence-title">치아미백<br><em>45분</em>만에 되찾는 미소 자신감</h2>
+                    <p class="lm-confidence-desc">
+                        치아 손상 없이 변색된 치아를 하얗게 만드는 시술로 고농도 과산화수소와 광원 조사 과정을 통해<br>
+                        시술 즉시 치아가 밝아지는 효과가 나타납니다.
+                    </p>
+                </div>
+                <div class="lm-confidence-grid">
+                    <div class="lm-confidence-img-wrap lm-fade-left">
+                        <div class="lm-confidence-img">
+                            <img src="images/whitening/confidence.jpg" alt="치아미백 시술">
+                        </div>
+                        <div class="lm-confidence-float-stat">
+                            <span class="lm-confidence-float-num">45</span>
+                            <span class="lm-confidence-float-unit">MIN</span>
+                            <span class="lm-confidence-float-text">즉각적인 미백 효과</span>
+                        </div>
+                    </div>
+                    <div class="lm-confidence-right lm-fade-right">
+                        <div>
+                            <p class="lm-confidence-sub-title">시술대상</p>
+                            <div class="lm-target-grid">
+                                <div class="lm-target-card lm-fade lm-stagger-1">
+                                    <span class="lm-check-icon"><i class="ph-bold ph-check"></i></span>
+                                    <span>선천적으로 치아가 노란 경우</span>
+                                </div>
+                                <div class="lm-target-card lm-fade lm-stagger-2">
+                                    <span class="lm-check-icon"><i class="ph-bold ph-check"></i></span>
+                                    <div>
+                                        <span>생활습관으로 인한 착색이 있는 경우</span>
+                                        <p class="lm-target-card-note">ex. 커피, 카레, 흡연</p>
+                                    </div>
+                                </div>
+                                <div class="lm-target-card lm-fade lm-stagger-3">
+                                    <span class="lm-check-icon"><i class="ph-bold ph-check"></i></span>
+                                    <span>노화로 인한 치아 변색</span>
+                                </div>
+                                <div class="lm-target-card lm-fade lm-stagger-4">
+                                    <span class="lm-check-icon"><i class="ph-bold ph-check"></i></span>
+                                    <span>교정 후 색상 개선을 원하는 경우</span>
+                                </div>
+                                <div class="lm-target-card lm-target-card--wide lm-fade lm-stagger-5">
+                                    <span class="lm-check-icon"><i class="ph-bold ph-check"></i></span>
+                                    <span>중요한 일정 전 외모 정돈이 필요한 경우</span>
+                                </div>
+                                <div class="lm-target-card lm-target-card--wide lm-fade lm-stagger-5">
+                                    <span class="lm-check-icon"><i class="ph-bold ph-check"></i></span>
+                                    <span>테트라사이클린 등 약물로 인한 치아 변색이 있는 경우</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lm-product-info lm-fade">
+                            <i class="ph ph-flask"></i>
+                            <div>
+                                <p class="lm-product-info-label">사용제품</p>
+                                <p class="lm-product-info-val">오스템 뷰티스15 <span>(과산화수소 35%)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 4. PROCEDURE INFO - CARD GRID ===== -->
+        <section class="lm-info-section">
+
+            <!-- Hero image banner -->
+            <div class="lm-info-hero lm-fade">
+                <img class="lm-info-hero-img" src="images/whitening/unnamed (2).jpg" alt="전문 치아미백 시술 과정">
+                <div class="lm-info-hero-overlay"></div>
+                <div class="lm-info-hero-content">
+                    <div class="lm-inner">
+                        <span class="lm-info-hero-label">PROCEDURE INFO</span>
+                        <h2 class="lm-info-hero-title">전문 미백, <span>디테일</span>이 다릅니다</h2>
+                        <p class="lm-info-hero-sub">Precision whitening with clinical expertise</p>
+                        <hr class="lm-info-hero-line">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stat cards -->
+            <div class="lm-inner">
+                <div class="lm-info-cards">
+                    <div class="lm-info-card lm-fade-scale lm-stagger-1">
+                        <div class="lm-info-card-icon"><i class="ph ph-clock"></i></div>
+                        <div class="lm-info-card-label">시술시간</div>
+                        <div class="lm-info-card-val"><small>약 </small>45<small>분</small></div>
+                        <p class="lm-info-card-desc">약제 도포 및 광선 조사 포함</p>
+                    </div>
+                    <div class="lm-info-card lm-fade-scale lm-stagger-2">
+                        <div class="lm-info-card-icon"><i class="ph ph-syringe"></i></div>
+                        <div class="lm-info-card-label">마취방법</div>
+                        <div class="lm-info-card-val"><small>불필요</small></div>
+                        <p class="lm-info-card-desc">비침습적 시술로 통증 최소</p>
+                    </div>
+                    <div class="lm-info-card lm-fade-scale lm-stagger-3">
+                        <div class="lm-info-card-icon"><i class="ph ph-arrows-clockwise"></i></div>
+                        <div class="lm-info-card-label">시술횟수</div>
+                        <div class="lm-info-card-val">1~3<small>회</small></div>
+                        <p class="lm-info-card-desc">개인 치아 상태에 따라 조절</p>
+                    </div>
+                    <div class="lm-info-card lm-fade-scale lm-stagger-4">
+                        <div class="lm-info-card-icon"><i class="ph ph-calendar-check"></i></div>
+                        <div class="lm-info-card-label">유지기간</div>
+                        <div class="lm-info-card-val">1~2<small>년</small></div>
+                        <p class="lm-info-card-desc">관리 습관에 따라 연장 가능</p>
+                    </div>
+                </div>
+
+                <!-- Procedure comparison image -->
+                <div class="lm-info-compare lm-fade" style="margin-top:56px; margin-bottom:48px;">
+                    <div style="border-radius:20px; overflow:hidden; border:1px solid rgba(255,255,255,0.08); position:relative;">
+                        <img src="images/whitening/procedure_hero.jpg" alt="전문 의료용 미백제 쉐이드 가이드" style="width:100%; aspect-ratio:16/7; object-fit:cover; display:block;">
+                        <div style="position:absolute; inset:0; background:linear-gradient(180deg, transparent 50%, rgba(32,29,23,0.6) 100%); pointer-events:none;"></div>
+                    </div>
+                    <p style="text-align:center; margin-top:16px; font-size:14px; color:rgba(255,255,255,0.5); letter-spacing:-0.02em; line-height:1.6;">
+                        <i class="ph ph-info" style="color:var(--lm-gold); margin-right:6px;"></i>전문 의료용 미백제와 일반 미백제의 성분 농도 차이를 비교한 VITA 쉐이드 가이드
+                    </p>
+                </div>
+
+                <!-- Detail cards -->
+                <div class="lm-info-detail-grid">
+                    <div class="lm-info-detail-card lm-fade lm-stagger-1">
+                        <span class="lm-info-detail-num">01</span>
+                        <h4>FDA 승인 미백제 사용</h4>
+                        <p>오스템 뷰티스15(과산화수소 35%) 등 FDA 승인을 받은 전문 미백제를 사용하여 안전하고 효과적인 시술을 진행합니다.</p>
+                        <div class="lm-info-chips">
+                            <span class="lm-info-chip"><i class="ph ph-shield-check"></i> FDA 승인</span>
+                            <span class="lm-info-chip"><i class="ph ph-flask"></i> 과산화수소 35%</span>
+                        </div>
+                    </div>
+                    <div class="lm-info-detail-card lm-fade lm-stagger-2">
+                        <span class="lm-info-detail-num">02</span>
+                        <h4>1:1 맞춤 컨설팅</h4>
+                        <p>환자의 치아 상태, 변색 정도, 목표 색상을 정밀 진단하여 최적의 미백 농도와 시술 횟수를 결정합니다.</p>
+                        <div class="lm-info-chips">
+                            <span class="lm-info-chip"><i class="ph ph-user"></i> 개인 맞춤</span>
+                            <span class="lm-info-chip"><i class="ph ph-chart-bar"></i> 정밀 진단</span>
+                        </div>
+                    </div>
+                    <div class="lm-info-detail-card lm-fade lm-stagger-3">
+                        <span class="lm-info-detail-num">03</span>
+                        <h4>시술 후 즉시 일상 복귀</h4>
+                        <p>비침습적 시술로 회복 기간이 필요 없으며, 시술 직후 바로 일상생활이 가능합니다. 별도의 입원이나 휴식이 불필요합니다.</p>
+                        <div class="lm-info-chips">
+                            <span class="lm-info-chip"><i class="ph ph-lightning"></i> 즉시 복귀</span>
+                            <span class="lm-info-chip"><i class="ph ph-heart"></i> 무통증</span>
+                        </div>
+                    </div>
+                    <div class="lm-info-detail-card lm-fade lm-stagger-4">
+                        <span class="lm-info-detail-num">04</span>
+                        <h4>정기 관리로 효과 유지</h4>
+                        <p>6개월 간격의 정기 방문과 자가 미백 병행으로 미백 효과를 2년 이상 오래 유지할 수 있습니다.</p>
+                        <div class="lm-info-chips">
+                            <span class="lm-info-chip"><i class="ph ph-calendar"></i> 6개월 주기</span>
+                            <span class="lm-info-chip"><i class="ph ph-arrow-clockwise"></i> 유지 관리</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 5. DISCOLORATION - INTERACTIVE SHADE SLIDER ===== -->
+        <section class="lm-discolor">
+            <div class="lm-inner">
+                <span class="lm-discolor-label lm-fade">SHADE GUIDE</span>
+                <h2 class="lm-discolor-title lm-fade">내 치아는 얼마나 변색됐을까?</h2>
+
+                <div class="lm-shade-visual lm-fade">
+                    <div class="lm-shade-tooth-wrap">
+                        <div class="lm-shade-glow" id="shadeGlow"></div>
+                        <div class="lm-tooth-scene" id="toothScene">
+                            <img class="lm-tooth-img" id="toothImg" src="images/whitening/pngtree-3d-realistic-healthy-molar-tooth-icon-png-image_18185676.webp" alt="3D 어금니 모형">
+                        </div>
+                    </div>
+
+                    <div class="lm-shade-stage-name" id="shadeStageName">시술 전</div>
+                    <div class="lm-shade-stage-desc" id="shadeStageDesc">커피, 와인, 흡연 등으로 인해 치아가 누렇게 변색된 상태입니다.</div>
+                </div>
+
+                <div class="lm-shade-slider-wrap lm-fade lm-fade-delay-1">
+                    <div class="lm-shade-markers" id="shadeMarkers">
+                        <span class="lm-shade-marker active" data-step="0">시술 전</span>
+                        <span class="lm-shade-marker" data-step="1">1단계</span>
+                        <span class="lm-shade-marker" data-step="2">2단계</span>
+                        <span class="lm-shade-marker" data-step="3">3단계</span>
+                    </div>
+                    <div class="lm-shade-range-wrap">
+                        <div class="lm-shade-range-track"></div>
+                        <div class="lm-shade-range-fill" id="shadeRangeFill"></div>
+                        <input type="range" class="lm-shade-range" id="shadeRange" min="0" max="100" value="0" step="1">
+                    </div>
+                </div>
+
+                <div class="lm-shade-note lm-fade lm-fade-delay-2">
+                    <div class="lm-shade-note-icon"><i class="ph ph-info"></i></div>
+                    <p class="lm-shade-note-text">슬라이더를 좌우로 드래그하여 미백 단계별 변화를 확인하세요. 시술 효과는 개인에 따라 차이가 있을 수 있습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 6. WHITENING PROCESS - VERTICAL TIMELINE ===== -->
+        <section class="lm-wh-process">
+            <div class="lm-inner">
+                <div class="lm-wh-process-header lm-fade">
+                    <h2 class="lm-wh-process-title">전문가 <span>미백</span> 시술과정</h2>
+                </div>
+                <div class="lm-wh-timeline">
+                    <div class="lm-wh-tl-step lm-fade lm-stagger-1">
+                        <span class="lm-wh-tl-big">01</span>
+                        <div class="lm-wh-tl-num">1</div>
+                        <div class="lm-wh-tl-card">
+                            <div class="lm-wh-tl-card-img"><img src="images/whitening/step_01.jpg" alt="STEP 01"></div>
+                            <div class="lm-wh-tl-card-body">
+                                <span class="lm-wh-tl-step-label">STEP 01.</span>
+                                <h3>시술 전 치아 색상 확인</h3>
+                                <p class="lm-wh-tl-card-desc">시술 전 치아의 현재 색상을 VITA 쉐이드 가이드로 정밀하게 측정하고 디지털 사진으로 기록합니다. 환자와 함께 목표 색상을 설정하여 시술 후 얼마나 밝아졌는지 객관적으로 비교할 수 있도록 준비하며, 치아 상태에 따라 최적의 미백 농도와 횟수를 결정합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lm-wh-tl-step lm-fade lm-stagger-2">
+                        <span class="lm-wh-tl-big">02</span>
+                        <div class="lm-wh-tl-num">2</div>
+                        <div class="lm-wh-tl-card">
+                            <div class="lm-wh-tl-card-img"><img src="images/whitening/step_02.jpg" alt="STEP 02"></div>
+                            <div class="lm-wh-tl-card-body">
+                                <span class="lm-wh-tl-step-label">STEP 02.</span>
+                                <h3>치면 세척</h3>
+                                <p class="lm-wh-tl-card-desc">스케일링과 폴리싱을 통해 치아 표면의 치석, 플라크, 외인성 착색을 꼼꼼히 제거합니다. 이 과정은 미백 약제의 흡수율을 최대 40% 이상 향상시키는 핵심 단계로, 치아 표면을 균일하게 만들어 미백제가 고르게 침투할 수 있는 최적의 조건을 만듭니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lm-wh-tl-step lm-fade lm-stagger-3">
+                        <span class="lm-wh-tl-big">03</span>
+                        <div class="lm-wh-tl-num">3</div>
+                        <div class="lm-wh-tl-card">
+                            <div class="lm-wh-tl-card-img"><img src="images/whitening/step_03.jpg" alt="STEP 03"></div>
+                            <div class="lm-wh-tl-card-body">
+                                <span class="lm-wh-tl-step-label">STEP 03.</span>
+                                <h3>잇몸 보호제 도포</h3>
+                                <p class="lm-wh-tl-card-desc">고농도 미백제로부터 잇몸과 구강 연조직을 보호하기 위해 광경화형 잇몸 보호제(레진 댐)를 치경부에 정밀하게 도포한 후 광중합기로 경화시킵니다. 보호제가 완전히 경화되면 잇몸 경계를 꼼꼼히 확인하여 미백제가 잇몸에 접촉하는 것을 원천 차단하며, 환자는 시술 중 잇몸 자극 없이 편안하게 시술을 받을 수 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lm-wh-tl-step lm-fade lm-stagger-4">
+                        <span class="lm-wh-tl-big">04</span>
+                        <div class="lm-wh-tl-num">4</div>
+                        <div class="lm-wh-tl-card">
+                            <div class="lm-wh-tl-card-img"><img src="images/whitening/step_04.jpg" alt="STEP 04"></div>
+                            <div class="lm-wh-tl-card-body">
+                                <span class="lm-wh-tl-step-label">STEP 04.</span>
+                                <h3>치아 미백 약제 도포</h3>
+                                <p class="lm-wh-tl-card-desc">과산화수소 35% 농도의 전문가용 미백 약제를 치아 표면에 1~2mm 두께로 균일하게 도포합니다. 숙련된 전문의가 각 치아마다 약제 두께를 일정하게 유지하여 고른 미백 효과를 보장하며, 치아 사이사이와 표면 요철 부위까지 빈틈없이 도포하여 얼룩 없는 깨끗한 결과를 만듭니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lm-wh-tl-step lm-fade lm-stagger-5">
+                        <span class="lm-wh-tl-big">05</span>
+                        <div class="lm-wh-tl-num">5</div>
+                        <div class="lm-wh-tl-card">
+                            <div class="lm-wh-tl-card-img"><img src="images/whitening/step_05.jpg" alt="STEP 05"></div>
+                            <div class="lm-wh-tl-card-body">
+                                <span class="lm-wh-tl-step-label">STEP 05.</span>
+                                <h3>미백 광선 조사</h3>
+                                <p class="lm-wh-tl-card-desc">LED 또는 할로겐 특수 광원을 15분간 조사하여 과산화수소의 분해를 촉진하고 활성 산소가 치아 법랑질과 상아질의 색소 분자를 효과적으로 분해합니다. 이 과정을 3회 반복(총 45분)하여 단계적으로 치아를 밝게 만들며, 매 회차마다 미백 정도를 확인하여 목표 색상에 도달할 때까지 세심하게 관리합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lm-wh-step-repeat lm-fade">
+                    STEP 04 ↔ 05 과정을 <strong>15분씩 3회 반복</strong>합니다.
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 7. RECOMMENDATION ===== -->
+        <section class="lm-recommend">
+            <div class="lm-inner">
+                <div class="lm-rec-header lm-fade">
+                    <span class="lm-rec-label">RECOMMEND</span>
+                    <h2 class="lm-rec-title">이런 분들에게<br>치아미백을 추천드립니다</h2>
+                </div>
+                <div class="lm-rec-cards">
+                    <div class="lm-rec-card lm-fade lm-stagger-1">
+                        <span class="lm-rec-card-check"><i class="ph-bold ph-check"></i></span>
+                        <span class="lm-rec-card-num">01</span>
+                        <div class="lm-rec-card-icon"><i class="ph ph-tooth"></i></div>
+                        <h3>치아 변색이 고민이신 분</h3>
+                        <p>선천적 또는 후천적으로 치아가 누렇게 변색되어 밝고 깨끗한 치아를 원하시는 분에게 적합합니다.</p>
+                    </div>
+                    <div class="lm-rec-card lm-fade lm-stagger-2">
+                        <span class="lm-rec-card-check"><i class="ph-bold ph-check"></i></span>
+                        <span class="lm-rec-card-num">02</span>
+                        <div class="lm-rec-card-icon"><i class="ph ph-calendar-check"></i></div>
+                        <h3>중요한 일정을 준비하시는 분</h3>
+                        <p>결혼식, 면접, 졸업식 등 특별한 날을 앞두고 단기간에 환한 미소를 완성하고 싶으신 분에게 추천합니다.</p>
+                    </div>
+                    <div class="lm-rec-card lm-fade lm-stagger-3">
+                        <span class="lm-rec-card-check"><i class="ph-bold ph-check"></i></span>
+                        <span class="lm-rec-card-num">03</span>
+                        <div class="lm-rec-card-icon"><i class="ph ph-coffee"></i></div>
+                        <h3>오래된 착색을 제거하고 싶으신 분</h3>
+                        <p>커피, 와인, 흡연 등 생활습관으로 인해 누적된 치아 착색을 깨끗하게 개선하고 싶으신 분입니다.</p>
+                    </div>
+                    <div class="lm-rec-card lm-fade lm-stagger-1">
+                        <span class="lm-rec-card-check"><i class="ph-bold ph-check"></i></span>
+                        <span class="lm-rec-card-num">04</span>
+                        <div class="lm-rec-card-icon"><i class="ph ph-smiley"></i></div>
+                        <h3>전체적인 미소 개선을 원하시는 분</h3>
+                        <p>라미네이트나 보철 치료 전 자연 치아의 색상을 먼저 밝게 개선하여 조화로운 미소를 만들고자 하시는 분입니다.</p>
+                    </div>
+                    <div class="lm-rec-card lm-fade lm-stagger-2">
+                        <span class="lm-rec-card-check"><i class="ph-bold ph-check"></i></span>
+                        <span class="lm-rec-card-num">05</span>
+                        <div class="lm-rec-card-icon"><i class="ph ph-star"></i></div>
+                        <h3>자신감을 향상시키고 싶으신 분</h3>
+                        <p>밝은 미소가 주는 긍정적 인상으로 대인관계와 사회생활에서 더 큰 자신감을 갖고 싶으신 분입니다.</p>
+                    </div>
+                    <div class="lm-rec-card lm-fade lm-stagger-3">
+                        <span class="lm-rec-card-check"><i class="ph-bold ph-check"></i></span>
+                        <span class="lm-rec-card-num">06</span>
+                        <div class="lm-rec-card-icon"><i class="ph ph-lightning"></i></div>
+                        <h3>빠른 효과를 원하시는 분</h3>
+                        <p>전문가 미백은 1회 시술로 즉각적인 변화를 확인할 수 있어 빠른 결과를 원하시는 분에게 최적입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 8. SPECIALITY (다크 배경) ===== -->
+        <section class="lm-speciality">
+            <div class="lm-speciality-bg"></div>
+            <div class="lm-inner">
+                <h2 class="lm-spec-title lm-fade">Speciality</h2>
+                <div class="lm-spec-subtitle lm-fade">
+                    <p class="lm-spec-text">
+                        스마일뷰 <span class="lm-gold">치아미백</span>으로 밝고 환한 미소를 만들어 보세요.
+                    </p>
+                </div>
+                <div class="lm-spec-cards">
+                    <div class="lm-spec-card lm-fade lm-stagger-1">
+                        <div class="lm-spec-card-icon"><i class="ph ph-shield-check"></i></div>
+                        <div class="lm-spec-badge">effect01</div>
+                        <h3>안전한 시술</h3>
+                        <p>FDA 승인 미백제와 검증된 장비를 사용하여 치아와 잇몸에 무리 없이 안전하게 시술합니다. 전문의의 정밀 진단 후 개인 맞춤 농도로 진행됩니다.</p>
+                    </div>
+                    <div class="lm-spec-card lm-fade lm-stagger-2">
+                        <div class="lm-spec-card-icon"><i class="ph ph-lightning"></i></div>
+                        <div class="lm-spec-badge">effect02</div>
+                        <h3>빠른 효과</h3>
+                        <p>전문가 미백의 경우 1회 시술만으로도 눈에 띄는 변화를 확인할 수 있으며, 시술 직후 바로 일상생활이 가능해 바쁜 현대인에게 적합합니다.</p>
+                    </div>
+                    <div class="lm-spec-card lm-fade lm-stagger-3">
+                        <div class="lm-spec-card-icon"><i class="ph ph-sun"></i></div>
+                        <div class="lm-spec-badge">effect03</div>
+                        <h3>자연스러운 밝기</h3>
+                        <p>인위적인 하얀색이 아닌 자연스럽고 건강한 밝기를 구현합니다. 개인의 피부톤과 치아 상태를 고려한 맞춤 미백으로 조화로운 미소를 완성합니다.</p>
+                    </div>
+                    <div class="lm-spec-card lm-fade lm-stagger-4">
+                        <div class="lm-spec-card-icon"><i class="ph ph-heart"></i></div>
+                        <div class="lm-spec-badge">effect04</div>
+                        <h3>통증 최소화</h3>
+                        <p>최신 미백 기술과 잇몸 보호 처리를 통해 시술 중 불편함과 시림 증상을 최소화합니다. 민감한 치아도 편안하게 시술받으실 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 9. B&A BEFORE & AFTER ===== -->
+        <section class="lm-ba">
+            <div class="lm-inner">
+                <div class="lm-ba-header lm-fade">
+                    <span class="lm-ba-label">BEFORE &amp; AFTER</span>
+                    <h2 class="lm-ba-title">치아미백 시술 전후 비교</h2>
+                </div>
+                <div class="lm-ba-carousel lm-fade lm-fade-delay-1" id="baCarousel">
+                    <div class="lm-ba-track">
+                        <div class="lm-ba-slides" id="baSlides">
+                            <div class="lm-ba-slide"><img src="images/whitening/1.png" alt="치아미백 시술 전후 1"></div>
+                            <div class="lm-ba-slide"><img src="images/whitening/2.png" alt="치아미백 시술 전후 2"></div>
+                            <div class="lm-ba-slide"><img src="images/whitening/3.png" alt="치아미백 시술 전후 3"></div>
+                            <div class="lm-ba-slide"><img src="images/whitening/4.png" alt="치아미백 시술 전후 4"></div>
+                            <div class="lm-ba-slide"><img src="images/whitening/5.png" alt="치아미백 시술 전후 5"></div>
+                            <div class="lm-ba-slide"><img src="images/whitening/6.png" alt="치아미백 시술 전후 6"></div>
+                            <div class="lm-ba-slide"><img src="images/whitening/7.png" alt="치아미백 시술 전후 7"></div>
+                            <div class="lm-ba-slide"><img src="images/whitening/8.png" alt="치아미백 시술 전후 8"></div>
+                            <div class="lm-ba-slide"><img src="images/whitening/9.png" alt="치아미백 시술 전후 9"></div>
+                        </div>
+                    </div>
+                    <div class="lm-ba-nav">
+                        <button class="lm-ba-arrow" id="baPrev"><i class="ph ph-caret-left"></i></button>
+                        <div class="lm-ba-counter-nav"><strong id="baCountCurrent">01</strong> / <span>09</span></div>
+                        <button class="lm-ba-arrow" id="baNext"><i class="ph ph-caret-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 10. FAQ - MODERN DARK ===== -->
+        <section class="lm-faq-section">
+            <div class="lm-inner">
+                <div class="lm-faq-layout">
+                    <div class="lm-faq-left lm-fade">
+                        <div class="lm-faq-deco">FAQ</div>
+                        <p class="lm-faq-left-text">치아미백 치료에 대해<br>자주 묻는 질문들을<br>확인해 보세요.</p>
+                    </div>
+                    <div class="lm-faq-list">
+                        <div class="lm-faq-item lm-fade">
+                            <button class="lm-faq-q" onclick="toggleFaq(this)">
+                                <span class="lm-faq-prefix">Q.</span>
+                                <span style="flex:1;">치아미백 시술 후 통증이 있나요?</span>
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="lm-faq-a">
+                                <span class="lm-faq-a-prefix">A.</span>시술 직후 일시적으로 치아가 시릴 수 있으나, 대부분 1~2일 내에 자연스럽게 사라집니다. 시림 증상이 심한 경우 전문의와 상담하여 적절한 조치를 받으실 수 있습니다.
+                            </div>
+                        </div>
+                        <div class="lm-faq-item lm-fade lm-fade-delay-1">
+                            <button class="lm-faq-q" onclick="toggleFaq(this)">
+                                <span class="lm-faq-prefix">Q.</span>
+                                <span style="flex:1;">미백 효과는 얼마나 지속되나요?</span>
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="lm-faq-a">
+                                <span class="lm-faq-a-prefix">A.</span>개인의 식습관과 관리에 따라 다르지만, 일반적으로 1~3년 동안 미백 효과가 지속됩니다. 커피, 와인, 흡연 등 착색이 쉬운 음식을 자주 섭취하면 지속 기간이 짧아질 수 있으며, 6개월 간격으로 치과 방문을 권장합니다.
+                            </div>
+                        </div>
+                        <div class="lm-faq-item lm-fade lm-fade-delay-2">
+                            <button class="lm-faq-q" onclick="toggleFaq(this)">
+                                <span class="lm-faq-prefix">Q.</span>
+                                <span style="flex:1;">자가 미백과 전문가 미백의 차이는 무엇인가요?</span>
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="lm-faq-a">
+                                <span class="lm-faq-a-prefix">A.</span>자가 미백은 치과에서 제작한 맞춤 장치를 이용해 집에서 2~3주간 진행하는 방법이며, 전문가 미백은 치과에서 고농도 미백제와 특수 광선을 이용해 20~30분 내에 빠른 결과를 얻는 방법입니다. 두 방법을 병행하면 더욱 효과적입니다.
+                            </div>
+                        </div>
+                        <div class="lm-faq-item lm-fade lm-fade-delay-3">
+                            <button class="lm-faq-q" onclick="toggleFaq(this)">
+                                <span class="lm-faq-prefix">Q.</span>
+                                <span style="flex:1;">미백 시술 후 주의사항이 있나요?</span>
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="lm-faq-a">
+                                <span class="lm-faq-a-prefix">A.</span>시술 후 24~48시간 동안은 착색이 쉬운 음식(커피, 카레, 와인 등)과 흡연을 피하는 것이 좋습니다. 또한 정기적인 구강 관리와 치과 검진을 통해 미백 효과를 오래 유지하는 것을 권장합니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="footer-title-section"></div>
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>SMILEVIEW<span>.</span></h2>
+                    <p>투명하고 편리한 교정부터 심미 치료까지,<br>스마일뷰치과가 당신의 아름다운 미소를 만들어 드립니다.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Location</h3>
+                    <ul>
+                        <li>서울특별시 강남구 봉은사로 107, 15층</li>
+                        <li style="font-size:12px;color:rgba(255,255,255,0.25);">(논현동 201 16번지 15층)</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tel:02-552-7528">TEL. 02-552-7528</a></li>
+                        <li>FAX. 02-552-7527</li>
+                        <li><span class="footer-label">대표자</span>김한결</li>
+                        <li><span class="footer-label">사업자번호</span>699-29-00572</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Hours</h3>
+                    <ul class="footer-hours">
+                        <li><span class="day">평일</span><span>AM 10:00 - PM 06:30</span></li>
+                        <li class="note">점심시간 PM 01:00 - PM 02:00</li>
+                        <li><span class="day">토요일</span><span>AM 10:00 - PM 03:00</span></li>
+                        <li class="note">점심시간 없이 진료</li>
+                        <li><span class="day">일요일</span><span>AM 10:00 - PM 04:00</span></li>
+                        <li class="closed"><span class="day">휴진</span><span>공휴일</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SMILEVIEW DENTAL CLINIC. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+    // FAQ Toggle (enhanced with height animation)
+    function toggleFaq(btn) {
+        const item = btn.closest('.lm-faq-item');
+        const answer = btn.nextElementSibling;
+        const isOpen = btn.classList.contains('active');
+        // Close all
+        document.querySelectorAll('.lm-faq-q').forEach(q => {
+            q.classList.remove('active');
+            q.nextElementSibling.classList.remove('lm-faq-a-open');
+            q.closest('.lm-faq-item').classList.remove('lm-faq-active');
+        });
+        if (!isOpen) {
+            btn.classList.add('active');
+            answer.classList.add('lm-faq-a-open');
+            item.classList.add('lm-faq-active');
+        }
+    }
+
+    // ===== GSAP HORIZONTAL SCROLL =====
+    (function() {
+        gsap.registerPlugin(ScrollTrigger);
+
+        // sec1 - page load animation (NOT scroll-based, like benchmark)
+        gsap.timeline()
+            .from('.lm-hero-bg', { scale: 1.2, duration: 2 })
+            .from('.lm-hero-lbx', { opacity: 0, xPercent: -100, duration: 1.5 }, '-=100%')
+            .from('.lm-hero-rbx', { opacity: 0, xPercent: 100, duration: 1.5 }, '-=100%')
+            .from('.lm-hero-desc, .lm-hero-desc2', { opacity: 0, y: 40, stagger: 0.2, duration: 0.8 }, '-=80%');
+
+        // Marquee animation
+        const marqueeTrack = document.querySelector('.lm-marquee-track');
+        if (marqueeTrack) {
+            const children = marqueeTrack.querySelectorAll('span');
+            children.forEach(child => {
+                const clone = child.cloneNode(true);
+                marqueeTrack.appendChild(clone);
+            });
+        }
+
+        ScrollTrigger.matchMedia({
+            // Desktop: horizontal scroll
+            '(min-width: 1025px)': function() {
+                const wrap = document.querySelector('.lm-h-wrap');
+                const horizontal = document.querySelector('.lm-horizontal');
+                if (!wrap || !horizontal) return;
+
+                // Main horizontal scroll animation
+                const horizon = gsap.to('.lm-horizontal .lm-h-wrap', {
+                    xPercent: -100,
+                    x: () => window.innerWidth,
+                    scrollTrigger: {
+                        pin: '.lm-horizontal',
+                        trigger: '.lm-horizontal',
+                        start: 'left left',
+                        end: () => `+=${wrap.offsetWidth} bottom`,
+                        scrub: 1,
+                    }
+                });
+
+                // sec2 (title band) animation - matches benchmark
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-h-panel--title',
+                        start: 'left 45%',
+                        end: 'left',
+                        containerAnimation: horizon,
+                        toggleActions: 'play none none reverse',
+                    }
+                });
+                tl
+                    .from('.lm-title-band-overlay', { scale: 1.2, duration: 1.5 })
+                    .from('.lm-title-band h2', { opacity: 0, duration: 0.8, y: 40 }, '-=100%')
+                    .from('.lm-title-band .lm-kr-sub', { opacity: 0, duration: 0.8, y: 40 }, '-=80%')
+                    .from('.lm-title-band .lm-badge', { opacity: 0, duration: 0.8, y: 40 }, '-=80%');
+
+                // sec3 (definition) animation - matches benchmark
+                const tl2 = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-h-panel--def',
+                        start: 'left 90%',
+                        end: 'left',
+                        containerAnimation: horizon,
+                        toggleActions: 'play none none reverse',
+                    }
+                });
+                tl2
+                    .from('.lm-def-con .lm-def-tit > *', { opacity: 0, stagger: 0.2, duration: 0.8, x: -40 })
+                    .from('.lm-def-sub p > *', { opacity: 0, stagger: 0.2, duration: 0.8, y: 40 }, '-=80%');
+            },
+
+            // Mobile: vertical layout
+            '(max-width: 1024px)': function() {
+                gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-title-band',
+                        start: 'top center+=20%',
+                        toggleActions: 'play none none reverse',
+                    }
+                })
+                .from('.lm-title-band h2', { opacity: 0, duration: 0.8, y: 40 })
+                .from('.lm-title-band .lm-kr-sub', { opacity: 0, duration: 0.8, y: 40 }, '-=80%')
+                .from('.lm-title-band .lm-badge', { opacity: 0, duration: 0.8, y: 40 }, '-=80%');
+
+                gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-definition',
+                        start: 'top center+=20%',
+                        toggleActions: 'play none none reverse',
+                    }
+                })
+                .from('.lm-def-con .lm-def-tit > *', { opacity: 0, stagger: 0.2, duration: 0.8, x: -40 })
+                .from('.lm-def-sub p > *', { opacity: 0, stagger: 0.2, duration: 0.8, y: 40 }, '-=80%');
+            }
+        });
+    })();
+
+    // ===== Scroll Animations (IntersectionObserver for vertical sections + mobile) =====
+    (function() {
+        const animSelectors = '.lm-fade, .lm-fade-left, .lm-fade-right, .lm-fade-scale';
+        const sectionSelectors = [
+            '.lm-speciality', '.lm-info-section', '.lm-confidence',
+            '.lm-discolor', '.lm-wh-process', '.lm-ba', '.lm-recommend', '.lm-faq-section'
+        ];
+        const fullSelector = sectionSelectors.map(s =>
+            animSelectors.split(', ').map(a => s + ' ' + a).join(', ')
+        ).join(', ');
+        const elems = document.querySelectorAll(fullSelector);
+        if (!elems.length) return;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('lm-show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+        elems.forEach(el => observer.observe(el));
+
+        // Mobile: also observe horizontal panel elements
+        if (window.innerWidth <= 1024) {
+            const mobileElems = document.querySelectorAll('.lm-horizontal .lm-fade, .lm-horizontal .lm-fade-left, .lm-horizontal .lm-fade-right, .lm-horizontal .lm-fade-scale');
+            mobileElems.forEach(el => observer.observe(el));
+        }
+
+        // Fallback
+        setTimeout(() => {
+            document.querySelectorAll('.lm-fade, .lm-fade-left, .lm-fade-right, .lm-fade-scale').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight + 50) {
+                    el.classList.add('lm-show');
+                }
+            });
+        }, 400);
+    })();
+
+    // ===== Interactive Shade Slider (Image Filter) =====
+    (function() {
+        const range = document.getElementById('shadeRange');
+        const fill = document.getElementById('shadeRangeFill');
+        const markers = document.querySelectorAll('.lm-shade-marker');
+        const stageName = document.getElementById('shadeStageName');
+        const stageDesc = document.getElementById('shadeStageDesc');
+        const toothImg = document.getElementById('toothImg');
+        const glow = document.getElementById('shadeGlow');
+        if (!range || !toothImg) return;
+
+        // Filter values per stage: brightness, saturate, sepia, hue-rotate(deg)
+        const stageFilters = [
+            { bright: 0.72, sat: 1.5, sepia: 0.55, hue: -5, glowOp: 0.2 },   // 시술 전 - 확실히 누런색
+            { bright: 0.88, sat: 1.2, sepia: 0.28, hue: -2, glowOp: 0.45 },  // 1단계 - 누런기 절반 제거
+            { bright: 1.05, sat: 0.95, sepia: 0.06, hue: 0, glowOp: 0.7 },   // 2단계 - 거의 하얀색
+            { bright: 1.22, sat: 0.8, sepia: 0, hue: 2, glowOp: 1.0 }        // 3단계 - 밝고 하얀 치아 + 광택
+        ];
+
+        const stages = [
+            { name: '시술 전', desc: '커피, 와인, 흡연 등으로 인해 치아가 누렇게 변색된 상태입니다.' },
+            { name: '1단계 미백', desc: '표면 착색이 제거되고 치아 본연의 색상이 드러나기 시작합니다.' },
+            { name: '2단계 미백', desc: '치아 내부 색소까지 분해되어 눈에 띄게 밝아진 상태입니다.' },
+            { name: '3단계 미백', desc: '전문가 미백의 최종 단계로, 밝고 자연스러운 화이트 톤을 달성합니다.' }
+        ];
+
+        const snapPoints = [0, 33, 67, 100];
+
+        function lerp(a, b, t) { return a + (b - a) * t; }
+
+        function update(val) {
+            const pct = val / 100;
+            fill.style.width = val + '%';
+
+            let segIdx, segT;
+            if (pct <= 0.333) { segIdx = 0; segT = pct / 0.333; }
+            else if (pct <= 0.667) { segIdx = 1; segT = (pct - 0.333) / 0.334; }
+            else { segIdx = 2; segT = (pct - 0.667) / 0.333; }
+
+            const s1 = stageFilters[segIdx], s2 = stageFilters[segIdx + 1];
+            const bright = lerp(s1.bright, s2.bright, segT);
+            const sat = lerp(s1.sat, s2.sat, segT);
+            const sepia = lerp(s1.sepia, s2.sepia, segT);
+            const hue = lerp(s1.hue, s2.hue, segT);
+            const glowOp = lerp(s1.glowOp, s2.glowOp, segT);
+
+            toothImg.style.filter = `brightness(${bright}) saturate(${sat}) sepia(${sepia}) hue-rotate(${hue}deg)`;
+            if (glow) glow.style.opacity = glowOp;
+
+            let activeIdx = 0;
+            if (val >= 83) activeIdx = 3;
+            else if (val >= 50) activeIdx = 2;
+            else if (val >= 17) activeIdx = 1;
+
+            markers.forEach((m, i) => m.classList.toggle('active', i === activeIdx));
+            stageName.textContent = stages[activeIdx].name;
+            stageDesc.textContent = stages[activeIdx].desc;
+        }
+
+        range.addEventListener('input', () => update(parseInt(range.value)));
+
+        range.addEventListener('change', () => {
+            const val = parseInt(range.value);
+            let closest = snapPoints[0], minDist = Math.abs(val - snapPoints[0]);
+            snapPoints.forEach(sp => { const d = Math.abs(val - sp); if (d < minDist) { minDist = d; closest = sp; } });
+            range.value = closest;
+            update(closest);
+        });
+
+        markers.forEach(m => {
+            m.addEventListener('click', () => {
+                const step = parseInt(m.dataset.step);
+                range.value = snapPoints[step];
+                update(snapPoints[step]);
+            });
+        });
+
+        update(0);
+    })();
+
+    // ===== B&A Carousel (4-up infinite) =====
+    (function() {
+        const slides = document.getElementById('baSlides');
+        const prevBtn = document.getElementById('baPrev');
+        const nextBtn = document.getElementById('baNext');
+        const counter = document.getElementById('baCountCurrent');
+        if (!slides || !prevBtn || !nextBtn) return;
+
+        const origSlides = Array.from(slides.children);
+        const total = origSlides.length;
+        let perView = window.innerWidth <= 768 ? 2 : 4;
+        let gap = 16;
+        let current = 0;
+        let autoTimer;
+
+        function getSlideWidth() {
+            const containerWidth = slides.parentElement.offsetWidth;
+            return (containerWidth - gap * (perView - 1)) / perView;
+        }
+
+        function goTo(idx, animate) {
+            const slideW = getSlideWidth();
+            const offset = idx * (slideW + gap);
+            slides.style.transition = animate ? 'transform 0.6s cubic-bezier(0.22,1,0.36,1)' : 'none';
+            slides.style.transform = `translateX(-${offset}px)`;
+            current = idx;
+            if (counter) {
+                const displayIdx = ((idx % total) + total) % total;
+                counter.textContent = String(displayIdx + 1).padStart(2, '0');
+            }
+        }
+
+        function next() {
+            current++;
+            if (current >= total) current = 0;
+            goTo(current, true);
+        }
+
+        function prev() {
+            current--;
+            if (current < 0) current = total - 1;
+            goTo(current, true);
+        }
+
+        function startAuto() {
+            stopAuto();
+            autoTimer = setInterval(next, 3000);
+        }
+
+        function stopAuto() {
+            if (autoTimer) clearInterval(autoTimer);
+        }
+
+        function updatePerView() {
+            perView = window.innerWidth <= 768 ? 2 : 4;
+            goTo(current, false);
+        }
+
+        // Set initial widths
+        function setSlideWidths() {
+            const slideW = getSlideWidth();
+            Array.from(slides.children).forEach(s => {
+                s.style.flex = `0 0 ${slideW}px`;
+                s.style.minWidth = `${slideW}px`;
+            });
+        }
+
+        setSlideWidths();
+        goTo(0, false);
+
+        nextBtn.addEventListener('click', () => { stopAuto(); next(); startAuto(); });
+        prevBtn.addEventListener('click', () => { stopAuto(); prev(); startAuto(); });
+
+        // Touch support
+        let touchStartX = 0;
+        let touchDiff = 0;
+        slides.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; stopAuto(); }, { passive: true });
+        slides.addEventListener('touchmove', e => { touchDiff = e.touches[0].clientX - touchStartX; }, { passive: true });
+        slides.addEventListener('touchend', () => {
+            if (Math.abs(touchDiff) > 50) { touchDiff < 0 ? next() : prev(); }
+            touchDiff = 0; startAuto();
+        });
+
+        window.addEventListener('resize', () => { updatePerView(); setSlideWidths(); });
+        startAuto();
+
+        // Pause on hover
+        slides.parentElement.addEventListener('mouseenter', stopAuto);
+        slides.parentElement.addEventListener('mouseleave', startAuto);
+    })();
+    </script>
+    <!-- Floating SNS -->
+    <div class="sv-float-sns" id="floatSns">
+        <div class="sv-float-sns-list">
+            <a href="https://www.instagram.com/smileview_dental/" class="sv-float-btn sv-float-btn--instagram" title="Instagram" target="_blank">
+                <i class="ph-fill ph-instagram-logo"></i>
+            </a>
+            <a href="#" class="sv-float-btn sv-float-btn--line" title="LINE" target="_blank">
+                <i class="ph-fill ph-chat-circle-dots"></i>
+            </a>
+        </div>
+        <button class="sv-float-toggle" onclick="document.getElementById('floatSns').classList.toggle('open')">
+            <i class="ph ph-plus"></i>
+        </button>
+    </div>
+
+    <script>
+    document.addEventListener('click', function(e) {
+        var ls = document.getElementById('langSelector');
+        if (ls && !ls.contains(e.target)) ls.classList.remove('open');
+    });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

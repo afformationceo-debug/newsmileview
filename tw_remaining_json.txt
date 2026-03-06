@@ -1,0 +1,4 @@
+=== index ===
+  text_26_text: src="images/prosthodontics/탭(11)_A_충치치료.avif"
+=== whitening ===
+  text_2_text: background: url('images/제목을 입력해주세요..jpg') center/cover no-repeat;

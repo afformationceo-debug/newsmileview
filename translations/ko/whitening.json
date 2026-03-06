@@ -1,0 +1,890 @@
+[
+  {
+    "key": "title_1",
+    "text": "치아미백 | 스마일뷰치과의원",
+    "location": "line:6, tag:title",
+    "context": "title"
+  },
+  {
+    "key": "text_2_text",
+    "text": "background: url('images/제목을 입력해주세요..jpg') center/cover no-repeat;",
+    "location": "line:139, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_3_li",
+    "text": "스마일뷰치과",
+    "location": "line:1430, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_4_li",
+    "text": "인비절라인",
+    "location": "line:1431, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_5_li",
+    "text": "치아교정",
+    "location": "line:1432, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_6_li",
+    "text": "치아미백",
+    "location": "line:1433, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_7_li",
+    "text": "원데이 라미네이트",
+    "location": "line:1434, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_8_li",
+    "text": "수면 임플란트",
+    "location": "line:1435, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_9_li",
+    "text": "보철치료",
+    "location": "line:1436, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_10_a",
+    "text": "한국어 (KO)",
+    "location": "line:1444, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "text_11_a",
+    "text": "예약하기",
+    "location": "line:1449, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "text_12_li",
+    "text": "병원소개",
+    "location": "line:1460, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_13_a",
+    "text": "온라인 예약",
+    "location": "line:1469, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "text_14_text",
+    "text": "밝고 자신감 있는 미소를 만드는 치아미백,",
+    "location": "line:1488, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_15_text",
+    "text": "스마일뷰의 전문 미백 시술로 환한 미소를 완성합니다.",
+    "location": "line:1489, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_16_text",
+    "text": "변색된 치아를 안전하고 효과적으로 밝게 개선하여",
+    "location": "line:1492, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_17_text",
+    "text": "본연의 깨끗하고 아름다운 미소를 되찾아 드립니다.",
+    "location": "line:1493, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_18_h2",
+    "text": "치아미백이란?",
+    "location": "line:1551, tag:h2",
+    "context": "text"
+  },
+  {
+    "key": "text_19_text",
+    "text": "치아 미백은 얼룩이나 변색된 치아를 밝고 깨끗하게 만드는 치과 치료 방법입니다. 미백제나 특수 광선을 이용하여 치아를 효과적으로 미백하며, 전문적인 상담을 통해 안전하게 진행됩니다. 스마일뷰치과에서는 개인의 치아 상태에 따라 1:1 맞춤시술을 진행하여 앞니뿐만 아니라 잘 보이지 않는 안쪽 치아까지 꼼꼼하게 다루어 만족감이 높은 치료를 제공합니다.",
+    "location": "line:1553, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_20_b",
+    "text": "종류",
+    "location": "line:1559, tag:b",
+    "context": "text"
+  },
+  {
+    "key": "text_21_span",
+    "text": "전문가 미백, 자가 미백, 복합 미백, 워킹 블리칭, 잇몸 미백, 웨딩 미백 등",
+    "location": "line:1560, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_22_h2",
+    "text": "치아미백 45분 만에 되찾는 미소 자신감",
+    "location": "line:1575, tag:h2",
+    "context": "text"
+  },
+  {
+    "key": "text_23_text",
+    "text": "치아 손상 없이 변색된 치아를 하얗게 만드는 시술로 고농도 과산화수소와 광원 조사 과정을 통해",
+    "location": "line:1577, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_24_text",
+    "text": "시술 즉시 치아가 밝아지는 효과가 나타납니다.",
+    "location": "line:1578, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "attr_25_img_alt",
+    "text": "치아미백 시술",
+    "location": "line:1584, tag:img[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_26_span",
+    "text": "즉각적인 미백 효과",
+    "location": "line:1589, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_27_p",
+    "text": "시술대상",
+    "location": "line:1594, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_28_span",
+    "text": "선천적으로 치아가 노란 경우",
+    "location": "line:1598, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_29_span",
+    "text": "생활습관으로 인한 착색이 있는 경우",
+    "location": "line:1603, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_30_p",
+    "text": "ex. 커피, 카레, 흡연",
+    "location": "line:1604, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_31_span",
+    "text": "노화로 인한 치아 변색",
+    "location": "line:1609, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_32_span",
+    "text": "교정 후 색상 개선을 원하는 경우",
+    "location": "line:1613, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_33_span",
+    "text": "중요한 일정 전 외모 정돈이 필요한 경우",
+    "location": "line:1617, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_34_span",
+    "text": "테트라사이클린 등 약물로 인한 치아 변색이 있는 경우",
+    "location": "line:1621, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_35_p",
+    "text": "사용제품",
+    "location": "line:1628, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_36_p",
+    "text": "오스템 뷰티스15 (과산화수소 35%)",
+    "location": "line:1629, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "attr_37_img_alt",
+    "text": "전문 치아미백 시술 과정",
+    "location": "line:1642, tag:img[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_38_h2",
+    "text": "전문 미백, 디테일 이 다릅니다",
+    "location": "line:1647, tag:h2",
+    "context": "text"
+  },
+  {
+    "key": "text_39_div",
+    "text": "시술시간",
+    "location": "line:1659, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_40_div",
+    "text": "약 45 분",
+    "location": "line:1660, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_41_p",
+    "text": "약제 도포 및 광선 조사 포함",
+    "location": "line:1661, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_42_div",
+    "text": "마취방법",
+    "location": "line:1665, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_43_div",
+    "text": "불필요",
+    "location": "line:1666, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_44_p",
+    "text": "비침습적 시술로 통증 최소",
+    "location": "line:1667, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_45_div",
+    "text": "시술횟수",
+    "location": "line:1671, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_46_div",
+    "text": "1~3 회",
+    "location": "line:1672, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_47_p",
+    "text": "개인 치아 상태에 따라 조절",
+    "location": "line:1673, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_48_div",
+    "text": "유지기간",
+    "location": "line:1677, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_49_div",
+    "text": "1~2 년",
+    "location": "line:1678, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_50_p",
+    "text": "관리 습관에 따라 연장 가능",
+    "location": "line:1679, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "attr_51_img_alt",
+    "text": "전문 의료용 미백제 쉐이드 가이드",
+    "location": "line:1686, tag:img[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_52_i",
+    "text": "전문 의료용 미백제와 일반 미백제의 성분 농도 차이를 비교한 VITA 쉐이드 가이드",
+    "location": "line:1690, tag:i",
+    "context": "text"
+  },
+  {
+    "key": "text_53_h4",
+    "text": "FDA 승인 미백제 사용",
+    "location": "line:1698, tag:h4",
+    "context": "text"
+  },
+  {
+    "key": "text_54_p",
+    "text": "오스템 뷰티스15(과산화수소 35%) 등 FDA 승인을 받은 전문 미백제를 사용하여 안전하고 효과적인 시술을 진행합니다.",
+    "location": "line:1699, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_55_span",
+    "text": "FDA 승인",
+    "location": "line:1701, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_56_span",
+    "text": "과산화수소 35%",
+    "location": "line:1702, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_57_h4",
+    "text": "1:1 맞춤 컨설팅",
+    "location": "line:1707, tag:h4",
+    "context": "text"
+  },
+  {
+    "key": "text_58_p",
+    "text": "환자의 치아 상태, 변색 정도, 목표 색상을 정밀 진단하여 최적의 미백 농도와 시술 횟수를 결정합니다.",
+    "location": "line:1708, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_59_span",
+    "text": "개인 맞춤",
+    "location": "line:1710, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_60_span",
+    "text": "정밀 진단",
+    "location": "line:1711, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_61_h4",
+    "text": "시술 후 즉시 일상 복귀",
+    "location": "line:1716, tag:h4",
+    "context": "text"
+  },
+  {
+    "key": "text_62_p",
+    "text": "비침습적 시술로 회복 기간이 필요 없으며, 시술 직후 바로 일상생활이 가능합니다. 별도의 입원이나 휴식이 불필요합니다.",
+    "location": "line:1717, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_63_span",
+    "text": "즉시 복귀",
+    "location": "line:1719, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_64_span",
+    "text": "무통증",
+    "location": "line:1720, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_65_h4",
+    "text": "정기 관리로 효과 유지",
+    "location": "line:1725, tag:h4",
+    "context": "text"
+  },
+  {
+    "key": "text_66_p",
+    "text": "6개월 간격의 정기 방문과 자가 미백 병행으로 미백 효과를 2년 이상 오래 유지할 수 있습니다.",
+    "location": "line:1726, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_67_span",
+    "text": "6개월 주기",
+    "location": "line:1728, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_68_span",
+    "text": "유지 관리",
+    "location": "line:1729, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_69_h2",
+    "text": "내 치아는 얼마나 변색됐을까?",
+    "location": "line:1740, tag:h2",
+    "context": "text"
+  },
+  {
+    "key": "attr_70_img_alt",
+    "text": "3D 어금니 모형",
+    "location": "line:1746, tag:img[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_71_div",
+    "text": "시술 전",
+    "location": "line:1750, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_72_div",
+    "text": "커피, 와인, 흡연 등으로 인해 치아가 누렇게 변색된 상태입니다.",
+    "location": "line:1751, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_73_span",
+    "text": "1단계",
+    "location": "line:1757, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_74_span",
+    "text": "2단계",
+    "location": "line:1758, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_75_span",
+    "text": "3단계",
+    "location": "line:1759, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_76_p",
+    "text": "슬라이더를 좌우로 드래그하여 미백 단계별 변화를 확인하세요. 시술 효과는 개인에 따라 차이가 있을 수 있습니다.",
+    "location": "line:1770, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_77_h2",
+    "text": "전문가 미백 시술과정",
+    "location": "line:1779, tag:h2",
+    "context": "text"
+  },
+  {
+    "key": "text_78_h3",
+    "text": "시술 전 치아 색상 확인",
+    "location": "line:1789, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_79_p",
+    "text": "시술 전 치아의 현재 색상을 VITA 쉐이드 가이드로 정밀하게 측정하고 디지털 사진으로 기록합니다. 환자와 함께 목표 색상을 설정하여 시술 후 얼마나 밝아졌는지 객관적으로 비교할 수 있도록 준비하며, 치아 상태에 따라 최적의 미백 농도와 횟수를 결정합니다.",
+    "location": "line:1790, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_80_h3",
+    "text": "치면 세척",
+    "location": "line:1801, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_81_p",
+    "text": "스케일링과 폴리싱을 통해 치아 표면의 치석, 플라크, 외인성 착색을 꼼꼼히 제거합니다. 이 과정은 미백 약제의 흡수율을 최대 40% 이상 향상시키는 핵심 단계로, 치아 표면을 균일하게 만들어 미백제가 고르게 침투할 수 있는 최적의 조건을 만듭니다.",
+    "location": "line:1802, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_82_h3",
+    "text": "잇몸 보호제 도포",
+    "location": "line:1813, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_83_p",
+    "text": "고농도 미백제로부터 잇몸과 구강 연조직을 보호하기 위해 광경화형 잇몸 보호제(레진 댐)를 치경부에 정밀하게 도포한 후 광중합기로 경화시킵니다. 보호제가 완전히 경화되면 잇몸 경계를 꼼꼼히 확인하여 미백제가 잇몸에 접촉하는 것을 원천 차단하며, 환자는 시술 중 잇몸 자극 없이 편안하게 시술을 받을 수 있습니다.",
+    "location": "line:1814, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_84_h3",
+    "text": "치아 미백 약제 도포",
+    "location": "line:1825, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_85_p",
+    "text": "과산화수소 35% 농도의 전문가용 미백 약제를 치아 표면에 1~2mm 두께로 균일하게 도포합니다. 숙련된 전문의가 각 치아마다 약제 두께를 일정하게 유지하여 고른 미백 효과를 보장하며, 치아 사이사이와 표면 요철 부위까지 빈틈없이 도포하여 얼룩 없는 깨끗한 결과를 만듭니다.",
+    "location": "line:1826, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_86_h3",
+    "text": "미백 광선 조사",
+    "location": "line:1837, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_87_p",
+    "text": "LED 또는 할로겐 특수 광원을 15분간 조사하여 과산화수소의 분해를 촉진하고 활성 산소가 치아 법랑질과 상아질의 색소 분자를 효과적으로 분해합니다. 이 과정을 3회 반복(총 45분)하여 단계적으로 치아를 밝게 만들며, 매 회차마다 미백 정도를 확인하여 목표 색상에 도달할 때까지 세심하게 관리합니다.",
+    "location": "line:1838, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_88_text",
+    "text": "STEP 04 ↔ 05 과정을 15분씩 3회 반복 합니다.",
+    "location": "line:1844, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_89_h2",
+    "text": "이런 분들에게 치아미백을 추천드립니다",
+    "location": "line:1854, tag:h2",
+    "context": "text"
+  },
+  {
+    "key": "text_90_h3",
+    "text": "치아 변색이 고민이신 분",
+    "location": "line:1861, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_91_p",
+    "text": "선천적 또는 후천적으로 치아가 누렇게 변색되어 밝고 깨끗한 치아를 원하시는 분에게 적합합니다.",
+    "location": "line:1862, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_92_h3",
+    "text": "중요한 일정을 준비하시는 분",
+    "location": "line:1868, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_93_p",
+    "text": "결혼식, 면접, 졸업식 등 특별한 날을 앞두고 단기간에 환한 미소를 완성하고 싶으신 분에게 추천합니다.",
+    "location": "line:1869, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_94_h3",
+    "text": "오래된 착색을 제거하고 싶으신 분",
+    "location": "line:1875, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_95_p",
+    "text": "커피, 와인, 흡연 등 생활습관으로 인해 누적된 치아 착색을 깨끗하게 개선하고 싶으신 분입니다.",
+    "location": "line:1876, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_96_h3",
+    "text": "전체적인 미소 개선을 원하시는 분",
+    "location": "line:1882, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_97_p",
+    "text": "라미네이트나 보철 치료 전 자연 치아의 색상을 먼저 밝게 개선하여 조화로운 미소를 만들고자 하시는 분입니다.",
+    "location": "line:1883, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_98_h3",
+    "text": "자신감을 향상시키고 싶으신 분",
+    "location": "line:1889, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_99_p",
+    "text": "밝은 미소가 주는 긍정적 인상으로 대인관계와 사회생활에서 더 큰 자신감을 갖고 싶으신 분입니다.",
+    "location": "line:1890, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_100_h3",
+    "text": "빠른 효과를 원하시는 분",
+    "location": "line:1896, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_101_p",
+    "text": "전문가 미백은 1회 시술로 즉각적인 변화를 확인할 수 있어 빠른 결과를 원하시는 분에게 최적입니다.",
+    "location": "line:1897, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_102_text",
+    "text": "스마일뷰 치아미백 으로 밝고 환한 미소를 만들어 보세요.",
+    "location": "line:1910, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_103_h3",
+    "text": "안전한 시술",
+    "location": "line:1917, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_104_p",
+    "text": "FDA 승인 미백제와 검증된 장비를 사용하여 치아와 잇몸에 무리 없이 안전하게 시술합니다. 전문의의 정밀 진단 후 개인 맞춤 농도로 진행됩니다.",
+    "location": "line:1918, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_105_h3",
+    "text": "빠른 효과",
+    "location": "line:1923, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_106_p",
+    "text": "전문가 미백의 경우 1회 시술만으로도 눈에 띄는 변화를 확인할 수 있으며, 시술 직후 바로 일상생활이 가능해 바쁜 현대인에게 적합합니다.",
+    "location": "line:1924, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_107_h3",
+    "text": "자연스러운 밝기",
+    "location": "line:1929, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_108_p",
+    "text": "인위적인 하얀색이 아닌 자연스럽고 건강한 밝기를 구현합니다. 개인의 피부톤과 치아 상태를 고려한 맞춤 미백으로 조화로운 미소를 완성합니다.",
+    "location": "line:1930, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_109_h3",
+    "text": "통증 최소화",
+    "location": "line:1935, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_110_p",
+    "text": "최신 미백 기술과 잇몸 보호 처리를 통해 시술 중 불편함과 시림 증상을 최소화합니다. 민감한 치아도 편안하게 시술받으실 수 있습니다.",
+    "location": "line:1936, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_111_h2",
+    "text": "치아미백 시술 전후 비교",
+    "location": "line:1947, tag:h2",
+    "context": "text"
+  },
+  {
+    "key": "attr_112_div_alt",
+    "text": "치아미백 시술 전후 1",
+    "location": "line:1952, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "attr_113_div_alt",
+    "text": "치아미백 시술 전후 2",
+    "location": "line:1953, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "attr_114_div_alt",
+    "text": "치아미백 시술 전후 3",
+    "location": "line:1954, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "attr_115_div_alt",
+    "text": "치아미백 시술 전후 4",
+    "location": "line:1955, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "attr_116_div_alt",
+    "text": "치아미백 시술 전후 5",
+    "location": "line:1956, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "attr_117_div_alt",
+    "text": "치아미백 시술 전후 6",
+    "location": "line:1957, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "attr_118_div_alt",
+    "text": "치아미백 시술 전후 7",
+    "location": "line:1958, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "attr_119_div_alt",
+    "text": "치아미백 시술 전후 8",
+    "location": "line:1959, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "attr_120_div_alt",
+    "text": "치아미백 시술 전후 9",
+    "location": "line:1960, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_121_p",
+    "text": "치아미백 치료에 대해 자주 묻는 질문들을 확인해 보세요.",
+    "location": "line:1978, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_122_span",
+    "text": "치아미백 시술 후 통증이 있나요?",
+    "location": "line:1984, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_123_span",
+    "text": "A. 시술 직후 일시적으로 치아가 시릴 수 있으나, 대부분 1~2일 내에 자연스럽게 사라집니다. 시림 증상이 심한 경우 전문의와 상담하여 적절한 조치를 받으실 수 있습니다.",
+    "location": "line:1988, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_124_span",
+    "text": "미백 효과는 얼마나 지속되나요?",
+    "location": "line:1994, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_125_span",
+    "text": "A. 개인의 식습관과 관리에 따라 다르지만, 일반적으로 1~3년 동안 미백 효과가 지속됩니다. 커피, 와인, 흡연 등 착색이 쉬운 음식을 자주 섭취하면 지속 기간이 짧아질 수 있으며, 6개월 간격으로 치과 방문을 권장합니다.",
+    "location": "line:1998, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_126_span",
+    "text": "자가 미백과 전문가 미백의 차이는 무엇인가요?",
+    "location": "line:2004, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_127_span",
+    "text": "A. 자가 미백은 치과에서 제작한 맞춤 장치를 이용해 집에서 2~3주간 진행하는 방법이며, 전문가 미백은 치과에서 고농도 미백제와 특수 광선을 이용해 20~30분 내에 빠른 결과를 얻는 방법입니다. 두 방법을 병행하면 더욱 효과적입니다.",
+    "location": "line:2008, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_128_span",
+    "text": "미백 시술 후 주의사항이 있나요?",
+    "location": "line:2014, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_129_span",
+    "text": "A. 시술 후 24~48시간 동안은 착색이 쉬운 음식(커피, 카레, 와인 등)과 흡연을 피하는 것이 좋습니다. 또한 정기적인 구강 관리와 치과 검진을 통해 미백 효과를 오래 유지하는 것을 권장합니다.",
+    "location": "line:2018, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_130_p",
+    "text": "투명하고 편리한 교정부터 심미 치료까지, 스마일뷰치과가 당신의 아름다운 미소를 만들어 드립니다.",
+    "location": "line:2035, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_131_li",
+    "text": "서울특별시 강남구 봉은사로 107, 15층",
+    "location": "line:2040, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_132_li",
+    "text": "(논현동 201 16번지 15층)",
+    "location": "line:2041, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_133_li",
+    "text": "대표자 김한결",
+    "location": "line:2049, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_134_li",
+    "text": "사업자번호 699-29-00572",
+    "location": "line:2050, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_135_li",
+    "text": "평일 AM 10:00 - PM 06:30",
+    "location": "line:2056, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_136_li",
+    "text": "점심시간 PM 01:00 - PM 02:00",
+    "location": "line:2057, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_137_li",
+    "text": "토요일 AM 10:00 - PM 03:00",
+    "location": "line:2058, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_138_li",
+    "text": "점심시간 없이 진료",
+    "location": "line:2059, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_139_li",
+    "text": "일요일 AM 10:00 - PM 04:00",
+    "location": "line:2060, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_140_li",
+    "text": "휴진 공휴일",
+    "location": "line:2061, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_141_text",
+    "text": "{ bright: 0.72, sat: 1.5, sepia: 0.55, hue: -5, glowOp: 0.2 }, // 시술 전 - 확실히 누런색",
+    "location": "line:2250, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_142_text",
+    "text": "{ bright: 0.88, sat: 1.2, sepia: 0.28, hue: -2, glowOp: 0.45 }, // 1단계 - 누런기 절반 제거",
+    "location": "line:2251, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_143_text",
+    "text": "{ bright: 1.05, sat: 0.95, sepia: 0.06, hue: 0, glowOp: 0.7 }, // 2단계 - 거의 하얀색",
+    "location": "line:2252, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_144_text",
+    "text": "{ bright: 1.22, sat: 0.8, sepia: 0, hue: 2, glowOp: 1.0 } // 3단계 - 밝고 하얀 치아 + 광택",
+    "location": "line:2253, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_145_text",
+    "text": "{ name: '시술 전', desc: '커피, 와인, 흡연 등으로 인해 치아가 누렇게 변색된 상태입니다.' },",
+    "location": "line:2257, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_146_text",
+    "text": "{ name: '1단계 미백', desc: '표면 착색이 제거되고 치아 본연의 색상이 드러나기 시작합니다.' },",
+    "location": "line:2258, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_147_text",
+    "text": "{ name: '2단계 미백', desc: '치아 내부 색소까지 분해되어 눈에 띄게 밝아진 상태입니다.' },",
+    "location": "line:2259, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_148_text",
+    "text": "{ name: '3단계 미백', desc: '전문가 미백의 최종 단계로, 밝고 자연스러운 화이트 톤을 달성합니다.' }",
+    "location": "line:2260, tag:text",
+    "context": "text"
+  }
+]

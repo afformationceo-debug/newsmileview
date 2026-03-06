@@ -1,0 +1,142 @@
+=== index_jp.html: 4 lines ===
+  L499: <h2 style="font-family:'Pretendard',sans-serif;font-weight:300;letter-spacing:-1px;font-size:3.5rem;">본연의 아름다움을<br>연구합니다
+  L513: <img src="images/main/라미네이트.jpg" alt="Laminate">
+  L630: src="images/prosthodontics/탭(11)_A_むし歯治療.avif"
+  L842: <p class="review-desc">스마일뷰를 방문한 고객분들이 직접 써주신<br>다양한 후기를 만나보세요.</p>
+=== introduction_jp.html: 3 lines ===
+  L357: <h2 class="sv-clinic-title">SMILEVIEWデンタルクリニック의<br><span>Smile Design</span></h2>
+  L444: <div class="sv-doctor-img"><img src="images/introduction/キム・ハンギョル 院長님.avif" alt="キム・ハンギョル 院長" style="width:100%;height:1
+  L479: <div class="sv-doctor-img"><img src="images/introduction/イ・ソヨン 歯科医師님_edited (2).avif" alt="イ・ソヨン 歯科医師" style="width:100%
+=== invisalign_jp.html: 6 lines ===
+  L1585: <h2 class="lm-vs-title">invisalign<br>어떤점이 다를까 ?</h2>
+  L1950: <h2 class="lm-rec-title">이런 분들에게<br>INVISALIGN을 추천드립니다</h2>
+  L2036: <p class="lm-faq-left-text">INVISALIGN 치료에 대해<br>자주 묻는 질문들을<br>확인해 보세요.</p>
+  L2046: <span class="lm-faq-a-prefix">A.</span>INVISALIGN은 하루에 최소 20~22시간 착용해야 효과적입니다. 식사나 양치질 시에만 제거하고, 나머지 시간에는 계속 착용해야 합니다.
+  L2066: <span class="lm-faq-a-prefix">A.</span>INVISALIGN은 다양한 교정 문제를 해결할 수 있지만, 극도로 복잡한 경우에는 전통적인 교정 방법이 더 적합할 수 있습니다. 치과 전문의와 
+  L2099: <p>투명하고 편리한 교정부터 심미 치료까지,<br>SMILEVIEWデンタルクリニックがあなたの美しい笑顔をお作りします。</p>
+=== whitening_jp.html: 14 lines ===
+  L1570: <!-- ===== 3. CONFIDENCE (45분 자신감) ===== -->
+  L1575: <h2 class="lm-confidence-title">歯のホワイトニング<br><em>45분</em>만에 되찾는 미소 자신감</h2>
+  L1629: <p class="lm-product-info-val">오스템 뷰티스15 <span>(過酸化水素35%)</span></p>
+  L1647: <h2 class="lm-info-hero-title">전문 미백, <span>디테일</span>이 다릅니다</h2>
+  L1660: <div class="lm-info-card-val"><small>약 </small>45<small>분</small></div>
+  L1672: <div class="lm-info-card-val">1~3<small>회</small></div>
+  L1678: <div class="lm-info-card-val">1~2<small>년</small></div>
+  L1779: <h2 class="lm-wh-process-title">전문가 <span>미백</span> 시술과정</h2>
+  L1844: STEP 04 ↔ 05 과정을 <strong>15분씩 3회 반복</strong>합니다.
+  L1854: <h2 class="lm-rec-title">이런 분들에게<br>歯のホワイトニング을 추천드립니다</h2>
+  L1903: <!-- ===== 8. SPECIALITY (다크 배경) ===== -->
+  L1910: 스마일뷰 <span class="lm-gold">歯のホワイトニング</span>으로 밝고 환한 미소를 만들어 보세요.
+  L1978: <p class="lm-faq-left-text">歯のホワイトニング 치료에 대해<br>자주 묻는 질문들을<br>확인해 보세요.</p>
+  L2035: <p>투명하고 편리한 교정부터 심미 치료까지,<br>SMILEVIEWデンタルクリニックがあなたの美しい笑顔をお作りします。</p>
+=== ortho_jp.html: 20 lines ===
+  L1139: <h3>수술 먼저, <em>교정은 나중에</em></h3>
+  L1149: <span class="lm-presurg-badge">Surgery First<small>선수술 우선</small></span>
+  L1208: <!-- ===== SECTION 2: 장점 ===== -->
+  L1244: <!-- ===== SECTION 3: 양악수술 교정 (Tab Design) ===== -->
+  L1258: <!-- Panel: 주걱턱 -->
+  L1277: <h3>아래턱 돌출로 인한<br><em>受け口矯正</em></h3>
+  L1283: <!-- Panel: 안면비대칭 -->
+  L1302: <h3>좌우 균형을 되찾는<br><em>顔面非対称矯正</em></h3>
+  L1308: <!-- Panel: 돌출입 -->
+  L1327: <h3>자연스러운 옆모습을 위한<br><em>出っ歯矯正</em></h3>
+  L1337: <!-- ===== SECTION 4: 受け口矯正 상세 ===== -->
+  L1362: <h3>아래턱 돌출로 인한<br><em>얼굴 불균형 개선</em></h3>
+  L1390: <!-- ===== SECTION 5: 顔面非対称矯正 상세 ===== -->
+  L1401: <h3>좌우 균형을 되찾는<br><em>안면 대칭 교정</em></h3>
+  L1443: <!-- ===== SECTION 6: 出っ歯矯正 상세 ===== -->
+  L1468: <h3>자연스러운 옆모습을 위한<br><em>돌출입 개선</em></h3>
+  L1511: <strong>A.</strong> サージェリーファースト矯正은 턱수술을 먼저 시행한 뒤 교정 치료를 진행하는 방법입니다. 수술을 통해 골격적 부조화를 먼저 해결하므로 외모 개선이 빠르게 이루어지며, 비정상적인 골격이
+  L1531: <strong>A.</strong> 受け口矯正은 아래턱 성장이 과도하거나 위턱 성장이 상대적으로 부족해서 아래턱이 튀어나온 경우에 필요합니다. 顔が長く見えて印象が強くなったり老けて見える場合, 上下の歯が逆に噛み合い咀嚼効
+  L1541: <strong>A.</strong> 일반적으로 전체 교정은 12〜24ヶ月, 부분 교정은 3~6개월 정도 소요됩니다. 환자의 치아 상태, 교정 난이도, 사용하는 장치 종류에 따라 기간이 달라질 수 있으며, 정확한 기간
+  L1572: <p>투명하고 편리한 교정부터 심미 치료까지,<br>SMILEVIEWデンタルクリニックがあなたの美しい笑顔をお作りします。</p>
+=== laminate_jp.html: 25 lines ===
+  L1089: 세계 1위 세라믹 브랜드 <strong style="color:var(--lm-gold)">IPS e.max</strong>의 리튬 디실리케이트 소재로 제작하는 프리미엄 라미네이트입니다. 360~400MPa의 뛰어난
+  L1111: <h2 class="lm-vs2__title">스마일뷰 라미네이트<br>어떤점이 다를까 ?</h2>
+  L1138: <tr><th>항목</th><th>一般ラミネートベニア</th><th>E MAX ラミネートベニア</th></tr>
+  L1141: <tr><td>소재</td><td>일반 세라믹</td><td>IPS e.max 리튬 디실리케이트</td></tr>
+  L1142: <tr><td>투명도</td><td>보통</td><td>천연 치아와 유사</td></tr>
+  L1143: <tr><td>삭제량</td><td>0.5~0.7mm</td><td>0.2~0.3mm (최소 삭제)</td></tr>
+  L1144: <tr><td>제작 방식</td><td>기공소 외주 (5~7일)</td><td>CAD/CAM 당일 제작</td></tr>
+  L1145: <tr><td>持続期間</td><td>5~7년</td><td>10〜15年以上</td></tr>
+  L1146: <tr><td>강도</td><td>150~200MPa</td><td>360~400MPa</td></tr>
+  L1155: <div class="lm-vs2__m-card-row"><span class="lm-vs2__m-card-key">소재</span><span class="lm-vs2__m-card-val">일반 세라믹</span>
+  L1156: <div class="lm-vs2__m-card-row"><span class="lm-vs2__m-card-key">투명도</span><span class="lm-vs2__m-card-val">보통</span></d
+  L1157: <div class="lm-vs2__m-card-row"><span class="lm-vs2__m-card-key">삭제량</span><span class="lm-vs2__m-card-val">0.5~0.7mm</s
+  L1158: <div class="lm-vs2__m-card-row"><span class="lm-vs2__m-card-key">제작 방식</span><span class="lm-vs2__m-card-val">기공소 외주 (5~
+  L1159: <div class="lm-vs2__m-card-row"><span class="lm-vs2__m-card-key">持続期間</span><span class="lm-vs2__m-card-val">5~7년</span>
+  L1163: <div class="lm-vs2__m-card-row"><span class="lm-vs2__m-card-key">소재</span><span class="lm-vs2__m-card-val">IPS e.max 리튬 
+  L1164: <div class="lm-vs2__m-card-row"><span class="lm-vs2__m-card-key">투명도</span><span class="lm-vs2__m-card-val">천연 치아와 유사</s
+  L1165: <div class="lm-vs2__m-card-row"><span class="lm-vs2__m-card-key">삭제량</span><span class="lm-vs2__m-card-val">0.2~0.3mm (최
+  L1166: <div class="lm-vs2__m-card-row"><span class="lm-vs2__m-card-key">제작 방식</span><span class="lm-vs2__m-card-val">CAD/CAM 당일
+  L1182: <h2 class="lm-info-hero-title">전문 라미네이트, <span>디테일</span>이 다릅니다</h2>
+  L1473: <h2 class="lm-rec__title">이런 분들에게<br>라미네이트를 추천드립니다</h2>
+  L1606: <p class="lm-faq-left-text">라미네이트 시술에 대해<br>자주 묻는 질문들을<br>확인해 보세요.</p>
+  L1626: <span class="lm-faq-a-prefix">A.</span>E MAX ラミネートベニア는 올바른 관리와 定期検診 시 10〜15年以上 유지가 가능합니다. IPS e.max 세라믹 소재의 뛰어난 내구성으로 변색
+  L1646: <span class="lm-faq-a-prefix">A.</span>E MAX ラミネートベニア는 360~400MPa의 뛰어난 강도를 가지고 있어 일상생활에서 떨어지거나 깨질 가능성은 매우 낮습니다. 만약 문제가 발
+  L1656: <span class="lm-faq-a-prefix">A.</span>네, 스마일뷰의 ワンデーラミネートベニア는 最先端CAD/CAM設備를 보유하고 있어 기공소 외주 없이 당일 디자인·제작·부착까지 1~2시간 내에 완료
+  L1675: <p>투명하고 편리한 교정부터 심미 치료까지,<br>SMILEVIEWデンタルクリニックがあなたの美しい笑顔をお作りします。</p>
+=== implant_jp.html: 36 lines ===
+  L812: <h2>편안한 수면 상태에서<br>진행하는 <span>임플란트</span></h2>
+  L813: <p>치과 공포증, 통증 걱정 없이 잠든 사이 완성됩니다.<br>마취통증의학과 전문의가 상주하여 안전하게 진행합니다.</p>
+  L854: <img src="images/implant/탭(8)_임플란트 1.avif" alt="即日インプラント" style="width:100%;height:100%;object-fit:cover;">
+  L859: <h3>발치 당일,<br><em>即日インプラント</em> 식립</h3>
+  L877: <img src="images/implant/탭(8)_임플란트 2.avif" alt="ナビゲーションインプラント" style="width:100%;height:100%;object-fit:cover;">
+  L882: <h3>3D 네비게이션으로<br><em>정밀 식립</em></h3>
+  L900: <img src="images/implant/탭(8)_임플란트 3.avif" alt="骨移植インプラント" style="width:100%;height:100%;object-fit:cover;">
+  L905: <h3>부족한 뼈를 재건하여<br><em>안정적 식립</em></h3>
+  L923: <h2 class="lm-imp-vs__title">오스템 임플란트,<br>어떤 점이 다를까?</h2>
+  L930: <th><span class="lm-imp-vs__rec">RECOMMEND</span><br>오스템 임플란트</th>
+  L933: <tr><td>제조사 인지도</td><td>다양한 중소 제조사</td><td>세계 4위, 국내 1위 글로벌 기업</td></tr>
+  L934: <tr><td>임상 데이터</td><td>제한적 임상 데이터</td><td>20년+ 임상 데이터 축적</td></tr>
+  L935: <tr><td>표면 처리</td><td>일반 표면 처리</td><td>특허 SA 표면 처리 기술</td></tr>
+  L936: <tr><td>골 유착력</td><td>보통 수준의 골 유착</td><td>우수한 초기 고정력 및 골 유착</td></tr>
+  L937: <tr><td>호환성</td><td>제한적 보철 호환</td><td>다양한 보철물과 완벽 호환</td></tr>
+  L938: <tr><td>보증</td><td>제조사별 상이</td><td>정품 인증서 + 평생 보증</td></tr>
+  L943: <div class="lm-imp-vs__m-card"><div class="lm-imp-vs__m-card-label">一般インプラント</div><div class="lm-imp-vs__m-card-row"><sp
+  L944: <div class="lm-imp-vs__m-card lm-imp-vs__m-card--osstem"><div class="lm-imp-vs__m-card-label">오스템 임플란트</div><div class="
+  L957: <h2 class="lm-info-hero-title">睡眠インプラント,<br><span>디테일</span>이 다릅니다</h2>
+  L968: <div class="lm-info-card-val">30~60<small>분</small></div>
+  L980: <div class="lm-info-card-val">1~2<small>주</small></div>
+  L995: <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-user-circle-check"></i> 전문의 상주</span><span class="
+  L1001: <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-heartbeat"></i> 생체 모니터링</span><span class="lm-info
+  L1007: <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-certificate"></i> 정품 인증</span><span class="lm-info
+  L1013: <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-cube"></i> 3D CT</span><span class="lm-info-chip">
+  L1024: <h2 class="lm-rec-title">이런 분들에게<br>睡眠インプラント를 추천드립니다</h2>
+  L1027: <div class="lm-rec-card lm-fade"><span class="lm-rec-card-num">01</span><div class="lm-rec-card-icon"><i class="ph ph-sm
+  L1028: <div class="lm-rec-card lm-fade lm-fade-delay-1"><span class="lm-rec-card-num">02</span><div class="lm-rec-card-icon"><i
+  L1029: <div class="lm-rec-card lm-fade lm-fade-delay-2"><span class="lm-rec-card-num">03</span><div class="lm-rec-card-icon"><i
+  L1030: <div class="lm-rec-card lm-fade lm-fade-delay-1"><span class="lm-rec-card-num">04</span><div class="lm-rec-card-icon"><i
+  L1031: <div class="lm-rec-card lm-fade lm-fade-delay-2"><span class="lm-rec-card-num">05</span><div class="lm-rec-card-icon"><i
+  L1032: <div class="lm-rec-card lm-fade lm-fade-delay-3"><span class="lm-rec-card-num">06</span><div class="lm-rec-card-icon"><i
+  L1163: <p class="lm-faq-left-text">睡眠インプラント에 대해<br>자주 묻는 질문을 모았습니다.</p>
+  L1193: <span class="lm-faq-a-prefix">A.</span>치아를 뽑고 잇몸뼈가 아물기를 기다리는 기존 임플란트에 비해 당일即日インプラント는 成功率과 안정성에서 큰 차이를 보이지 않습니다. 환자의 잇몸뼈의
+  L1203: <span class="lm-faq-a-prefix">A.</span>네, 뼈 이식 임플란트를 통해 가능합니다. 임플란트 식립 부위에 치조골이 부족한 경우 인공 뼈를 이식하여 뼈의 양을 보충한 후 안정적으로 임플란트
+  L1222: <p>투명하고 편리한 교정부터 심미 치료까지,<br>SMILEVIEWデンタルクリニックがあなたの美しい笑顔をお作りします。</p>
+=== prosthetics_jp.html: 26 lines ===
+  L717: <h2>손상된 치아를<br>되살리는 <span>補綴治療</span></h2>
+  L718: <p>충치부터 神経治療, 크라운, 歯茎治療까지<br>종합적인 치과 보철 솔루션을 제공합니다.</p>
+  L759: <img src="images/prosthodontics/탭(11)_A_むし歯治療.avif" alt="むし歯治療" style="width:100%;height:100%;object-fit:cover;">
+  L782: <img src="images/prosthodontics/탭(11)_B_神経治療.avif" alt="神経治療" style="width:100%;height:100%;object-fit:cover;">
+  L800: <!-- ===== TYPE 03: 補綴治療(크라운) ===== -->
+  L810: <h3><em>補綴治療</em> (크라운)</h3>
+  L828: <img src="images/prosthodontics/탭(11)_D_歯茎治療.avif" alt="歯茎治療" style="width:100%;height:100%;object-fit:cover;">
+  L859: <h2 class="lm-info-hero-title">補綴治療,<br><span>디테일</span>이 다릅니다</h2>
+  L870: <div class="lm-info-card-val">30~60<small>분</small></div>
+  L882: <div class="lm-info-card-val">1~4<small>회</small></div>
+  L888: <div class="lm-info-card-val">일부 <small>가능</small></div>
+  L897: <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-x-ray"></i> X-ray 촬영</span><span class="lm-info-ch
+  L903: <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-diamond"></i> 맞춤 재료</span><span class="lm-info-chi
+  L909: <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-shield-check"></i> 치아 보존</span><span class="lm-inf
+  L915: <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-calendar-check"></i> 정기 검진</span><span class="lm-i
+  L926: <h2 class="lm-rec-title">이런 분들에게<br>補綴治療를 추천드립니다</h2>
+  L929: <div class="lm-rec-card lm-fade"><span class="lm-rec-card-num">01</span><div class="lm-rec-card-icon"><i class="ph ph-to
+  L930: <div class="lm-rec-card lm-fade lm-fade-delay-1"><span class="lm-rec-card-num">02</span><div class="lm-rec-card-icon"><i
+  L931: <div class="lm-rec-card lm-fade lm-fade-delay-2"><span class="lm-rec-card-num">03</span><div class="lm-rec-card-icon"><i
+  L932: <div class="lm-rec-card lm-fade lm-fade-delay-1"><span class="lm-rec-card-num">04</span><div class="lm-rec-card-icon"><i
+  L933: <div class="lm-rec-card lm-fade lm-fade-delay-2"><span class="lm-rec-card-num">05</span><div class="lm-rec-card-icon"><i
+  L934: <div class="lm-rec-card lm-fade lm-fade-delay-3"><span class="lm-rec-card-num">06</span><div class="lm-rec-card-icon"><i
+  L947: <p class="lm-faq-left-text">補綴治療에 대해<br>자주 묻는 질문을 모았습니다.</p>
+  L967: <span class="lm-faq-a-prefix">A.</span>네, 神経治療가 완료된 치아는 혈액 공급이 차단되어 시간이 지나면서 건조해지고 약해집니다. 크라운을 씌우지 않으면 저작 시 치아가 쉽게 깨지거나 
+  L987: <span class="lm-faq-a-prefix">A.</span>일반적으로 6개월~1년에 한 번 스케일링을 받는 것이 권장됩니다. 건강보험으로 연 1회 스케일링이 적용되며, 歯茎の疾患がある場合에는 더 자주 받으
+  L1006: <p>투명하고 편리한 교정부터 심미 치료까지,<br>SMILEVIEWデンタルクリニックがあなたの美しい笑顔をお作りします。</p>

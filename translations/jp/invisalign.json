@@ -1,0 +1,968 @@
+[
+  {
+    "key": "title_1",
+    "text": "인비절라인 (투명 교정) | 스마일뷰치과의원",
+    "location": "line:6, tag:title",
+    "context": "title",
+    "translated": "インビザライン（透明矯正）| SMILEVIEWデンタルクリニック"
+  },
+  {
+    "key": "text_2_li",
+    "text": "스마일뷰치과",
+    "location": "line:1440, tag:li",
+    "context": "text",
+    "translated": "SMILEVIEWデンタルクリニック"
+  },
+  {
+    "key": "text_3_li",
+    "text": "인비절라인",
+    "location": "line:1441, tag:li",
+    "context": "text",
+    "translated": "INVISALIGN"
+  },
+  {
+    "key": "text_4_li",
+    "text": "치아교정",
+    "location": "line:1442, tag:li",
+    "context": "text",
+    "translated": "歯列矯正"
+  },
+  {
+    "key": "text_5_li",
+    "text": "치아미백",
+    "location": "line:1443, tag:li",
+    "context": "text",
+    "translated": "歯のホワイトニング"
+  },
+  {
+    "key": "text_6_li",
+    "text": "원데이 라미네이트",
+    "location": "line:1444, tag:li",
+    "context": "text",
+    "translated": "ワンデーラミネートベニア"
+  },
+  {
+    "key": "text_7_li",
+    "text": "수면 임플란트",
+    "location": "line:1445, tag:li",
+    "context": "text",
+    "translated": "睡眠インプラント"
+  },
+  {
+    "key": "text_8_li",
+    "text": "보철치료",
+    "location": "line:1446, tag:li",
+    "context": "text",
+    "translated": "補綴治療"
+  },
+  {
+    "key": "text_9_a",
+    "text": "한국어 (KO)",
+    "location": "line:1454, tag:a",
+    "context": "text",
+    "translated": "韓国語 (KO)"
+  },
+  {
+    "key": "text_10_a",
+    "text": "예약하기",
+    "location": "line:1459, tag:a",
+    "context": "text",
+    "translated": "予約する"
+  },
+  {
+    "key": "text_11_li",
+    "text": "병원소개",
+    "location": "line:1470, tag:li",
+    "context": "text",
+    "translated": "クリニック紹介"
+  },
+  {
+    "key": "text_12_a",
+    "text": "온라인 예약",
+    "location": "line:1479, tag:a",
+    "context": "text",
+    "translated": "オンライン予約"
+  },
+  {
+    "key": "text_13_div",
+    "text": "투명하고 편리한 치아 교정 솔루션",
+    "location": "line:1496, tag:div",
+    "context": "text",
+    "translated": "透明で便利な歯列矯正ソリューション"
+  },
+  {
+    "key": "text_14_text",
+    "text": "인비절라인은 투명한 교정 장치를 사용하여 치아의 배열을",
+    "location": "line:1498, tag:text",
+    "context": "text",
+    "translated": "インビザラインは透明な矯正装置を使用して歯の並びを"
+  },
+  {
+    "key": "text_15_text",
+    "text": "교정하는 방법입니다. 거의 보이지 않기 때문에",
+    "location": "line:1499, tag:text",
+    "context": "text",
+    "translated": "矯正する方法です。ほとんど目立たないため"
+  },
+  {
+    "key": "text_16_text",
+    "text": "치아 교정 중에도 미적인 걱정을 덜 수 있습니다.",
+    "location": "line:1500, tag:text",
+    "context": "text",
+    "translated": "歯列矯正中も見た目を気にせず過ごせます。"
+  },
+  {
+    "key": "text_17_text",
+    "text": "사용자의 편의에 따라 장치를 제거할 수 있어",
+    "location": "line:1503, tag:text",
+    "context": "text",
+    "translated": "ユーザーの都合に合わせて装置を取り外せるため"
+  },
+  {
+    "key": "text_18_text",
+    "text": "식사나 치아 청소 시 불편함이 적습니다.",
+    "location": "line:1504, tag:text",
+    "context": "text",
+    "translated": "食事や歯磨きの際の不便さが少なくなります。"
+  },
+  {
+    "key": "text_19_h2",
+    "text": "인비절라인이란?",
+    "location": "line:1562, tag:h2",
+    "context": "text",
+    "translated": "インビザラインとは？"
+  },
+  {
+    "key": "text_20_text",
+    "text": "인비절라인은 투명한 교정 장치를 사용하여 치아의 배열을 교정하는 방법입니다. 이 장치는 거의 보이지 않기 때문에 치아 교정 중에도 미적인 걱정을 덜 수 있습니다. 또한, 사용자의 편의에 따라 장치를 제거할 수 있어 식사나 치아 청소 시 불편함이 적습니다. 이러한 특징으로 인해 많은 사람들이 선호하는 교정 방식 중 하나가 되었습니다.",
+    "location": "line:1564, tag:text",
+    "context": "text",
+    "translated": "インビザラインは透明な矯正装置を使用して歯の並びを矯正する方法です。この装置はほとんど目立たないため、歯列矯正中も見た目を気にせず過ごせます。また、ユーザーの都合に合わせて装置を取り外せるため、食事や歯磨きの際の不便さが少なくなります。こうした特徴から、多くの方に選ばれる矯正方法の一つとなっています。"
+  },
+  {
+    "key": "text_21_b",
+    "text": "특징",
+    "location": "line:1570, tag:b",
+    "context": "text",
+    "translated": "特徴"
+  },
+  {
+    "key": "text_22_span",
+    "text": "투명 소재, 탈착 가능, 편안한 착용감, 3D 디지털 치료 계획, 적은 병원 방문 횟수",
+    "location": "line:1571, tag:span",
+    "context": "text",
+    "translated": "透明素材、取り外し可能、快適な装着感、3Dデジタル治療計画、少ない通院回数"
+  },
+  {
+    "key": "text_23_h2",
+    "text": "invisalign 어떤점이 다를까 ?",
+    "location": "line:1585, tag:h2",
+    "context": "text",
+    "translated": "インビザラインは何が違うのか？"
+  },
+  {
+    "key": "text_24_p",
+    "text": "일반 투명장치 vs 인비절라인",
+    "location": "line:1586, tag:p",
+    "context": "text",
+    "translated": "一般的な透明装置 vs インビザライン"
+  },
+  {
+    "key": "attr_25_img_alt",
+    "text": "일반 투명교정 장치",
+    "location": "line:1592, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "一般的な透明矯正装置"
+  },
+  {
+    "key": "text_26_span",
+    "text": "일반 투명교정",
+    "location": "line:1593, tag:span",
+    "context": "text",
+    "translated": "一般的な透明矯正"
+  },
+  {
+    "key": "attr_27_img_alt",
+    "text": "인비절라인 장치",
+    "location": "line:1597, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "インビザライン装置"
+  },
+  {
+    "key": "text_28_th",
+    "text": "비교 항목",
+    "location": "line:1608, tag:th",
+    "context": "text",
+    "translated": "比較項目"
+  },
+  {
+    "key": "text_29_th",
+    "text": "RECOMMEND 인비절라인",
+    "location": "line:1609, tag:th",
+    "context": "text",
+    "translated": "RECOMMEND INVISALIGN"
+  },
+  {
+    "key": "text_30_td",
+    "text": "수작업 제작으로 오차 발생 가능",
+    "location": "line:1614, tag:td",
+    "context": "text",
+    "translated": "手作業製造による誤差が生じる可能性"
+  },
+  {
+    "key": "text_31_td",
+    "text": "제작 방식",
+    "location": "line:1615, tag:td",
+    "context": "text",
+    "translated": "製作方式"
+  },
+  {
+    "key": "text_32_td",
+    "text": "특허받은 스마트트랙 소재 + 디지털 정밀 제작",
+    "location": "line:1616, tag:td",
+    "context": "text",
+    "translated": "特許取得済みSmartTrack素材＋デジタル精密製作"
+  },
+  {
+    "key": "text_33_td",
+    "text": "단순 시뮬레이션만 가능",
+    "location": "line:1619, tag:td",
+    "context": "text",
+    "translated": "単純シミュレーションのみ対応"
+  },
+  {
+    "key": "text_34_td",
+    "text": "치료 계획",
+    "location": "line:1620, tag:td",
+    "context": "text",
+    "translated": "治療計画"
+  },
+  {
+    "key": "text_35_td",
+    "text": "클린체크(ClinCheck) 3D 시뮬레이션으로 최종 결과 미리 확인",
+    "location": "line:1621, tag:td",
+    "context": "text",
+    "translated": "ClinCheck 3Dシミュレーションで最終結果を事前確認"
+  },
+  {
+    "key": "text_36_td",
+    "text": "제한적인 치아 이동",
+    "location": "line:1624, tag:td",
+    "context": "text",
+    "translated": "制限的な歯の移動"
+  },
+  {
+    "key": "text_37_td",
+    "text": "교정 범위",
+    "location": "line:1625, tag:td",
+    "context": "text",
+    "translated": "矯正範囲"
+  },
+  {
+    "key": "text_38_td",
+    "text": "발치 교정, 부정교합 등 복잡한 케이스도 대응 가능",
+    "location": "line:1626, tag:td",
+    "context": "text",
+    "translated": "抜歯矯正、不正咬合など複雑なケースにも対応"
+  },
+  {
+    "key": "text_39_td",
+    "text": "일반 플라스틱 소재",
+    "location": "line:1629, tag:td",
+    "context": "text",
+    "translated": "一般プラスチック素材"
+  },
+  {
+    "key": "text_40_td",
+    "text": "소재 & 착용감",
+    "location": "line:1630, tag:td",
+    "context": "text",
+    "translated": "素材・装着感"
+  },
+  {
+    "key": "text_41_td",
+    "text": "스마트트랙(SmartTrack) 특허 소재로 편안한 착용감",
+    "location": "line:1631, tag:td",
+    "context": "text",
+    "translated": "SmartTrack特許素材による快適な装着感"
+  },
+  {
+    "key": "text_42_td",
+    "text": "제조사 데이터 없음",
+    "location": "line:1634, tag:td",
+    "context": "text",
+    "translated": "メーカーデータなし"
+  },
+  {
+    "key": "text_43_td",
+    "text": "임상 데이터",
+    "location": "line:1635, tag:td",
+    "context": "text",
+    "translated": "臨床データ"
+  },
+  {
+    "key": "text_44_td",
+    "text": "전 세계 1,800만+ 케이스 빅데이터 기반 예측",
+    "location": "line:1636, tag:td",
+    "context": "text",
+    "translated": "世界1,800万件以上のケースのビッグデータ基盤予測"
+  },
+  {
+    "key": "text_45_td",
+    "text": "추가 장치 시 별도 비용",
+    "location": "line:1639, tag:td",
+    "context": "text",
+    "translated": "追加装置は別途費用"
+  },
+  {
+    "key": "text_46_td",
+    "text": "추가 교정",
+    "location": "line:1640, tag:td",
+    "context": "text",
+    "translated": "追加矯正"
+  },
+  {
+    "key": "text_47_td",
+    "text": "패키지 내 추가 얼라이너 무상 제공",
+    "location": "line:1641, tag:td",
+    "context": "text",
+    "translated": "パッケージ内に追加アライナーを無償提供"
+  },
+  {
+    "key": "text_48_p",
+    "text": "인비절라인 특징",
+    "location": "line:1736, tag:p",
+    "context": "text",
+    "translated": "インビザラインの特徴"
+  },
+  {
+    "key": "text_49_h2",
+    "text": "나만을 위한 맞춤 교정 장치",
+    "location": "line:1737, tag:h2",
+    "context": "text",
+    "translated": "あなただけのカスタム矯正装置"
+  },
+  {
+    "key": "attr_50_img_alt",
+    "text": "정확한 개인 맞춤형 구강 스캔",
+    "location": "line:1742, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "精密な個人専用口腔スキャン"
+  },
+  {
+    "key": "text_51_h3",
+    "text": "정확한 개인 맞춤형으로",
+    "location": "line:1746, tag:h3",
+    "context": "text",
+    "translated": "精確な個人専用に"
+  },
+  {
+    "key": "text_52_p",
+    "text": "구강스캐너를 사용하여 치아의 정확한 3D 이미지를 빠르게 캡쳐합니다.",
+    "location": "line:1747, tag:p",
+    "context": "text",
+    "translated": "口腔スキャナーを使用して歯の正確な3D画像を素早くキャプチャします。"
+  },
+  {
+    "key": "attr_53_img_alt",
+    "text": "스마트트랙 소재 편안한 착용감",
+    "location": "line:1752, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "SmartTrack素材の快適な装着感"
+  },
+  {
+    "key": "text_54_h3",
+    "text": "편안함을 위해",
+    "location": "line:1756, tag:h3",
+    "context": "text",
+    "translated": "快適さのために"
+  },
+  {
+    "key": "text_55_p",
+    "text": "오직 인비절라인만이 스마트트랙 소재로 제작되어 편안한 착용감을 선사합니다.",
+    "location": "line:1757, tag:p",
+    "context": "text",
+    "translated": "インビザラインだけがSmartTrack素材で製作され、快適な装着感を提供します。"
+  },
+  {
+    "key": "attr_56_img_alt",
+    "text": "잇몸라인 맞춤 제작",
+    "location": "line:1762, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "歯茎ラインに合わせたカスタム製作"
+  },
+  {
+    "key": "text_57_h3",
+    "text": "잇몸 곡선에 따라",
+    "location": "line:1766, tag:h3",
+    "context": "text",
+    "translated": "歯茎のラインに沿って"
+  },
+  {
+    "key": "text_58_p",
+    "text": "사람마다 잇몸라인은 다르기 때문에 각 환자의 잇몸라인에 딱 맞추어 맞춤 제작 됩니다.",
+    "location": "line:1767, tag:p",
+    "context": "text",
+    "translated": "人それぞれ歯茎のラインが異なるため、各患者の歯茎ラインに合わせてカスタム製作されます。"
+  },
+  {
+    "key": "text_59_h2",
+    "text": "인비절라인 치료 과정",
+    "location": "line:1778, tag:h2",
+    "context": "text",
+    "translated": "インビザライン治療の流れ"
+  },
+  {
+    "key": "text_60_p",
+    "text": "당신의 미소를 더욱 빛나게 만들어 줄 인비절라인 치료 과정을 소개합니다. 인비절라인 치료는 눈에 띄지 않는 방식으로 치아를 교정할 수 있는 현대적인 방법입니다. 스마일뷰 치과에서는 전문적인 기술과 경험을 바탕으로 여러분의 아름다운 미소를 위한 최상의 치료를 제공합니다.",
+    "location": "line:1780, tag:p",
+    "context": "text",
+    "translated": "あなたの笑顔をさらに輝かせるインビザライン治療の流れをご紹介します。インビザライン治療は目立たない方法で歯を矯正できる現代的な方法です。SMILEVIEWデンタルクリニックでは、専門的な技術と経験をもとに、美しい笑顔のための最善の治療を提供します。"
+  },
+  {
+    "key": "attr_61_img_alt",
+    "text": "정밀 상담 & 진단",
+    "location": "line:1786, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "精密カウンセリング＆診断"
+  },
+  {
+    "key": "attr_62_img_alt",
+    "text": "맞춤 치료 설계",
+    "location": "line:1791, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "オーダーメイド治療設計"
+  },
+  {
+    "key": "attr_63_img_alt",
+    "text": "얼라이너 제작",
+    "location": "line:1796, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "アライナー製作"
+  },
+  {
+    "key": "attr_64_img_alt",
+    "text": "치료 & 유지관리",
+    "location": "line:1801, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "治療＆メンテナンス"
+  },
+  {
+    "key": "text_65_div",
+    "text": "3D 스캔과 X-ray로 정밀 진단",
+    "location": "line:1815, tag:div",
+    "context": "text",
+    "translated": "3DスキャンとX線による精密診断"
+  },
+  {
+    "key": "text_66_div",
+    "text": "ClinCheck 디지털 시뮬레이션",
+    "location": "line:1823, tag:div",
+    "context": "text",
+    "translated": "ClinCheckデジタルシミュレーション"
+  },
+  {
+    "key": "text_67_div",
+    "text": "SmartTrack 소재 맞춤 제작",
+    "location": "line:1831, tag:div",
+    "context": "text",
+    "translated": "SmartTrack素材カスタム製作"
+  },
+  {
+    "key": "text_68_div",
+    "text": "단계별 교체 및 정기 관리",
+    "location": "line:1839, tag:div",
+    "context": "text",
+    "translated": "段階的な交換と定期管理"
+  },
+  {
+    "key": "attr_69_img_alt",
+    "text": "상담 및 진단",
+    "location": "line:1849, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "カウンセリング及び診断"
+  },
+  {
+    "key": "text_70_p",
+    "text": "치료를 시작하기 전, 환자의 치아 상태를 정밀하게 진단합니다. iTero 구강 스캐너를 사용하여 치아의 정확한 3D 디지털 모형을 만들고, X-ray와 구강 사진을 종합적으로 분석합니다. 이를 바탕으로 교정 전문의가 현재 교합 상태, 치주 건강, 치아 이동의 가능 범위를 평가하여 환자 맞춤형 치료 목표를 함께 설정합니다.",
+    "location": "line:1857, tag:p",
+    "context": "text",
+    "translated": "治療を開始する前に、患者の歯の状態を精密に診断します。iTero口腔スキャナーを使用して歯の正確な3Dデジタルモデルを作成し、X線と口腔内写真を総合的に分析します。これをもとに矯正専門医が現在の咬合状態、歯周の健康状態、歯の移動の可能範囲を評価し、患者オーダーメイドの治療目標を一緒に設定します。"
+  },
+  {
+    "key": "text_71_div",
+    "text": "3D 정밀 스캔",
+    "location": "line:1859, tag:div",
+    "context": "text",
+    "translated": "3D精密スキャン"
+  },
+  {
+    "key": "text_72_div",
+    "text": "맞춤 상담",
+    "location": "line:1860, tag:div",
+    "context": "text",
+    "translated": "オーダーメイドカウンセリング"
+  },
+  {
+    "key": "text_73_div",
+    "text": "치료 목표 설정",
+    "location": "line:1861, tag:div",
+    "context": "text",
+    "translated": "治療目標設定"
+  },
+  {
+    "key": "text_74_div",
+    "text": "구강 건강 점검",
+    "location": "line:1862, tag:div",
+    "context": "text",
+    "translated": "口腔健康チェック"
+  },
+  {
+    "key": "text_75_a",
+    "text": "자세히 보기 &rarr;",
+    "location": "line:1864, tag:a",
+    "context": "text",
+    "translated": "詳しく見る &rarr;"
+  },
+  {
+    "key": "text_76_p",
+    "text": "3D 스캔으로 얻은 정밀 데이터를 바탕으로 클린체크(ClinCheck) 소프트웨어에서 치아의 이동 경로를 단계별로 시뮬레이션합니다. 각 치아가 어떤 순서로, 얼마나 이동할지 0.25mm 단위로 정밀하게 계획하며, 환자분은 치료 전 최종 결과를 3D 영상으로 미리 확인할 수 있습니다. 교정 전문의의 검토를 거쳐 최적의 치료 계획을 확정합니다.",
+    "location": "line:1881, tag:p",
+    "context": "text",
+    "translated": "3Dスキャンで得た精密データをもとに、ClinCheckソフトウェアで歯の移動経路を段階的にシミュレーションします。各歯がどの順序で、どれだけ移動するかを0.25mm単位で精密に計画し、患者様は治療前に最終結果を3D映像で事前確認できます。矯正専門医の検討を経て、最適な治療計画を確定します。"
+  },
+  {
+    "key": "text_77_div",
+    "text": "디지털 시뮬레이션",
+    "location": "line:1883, tag:div",
+    "context": "text",
+    "translated": "デジタルシミュレーション"
+  },
+  {
+    "key": "text_78_div",
+    "text": "이동 경로 설계",
+    "location": "line:1884, tag:div",
+    "context": "text",
+    "translated": "移動経路設計"
+  },
+  {
+    "key": "text_79_div",
+    "text": "최적 계획 수립",
+    "location": "line:1885, tag:div",
+    "context": "text",
+    "translated": "最適計画策定"
+  },
+  {
+    "key": "text_80_div",
+    "text": "결과 미리보기",
+    "location": "line:1886, tag:div",
+    "context": "text",
+    "translated": "結果プレビュー"
+  },
+  {
+    "key": "text_81_h3",
+    "text": "맞춤형 얼라이너 제작",
+    "location": "line:1904, tag:h3",
+    "context": "text",
+    "translated": "カスタムアライナー製作"
+  },
+  {
+    "key": "text_82_p",
+    "text": "확정된 치료 계획에 따라 미국 인비절라인 본사에서 특허받은 스마트트랙(SmartTrack) 소재로 각 단계별 얼라이너를 정밀 제작합니다. 이 소재는 일반 플라스틱 대비 치아에 부드럽고 지속적인 힘을 가하여 보다 예측 가능한 치아 이동을 실현합니다. 각 환자의 잇몸라인에 맞춘 트리밍으로 최적의 착용감을 보장합니다.",
+    "location": "line:1905, tag:p",
+    "context": "text",
+    "translated": "確定した治療計画に基づき、米国インビザライン本社で特許取得済みのSmartTrack素材を使用して各段階のアライナーを精密製作します。この素材は一般プラスチックと比べ、歯に柔らかく持続的な力を加え、より予測可能な歯の移動を実現します。各患者の歯茎ラインに合わせたトリミングで最適な装着感を保証します。"
+  },
+  {
+    "key": "text_83_div",
+    "text": "맞춤 제작",
+    "location": "line:1907, tag:div",
+    "context": "text",
+    "translated": "カスタム製作"
+  },
+  {
+    "key": "text_84_div",
+    "text": "부드러운 소재",
+    "location": "line:1908, tag:div",
+    "context": "text",
+    "translated": "柔らかい素材"
+  },
+  {
+    "key": "text_85_div",
+    "text": "정밀 피팅",
+    "location": "line:1909, tag:div",
+    "context": "text",
+    "translated": "精密フィッティング"
+  },
+  {
+    "key": "text_86_div",
+    "text": "투명 디자인",
+    "location": "line:1910, tag:div",
+    "context": "text",
+    "translated": "透明デザイン"
+  },
+  {
+    "key": "text_87_p",
+    "text": "맞춤 제작된 얼라이너를 1~2주 간격으로 순차적으로 교체하며 착용합니다. 하루 20~22시간 착용을 권장하며, 식사와 양치 시에는 자유롭게 탈착할 수 있습니다. 치료 완료 후에는 비벡스(Vivera) 유지장치를 통해 교정 결과를 장기적으로 안정화하며, 정기적인 검진으로 아름다운 미소를 유지합니다.",
+    "location": "line:1929, tag:p",
+    "context": "text",
+    "translated": "カスタム製作されたアライナーを1〜2週間間隔で順番に交換しながら装着します。1日20〜22時間の装着を推奨し、食事と歯磨きの際は自由に取り外せます。治療完了後はVivera保定装置で矯正結果を長期的に安定させ、定期検診で美しい笑顔を維持します。"
+  },
+  {
+    "key": "text_88_div",
+    "text": "2주 간격 교체",
+    "location": "line:1931, tag:div",
+    "context": "text",
+    "translated": "2週間間隔で交換"
+  },
+  {
+    "key": "text_89_div",
+    "text": "정기 검진",
+    "location": "line:1932, tag:div",
+    "context": "text",
+    "translated": "定期検診"
+  },
+  {
+    "key": "text_90_div",
+    "text": "유지 장치 제공",
+    "location": "line:1933, tag:div",
+    "context": "text",
+    "translated": "保定装置提供"
+  },
+  {
+    "key": "text_91_div",
+    "text": "장기적 유지",
+    "location": "line:1934, tag:div",
+    "context": "text",
+    "translated": "長期的な維持"
+  },
+  {
+    "key": "text_92_h2",
+    "text": "이런 분들에게 인비절라인을 추천드립니다",
+    "location": "line:1950, tag:h2",
+    "context": "text",
+    "translated": "このような方にインビザラインをお勧めします"
+  },
+  {
+    "key": "text_93_h3",
+    "text": "심미적 고려가 중요한 분",
+    "location": "line:1955, tag:h3",
+    "context": "text",
+    "translated": "審美的な考慮が重要な方"
+  },
+  {
+    "key": "text_94_p",
+    "text": "직장인, 대학생 등 외모에 민감한 상황에서 교정 장치가 보이지 않길 원하시는 분에게 적합합니다.",
+    "location": "line:1956, tag:p",
+    "context": "text",
+    "translated": "社会人、大学生など、見た目に敏感な状況で矯正装置が目立たないようにしたい方に適しています。"
+  },
+  {
+    "key": "text_95_h3",
+    "text": "구강 위생이 걱정되는 분",
+    "location": "line:1960, tag:h3",
+    "context": "text",
+    "translated": "口腔衛生が心配な方"
+  },
+  {
+    "key": "text_96_p",
+    "text": "식사와 양치 시 자유롭게 탈착할 수 있어 치료 기간에도 철저한 구강 위생 관리가 가능합니다.",
+    "location": "line:1961, tag:p",
+    "context": "text",
+    "translated": "食事と歯磨きの際に自由に取り外せるため、治療期間中も徹底した口腔衛生管理が可能です。"
+  },
+  {
+    "key": "text_97_h3",
+    "text": "금속 교정기가 부담스러운 분",
+    "location": "line:1965, tag:h3",
+    "context": "text",
+    "translated": "金属矯正装置が気になる方"
+  },
+  {
+    "key": "text_98_p",
+    "text": "금속 브라켓의 이물감과 통증이 걱정되시는 분에게 부드러운 스마트트랙 소재가 편안한 대안이 됩니다.",
+    "location": "line:1966, tag:p",
+    "context": "text",
+    "translated": "金属ブラケットの異物感や痛みが心配な方に、柔らかいSmartTrack素材が快適な代替となります。"
+  },
+  {
+    "key": "text_99_h3",
+    "text": "바쁜 일상을 보내는 분",
+    "location": "line:1970, tag:h3",
+    "context": "text",
+    "translated": "忙しい日常を送る方"
+  },
+  {
+    "key": "text_100_p",
+    "text": "내원 간격이 길고 셀프 교체가 가능하여 잦은 병원 방문이 어려운 직장인에게 최적입니다.",
+    "location": "line:1971, tag:p",
+    "context": "text",
+    "translated": "通院間隔が長く、自己交換が可能なため、頻繁な通院が難しい社会人に最適です。"
+  },
+  {
+    "key": "text_101_h3",
+    "text": "부분 교정을 원하는 분",
+    "location": "line:1975, tag:h3",
+    "context": "text",
+    "translated": "部分矯正を希望する方"
+  },
+  {
+    "key": "text_102_p",
+    "text": "전체 교정이 아닌 특정 치아만 가지런히 정렬하고 싶은 분에게도 맞춤형 솔루션을 제공합니다.",
+    "location": "line:1976, tag:p",
+    "context": "text",
+    "translated": "全体矯正ではなく、特定の歯だけをきれいに整えたい方にもオーダーメイドのソリューションを提供します。"
+  },
+  {
+    "key": "text_103_h3",
+    "text": "치료 결과를 미리 보고 싶은 분",
+    "location": "line:1980, tag:h3",
+    "context": "text",
+    "translated": "治療結果を事前に確認したい方"
+  },
+  {
+    "key": "text_104_p",
+    "text": "클린체크 3D 시뮬레이션으로 최종 결과를 미리 확인한 후 치료를 시작할 수 있습니다.",
+    "location": "line:1981, tag:p",
+    "context": "text",
+    "translated": "ClinCheck 3Dシミュレーションで最終結果を事前確認してから治療を開始できます。"
+  },
+  {
+    "key": "text_105_p",
+    "text": "스마일뷰 치과가 특별한 이유",
+    "location": "line:1992, tag:p",
+    "context": "text",
+    "translated": "SMILEVIEWデンタルクリニックが特別な理由"
+  },
+  {
+    "key": "text_106_h3",
+    "text": "1:1 전담 케어",
+    "location": "line:1998, tag:h3",
+    "context": "text",
+    "translated": "1対1専任ケア"
+  },
+  {
+    "key": "text_107_p",
+    "text": "상담부터 치료, 사후관리까지 담당 전문의가 직접 전담합니다. 환자 개인에게 최적화된 맞춤 치료를 제공합니다.",
+    "location": "line:1999, tag:p",
+    "context": "text",
+    "translated": "カウンセリングから治療、アフターケアまで担当専門医が直接担当します。患者個人に最適化されたオーダーメイド治療を提供します。"
+  },
+  {
+    "key": "text_108_h3",
+    "text": "3D 디지털 스캐닝",
+    "location": "line:2003, tag:h3",
+    "context": "text",
+    "translated": "3Dデジタルスキャニング"
+  },
+  {
+    "key": "text_109_p",
+    "text": "최신 3D 구강 스캐너로 정밀한 데이터를 확보하여 정확한 진단과 예측 가능한 치료 계획을 수립합니다.",
+    "location": "line:2004, tag:p",
+    "context": "text",
+    "translated": "最新の3D口腔スキャナーで精密なデータを確保し、正確な診断と予測可能な治療計画を策定します。"
+  },
+  {
+    "key": "text_110_h3",
+    "text": "인비절라인 인증의",
+    "location": "line:2008, tag:h3",
+    "context": "text",
+    "translated": "インビザライン認定医"
+  },
+  {
+    "key": "text_111_p",
+    "text": "인비절라인 공식 인증 전문의가 풍부한 경험과 노하우로 최상의 교정 결과를 만들어 드립니다.",
+    "location": "line:2009, tag:p",
+    "context": "text",
+    "translated": "インビザライン公式認定専門医が豊富な経験とノウハウで最高の矯正結果をお届けします。"
+  },
+  {
+    "key": "text_112_h3",
+    "text": "빠른 치료 과정",
+    "location": "line:2013, tag:h3",
+    "context": "text",
+    "translated": "迅速な治療プロセス"
+  },
+  {
+    "key": "text_113_p",
+    "text": "효율적인 치료 시스템으로 불필요한 내원 횟수를 줄이고, 바쁜 일상 속에서도 편하게 교정 받을 수 있습니다.",
+    "location": "line:2014, tag:p",
+    "context": "text",
+    "translated": "効率的な治療システムで不要な通院回数を減らし、忙しい日常の中でも快適に矯正を受けられます。"
+  },
+  {
+    "key": "text_114_h3",
+    "text": "사전 시뮬레이션",
+    "location": "line:2018, tag:h3",
+    "context": "text",
+    "translated": "事前シミュレーション"
+  },
+  {
+    "key": "text_115_p",
+    "text": "치료 전 3D 시뮬레이션으로 교정 후 모습을 미리 확인할 수 있어 안심하고 치료를 시작할 수 있습니다.",
+    "location": "line:2019, tag:p",
+    "context": "text",
+    "translated": "治療前に3Dシミュレーションで矯正後の姿を事前確認できるため、安心して治療を開始できます。"
+  },
+  {
+    "key": "text_116_h3",
+    "text": "평생 관리 시스템",
+    "location": "line:2023, tag:h3",
+    "context": "text",
+    "translated": "生涯管理システム"
+  },
+  {
+    "key": "text_117_p",
+    "text": "치료 완료 후에도 정기적인 관리와 상담을 통해 아름다운 미소를 오랫동안 유지할 수 있도록 합니다.",
+    "location": "line:2024, tag:p",
+    "context": "text",
+    "translated": "治療完了後も定期的な管理とカウンセリングを通じて、美しい笑顔を長く維持できるようサポートします。"
+  },
+  {
+    "key": "text_118_p",
+    "text": "인비절라인 치료에 대해 자주 묻는 질문들을 확인해 보세요.",
+    "location": "line:2036, tag:p",
+    "context": "text",
+    "translated": "インビザライン治療についてよくある質問をご確認ください。"
+  },
+  {
+    "key": "text_119_span",
+    "text": "인비절라인은 얼마나 자주 착용해야 하나요?",
+    "location": "line:2042, tag:span",
+    "context": "text",
+    "translated": "インビザラインはどれくらい着用する必要がありますか？"
+  },
+  {
+    "key": "text_120_span",
+    "text": "A. 인비절라인은 하루에 최소 20~22시간 착용해야 효과적입니다. 식사나 양치질 시에만 제거하고, 나머지 시간에는 계속 착용해야 합니다.",
+    "location": "line:2046, tag:span",
+    "context": "text",
+    "translated": "A. インビザラインは1日最低20〜22時間着用する必要があります。食事や歯磨きの際のみ外し、それ以外の時間は常に着用してください。"
+  },
+  {
+    "key": "text_121_span",
+    "text": "인비절라인 치료 기간은 얼마나 걸리나요?",
+    "location": "line:2052, tag:span",
+    "context": "text",
+    "translated": "インビザラインの治療期間はどれくらいかかりますか？"
+  },
+  {
+    "key": "text_122_span",
+    "text": "A. 치료 기간은 개인의 치아 상태와 교정이 필요한 정도에 따라 다릅니다. 평균적으로 12개월에서 18개월 사이가 일반적이지만, 더 짧거나 길 수도 있습니다.",
+    "location": "line:2056, tag:span",
+    "context": "text",
+    "translated": "A. 治療期間は個人の歯の状態と矯正が必要な程度によって異なります。平均的に12ヶ月から18ヶ月が一般的ですが、それより短い場合も長い場合もあります。"
+  },
+  {
+    "key": "text_123_span",
+    "text": "인비절라인으로 모든 교정문제를 해결할 수 있나요?",
+    "location": "line:2062, tag:span",
+    "context": "text",
+    "translated": "インビザラインですべての矯正問題を解決できますか？"
+  },
+  {
+    "key": "text_124_span",
+    "text": "A. 인비절라인은 다양한 교정 문제를 해결할 수 있지만, 극도로 복잡한 경우에는 전통적인 교정 방법이 더 적합할 수 있습니다. 치과 전문의와 상담을 통해 개인에게 적합한 치료 방법을 결정하는 것이 중요합니다.",
+    "location": "line:2066, tag:span",
+    "context": "text",
+    "translated": "A. インビザラインはさまざまな矯正問題を解決できますが、極めて複雑なケースでは従来の矯正方法の方が適している場合があります。歯科専門医との相談を通じて、個人に適した治療方法を決定することが重要です。"
+  },
+  {
+    "key": "text_125_span",
+    "text": "인비절라인 치료 중 통증을 느낄 수 있나요?",
+    "location": "line:2072, tag:span",
+    "context": "text",
+    "translated": "インビザライン治療中に痛みを感じることはありますか？"
+  },
+  {
+    "key": "text_126_span",
+    "text": "A. 새로운 얼라이너로 교체할 때 약간의 압박감이나 불편함을 느낄 수 있습니다. 하지만 이는 일시적이며, 대부분의 사람들은 며칠 내에 적응합니다.",
+    "location": "line:2076, tag:span",
+    "context": "text",
+    "translated": "A. 新しいアライナーに交換する際に若干の圧迫感や不快感を感じることがあります。しかし、これは一時的なもので、ほとんどの方は数日以内に慣れます。"
+  },
+  {
+    "key": "attr_127_button_title",
+    "text": "맨 위로",
+    "location": "line:2085, tag:button[title]",
+    "context": "attr:title",
+    "translated": "トップへ"
+  },
+  {
+    "key": "text_128_p",
+    "text": "투명하고 편리한 교정부터 심미 치료까지, 스마일뷰치과가 당신의 아름다운 미소를 만들어 드립니다.",
+    "location": "line:2099, tag:p",
+    "context": "text",
+    "translated": "透明で便利な矯正から審美治療まで、SMILEVIEWデンタルクリニックが美しい笑顔をお届けします。"
+  },
+  {
+    "key": "text_129_li",
+    "text": "서울특별시 강남구 봉은사로 107, 15층",
+    "location": "line:2104, tag:li",
+    "context": "text",
+    "translated": "ソウル特別市 江南区 奉恩寺路 107, 15階"
+  },
+  {
+    "key": "text_130_li",
+    "text": "(논현동 201 16번지 15층)",
+    "location": "line:2105, tag:li",
+    "context": "text",
+    "translated": "（論峴洞 201 16番地 15階）"
+  },
+  {
+    "key": "text_131_li",
+    "text": "대표자 김한결",
+    "location": "line:2113, tag:li",
+    "context": "text",
+    "translated": "代表者 キム・ハンギョル"
+  },
+  {
+    "key": "text_132_li",
+    "text": "사업자번호 699-29-00572",
+    "location": "line:2114, tag:li",
+    "context": "text",
+    "translated": "事業者番号 699-29-00572"
+  },
+  {
+    "key": "text_133_li",
+    "text": "평일 AM 10:00 - PM 06:30",
+    "location": "line:2120, tag:li",
+    "context": "text",
+    "translated": "平日 AM 10:00 - PM 06:30"
+  },
+  {
+    "key": "text_134_li",
+    "text": "점심시간 PM 01:00 - PM 02:00",
+    "location": "line:2121, tag:li",
+    "context": "text",
+    "translated": "昼休み PM 01:00 - PM 02:00"
+  },
+  {
+    "key": "text_135_li",
+    "text": "토요일 AM 10:00 - PM 03:00",
+    "location": "line:2122, tag:li",
+    "context": "text",
+    "translated": "土曜日 AM 10:00 - PM 03:00"
+  },
+  {
+    "key": "text_136_li",
+    "text": "점심시간 없이 진료",
+    "location": "line:2123, tag:li",
+    "context": "text",
+    "translated": "昼休みなし診療"
+  },
+  {
+    "key": "text_137_li",
+    "text": "일요일 AM 10:00 - PM 04:00",
+    "location": "line:2124, tag:li",
+    "context": "text",
+    "translated": "日曜日 AM 10:00 - PM 04:00"
+  },
+  {
+    "key": "text_138_li",
+    "text": "휴진 공휴일",
+    "location": "line:2125, tag:li",
+    "context": "text",
+    "translated": "休診 祝日"
+  }
+]

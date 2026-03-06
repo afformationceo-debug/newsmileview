@@ -1,0 +1,265 @@
+--- HEADINGS ---
+
+--- CONTENT BLOCKS ---
+B: nk rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/cd2835_83ef872f44624983843b51dd912c59df%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/cd2835_83ef872f44624983843b51dd912c59df%7Emv2.png" type="image/png"/>
+B: nk rel="shortcut icon" href="https://static.wixstatic.com/media/cd2835_83ef872f44624983843b51dd912c59df%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/cd2835_83ef872f44624983843b51dd912c59df%7Emv2.png" type="image/png"/>
+B: nk rel="apple-touch-icon" href="https://static.wixstatic.com/media/cd2835_83ef872f44624983843b51dd912c59df%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/cd2835_83ef872f44624983843b51dd912c59df%7Emv2.png" type="image/png"/> <!--
+B: nk rel="mask-icon" href="https://static.wixstatic.com/media/cd2835_83ef872f44624983843b51dd912c59df%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/cd2835_83ef872f44624983843b51dd912c59df%7Emv2.png"> -->
+B: nk rel="shortcut icon" type="image/png" sizes="48x48" href="https://www.smile-vdental.com/favicon.ico"> 스마일뷰치과의원 l 라미네이트 l 최소삭제라미네이트 l 무삭제라미네이트
+B: nk rel="canonical" href="https://www.smile-vdental.com/laminate"/>
+B: nk rel="alternate" href="https://www.smile-vdental.com/laminate" hreflang="x-default"/>
+B: nk rel="alternate" href="https://www.smile-vdental.com/laminate" hreflang="ko-kr"/>
+B: id="SITE_CONTAINER">
+B: id="main_MF" class="main_MF">
+B: id="SCROLL_TO_TOP" class="Vd6aQZ ignore-focus SCROLL_TO_TOP" role="region" tabindex="-1" aria-label="top of page"> top of page
+B: id="BACKGROUND_GROUP" class="backgroundGroup_txl25 BACKGROUND_GROUP">
+B: id="BACKGROUND_GROUP_TRANSITION_GROUP">
+B: id="pageBackground_txl25" data-media-height-override-type="" data-media-position-override="false" class="pageBackground_txl25 BmZ5pC">
+B: id="bgLayers_pageBackground_txl25" data-hook="bgLayers" data-motion-part="BG_LAYER pageBackground_txl25" class="MW5IWV">
+B: data-testid="colorUnderlay" class="LWbAav Kv1aVt">
+B: id="bgMedia_pageBackground_txl25" data-motion-part="BG_MEDIA pageBackground_txl25" class="VgO9Yg">
+B: data-testid="bgOverlay" class="m4khSP">
+B: id="site-root" class="site-root">
+B: id="masterPage" class="mesh-layout masterPage css-editing-scope">
+B: class="uRmCGe">
+B: class="hqwWPY">
+B: class="duEYWW">
+B: class="Na9Voo">
+B: class="aVaKr8">
+B: data-mesh-id="SITE_HEADERinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="SITE_HEADERinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvdodvi8" class="comp-lvdodvi8 SPY_vo">
+B: data-mesh-id="comp-lvdodvi8inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvdodvi8inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv525e07" class="MazNVa comp-lv525e07 wixui-image rYiAuL">
+B: id="comp-luwgb0w5" class="comp-luwgb0w5 NZHLsZ mfxFLH">
+B: class="itemDepth02233374943__itemWrapper wixui-horizontal-menu__item" data-testid="menuItemDepth0" data-item-depth="0" data-is-current="false" aria-current="false">
+B: class="itemShared2352141355__rootContainer itemShared2352141355--isRow">
+B: data-item-label="true" data-testid="linkElement" class="itemDepth02233374943__root StylableHorizontalMenu3372578893__menuItem itemShared2352141355__menuItem" tabindex="0" aria-haspopup="true" aria-expanded="false" role="button">
+B: class="itemDepth02233374943__container"> 스마일뷰 치과
+B: class="itemShared2352141355__accessibilityIconWrapper itemShared2352141355--isTopLevel">
+B: ath d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z">
+B: class="itemDepth02233374943__positionBox" role="group" aria-label="스마일뷰 치과" data-testid="positionBox">
+B: class="itemDepth02233374943__animationBox submenu815198092__root StylableHorizontalMenu3372578893__columnsLayout" style="--flyoutAlignment:var(--style-ly3316ab-flyoutAlignment)">
+B: class="submenu815198092__pageWrapper submenu815198092__overrideWidth">
+B: class="itemDepth12472627565__itemWrapper" data-testid="menuItemDepth1" data-item-depth="1" data-is-current="false" aria-current="false">
+B: class="itemShared2352141355__rootContainer">
+B: class="itemDepth12472627565__container"> 미소클리닉
+B: class="itemDepth12472627565__container"> 의료진
+B: class="itemDepth12472627565__container"> 찾아오는 길
+B: class="itemDepth02233374943__container"> 인비절라인
+B: class="itemDepth02233374943__container"> 치아교정
+B: class="itemDepth02233374943__positionBox" role="group" aria-label="치아교정" data-testid="positionBox">
+B: class="itemDepth12472627565__container"> 선수술 교정
+B: class="itemDepth12472627565__container"> 비수술 교정
+B: class="itemDepth12472627565__container"> 부분 교정
+B: class="itemDepth12472627565__container"> 설측 교정
+B: class="itemDepth12472627565__container"> 일반 교정
+B: class="itemDepth02233374943__container"> 치아미백
+B: class="itemDepth02233374943__container"> 수면 임플란트
+B: class="itemDepth02233374943__itemWrapper wixui-horizontal-menu__item" data-testid="menuItemDepth0" data-item-depth="0" data-is-current="true" aria-current="true">
+B: class="itemDepth02233374943__container"> 최소삭제 라미네이트
+B: class="itemDepth02233374943__container"> 보철치료
+B: id="comp-ly35er5y" class="comp-ly35er5y WzbAF8">
+B: id="dataItem-ly35er771-comp-ly35er5y" class="O6KwRn">
+B: id="dataItem-ly35er79-comp-ly35er5y" class="O6KwRn">
+B: id="SITE_PAGES" class="JsJXaX SITE_PAGES">
+B: id="SITE_PAGES_TRANSITION_GROUP" class="AnQkDU">
+B: id="txl25" class="dBAkHi theme-vars txl25">
+B: class="PFkO7r wixui-page" data-testid="page-bg">
+B: class="HT5ybB">
+B: id="Containertxl25" class="Containertxl25 SPY_vo">
+B: data-mesh-id="Containertxl25inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="Containertxl25inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="bgLayers_comp-lv61xlbf" data-hook="bgLayers" data-motion-part="BG_LAYER comp-lv61xlbf" class="MW5IWV">
+B: id="bgMedia_comp-lv61xlbf" data-motion-part="BG_MEDIA comp-lv61xlbf" class="VgO9Yg">
+B: data-mesh-id="comp-lv61xlbfinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lv61xlbfinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv61xlbm" class="comp-lv61xlbm SPY_vo">
+B: data-mesh-id="comp-lv61xlbminlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lv61xlbminlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv61xlbo3" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv61xlbo3 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:34px; text-align:center;"> 최소 삭제 라미네이트
+B: id="comp-lv61xlbr2" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv61xlbr2 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em; text-align:center;"> 라미네이트는 치아 성형의 한 형태로, 치아의 모양과 색상을 개선하고 간격을 조절하는데 사용됩니다.
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em; text-align:center;"> 자연스러운 미소를 연출하며, 무삭제 라미네이트를 통해 치아를 거의 삭제하지 않고도 치료가 가능합니다.
+B: id="bgLayers_comp-lvi4n07r" data-hook="bgLayers" data-motion-part="BG_LAYER comp-lvi4n07r" class="MW5IWV">
+B: id="bgMedia_comp-lvi4n07r" data-motion-part="BG_MEDIA comp-lvi4n07r" class="VgO9Yg">
+B: data-mesh-id="comp-lvi4n07rinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi4n07rinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvi4n08e" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi4n08e wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:16px; line-height:0.9em;"> ​라미네이트
+B: id="comp-lvi4n08f" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi4n08f wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> 라미네이트란?
+B: id="comp-lvi4n08f7" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi4n08f7 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="line-height:1.6em; font-size:17px;"> 라미네이트는 치아 성형의 한 종류로, 치아 사이의 간격이나 치아의 배열이 불균일한 경우,
+B: class="font_7 wixui-rich-text__text" style="line-height:1.6em; font-size:17px;"> 또는 치아의 색을 밝히거나 반점을 처리할 때 사용됩니다. 이는 치과에서 얇은 치아와 같은
+B: class="font_7 wixui-rich-text__text" style="line-height:1.6em; font-size:17px;"> 재질의 도자기를 사용하여 치아 표면에 부착하는 형태의 심미 치료입니다.
+B: class="font_7 wixui-rich-text__text" style="line-height:1.6em; font-size:17px;">&nbsp;
+B: class="font_7 wixui-rich-text__text" style="line-height:1.6em; font-size:17px;"> 일반적으로 머리카락 정도로 얇게 다듬어져 치아에 부착되며, 자연스러운 모양과 색상을
+B: class="font_7 wixui-rich-text__text" style="line-height:1.6em; font-size:17px;"> 제공하여 미소를 아름답게 만들어줍니다.
+B: id="bgLayers_comp-lv61xlbz5" data-hook="bgLayers" data-motion-part="BG_LAYER comp-lv61xlbz5" class="MW5IWV">
+B: id="bgMedia_comp-lv61xlbz5" data-motion-part="BG_MEDIA comp-lv61xlbz5" class="VgO9Yg">
+B: data-mesh-id="comp-lv61xlbz5inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lv61xlbz5inlineContent-gridContainer" data-testid="mesh-container-content">
+B: data-mesh-id="comp-lvi6028x-rotated-wrapper">
+B: id="comp-lvi6028x" class="comp-lvi6028x aVng1S wixui-horizontal-line">
+B: id="comp-lv63x8qf" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv63x8qf wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:30px; line-height:0.9em; text-align:center;"> ​이런 분들에게 라미네이트가 필요합니다!
+B: id="bgLayers_comp-lv633b00" data-hook="bgLayers" data-motion-part="BG_LAYER comp-lv633b00" class="if7Vw2">
+B: data-testid="colorUnderlay" class="tcElKx i1tH8h">
+B: id="bgMedia_comp-lv633b00" data-motion-part="BG_MEDIA comp-lv633b00" class="wG8dni">
+B: data-testid="columns" class="V5AUxf">
+B: id="comp-lv633b0n3" class="comp-lv633b0n3 YzqVVZ wixui-column-strip__column">
+B: id="bgLayers_comp-lv633b0n3" data-hook="bgLayers" data-motion-part="BG_LAYER comp-lv633b0n3" class="MW5IWV">
+B: id="bgMedia_comp-lv633b0n3" data-motion-part="BG_MEDIA comp-lv633b0n3" class="VgO9Yg">
+B: data-mesh-id="comp-lv633b0n3inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lv633b0n3inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv642hl4" class="KaEeLN comp-lv642hl4">
+B: class="uYj0Sg wixui-box" data-testid="container-bg">
+B: data-mesh-id="comp-lv642hl4inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lv642hl4inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv6nult2" class="MazNVa comp-lv6nult2 wixui-image">
+B: data-testid="linkElement" class="j7pOnl">
+B: id="comp-lvi5346z" class="KaEeLN comp-lvi5346z">
+B: data-mesh-id="comp-lvi5346zinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi5346zinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvi56vwu" class="KaEeLN comp-lvi56vwu">
+B: data-mesh-id="comp-lvi56vwuinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi56vwuinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv64hkj3" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv64hkj3 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:18px; line-height:1.5em; text-align:center;"> 앞니가 겹치거나
+B: class="font_7 wixui-rich-text__text" style="font-size:18px; line-height:1.5em; text-align:center;"> 치아 사이에 공간이 있는 등
+B: class="font_7 wixui-rich-text__text" style="font-size:18px; line-height:1.5em; text-align:center;"> ​치아 배열이 좋지 않은 경우
+B: id="comp-lv64ja81" class="KaEeLN comp-lv64ja81">
+B: data-mesh-id="comp-lv64ja81inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lv64ja81inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv6nwagk" class="MazNVa comp-lv6nwagk wixui-image">
+B: id="comp-lvi55dui" class="KaEeLN comp-lvi55dui">
+B: data-mesh-id="comp-lvi55duiinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi55duiinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv64ja8o1" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv64ja8o1 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:18px; line-height:1.5em; text-align:center;"> 치아 크기가 크거나 작거나
+B: class="font_7 wixui-rich-text__text" style="font-size:18px; line-height:1.5em; text-align:center;"> ​일정하지 않은 경우
+B: id="comp-lv64jc4f" class="KaEeLN comp-lv64jc4f">
+B: data-mesh-id="comp-lv64jc4finlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lv64jc4finlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv6nwi8m" class="MazNVa comp-lv6nwi8m wixui-image">
+B: id="comp-lvi543ll" class="KaEeLN comp-lvi543ll">
+B: data-mesh-id="comp-lvi543llinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi543llinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv64jc58" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv64jc58 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:18px; line-height:1.5em; text-align:center;"> 앞니가 깨지거나 이전의 시술로
+B: class="font_7 wixui-rich-text__text" style="font-size:18px; line-height:1.5em; text-align:center;"> 심미적으로 우수하지 않은 경우
+B: id="comp-lv64jdje" class="KaEeLN comp-lv64jdje">
+B: data-mesh-id="comp-lv64jdjeinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lv64jdjeinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv6nwq73" class="MazNVa comp-lv6nwq73 wixui-image">
+B: id="comp-lv64jdju3" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv64jdju3 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:18px; line-height:1.5em; text-align:center;"> 치아가 심하게 변색되어
+B: class="font_7 wixui-rich-text__text" style="font-size:18px; line-height:1.5em; text-align:center;"> 영구적인 미백을 원하는 경우
+B: data-mesh-id="comp-lv61xlbz5inlineContent-wedge-4">
+B: id="bgLayers_comp-lvi4pgo4" data-hook="bgLayers" data-motion-part="BG_LAYER comp-lvi4pgo4" class="MW5IWV">
+B: id="bgMedia_comp-lvi4pgo4" data-motion-part="BG_MEDIA comp-lvi4pgo4" class="VgO9Yg">
+B: data-mesh-id="comp-lvi4pgo4inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi4pgo4inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvi4pgos1" class="KaEeLN comp-lvi4pgos1">
+B: data-mesh-id="comp-lvi4pgos1inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi4pgos1inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvi4pgos5" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi4pgos5 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:18px; line-height:0.9em; text-align:center;"> Before &amp; After
+B: id="comp-lvi4pgot5" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi4pgot5 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:26px; line-height:0.9em; text-align:center;"> 라미네이트 전 후
+B: id="comp-lvi4pgot11" class="KaEeLN comp-lvi4pgot11">
+B: data-mesh-id="comp-lvi4pgot11inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi4pgot11inlineContent-gridContainer" data-testid="mesh-container-content">
+B: data-mesh-id="comp-lvi4pgp02-rotated-wrapper">
+B: id="comp-lvi4pgp02" class="comp-lvi4pgp02 wixui-vector-image">
+B: data-testid="svgRoot-comp-lvi4pgp02" class="VDJedC l4CAhn">
+B: ath d="M172.5 142a7.485 7.485 0 0 1-5.185-2.073L100 75.808l-67.315 64.12c-2.998 2.846-7.74 2.744-10.606-.234a7.454 7.454 0 0 1 .235-10.565l72.5-69.057a7.524 7.524 0 0 1 10.371 0l72.5 69.057a7.455 7.455 0 0 1 .235 10.565A7.503 7.503 0 0 1 172.5 142z"/>
+B: id="comp-lvi4pgou3" class="KaEeLN comp-lvi4pgou3">
+B: data-mesh-id="comp-lvi4pgou3inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi4pgou3inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvi4pgou7" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi4pgou7 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:24px; line-height:0.9em; text-align:center;"> Before
+B: id="comp-lvi4pgou13" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi4pgou13 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:16px; line-height:0.9em; text-align:center;"> 라미네이트 전
+B: id="comp-lvi4pgov5" class="LjV9wd comp-lvi4pgov5 wixui-image">
+B: data-testid="linkElement" class="Ikn7zx">
+B: id="comp-lvi4s8cp" class="MazNVa comp-lvi4s8cp wixui-image">
+B: id="comp-lvi4pgow4" class="KaEeLN comp-lvi4pgow4">
+B: data-mesh-id="comp-lvi4pgow4inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi4pgow4inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvi4pgow8" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi4pgow8 wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:24px; line-height:0.9em; text-align:center;"> After
+B: id="comp-lvi4pgox" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi4pgox wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:16px; line-height:0.9em; text-align:center;"> 라미네이트 후
+B: id="comp-lvi4pgox6" class="LjV9wd comp-lvi4pgox6 wixui-image">
+B: id="comp-lvi4si2l" class="MazNVa comp-lvi4si2l wixui-image">
+B: id="comp-lvi4rwtw" class="KaEeLN comp-lvi4rwtw">
+B: data-mesh-id="comp-lvi4rwtwinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi4rwtwinlineContent-gridContainer" data-testid="mesh-container-content">
+B: data-mesh-id="comp-lvi4rwuw2-rotated-wrapper">
+B: id="comp-lvi4rwuw2" class="comp-lvi4rwuw2 wixui-vector-image">
+B: data-testid="svgRoot-comp-lvi4rwuw2" class="VDJedC l4CAhn">
+B: id="comp-lvi4rwu2" class="KaEeLN comp-lvi4rwu2">
+B: data-mesh-id="comp-lvi4rwu2inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi4rwu2inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvi4rwv03" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi4rwv03 wixui-rich-text" data-testid="richTextElement">
+B: id="comp-lvi4rwv09" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi4rwv09 wixui-rich-text" data-testid="richTextElement">
+B: id="comp-lvi4rwv15" class="LjV9wd comp-lvi4rwv15 wixui-image">
+B: id="comp-lvi4sph5" class="MazNVa comp-lvi4sph5 wixui-image">
+B: id="comp-lvi4rwu9" class="KaEeLN comp-lvi4rwu9">
+B: data-mesh-id="comp-lvi4rwu9inlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lvi4rwu9inlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lvi4rwv52" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi4rwv52 wixui-rich-text" data-testid="richTextElement">
+B: id="comp-lvi4rwv6" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lvi4rwv6 wixui-rich-text" data-testid="richTextElement">
+B: id="comp-lvi4rwv66" class="LjV9wd comp-lvi4rwv66 wixui-image">
+B: id="comp-lvi4stfm" class="MazNVa comp-lvi4stfm wixui-image">
+B: id="pinnedBottomRight" class="pinnedBottomRight">
+B: id="comp-lvi85q0f-pinned-layer" class="comp-lvi85q0f-pinned-layer big2ZD">
+B: id="comp-lvi85q0f" class="comp-lvi85q0f wixui-image-button" aria-describedby="9e2d4e49-cea1-432a-8404-f0e9b8c74df7">
+B: role="img" class="nXJ9tS" data-testid="linkImageContainer">
+B: class="PRnra1">
+B: class="_C0cVf">
+B: class="_4XcTfy" data-testid="screenWidthContainerBg">
+B: class="U4Bvut">
+B: class="G5K6X8">
+B: class="gUbusX" data-testid="screenWidthContainerBgCenter">
+B: class="CJF7A2">
+B: data-mesh-id="SITE_FOOTERinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="SITE_FOOTERinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv57jfmc" class="comp-lv57jfmc SPY_vo">
+B: data-mesh-id="comp-lv57jfmcinlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lv57jfmcinlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv57cas9" class="MazNVa comp-lv57cas9 wixui-image">
+B: id="comp-lv57941a" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv57941a wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> 상호 : 스마일뷰치과의원
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> 주소 : 서울특별시 강남구 봉은사로 107, 15층 (논현동 201 16번지 15층)
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> 대표자: 김한결&nbsp; l&nbsp; 사업자번호: 699-29-00572
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:0.9em;"> TEL: 02-552-7528&nbsp; l&nbsp; FAX: 02-552-7527
+B: id="comp-lv57jq1n" class="comp-lv57jq1n SPY_vo">
+B: data-mesh-id="comp-lv57jq1ninlineContent" data-testid="inline-content" class="">
+B: data-mesh-id="comp-lv57jq1ninlineContent-gridContainer" data-testid="mesh-container-content">
+B: id="comp-lv57hu5r" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv57hu5r wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:20px; line-height:0.9em;"> 진료시간 안내
+B: id="comp-lv57czxu" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv57czxu wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> 평일
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> 토요일
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> ​일요일
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> 점심시간
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> ​휴진
+B: id="comp-lv57fe6h" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv57fe6h wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> AM 10:00 - PM 06:30
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> AM 10:00 - PM 03:00 (점심시간 없이 진료)
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> AM 10:00 - PM 04:00&nbsp;
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> PM 01:00 - PM 02:00
+B: class="font_7 wixui-rich-text__text" style="font-size:28px; line-height:1em;"> 공휴일​
+B: id="comp-lv572owx" class="comp-lv572owx aVng1S wixui-horizontal-line">
+B: id="comp-lv573yow" class="Z_l5lU ku3DBC zQ9jDz qvSjx3 Vq6kJx comp-lv573yow wixui-rich-text" data-testid="richTextElement">
+B: class="font_7 wixui-rich-text__text" style="font-size:14px; line-height:0.9em; text-align:right;"> COPYRIGHTⓒ SMILE VIEW DENTAL CLINIC. ALL RIGHTS RESERVED.
+B: data-mesh-id="SITE_FOOTERinlineContent-wedge-3">
+B: id="SCROLL_TO_BOTTOM" class="Vd6aQZ ignore-focus SCROLL_TO_BOTTOM" role="region" tabindex="-1" aria-label="bottom of page"> bottom of page
+B: nk href="https://siteassets.parastorage.com/pages/pages/thunderbolt?appDefinitionIdToSiteRevision=%7B%2213d21c63-b5ec-5912-8397-c3a5ddb27a97%22%3A%22440%22%2C%22b976560c-3122-4351-878f-453f337b7245%22%3A%221291%22%2C%2214271d6f-ba62-d045-549b-ab972ae1f70e%22%3A%2225%22%7D&beckyExperiments=.DatePickerPortal%2C.DisableDocumentScrollWhenLightBoxOpen%2C.EnableCustomCSSVarsForLoginSocialBar%2C.FreemiumBannerOdeditor%2C.LoginBarEnableLoggingInStateInSSR%2C.TextInputAutoFillFix%2C.UseLoginSocialBarCustomMenu%2C.UseNewLoginSocialBarCustomMenuPositioning%2C.UseNewLoginSocialBarElementStructure%2C.UseNewLoginSocialBarMemberInitialsAvatar%2C.VerticalMenu_uiType_NativeMapper%2C.WixFreeSiteBannerDesktop%2C.WixFreeSiteBannerMobile%2C.buttonUdp%2C.calculateCollapsibleTextLineHeightByFont%2C.disableBuilderWixComponents%2C.dom_store%2C.dynamicSlots%2C.fiveGridLineStudioSkins%2C.imageEncodingAVIF%2C.isClassNameToRootEnabled%2C.motionTimeAnimationsCSS%2C.propsCarmiMappersMigration1%2C.propsCarmiMappersMigration4%2C.propsCarmiMappersMigration5%2C.shouldUseResponsiveImages%2C.svgResolver_2%2C.takeAppDependenciesFromCSM%2C.updateRichTextSemanticClassNamesOnCorvid%2C.useClassnameInResponsiveAppWidget%2C.useImageAvifFormatInNativeProGallery%2C.useResponsiveImgClassicFixed%2C.useSvgLoaderFeature%2C.useSvgLoaderFeatureOnBuilderComps&blocksBuilderManifestGeneratorVersion=1.129.0&contentType=application%2Fjson&deviceType=Desktop&dfCk=6&dfVersion=1.5263.0&disableStaticPagesUrlHierarchy=false&editorName=Unknown&experiments=dm_bgScrubToMotionFixer%2Cdm_masterPageVariablesQueryFixer%2Cdm_migrateOldHoverBoxToNewFixer&externalBaseUrl=https%3A%2F%2Fwww.smile-vdental.com&fileId=62b974ff.bundle.min&formFactor=desktop&hasTPAWorkerOnSite=false&hasUserDomainMedia=false&isBuilderComponentModel=false&isHttps=true&isInSeo=false&isMultilingualEnabled=true&isPremiumDomain=true&isTrackClicksAnalyticsEnabled=false&isUrlMigrated=true&isWixCodeOnPage=false&isWixCodeOnSite=false&language=ko&languageResolutionMethod=QueryParam&metaSiteId=30f5bc80-328d-4958-a482-3628665c7140&module=thunderbolt-features&oneDocEnabled=true&originalLanguage=ko&pageId=cd2835_24209eeb400a114fe7ca39215acd26f8_958.json&pilerExperiments=specs.piler.useEditorReactComponents&quickActionsMenuEnabled=false&registryLibrariesTopology=%5B%7B%22artifactId%22%3A%22editor-elements%22%2C%22namespace%22%3A%22wixui%22%2C%22url%22%3A%22https%3A%2F%2Fstatic.parastorage.com%2Fservices%2Feditor-elements%2F1.14885.0%22%7D%2C%7B%22artifactId%22%3A%22editor-elements%22%2C%22namespace%22%3A%22dsgnsys%22%2C%22url%22%3A%22https%3A%2F%2Fstatic.parastorage.com%2Fservices%2Feditor-elements%2F1.14885.0%22%7D%5D&remoteWidgetStructureBuilderVersion=1.251.0&siteId=f98d1c5d-f40b-45af-b50d-12ced6ae2ad6&siteRevision=958&staticHTMLComponentUrl=https%3A%2F%2Fwww-smile-vdental-com.filesusr.com%2F&useSandboxInHTMLComp=false&viewMode=desktop" id="features_masterPage" as="fetch" position="post-scripts" rel="preload" crossorigin="anonymous">
+B: nk href="https://siteassets.parastorage.com/pages/pages/thunderbolt?appDefinitionIdToSiteRevision=%7B%2213d21c63-b5ec-5912-8397-c3a5ddb27a97%22%3A%22440%22%2C%22b976560c-3122-4351-878f-453f337b7245%22%3A%221291%22%2C%2214271d6f-ba62-d045-549b-ab972ae1f70e%22%3A%2225%22%7D&beckyExperiments=.DatePickerPortal%2C.DisableDocumentScrollWhenLightBoxOpen%2C.EnableCustomCSSVarsForLoginSocialBar%2C.FreemiumBannerOdeditor%2C.LoginBarEnableLoggingInStateInSSR%2C.TextInputAutoFillFix%2C.UseLoginSocialBarCustomMenu%2C.UseNewLoginSocialBarCustomMenuPositioning%2C.UseNewLoginSocialBarElementStructure%2C.UseNewLoginSocialBarMemberInitialsAvatar%2C.VerticalMenu_uiType_NativeMapper%2C.WixFreeSiteBannerDesktop%2C.WixFreeSiteBannerMobile%2C.buttonUdp%2C.calculateCollapsibleTextLineHeightByFont%2C.disableBuilderWixComponents%2C.dom_store%2C.dynamicSlots%2C.fiveGridLineStudioSkins%2C.imageEncodingAVIF%2C.isClassNameToRootEnabled%2C.motionTimeAnimationsCSS%2C.propsCarmiMappersMigration1%2C.propsCarmiMappersMigration4%2C.propsCarmiMappersMigration5%2C.shouldUseResponsiveImages%2C.svgResolver_2%2C.takeAppDependenciesFromCSM%2C.updateRichTextSemanticClassNamesOnCorvid%2C.useClassnameInResponsiveAppWidget%2C.useImageAvifFormatInNativeProGallery%2C.useResponsiveImgClassicFixed%2C.useSvgLoaderFeature%2C.useSvgLoaderFeatureOnBuilderComps&blocksBuilderManifestGeneratorVersion=1.129.0&contentType=application%2Fjson&deviceType=Desktop&dfCk=6&dfVersion=1.5263.0&disableStaticPagesUrlHierarchy=false&editorName=Unknown&experiments=dm_bgScrubToMotionFixer%2Cdm_masterPageVariablesQueryFixer%2Cdm_migrateOldHoverBoxToNewFixer&externalBaseUrl=https%3A%2F%2Fwww.smile-vdental.com&fileId=62b974ff.bundle.min&formFactor=desktop&hasTPAWorkerOnSite=false&hasUserDomainMedia=false&isBuilderComponentModel=false&isHttps=true&isInSeo=false&isMultilingualEnabled=true&isPremiumDomain=true&isTrackClicksAnalyticsEnabled=false&isUrlMigrated=true&isWixCodeOnPage=false&isWixCodeOnSite=false&language=ko&languageResolutionMethod=QueryParam&metaSiteId=30f5bc80-328d-4958-a482-3628665c7140&module=thunderbolt-features&oneDocEnabled=true&originalLanguage=ko&pageId=cd2835_5c2d95863f60dd9b667df70ad84971ff_957.json&pilerExperiments=specs.piler.useEditorReactComponents&quickActionsMenuEnabled=false&registryLibrariesTopology=%5B%7B%22artifactId%22%3A%22editor-elements%22%2C%22namespace%22%3A%22wixui%22%2C%22url%22%3A%22https%3A%2F%2Fstatic.parastorage.com%2Fservices%2Feditor-elements%2F1.14885.0%22%7D%2C%7B%22artifactId%22%3A%22editor-elements%22%2C%22namespace%22%3A%22dsgnsys%22%2C%22url%22%3A%22https%3A%2F%2Fstatic.parastorage.com%2Fservices%2Feditor-elements%2F1.14885.0%22%7D%5D&remoteWidgetStructureBuilderVersion=1.251.0&siteId=f98d1c5d-f40b-45af-b50d-12ced6ae2ad6&siteRevision=958&staticHTMLComponentUrl=https%3A%2F%2Fwww-smile-vdental-com.filesusr.com%2F&useSandboxInHTMLComp=false&viewMode=desktop" id="features_txl25" as="fetch" position="post-scripts" rel="preload" crossorigin="anonymous">
+B: nk href="https://siteassets.parastorage.com/pages/pages/thunderbolt?appDefinitionIdToSiteRevision=%7B%2213d21c63-b5ec-5912-8397-c3a5ddb27a97%22%3A%22440%22%2C%22b976560c-3122-4351-878f-453f337b7245%22%3A%221291%22%2C%2214271d6f-ba62-d045-549b-ab972ae1f70e%22%3A%2225%22%7D&beckyExperiments=.DatePickerPortal%2C.EnableCustomCSSVarsForLoginSocialBar%2C.FreemiumBannerOdeditor%2C.LoginBarEnableLoggingInStateInSSR%2C.TextInputAutoFillFix%2C.UseLoginSocialBarCustomMenu%2C.UseNewLoginSocialBarCustomMenuPositioning%2C.UseNewLoginSocialBarElementStructure%2C.UseNewLoginSocialBarMemberInitialsAvatar%2C.WixFreeSiteBannerDesktop%2C.WixFreeSiteBannerMobile%2C.buttonUdp%2C.calculateCollapsibleTextLineHeightByFont%2C.disableBuilderWixComponents%2C.dynamicSlots%2C.fiveGridLineStudioSkins%2C.isClassNameToRootEnabled%2C.propsCarmiMappersMigration1%2C.propsCarmiMappersMigration4%2C.propsCarmiMappersMigration5%2C.svgResolver_2%2C.takeAppDependenciesFromCSM%2C.updateRichTextSemanticClassNamesOnCorvid%2C.useClassnameInResponsiveAppWidget%2C.useImageAvifFormatInNativeProGallery&blocksBuilderManifestGeneratorVersion=1.129.0&contentType=application%2Fjson&dfCk=6&dfVersion=1.5263.0&editorName=Unknown&experiments=dm_bgScrubToMotionFixer%2Cdm_masterPageVariablesQueryFixer%2Cdm_migrateOldHoverBoxToNewFixer&externalBaseUrl=https%3A%2F%2Fwww.smile-vdental.com&fileId=b36dd5b1.bundle.min&formFactor=desktop&hasTPAWorkerOnSite=false&hasUserDomainMedia=false&isBuilderComponentModel=false&isHttps=true&isInSeo=false&isPremiumDomain=true&isUrlMigrated=true&isWixCodeOnPage=false&isWixCodeOnSite=false&language=ko&metaSiteId=30f5bc80-328d-4958-a482-3628665c7140&module=thunderbolt-platform&oneDocEnabled=true&originalLanguage=ko&pageId=cd2835_24209eeb400a114fe7ca39215acd26f8_958.json&pilerExperiments=specs.piler.useEditorReactComponents&quickActionsMenuEnabled=false&registryLibrariesTopology=%5B%7B%22artifactId%22%3A%22editor-elements%22%2C%22namespace%22%3A%22wixui%22%2C%22url%22%3A%22https%3A%2F%2Fstatic.parastorage.com%2Fservices%2Feditor-elements%2F1.14885.0%22%7D%2C%7B%22artifactId%22%3A%22editor-elements%22%2C%22namespace%22%3A%22dsgnsys%22%2C%22url%22%3A%22https%3A%2F%2Fstatic.parastorage.com%2Fservices%2Feditor-elements%2F1.14885.0%22%7D%5D&remoteWidgetStructureBuilderVersion=1.251.0&siteId=f98d1c5d-f40b-45af-b50d-12ced6ae2ad6&siteRevision=958&staticHTMLComponentUrl=https%3A%2F%2Fwww-smile-vdental-com.filesusr.com%2F&viewMode=desktop" id="platform_masterPage" as="fetch" position="post-scripts" rel="preload" crossorigin="anonymous">

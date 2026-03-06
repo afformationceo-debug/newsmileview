@@ -1,0 +1,30 @@
+=================================================================
+SMILEVIEW i18n Final Inspection Report
+=================================================================
+[OK]    index.html
+[OK]    index_tw.html
+[OK]    index_jp.html
+[OK]    introduction.html
+[OK]    introduction_tw.html
+[OK]    introduction_jp.html
+[OK]    invisalign.html
+[OK]    invisalign_tw.html
+[OK]    invisalign_jp.html
+[OK]    whitening.html
+[OK]    whitening_tw.html
+[OK]    whitening_jp.html
+[OK]    ortho.html
+[OK]    ortho_tw.html
+[OK]    ortho_jp.html
+[OK]    laminate.html
+[OK]    laminate_tw.html
+[OK]    laminate_jp.html
+[OK]    implant.html
+[OK]    implant_tw.html
+[OK]    implant_jp.html
+[OK]    prosthetics.html
+[OK]    prosthetics_tw.html
+[OK]    prosthetics_jp.html
+=================================================================
+RESULT: ALL CLEAR - 0 issues across all files.
+=================================================================

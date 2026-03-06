@@ -1,0 +1,12 @@
+{
+  "currentFeature": "i18n-pipeline",
+  "phase": "plan",
+  "startedAt": "2026-03-05T00:00:00Z",
+  "history": [
+    {
+      "action": "plan_created",
+      "feature": "i18n-pipeline",
+      "timestamp": "2026-03-05T00:00:00Z"
+    }
+  ]
+}

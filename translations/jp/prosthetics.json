@@ -1,0 +1,751 @@
+[
+  {
+    "key": "title_1",
+    "text": "보철치료 | 스마일뷰치과의원",
+    "location": "line:6, tag:title",
+    "context": "title",
+    "translated": "補綴治療 | SMILEVIEWデンタルクリニック"
+  },
+  {
+    "key": "text_2_li",
+    "text": "스마일뷰치과",
+    "location": "line:570, tag:li",
+    "context": "text",
+    "translated": "SMILEVIEWデンタルクリニック"
+  },
+  {
+    "key": "text_3_li",
+    "text": "인비절라인",
+    "location": "line:571, tag:li",
+    "context": "text",
+    "translated": "INVISALIGN"
+  },
+  {
+    "key": "text_4_li",
+    "text": "치아교정",
+    "location": "line:572, tag:li",
+    "context": "text",
+    "translated": "歯列矯正"
+  },
+  {
+    "key": "text_5_li",
+    "text": "치아미백",
+    "location": "line:573, tag:li",
+    "context": "text",
+    "translated": "歯のホワイトニング"
+  },
+  {
+    "key": "text_6_li",
+    "text": "원데이 라미네이트",
+    "location": "line:574, tag:li",
+    "context": "text",
+    "translated": "ワンデーラミネートベニア"
+  },
+  {
+    "key": "text_7_li",
+    "text": "수면 임플란트",
+    "location": "line:575, tag:li",
+    "context": "text",
+    "translated": "睡眠インプラント"
+  },
+  {
+    "key": "text_8_li",
+    "text": "보철치료",
+    "location": "line:576, tag:li",
+    "context": "text",
+    "translated": "補綴治療"
+  },
+  {
+    "key": "text_9_a",
+    "text": "한국어 (KO)",
+    "location": "line:584, tag:a",
+    "context": "text",
+    "translated": "韓国語 (KO)"
+  },
+  {
+    "key": "text_10_a",
+    "text": "예약하기",
+    "location": "line:589, tag:a",
+    "context": "text",
+    "translated": "予約する"
+  },
+  {
+    "key": "text_11_li",
+    "text": "병원소개",
+    "location": "line:600, tag:li",
+    "context": "text",
+    "translated": "クリニック紹介"
+  },
+  {
+    "key": "text_12_a",
+    "text": "온라인 예약",
+    "location": "line:609, tag:a",
+    "context": "text",
+    "translated": "オンライン予約"
+  },
+  {
+    "key": "text_13_text",
+    "text": "보철치료는 손상된, 손실된 또는 충치로 인한 피해를 받은 치아를",
+    "location": "line:628, tag:text",
+    "context": "text",
+    "translated": "補綴治療は損傷した、欠損した、またはむし歯による被害を受けた歯を"
+  },
+  {
+    "key": "text_14_text",
+    "text": "복원하고 보호하기 위해 다양한 치과 기술과 재료를 활용합니다",
+    "location": "line:629, tag:text",
+    "context": "text",
+    "translated": "修復し保護するためにさまざまな歯科技術と材料を活用します"
+  },
+  {
+    "key": "text_15_text",
+    "text": "충치, 신경 손상, 손상된 치아에 대한 종합적인 치료를 제공하여",
+    "location": "line:632, tag:text",
+    "context": "text",
+    "translated": "むし歯、神経損傷、損傷した歯に対する総合的な治療を提供し"
+  },
+  {
+    "key": "text_16_text",
+    "text": "환자들의 자신감을 회복시키고 건강한 미소를 유지합니다.",
+    "location": "line:633, tag:text",
+    "context": "text",
+    "translated": "患者の自信を取り戻し、健康な笑顔を維持します。"
+  },
+  {
+    "key": "text_17_h2",
+    "text": "보철치료란?",
+    "location": "line:691, tag:h2",
+    "context": "text",
+    "translated": "補綴治療とは？"
+  },
+  {
+    "key": "text_18_text",
+    "text": "보철치료는 충치, 외상, 마모 등으로 손상되거나 손실된 치아를 다양한 재료와 기술을 활용하여 원래의 형태와 기능으로 복원하는 치료입니다. 레진, 인레이, 크라운, 브릿지 등 다양한 방법을 통해 치아의 저작 기능과 심미성을 회복시켜 드립니다. 스마일뷰치과는 정밀 진단을 통해 환자 개개인에게 최적의 보철 치료 계획을 수립합니다.",
+    "location": "line:693, tag:text",
+    "context": "text",
+    "translated": "補綴治療は、むし歯、外傷、摩耗などで損傷または欠損した歯を、さまざまな材料と技術を活用して元の形態と機能に修復する治療です。レジン、インレー、クラウン、ブリッジなどさまざまな方法を通じて歯の咀嚼機能と審美性を回復させます。SMILEVIEWデンタルクリニックは精密診断を通じて患者個々に最適な補綴治療計画を策定します。"
+  },
+  {
+    "key": "text_19_b",
+    "text": "종류",
+    "location": "line:699, tag:b",
+    "context": "text",
+    "translated": "種類"
+  },
+  {
+    "key": "text_20_span",
+    "text": "충치치료(레진, 인레이), 신경치료, 크라운(PFM, 금, 지르코니아), 잇몸치료(스케일링, 큐렛) 등",
+    "location": "line:700, tag:span",
+    "context": "text",
+    "translated": "むし歯治療（レジン、インレー）、神経治療、クラウン（PFM、金、ジルコニア）、歯茎治療（スケーリング、キュレット）など"
+  },
+  {
+    "key": "text_21_h2",
+    "text": "손상된 치아를 되살리는 보철치료",
+    "location": "line:717, tag:h2",
+    "context": "text",
+    "translated": "損傷した歯を蘇らせる補綴治療"
+  },
+  {
+    "key": "text_22_p",
+    "text": "충치부터 신경치료, 크라운, 잇몸치료까지 종합적인 치과 보철 솔루션을 제공합니다.",
+    "location": "line:718, tag:p",
+    "context": "text",
+    "translated": "むし歯から神経治療、クラウン、歯茎治療まで総合的な歯科補綴ソリューションを提供します。"
+  },
+  {
+    "key": "text_23_h4",
+    "text": "충치가 진행된 치아",
+    "location": "line:724, tag:h4",
+    "context": "text",
+    "translated": "むし歯が進行した歯"
+  },
+  {
+    "key": "text_24_p",
+    "text": "레진 또는 인레이 치료로 충치를 제거하고 치아를 복원합니다",
+    "location": "line:725, tag:p",
+    "context": "text",
+    "translated": "レジンまたはインレー治療でむし歯を除去し歯を修復します"
+  },
+  {
+    "key": "text_25_h4",
+    "text": "신경까지 손상된 치아",
+    "location": "line:731, tag:h4",
+    "context": "text",
+    "translated": "神経まで損傷した歯"
+  },
+  {
+    "key": "text_26_p",
+    "text": "신경치료 후 크라운으로 보호하여 치아를 보존합니다",
+    "location": "line:732, tag:p",
+    "context": "text",
+    "translated": "神経治療後クラウンで保護して歯を温存します"
+  },
+  {
+    "key": "text_27_h4",
+    "text": "깨지거나 파절된 치아",
+    "location": "line:738, tag:h4",
+    "context": "text",
+    "translated": "欠けたり折れたりした歯"
+  },
+  {
+    "key": "text_28_p",
+    "text": "크라운 보철로 치아 전체를 감싸 강도와 심미성을 회복합니다",
+    "location": "line:739, tag:p",
+    "context": "text",
+    "translated": "クラウン補綴で歯全体を覆い強度と審美性を回復します"
+  },
+  {
+    "key": "text_29_h4",
+    "text": "잇몸 질환이 있는 경우",
+    "location": "line:745, tag:h4",
+    "context": "text",
+    "translated": "歯茎の疾患がある場合"
+  },
+  {
+    "key": "text_30_p",
+    "text": "스케일링과 큐렛으로 치석과 염증을 제거하여 잇몸 건강을 회복합니다",
+    "location": "line:746, tag:p",
+    "context": "text",
+    "translated": "スケーリングとキュレットで歯石と炎症を除去して歯茎の健康を回復します"
+  },
+  {
+    "key": "attr_31_img_alt",
+    "text": "충치치료",
+    "location": "line:759, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "むし歯治療"
+  },
+  {
+    "key": "text_32_p",
+    "text": "간단한 충치는 레진치료로 처리하고, 진행된 충치는 인레이를 권장합니다. 초기 단계의 충치는 치아 표면에 국한되므로 당일 완료 가능한 레진치료로 진행됩니다. 그러나 충치가 크고 상아질까지 영향을 미쳤을 때는 2번의 방문이 필요한 인레이 치료를 권장합니다. 충치 범위가 넓을수록 인레이로 치료하는 것이 더 효과적입니다. 충치가 심해지면 통증이 더 심해지고 치료가 더 복잡해지므로 적절한 시기에 치료하는 것이 중요합니다.",
+    "location": "line:765, tag:p",
+    "context": "text",
+    "translated": "軽いむし歯はレジン治療で処理し、進行したむし歯はインレーを推奨します。初期段階のむし歯は歯の表面に限られているため当日完了可能なレジン治療で進めます。しかし、むし歯が大きく象牙質まで影響を及ぼした場合は2回の来院が必要なインレー治療を推奨します。むし歯の範囲が広いほどインレーで治療する方がより効果的です。むし歯が悪化すると痛みがさらに強くなり治療がより複雑になるため、適切な時期に治療することが重要です。"
+  },
+  {
+    "key": "text_33_div",
+    "text": "초기 충치 레진 당일 치료",
+    "location": "line:767, tag:div",
+    "context": "text",
+    "translated": "初期むし歯レジン当日治療"
+  },
+  {
+    "key": "text_34_div",
+    "text": "진행된 충치 인레이 치료",
+    "location": "line:768, tag:div",
+    "context": "text",
+    "translated": "進行したむし歯インレー治療"
+  },
+  {
+    "key": "text_35_div",
+    "text": "자연치아 색상 복원",
+    "location": "line:769, tag:div",
+    "context": "text",
+    "translated": "天然歯色修復"
+  },
+  {
+    "key": "text_36_div",
+    "text": "조기 치료로 비용 절감",
+    "location": "line:770, tag:div",
+    "context": "text",
+    "translated": "早期治療でコスト削減"
+  },
+  {
+    "key": "attr_37_img_alt",
+    "text": "신경치료",
+    "location": "line:782, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "神経治療"
+  },
+  {
+    "key": "text_38_p",
+    "text": "충치가 심해져서 치아의 가장 안쪽 층인 신경까지 침범한 경우나 딱딱한 음식을 먹어서 치아에 심하게 금이 간 경우 신경치료가 필요합니다. 신경치료는 오염된 신경층을 제거하고 다시 오염되지 않도록 밀봉하는 치료로 총 3~4회 이상의 방문이 필요합니다. 신경치료가 완료된 치아는 쉽게 깨질 수 있으므로 크라운과 같은 보철치료가 필요합니다.",
+    "location": "line:788, tag:p",
+    "context": "text",
+    "translated": "むし歯が悪化して歯の最も内側の層である神経まで侵入した場合や、硬い食べ物を食べて歯にひどいひびが入った場合に神経治療が必要です。神経治療は汚染された神経層を除去し再び汚染されないよう密封する治療で、合計3〜4回以上の来院が必要です。神経治療が完了した歯は簡単に欠けやすいためクラウンなどの補綴治療が必要です。"
+  },
+  {
+    "key": "text_39_div",
+    "text": "오염된 신경 완전 제거",
+    "location": "line:790, tag:div",
+    "context": "text",
+    "translated": "汚染された神経の完全除去"
+  },
+  {
+    "key": "text_40_div",
+    "text": "근관 밀봉 처리",
+    "location": "line:791, tag:div",
+    "context": "text",
+    "translated": "根管密封処理"
+  },
+  {
+    "key": "text_41_div",
+    "text": "3~4회 방문 치료",
+    "location": "line:792, tag:div",
+    "context": "text",
+    "translated": "3〜4回来院治療"
+  },
+  {
+    "key": "text_42_div",
+    "text": "크라운 보철 마무리",
+    "location": "line:793, tag:div",
+    "context": "text",
+    "translated": "クラウン補綴仕上げ"
+  },
+  {
+    "key": "text_43_h3",
+    "text": "보철치료 (크라운)",
+    "location": "line:810, tag:h3",
+    "context": "text",
+    "translated": "補綴治療（クラウン）"
+  },
+  {
+    "key": "text_44_p",
+    "text": "보철치료는 일반적으로 치아 전체를 덮는 모양으로 만들어진 크라운을 말합니다. 치아를 원통형으로 깎아서 씌우게 되는데, 이때 사용되는 재료로는 PFM, 금, 그리고 지르코니아 등이 있습니다. 특히 지르코니아는 일반적으로 많이 선택되는데, 단단하면서도 치아색과 잘 어울리는 재료입니다. 다른 재료로는 PFM이나 금이 있으며, 각각의 장단점을 고려하여 상황에 맞게 선택할 수 있습니다.",
+    "location": "line:811, tag:p",
+    "context": "text",
+    "translated": "補綴治療は一般的に歯全体を覆う形に作られたクラウンを指します。歯を円筒形に削って被せるのですが、この際使用される材料にはPFM、金、そしてジルコニアなどがあります。特にジルコニアは一般的によく選ばれますが、硬くて歯の色と馴染みやすい材料です。他の材料にはPFMや金があり、それぞれの長所と短所を考慮して状況に応じて選択できます。"
+  },
+  {
+    "key": "text_45_div",
+    "text": "지르코니아 자연 심미성",
+    "location": "line:813, tag:div",
+    "context": "text",
+    "translated": "ジルコニア天然審美性"
+  },
+  {
+    "key": "text_46_div",
+    "text": "금 크라운 뛰어난 내구성",
+    "location": "line:814, tag:div",
+    "context": "text",
+    "translated": "金クラウン優れた耐久性"
+  },
+  {
+    "key": "text_47_div",
+    "text": "PFM 경제적 선택",
+    "location": "line:815, tag:div",
+    "context": "text",
+    "translated": "PFM経済的な選択"
+  },
+  {
+    "key": "text_48_div",
+    "text": "환자 맞춤 재료 선택",
+    "location": "line:816, tag:div",
+    "context": "text",
+    "translated": "患者オーダーメイド材料選択"
+  },
+  {
+    "key": "attr_49_img_alt",
+    "text": "잇몸치료",
+    "location": "line:828, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "歯茎治療"
+  },
+  {
+    "key": "text_50_p",
+    "text": "일반적으로 치아가 문제가 될 때 잇몸도 같이 문제가 생기는 경우가 많습니다. 잇몸치료는 스케일링, 큐렛 등과 같은 보험으로 진료가 가능한 치료 방법을 사용합니다. 이 치료의 주요 목표는 치아에 붙어 있는 치석과 염증 조직을 제거하는 것입니다. 한 번 치석이 생기면 보통의 잇솔질로는 제거되지 않으며, 치석은 세균이 붙어서 잇몸뼈 조직을 파괴할 수 있으므로 제거하는 것이 중요합니다.",
+    "location": "line:834, tag:p",
+    "context": "text",
+    "translated": "一般的に歯に問題が生じると歯茎にも同時に問題が発生することが多いです。歯茎治療はスケーリング、キュレットなどの保険で診療が可能な治療方法を使用します。この治療の主な目的は歯に付着した歯石と炎症組織を除去することです。一度歯石が形成されると通常の歯ブラシでは除去できず、歯石には細菌が付着して歯槽骨組織を破壊する可能性があるため除去することが重要です。"
+  },
+  {
+    "key": "text_51_div",
+    "text": "치석 완전 제거",
+    "location": "line:836, tag:div",
+    "context": "text",
+    "translated": "歯石の完全除去"
+  },
+  {
+    "key": "text_52_div",
+    "text": "잇몸 염증 치료",
+    "location": "line:837, tag:div",
+    "context": "text",
+    "translated": "歯茎炎症治療"
+  },
+  {
+    "key": "text_53_div",
+    "text": "건강보험 적용 가능",
+    "location": "line:838, tag:div",
+    "context": "text",
+    "translated": "健康保険適用可能"
+  },
+  {
+    "key": "text_54_div",
+    "text": "잇몸뼈 보존 효과",
+    "location": "line:839, tag:div",
+    "context": "text",
+    "translated": "歯槽骨保存効果"
+  },
+  {
+    "key": "attr_55_img_alt",
+    "text": "보철치료 배너",
+    "location": "line:848, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "補綴治療バナー"
+  },
+  {
+    "key": "attr_56_img_alt",
+    "text": "보철치료 디테일",
+    "location": "line:854, tag:img[alt]",
+    "context": "attr:alt",
+    "translated": "補綴治療ディテール"
+  },
+  {
+    "key": "text_57_h2",
+    "text": "보철치료, 디테일 이 다릅니다",
+    "location": "line:859, tag:h2",
+    "context": "text",
+    "translated": "補綴治療、細部が違います"
+  },
+  {
+    "key": "text_58_div",
+    "text": "치료시간",
+    "location": "line:869, tag:div",
+    "context": "text",
+    "translated": "治療時間"
+  },
+  {
+    "key": "text_59_div",
+    "text": "30~60 분",
+    "location": "line:870, tag:div",
+    "context": "text",
+    "translated": "30〜60分"
+  },
+  {
+    "key": "text_60_p",
+    "text": "치료 종류에 따라 상이",
+    "location": "line:871, tag:p",
+    "context": "text",
+    "translated": "治療の種類によって異なる"
+  },
+  {
+    "key": "text_61_div",
+    "text": "마취방법",
+    "location": "line:875, tag:div",
+    "context": "text",
+    "translated": "麻酔方法"
+  },
+  {
+    "key": "text_62_div",
+    "text": "국소마취",
+    "location": "line:876, tag:div",
+    "context": "text",
+    "translated": "局所麻酔"
+  },
+  {
+    "key": "text_63_p",
+    "text": "부위 마취로 통증 최소화",
+    "location": "line:877, tag:p",
+    "context": "text",
+    "translated": "部位麻酔で痛み最小化"
+  },
+  {
+    "key": "text_64_div",
+    "text": "방문횟수",
+    "location": "line:881, tag:div",
+    "context": "text",
+    "translated": "来院回数"
+  },
+  {
+    "key": "text_65_div",
+    "text": "1~4 회",
+    "location": "line:882, tag:div",
+    "context": "text",
+    "translated": "1〜4回"
+  },
+  {
+    "key": "text_66_p",
+    "text": "치료 유형별 방문 횟수 상이",
+    "location": "line:883, tag:p",
+    "context": "text",
+    "translated": "治療タイプ別来院回数が異なる"
+  },
+  {
+    "key": "text_67_div",
+    "text": "보험적용",
+    "location": "line:887, tag:div",
+    "context": "text",
+    "translated": "保険適用"
+  },
+  {
+    "key": "text_68_div",
+    "text": "일부 가능",
+    "location": "line:888, tag:div",
+    "context": "text",
+    "translated": "一部可能"
+  },
+  {
+    "key": "text_69_p",
+    "text": "스케일링, 레진 등 보험 적용",
+    "location": "line:889, tag:p",
+    "context": "text",
+    "translated": "スケーリング、レジンなど保険適用"
+  },
+  {
+    "key": "text_70_h4",
+    "text": "정밀 디지털 진단",
+    "location": "line:895, tag:h4",
+    "context": "text",
+    "translated": "精密デジタル診断"
+  },
+  {
+    "key": "text_71_p",
+    "text": "X-ray 및 구강 검사를 통해 충치의 범위, 신경 상태, 잇몸 건강을 정밀하게 분석하여 최적의 치료 계획을 수립합니다.",
+    "location": "line:896, tag:p",
+    "context": "text",
+    "translated": "X線および口腔検査を通じて、むし歯の範囲、神経の状態、歯茎の健康を精密に分析し、最適な治療計画を策定します。"
+  },
+  {
+    "key": "text_72_div",
+    "text": "X-ray 촬영 정밀 진단",
+    "location": "line:897, tag:div",
+    "context": "text",
+    "translated": "X線撮影精密診断"
+  },
+  {
+    "key": "text_73_p",
+    "text": "레진, 인레이, 지르코니아, 금, PFM 등 다양한 재료 중 환자의 상황과 부위에 맞는 최적의 재료를 선택합니다.",
+    "location": "line:902, tag:p",
+    "context": "text",
+    "translated": "レジン、インレー、ジルコニア、金、PFMなどさまざまな材料の中から患者の状況と部位に合った最適な材料を選択します。"
+  },
+  {
+    "key": "text_74_div",
+    "text": "맞춤 재료 심미 복원",
+    "location": "line:903, tag:div",
+    "context": "text",
+    "translated": "オーダーメイド材料審美修復"
+  },
+  {
+    "key": "text_75_h4",
+    "text": "최소 침습 치료",
+    "location": "line:907, tag:h4",
+    "context": "text",
+    "translated": "低侵襲治療"
+  },
+  {
+    "key": "text_76_p",
+    "text": "건강한 치아 조직을 최대한 보존하면서 손상된 부분만 정밀하게 제거하고 복원하는 보존적 치료를 시행합니다.",
+    "location": "line:908, tag:p",
+    "context": "text",
+    "translated": "健康な歯組織を最大限保存しながら損傷した部分だけを精密に除去し修復する保存的治療を施行します。"
+  },
+  {
+    "key": "text_77_div",
+    "text": "치아 보존 정밀 시술",
+    "location": "line:909, tag:div",
+    "context": "text",
+    "translated": "歯保存精密施術"
+  },
+  {
+    "key": "text_78_h4",
+    "text": "체계적 사후관리",
+    "location": "line:913, tag:h4",
+    "context": "text",
+    "translated": "体系的なアフターケア"
+  },
+  {
+    "key": "text_79_p",
+    "text": "치료 후 정기 검진을 통해 보철물의 상태를 확인하고, 구강 위생 관리 방법을 안내하여 장기적인 치아 건강을 유지합니다.",
+    "location": "line:914, tag:p",
+    "context": "text",
+    "translated": "治療後の定期検診を通じて補綴物の状態を確認し、口腔衛生管理方法を案内して長期的な歯の健康を維持します。"
+  },
+  {
+    "key": "text_80_div",
+    "text": "정기 검진 장기 관리",
+    "location": "line:915, tag:div",
+    "context": "text",
+    "translated": "定期検診長期管理"
+  },
+  {
+    "key": "text_81_h2",
+    "text": "이런 분들에게 보철치료를 추천드립니다",
+    "location": "line:926, tag:h2",
+    "context": "text",
+    "translated": "このような方に補綴治療をお勧めします"
+  },
+  {
+    "key": "text_82_div",
+    "text": "01 충치가 진행된 분 충치가 발생하여 통증이 있거나 치아 변색이 진행된 경우 레진 또는 인레이 치료로 빠르게 회복할 수 있습니다.",
+    "location": "line:929, tag:div",
+    "context": "text",
+    "translated": "01 むし歯が進行した方 むし歯が発生して痛みがある場合や歯の変色が進行した場合、レジンまたはインレー治療で速やかに回復できます。"
+  },
+  {
+    "key": "text_83_div",
+    "text": "02 치아 통증이 심한 분 충치가 신경까지 도달하여 극심한 통증을 경험하시는 분은 신경치료를 통해 통증을 해결하고 치아를 보존할 수 있습니다.",
+    "location": "line:930, tag:div",
+    "context": "text",
+    "translated": "02 歯の痛みがひどい方 むし歯が神経まで達して激しい痛みを感じる方は、神経治療を通じて痛みを解決し歯を温存できます。"
+  },
+  {
+    "key": "text_84_div",
+    "text": "03 치아가 깨지거나 파절된 분 외상이나 강한 저작력으로 치아가 손상된 경우 크라운 보철로 치아의 형태와 기능을 완벽하게 복원합니다.",
+    "location": "line:931, tag:div",
+    "context": "text",
+    "translated": "03 歯が欠けたり折れたりした方 外傷や強い咀嚼力で歯が損傷した場合、クラウン補綴で歯の形態と機能を完璧に修復します。"
+  },
+  {
+    "key": "text_85_div",
+    "text": "04 잇몸이 자주 붓는 분 잇몸 출혈, 부종이 반복되는 경우 치석 제거와 잇몸치료를 통해 잇몸 질환의 진행을 막고 건강을 회복합니다.",
+    "location": "line:932, tag:div",
+    "context": "text",
+    "translated": "04 歯茎がよく腫れる方 歯茎の出血、腫れが繰り返される場合、歯石除去と歯茎治療を通じて歯茎疾患の進行を止め健康を回復します。"
+  },
+  {
+    "key": "text_86_div",
+    "text": "05 심미적 치아 복원을 원하는 분 변색되거나 형태가 손상된 치아를 자연치아와 유사한 색상과 형태로 복원하여 자신감 있는 미소를 되찾아 드립니다.",
+    "location": "line:933, tag:div",
+    "context": "text",
+    "translated": "05 審美的な歯の修復を希望する方 変色したり形態が損傷した歯を天然歯と類似した色と形態に修復して自信のある笑顔を取り戻します。"
+  },
+  {
+    "key": "text_87_div",
+    "text": "06 오래된 보철물 교체가 필요한 분 기존 보철물의 수명이 다하거나 변색, 탈락이 발생한 경우 새로운 보철물로 교체하여 기능과 심미성을 개선합니다.",
+    "location": "line:934, tag:div",
+    "context": "text",
+    "translated": "06 古い補綴物の交換が必要な方 既存の補綴物の寿命が尽きたり変色、脱落が発生した場合、新しい補綴物に交換して機能と審美性を改善します。"
+  },
+  {
+    "key": "text_88_p",
+    "text": "보철치료에 대해 자주 묻는 질문을 모았습니다.",
+    "location": "line:947, tag:p",
+    "context": "text",
+    "translated": "補綴治療についてよくある質問をまとめました。"
+  },
+  {
+    "key": "text_89_text",
+    "text": "충치치료에서 레진과 인레이의 차이는 무엇인가요?",
+    "location": "line:953, tag:text",
+    "context": "text",
+    "translated": "むし歯治療でレジンとインレーの違いは何ですか？"
+  },
+  {
+    "key": "text_90_span",
+    "text": "A. 레진은 초기 충치에 적합하며 당일 치료가 가능한 직접 수복 방식입니다. 인레이는 충치 범위가 넓어 상아질까지 영향을 미쳤을 때 사용하며, 별도 제작 과정이 필요하여 2회 방문이 필요합니다. 인레이는 레진보다 강도가 높고 정밀한 적합도를 제공합니다.",
+    "location": "line:957, tag:span",
+    "context": "text",
+    "translated": "A. レジンは初期むし歯に適しており当日治療が可能な直接修復方式です。インレーはむし歯の範囲が広く象牙質まで影響を及ぼした場合に使用し、別途製作過程が必要なため2回の来院が必要です。インレーはレジンより強度が高く精密な適合度を提供します。"
+  },
+  {
+    "key": "text_91_text",
+    "text": "신경치료 후 크라운은 꼭 씌워야 하나요?",
+    "location": "line:963, tag:text",
+    "context": "text",
+    "translated": "神経治療後のクラウンは必ず被せる必要がありますか？"
+  },
+  {
+    "key": "text_92_span",
+    "text": "A. 네, 신경치료가 완료된 치아는 혈액 공급이 차단되어 시간이 지나면서 건조해지고 약해집니다. 크라운을 씌우지 않으면 저작 시 치아가 쉽게 깨지거나 파절될 수 있으므로, 치아를 보호하고 기능을 유지하기 위해 크라운 보철이 반드시 필요합니다.",
+    "location": "line:967, tag:span",
+    "context": "text",
+    "translated": "A. はい、神経治療が完了した歯は血液供給が遮断されて時間が経つにつれて乾燥し弱くなります。クラウンを被せないと咀嚼時に歯が簡単に欠けたり折れたりする可能性があるため、歯を保護し機能を維持するためにクラウン補綴が必ず必要です。"
+  },
+  {
+    "key": "text_93_text",
+    "text": "지르코니아, 금, PFM 크라운 중 어떤 것이 좋나요?",
+    "location": "line:973, tag:text",
+    "context": "text",
+    "translated": "ジルコニア、金、PFMクラウンのどれがよいですか？"
+  },
+  {
+    "key": "text_94_span",
+    "text": "A. 지르코니아는 자연치아와 유사한 색상으로 심미적이며 강도가 높아 가장 많이 선택됩니다. 금은 생체 적합성이 뛰어나고 내구성이 우수하여 어금니에 적합합니다. PFM은 금속 위에 도자기를 입힌 것으로 경제적인 선택입니다. 환자의 치아 위치와 상황에 따라 최적의 재료가 달라지므로 전문의 상담을 통해 결정하시는 것이 좋습니다.",
+    "location": "line:977, tag:span",
+    "context": "text",
+    "translated": "A. ジルコニアは天然歯と類似した色で審美的かつ強度が高く最もよく選ばれます。金は生体適合性が高く耐久性に優れた奥歯に適しています。PFMは金属の上に陶材を被せたもので経済的な選択です。患者の歯の位置と状況によって最適な材料が異なるため、専門医との相談を通じて決定されることをお勧めします。"
+  },
+  {
+    "key": "text_95_text",
+    "text": "스케일링은 얼마나 자주 받아야 하나요?",
+    "location": "line:983, tag:text",
+    "context": "text",
+    "translated": "スケーリングはどのくらいの頻度で受けるべきですか？"
+  },
+  {
+    "key": "text_96_span",
+    "text": "A. 일반적으로 6개월~1년에 한 번 스케일링을 받는 것이 권장됩니다. 건강보험으로 연 1회 스케일링이 적용되며, 잇몸 질환이 있는 경우에는 더 자주 받으실 수도 있습니다. 정기적인 스케일링은 치석 제거와 잇몸 질환 예방에 효과적입니다.",
+    "location": "line:987, tag:span",
+    "context": "text",
+    "translated": "A. 一般的に6ヶ月〜1年に1回スケーリングを受けることが推奨されます。健康保険で年1回スケーリングが適用され、歯茎疾患がある場合はより頻繁に受けることもあります。定期的なスケーリングは歯石除去と歯茎疾患予防に効果的です。"
+  },
+  {
+    "key": "text_97_p",
+    "text": "투명하고 편리한 교정부터 심미 치료까지, 스마일뷰치과가 당신의 아름다운 미소를 만들어 드립니다.",
+    "location": "line:1006, tag:p",
+    "context": "text",
+    "translated": "透明で便利な矯正から審美治療まで、SMILEVIEWデンタルクリニックが美しい笑顔をお届けします。"
+  },
+  {
+    "key": "text_98_li",
+    "text": "서울특별시 강남구 봉은사로 107, 15층",
+    "location": "line:1011, tag:li",
+    "context": "text",
+    "translated": "ソウル特別市 江南区 奉恩寺路 107, 15階"
+  },
+  {
+    "key": "text_99_li",
+    "text": "(논현동 201 16번지 15층)",
+    "location": "line:1012, tag:li",
+    "context": "text",
+    "translated": "（論峴洞 201 16番地 15階）"
+  },
+  {
+    "key": "text_100_li",
+    "text": "대표자 김한결",
+    "location": "line:1020, tag:li",
+    "context": "text",
+    "translated": "代表者 キム・ハンギョル"
+  },
+  {
+    "key": "text_101_li",
+    "text": "사업자번호 699-29-00572",
+    "location": "line:1021, tag:li",
+    "context": "text",
+    "translated": "事業者番号 699-29-00572"
+  },
+  {
+    "key": "text_102_li",
+    "text": "평일 AM 10:00 - PM 06:30",
+    "location": "line:1027, tag:li",
+    "context": "text",
+    "translated": "平日 AM 10:00 - PM 06:30"
+  },
+  {
+    "key": "text_103_li",
+    "text": "점심시간 PM 01:00 - PM 02:00",
+    "location": "line:1028, tag:li",
+    "context": "text",
+    "translated": "昼休み PM 01:00 - PM 02:00"
+  },
+  {
+    "key": "text_104_li",
+    "text": "토요일 AM 10:00 - PM 03:00",
+    "location": "line:1029, tag:li",
+    "context": "text",
+    "translated": "土曜日 AM 10:00 - PM 03:00"
+  },
+  {
+    "key": "text_105_li",
+    "text": "점심시간 없이 진료",
+    "location": "line:1030, tag:li",
+    "context": "text",
+    "translated": "昼休みなし診療"
+  },
+  {
+    "key": "text_106_li",
+    "text": "일요일 AM 10:00 - PM 04:00",
+    "location": "line:1031, tag:li",
+    "context": "text",
+    "translated": "日曜日 AM 10:00 - PM 04:00"
+  },
+  {
+    "key": "text_107_li",
+    "text": "휴진 공휴일",
+    "location": "line:1032, tag:li",
+    "context": "text",
+    "translated": "休診 祝日"
+  }
+]

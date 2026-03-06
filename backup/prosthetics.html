@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보철치료 | 스마일뷰치과의원</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <style>
+    /* ===== LAMINATE PREMIUM DESIGN SYSTEM ===== */
+    :root {
+        --lm-text: #4c4841;
+        --lm-gold: #b18247;
+        --lm-gold-light: rgba(177,130,71,0.15);
+        --lm-white: #fff;
+        --lm-cream: #f7f4ef;
+        --lm-card-bg: #f1f1f1;
+        --lm-footer-bg: #fbfbfb;
+        --lm-dark-overlay: rgba(0,0,0,0.55);
+        --lm-radius: 30px;
+        --lm-serif: 'STIX Two Text', 'Playfair Display', Georgia, serif;
+        --lm-body: 'Pretendard', -apple-system, sans-serif;
+        --lm-max-w: 1200px;
+    }
+
+    .lm-page { background: var(--lm-white); color: var(--lm-text); font-family: var(--lm-body); }
+    .lm-page *, .lm-page *::before, .lm-page *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    .lm-page img { display: block; max-width: 100%; }
+    .lm-inner { max-width: var(--lm-max-w); margin: 0 auto; padding: 0 50px; }
+
+    /* ===== SCROLL ANIMATION ===== */
+    .lm-fade { opacity: 0; transform: translateY(50px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .lm-fade.lm-show { opacity: 1; transform: translateY(0); }
+    .lm-fade-delay-1 { transition-delay: 0.15s; }
+    .lm-fade-delay-2 { transition-delay: 0.3s; }
+    .lm-fade-delay-3 { transition-delay: 0.45s; }
+
+    /* ===== HORIZONTAL SCROLL WRAPPER ===== */
+    .lm-horizontal {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 80px;
+    }
+    .lm-h-wrap {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        will-change: transform;
+    }
+    .lm-h-panel {
+        width: 960px;
+        height: 100vh;
+        flex-shrink: 0;
+        overflow: hidden;
+        position: relative;
+    }
+    /* Definition panel - matches benchmark sec3 width ratio */
+    .lm-h-panel--def {
+        width: 720px;
+    }
+    .lm-h-panel--title {
+        width: 1200px;
+    }
+
+    /* ===== HERO ===== */
+    .lm-hero {
+        position: relative; width: 100%; height: 100%;
+        display: flex; align-items: center; justify-content: center;
+        overflow: hidden;
+        background: linear-gradient(135deg, #c8a87c 0%, #b8956a 40%, #a68358 70%, #937148 100%);
+    }
+    .lm-hero-bg {
+        position: absolute; inset: 0; z-index: 0;
+        background: url('images/prosthodontics/8361791783bb9.jpg') center/cover no-repeat;
+        opacity: 0.3;
+    }
+    .lm-hero-overlay {
+        position: absolute; inset: 0; z-index: 1;
+        background: linear-gradient(180deg, rgba(180,140,80,0.2) 0%, rgba(100,70,30,0.4) 100%);
+    }
+    .lm-hero-content {
+        position: relative; z-index: 2; text-align: center;
+        display: flex; flex-direction: column; align-items: center; gap: 24px;
+        padding-top: 150px;
+    }
+    .lm-hero-lbx, .lm-hero-rbx {
+        text-align: center;
+    }
+    .lm-hero-lbx span, .lm-hero-rbx span {
+        font-family: var(--lm-serif); font-size: 120px; font-weight: 500;
+        color: var(--lm-white); line-height: 1;
+    }
+    .lm-hero-desc {
+        font-size: 18px; font-weight: 500; color: rgba(255,255,255,0.85);
+        line-height: 1.6; max-width: 600px; letter-spacing: -0.045em;
+    }
+    .lm-hero-desc2 {
+        font-size: 18px; font-weight: 500; color: rgba(255,255,255,0.7);
+        line-height: 1.6; max-width: 550px; margin-top: 55px; letter-spacing: -0.045em;
+    }
+
+    /* Scroll Down Indicator */
+    .lm-scroll-down {
+        position: absolute; bottom: 8%; right: 8%; z-index: 5;
+        width: 90px; height: 90px;
+    }
+    .lm-scroll-circle {
+        width: 100%; height: 100%;
+        animation: lm-rotate 10s linear infinite;
+    }
+    .lm-scroll-circle text {
+        font-family: var(--lm-serif); font-size: 11px; fill: rgba(255,255,255,0.6);
+        letter-spacing: 3px;
+    }
+    .lm-scroll-arrow {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+        color: rgba(255,255,255,0.7); font-size: 20px;
+    }
+    @keyframes lm-rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    /* ===== TITLE BAND ===== */
+    .lm-title-band {
+        position: relative; width: 100%; height: 100%; overflow: hidden;
+        background: url('images/prosthodontics/f5a3410095ae6.jpg') center/cover no-repeat;
+        display: flex; align-items: center; justify-content: center;
+    }
+    .lm-title-band-overlay {
+        position: absolute; inset: 0;
+        background: rgba(50,40,30,0.7);
+    }
+    .lm-title-band-content {
+        position: relative; z-index: 2; text-align: center;
+        padding: 80px 20px;
+    }
+    .lm-title-band h2 {
+        font-family: var(--lm-serif); font-size: 100px; font-weight: 400;
+        color: var(--lm-white); text-transform: uppercase; line-height: 1.2;
+        letter-spacing: normal;
+    }
+    .lm-title-band .lm-kr-sub {
+        font-family: var(--lm-body); font-size: 22px; font-weight: 500;
+        color: rgba(255,255,255,0.8); margin-top: 20px; letter-spacing: -0.045em;
+    }
+    .lm-title-band .lm-badge {
+        display: inline-flex; align-items: center; justify-content: center;
+        padding: 0 30px; height: 40px; border: 0.8px solid rgba(255,255,255,0.5);
+        border-radius: 20px; margin-top: 40px;
+    }
+    .lm-title-band .lm-badge span {
+        font-family: var(--lm-body); font-size: 18px; font-weight: 500;
+        color: var(--lm-white); letter-spacing: -0.81px;
+    }
+
+    /* Marquee */
+    .lm-marquee {
+        position: absolute; bottom: -0.15em; left: 0; width: 100%; z-index: 1;
+        overflow: hidden; white-space: nowrap;
+        font-family: var(--lm-serif); font-size: 200px; font-weight: 600;
+        color: transparent; -webkit-text-stroke: 1px rgba(251,251,251,0.1);
+        letter-spacing: -5px; line-height: 1;
+    }
+    .lm-marquee-track {
+        display: inline-flex; animation: lm-marquee 25s linear infinite;
+    }
+    .lm-marquee-track span { margin: 0 40px; }
+    @keyframes lm-marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* ===== DEFINITION SECTION (sec3 - benchmark match) ===== */
+    .lm-definition {
+        position: relative; width: 100%; height: 100%; overflow: hidden;
+        background: var(--lm-cream);
+        background-size: cover; background-position: center bottom;
+    }
+    .lm-def-scroll-circle {
+        position: absolute; top: 10%; right: 20%;
+        width: 113px; height: 113px; z-index: 5;
+    }
+    .lm-def-scroll-circle .lm-scroll-circle {
+        width: 100%; height: 100%;
+        animation: lm-rotate 6s linear infinite;
+    }
+    .lm-def-scroll-circle .lm-scroll-circle text {
+        font-family: var(--lm-serif); font-size: 11px; fill: var(--lm-text);
+        letter-spacing: 3px; opacity: 0.5;
+    }
+    .lm-def-scroll-circle .lm-def-arrow {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+        color: var(--lm-text); font-size: 22px;
+    }
+    .lm-def-con {
+        position: absolute; top: 20%; left: 70px; right: 25%; bottom: 100px;
+    }
+    .lm-def-tit {}
+    .lm-def-num {
+        font-family: var(--lm-serif); font-size: 18px; font-weight: 400;
+        color: var(--lm-text); display: block;
+    }
+    .lm-def-title {
+        font-family: var(--lm-body); font-size: 50px; font-weight: 600;
+        color: var(--lm-text); letter-spacing: -2.25px;
+        line-height: 1; margin-top: 30px;
+    }
+    .lm-def-body {
+        font-family: var(--lm-body); font-size: 18px; line-height: 32px;
+        color: var(--lm-text); letter-spacing: -0.81px; font-weight: 400;
+        margin-top: 40px;
+    }
+    .lm-def-divider {
+        width: 100%; height: 1px; background: var(--lm-text);
+        margin-top: 40px;
+    }
+    .lm-def-sub {
+        margin-top: 45px;
+    }
+    .lm-def-sub p {
+        display: flex; flex-wrap: nowrap; gap: 10px; align-items: flex-start;
+    }
+    .lm-def-sub b {
+        font-family: var(--lm-body); font-size: 14px; font-weight: 600;
+        color: var(--lm-text); letter-spacing: -0.63px; line-height: 1.75;
+        display: block; position: relative; padding-right: 10px;
+        white-space: nowrap; flex-shrink: 0;
+    }
+    .lm-def-sub b::after {
+        content: '|'; position: absolute; right: 0; top: 0;
+        color: var(--lm-text); font-weight: 300;
+    }
+    .lm-def-sub span {
+        font-family: var(--lm-body); font-size: 14px; font-weight: 400;
+        color: var(--lm-text); letter-spacing: -0.63px; line-height: 1.75;
+        display: block;
+    }
+
+    /* ===== FLOATING QUICK LINK ===== */
+    .lm-quick {
+        position: fixed; right: 40px; bottom: 120px; z-index: 100;
+        cursor: pointer; width: 65px;
+    }
+    .lm-quick-toggle {
+        width: 65px; height: 65px; border-radius: 50%;
+        background: var(--lm-text); box-shadow: 0 0 8px rgba(0,0,0,0.15);
+        display: flex; align-items: center; justify-content: center;
+        position: relative; z-index: 10; border: none; cursor: pointer;
+        transition: 0.3s;
+    }
+    .lm-quick-toggle:hover { transform: scale(1.05); }
+    .lm-quick-toggle .lm-bar {
+        display: block; width: 18px; height: 2px; background: var(--lm-white);
+        position: absolute; transition: 0.4s; transform-origin: center;
+    }
+    .lm-quick-toggle .lm-bar:nth-child(1) { transform: rotate(90deg); }
+    .lm-quick-toggle .lm-bar:nth-child(2) { transform: rotate(0deg); }
+    .lm-quick.open .lm-quick-toggle .lm-bar:nth-child(1) { transform: rotate(0deg); }
+
+    .lm-quick-menu {
+        position: absolute; bottom: 0; left: 0; width: 100%;
+        padding: 12px 8px 75px; background: #f0f0f0;
+        border-radius: 32px; border: 1px solid var(--lm-text);
+        z-index: 5; opacity: 0; pointer-events: none;
+        transform: translateY(10px); transition: 0.4s;
+    }
+    .lm-quick.open .lm-quick-menu {
+        opacity: 1; pointer-events: auto; transform: translateY(0);
+    }
+    .lm-quick-menu a {
+        display: flex; flex-direction: column; align-items: center;
+        padding: 14px 0; text-decoration: none;
+        border-bottom: 1px solid rgba(76,72,65,0.15);
+    }
+    .lm-quick-menu a:last-child { border-bottom: none; }
+    .lm-quick-menu a i { font-size: 22px; color: var(--lm-text); }
+    .lm-quick-menu a em {
+        display: block; margin-top: 6px; font-style: normal;
+        font-size: 11px; color: var(--lm-text); letter-spacing: -0.045em;
+    }
+
+    /* ===== SCROLL TOP ===== */
+    .lm-scroll-top {
+        position: fixed; right: 40px; bottom: 40px; z-index: 99;
+        width: 55px; height: 55px; border-radius: 50%;
+        border: 1px solid var(--lm-text); background: var(--lm-white);
+        display: flex; align-items: center; justify-content: center;
+        cursor: pointer; transition: 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .lm-scroll-top:hover { background: var(--lm-text); color: var(--lm-white); }
+    .lm-scroll-top i { font-size: 18px; }
+
+    /* ===== FOOTER ===== */
+    .lm-footer {
+        background: var(--lm-footer-bg); border-top: 0.8px solid #afafaf;
+        padding: 60px 0 40px; text-align: center;
+    }
+    .lm-footer-logo {
+        font-family: var(--lm-serif); font-size: 24px; font-weight: 500;
+        color: var(--lm-text); letter-spacing: 2px; margin-bottom: 24px;
+    }
+    .lm-footer-link {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 10px 24px; border: 1px solid var(--lm-text); border-radius: 20px;
+        text-decoration: none; color: var(--lm-text); font-size: 14px;
+        margin-bottom: 30px; transition: 0.3s;
+    }
+    .lm-footer-link:hover { background: var(--lm-text); color: var(--lm-white); }
+    .lm-footer-info {
+        font-size: 14px; color: rgba(76,72,65,0.6); line-height: 1.8;
+    }
+    .lm-footer-info span { margin: 0 8px; }
+    .lm-footer-copy {
+        margin-top: 24px; font-size: 13px; color: rgba(76,72,65,0.4);
+    }
+
+    /* ===== SECTION LABEL & HEADING (shared) ===== */
+    .lm-section-label { display: inline-block; padding: 6px 20px; border-radius: 50px; background: var(--lm-gold-light); color: var(--lm-gold); font-size: 13px; font-weight: 600; letter-spacing: 1px; margin-bottom: 16px; }
+    .lm-section-h2 { font-family: var(--lm-body); font-size: 36px; font-weight: 700; color: var(--lm-text); letter-spacing: -0.045em; }
+
+    /* ===== BANNER + CHECKLIST ===== */
+    .lm-imp-banner{padding:120px 0;background:#1c1915;position:relative;overflow:hidden}
+    .lm-imp-banner__bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.15;z-index:0;pointer-events:none}
+    .lm-imp-banner::before{content:'';position:absolute;top:-50%;right:-30%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(177,130,71,0.06) 0%,transparent 60%);pointer-events:none}
+    .lm-imp-banner .lm-inner{position:relative;z-index:1}
+    .lm-imp-banner__layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    .lm-imp-banner__text h2{font-family:var(--lm-body);font-size:38px;font-weight:700;color:var(--lm-white);letter-spacing:-0.045em;line-height:1.35;margin-bottom:20px}
+    .lm-imp-banner__text h2 span{color:var(--lm-gold)}
+    .lm-imp-banner__text p{font-size:16px;color:rgba(255,255,255,0.55);line-height:1.8;letter-spacing:-0.03em}
+    .lm-imp-checks{display:flex;flex-direction:column;gap:16px}
+    .lm-imp-check{display:flex;align-items:flex-start;gap:16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:24px 20px;transition:all 0.4s cubic-bezier(0.22,1,0.36,1)}
+    .lm-imp-check:hover{transform:translateY(-4px);border-color:rgba(177,130,71,0.3);box-shadow:0 12px 32px rgba(177,130,71,0.1);background:rgba(255,255,255,0.06)}
+    .lm-imp-check__icon{width:40px;height:40px;background:linear-gradient(135deg,var(--lm-gold),#c9a06a);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--lm-white);flex-shrink:0}
+    .lm-imp-check__text h4{font-size:16px;font-weight:700;color:var(--lm-white);margin-bottom:4px;letter-spacing:-0.03em}
+    .lm-imp-check__text p{font-size:14px;color:rgba(255,255,255,0.5);line-height:1.6;margin:0}
+
+    /* ===== TREATMENT TYPES (4 cards) ===== */
+    .lm-imp-type{padding:140px 0;position:relative;overflow:hidden;color:var(--lm-white)}
+    .lm-imp-type::after{font-family:var(--lm-serif);font-size:280px;font-weight:700;color:rgba(177,130,71,0.03);line-height:1;pointer-events:none;position:absolute;bottom:5%;right:-2%}
+    .lm-imp-type--same{background:#1a1714}.lm-imp-type--same::after{content:'01'}
+    .lm-imp-type--navi{background:#1e1b16}.lm-imp-type--navi::after{content:'02'}
+    .lm-imp-type--bone{background:#1a1714}.lm-imp-type--bone::after{content:'03'}
+    .lm-imp-type--fourth{background:#1e1b16}.lm-imp-type--fourth::after{content:'04'}
+    .lm-imp-type__grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;position:relative;z-index:1}
+    .lm-imp-type__grid--reverse{direction:rtl}.lm-imp-type__grid--reverse>*{direction:ltr}
+    .lm-imp-type__img{border-radius:24px;overflow:hidden;aspect-ratio:4/3;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center}
+    .lm-imp-type__img img{width:100%;height:100%;object-fit:cover}
+    .lm-imp-type__img-placeholder{font-family:var(--lm-serif);font-size:64px;color:rgba(177,130,71,0.15)}
+    .lm-imp-type__text{padding:20px 0}
+    .lm-imp-type__badge{display:inline-block;padding:6px 16px;border-radius:20px;background:rgba(177,130,71,0.15);color:var(--lm-gold);font-size:12px;font-weight:600;letter-spacing:1px;margin-bottom:20px;text-transform:uppercase}
+    .lm-imp-type__text h3{font-size:32px;font-weight:700;color:var(--lm-white);letter-spacing:-1.2px;line-height:1.35;margin-bottom:20px}
+    .lm-imp-type__text h3 em{font-style:normal;color:var(--lm-gold)}
+    .lm-imp-type__text>p{font-size:15px;line-height:1.85;color:rgba(255,255,255,0.55);margin-bottom:28px}
+    .lm-imp-type__points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+    .lm-imp-type__point{display:flex;align-items:center;gap:10px}
+    .lm-imp-type__point-icon{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--lm-gold);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .lm-imp-type__point-icon i{font-size:12px;color:var(--lm-gold)}
+    .lm-imp-type__point span{font-size:14px;font-weight:600;color:var(--lm-white);letter-spacing:-0.03em}
+
+    /* ===== WIDE BANNER DIVIDER ===== */
+    .lm-wide-banner{position:relative;width:100%;overflow:hidden;line-height:0}
+    .lm-wide-banner img{width:100%;height:auto;display:block;object-fit:cover}
+
+    /* ===== PROCEDURE INFO (dark, hero + cards) ===== */
+    .lm-info-section{padding:0 0 120px;background:#201d17;position:relative;color:var(--lm-white);overflow:hidden}
+    .lm-info-section::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle at 50% 0%,rgba(177,130,71,0.06) 0%,transparent 50%);pointer-events:none}
+    .lm-info-hero{position:relative;width:100%;height:520px;overflow:hidden;margin-bottom:72px}
+    .lm-info-hero-img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.8s cubic-bezier(0.22,1,0.36,1)}
+    .lm-info-hero:hover .lm-info-hero-img{transform:scale(1.04)}
+    .lm-info-hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(32,29,23,0.25) 0%,rgba(32,29,23,0.7) 60%,#201d17 100%),linear-gradient(90deg,rgba(32,29,23,0.5) 0%,transparent 50%);pointer-events:none}
+    .lm-info-hero-content{position:absolute;bottom:56px;left:0;width:100%;z-index:2;padding:0 48px}
+    .lm-info-hero-content .lm-inner{display:flex;flex-direction:column;align-items:flex-start}
+    .lm-info-hero-label{display:inline-block;padding:6px 20px;border-radius:50px;background:rgba(177,130,71,0.2);border:1px solid rgba(177,130,71,0.35);color:var(--lm-gold);font-size:13px;font-weight:600;letter-spacing:1px;margin-bottom:16px;backdrop-filter:blur(8px)}
+    .lm-info-hero-title{font-family:var(--lm-body);font-size:44px;font-weight:700;color:var(--lm-white);letter-spacing:-0.045em;line-height:1.2}
+    .lm-info-hero-title span{color:var(--lm-gold)}
+    .lm-info-hero-sub{font-family:var(--lm-serif);font-size:15px;color:rgba(255,255,255,0.55);margin-top:14px;letter-spacing:0.03em}
+    .lm-info-hero-line{width:48px;height:2px;background:linear-gradient(90deg,var(--lm-gold),transparent);margin-top:20px;border:none}
+    .lm-info-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative;z-index:1}
+    .lm-info-card{background:rgba(255,255,255,0.04);border-radius:24px;padding:40px 24px;text-align:center;border:1px solid rgba(255,255,255,0.08);backdrop-filter:blur(12px);transition:all 0.5s cubic-bezier(0.22,1,0.36,1)}
+    .lm-info-card:hover{transform:scale(1.03);box-shadow:0 24px 64px rgba(177,130,71,0.15);border-color:var(--lm-gold);background:rgba(255,255,255,0.07)}
+    .lm-info-card-icon{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--lm-gold),#c9a06a);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:28px;color:var(--lm-white);box-shadow:0 8px 32px rgba(177,130,71,0.25)}
+    .lm-info-card-label{font-size:13px;color:rgba(255,255,255,0.5);letter-spacing:0.5px;text-transform:uppercase;margin-bottom:8px}
+    .lm-info-card-val{font-size:28px;font-weight:700;color:var(--lm-gold);letter-spacing:-0.03em;margin-bottom:8px}
+    .lm-info-card-desc{font-size:13px;color:rgba(255,255,255,0.4);line-height:1.5}
+    .lm-info-detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:48px;position:relative;z-index:1}
+    .lm-info-detail-card{background:rgba(255,255,255,0.04);border-radius:20px;padding:32px 28px;border:1px solid rgba(255,255,255,0.08);backdrop-filter:blur(8px);transition:all 0.5s cubic-bezier(0.22,1,0.36,1)}
+    .lm-info-detail-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(177,130,71,0.12);border-color:rgba(177,130,71,0.3);background:rgba(255,255,255,0.06)}
+    .lm-info-detail-num{font-size:14px;color:var(--lm-gold);font-weight:500;margin-bottom:12px}
+    .lm-info-detail-card h4{font-size:18px;font-weight:700;color:var(--lm-white);margin-bottom:10px;letter-spacing:-0.03em}
+    .lm-info-detail-card p{font-size:14px;color:rgba(255,255,255,0.5);line-height:1.7}
+    .lm-info-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .lm-info-chip{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:20px;background:rgba(177,130,71,0.15);color:var(--lm-gold);font-size:12px;font-weight:600}
+
+    /* ===== RECOMMENDATION (dark) ===== */
+    .lm-recommend{padding:120px 0;background:#1e1b16;position:relative;overflow:hidden;color:var(--lm-white)}
+    .lm-recommend::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(177,130,71,0.06) 0%,transparent 70%);pointer-events:none}
+    .lm-rec-header{text-align:center;margin-bottom:64px;position:relative;z-index:1}
+    .lm-rec-label{display:inline-block;font-size:13px;font-weight:700;color:var(--lm-gold);letter-spacing:3px;text-transform:uppercase;margin-bottom:20px}
+    .lm-rec-title{font-family:var(--lm-body);font-size:38px;font-weight:700;color:var(--lm-white);line-height:1.35;letter-spacing:-0.04em}
+    .lm-rec-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative;z-index:1}
+    .lm-rec-card{background:rgba(255,255,255,0.04);border-radius:24px;padding:40px 32px;border:1px solid rgba(255,255,255,0.08);transition:transform 0.5s cubic-bezier(0.22,1,0.36,1),box-shadow 0.4s,border-color 0.4s;position:relative;overflow:hidden}
+    .lm-rec-card:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(177,130,71,0.12);border-color:rgba(177,130,71,0.3)}
+    .lm-rec-card::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--lm-gold);transform:scaleX(0);transform-origin:left;transition:transform 0.4s}
+    .lm-rec-card:hover::after{transform:scaleX(1)}
+    .lm-rec-card-num{position:absolute;top:20px;right:24px;font-family:var(--lm-serif);font-size:44px;font-weight:400;color:rgba(177,130,71,0.08);line-height:1;pointer-events:none}
+    .lm-rec-card-icon{width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,rgba(177,130,71,0.2),rgba(177,130,71,0.08));display:flex;align-items:center;justify-content:center;margin-bottom:24px;font-size:24px;color:var(--lm-gold)}
+    .lm-rec-card h3{font-size:20px;font-weight:700;color:var(--lm-white);margin-bottom:12px;letter-spacing:-0.03em}
+    .lm-rec-card p{font-size:14px;line-height:1.7;color:rgba(255,255,255,0.5)}
+
+
+    /* ===== FAQ (dark, split layout) ===== */
+    .lm-faq-section{padding:60px 0 120px;background:#1a1714;color:var(--lm-white);position:relative;overflow:hidden}
+    .lm-faq-section::after{content:'';position:absolute;bottom:0;right:0;width:60%;height:60%;background:radial-gradient(ellipse at 80% 80%,rgba(177,130,71,0.06) 0%,transparent 60%);pointer-events:none}
+    .lm-faq-layout{display:grid;grid-template-columns:300px 1fr;gap:60px;align-items:start;position:relative;z-index:1}
+    .lm-faq-left{position:sticky;top:120px}
+    .lm-faq-deco{font-family:var(--lm-serif);font-size:120px;font-weight:400;color:var(--lm-gold);opacity:0.2;line-height:1;margin-bottom:24px}
+    .lm-faq-left-text{font-size:16px;color:rgba(255,255,255,0.4);line-height:1.8;letter-spacing:-0.045em}
+    .lm-faq-list{display:flex;flex-direction:column;gap:12px}
+    .lm-faq-item{background:rgba(255,255,255,0.03);border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,0.06);transition:border-color 0.4s,box-shadow 0.4s}
+    .lm-faq-item:hover{border-color:rgba(177,130,71,0.3);box-shadow:0 4px 20px rgba(177,130,71,0.08)}
+    .lm-faq-q{display:flex;align-items:center;justify-content:space-between;width:100%;padding:24px 28px;border:none;background:none;cursor:pointer;font-family:var(--lm-body);font-size:17px;font-weight:600;color:var(--lm-white);letter-spacing:-0.045em;text-align:left;gap:12px}
+    .lm-faq-q .lm-faq-prefix{font-family:var(--lm-serif);font-size:20px;font-weight:600;color:var(--lm-gold);flex-shrink:0;margin-right:4px}
+    .lm-faq-q i{font-size:18px;color:rgba(255,255,255,0.4);transition:transform 0.3s,color 0.3s;flex-shrink:0}
+    .lm-faq-q.active i{transform:rotate(180deg);color:var(--lm-gold)}
+    .lm-faq-a{display:none;padding:0 28px 24px;font-size:15px;color:rgba(255,255,255,0.55);line-height:1.7;letter-spacing:-0.045em}
+    .lm-faq-a .lm-faq-a-prefix{font-family:var(--lm-serif);font-size:18px;font-weight:600;color:var(--lm-gold);margin-right:8px}
+
+    /* ===== RESPONSIVE (new sections) ===== */
+    @media(max-width:1024px){
+        .lm-imp-banner__layout{grid-template-columns:1fr;gap:40px}
+        .lm-imp-type__grid,.lm-imp-type__grid--reverse{grid-template-columns:1fr;direction:ltr}
+        .lm-imp-type__points{grid-template-columns:1fr 1fr}
+        .lm-info-cards{grid-template-columns:repeat(2,1fr)}
+        .lm-info-hero{height:400px;margin-bottom:56px}
+        .lm-info-hero-title{font-size:34px}
+        .lm-rec-cards{grid-template-columns:repeat(2,1fr)}
+        .lm-faq-layout{grid-template-columns:1fr;gap:40px}
+        .lm-faq-left{position:relative;top:auto;text-align:center}
+    }
+    @media(max-width:768px){
+        .lm-imp-banner{padding:80px 0}
+        .lm-imp-banner__text h2{font-size:28px}
+        .lm-imp-type{padding:100px 0}
+        .lm-imp-type__text h3{font-size:24px}
+        .lm-imp-type__points{grid-template-columns:1fr}
+        .lm-info-section{padding:0 0 80px}
+        .lm-info-hero{height:320px;margin-bottom:40px}
+        .lm-info-hero-title{font-size:26px}
+        .lm-info-hero-content{padding:0 24px;bottom:32px}
+        .lm-info-cards{grid-template-columns:1fr 1fr;gap:12px}
+        .lm-info-card{padding:24px 16px}
+        .lm-info-card-val{font-size:22px}
+        .lm-info-detail-grid{grid-template-columns:1fr}
+        .lm-recommend{padding:80px 0}
+        .lm-rec-cards{grid-template-columns:1fr}
+        .lm-rec-title{font-size:28px}
+        .lm-faq-section{padding:80px 0}
+        .lm-faq-deco{font-size:60px}
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+        /* Mobile: vertical layout, no horizontal scroll */
+        .lm-horizontal { margin-top: 80px; }
+        .lm-h-wrap {
+            display: flex; flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        .lm-h-panel {
+            width: 100%; height: auto; min-height: 100vh;
+        }
+        .lm-h-panel--def {
+            width: 100%; min-height: auto;
+        }
+        .lm-definition {
+            height: auto; padding: 80px 24px;
+            display: block; position: relative;
+        }
+        .lm-def-con {
+            position: relative; top: auto; left: auto; right: auto; bottom: auto;
+        }
+        .lm-def-scroll-circle { display: none; }
+        .lm-hero-lbx span, .lm-hero-rbx span { font-size: 80px; }
+        .lm-title-band h2 { font-size: 56px; }
+        .lm-definition::before { font-size: 120px; }
+    }
+    @media (max-width: 768px) {
+        .lm-h-panel { min-height: auto; }
+        .lm-h-panel--title { width: 100%; }
+        .lm-inner { padding: 0 24px; }
+        .lm-hero-lbx span, .lm-hero-rbx span { font-size: 60px; }
+        .lm-hero-desc { font-size: 15px; }
+        .lm-scroll-down { width: 70px; height: 70px; bottom: 5%; right: 5%; }
+        .lm-title-band h2 { font-size: 36px; }
+        .lm-title-band .lm-kr-sub { font-size: 18px; }
+        .lm-marquee { font-size: 80px; }
+        .lm-definition::before { font-size: 80px; }
+        .lm-def-title { font-size: 28px; }
+        .lm-quick { right: 20px; bottom: 100px; width: 55px; }
+        .lm-quick-toggle { width: 55px; height: 55px; }
+        .lm-scroll-top { right: 20px; bottom: 30px; width: 45px; height: 45px; }
+        .lm-section-h2 { font-size: 28px; }
+    }
+    @media (max-width: 480px) {
+        .lm-inner { padding: 0 16px; }
+        .lm-hero-content { padding-top: 100px; gap: 16px; }
+        .lm-hero-lbx span, .lm-hero-rbx span { font-size: 42px; }
+        .lm-hero-desc { font-size: 14px; max-width: 100%; }
+        .lm-hero-desc2 { font-size: 13px; margin-top: 30px; }
+        .lm-scroll-down { width: 56px; height: 56px; bottom: 4%; right: 4%; }
+        .lm-title-band h2 { font-size: 28px; }
+        .lm-title-band .lm-kr-sub { font-size: 15px; }
+        .lm-title-band .lm-badge { padding: 0 20px; height: 34px; margin-top: 24px; }
+        .lm-title-band .lm-badge span { font-size: 14px; }
+        .lm-marquee { font-size: 50px; }
+        .lm-def-title { font-size: 22px; letter-spacing: -1px; }
+        .lm-def-body { font-size: 15px; line-height: 26px; margin-top: 24px; }
+        .lm-def-divider { margin-top: 24px; }
+        .lm-def-sub { margin-top: 24px; }
+        .lm-section-h2 { font-size: 24px; }
+        .lm-section-label { font-size: 12px; padding: 5px 16px; }
+        .lm-imp-banner { padding: 60px 0; }
+        .lm-imp-banner__text h2 { font-size: 22px; }
+        .lm-imp-banner__text p { font-size: 14px; }
+        .lm-imp-check { padding: 18px 16px; gap: 12px; border-radius: 12px; }
+        .lm-imp-check__icon { width: 34px; height: 34px; font-size: 15px; }
+        .lm-imp-check__text h4 { font-size: 15px; }
+        .lm-imp-check__text p { font-size: 13px; }
+        .lm-imp-type { padding: 70px 0; }
+        .lm-imp-type__text h3 { font-size: 20px; }
+        .lm-imp-type__text > p { font-size: 14px; }
+        .lm-imp-type__badge { font-size: 11px; padding: 5px 14px; }
+        .lm-info-section { padding: 0 0 60px; }
+        .lm-info-hero { height: 240px; margin-bottom: 32px; }
+        .lm-info-hero-title { font-size: 22px; }
+        .lm-info-hero-content { padding: 0 16px; bottom: 24px; }
+        .lm-info-cards { grid-template-columns: 1fr; gap: 12px; }
+        .lm-info-card { padding: 24px 16px; border-radius: 16px; }
+        .lm-info-card-icon { width: 56px; height: 56px; font-size: 22px; margin-bottom: 16px; }
+        .lm-info-card-val { font-size: 20px; }
+        .lm-info-detail-card { padding: 24px 20px; border-radius: 16px; }
+        .lm-info-detail-card h4 { font-size: 16px; }
+        .lm-info-detail-card p { font-size: 13px; }
+        .lm-recommend { padding: 60px 0; }
+        .lm-rec-title { font-size: 22px; }
+        .lm-rec-card { padding: 28px 20px; border-radius: 20px; }
+        .lm-rec-card h3 { font-size: 17px; }
+        .lm-rec-card p { font-size: 13px; }
+        .lm-rec-card-icon { width: 48px; height: 48px; font-size: 20px; margin-bottom: 16px; }
+        .lm-faq-section { padding: 60px 0; }
+        .lm-faq-deco { font-size: 48px; }
+        .lm-faq-q { padding: 18px 20px; font-size: 15px; }
+        .lm-faq-a { padding: 0 20px 20px; font-size: 14px; }
+        .lm-quick { right: 16px; bottom: 80px; width: 48px; }
+        .lm-quick-toggle { width: 48px; height: 48px; }
+        .lm-scroll-top { right: 16px; bottom: 20px; width: 40px; height: 40px; }
+        .lm-scroll-top i { font-size: 15px; }
+        .lm-footer { padding: 40px 0 30px; }
+        .lm-footer-logo { font-size: 20px; }
+        .lm-footer-info { font-size: 12px; }
+        .lm-footer-link { font-size: 12px; padding: 8px 18px; }
+    }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo"><a href="index.html">SMILEVIEW</a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="introduction.html">스마일뷰치과</a></li>
+                    <li><a href="invisalign.html">인비절라인</a></li>
+                    <li><a href="ortho.html">치아교정</a></li>
+                    <li><a href="whitening.html">치아미백</a></li>
+                    <li><a href="laminate.html">원데이 라미네이트</a></li>
+                    <li><a href="implant.html">수면 임플란트</a></li>
+                    <li><a href="prosthetics.html" class="active">보철치료</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="lang-selector" id="langSelector">
+                    <span class="lang-icon"><i class="ph ph-globe"></i></span>
+                    <button class="lang-current" onclick="document.getElementById('langSelector').classList.toggle('open')">KO</button>
+                    <div class="lang-dropdown">
+                        <a href="#" class="active">한국어 (KO)</a>
+                        <a href="#">繁體中文 (TW)</a>
+                        <a href="#">日本語 (JP)</a>
+                    </div>
+                </div>
+                <a href="#" class="btn-reserve">예약하기</a>
+                <div class="mobile-menu-btn"><i class="ph ph-list"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-inner">
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="introduction.html">병원소개</a></li>
+                    <li><a href="invisalign.html">인비절라인</a></li>
+                    <li><a href="ortho.html">치아교정</a></li>
+                    <li><a href="whitening.html">치아미백</a></li>
+                    <li><a href="laminate.html">원데이 라미네이트</a></li>
+                    <li><a href="implant.html">수면 임플란트</a></li>
+                    <li><a href="prosthetics.html">보철치료</a></li>
+                </ul>
+            </nav>
+            <a href="https://naver.me/xoBKVJA6" class="mobile-reserve-btn" target="_blank">온라인 예약</a>
+        </div>
+    </div>
+
+    <main class="lm-page">
+
+        <!-- ===== HORIZONTAL SCROLL SECTION ===== -->
+        <section class="lm-horizontal">
+            <div class="lm-h-wrap">
+
+                <!-- Panel 1: HERO -->
+                <div class="lm-h-panel">
+        <div class="lm-hero">
+            <div class="lm-hero-bg"></div>
+            <div class="lm-hero-overlay"></div>
+            <div class="lm-hero-content">
+                <div class="lm-hero-lbx"><span>PROSTHETICS</span></div>
+                <div class="lm-hero-rbx"><span>PROSTHETICS</span></div>
+                <p class="lm-hero-desc">
+                    보철치료는 손상된, 손실된 또는 충치로 인한 피해를 받은 치아를<br>
+                    복원하고 보호하기 위해 다양한 치과 기술과 재료를 활용합니다
+                </p>
+                <p class="lm-hero-desc2">
+                    충치, 신경 손상, 손상된 치아에 대한 종합적인 치료를 제공하여<br>
+                    환자들의 자신감을 회복시키고 건강한 미소를 유지합니다.
+                </p>
+            </div>
+            <!-- Scroll Down -->
+            <div class="lm-scroll-down">
+                <svg class="lm-scroll-circle" viewBox="0 0 100 100">
+                    <defs>
+                        <path id="circlePath" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"/>
+                    </defs>
+                    <text>
+                        <textPath href="#circlePath">Scroll Down ・ Scroll Down ・ Scroll Down ・</textPath>
+                    </text>
+                </svg>
+                <span class="lm-scroll-arrow"><i class="ph ph-arrow-down"></i></span>
+            </div>
+        </div>
+                </div><!-- end Panel 1 -->
+
+                <!-- Panel 2: TITLE BAND -->
+                <div class="lm-h-panel lm-h-panel--title">
+        <div class="lm-title-band">
+            <div class="lm-title-band-overlay"></div>
+            <div class="lm-title-band-content">
+                <h2>Prosthetics</h2>
+                <p class="lm-kr-sub">PROSTHETICS</p>
+                <div class="lm-badge">
+                    <span>SMILEVIEW SIGNATURE</span>
+                </div>
+            </div>
+            <!-- Marquee -->
+            <div class="lm-marquee">
+                <div class="lm-marquee-track">
+                    <span>SMILEVIEW</span><span>PROSTHETICS</span><span>SMILEVIEW</span><span>PROSTHETICS</span>
+                    <span>SMILEVIEW</span><span>PROSTHETICS</span><span>SMILEVIEW</span><span>PROSTHETICS</span>
+                </div>
+            </div>
+        </div>
+                </div><!-- end Panel 2 -->
+
+                <!-- Panel 3: DEFINITION -->
+                <div class="lm-h-panel lm-h-panel--def">
+        <div class="lm-definition">
+            <!-- Scroll Circle -->
+            <div class="lm-def-scroll-circle">
+                <svg class="lm-scroll-circle" viewBox="0 0 100 100">
+                    <defs>
+                        <path id="circlePathDef" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"/>
+                    </defs>
+                    <text>
+                        <textPath href="#circlePathDef">Scroll Down ・ Scroll Down ・ Scroll Down ・</textPath>
+                    </text>
+                </svg>
+                <span class="lm-def-arrow"><i class="ph ph-arrow-down"></i></span>
+            </div>
+            <!-- Content -->
+            <div class="lm-def-con">
+                <div class="lm-def-tit">
+                    <span class="lm-def-num">01</span>
+                    <h2 class="lm-def-title">보철치료란?</h2>
+                    <p class="lm-def-body">
+                        보철치료는 충치, 외상, 마모 등으로 손상되거나 손실된 치아를 다양한 재료와 기술을 활용하여 원래의 형태와 기능으로 복원하는 치료입니다. 레진, 인레이, 크라운, 브릿지 등 다양한 방법을 통해 치아의 저작 기능과 심미성을 회복시켜 드립니다. 스마일뷰치과는 정밀 진단을 통해 환자 개개인에게 최적의 보철 치료 계획을 수립합니다.
+                    </p>
+                </div>
+                <div class="lm-def-divider"></div>
+                <div class="lm-def-sub">
+                    <p>
+                        <b>종류</b>
+                        <span>충치치료(레진, 인레이), 신경치료, 크라운(PFM, 금, 지르코니아), 잇몸치료(스케일링, 큐렛) 등</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+                </div><!-- end Panel 3 -->
+
+            </div><!-- end lm-h-wrap -->
+        </section><!-- end lm-horizontal -->
+
+        <!-- ===== BANNER + CHECKLIST ===== -->
+        <section class="lm-imp-banner">
+            <img src="images/prosthodontics/8361791783bb9.jpg" alt="" class="lm-imp-banner__bg-img">
+            <div class="lm-inner">
+                <div class="lm-imp-banner__layout">
+                    <div class="lm-imp-banner__text lm-fade">
+                        <span class="lm-section-label">PROSTHETICS</span>
+                        <h2>손상된 치아를<br>되살리는 <span>보철치료</span></h2>
+                        <p>충치부터 신경치료, 크라운, 잇몸치료까지<br>종합적인 치과 보철 솔루션을 제공합니다.</p>
+                    </div>
+                    <div class="lm-imp-checks lm-fade lm-fade-delay-1">
+                        <div class="lm-imp-check">
+                            <div class="lm-imp-check__icon"><i class="ph-bold ph-check"></i></div>
+                            <div class="lm-imp-check__text">
+                                <h4>충치가 진행된 치아</h4>
+                                <p>레진 또는 인레이 치료로 충치를 제거하고 치아를 복원합니다</p>
+                            </div>
+                        </div>
+                        <div class="lm-imp-check">
+                            <div class="lm-imp-check__icon"><i class="ph-bold ph-check"></i></div>
+                            <div class="lm-imp-check__text">
+                                <h4>신경까지 손상된 치아</h4>
+                                <p>신경치료 후 크라운으로 보호하여 치아를 보존합니다</p>
+                            </div>
+                        </div>
+                        <div class="lm-imp-check">
+                            <div class="lm-imp-check__icon"><i class="ph-bold ph-check"></i></div>
+                            <div class="lm-imp-check__text">
+                                <h4>깨지거나 파절된 치아</h4>
+                                <p>크라운 보철로 치아 전체를 감싸 강도와 심미성을 회복합니다</p>
+                            </div>
+                        </div>
+                        <div class="lm-imp-check">
+                            <div class="lm-imp-check__icon"><i class="ph-bold ph-check"></i></div>
+                            <div class="lm-imp-check__text">
+                                <h4>잇몸 질환이 있는 경우</h4>
+                                <p>스케일링과 큐렛으로 치석과 염증을 제거하여 잇몸 건강을 회복합니다</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TYPE 01: 충치치료 ===== -->
+        <section class="lm-imp-type lm-imp-type--same">
+            <div class="lm-inner">
+                <div class="lm-imp-type__grid">
+                    <div class="lm-imp-type__img lm-fade">
+                        <img src="images/prosthodontics/탭(11)_A_충치치료.avif" alt="충치치료" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div class="lm-imp-type__text lm-fade lm-fade-delay-1">
+                        <span class="lm-section-label">CAVITY TREATMENT</span>
+                        <span class="lm-imp-type__badge">Type 01</span>
+                        <h3><em>충치치료</em></h3>
+                        <p>간단한 충치는 레진치료로 처리하고, 진행된 충치는 인레이를 권장합니다. 초기 단계의 충치는 치아 표면에 국한되므로 당일 완료 가능한 레진치료로 진행됩니다. 그러나 충치가 크고 상아질까지 영향을 미쳤을 때는 2번의 방문이 필요한 인레이 치료를 권장합니다. 충치 범위가 넓을수록 인레이로 치료하는 것이 더 효과적입니다. 충치가 심해지면 통증이 더 심해지고 치료가 더 복잡해지므로 적절한 시기에 치료하는 것이 중요합니다.</p>
+                        <div class="lm-imp-type__points">
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>초기 충치 레진 당일 치료</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>진행된 충치 인레이 치료</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>자연치아 색상 복원</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>조기 치료로 비용 절감</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TYPE 02: 신경치료 ===== -->
+        <section class="lm-imp-type lm-imp-type--navi">
+            <div class="lm-inner">
+                <div class="lm-imp-type__grid lm-imp-type__grid--reverse">
+                    <div class="lm-imp-type__img lm-fade">
+                        <img src="images/prosthodontics/탭(11)_B_신경치료.avif" alt="신경치료" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div class="lm-imp-type__text lm-fade lm-fade-delay-1">
+                        <span class="lm-section-label">ROOT CANAL</span>
+                        <span class="lm-imp-type__badge">Type 02</span>
+                        <h3><em>신경치료</em></h3>
+                        <p>충치가 심해져서 치아의 가장 안쪽 층인 신경까지 침범한 경우나 딱딱한 음식을 먹어서 치아에 심하게 금이 간 경우 신경치료가 필요합니다. 신경치료는 오염된 신경층을 제거하고 다시 오염되지 않도록 밀봉하는 치료로 총 3~4회 이상의 방문이 필요합니다. 신경치료가 완료된 치아는 쉽게 깨질 수 있으므로 크라운과 같은 보철치료가 필요합니다.</p>
+                        <div class="lm-imp-type__points">
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>오염된 신경 완전 제거</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>근관 밀봉 처리</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>3~4회 방문 치료</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>크라운 보철 마무리</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TYPE 03: 보철치료(크라운) ===== -->
+        <section class="lm-imp-type lm-imp-type--bone">
+            <div class="lm-inner">
+                <div class="lm-imp-type__grid">
+                    <div class="lm-imp-type__img lm-fade">
+                        <img src="images/prosthodontics/41bc31add3b28.jpg" alt="보철치료" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div class="lm-imp-type__text lm-fade lm-fade-delay-1">
+                        <span class="lm-section-label">CROWN RESTORATION</span>
+                        <span class="lm-imp-type__badge">Type 03</span>
+                        <h3><em>보철치료</em> (크라운)</h3>
+                        <p>보철치료는 일반적으로 치아 전체를 덮는 모양으로 만들어진 크라운을 말합니다. 치아를 원통형으로 깎아서 씌우게 되는데, 이때 사용되는 재료로는 PFM, 금, 그리고 지르코니아 등이 있습니다. 특히 지르코니아는 일반적으로 많이 선택되는데, 단단하면서도 치아색과 잘 어울리는 재료입니다. 다른 재료로는 PFM이나 금이 있으며, 각각의 장단점을 고려하여 상황에 맞게 선택할 수 있습니다.</p>
+                        <div class="lm-imp-type__points">
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>지르코니아 자연 심미성</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>금 크라운 뛰어난 내구성</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>PFM 경제적 선택</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>환자 맞춤 재료 선택</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TYPE 04: 잇몸치료 ===== -->
+        <section class="lm-imp-type lm-imp-type--fourth">
+            <div class="lm-inner">
+                <div class="lm-imp-type__grid lm-imp-type__grid--reverse">
+                    <div class="lm-imp-type__img lm-fade">
+                        <img src="images/prosthodontics/탭(11)_D_잇몸치료.avif" alt="잇몸치료" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div class="lm-imp-type__text lm-fade lm-fade-delay-1">
+                        <span class="lm-section-label">GUM TREATMENT</span>
+                        <span class="lm-imp-type__badge">Type 04</span>
+                        <h3><em>잇몸치료</em></h3>
+                        <p>일반적으로 치아가 문제가 될 때 잇몸도 같이 문제가 생기는 경우가 많습니다. 잇몸치료는 스케일링, 큐렛 등과 같은 보험으로 진료가 가능한 치료 방법을 사용합니다. 이 치료의 주요 목표는 치아에 붙어 있는 치석과 염증 조직을 제거하는 것입니다. 한 번 치석이 생기면 보통의 잇솔질로는 제거되지 않으며, 치석은 세균이 붙어서 잇몸뼈 조직을 파괴할 수 있으므로 제거하는 것이 중요합니다.</p>
+                        <div class="lm-imp-type__points">
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>치석 완전 제거</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>잇몸 염증 치료</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>건강보험 적용 가능</span></div>
+                            <div class="lm-imp-type__point"><div class="lm-imp-type__point-icon"><i class="ph-bold ph-check"></i></div><span>잇몸뼈 보존 효과</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== WIDE BANNER DIVIDER ===== -->
+        <div class="lm-wide-banner">
+            <img src="images/prosthodontics/e66ac7_f564524f8ac44818932c2faeb73cf5a6~mv2.avif" alt="보철치료 배너">
+        </div>
+
+        <!-- ===== PROCEDURE INFO ===== -->
+        <section class="lm-info-section">
+            <div class="lm-info-hero lm-fade">
+                <img src="images/prosthodontics/e66ac7_f564524f8ac44818932c2faeb73cf5a6~mv2.avif" alt="보철치료 디테일" class="lm-info-hero-img">
+                <div class="lm-info-hero-overlay"></div>
+                <div class="lm-info-hero-content">
+                    <div class="lm-inner">
+                        <span class="lm-info-hero-label">PROCEDURE INFO</span>
+                        <h2 class="lm-info-hero-title">보철치료,<br><span>디테일</span>이 다릅니다</h2>
+                        <p class="lm-info-hero-sub">Prosthetic treatment with clinical precision</p>
+                        <hr class="lm-info-hero-line">
+                    </div>
+                </div>
+            </div>
+            <div class="lm-inner">
+                <div class="lm-info-cards">
+                    <div class="lm-info-card lm-fade">
+                        <div class="lm-info-card-icon"><i class="ph ph-clock"></i></div>
+                        <div class="lm-info-card-label">치료시간</div>
+                        <div class="lm-info-card-val">30~60<small>분</small></div>
+                        <p class="lm-info-card-desc">치료 종류에 따라 상이</p>
+                    </div>
+                    <div class="lm-info-card lm-fade lm-fade-delay-1">
+                        <div class="lm-info-card-icon"><i class="ph ph-syringe"></i></div>
+                        <div class="lm-info-card-label">마취방법</div>
+                        <div class="lm-info-card-val">국소마취</div>
+                        <p class="lm-info-card-desc">부위 마취로 통증 최소화</p>
+                    </div>
+                    <div class="lm-info-card lm-fade lm-fade-delay-2">
+                        <div class="lm-info-card-icon"><i class="ph ph-arrows-clockwise"></i></div>
+                        <div class="lm-info-card-label">방문횟수</div>
+                        <div class="lm-info-card-val">1~4<small>회</small></div>
+                        <p class="lm-info-card-desc">치료 유형별 방문 횟수 상이</p>
+                    </div>
+                    <div class="lm-info-card lm-fade lm-fade-delay-3">
+                        <div class="lm-info-card-icon"><i class="ph ph-chart-line-up"></i></div>
+                        <div class="lm-info-card-label">보험적용</div>
+                        <div class="lm-info-card-val">일부 <small>가능</small></div>
+                        <p class="lm-info-card-desc">스케일링, 레진 등 보험 적용</p>
+                    </div>
+                </div>
+                <div class="lm-info-detail-grid">
+                    <div class="lm-info-detail-card lm-fade">
+                        <span class="lm-info-detail-num">01</span>
+                        <h4>정밀 디지털 진단</h4>
+                        <p>X-ray 및 구강 검사를 통해 충치의 범위, 신경 상태, 잇몸 건강을 정밀하게 분석하여 최적의 치료 계획을 수립합니다.</p>
+                        <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-x-ray"></i> X-ray 촬영</span><span class="lm-info-chip"><i class="ph ph-magnifying-glass"></i> 정밀 진단</span></div>
+                    </div>
+                    <div class="lm-info-detail-card lm-fade lm-fade-delay-1">
+                        <span class="lm-info-detail-num">02</span>
+                        <h4>환자 맞춤 재료 선택</h4>
+                        <p>레진, 인레이, 지르코니아, 금, PFM 등 다양한 재료 중 환자의 상황과 부위에 맞는 최적의 재료를 선택합니다.</p>
+                        <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-diamond"></i> 맞춤 재료</span><span class="lm-info-chip"><i class="ph ph-palette"></i> 심미 복원</span></div>
+                    </div>
+                    <div class="lm-info-detail-card lm-fade lm-fade-delay-2">
+                        <span class="lm-info-detail-num">03</span>
+                        <h4>최소 침습 치료</h4>
+                        <p>건강한 치아 조직을 최대한 보존하면서 손상된 부분만 정밀하게 제거하고 복원하는 보존적 치료를 시행합니다.</p>
+                        <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-shield-check"></i> 치아 보존</span><span class="lm-info-chip"><i class="ph ph-target"></i> 정밀 시술</span></div>
+                    </div>
+                    <div class="lm-info-detail-card lm-fade lm-fade-delay-3">
+                        <span class="lm-info-detail-num">04</span>
+                        <h4>체계적 사후관리</h4>
+                        <p>치료 후 정기 검진을 통해 보철물의 상태를 확인하고, 구강 위생 관리 방법을 안내하여 장기적인 치아 건강을 유지합니다.</p>
+                        <div class="lm-info-chips"><span class="lm-info-chip"><i class="ph ph-calendar-check"></i> 정기 검진</span><span class="lm-info-chip"><i class="ph ph-heart"></i> 장기 관리</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== RECOMMENDATION ===== -->
+        <section class="lm-recommend">
+            <div class="lm-inner">
+                <div class="lm-rec-header lm-fade">
+                    <span class="lm-rec-label">RECOMMEND</span>
+                    <h2 class="lm-rec-title">이런 분들에게<br>보철치료를 추천드립니다</h2>
+                </div>
+                <div class="lm-rec-cards">
+                    <div class="lm-rec-card lm-fade"><span class="lm-rec-card-num">01</span><div class="lm-rec-card-icon"><i class="ph ph-tooth"></i></div><h3>충치가 진행된 분</h3><p>충치가 발생하여 통증이 있거나 치아 변색이 진행된 경우 레진 또는 인레이 치료로 빠르게 회복할 수 있습니다.</p></div>
+                    <div class="lm-rec-card lm-fade lm-fade-delay-1"><span class="lm-rec-card-num">02</span><div class="lm-rec-card-icon"><i class="ph ph-lightning"></i></div><h3>치아 통증이 심한 분</h3><p>충치가 신경까지 도달하여 극심한 통증을 경험하시는 분은 신경치료를 통해 통증을 해결하고 치아를 보존할 수 있습니다.</p></div>
+                    <div class="lm-rec-card lm-fade lm-fade-delay-2"><span class="lm-rec-card-num">03</span><div class="lm-rec-card-icon"><i class="ph ph-warning"></i></div><h3>치아가 깨지거나 파절된 분</h3><p>외상이나 강한 저작력으로 치아가 손상된 경우 크라운 보철로 치아의 형태와 기능을 완벽하게 복원합니다.</p></div>
+                    <div class="lm-rec-card lm-fade lm-fade-delay-1"><span class="lm-rec-card-num">04</span><div class="lm-rec-card-icon"><i class="ph ph-drop-half-bottom"></i></div><h3>잇몸이 자주 붓는 분</h3><p>잇몸 출혈, 부종이 반복되는 경우 치석 제거와 잇몸치료를 통해 잇몸 질환의 진행을 막고 건강을 회복합니다.</p></div>
+                    <div class="lm-rec-card lm-fade lm-fade-delay-2"><span class="lm-rec-card-num">05</span><div class="lm-rec-card-icon"><i class="ph ph-smiley"></i></div><h3>심미적 치아 복원을 원하는 분</h3><p>변색되거나 형태가 손상된 치아를 자연치아와 유사한 색상과 형태로 복원하여 자신감 있는 미소를 되찾아 드립니다.</p></div>
+                    <div class="lm-rec-card lm-fade lm-fade-delay-3"><span class="lm-rec-card-num">06</span><div class="lm-rec-card-icon"><i class="ph ph-shield-check"></i></div><h3>오래된 보철물 교체가 필요한 분</h3><p>기존 보철물의 수명이 다하거나 변색, 탈락이 발생한 경우 새로운 보철물로 교체하여 기능과 심미성을 개선합니다.</p></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===== FAQ (split layout) ===== -->
+        <section class="lm-faq-section">
+            <div class="lm-inner">
+                <div class="lm-faq-layout">
+                    <div class="lm-faq-left lm-fade">
+                        <div class="lm-faq-deco">Q&A</div>
+                        <span class="lm-section-label">FAQ</span>
+                        <p class="lm-faq-left-text">보철치료에 대해<br>자주 묻는 질문을 모았습니다.</p>
+                    </div>
+                    <div class="lm-faq-list">
+                        <div class="lm-faq-item lm-fade">
+                            <button class="lm-faq-q" onclick="toggleFaq(this)">
+                                <span class="lm-faq-prefix">Q.</span>
+                                충치치료에서 레진과 인레이의 차이는 무엇인가요?
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="lm-faq-a">
+                                <span class="lm-faq-a-prefix">A.</span>레진은 초기 충치에 적합하며 당일 치료가 가능한 직접 수복 방식입니다. 인레이는 충치 범위가 넓어 상아질까지 영향을 미쳤을 때 사용하며, 별도 제작 과정이 필요하여 2회 방문이 필요합니다. 인레이는 레진보다 강도가 높고 정밀한 적합도를 제공합니다.
+                            </div>
+                        </div>
+                        <div class="lm-faq-item lm-fade lm-fade-delay-1">
+                            <button class="lm-faq-q" onclick="toggleFaq(this)">
+                                <span class="lm-faq-prefix">Q.</span>
+                                신경치료 후 크라운은 꼭 씌워야 하나요?
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="lm-faq-a">
+                                <span class="lm-faq-a-prefix">A.</span>네, 신경치료가 완료된 치아는 혈액 공급이 차단되어 시간이 지나면서 건조해지고 약해집니다. 크라운을 씌우지 않으면 저작 시 치아가 쉽게 깨지거나 파절될 수 있으므로, 치아를 보호하고 기능을 유지하기 위해 크라운 보철이 반드시 필요합니다.
+                            </div>
+                        </div>
+                        <div class="lm-faq-item lm-fade lm-fade-delay-2">
+                            <button class="lm-faq-q" onclick="toggleFaq(this)">
+                                <span class="lm-faq-prefix">Q.</span>
+                                지르코니아, 금, PFM 크라운 중 어떤 것이 좋나요?
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="lm-faq-a">
+                                <span class="lm-faq-a-prefix">A.</span>지르코니아는 자연치아와 유사한 색상으로 심미적이며 강도가 높아 가장 많이 선택됩니다. 금은 생체 적합성이 뛰어나고 내구성이 우수하여 어금니에 적합합니다. PFM은 금속 위에 도자기를 입힌 것으로 경제적인 선택입니다. 환자의 치아 위치와 상황에 따라 최적의 재료가 달라지므로 전문의 상담을 통해 결정하시는 것이 좋습니다.
+                            </div>
+                        </div>
+                        <div class="lm-faq-item lm-fade lm-fade-delay-3">
+                            <button class="lm-faq-q" onclick="toggleFaq(this)">
+                                <span class="lm-faq-prefix">Q.</span>
+                                스케일링은 얼마나 자주 받아야 하나요?
+                                <i class="ph ph-caret-down"></i>
+                            </button>
+                            <div class="lm-faq-a">
+                                <span class="lm-faq-a-prefix">A.</span>일반적으로 6개월~1년에 한 번 스케일링을 받는 것이 권장됩니다. 건강보험으로 연 1회 스케일링이 적용되며, 잇몸 질환이 있는 경우에는 더 자주 받으실 수도 있습니다. 정기적인 스케일링은 치석 제거와 잇몸 질환 예방에 효과적입니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="footer-title-section">
+    </div>
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>SMILEVIEW<span>.</span></h2>
+                    <p>투명하고 편리한 교정부터 심미 치료까지,<br>스마일뷰치과가 당신의 아름다운 미소를 만들어 드립니다.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Location</h3>
+                    <ul>
+                        <li>서울특별시 강남구 봉은사로 107, 15층</li>
+                        <li style="font-size:12px;color:rgba(255,255,255,0.25);">(논현동 201 16번지 15층)</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tel:02-552-7528">TEL. 02-552-7528</a></li>
+                        <li>FAX. 02-552-7527</li>
+                        <li><span class="footer-label">대표자</span>김한결</li>
+                        <li><span class="footer-label">사업자번호</span>699-29-00572</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Hours</h3>
+                    <ul class="footer-hours">
+                        <li><span class="day">평일</span><span>AM 10:00 - PM 06:30</span></li>
+                        <li class="note">점심시간 PM 01:00 - PM 02:00</li>
+                        <li><span class="day">토요일</span><span>AM 10:00 - PM 03:00</span></li>
+                        <li class="note">점심시간 없이 진료</li>
+                        <li><span class="day">일요일</span><span>AM 10:00 - PM 04:00</span></li>
+                        <li class="closed"><span class="day">휴진</span><span>공휴일</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SMILEVIEW DENTAL CLINIC. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+    // FAQ Toggle
+    function toggleFaq(btn) {
+        const answer = btn.nextElementSibling;
+        const isOpen = btn.classList.contains('active');
+        document.querySelectorAll('.lm-faq-q').forEach(q => {
+            q.classList.remove('active');
+            q.nextElementSibling.style.display = 'none';
+        });
+        if (!isOpen) {
+            btn.classList.add('active');
+            answer.style.display = 'block';
+        }
+    }
+
+    // ===== GSAP HORIZONTAL SCROLL =====
+    (function() {
+        gsap.registerPlugin(ScrollTrigger);
+
+        // sec1 - page load animation (NOT scroll-based, like benchmark)
+        gsap.timeline()
+            .from('.lm-hero-bg', { scale: 1.2, duration: 2 })
+            .from('.lm-hero-lbx', { opacity: 0, xPercent: -100, duration: 1.5 }, '-=100%')
+            .from('.lm-hero-rbx', { opacity: 0, xPercent: 100, duration: 1.5 }, '-=100%')
+            .from('.lm-hero-desc, .lm-hero-desc2', { opacity: 0, y: 40, stagger: 0.2, duration: 0.8 }, '-=80%');
+
+        // Marquee animation
+        const marqueeTrack = document.querySelector('.lm-marquee-track');
+        if (marqueeTrack) {
+            const children = marqueeTrack.querySelectorAll('span');
+            children.forEach(child => {
+                const clone = child.cloneNode(true);
+                marqueeTrack.appendChild(clone);
+            });
+        }
+
+        ScrollTrigger.matchMedia({
+            // Desktop: horizontal scroll
+            '(min-width: 1025px)': function() {
+                const wrap = document.querySelector('.lm-h-wrap');
+                const horizontal = document.querySelector('.lm-horizontal');
+                if (!wrap || !horizontal) return;
+
+                // Main horizontal scroll animation
+                const horizon = gsap.to('.lm-horizontal .lm-h-wrap', {
+                    xPercent: -100,
+                    x: () => window.innerWidth,
+                    scrollTrigger: {
+                        pin: '.lm-horizontal',
+                        trigger: '.lm-horizontal',
+                        start: 'left left',
+                        end: () => `+=${wrap.offsetWidth} bottom`,
+                        scrub: 1,
+                    }
+                });
+
+                // sec2 (title band) animation - matches benchmark
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-h-panel--title',
+                        start: 'left 45%',
+                        end: 'left',
+                        containerAnimation: horizon,
+                        toggleActions: 'play none none reverse',
+                    }
+                });
+                tl
+                    .from('.lm-title-band-overlay', { scale: 1.2, duration: 1.5 })
+                    .from('.lm-title-band h2', { opacity: 0, duration: 0.8, y: 40 }, '-=100%')
+                    .from('.lm-title-band .lm-kr-sub', { opacity: 0, duration: 0.8, y: 40 }, '-=80%')
+                    .from('.lm-title-band .lm-badge', { opacity: 0, duration: 0.8, y: 40 }, '-=80%');
+
+                // sec3 (definition) animation - matches benchmark
+                const tl2 = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-h-panel--def',
+                        start: 'left 90%',
+                        end: 'left',
+                        containerAnimation: horizon,
+                        toggleActions: 'play none none reverse',
+                    }
+                });
+                tl2
+                    .from('.lm-def-con .lm-def-tit > *', { opacity: 0, stagger: 0.2, duration: 0.8, x: -40 })
+                    .from('.lm-def-sub p > *', { opacity: 0, stagger: 0.2, duration: 0.8, y: 40 }, '-=80%');
+            },
+
+            // Mobile: vertical layout
+            '(max-width: 1024px)': function() {
+                gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-title-band',
+                        start: 'top center+=20%',
+                        toggleActions: 'play none none reverse',
+                    }
+                })
+                .from('.lm-title-band h2', { opacity: 0, duration: 0.8, y: 40 })
+                .from('.lm-title-band .lm-kr-sub', { opacity: 0, duration: 0.8, y: 40 }, '-=80%')
+                .from('.lm-title-band .lm-badge', { opacity: 0, duration: 0.8, y: 40 }, '-=80%');
+
+                gsap.timeline({
+                    scrollTrigger: {
+                        trigger: '.lm-definition',
+                        start: 'top center+=20%',
+                        toggleActions: 'play none none reverse',
+                    }
+                })
+                .from('.lm-def-con .lm-def-tit > *', { opacity: 0, stagger: 0.2, duration: 0.8, x: -40 })
+                .from('.lm-def-sub p > *', { opacity: 0, stagger: 0.2, duration: 0.8, y: 40 }, '-=80%');
+            }
+        });
+    })();
+
+    // ===== Scroll Animations (IntersectionObserver for vertical sections + mobile) =====
+    (function() {
+        const elems = document.querySelectorAll('.lm-imp-banner .lm-fade, .lm-imp-type .lm-fade, .lm-info-section .lm-fade, .lm-recommend .lm-fade, .lm-faq-section .lm-fade');
+        if (!elems.length) return;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('lm-show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+        elems.forEach(el => observer.observe(el));
+
+        // Mobile: also observe horizontal panel elements
+        if (window.innerWidth <= 1024) {
+            const mobileElems = document.querySelectorAll('.lm-horizontal .lm-fade');
+            mobileElems.forEach(el => observer.observe(el));
+        }
+
+        // Fallback
+        setTimeout(() => {
+            document.querySelectorAll('.lm-fade').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight + 50) {
+                    el.classList.add('lm-show');
+                }
+            });
+        }, 400);
+    })();
+    </script>
+    <!-- Floating SNS -->
+    <div class="sv-float-sns" id="floatSns">
+        <div class="sv-float-sns-list">
+            <a href="https://www.instagram.com/smileview_dental/" class="sv-float-btn sv-float-btn--instagram" title="Instagram" target="_blank">
+                <i class="ph-fill ph-instagram-logo"></i>
+            </a>
+            <a href="#" class="sv-float-btn sv-float-btn--line" title="LINE" target="_blank">
+                <i class="ph-fill ph-chat-circle-dots"></i>
+            </a>
+        </div>
+        <button class="sv-float-toggle" onclick="document.getElementById('floatSns').classList.toggle('open')">
+            <i class="ph ph-plus"></i>
+        </button>
+    </div>
+
+    <script>
+    document.addEventListener('click', function(e) {
+        var ls = document.getElementById('langSelector');
+        if (ls && !ls.contains(e.target)) ls.classList.remove('open');
+    });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+=== implant ===
+L938:                             <tr><td>保固</td><td>各製造商不同</td><td>正品認證서 + 평생 保固</td></tr>
+L944:                     <div class="lm-imp-vs__m-card lm-imp-vs__m-card--osstem"><div class="lm-imp-vs__m-card-label">Osstem植牙</div><div class="lm-imp-vs__m-card-row"><span class="lm-imp-vs__m-card-key">製

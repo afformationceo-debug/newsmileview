@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "<string>", line 13, in <module>
+    print(f'L{i}: {line.rstrip()[:120]}')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp949' codec can't encode character '\u598d' in position 89: illegal multibyte sequence
+L332:                 <h1>스마일뷰 치과</h1>
+L357:                         <h2 class="sv-clinic-title">스마일뷰 치과의<br><span>Smile Design</span></h2>
+L360:                         <p class="sv-clinic-body">밝고 아름다운 미소는 삶을 더욱 아름답게 만들어 줍니다. 스마일뷰 치과는 이러한 아름다운 미소를 연구하고 환자분들에게 제공하기
+L380:                             <h3 class="sv-item-title">가지런한 치아의 배열</h3>
+L388:                             <h3 class="sv-item-title">자연스러운 스마일아크</h3>
+L396:                             <h3 class="sv-item-title">잘 맞는 미소의 대칭</h3>
+L404:                             <h3 class="sv-item-title">적절한 버칼 코리더</h3>
+L412:                             <h3 class="sv-item-title">가파른 각도의 교합평면</h3>
+L420:                             <h3 class="sv-item-title">치아와 잇몸의 적절한 노출</h3>
+L444:                         <div class="sv-doctor-img"><img src="images/introduction/金韓結 원장님.avif" alt="金韓結 院長" style="width

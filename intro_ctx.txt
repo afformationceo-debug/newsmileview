@@ -1,0 +1,10 @@
+{'key': 'title_1', 'text': '병원소개 | 스마일뷰치과의원', 'translated': '診所介紹 | SMILEVIEW牙醫診所', 'location': 'line:6, tag:title', 'context': 'title'}
+{'key': 'text_2_li', 'text': '병원소개', 'translated': '診所介紹', 'location': 'line:281, tag:li', 'context': 'text'}
+{'key': 'text_3_li', 'text': '인비절라인', 'translated': 'INVISALIGN', 'location': 'line:282, tag:li', 'context': 'text'}
+{'key': 'text_4_li', 'text': '치아교정', 'translated': 'ORTHODONTICS', 'location': 'line:283, tag:li', 'context': 'text'}
+{'key': 'text_5_li', 'text': '치아미백', 'translated': '牙齒美白', 'location': 'line:284, tag:li', 'context': 'text'}
+{'key': 'text_6_li', 'text': '원데이 라미네이트', 'translated': '單日貼片', 'location': 'line:285, tag:li', 'context': 'text'}
+{'key': 'text_7_li', 'text': '수면 임플란트', 'translated': '舒眠植牙', 'location': 'line:286, tag:li', 'context': 'text'}
+{'key': 'text_8_li', 'text': '보철치료', 'translated': 'PROSTHETICS', 'location': 'line:287, tag:li', 'context': 'text'}
+{'key': 'text_9_a', 'text': '한국어 (KO)', 'translated': '韓語 (KO)', 'location': 'line:295, tag:a', 'context': 'text'}
+{'key': 'text_10_a', 'text': '예약하기', 'translated': '立即預約', 'location': 'line:300, tag:a', 'context': 'text'}

@@ -1,0 +1,548 @@
+[
+  {
+    "key": "title_1",
+    "text": "병원소개 | 스마일뷰치과의원",
+    "location": "line:6, tag:title",
+    "context": "title"
+  },
+  {
+    "key": "text_2_li",
+    "text": "병원소개",
+    "location": "line:281, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_3_li",
+    "text": "인비절라인",
+    "location": "line:282, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_4_li",
+    "text": "치아교정",
+    "location": "line:283, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_5_li",
+    "text": "치아미백",
+    "location": "line:284, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_6_li",
+    "text": "원데이 라미네이트",
+    "location": "line:285, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_7_li",
+    "text": "수면 임플란트",
+    "location": "line:286, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_8_li",
+    "text": "보철치료",
+    "location": "line:287, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_9_a",
+    "text": "한국어 (KO)",
+    "location": "line:295, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "text_10_a",
+    "text": "예약하기",
+    "location": "line:300, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "text_11_a",
+    "text": "온라인 예약",
+    "location": "line:320, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "attr_12_img_alt",
+    "text": "스마일뷰 치과",
+    "location": "line:328, tag:img[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_13_p",
+    "text": "스마일뷰 치과는 디지털 장비를 통하여 개개인만의 치아 특성을 분석하고 아름다운 미소를 위하여 그에 맞는 치료를 제안드립니다.",
+    "location": "line:333, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_14_p",
+    "text": "저희 스마일뷰 치과는 환자분들의 아름다운 미소를 위해 지속적으로 연구하고 있습니다.",
+    "location": "line:334, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_15_a",
+    "text": "미소클리닉",
+    "location": "line:341, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "text_16_a",
+    "text": "의료진",
+    "location": "line:342, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "text_17_a",
+    "text": "찾아오는 길",
+    "location": "line:343, tag:a",
+    "context": "text"
+  },
+  {
+    "key": "attr_18_img_alt",
+    "text": "미소클리닉 배너",
+    "location": "line:351, tag:img[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_19_h2",
+    "text": "스마일뷰 치과의 미소클리닉",
+    "location": "line:357, tag:h2",
+    "context": "text"
+  },
+  {
+    "key": "text_20_p",
+    "text": "밝고 아름다운 미소는 삶을 더욱 아름답게 만들어 줍니다. 스마일뷰 치과는 이러한 아름다운 미소를 연구하고 환자분들에게 제공하기 위해 노력하고 있습니다. 치아가 제대로 정렬되지 않으면 얼굴의 균형이 맞지 않게 되어 아름다운 미소를 얻기 어려울 수 있습니다.",
+    "location": "line:360, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_21_h2",
+    "text": "아름다운 미소를 갖기 위해서는",
+    "location": "line:373, tag:h2",
+    "context": "text"
+  },
+  {
+    "key": "attr_22_div_alt",
+    "text": "가지런한 치아의 배열",
+    "location": "line:377, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_23_p",
+    "text": "앞니 하나의 틀어짐도 웃었을 때 아름다움을 감소시키며 입 모양의 어색함을 유발하고 웃을 때 자연스럽게 입을 가리게 할 수 있습니다. 가지런한 치아는 아름다운 미소를 통해 밝은 인상을 주는 데 도움을 줍니다.",
+    "location": "line:381, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "attr_24_div_alt",
+    "text": "자연스러운 스마일아크",
+    "location": "line:385, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_25_p",
+    "text": "스마일 아크(Smile Arc)는 미소 시에 아랫 입술의 곡선과 상악 치아의 절단선을 따라 만들어지는 가상 곡선을 의미합니다. 이때 만들어지는 곡선이 부드럽게 이어질 경우 아름다운 미소를 얻을 수 있습니다.",
+    "location": "line:389, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "attr_26_div_alt",
+    "text": "잘 맞는 미소의 대칭",
+    "location": "line:393, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_27_p",
+    "text": "Smile 대칭은 치아의 부정교합과 턱관절의 이상, 안면비대칭 등이 미소의 형태에 큰 영향을 미칩니다. 웃을 때 좌우 대칭이 맞아야 아름다운 미소에 한층 가까워질 수 있습니다.",
+    "location": "line:397, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "attr_28_div_alt",
+    "text": "적절한 버칼 코리더",
+    "location": "line:401, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_29_p",
+    "text": "버칼 코리더(buccal corridor)는 웃을 때 치아 옆으로 보이는 공간을 의미합니다. 버칼 코리더가 너무 크면 웃을 때 치아가 부족해 보일 수 있으며, 반대로 너무 작으면 웃을 때 틀니처럼 보일 수 있습니다.",
+    "location": "line:405, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "attr_30_div_alt",
+    "text": "가파른 각도의 교합평면",
+    "location": "line:409, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_31_p",
+    "text": "교합평면이란 옆모습 엑스레이를 찍었을 때 치아들의 옆모습 평면이 이루는 각도를 말합니다. 이 각도가 가파를수록 더 웃는 상이 되고 이 각도가 평평할수록 우는 상이 됩니다.",
+    "location": "line:413, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "attr_32_div_alt",
+    "text": "치아와 잇몸의 적절한 노출",
+    "location": "line:417, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_33_p",
+    "text": "미소를 지을 때 잇몸이 전혀 보이지 않고 치아의 일부분만 노출되면 나이든 외모를 연상시킬 수 있습니다. 미소를 짓을 때 잇몸이 과도하게 드러나면 심미적인 면에서 부족할 수 있습니다.",
+    "location": "line:421, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_34_p",
+    "text": "스마일뷰 치과는 여러 의료진의 협진을 통해 원인을 분석하고 치료하여 찾아주시는 환자분들이 밝고 아름다운 미소를 가질 수 있도록 최선을 다합니다.",
+    "location": "line:425, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_35_h2",
+    "text": "의료진 소개",
+    "location": "line:434, tag:h2",
+    "context": "text"
+  },
+  {
+    "key": "text_36_button",
+    "text": "김한결 대표원장",
+    "location": "line:437, tag:button",
+    "context": "text"
+  },
+  {
+    "key": "text_37_button",
+    "text": "이소연 전문의",
+    "location": "line:438, tag:button",
+    "context": "text"
+  },
+  {
+    "key": "attr_38_div_alt",
+    "text": "김한결 원장",
+    "location": "line:444, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_39_span",
+    "text": "대표원장",
+    "location": "line:447, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_40_span",
+    "text": "전문의",
+    "location": "line:448, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_41_h3",
+    "text": "김한결",
+    "location": "line:450, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_42_div",
+    "text": "경력사항",
+    "location": "line:451, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_43_li",
+    "text": "연세대학교 치과대학 졸업",
+    "location": "line:453, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_44_li",
+    "text": "연세대학교 대학원 교정과",
+    "location": "line:454, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_45_li",
+    "text": "연세대학교 치과대학 구강내과 박사과정중",
+    "location": "line:455, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_46_li",
+    "text": "연세대학교 강남 세브란스 미니 레지던시",
+    "location": "line:456, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_47_li",
+    "text": "서울대학교 치의학대학원 턱교정학 고급 연수회",
+    "location": "line:457, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_48_li",
+    "text": "UCLA 수술교정",
+    "location": "line:458, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_49_li",
+    "text": "치주 교정 성인교정 심포지움",
+    "location": "line:459, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_50_li",
+    "text": "미니스크류를 이용한 설측교정 연수회",
+    "location": "line:460, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_51_li",
+    "text": "부분티끌교정 연수회",
+    "location": "line:463, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_52_li",
+    "text": "오스템임플란트 연수회 수료",
+    "location": "line:464, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_53_li",
+    "text": "하버드 임플란트 연수회 수료",
+    "location": "line:465, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_54_li",
+    "text": "인비절라인 인증의",
+    "location": "line:466, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_55_li",
+    "text": "대한치과교정학회 정회원",
+    "location": "line:467, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_56_li",
+    "text": "대한심미치과학회 정회원",
+    "location": "line:468, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_57_li",
+    "text": "대한치과교합학회 정회원",
+    "location": "line:469, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_58_li",
+    "text": "보건복지부 인증 통합치과 전문의",
+    "location": "line:470, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "attr_59_div_alt",
+    "text": "이소연 원장",
+    "location": "line:479, tag:div[alt]",
+    "context": "attr:alt"
+  },
+  {
+    "key": "text_60_span",
+    "text": "구강악안면외과",
+    "location": "line:482, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_61_h3",
+    "text": "이소연",
+    "location": "line:485, tag:h3",
+    "context": "text"
+  },
+  {
+    "key": "text_62_li",
+    "text": "보건복지부 구강악안면외과 전문의",
+    "location": "line:488, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_63_li",
+    "text": "보건복지부 통합치의학과 전문의",
+    "location": "line:489, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_64_li",
+    "text": "부산대학교 치의학전문대학원 졸업(치의학 석사)",
+    "location": "line:490, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_65_li",
+    "text": "연세대학교 강남세브란스병원 인턴 수료",
+    "location": "line:491, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_66_li",
+    "text": "연세대학교 강남세브란스병원 구강악안면외과 레지던트 수료",
+    "location": "line:492, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_67_li",
+    "text": "대한악안면성형재건외과학회 정회원 및 인정의",
+    "location": "line:493, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_68_li",
+    "text": "대한구강악안면외과학회 정회원",
+    "location": "line:494, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_69_li",
+    "text": "연세대학교 치의학 학술대회 우수포스터상",
+    "location": "line:495, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_70_div",
+    "text": "논문",
+    "location": "line:497, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_71_li",
+    "text": "2021 Journal of Oral medicine and Pain: Herpes Zoster Accompanying Odontogenic Inflammation (제1저자)",
+    "location": "line:499, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_72_li",
+    "text": "2021 Dental traumatology: Craniofacial and dental injuries associated with stand-up electric scooters (제2저자)",
+    "location": "line:500, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_73_p",
+    "text": "투명하고 편리한 교정부터 심미 치료까지, 스마일뷰치과가 당신의 아름다운 미소를 만들어 드립니다.",
+    "location": "line:512, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_74_p",
+    "text": "서울특별시 강남구 봉은사로 107, 15층 (논현동 201 16번지 15층)",
+    "location": "line:532, tag:p",
+    "context": "text"
+  },
+  {
+    "key": "text_75_text",
+    "text": "대표자: 김한결",
+    "location": "line:539, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_76_text",
+    "text": "사업자번호: 699-29-00572",
+    "location": "line:540, tag:text",
+    "context": "text"
+  },
+  {
+    "key": "text_77_span",
+    "text": "평일",
+    "location": "line:547, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_78_div",
+    "text": "점심시간 PM 01:00 - PM 02:00",
+    "location": "line:550, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_79_span",
+    "text": "토요일",
+    "location": "line:552, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_80_div",
+    "text": "점심시간 없이 진료",
+    "location": "line:555, tag:div",
+    "context": "text"
+  },
+  {
+    "key": "text_81_span",
+    "text": "일요일",
+    "location": "line:557, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_82_span",
+    "text": "휴진",
+    "location": "line:561, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_83_span",
+    "text": "공휴일",
+    "location": "line:562, tag:span",
+    "context": "text"
+  },
+  {
+    "key": "text_84_li",
+    "text": "서울특별시 강남구 봉은사로 107, 15층",
+    "location": "line:586, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_85_li",
+    "text": "(논현동 201 16번지 15층)",
+    "location": "line:587, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_86_li",
+    "text": "대표자 김한결",
+    "location": "line:595, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_87_li",
+    "text": "사업자번호 699-29-00572",
+    "location": "line:596, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_88_li",
+    "text": "평일 AM 10:00 - PM 06:30",
+    "location": "line:602, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_89_li",
+    "text": "토요일 AM 10:00 - PM 03:00",
+    "location": "line:604, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_90_li",
+    "text": "일요일 AM 10:00 - PM 04:00",
+    "location": "line:606, tag:li",
+    "context": "text"
+  },
+  {
+    "key": "text_91_li",
+    "text": "휴진 공휴일",
+    "location": "line:607, tag:li",
+    "context": "text"
+  }
+]
